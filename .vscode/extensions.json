@@ -1,4 +1,27 @@
 {
-  "recommendations": ["dbaeumer.vscode-eslint", "unifiedjs.vscode-mdx"],
-  "unwantedRecommendations": []
+	"recommendations": [
+		"biomejs.biome",
+		"github.vscode-pull-request-github",
+		"github.copilot",
+		"github.copilot-chat",
+		"vercel.vscode-vercel",
+		"ms-vscode.vscode-typescript-next",
+		"bradlc.vscode-tailwindcss",
+		"esbenp.prettier-vscode",
+		"ms-vscode.vscode-json",
+		"redhat.vscode-yaml",
+		"ms-vscode.vscode-github-issue-notebooks",
+		"github.vscode-github-actions",
+		"anseki.vscode-color",
+		"pkief.material-icon-theme",
+		"formulahendry.auto-rename-tag",
+		"christian-kohler.path-intellisense",
+		"ms-vscode.vscode-css-peek",
+		"zignd.html-css-class-completion",
+		"ritwickdey.liveserver",
+		"ms-vscode.vscode-html-css-support",
+		"ms-vscode.vscode-css-peek",
+		"ms-vscode.vscode-typescript-next"
+	],
+	"unwantedRecommendations": ["dbaeumer.vscode-eslint"]
 }

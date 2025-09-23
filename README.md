@@ -61,7 +61,7 @@ pnpm preview # or `yarn preview`
 The production build will generate client and server modules by running both client and server build commands. Additionally, the build command will use Typescript to run a type check on the source code.
 
 ```shell
-pnpm build # or `yarn build`
+vercel build # or `pnpm build` (uses vercel build internally)
 ```
 
 ## Vercel Edge
@@ -87,7 +87,7 @@ Additionally, within the `package.json`, the `build.server` script will be updat
 To build the application for production, use the `build` command, this command will automatically run `pnpm build.server` and `pnpm build.client`:
 
 ```shell
-pnpm build
+vercel build
 ```
 
 [Read the full guide here](https://github.com/BuilderIO/qwik/blob/main/starters/adapters/vercel-edge/README.md)

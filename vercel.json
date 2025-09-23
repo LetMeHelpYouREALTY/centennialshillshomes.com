@@ -1,13 +1,25 @@
 {
-  "headers": [
-    {
-      "source": "/build/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, s-maxage=31536000, immutable"
-        }
-      ]
-    }
-  ]
+	"buildCommand": "pnpm build",
+	"outputDirectory": ".vercel/output",
+	"framework": "vite",
+	"headers": [
+		{
+			"source": "/build/(.*)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=31536000, s-maxage=31536000, immutable"
+				}
+			]
+		},
+		{
+			"source": "/assets/(.*)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=31536000, s-maxage=31536000, immutable"
+				}
+			]
+		}
+	]
 }

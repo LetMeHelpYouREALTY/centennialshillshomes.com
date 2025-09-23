@@ -1,0 +1,73 @@
+{
+	"name": "Centennial Hills Luxury Real Estate",
+	"colors": [
+		{
+			"name": "Primary Blue",
+			"hex": "#2563eb",
+			"rgb": "rgb(37, 99, 235)",
+			"hsl": "hsl(217, 91%, 60%)",
+			"description": "Main brand color for headers and CTAs"
+		},
+		{
+			"name": "Deep Blue",
+			"hex": "#1e40af",
+			"rgb": "rgb(30, 64, 175)",
+			"hsl": "hsl(224, 76%, 48%)",
+			"description": "Darker blue for gradients and hover states"
+		},
+		{
+			"name": "Light Blue",
+			"hex": "#dbeafe",
+			"rgb": "rgb(219, 234, 254)",
+			"hsl": "hsl(214, 95%, 93%)",
+			"description": "Light blue for backgrounds and accents"
+		},
+		{
+			"name": "Luxury Gold",
+			"hex": "#f59e0b",
+			"rgb": "rgb(245, 158, 11)",
+			"hsl": "hsl(38, 92%, 50%)",
+			"description": "Gold accent for luxury elements and ratings"
+		},
+		{
+			"name": "Charcoal Gray",
+			"hex": "#374151",
+			"rgb": "rgb(55, 65, 81)",
+			"hsl": "hsl(215, 19%, 27%)",
+			"description": "Dark gray for text and professional elements"
+		},
+		{
+			"name": "Light Gray",
+			"hex": "#f9fafb",
+			"rgb": "rgb(249, 250, 251)",
+			"hsl": "hsl(210, 20%, 98%)",
+			"description": "Light gray for backgrounds and cards"
+		},
+		{
+			"name": "Success Green",
+			"hex": "#10b981",
+			"rgb": "rgb(16, 185, 129)",
+			"hsl": "hsl(160, 84%, 39%)",
+			"description": "Green for success states and positive indicators"
+		},
+		{
+			"name": "Warning Red",
+			"hex": "#ef4444",
+			"rgb": "rgb(239, 68, 68)",
+			"hsl": "hsl(0, 84%, 60%)",
+			"description": "Red for warnings and error states"
+		}
+	],
+	"gradients": [
+		{
+			"name": "Primary Gradient",
+			"value": "linear-gradient(135deg, #2563eb 0%, #1e40af 100%)",
+			"description": "Main brand gradient for hero sections"
+		},
+		{
+			"name": "Luxury Gradient",
+			"value": "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)",
+			"description": "Gold gradient for luxury elements"
+		}
+	]
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://centennialshillshomes.com/</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://centennialshillshomes.com/images/dr-jan-duffy-luxury-real-estate.jpg</image:loc>
+      <image:title>Dr. Jan Duffy - Top 1% Las Vegas REALTOR®</image:title>
+      <image:caption>Luxury real estate specialist serving Red Rock Country Club, The Ridges, and Summerlin West</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://centennialshillshomes.com/about</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://centennialshillshomes.com/images/about-dr-jan-duffy.jpg</image:loc>
+      <image:title>About Dr. Jan Duffy - Luxury Real Estate Expert</image:title>
+    </image:image>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://centennialshillshomes.com/services</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://centennialshillshomes.com/images/luxury-real-estate-services.jpg</image:loc>
+      <image:title>Luxury Real Estate Services - Red Rock Country Club & The Ridges</image:title>
+    </image:image>
+  </url>
+
+  <!-- Properties Page -->
+  <url>
+    <loc>https://centennialshillshomes.com/properties</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://centennialshillshomes.com/images/luxury-properties-las-vegas.jpg</image:loc>
+      <image:title>Luxury Properties Las Vegas - Red Rock Country Club Homes</image:title>
+    </image:image>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://centennialshillshomes.com/contact</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://centennialshillshomes.com/images/contact-dr-jan-duffy.jpg</image:loc>
+      <image:title>Contact Dr. Jan Duffy - Free Market Analysis</image:title>
+    </image:image>
+  </url>
+
+  <!-- Testimonials Page -->
+  <url>
+    <loc>https://centennialshillshomes.com/testimonials</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://centennialshillshomes.com/images/client-testimonials.jpg</image:loc>
+      <image:title>Client Testimonials - Luxury Real Estate Success Stories</image:title>
+    </image:image>
+  </url>
+
+  <!-- Community Pages -->
+  <url>
+    <loc>https://centennialshillshomes.com/red-rock-country-club</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://centennialshillshomes.com/images/red-rock-country-club-homes.jpg</image:loc>
+      <image:title>Red Rock Country Club Luxury Homes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://centennialshillshomes.com/the-ridges</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://centennialshillshomes.com/images/the-ridges-executive-homes.jpg</image:loc>
+      <image:title>The Ridges Executive Luxury Homes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://centennialshillshomes.com/summerlin-west</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://centennialshillshomes.com/images/summerlin-west-luxury-homes.jpg</image:loc>
+      <image:title>Summerlin West Luxury Communities</image:title>
+    </image:image>
+  </url>
+
+</urlset>
