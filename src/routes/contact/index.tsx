@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { ContactForm } from "~/components/ContactForm";
 
 export default component$(() => {
 	return (
@@ -83,93 +84,7 @@ export default component$(() => {
 							</div>
 
 							{/* Contact Form */}
-							<div class="bg-white rounded-lg shadow-lg p-8">
-								<h2 class="text-3xl font-bold mb-6 text-gray-800">
-									Request Free Market Analysis
-								</h2>
-								<form class="space-y-6">
-									<div class="grid md:grid-cols-2 gap-6">
-										<div>
-											<label class="block text-sm font-medium text-gray-700 mb-2">
-												First Name *
-											</label>
-											<input
-												type="text"
-												required
-												class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-											/>
-										</div>
-										<div>
-											<label class="block text-sm font-medium text-gray-700 mb-2">
-												Last Name *
-											</label>
-											<input
-												type="text"
-												required
-												class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-											/>
-										</div>
-									</div>
-									<div>
-										<label class="block text-sm font-medium text-gray-700 mb-2">
-											Email *
-										</label>
-										<input
-											type="email"
-											required
-											class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-										/>
-									</div>
-									<div>
-										<label class="block text-sm font-medium text-gray-700 mb-2">
-											Phone *
-										</label>
-										<input
-											type="tel"
-											required
-											class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-										/>
-									</div>
-									<div>
-										<label class="block text-sm font-medium text-gray-700 mb-2">
-											Property Address (if applicable)
-										</label>
-										<input
-											type="text"
-											class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-										/>
-									</div>
-									<div>
-										<label class="block text-sm font-medium text-gray-700 mb-2">
-											Service Needed
-										</label>
-										<select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-											<option>Buying a Luxury Home</option>
-											<option>Selling a Luxury Home</option>
-											<option>Market Analysis</option>
-											<option>California Equity Buyer</option>
-											<option>Corporate Relocation</option>
-											<option>Investment Property</option>
-										</select>
-									</div>
-									<div>
-										<label class="block text-sm font-medium text-gray-700 mb-2">
-											Message
-										</label>
-										<textarea
-											rows={4}
-											class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-											placeholder="Tell us about your real estate needs..."
-										></textarea>
-									</div>
-									<button
-										type="submit"
-										class="w-full bg-blue-600 text-white py-4 px-6 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg"
-									>
-										Get Free Market Analysis
-									</button>
-								</form>
-							</div>
+							<ContactForm />
 						</div>
 					</div>
 				</div>
