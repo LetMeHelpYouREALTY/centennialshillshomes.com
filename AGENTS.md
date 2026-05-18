@@ -72,3 +72,23 @@ This is a real estate website focused on Centennial Hills, Las Vegas area. The s
 - Ensure keyboard navigation
 - Maintain color contrast ratios
 - Provide alt text for images
+
+## Cursor Cloud specific instructions
+
+### Architecture note
+This repo has a **dual architecture**: a legacy Qwik/Vite setup (`src/`, `vite.config.ts`) and the active **Next.js 14** app (`app/`, `components/`, `lib/`). The production app is Next.js deployed on Vercel. Ignore `src/` and `vite.config.ts` for development.
+
+### Running services
+- **Dev server**: `pnpm next-dev` (runs on port 3000). Do NOT use `pnpm dev` which also starts a Flask backend requiring `requirements.txt`.
+- **Lint**: `pnpm lint` (uses `next lint` with `.eslintrc.json`)
+- **Type check**: `pnpm type-check`
+- **Tests**: `pnpm test:run` (vitest, uses `vitest.config.ts` which overrides the legacy `vite.config.ts`)
+- **Format**: `pnpm format` (prettier)
+
+### Known issues
+- Tests have pre-existing failures due to mismatched mocks/exports (e.g., test imports `fubClient` but module exports `FollowUpBossClient`). The test infrastructure works.
+- TypeScript reports errors in `real-estate-mcp-worker/` (separate Cloudflare Worker project with its own dependencies).
+- Lint reports many `react/no-unescaped-entities` warnings across page files (pre-existing).
+
+### External services (all optional for local dev)
+All external integrations (OpenRouter AI, Follow Up Boss CRM, Upstash Redis, Cloudflare Turnstile, Sentry) degrade gracefully when env vars are absent. The site renders and navigates fully without them.
