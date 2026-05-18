@@ -7,6 +7,26 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { agentInfo, siteConfig, siteImages } from "@/lib/site-config";
 
+const mainNavLinks = [
+  { href: "/", label: "Home" },
+  { href: "/listings", label: "Listings" },
+  { href: "/neighborhoods", label: "Neighborhoods" },
+  { href: "/market-insights", label: "Market Insights" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+];
+
+const serviceLinks = [
+  { href: "/buyers", label: "Home Buying" },
+  { href: "/sellers", label: "Home Selling" },
+  { href: "/luxury-home-sales", label: "Luxury Home Sales" },
+  { href: "/market-analysis", label: "Market Analysis" },
+  { href: "/same-day-showings", label: "Same-Day Showings" },
+  { href: "/california-equity-buyers", label: "California Equity Buyers" },
+  { href: "/corporate-relocations", label: "Corporate Relocations" },
+  { href: "/investment-properties", label: "Investment Properties" },
+];
+
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,205 +40,219 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const mainNavLinks = [
-    { href: "/", label: "Home", external: false },
-    { href: "/listings", label: "Listings", external: false },
-    { href: "/neighborhoods", label: "Neighborhoods", external: false },
-    { href: "/about", label: "About", external: false },
-    { href: "/contact", label: "Contact", external: false },
-  ];
+  const logoClass = isScrolled
+    ? "max-h-9 max-w-[120px]"
+    : "max-h-11 max-w-[148px]";
 
-  const serviceLinks = [
-    { href: "/buyers", label: "Home Buying" },
-    { href: "/sellers", label: "Home Selling" },
-    { href: "/luxury-home-sales", label: "Luxury Home Sales" },
-    { href: "/market-analysis", label: "Market Analysis" },
-    { href: "/same-day-showings", label: "Same-Day Showings" },
-    { href: "/california-equity-buyers", label: "California Equity Buyers" },
-    { href: "/corporate-relocations", label: "Corporate Relocations" },
-    { href: "/investment-properties", label: "Investment Properties" },
-  ];
+  const closeMobile = () => setIsMobileMenuOpen(false);
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300 ${
-        isScrolled ? "py-2" : "py-3"
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300 ${
+        isScrolled ? "py-1.5" : "py-2.5"
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center">
-          {/* Brand Logo */}
-          <Link href="/" className="flex items-center gap-2.5 min-w-0">
+        <div className="flex items-center justify-between gap-4">
+          <Link
+            href="/"
+            className="flex min-w-0 shrink items-center gap-3"
+            aria-label={`${siteConfig.shortName} — ${agentInfo.name}`}
+          >
             <Image
               src={siteImages.logo}
-              alt={`${siteConfig.shortName} - ${agentInfo.name}`}
-              width={40}
-              height={40}
-              className="h-9 w-9 shrink-0 rounded-md border border-slate-200 bg-white object-contain p-0.5"
+              alt={`${siteConfig.shortName} — ${agentInfo.name}, ${agentInfo.brokerage}`}
+              width={512}
+              height={341}
+              priority
+              className={`h-auto w-auto shrink-0 object-contain transition-all ${logoClass}`}
             />
-            <span className="hidden sm:flex flex-col leading-tight">
-              <span className="text-base md:text-lg font-bold text-slate-900">
+            <span className="hidden min-w-0 flex-col leading-tight md:flex">
+              <span className="truncate text-sm font-bold text-slate-900 lg:text-base">
+                {agentInfo.name}
+              </span>
+              <span className="truncate text-xs text-slate-600">
                 {siteConfig.shortName}
               </span>
-              <span className="text-xs text-slate-500">{agentInfo.name}</span>
+              <span className="truncate text-[11px] text-slate-500">
+                {siteConfig.brandName}
+              </span>
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-5">
-            {mainNavLinks.map((link) =>
-              link.external ? (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-700 hover:text-blue-600 font-medium transition-colors text-sm"
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-slate-700 hover:text-blue-600 font-medium transition-colors text-sm"
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
-
-            {/* Services Dropdown */}
-            <div className="relative">
-              <button
-                className="flex items-center text-slate-700 hover:text-blue-600 font-medium transition-colors text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 rounded-md px-2 py-1"
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
-                onMouseEnter={() => setIsServicesOpen(true)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    setIsServicesOpen(!isServicesOpen);
-                  } else if (e.key === 'Escape') {
-                    setIsServicesOpen(false);
-                  }
-                }}
-                aria-expanded={isServicesOpen}
-                aria-haspopup="true"
-                aria-label="Services menu"
+          <nav className="hidden items-center space-x-4 lg:flex" aria-label="Main">
+            {mainNavLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-slate-700 transition-colors hover:text-blue-700"
               >
-                Services
-                <ChevronDown className="h-4 w-4 ml-1" aria-hidden="true" />
-              </button>
+                {link.label}
+              </Link>
+            ))}
 
-              {isServicesOpen && (
-                <div
-                  className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50"
-                  onMouseLeave={() => setIsServicesOpen(false)}
-                  role="menu"
-                  aria-orientation="vertical"
-                >
-                  {serviceLinks.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 focus-visible:outline-none focus-visible:bg-blue-50 focus-visible:text-blue-600"
-                      onClick={() => setIsServicesOpen(false)}
-                      role="menuitem"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+            <ServicesDropdown
+              isOpen={isServicesOpen}
+              onOpenChange={setIsServicesOpen}
+            />
 
-            <Button asChild className="bg-blue-600 hover:bg-blue-700">
+            <Button asChild className="bg-blue-700 hover:bg-blue-800">
               <Link href={agentInfo.phoneTel} className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
+                <Phone className="h-4 w-4" aria-hidden="true" />
                 <span className="hidden xl:inline">{agentInfo.phone}</span>
                 <span className="xl:hidden">Call</span>
               </Link>
             </Button>
-          </div>
+          </nav>
 
-          {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center gap-3">
-            <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700">
-              <Link href={agentInfo.phoneTel}>
-                <Phone className="h-4 w-4" />
+          <div className="flex items-center gap-2 lg:hidden">
+            <Button asChild size="sm" className="bg-blue-700 hover:bg-blue-800">
+              <Link href={agentInfo.phoneTel} aria-label={`Call ${agentInfo.name}`}>
+                <Phone className="h-4 w-4" aria-hidden="true" />
               </Link>
             </Button>
             <button
-              className="text-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 rounded-md p-1"
+              type="button"
+              className="rounded-md p-1 text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-700 focus-visible:ring-offset-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle menu"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMobileMenuOpen}
             >
-              {isMobileMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
+              {isMobileMenuOpen ? (
+                <X size={24} aria-hidden="true" />
+              ) : (
+                <Menu size={24} aria-hidden="true" />
+              )}
             </button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-slate-200">
-            <div className="flex flex-col space-y-1 pt-4">
-              {mainNavLinks.map((link) =>
-                link.external ? (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-medium transition-colors py-2 px-3 rounded"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {link.label}
-                  </a>
-                ) : (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-medium transition-colors py-2 px-3 rounded"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                )
-              )}
+          <nav
+            className="mt-3 border-t border-slate-200 pb-4 pt-3 lg:hidden"
+            aria-label="Mobile"
+          >
+            <div className="mb-3 flex items-center gap-3 border-b border-slate-100 pb-3">
+              <Image
+                src={siteImages.logo}
+                alt=""
+                width={512}
+                height={341}
+                className="max-h-10 max-w-[120px] object-contain"
+                aria-hidden
+              />
+              <div className="min-w-0 leading-tight">
+                <p className="truncate text-sm font-bold text-slate-900">
+                  {agentInfo.name}
+                </p>
+                <p className="truncate text-xs text-slate-600">
+                  {siteConfig.brandName}
+                </p>
+              </div>
+            </div>
 
-              {/* Services Section */}
-              <div className="border-t border-slate-200 pt-2 mt-2">
-                <span className="text-xs font-semibold text-slate-500 px-3 uppercase">
+            <div className="flex flex-col space-y-1">
+              {mainNavLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="rounded px-3 py-2 font-medium text-slate-700 transition-colors hover:bg-blue-50 hover:text-blue-700"
+                  onClick={closeMobile}
+                >
+                  {link.label}
+                </Link>
+              ))}
+
+              <div className="mt-2 border-t border-slate-200 pt-2">
+                <span className="px-3 text-xs font-semibold uppercase tracking-wide text-slate-500">
                   Services
                 </span>
                 {serviceLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-medium transition-colors py-2 px-3 rounded block"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block rounded px-3 py-2 text-slate-700 transition-colors hover:bg-blue-50 hover:text-blue-700"
+                    onClick={closeMobile}
                   >
                     {link.label}
                   </Link>
                 ))}
               </div>
 
-              <div className="pt-4">
-                <Button asChild className="bg-blue-600 hover:bg-blue-700 w-full">
-                  <Link
-                    href={agentInfo.phoneTel}
-                    className="flex items-center justify-center gap-2"
-                  >
-                    <Phone className="h-4 w-4" />
-                    Call Dr. Jan: {agentInfo.phone}
-                  </Link>
-                </Button>
-              </div>
+              <MobileCallCta onNavigate={closeMobile} />
             </div>
-          </div>
+          </nav>
         )}
       </div>
-    </nav>
+    </header>
+  );
+}
+
+function ServicesDropdown({
+  isOpen,
+  onOpenChange,
+}: {
+  isOpen: boolean;
+  onOpenChange: (open: boolean) => void;
+}) {
+  return (
+    <div className="relative">
+      <button
+        type="button"
+        className="flex items-center rounded-md px-2 py-1 text-sm font-medium text-slate-700 transition-colors hover:text-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-700 focus-visible:ring-offset-2"
+        onClick={() => onOpenChange(!isOpen)}
+        onMouseEnter={() => onOpenChange(true)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            onOpenChange(!isOpen);
+          } else if (e.key === "Escape") {
+            onOpenChange(false);
+          }
+        }}
+        aria-expanded={isOpen}
+        aria-haspopup="true"
+      >
+        Services
+        <ChevronDown className="ml-1 h-4 w-4" aria-hidden="true" />
+      </button>
+
+      {isOpen && (
+        <div
+          className="absolute left-0 top-full z-50 mt-2 w-56 rounded-lg bg-white py-2 shadow-lg ring-1 ring-slate-200"
+          onMouseLeave={() => onOpenChange(false)}
+          role="menu"
+        >
+          {serviceLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-700 focus-visible:bg-blue-50 focus-visible:text-blue-700 focus-visible:outline-none"
+              onClick={() => onOpenChange(false)}
+              role="menuitem"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function MobileCallCta({ onNavigate }: { onNavigate: () => void }) {
+  return (
+    <div className="pt-4">
+      <Button asChild className="w-full bg-blue-700 hover:bg-blue-800">
+        <Link
+          href={agentInfo.phoneTel}
+          className="flex items-center justify-center gap-2"
+          onClick={onNavigate}
+        >
+          <Phone className="h-4 w-4" aria-hidden="true" />
+          Call {agentInfo.name}: {agentInfo.phone}
+        </Link>
+      </Button>
+    </div>
   );
 }

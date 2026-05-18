@@ -73,6 +73,8 @@ const nextConfig = {
       { source: '/home-valuation', destination: '/market-analysis', permanent: true },
       { source: '/communities', destination: '/neighborhoods', permanent: true },
       { source: '/communities/', destination: '/neighborhoods', permanent: true },
+      { source: '/images/logo.png', destination: '/logo.png', permanent: true },
+      { source: '/images/logo.svg', destination: '/logo.svg', permanent: true },
       { source: '/images/:path*', destination: '/media/:path*', permanent: true },
       { source: '/neighborhoods/summerlin', destination: '/neighborhoods/summerlin-west', permanent: true },
     ]

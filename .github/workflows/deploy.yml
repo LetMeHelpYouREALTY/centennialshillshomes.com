@@ -120,7 +120,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               commit_sha: context.sha,
-              body: '🚀 **Production deployment successful!**\n\nYour Centennial Hills Homes website has been deployed to production.\n\n🔗 **Live Site**: https://centennialshillshomes.com\n📊 **Vercel Dashboard**: https://vercel.com/dashboard'
+              body: '🚀 **Production deployment successful!**\n\nYour Centennial Hills Homes website has been deployed to production.\n\n🔗 **Live Site**: https://www.centennialhillshomesforsale.com\n📊 **Vercel Dashboard**: https://vercel.com/dashboard'
             })
 
   notify:
