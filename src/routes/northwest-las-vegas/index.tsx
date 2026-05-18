@@ -8,7 +8,7 @@ import RealScoutOfficeListings from '../../components/realscout-office-listings'
 export default component$(() => {
   const northwestLasVegasSchema = pageSchemas.servicePage({
     name: "Northwest Las Vegas Real Estate - Premier Living Destination",
-    description: "Explore northwest Las Vegas real estate with Dr. Janet Duffy. Premier communities, master-planned developments, and investment opportunities.",
+    description: "Explore northwest Las Vegas real estate with Dr. Jan Duffy. Premier communities, master-planned developments, and investment opportunities.",
     slug: "northwest-las-vegas",
     serviceType: "Area Real Estate Services"
   });
@@ -472,11 +472,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Northwest Las Vegas Real Estate - Premier Living Destination | Dr. Janet Duffy',
+  title: 'Northwest Las Vegas Real Estate - Premier Living Destination | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore northwest Las Vegas real estate with Dr. Janet Duffy. Premier communities, master-planned developments, and investment opportunities.',
+      content: 'Explore northwest Las Vegas real estate with Dr. Jan Duffy. Premier communities, master-planned developments, and investment opportunities.',
     },
   ],
 };

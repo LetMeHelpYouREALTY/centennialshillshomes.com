@@ -87,7 +87,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Google Maps API Test - Dr. Janet Duffy Real Estate',
+  title: 'Google Maps API Test - Dr. Jan Duffy Real Estate',
   meta: [
     {
       name: 'description',

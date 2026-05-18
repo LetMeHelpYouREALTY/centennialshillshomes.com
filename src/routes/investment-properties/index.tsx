@@ -13,7 +13,7 @@ export default component$(() => {
             Investment Properties - <span class="highlight">Las Vegas Real Estate Investments</span>
           </h1>
           <p class="hero-subtitle">
-            Build wealth through Las Vegas real estate investments with Dr. Janet Duffy's expertise in investment property analysis and portfolio development. 
+            Build wealth through Las Vegas real estate investments with Dr. Jan Duffy's expertise in investment property analysis and portfolio development. 
             Rental properties, fix-and-flip opportunities, and long-term appreciation strategies.
           </p>
           <div class="hero-buttons">
@@ -55,7 +55,7 @@ export default component$(() => {
 
       <div class="container container-center">
         <h2>Strategic Real Estate Investment Opportunities</h2>
-        <p>Build wealth through Las Vegas real estate investments with Dr. Janet Duffy's expertise in investment property analysis and portfolio development. Our investment services cover rental properties, fix-and-flip opportunities, and long-term appreciation strategies in <a href="/centennial-hills">Centennial Hills</a> and other high-growth Las Vegas neighborhoods. Review our <a href="/market-analysis">market analysis</a> and <a href="/market-reports">market reports</a> to identify investment opportunities.</p>
+        <p>Build wealth through Las Vegas real estate investments with Dr. Jan Duffy's expertise in investment property analysis and portfolio development. Our investment services cover rental properties, fix-and-flip opportunities, and long-term appreciation strategies in <a href="/centennial-hills">Centennial Hills</a> and other high-growth Las Vegas neighborhoods. Review our <a href="/market-analysis">market analysis</a> and <a href="/market-reports">market reports</a> to identify investment opportunities.</p>
 
         <h2>Investment Property Analysis</h2>
         <p>Receive comprehensive investment analysis including cash flow projections, cap rate calculations, and return on investment (ROI) estimates for Las Vegas properties. Our analysis covers rental market trends, vacancy rates, appreciation potential, and tax advantages to help you make informed investment decisions.</p>
@@ -84,11 +84,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Investment Properties - Las Vegas Real Estate Investments | Dr. Janet Duffy',
+  title: 'Investment Properties - Las Vegas Real Estate Investments | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Las Vegas investment property opportunities with Dr. Janet Duffy. Rental properties, fix-and-flip investments, and portfolio building in Centennial Hills.',
+      content: 'Las Vegas investment property opportunities with Dr. Jan Duffy. Rental properties, fix-and-flip investments, and portfolio building in Centennial Hills.',
     },
   ],
 };

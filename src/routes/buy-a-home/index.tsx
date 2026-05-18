@@ -16,7 +16,7 @@ export default component$(() => {
             Buy Your Dream <span class="highlight">Centennial Hills Home</span> with Expert Guidance
           </h1>
           <p class="hero-subtitle">
-            Dr. Janet Duffy's comprehensive home buying services help you find the perfect Centennial Hills home. 
+            Dr. Jan Duffy's comprehensive home buying services help you find the perfect Centennial Hills home. 
             From first-time buyers to luxury home purchases, we provide personalized service and deep local market expertise.
           </p>
           {/* RealScout Advanced Search Widget */}
@@ -72,7 +72,7 @@ export default component$(() => {
             <div class="buyer-card">
               <HiHomeMini class="buyer-icon" />
               <h3>First-Time Homebuyers</h3>
-              <p>Navigating the home buying process for the first time? Dr. Janet Duffy provides comprehensive guidance through every step, from pre-approval to closing. Learn about Centennial Hills neighborhoods, financing options, and make informed decisions with confidence.</p>
+              <p>Navigating the home buying process for the first time? Dr. Jan Duffy provides comprehensive guidance through every step, from pre-approval to closing. Learn about Centennial Hills neighborhoods, financing options, and make informed decisions with confidence.</p>
               <ul>
                 <li>Pre-approval guidance</li>
                 <li>Neighborhood education</li>
@@ -133,7 +133,7 @@ export default component$(() => {
               <div class="step-number">1</div>
               <div class="step-content">
                 <h3>Initial Consultation</h3>
-                <p>We'll discuss your needs, budget, and preferences for your Centennial Hills home. Dr. Janet Duffy will provide market insights, financing guidance, and create a personalized buying strategy.</p>
+                <p>We'll discuss your needs, budget, and preferences for your Centennial Hills home. Dr. Jan Duffy will provide market insights, financing guidance, and create a personalized buying strategy.</p>
               </div>
             </div>
 
@@ -299,7 +299,7 @@ export default component$(() => {
             <div class="resource-card">
               <HiPhoneMini class="resource-icon" />
               <h3>Free Consultation</h3>
-              <p>Schedule a complimentary consultation with Dr. Janet Duffy to discuss your Centennial Hills home buying goals.</p>
+              <p>Schedule a complimentary consultation with Dr. Jan Duffy to discuss your Centennial Hills home buying goals.</p>
               <a href="/contact" class="btn btn-outline">Schedule Call</a>
             </div>
           </div>
@@ -310,7 +310,7 @@ export default component$(() => {
       <section class="cta-section">
         <div class="container container-center">
           <h2>Ready to Find Your Centennial Hills Home?</h2>
-          <p>Dr. Janet Duffy's expertise in Centennial Hills real estate ensures you'll find the perfect home with confidence. Contact us today to start your home buying journey with Las Vegas' top real estate professional.</p>
+          <p>Dr. Jan Duffy's expertise in Centennial Hills real estate ensures you'll find the perfect home with confidence. Contact us today to start your home buying journey with Las Vegas' top real estate professional.</p>
           <div class="cta-buttons">
             <a href="/contact" class="btn btn-primary btn-large">
               <HiPhoneMini class="btn-icon" />
@@ -714,11 +714,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Buy a Home in Centennial Hills | Dr. Janet Duffy Real Estate',
+  title: 'Buy a Home in Centennial Hills | Dr. Jan Duffy Real Estate',
   meta: [
     {
       name: 'description',
-      content: 'Expert home buying services in Centennial Hills. Dr. Janet Duffy helps first-time buyers, move-up buyers, and luxury home buyers find their perfect Centennial Hills home.',
+      content: 'Expert home buying services in Centennial Hills. Dr. Jan Duffy helps first-time buyers, move-up buyers, and luxury home buyers find their perfect Centennial Hills home.',
     },
   ],
 };

@@ -8,7 +8,7 @@ import FAQSection, { realtorServiceFAQs } from '../../components/faq-section';
 export default component$(() => {
   const providenceSchema = pageSchemas.servicePage({
     name: "Providence Real Estate - Luxury Community Living",
-    description: "Explore Providence real estate with Dr. Janet Duffy. Luxury gated community, custom estates, and exclusive amenities in Centennial Hills.",
+    description: "Explore Providence real estate with Dr. Jan Duffy. Luxury gated community, custom estates, and exclusive amenities in Centennial Hills.",
     slug: "providence",
     serviceType: "Luxury Community Services"
   });
@@ -482,11 +482,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Providence Real Estate - Luxury Community Living | Dr. Janet Duffy',
+  title: 'Providence Real Estate - Luxury Community Living | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore Providence real estate with Dr. Janet Duffy. Luxury gated community, custom estates, and exclusive amenities in Centennial Hills.',
+      content: 'Explore Providence real estate with Dr. Jan Duffy. Luxury gated community, custom estates, and exclusive amenities in Centennial Hills.',
     },
   ],
 };

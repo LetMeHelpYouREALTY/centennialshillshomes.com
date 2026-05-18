@@ -61,7 +61,7 @@ export default component$(() => {
             <div class="overview-content">
               <h2>California Equity Expertise</h2>
               <p>
-                Dr. Janet Duffy specializes in helping California residents leverage their home equity 
+                Dr. Jan Duffy specializes in helping California residents leverage their home equity 
                 to purchase property in Nevada. With deep understanding of both markets, tax implications, 
                 and financing options, we help Californians make smart real estate investments. Explore premier communities like <a href="/centennial-hills">Centennial Hills</a>, <a href="/summerlin">Summerlin</a>, and <a href="/red-rock-country-club">Red Rock Country Club</a> that are popular with California equity buyers. For corporate relocations, see our <a href="/corporate-relocation-services">corporate relocation services</a>.
               </p>
@@ -254,7 +254,7 @@ export default component$(() => {
       <section class="cta-section">
         <div class="container container-center">
           <h2>Ready to Leverage Your California Equity?</h2>
-          <p>Contact Dr. Janet Duffy for personalized guidance on maximizing your California equity in Nevada real estate.</p>
+          <p>Contact Dr. Jan Duffy for personalized guidance on maximizing your California equity in Nevada real estate.</p>
           <div class="cta-buttons">
             <a href="/contact" class="btn btn-primary">Contact Dr. Duffy</a>
             <a href="/market-analysis" class="btn btn-secondary">Get Market Analysis</a>

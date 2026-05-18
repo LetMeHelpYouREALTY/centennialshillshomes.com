@@ -181,7 +181,7 @@ export default component$(() => {
             Ready to Explore Northwest Las Vegas?
           </h2>
           <p class="text-blue-100 mb-6">
-            Let Dr. Janet Duffy show you the best areas and properties in Northwest Las Vegas
+            Let Dr. Jan Duffy show you the best areas and properties in Northwest Las Vegas
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/mls-search" class="btn btn-primary bg-white text-blue-600 hover:bg-gray-100">

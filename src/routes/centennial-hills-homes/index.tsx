@@ -9,7 +9,7 @@ export default component$(() => {
       <section class="hero-section">
         <div class="container container-center">
           <h1 class="hero-title">
-            Find Your Dream <span class="highlight">Centennial Hills Homes</span> with Dr. Janet Duffy
+            Find Your Dream <span class="highlight">Centennial Hills Homes</span> with Dr. Jan Duffy
           </h1>
           <p class="hero-subtitle">
             Las Vegas' premier real estate expert specializing in Centennial Hills homes for sale. 
@@ -190,7 +190,7 @@ export default component$(() => {
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
               </svg>
               <h3>Centennial Hills Home Buying</h3>
-              <p>Expert guidance for finding your perfect Centennial Hills home. From first-time buyers to luxury home purchases, Dr. Janet Duffy provides personalized service and deep local market knowledge.</p>
+              <p>Expert guidance for finding your perfect Centennial Hills home. From first-time buyers to luxury home purchases, Dr. Jan Duffy provides personalized service and deep local market knowledge.</p>
               <a href="/buy-a-home" class="service-link">Start Your Search →</a>
             </div>
             <div class="service-card">
@@ -198,7 +198,7 @@ export default component$(() => {
                 <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
               </svg>
               <h3>Centennial Hills Home Selling</h3>
-              <p>Maximize your Centennial Hills home's value with professional marketing, staging, and pricing strategies. Get top dollar for your property with Dr. Janet Duffy's proven selling approach.</p>
+              <p>Maximize your Centennial Hills home's value with professional marketing, staging, and pricing strategies. Get top dollar for your property with Dr. Jan Duffy's proven selling approach.</p>
               <a href="/sell-a-home" class="service-link">Get Free Valuation →</a>
             </div>
             <div class="service-card">
@@ -214,7 +214,7 @@ export default component$(() => {
                 <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
               </svg>
               <h3>Same-Day Showings</h3>
-              <p>Available 24/7 for Centennial Hills property showings. Whether you're buying or selling, Dr. Janet Duffy provides flexible scheduling to accommodate your busy lifestyle.</p>
+              <p>Available 24/7 for Centennial Hills property showings. Whether you're buying or selling, Dr. Jan Duffy provides flexible scheduling to accommodate your busy lifestyle.</p>
               <a href="/contact" class="service-link">Schedule Now →</a>
             </div>
           </div>
@@ -225,7 +225,7 @@ export default component$(() => {
       <section class="cta-section">
         <div class="container container-center">
           <h2>Ready to Find Your Centennial Hills Home?</h2>
-          <p>Contact Dr. Janet Duffy today for expert guidance in the Centennial Hills real estate market. With 30+ years of experience and deep local knowledge, she'll help you find the perfect home or sell your current property for maximum value.</p>
+          <p>Contact Dr. Jan Duffy today for expert guidance in the Centennial Hills real estate market. With 30+ years of experience and deep local knowledge, she'll help you find the perfect home or sell your current property for maximum value.</p>
           <div class="cta-buttons">
             <a href="/contact" class="btn btn-primary btn-large">
               <svg class="btn-icon" fill="currentColor" viewBox="0 0 20 20">
@@ -607,11 +607,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Centennial Hills Homes for Sale | Dr. Janet Duffy Real Estate',
+  title: 'Centennial Hills Homes for Sale | Dr. Jan Duffy Real Estate',
   meta: [
     {
       name: 'description',
-      content: 'Find your dream Centennial Hills home with Dr. Janet Duffy. Expert real estate services in Northwest Las Vegas. Browse luxury homes, new construction, and investment properties in Centennial Hills.',
+      content: 'Find your dream Centennial Hills home with Dr. Jan Duffy. Expert real estate services in Northwest Las Vegas. Browse luxury homes, new construction, and investment properties in Centennial Hills.',
     },
   ],
 };

@@ -274,7 +274,7 @@ export default component$(() => {
               <div class="action-card">
                 <LuCalendar class="action-icon" />
                 <h3>Schedule Viewing</h3>
-                <p>Book a same-day property viewing with Dr. Janet Duffy</p>
+                <p>Book a same-day property viewing with Dr. Jan Duffy</p>
                 <a href="/contact" class="btn btn-outline">Schedule Now</a>
               </div>
 
@@ -693,7 +693,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Homebuyer Interactive Tools - Dr. Janet Duffy',
+  title: 'Homebuyer Interactive Tools - Dr. Jan Duffy',
   meta: [
     {
       name: 'description',

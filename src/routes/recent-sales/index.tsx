@@ -467,11 +467,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Recent Sales - Las Vegas Real Estate Market Activity | Dr. Janet Duffy',
+  title: 'Recent Sales - Las Vegas Real Estate Market Activity | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Track Las Vegas real estate sales activity with Dr. Janet Duffy. Recent sales data, market trends, and comparative analysis for Centennial Hills and surrounding areas.',
+      content: 'Track Las Vegas real estate sales activity with Dr. Jan Duffy. Recent sales data, market trends, and comparative analysis for Centennial Hills and surrounding areas.',
     },
   ],
 };

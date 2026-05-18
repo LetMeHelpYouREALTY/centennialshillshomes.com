@@ -23,18 +23,18 @@ export default component$(() => {
         <p>For discerning buyers seeking ultimate customization, we offer access to Centennial Hills' finest custom home builders and architects. Create your dream luxury home with personalized design elements, premium materials, and cutting-edge technology in Las Vegas' most desirable northwest location.</p>
 
         <h2>Concierge-Level Service</h2>
-        <p>Dr. Janet Duffy provides white-glove service for luxury home buyers, including private showings, market analysis, and connections to the area's finest contractors and service providers. Experience personalized attention and expertise that matches the luxury of Centennial Hills homes.</p>
+        <p>Dr. Jan Duffy provides white-glove service for luxury home buyers, including private showings, market analysis, and connections to the area's finest contractors and service providers. Experience personalized attention and expertise that matches the luxury of Centennial Hills homes.</p>
       </div>
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Centennial Hills Luxury Homes - Premium Properties | Dr. Janet Duffy',
+  title: 'Centennial Hills Luxury Homes - Premium Properties | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore Centennial Hills luxury homes with Dr. Janet Duffy. Custom estates, premium finishes, and mountain views in Las Vegas\' premier northwest luxury communities.',
+      content: 'Explore Centennial Hills luxury homes with Dr. Jan Duffy. Custom estates, premium finishes, and mountain views in Las Vegas\' premier northwest luxury communities.',
     },
   ],
 };

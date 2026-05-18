@@ -316,7 +316,7 @@ export default component$(() => {
             Ready to Sell Your Centennial Hills Home?
           </h2>
           <p class="text-gray-300 mb-6">
-            Get a free home valuation and personalized selling strategy from Dr. Janet Duffy
+            Get a free home valuation and personalized selling strategy from Dr. Jan Duffy
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/home-valuation" class="btn btn-primary bg-white text-gray-900 hover:bg-gray-100">
@@ -333,19 +333,19 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Seller\'s Guide: How to Sell Your Centennial Hills Home | Dr. Janet Duffy',
+  title: 'Seller\'s Guide: How to Sell Your Centennial Hills Home | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Expert seller\'s guide for Centennial Hills homes. Learn how to maximize your home\'s value and sell quickly with Dr. Janet Duffy\'s proven strategies.',
+      content: 'Expert seller\'s guide for Centennial Hills homes. Learn how to maximize your home\'s value and sell quickly with Dr. Jan Duffy\'s proven strategies.',
     },
     {
       property: 'og:title',
-      content: 'Seller\'s Guide: How to Sell Your Centennial Hills Home | Dr. Janet Duffy',
+      content: 'Seller\'s Guide: How to Sell Your Centennial Hills Home | Dr. Jan Duffy',
     },
     {
       property: 'og:description',
-      content: 'Expert seller\'s guide for Centennial Hills homes. Learn how to maximize your home\'s value and sell quickly with Dr. Janet Duffy\'s proven strategies.',
+      content: 'Expert seller\'s guide for Centennial Hills homes. Learn how to maximize your home\'s value and sell quickly with Dr. Jan Duffy\'s proven strategies.',
     },
     {
       property: 'og:type',

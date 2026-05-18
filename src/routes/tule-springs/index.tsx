@@ -8,7 +8,7 @@ import RealScoutOfficeListings from '../../components/realscout-office-listings'
 export default component$(() => {
   const tuleSpringsSchema = pageSchemas.servicePage({
     name: "Tule Springs Real Estate - Natural Beauty and Recreation",
-    description: "Explore Tule Springs real estate with Dr. Janet Duffy. Natural beauty, recreation, and conservation-focused living in northwest Las Vegas.",
+    description: "Explore Tule Springs real estate with Dr. Jan Duffy. Natural beauty, recreation, and conservation-focused living in northwest Las Vegas.",
     slug: "tule-springs",
     serviceType: "Neighborhood Services"
   });
@@ -483,11 +483,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Tule Springs Real Estate - Natural Beauty and Recreation | Dr. Janet Duffy',
+  title: 'Tule Springs Real Estate - Natural Beauty and Recreation | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore Tule Springs real estate with Dr. Janet Duffy. Natural beauty, recreation, and conservation-focused living in northwest Las Vegas.',
+      content: 'Explore Tule Springs real estate with Dr. Jan Duffy. Natural beauty, recreation, and conservation-focused living in northwest Las Vegas.',
     },
   ],
 };

@@ -63,11 +63,11 @@ export default component$(() => {
   });
 
   const requestValuation = $(() => {
-    alert(`Professional valuation requested!\n\nProperty Details:\nType: ${propertyType.value}\nBedrooms: ${bedrooms.value}\nBathrooms: ${bathrooms.value}\nSquare Feet: ${squareFeet.value}\n\nDr. Janet Duffy will contact you within 24 hours for a detailed market analysis.`);
+    alert(`Professional valuation requested!\n\nProperty Details:\nType: ${propertyType.value}\nBedrooms: ${bedrooms.value}\nBathrooms: ${bathrooms.value}\nSquare Feet: ${squareFeet.value}\n\nDr. Jan Duffy will contact you within 24 hours for a detailed market analysis.`);
   });
 
   const scheduleListing = $(() => {
-    alert('Listing consultation scheduled!\n\nNext steps:\n1. Professional photography\n2. Marketing strategy\n3. Pricing strategy\n4. Showings coordination\n\nDr. Janet Duffy will contact you to schedule your listing consultation.');
+    alert('Listing consultation scheduled!\n\nNext steps:\n1. Professional photography\n2. Marketing strategy\n3. Pricing strategy\n4. Showings coordination\n\nDr. Jan Duffy will contact you to schedule your listing consultation.');
   });
 
   return (
@@ -701,7 +701,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Homeseller Interactive Tools - Dr. Janet Duffy',
+  title: 'Homeseller Interactive Tools - Dr. Jan Duffy',
   meta: [
     {
       name: 'description',

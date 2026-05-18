@@ -398,7 +398,7 @@ export default component$(() => {
                 <li><a href="/home-valuation" class="text-blue-600 hover:text-blue-800">Home Valuation</a></li>
                 <li><a href="/market-analysis" class="text-blue-600 hover:text-blue-800">Market Analysis</a></li>
                 <li><a href="/commute-calculator" class="text-blue-600 hover:text-blue-800">Commute Calculator</a></li>
-                <li><a href="/contact" class="text-blue-600 hover:text-blue-800">Contact Dr. Janet Duffy</a></li>
+                <li><a href="/contact" class="text-blue-600 hover:text-blue-800">Contact Dr. Jan Duffy</a></li>
               </ul>
             </div>
           </div>

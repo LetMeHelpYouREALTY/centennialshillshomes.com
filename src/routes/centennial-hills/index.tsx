@@ -271,7 +271,7 @@ export default component$(() => {
       <section class="cta-section">
         <div class="container container-center">
           <h2>Interested in Centennial Hills?</h2>
-          <p>Dr. Janet Duffy can help you find the perfect home in this wonderful community.</p>
+          <p>Dr. Jan Duffy can help you find the perfect home in this wonderful community.</p>
           <div class="cta-buttons">
             <a href="/contact" class="btn btn-primary">Contact Dr. Duffy</a>
             <a href="/properties" class="btn btn-secondary">View All Properties</a>
@@ -290,15 +290,15 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Centennial Hills Homes for Sale | Interactive Property Map | Las Vegas Real Estate | Dr. Janet Duffy',
+  title: 'Centennial Hills Homes for Sale | Interactive Property Map | Las Vegas Real Estate | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore Centennial Hills homes for sale with our interactive property map. Master-planned community in northwest Las Vegas featuring modern amenities, family-friendly atmosphere, excellent schools, and convenient access to Red Rock Canyon. Dr. Janet Duffy specializes in Centennial Hills real estate.',
+      content: 'Explore Centennial Hills homes for sale with our interactive property map. Master-planned community in northwest Las Vegas featuring modern amenities, family-friendly atmosphere, excellent schools, and convenient access to Red Rock Canyon. Dr. Jan Duffy specializes in Centennial Hills real estate.',
     },
     {
       name: 'author',
-      content: 'Dr. Janet Duffy, REALTOR®',
+      content: 'Dr. Jan Duffy, REALTOR®',
     },
     {
       name: 'geo.region',

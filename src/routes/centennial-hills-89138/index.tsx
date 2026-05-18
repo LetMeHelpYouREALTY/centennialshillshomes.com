@@ -30,11 +30,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Centennial Hills 89138 - North Centennial Hills Homes | Dr. Janet Duffy',
+  title: 'Centennial Hills 89138 - North Centennial Hills Homes | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore Centennial Hills 89138 with Dr. Janet Duffy, Top 1% Las Vegas REALTOR®. North Centennial Hills homes, new construction, and luxury properties in Las Vegas\' premier northwest ZIP code. Available 24/7 for executive clients.',
+      content: 'Explore Centennial Hills 89138 with Dr. Jan Duffy, Top 1% Las Vegas REALTOR®. North Centennial Hills homes, new construction, and luxury properties in Las Vegas\' premier northwest ZIP code. Available 24/7 for executive clients.',
     },
   ],
 };

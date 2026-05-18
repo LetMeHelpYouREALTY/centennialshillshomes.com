@@ -23,18 +23,18 @@ export default component$(() => {
         <p>New construction timelines in Centennial Hills typically range from 6-12 months depending on the builder and customization level. We guide you through the entire process from initial selection to final walkthrough, ensuring your new home meets all expectations and requirements.</p>
 
         <h2>Expert New Home Guidance</h2>
-        <p>Dr. Janet Duffy provides comprehensive assistance for new construction buyers, including builder negotiations, upgrade selections, and construction monitoring. Our expertise ensures you make informed decisions and avoid common pitfalls when building your dream home in Centennial Hills.</p>
+        <p>Dr. Jan Duffy provides comprehensive assistance for new construction buyers, including builder negotiations, upgrade selections, and construction monitoring. Our expertise ensures you make informed decisions and avoid common pitfalls when building your dream home in Centennial Hills.</p>
       </div>
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Centennial Hills New Construction Homes | Dr. Janet Duffy',
+  title: 'Centennial Hills New Construction Homes | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore Centennial Hills new construction homes with Dr. Janet Duffy. Brand new homes, modern designs, and builder partnerships in Las Vegas\' premier northwest community.',
+      content: 'Explore Centennial Hills new construction homes with Dr. Jan Duffy. Brand new homes, modern designs, and builder partnerships in Las Vegas\' premier northwest community.',
     },
   ],
 };

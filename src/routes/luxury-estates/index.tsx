@@ -70,18 +70,18 @@ export default component$(() => {
         <p>Invest in luxury estates with strong appreciation potential, rental income opportunities, and tax advantages. Our investment analysis covers luxury market trends, rental rates for high-end properties, and long-term appreciation forecasts for Las Vegas' most desirable luxury estate locations.</p>
 
         <h2>Concierge Estate Services</h2>
-        <p>Experience white-glove service for luxury estate transactions including private showings, off-market opportunities, and connections to Las Vegas' finest contractors and service providers. Dr. Janet Duffy provides the discretion, expertise, and attention to detail expected by luxury estate buyers and sellers.</p>
+        <p>Experience white-glove service for luxury estate transactions including private showings, off-market opportunities, and connections to Las Vegas' finest contractors and service providers. Dr. Jan Duffy provides the discretion, expertise, and attention to detail expected by luxury estate buyers and sellers.</p>
       </div>
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Luxury Estates - Premium Las Vegas Properties | Dr. Janet Duffy',
+  title: 'Luxury Estates - Premium Las Vegas Properties | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Las Vegas luxury estates with Dr. Janet Duffy. Premium properties, custom features, and exclusive communities in Centennial Hills and The Ridges.',
+      content: 'Las Vegas luxury estates with Dr. Jan Duffy. Premium properties, custom features, and exclusive communities in Centennial Hills and The Ridges.',
     },
   ],
 };

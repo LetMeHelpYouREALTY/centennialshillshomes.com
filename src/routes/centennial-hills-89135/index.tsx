@@ -298,7 +298,7 @@ export default component$(() => {
       <section class="cta-section">
         <div class="container container-center">
           <h2>Find Your Centennial Hills 89135 Home Today</h2>
-          <p>Dr. Janet Duffy's expertise in Central Centennial Hills real estate ensures you'll find the perfect home in ZIP code 89135. Contact us today for personalized assistance and local market insights.</p>
+          <p>Dr. Jan Duffy's expertise in Central Centennial Hills real estate ensures you'll find the perfect home in ZIP code 89135. Contact us today for personalized assistance and local market insights.</p>
           <div class="cta-buttons">
             <a href="/contact" class="btn btn-primary btn-large">
               <HiPhoneMini class="btn-icon" />
@@ -739,11 +739,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Centennial Hills Homes ZIP Code 89135 | Dr. Janet Duffy Real Estate',
+  title: 'Centennial Hills Homes ZIP Code 89135 | Dr. Jan Duffy Real Estate',
   meta: [
     {
       name: 'description',
-      content: 'Find homes in Centennial Hills ZIP code 89135. Central Centennial Hills real estate with established neighborhoods, excellent schools, and mature landscaping. Dr. Janet Duffy expert guidance.',
+      content: 'Find homes in Centennial Hills ZIP code 89135. Central Centennial Hills real estate with established neighborhoods, excellent schools, and mature landscaping. Dr. Jan Duffy expert guidance.',
     },
   ],
 };

@@ -8,7 +8,7 @@ import FAQSection, { realtorServiceFAQs } from '../../components/faq-section';
 export default component$(() => {
   const alianteSchema = pageSchemas.servicePage({
     name: "Aliante Real Estate - Master-Planned Community",
-    description: "Explore Aliante real estate with Dr. Janet Duffy. Master-planned community homes, amenities, and investment opportunities in North Las Vegas.",
+    description: "Explore Aliante real estate with Dr. Jan Duffy. Master-planned community homes, amenities, and investment opportunities in North Las Vegas.",
     slug: "aliante",
     serviceType: "Master-Planned Community Services"
   });
@@ -475,11 +475,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Aliante Real Estate - Master-Planned Community | Dr. Janet Duffy',
+  title: 'Aliante Real Estate - Master-Planned Community | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore Aliante real estate with Dr. Janet Duffy. Master-planned community homes, amenities, and investment opportunities in North Las Vegas.',
+      content: 'Explore Aliante real estate with Dr. Jan Duffy. Master-planned community homes, amenities, and investment opportunities in North Las Vegas.',
     },
   ],
 };

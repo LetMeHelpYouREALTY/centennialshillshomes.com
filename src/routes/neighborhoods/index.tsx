@@ -181,7 +181,7 @@ export default component$(() => {
             Find Your Perfect Neighborhood
           </h2>
           <p class="text-blue-100 mb-6">
-            Let Dr. Janet Duffy help you discover the ideal community for your lifestyle and budget
+            Let Dr. Jan Duffy help you discover the ideal community for your lifestyle and budget
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/mls-search" class="btn btn-primary bg-white text-blue-600 hover:bg-gray-100">

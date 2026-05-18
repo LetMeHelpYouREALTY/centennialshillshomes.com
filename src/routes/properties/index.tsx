@@ -44,7 +44,7 @@ export default component$(() => {
       <section class="property-overview">
         <div class="container container-center">
           <h2>Las Vegas Premier Property Portfolio</h2>
-          <p>Dr. Janet Duffy presents an exceptional collection of luxury homes, investment properties, and family residences throughout Las Vegas' most desirable communities. Our portfolio features properties ranging from elegant starter homes to magnificent estates, each carefully selected to meet diverse buyer needs and investment objectives. Whether you're seeking a family home in a top-rated school district, a luxury estate with resort-style amenities, or an investment property with strong rental potential, our comprehensive property selection offers something for every buyer. Explore properties in <a href="/centennial-hills">Centennial Hills</a>, <a href="/summerlin">Summerlin</a>, <a href="/red-rock-country-club">Red Rock Country Club</a>, <a href="/the-ridges">The Ridges</a>, and other premier communities.</p>
+          <p>Dr. Jan Duffy presents an exceptional collection of luxury homes, investment properties, and family residences throughout Las Vegas' most desirable communities. Our portfolio features properties ranging from elegant starter homes to magnificent estates, each carefully selected to meet diverse buyer needs and investment objectives. Whether you're seeking a family home in a top-rated school district, a luxury estate with resort-style amenities, or an investment property with strong rental potential, our comprehensive property selection offers something for every buyer. Explore properties in <a href="/centennial-hills">Centennial Hills</a>, <a href="/summerlin">Summerlin</a>, <a href="/red-rock-country-club">Red Rock Country Club</a>, <a href="/the-ridges">The Ridges</a>, and other premier communities.</p>
           
           <h3>Property Types Available</h3>
           <p>Our property portfolio includes single-family homes, luxury estates, condominiums, townhouses, and investment properties across Las Vegas' premier communities. Each property type offers unique advantages, from the privacy and space of single-family homes to the low-maintenance lifestyle of condominiums. Luxury estates provide exceptional amenities and prestige, while investment properties offer strong rental income potential and appreciation opportunities.</p>
@@ -345,7 +345,7 @@ export default component$(() => {
       <section class="cta-section">
         <div class="container container-center">
           <h2>Don't See What You're Looking For?</h2>
-          <p>Dr. Janet Duffy can help you find the perfect property or market your current home. With access to exclusive listings, off-market opportunities, and comprehensive market knowledge, Dr. Duffy ensures you don't miss exceptional properties that match your criteria. Contact us today to discuss your property needs and discover opportunities that may not be publicly listed.</p>
+          <p>Dr. Jan Duffy can help you find the perfect property or market your current home. With access to exclusive listings, off-market opportunities, and comprehensive market knowledge, Dr. Duffy ensures you don't miss exceptional properties that match your criteria. Contact us today to discuss your property needs and discover opportunities that may not be publicly listed.</p>
           
           <h3>Off-Market and Exclusive Listings</h3>
           <p>Many exceptional properties are available through off-market listings and exclusive opportunities not found in public databases. Dr. Duffy's extensive network and market presence provide access to these exclusive properties, giving you advantages over other buyers. Contact us to learn about off-market opportunities that may perfectly match your property search criteria.</p>
@@ -364,19 +364,19 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Las Vegas Properties for Sale | Dr. Janet Duffy Real Estate',
+  title: 'Las Vegas Properties for Sale | Dr. Jan Duffy Real Estate',
   meta: [
     {
       name: 'description',
-      content: 'Browse luxury homes and investment properties in Las Vegas. Dr. Janet Duffy specializes in Centennial Hills, Red Rock Country Club, and other premier communities.',
+      content: 'Browse luxury homes and investment properties in Las Vegas. Dr. Jan Duffy specializes in Centennial Hills, Red Rock Country Club, and other premier communities.',
     },
     {
       property: 'og:title',
-      content: 'Las Vegas Properties for Sale | Dr. Janet Duffy Real Estate',
+      content: 'Las Vegas Properties for Sale | Dr. Jan Duffy Real Estate',
     },
     {
       property: 'og:description',
-      content: 'Browse luxury homes and investment properties in Las Vegas. Dr. Janet Duffy specializes in Centennial Hills, Red Rock Country Club, and other premier communities.',
+      content: 'Browse luxury homes and investment properties in Las Vegas. Dr. Jan Duffy specializes in Centennial Hills, Red Rock Country Club, and other premier communities.',
     },
     {
       property: 'og:type',
@@ -396,11 +396,11 @@ export const head: DocumentHead = {
     },
     {
       name: 'twitter:title',
-      content: 'Las Vegas Properties for Sale | Dr. Janet Duffy Real Estate',
+      content: 'Las Vegas Properties for Sale | Dr. Jan Duffy Real Estate',
     },
     {
       name: 'twitter:description',
-      content: 'Browse luxury homes and investment properties in Las Vegas. Dr. Janet Duffy specializes in Centennial Hills, Red Rock Country Club, and other premier communities.',
+      content: 'Browse luxury homes and investment properties in Las Vegas. Dr. Jan Duffy specializes in Centennial Hills, Red Rock Country Club, and other premier communities.',
     },
   ],
 };

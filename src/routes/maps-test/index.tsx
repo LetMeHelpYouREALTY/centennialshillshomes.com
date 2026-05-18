@@ -44,7 +44,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Maps Test - Dr. Janet Duffy Real Estate',
+  title: 'Maps Test - Dr. Jan Duffy Real Estate',
   meta: [
     {
       name: 'description',

@@ -463,7 +463,7 @@ export default component$<MapsWidgetProps>((props) => {
           <strong>Interactive Map Features:</strong> Click on property markers for details, use search to find specific addresses, toggle layers to view neighborhoods, school districts, and sales data. All data is updated regularly for accuracy.
         </p>
         <div class="seo-content" style="display: none;" aria-hidden="true">
-          <p>Las Vegas real estate map showing available properties, neighborhood boundaries, school districts, and recent sales data. Dr. Janet Duffy specializes in luxury homes in Centennial Hills, Summerlin, and northwest Las Vegas communities.</p>
+          <p>Las Vegas real estate map showing available properties, neighborhood boundaries, school districts, and recent sales data. Dr. Jan Duffy specializes in luxury homes in Centennial Hills, Summerlin, and northwest Las Vegas communities.</p>
         </div>
       </div>
     </div>

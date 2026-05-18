@@ -15,7 +15,7 @@ export interface SEOKeywords {
  * Format: Primary Keyword | Service Type | Location | Brand
  * Max 60 characters for optimal display
  */
-export function generateOptimizedTitle(keywords: SEOKeywords, brand: string = "Dr. Janet Duffy"): string {
+export function generateOptimizedTitle(keywords: SEOKeywords, brand: string = "Dr. Jan Duffy"): string {
   const parts: string[] = [];
   
   // Primary keyword (most important)

@@ -8,7 +8,7 @@ import RealScoutOfficeListings from '../../components/realscout-office-listings'
 export default component$(() => {
   const northLasVegasSchema = pageSchemas.servicePage({
     name: "North Las Vegas Real Estate - Growing Community",
-    description: "Explore North Las Vegas real estate with Dr. Janet Duffy. New developments, established neighborhoods, and investment opportunities in growing Las Vegas community.",
+    description: "Explore North Las Vegas real estate with Dr. Jan Duffy. New developments, established neighborhoods, and investment opportunities in growing Las Vegas community.",
     slug: "north-las-vegas",
     serviceType: "Area Real Estate Services"
   });
@@ -446,11 +446,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'North Las Vegas Real Estate - Growing Community | Dr. Janet Duffy',
+  title: 'North Las Vegas Real Estate - Growing Community | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore North Las Vegas real estate with Dr. Janet Duffy. New developments, established neighborhoods, and investment opportunities in growing Las Vegas community.',
+      content: 'Explore North Las Vegas real estate with Dr. Jan Duffy. New developments, established neighborhoods, and investment opportunities in growing Las Vegas community.',
     },
   ],
 };

@@ -583,7 +583,7 @@ export default component$(() => {
       <section class="cta-section py-16">
         <div class="container container-center">
           <h2>Ready for Luxury Living?</h2>
-          <p>Dr. Janet Duffy specializes in Red Rock Country Club properties and can help you find your dream home.</p>
+          <p>Dr. Jan Duffy specializes in Red Rock Country Club properties and can help you find your dream home.</p>
           <div class="cta-buttons">
             <a href="/contact" class="btn btn-primary">Contact Dr. Duffy</a>
             <a href="/luxury-home-sales" class="btn btn-secondary">Luxury Home Sales</a>

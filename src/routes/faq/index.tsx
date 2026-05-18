@@ -11,7 +11,7 @@ export default component$(() => {
             Frequently Asked <span class="highlight">Questions</span>
           </h1>
           <p class="hero-subtitle">
-            Get answers to common questions about Las Vegas real estate, Dr. Janet Duffy's services, and the home buying process.
+            Get answers to common questions about Las Vegas real estate, Dr. Jan Duffy's services, and the home buying process.
           </p>
         </div>
       </section>
@@ -24,18 +24,18 @@ export default component$(() => {
               <h2>General Questions</h2>
               
               <div class="faq-item">
-                <h3>What is Dr. Janet Duffy Real Estate?</h3>
+                <h3>What is Dr. Jan Duffy Real Estate?</h3>
                 <p>
-                  Dr. Janet Duffy Real Estate is a specialized real estate service focused on luxury home sales, 
+                  Dr. Jan Duffy Real Estate is a specialized real estate service focused on luxury home sales, 
                   California equity buyers, and corporate relocations in Las Vegas' most prestigious communities. 
                   We provide personalized service with same-day showings and comprehensive market analysis.
                 </p>
               </div>
 
               <div class="faq-item">
-                <h3>What services does Dr. Janet Duffy provide?</h3>
+                <h3>What services does Dr. Jan Duffy provide?</h3>
                 <p>
-                  Dr. Janet Duffy offers a comprehensive range of real estate services including:
+                  Dr. Jan Duffy offers a comprehensive range of real estate services including:
                 </p>
                 <ul>
                   <li>Luxury Home Sales in Las Vegas' premier communities</li>
@@ -48,7 +48,7 @@ export default component$(() => {
               </div>
 
               <div class="faq-item">
-                <h3>How much do Dr. Janet Duffy's services cost?</h3>
+                <h3>How much do Dr. Jan Duffy's services cost?</h3>
                 <p>
                   Real estate commissions are typically paid by the seller and split between listing and buyer agents. 
                   Dr. Duffy's consultation and market analysis services are often provided at no additional cost to buyers. 
@@ -163,7 +163,7 @@ export default component$(() => {
             </div>
 
             <div class="faq-category">
-              <h2>Why Choose Dr. Janet Duffy?</h2>
+              <h2>Why Choose Dr. Jan Duffy?</h2>
               
               <div class="faq-item">
                 <h3>What makes Dr. Duffy different from other agents?</h3>
@@ -191,7 +191,7 @@ export default component$(() => {
       <section class="cta-section">
         <div class="container container-center">
           <h2>Still Have Questions?</h2>
-          <p>Contact Dr. Janet Duffy for personalized answers to your specific real estate questions.</p>
+          <p>Contact Dr. Jan Duffy for personalized answers to your specific real estate questions.</p>
           <div class="cta-buttons">
             <a href="/contact" class="btn btn-primary">Contact Dr. Duffy</a>
             <a href="/about" class="btn btn-secondary">About Dr. Duffy</a>
@@ -203,11 +203,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Real Estate FAQ | Dr. Janet Duffy Las Vegas',
+  title: 'Real Estate FAQ | Dr. Jan Duffy Las Vegas',
   meta: [
     {
       name: 'description',
-      content: 'Get answers to frequently asked questions about Las Vegas real estate, California equity buyers, corporate relocations, and Dr. Janet Duffy\'s services.',
+      content: 'Get answers to frequently asked questions about Las Vegas real estate, California equity buyers, corporate relocations, and Dr. Jan Duffy\'s services.',
     },
   ],
 };

@@ -9,7 +9,7 @@ export default component$(() => {
         <h1>Centennial Hills Homes for Sale - Active Listings</h1>
         
         <h2>Discover Your Dream Home in Centennial Hills</h2>
-        <p>Explore our comprehensive selection of Centennial Hills homes for sale, featuring luxury properties, new construction, and established neighborhoods. Dr. Janet Duffy brings 30+ years of real estate expertise to help you find the perfect home in Las Vegas' premier northwest community.</p>
+        <p>Explore our comprehensive selection of Centennial Hills homes for sale, featuring luxury properties, new construction, and established neighborhoods. Dr. Jan Duffy brings 30+ years of real estate expertise to help you find the perfect home in Las Vegas' premier northwest community.</p>
 
         {/* Featured Properties - Lead Generator */}
         <section class="featured-listings-section py-16">
@@ -46,18 +46,18 @@ export default component$(() => {
         <p>Centennial Hills combines suburban tranquility with urban convenience, offering easy access to Las Vegas attractions while maintaining a family-friendly atmosphere. The area features excellent schools, shopping centers, and recreational facilities, making it ideal for families, professionals, and retirees.</p>
 
         <h2>Expert Guidance Available</h2>
-        <p>Dr. Janet Duffy provides personalized service for all Centennial Hills home buyers, offering market insights, neighborhood tours, and negotiation expertise. Contact us today to schedule a private showing or discuss your specific requirements for Centennial Hills homes for sale.</p>
+        <p>Dr. Jan Duffy provides personalized service for all Centennial Hills home buyers, offering market insights, neighborhood tours, and negotiation expertise. Contact us today to schedule a private showing or discuss your specific requirements for Centennial Hills homes for sale.</p>
       </div>
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Centennial Hills Homes for Sale - Active Listings | Dr. Janet Duffy',
+  title: 'Centennial Hills Homes for Sale - Active Listings | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Browse active Centennial Hills homes for sale with Dr. Janet Duffy. Luxury properties, new construction, and established neighborhoods in Las Vegas\' premier northwest community.',
+      content: 'Browse active Centennial Hills homes for sale with Dr. Jan Duffy. Luxury properties, new construction, and established neighborhoods in Las Vegas\' premier northwest community.',
     },
   ],
 };

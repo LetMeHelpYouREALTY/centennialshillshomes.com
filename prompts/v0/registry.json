@@ -3,16 +3,17 @@
   "project": "centennialhillshomesforsale.com",
   "advisor": "v0-prompt-advisor",
   "updated": "2026-05-18",
+  "optimizationTracker": "prompts/v0/site-optimization-tracker.json",
   "prompts": [
     {
       "id": "homepage",
       "component": "Homepage",
       "file": "prompts/v0/homepage.md",
       "legacyFile": null,
-      "status": "ready",
-      "version": "1.0.0",
+      "status": "integrated",
+      "version": "1.1.0",
       "priority": 1,
-      "notes": "Dedupe featured listings, map fallback, Jan branding, hero strong tag"
+      "notes": "Integrated: dedupe listings, map fallback, Jan branding, global CTA pattern"
     },
     {
       "id": "header-nav",

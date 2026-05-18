@@ -15,7 +15,7 @@ export default component$(() => {
           </h1>
           <p class="hero-subtitle">
             Discover exclusive luxury homes and premium properties in Centennial Hills and Northwest Las Vegas. 
-            Dr. Janet Duffy's curated collection of exceptional Centennial Hills homes for discerning buyers.
+            Dr. Jan Duffy's curated collection of exceptional Centennial Hills homes for discerning buyers.
           </p>
           <div class="hero-buttons">
             <a href="/mls-search" class="btn btn-primary">Search All Properties</a>
@@ -282,7 +282,7 @@ export default component$(() => {
       <section class="exclusive-access">
         <div class="container container-center">
           <h2>Exclusive Access to Off-Market Properties</h2>
-          <p>Dr. Janet Duffy provides exclusive access to pre-market and off-market Centennial Hills luxury properties. Join our VIP client network for first access to the most desirable homes before they hit the public market.</p>
+          <p>Dr. Jan Duffy provides exclusive access to pre-market and off-market Centennial Hills luxury properties. Join our VIP client network for first access to the most desirable homes before they hit the public market.</p>
           <div class="exclusive-benefits">
             <div class="benefit-item">
               <HiStarMini class="benefit-icon" />
@@ -692,11 +692,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Luxury Listings in Centennial Hills | Dr. Janet Duffy Real Estate',
+  title: 'Luxury Listings in Centennial Hills | Dr. Jan Duffy Real Estate',
   meta: [
     {
       name: 'description',
-      content: 'Discover exclusive luxury homes in Centennial Hills with Dr. Janet Duffy. Premium properties, estates, new construction, and golf course homes in Northwest Las Vegas.',
+      content: 'Discover exclusive luxury homes in Centennial Hills with Dr. Jan Duffy. Premium properties, estates, new construction, and golf course homes in Northwest Las Vegas.',
     },
   ],
 };

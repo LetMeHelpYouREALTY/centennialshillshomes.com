@@ -1,6 +1,6 @@
 # V0 Prompt: Homepage (Advisor-approved v1.0.0)
 
-**Advisor status:** ready · **Registry ID:** `homepage`  
+**Advisor status:** integrated · **Registry ID:** `homepage`  
 **Copy everything below the line to [v0.dev](https://v0.dev)**
 
 ---

@@ -1,0 +1,17 @@
+{
+  "updated": "2026-05-18",
+  "completed": [
+    "Site-wide Dr. Jan Duffy branding (src ts/tsx)",
+    "Homepage duplicate featured listings removed",
+    "Homepage hero strong tag + OG meta Jan branding",
+    "Map widget embed fallback when API key missing or load fails",
+    "Global consultation CTA on pages without existing cta-section",
+    "Claude Advisor V0 prompt registry"
+  ],
+  "pendingV0": [
+    "neighborhood-landing-template",
+    "market-report-template",
+    "blog-article-template"
+  ],
+  "routesWithGlobalCta": "All index routes except PAGE_HAS_OWN_CTA in layout.tsx and /demo/*"
+}

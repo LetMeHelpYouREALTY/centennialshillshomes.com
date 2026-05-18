@@ -9,7 +9,7 @@ export default component$(() => {
         <h1>Las Vegas Real Estate Market Analysis</h1>
         
         <h2>Comprehensive Market Intelligence</h2>
-        <p>Access detailed Las Vegas real estate market analysis with Dr. Janet Duffy's 30+ years of research expertise. Our market analysis covers trends, pricing patterns, inventory levels, and future projections for <a href="/centennial-hills">Centennial Hills</a> and the broader Las Vegas metropolitan area to inform your real estate decisions. This comprehensive approach combines quantitative data analysis with qualitative market insights, providing a complete picture of current conditions and future opportunities. For specific neighborhood insights, review our <a href="/centennial-hills-market-report">Centennial Hills market report</a> and <a href="/market-reports">comprehensive market reports</a>.</p>
+        <p>Access detailed Las Vegas real estate market analysis with Dr. Jan Duffy's 30+ years of research expertise. Our market analysis covers trends, pricing patterns, inventory levels, and future projections for <a href="/centennial-hills">Centennial Hills</a> and the broader Las Vegas metropolitan area to inform your real estate decisions. This comprehensive approach combines quantitative data analysis with qualitative market insights, providing a complete picture of current conditions and future opportunities. For specific neighborhood insights, review our <a href="/centennial-hills-market-report">Centennial Hills market report</a> and <a href="/market-reports">comprehensive market reports</a>.</p>
         
         <h3>Data-Driven Analysis Methodology</h3>
         <p>Our market analysis methodology incorporates multiple data sources including MLS statistics, public records, economic indicators, and local market knowledge. This multi-faceted approach ensures accuracy and provides insights that automated systems cannot capture. By combining statistical analysis with on-the-ground expertise, we deliver market intelligence that helps clients make informed decisions based on both data and practical market realities.</p>
@@ -95,11 +95,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Las Vegas Real Estate Market Analysis | Dr. Janet Duffy',
+  title: 'Las Vegas Real Estate Market Analysis | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Comprehensive Las Vegas real estate market analysis with Dr. Janet Duffy. Market trends, pricing patterns, and investment insights for Centennial Hills and Las Vegas.',
+      content: 'Comprehensive Las Vegas real estate market analysis with Dr. Jan Duffy. Market trends, pricing patterns, and investment insights for Centennial Hills and Las Vegas.',
     },
   ],
 };

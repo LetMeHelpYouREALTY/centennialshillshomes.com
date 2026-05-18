@@ -1,9 +1,19 @@
 import { component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
 
-// Declare Google Maps types
 declare global {
   interface Window {
-    google: any;
+    google?: {
+      maps: {
+        Map: new (el: HTMLElement, opts: Record<string, unknown>) => unknown;
+        Marker: new (opts: Record<string, unknown>) => {
+          addListener: (event: string, fn: () => void) => void;
+        };
+        InfoWindow: new (opts: { content: string }) => {
+          open: (map: unknown, marker: unknown) => void;
+        };
+        Size: new (w: number, h: number) => unknown;
+      };
+    };
   }
 }
 
@@ -27,16 +37,13 @@ interface SimpleMapsWidgetProps {
   properties?: PropertyMarker[];
 }
 
-// Helper functions for marker styling
 const getMarkerIcon = (status: string) => {
-  const colors = {
+  const colors: Record<string, string> = {
     'for-sale': '#22c55e',
-    'sold': '#6b7280', 
-    'pending': '#f59e0b'
+    sold: '#6b7280',
+    pending: '#f59e0b',
   };
-  
-  const color = colors[status as keyof typeof colors] || '#3b82f6';
-  
+  const color = colors[status] ?? '#3b82f6';
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
     <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
       <path d="M16 2C10.48 2 6 6.48 6 12c0 8 10 18 10 18s10-10 10-18c0-5.52-4.48-10-10-10z" fill="${color}" stroke="white" stroke-width="2"/>
@@ -46,83 +53,82 @@ const getMarkerIcon = (status: string) => {
 };
 
 const getStatusColor = (status: string) => {
-  const colors = {
+  const colors: Record<string, string> = {
     'for-sale': '#22c55e',
-    'sold': '#6b7280',
-    'pending': '#f59e0b'
+    sold: '#6b7280',
+    pending: '#f59e0b',
   };
-  
-  return colors[status as keyof typeof colors] || '#3b82f6';
+  return colors[status] ?? '#3b82f6';
 };
+
+const getEmbedUrl = (lat: number, lng: number) =>
+  `https://maps.google.com/maps?q=${lat},${lng}&z=13&output=embed`;
 
 export default component$<SimpleMapsWidgetProps>((props) => {
   const mapRef = useSignal<HTMLDivElement>();
   const mapLoaded = useSignal(false);
+  const mapFailed = useSignal(false);
 
   const {
-    center = { lat: 36.1699, lng: -115.1398 },
+    center = { lat: 36.308, lng: -115.298 },
     zoom = 12,
-    title = "Map",
-    height = "400px",
+    title = 'Map',
+    height = '400px',
     properties = [],
   } = props;
 
   useVisibleTask$(async ({ track }) => {
     track(() => mapRef.value);
-    
-    if (!mapRef.value || mapLoaded.value) return;
 
-    // Check if we're in the browser
+    if (!mapRef.value || mapLoaded.value || mapFailed.value) return;
     if (typeof window === 'undefined') return;
 
     try {
-      // Load Google Maps API dynamically
-      if (!window.google || !window.google.maps) {
+      if (!window.google?.maps) {
         const script = document.createElement('script');
-        // Use environment variable for API key
-        const apiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY || 'AIzaSyBUvLymcTSnhOAffrlzM_rzYhmIbVfGEn8';
+        const apiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY || '';
+        if (!apiKey) {
+          mapFailed.value = true;
+          return;
+        }
         script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}`;
         script.async = true;
         script.defer = true;
         document.head.appendChild(script);
-        
-        await new Promise((resolve, reject) => {
-          script.onload = resolve;
-          script.onerror = reject;
+        await new Promise<void>((resolve, reject) => {
+          script.onload = () => resolve();
+          script.onerror = () => reject(new Error('Maps script failed'));
         });
       }
 
-      // Initialize map
-      const map = new (window as any).google.maps.Map(mapRef.value, {
-        center: center,
-        zoom: zoom,
+      const map = new window.google!.maps.Map(mapRef.value, {
+        center,
+        zoom,
         styles: [
           {
-            featureType: "poi",
-            elementType: "labels",
-            stylers: [{ visibility: "off" }]
-          }
-        ]
+            featureType: 'poi',
+            elementType: 'labels',
+            stylers: [{ visibility: 'off' }],
+          },
+        ],
       });
 
-      // Add property markers if provided
       if (properties.length > 0) {
-        properties.forEach((property) => {
-          const marker = new (window as any).google.maps.Marker({
+        for (const property of properties) {
+          const marker = new window.google!.maps.Marker({
             position: { lat: property.lat, lng: property.lng },
-            map: map,
+            map,
             title: `${property.address} - $${property.price}`,
             icon: {
               url: getMarkerIcon(property.status),
-              scaledSize: new (window as any).google.maps.Size(32, 32),
-            }
+              scaledSize: new window.google!.maps.Size(32, 32),
+            },
           });
 
-          // Add info window
-          const infoWindow = new (window as any).google.maps.InfoWindow({
+          const infoWindow = new window.google!.maps.InfoWindow({
             content: `
               <div style="padding: 8px; min-width: 200px;">
-                <h3 style="margin: 0 0 8px 0; color: #1f2937; font-size: 16px;">$${property.price}</h3>
+                <h3 style="margin: 0 0 8px 0; color: #1f2937; font-size: 16px;">$${Number(property.price).toLocaleString()}</h3>
                 <p style="margin: 0 0 8px 0; color: #6b7280; font-size: 14px;">${property.address}</p>
                 <div style="display: flex; gap: 12px; margin: 0 0 8px 0; font-size: 12px; color: #6b7280;">
                   <span>${property.beds} bed</span>
@@ -133,45 +139,80 @@ export default component$<SimpleMapsWidgetProps>((props) => {
                   ${property.status.replace('-', ' ')}
                 </span>
               </div>
-            `
+            `,
           });
 
           marker.addListener('click', () => {
             infoWindow.open(map, marker);
           });
-        });
+        }
       } else {
-        // Add a simple marker if no properties
-        new (window as any).google.maps.Marker({
+        new window.google!.maps.Marker({
           position: center,
-          map: map,
-          title: title,
+          map,
+          title,
         });
       }
 
       mapLoaded.value = true;
-    } catch (error) {
-      console.error('Error loading map:', error);
+    } catch {
+      mapFailed.value = true;
     }
   });
 
+  const mapsLink = `https://www.google.com/maps/search/?api=1&query=${center.lat},${center.lng}`;
+
   return (
-    <div style={{ width: '100%', height: height, border: '1px solid #ccc', borderRadius: '8px' }}>
-      <div ref={mapRef} style={{ width: '100%', height: '100%' }}>
-        {!mapLoaded.value && (
-          <div style={{ 
-            display: 'flex', 
-            alignItems: 'center', 
-            justifyContent: 'center', 
-            height: '100%', 
-            backgroundColor: '#f3f4f6',
-            color: '#6b7280'
-          }}>
-            Loading map...
+    <div style={{ width: '100%', height, border: '1px solid #e5e7eb', borderRadius: '8px', overflow: 'hidden' }}>
+      {mapFailed.value ? (
+        <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
+          <iframe
+            title={title}
+            src={getEmbedUrl(center.lat, center.lng)}
+            width="100%"
+            height="100%"
+            style={{ border: 0, flex: 1, minHeight: '400px' }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+          <div
+            style={{
+              padding: '0.75rem 1rem',
+              background: '#f9fafb',
+              borderTop: '1px solid #e5e7eb',
+              textAlign: 'center',
+              fontSize: '0.875rem',
+            }}
+          >
+            <a href={mapsLink} target="_blank" rel="noopener noreferrer" style={{ color: '#1e40af', fontWeight: 600 }}>
+              View on Google Maps
+            </a>
           </div>
-        )}
-      </div>
+        </div>
+      ) : (
+        <div ref={mapRef} style={{ width: '100%', height: '100%', position: 'relative' }}>
+          {!mapLoaded.value && (
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                height: '100%',
+                minHeight: '400px',
+                backgroundColor: '#f3f4f6',
+                color: '#6b7280',
+                gap: '0.5rem',
+              }}
+            >
+              <span>Loading map…</span>
+              <a href={mapsLink} style={{ color: '#1e40af', fontSize: '0.875rem' }}>
+                Open in Google Maps
+              </a>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 });
-

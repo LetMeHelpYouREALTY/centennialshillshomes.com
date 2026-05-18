@@ -6,8 +6,8 @@ import FAQSection, { realtorServiceFAQs } from '../../components/faq-section';
 
 export default component$(() => {
   const testimonialsSchema = pageSchemas.servicePage({
-    name: "Client Testimonials - Dr. Janet Duffy Real Estate Success Stories",
-    description: "Read client testimonials for Dr. Janet Duffy real estate services. Success stories from Las Vegas homebuyers, sellers, and investors in Centennial Hills.",
+    name: "Client Testimonials - Dr. Jan Duffy Real Estate Success Stories",
+    description: "Read client testimonials for Dr. Jan Duffy real estate services. Success stories from Las Vegas homebuyers, sellers, and investors in Centennial Hills.",
     slug: "testimonials",
     serviceType: "Client Testimonial Services"
   });
@@ -19,10 +19,10 @@ export default component$(() => {
       <section class="hero-section">
         <div class="container container-center">
           <h1 class="hero-title">
-            Client Testimonials - <span class="highlight">Dr. Janet Duffy Real Estate Success Stories</span>
+            Client Testimonials - <span class="highlight">Dr. Jan Duffy Real Estate Success Stories</span>
           </h1>
           <p class="hero-subtitle">
-            Read authentic testimonials from satisfied clients who have worked with Dr. Janet Duffy for their Las Vegas real 
+            Read authentic testimonials from satisfied clients who have worked with Dr. Jan Duffy for their Las Vegas real 
             estate transactions. Our clients consistently praise Dr. Duffy's expertise, professionalism, and dedication to 
             achieving their real estate goals in Centennial Hills and throughout the Las Vegas area.
           </p>
@@ -33,7 +33,7 @@ export default component$(() => {
         <div class="container container-center">
           <h2>Trusted by Las Vegas Homebuyers and Sellers</h2>
           <p>
-            Read authentic testimonials from satisfied clients who have worked with Dr. Janet Duffy for their Las Vegas real 
+            Read authentic testimonials from satisfied clients who have worked with Dr. Jan Duffy for their Las Vegas real 
             estate transactions. Our clients consistently praise Dr. Duffy's expertise, professionalism, and dedication to 
             achieving their real estate goals in Centennial Hills and throughout the Las Vegas area. These testimonials 
             reflect Dr. Duffy's commitment to client success and her ability to deliver exceptional results across diverse 
@@ -96,7 +96,7 @@ export default component$(() => {
 
           <h2>Luxury Home Buyer Testimonials</h2>
           <p>
-            Discover how Dr. Janet Duffy has helped luxury home buyers find their dream properties in Las Vegas' most 
+            Discover how Dr. Jan Duffy has helped luxury home buyers find their dream properties in Las Vegas' most 
             exclusive communities. Our luxury clients appreciate Dr. Duffy's attention to detail, market expertise, and 
             personalized service that exceeds expectations for high-end real estate transactions. These testimonials 
             demonstrate Dr. Duffy's ability to serve luxury buyers and deliver exceptional results in premium property 
@@ -162,7 +162,7 @@ export default component$(() => {
 
           <h2>First-Time Homebuyer Success Stories</h2>
           <p>
-            Learn from first-time homebuyers who successfully navigated the Las Vegas real estate market with Dr. Janet Duffy's 
+            Learn from first-time homebuyers who successfully navigated the Las Vegas real estate market with Dr. Jan Duffy's 
             guidance. These testimonials highlight Dr. Duffy's patient approach, educational support, and commitment to 
             ensuring first-time buyers understand every aspect of the homebuying process. These success stories demonstrate 
             Dr. Duffy's ability to serve first-time buyers and help them achieve successful home purchases.
@@ -226,7 +226,7 @@ export default component$(() => {
 
           <h2>Investment Property Client Reviews</h2>
           <p>
-            Read testimonials from real estate investors who have built successful portfolios with Dr. Janet Duffy's expertise. 
+            Read testimonials from real estate investors who have built successful portfolios with Dr. Jan Duffy's expertise. 
             Our investment clients value Dr. Duffy's market analysis, property evaluation skills, and strategic guidance that 
             helps maximize returns on Las Vegas real estate investments. These testimonials demonstrate Dr. Duffy's ability to 
             serve investors and help them achieve successful investment outcomes.
@@ -290,7 +290,7 @@ export default component$(() => {
 
           <h2>Corporate Relocation Experiences</h2>
           <p>
-            Explore testimonials from corporate executives and professionals who relocated to Las Vegas with Dr. Janet Duffy's 
+            Explore testimonials from corporate executives and professionals who relocated to Las Vegas with Dr. Jan Duffy's 
             assistance. These clients appreciate Dr. Duffy's understanding of relocation challenges, market knowledge, and 
             personalized service that makes transitioning to Las Vegas seamless and successful. These testimonials demonstrate 
             Dr. Duffy's ability to serve corporate relocations and help executives achieve successful moves.
@@ -353,7 +353,7 @@ export default component$(() => {
 
           <h2>Seller Success Stories</h2>
           <p>
-            Hear from home sellers who achieved optimal results with Dr. Janet Duffy's marketing expertise and negotiation 
+            Hear from home sellers who achieved optimal results with Dr. Jan Duffy's marketing expertise and negotiation 
             skills. Our seller testimonials demonstrate Dr. Duffy's ability to maximize property values, minimize time on 
             market, and ensure smooth transactions for Las Vegas home sellers. These success stories demonstrate Dr. Duffy's 
             ability to serve sellers and help them achieve successful home sales.
@@ -425,11 +425,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Client Testimonials - Dr. Janet Duffy Real Estate Success Stories',
+  title: 'Client Testimonials - Dr. Jan Duffy Real Estate Success Stories',
   meta: [
     {
       name: 'description',
-      content: 'Read client testimonials for Dr. Janet Duffy real estate services. Success stories from Las Vegas homebuyers, sellers, and investors in Centennial Hills.',
+      content: 'Read client testimonials for Dr. Jan Duffy real estate services. Success stories from Las Vegas homebuyers, sellers, and investors in Centennial Hills.',
     },
   ],
 };

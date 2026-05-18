@@ -6,8 +6,8 @@ import FAQSection, { realtorServiceFAQs } from '../../components/faq-section';
 
 export default component$(() => {
   const pressMediaSchema = pageSchemas.servicePage({
-    name: "Press & Media - Dr. Janet Duffy Real Estate Recognition",
-    description: "Press coverage and media recognition for Dr. Janet Duffy real estate services. Industry awards, expert commentary, and client success stories.",
+    name: "Press & Media - Dr. Jan Duffy Real Estate Recognition",
+    description: "Press coverage and media recognition for Dr. Jan Duffy real estate services. Industry awards, expert commentary, and client success stories.",
     slug: "press-media",
     serviceType: "Media Recognition Services"
   });
@@ -19,10 +19,10 @@ export default component$(() => {
       <section class="hero-section">
         <div class="container container-center">
           <h1 class="hero-title">
-            Press & Media - <span class="highlight">Dr. Janet Duffy Real Estate Recognition</span>
+            Press & Media - <span class="highlight">Dr. Jan Duffy Real Estate Recognition</span>
           </h1>
           <p class="hero-subtitle">
-            Dr. Janet Duffy's expertise and success in Las Vegas real estate have earned recognition from local and national 
+            Dr. Jan Duffy's expertise and success in Las Vegas real estate have earned recognition from local and national 
             media outlets. As a Top 1% REALTOR® with 30+ years of research expertise, Dr. Duffy has been featured in real 
             estate publications, local news coverage, and industry recognition programs highlighting her achievements in luxury 
             real estate and client service.
@@ -34,7 +34,7 @@ export default component$(() => {
         <div class="container container-center">
           <h2>Media Recognition and Press Coverage</h2>
           <p>
-            Dr. Janet Duffy's expertise and success in Las Vegas real estate have earned recognition from local and national 
+            Dr. Jan Duffy's expertise and success in Las Vegas real estate have earned recognition from local and national 
             media outlets. As a Top 1% REALTOR® with 30+ years of research expertise, Dr. Duffy has been featured in real 
             estate publications, local news coverage, and industry recognition programs highlighting her achievements in luxury 
             real estate and client service. This media recognition reflects Dr. Duffy's standing as a leading real estate 
@@ -98,7 +98,7 @@ export default component$(() => {
 
           <h2>Industry Awards and Recognition</h2>
           <p>
-            Dr. Janet Duffy has received numerous industry awards and recognition for her excellence in real estate, including 
+            Dr. Jan Duffy has received numerous industry awards and recognition for her excellence in real estate, including 
             Top 1% REALTOR® status, luxury home sales achievements, and client satisfaction awards. Her research background 
             and market expertise have been recognized by real estate organizations and professional associations throughout 
             Nevada. These awards and recognition reflect Dr. Duffy's commitment to excellence and her ability to deliver 
@@ -226,7 +226,7 @@ export default component$(() => {
 
           <h2>Client Success Stories in the Media</h2>
           <p>
-            Media coverage of Dr. Janet Duffy's client success stories highlights her ability to achieve exceptional results for 
+            Media coverage of Dr. Jan Duffy's client success stories highlights her ability to achieve exceptional results for 
             luxury home buyers, corporate relocations, and investment property transactions. These stories showcase her 
             expertise, dedication, and innovative approaches to real estate marketing and client service. Media coverage of 
             client success stories demonstrates Dr. Duffy's ability to deliver exceptional results and helps prospective clients 
@@ -353,7 +353,7 @@ export default component$(() => {
 
           <h2>Speaking Engagements and Industry Events</h2>
           <p>
-            Dr. Janet Duffy has been invited to speak at industry events, real estate conferences, and professional gatherings 
+            Dr. Jan Duffy has been invited to speak at industry events, real estate conferences, and professional gatherings 
             to share her expertise on luxury real estate, market trends, and client service excellence. Her presentations and 
             workshops provide valuable education for industry professionals and consumers interested in Las Vegas real estate. 
             This speaking engagement recognition demonstrates Dr. Duffy's standing as a respected authority and her commitment 
@@ -427,11 +427,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Press & Media - Dr. Janet Duffy Real Estate Recognition',
+  title: 'Press & Media - Dr. Jan Duffy Real Estate Recognition',
   meta: [
     {
       name: 'description',
-      content: 'Press coverage and media recognition for Dr. Janet Duffy real estate services. Industry awards, expert commentary, and client success stories.',
+      content: 'Press coverage and media recognition for Dr. Jan Duffy real estate services. Industry awards, expert commentary, and client success stories.',
     },
   ],
 };

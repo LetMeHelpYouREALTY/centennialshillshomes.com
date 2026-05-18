@@ -70,18 +70,18 @@ export default component$(() => {
         <p>Discover our featured properties and newest listings, including luxury homes with premium features, new construction opportunities, and unique properties with special characteristics. Our featured listings showcase the best available properties in Las Vegas with detailed analysis of their investment potential and lifestyle benefits.</p>
 
         <h2>Schedule Property Tours</h2>
-        <p>Arrange private showings for any active listing with Dr. Janet Duffy's personalized tour service. We provide detailed property analysis, neighborhood insights, and market comparisons during your property visits, ensuring you have all the information needed to make confident decisions about your Las Vegas home purchase.</p>
+        <p>Arrange private showings for any active listing with Dr. Jan Duffy's personalized tour service. We provide detailed property analysis, neighborhood insights, and market comparisons during your property visits, ensuring you have all the information needed to make confident decisions about your Las Vegas home purchase.</p>
       </div>
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Active Listings - Current Las Vegas Properties for Sale | Dr. Janet Duffy',
+  title: 'Active Listings - Current Las Vegas Properties for Sale | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Browse active Las Vegas property listings with Dr. Janet Duffy. Current homes for sale in Centennial Hills, luxury properties, and investment opportunities.',
+      content: 'Browse active Las Vegas property listings with Dr. Jan Duffy. Current homes for sale in Centennial Hills, luxury properties, and investment opportunities.',
     },
   ],
 };

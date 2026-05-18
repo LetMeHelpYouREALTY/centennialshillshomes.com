@@ -60,8 +60,8 @@ export default component$(() => {
           <h2 class="text-3xl font-bold text-gray-900 mb-6">Get In Touch Today</h2>
           <p class="text-lg text-gray-700 leading-relaxed mb-8">Ready to buy or sell real estate in Centennial Hills or Las Vegas? Contact Dr. Jan Duffy for personalized service and expert guidance. Luxury real estate specialist serving West Summerlin's premier neighborhoods including ZIP codes 89138, 89144, and 89135. Dr. Jan Duffy, REALTOR® offers 30+ years of research expertise in luxury homes $400K-$750K. Specializing in Red Rock Country Club, The Ridges, and Summerlin West communities for California equity buyers and corporate relocations. Top 1% Las Vegas REALTOR® providing same-day showings and complimentary market analysis. Available 24/7 for executive clients and luxury home investments.</p>
           
-          <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Why Choose Dr. Janet Duffy for Your Real Estate Needs</h2>
-        <p>Dr. Janet Duffy brings unparalleled expertise and dedication to every real estate transaction in Las Vegas. With over 30 years of research experience and a proven track record as a Top 1% REALTOR®, Dr. Duffy provides clients with data-driven insights, strategic guidance, and personalized service that exceeds expectations. Whether you're buying your first home, upgrading to a luxury property, selling an investment, or relocating to Las Vegas, Dr. Duffy's comprehensive approach ensures successful outcomes.</p>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Why Choose Dr. Jan Duffy for Your Real Estate Needs</h2>
+        <p>Dr. Jan Duffy brings unparalleled expertise and dedication to every real estate transaction in Las Vegas. With over 30 years of research experience and a proven track record as a Top 1% REALTOR®, Dr. Duffy provides clients with data-driven insights, strategic guidance, and personalized service that exceeds expectations. Whether you're buying your first home, upgrading to a luxury property, selling an investment, or relocating to Las Vegas, Dr. Duffy's comprehensive approach ensures successful outcomes.</p>
         
           <div class="space-y-6 mb-12">
             <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
@@ -120,7 +120,7 @@ export default component$(() => {
 
           <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Phone and Email Contact Information</h2>
           <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg mb-8">
-            <p class="text-gray-800 leading-relaxed mb-4">Call Dr. Janet Duffy directly at <a href="tel:+17029031952" class="text-blue-600 hover:text-blue-700 font-semibold text-lg">(702) 903-1952</a> for immediate assistance with your real estate needs. Available 24/7 for executive clients and urgent inquiries.</p>
+            <p class="text-gray-800 leading-relaxed mb-4">Call Dr. Jan Duffy directly at <a href="tel:+17029031952" class="text-blue-600 hover:text-blue-700 font-semibold text-lg">(702) 903-1952</a> for immediate assistance with your real estate needs. Available 24/7 for executive clients and urgent inquiries.</p>
             <p class="text-gray-700 leading-relaxed">Email for detailed questions, property information, or to schedule consultations. Dr. Duffy personally responds to all inquiries to ensure you receive the attention and expertise you deserve.</p>
           </div>
           
@@ -137,7 +137,7 @@ export default component$(() => {
           </div>
 
           <h2 class="text-3xl font-bold text-gray-900 mb-6">Office Location and Service Area</h2>
-        <p>Dr. Janet Duffy serves clients throughout Las Vegas with special focus on Centennial Hills, Summerlin, and northwest Las Vegas communities. Flexible scheduling accommodates busy professionals, executives, and families. Evening and weekend appointments available by request to meet your schedule and timeline requirements.</p>
+        <p>Dr. Jan Duffy serves clients throughout Las Vegas with special focus on Centennial Hills, Summerlin, and northwest Las Vegas communities. Flexible scheduling accommodates busy professionals, executives, and families. Evening and weekend appointments available by request to meet your schedule and timeline requirements.</p>
         
         <h3>Primary Service Areas</h3>
         <p>Dr. Duffy's primary service areas include Centennial Hills (zip codes 89135, 89138, 89144), Summerlin, Red Rock Country Club, The Ridges, Lone Mountain, and North Las Vegas. Her deep knowledge of these communities enables her to provide detailed insights about neighborhoods, schools, amenities, market trends, and property values specific to each area.</p>
@@ -150,7 +150,7 @@ export default component$(() => {
           center={{ lat: 36.1699, lng: -115.1398 }}
           zoom={11}
           title="Las Vegas Service Area"
-          description="Dr. Janet Duffy serves clients throughout Las Vegas with expertise in Centennial Hills, Summerlin, and northwest Las Vegas communities"
+          description="Dr. Jan Duffy serves clients throughout Las Vegas with expertise in Centennial Hills, Summerlin, and northwest Las Vegas communities"
           height="400px"
           placeholder="Search for your neighborhood or address..."
           showSearch={true}
@@ -188,7 +188,7 @@ export default component$(() => {
         <p>Strategic planning sessions help you develop a clear roadmap for achieving your real estate goals. Dr. Duffy works with you to identify priorities, establish timelines, understand market dynamics, and create actionable plans. These sessions ensure you're prepared for every phase of your real estate transaction.</p>
 
           <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Client Testimonials and References</h2>
-        <p>Dr. Janet Duffy's clients consistently rate her service as exceptional, citing her market expertise, attention to detail, and commitment to client success. Request references from recent clients to learn about their experience working with Dr. Duffy for their Las Vegas real estate transactions.</p>
+        <p>Dr. Jan Duffy's clients consistently rate her service as exceptional, citing her market expertise, attention to detail, and commitment to client success. Request references from recent clients to learn about their experience working with Dr. Duffy for their Las Vegas real estate transactions.</p>
         
         <h3>Proven Track Record</h3>
         <p>Dr. Duffy's Top 1% REALTOR® status reflects her consistent success in helping clients achieve their real estate goals. Her track record includes successful transactions across all price ranges, from first-time home purchases to luxury estate sales. This proven performance demonstrates her ability to deliver results regardless of transaction complexity or market conditions.</p>

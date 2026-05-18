@@ -345,7 +345,7 @@ export default component$<StructuredDataProps>(({ type, data }) => {
   );
 });
 
-// Predefined structured data for Dr. Janet Duffy - Updated September 2025
+// Predefined structured data for Dr. Jan Duffy - Updated September 2025
 export const janetDuffyStructuredData = {
   "name": "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
   "alternateName": "Dr. Jan Duffy Real Estate",

@@ -99,7 +99,7 @@ export default component$(() => {
               Featured Centennial Hills Properties
             </h2>
             <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-              Discover our latest luxury homes in Las Vegas' premier Northwest community. Explore <a href="/centennial-hills" class="text-blue-600 hover:underline">Centennial Hills homes</a>, <a href="/our-luxury-listings" class="text-blue-600 hover:underline">luxury listings</a>, and <a href="/new-construction" class="text-blue-600 hover:underline">new construction</a> opportunities.
+              Discover our latest luxury homes in Las Vegas' premier Northwest community. Explore <a href="/centennial-hills" class="text-blue-600 hover:underline">Centennial Hills homes</a>, <a href="/red-rock-country-club" class="text-blue-600 hover:underline">Red Rock Country Club</a>, <a href="/the-ridges" class="text-blue-600 hover:underline">The Ridges</a>, <a href="/our-luxury-listings" class="text-blue-600 hover:underline">luxury listings</a>, and <a href="/new-construction" class="text-blue-600 hover:underline">new construction</a>.
             </p>
           </div>
           
@@ -196,61 +196,6 @@ export default component$(() => {
         </div>
       </section>
 
-      {/* Featured Properties */}
-      <section class="featured-properties bg-gray-50">
-        <div class="container mx-auto px-4 py-16">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">
-              Featured Centennial Hills Properties
-            </h2>
-            <p class="text-lg text-gray-600">
-              Handpicked luxury homes in Las Vegas' most desirable neighborhoods including <a href="/red-rock-country-club" class="text-blue-600 hover:underline">Red Rock Country Club</a>, <a href="/the-ridges" class="text-blue-600 hover:underline">The Ridges</a>, <a href="/summerlin-west" class="text-blue-600 hover:underline">Summerlin West</a>, and <a href="/lone-mountain" class="text-blue-600 hover:underline">Lone Mountain</a>.
-            </p>
-          </div>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {centennialHillsProperties.slice(0, 3).map((property) => (
-              <div key={property.id} class="property-card bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="property-image-container">
-                  <div class="property-status-badge">
-                    <span class={`status-badge ${property.status}`}>
-                      {property.status.replace('-', ' ')}
-                    </span>
-                  </div>
-                  <img 
-                    src="/images/modern-home-exterior.jpg" 
-                    alt={`${property.address} - ${property.beds} bed, ${property.baths} bath home in Centennial Hills`}
-                    class="w-full h-48 object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="property-content p-6">
-                  <div class="property-price text-2xl font-bold text-gray-900 mb-2">
-                    ${Number(property.price).toLocaleString()}
-                  </div>
-                  <div class="property-address text-gray-600 mb-3">
-                    {property.address}
-                  </div>
-                  <div class="property-details flex gap-4 text-sm text-gray-500 mb-4">
-                    <span>{property.beds} bed</span>
-                    <span>{property.baths} bath</span>
-                    <span>{property.sqft.toLocaleString()} sq ft</span>
-                  </div>
-                  <a href="/contact" class="btn btn-outline w-full">
-                    Schedule Showing
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <div class="text-center mt-12">
-            <a href="/centennial-hills-homes-for-sale" class="btn btn-primary btn-lg">
-              View All Properties
-            </a>
-          </div>
-        </div>
-      </section>
 
       {/* Market Statistics */}
       <section class="market-stats">
@@ -341,7 +286,7 @@ export default component$(() => {
         <div class="container mx-auto px-4 py-16">
           <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-4">
-              Why Choose Dr. Janet Duffy?
+              Why Choose Dr. Jan Duffy?
             </h2>
             <p class="text-lg text-gray-600 max-w-2xl mx-auto">
               Top 1% REALTOR® with unmatched expertise in Las Vegas luxury real estate
@@ -479,11 +424,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:title',
-      content: 'Centennial Hills Real Estate | Dr. Janet Duffy - Top 1% Las Vegas REALTOR®',
+      content: 'Centennial Hills Real Estate | Dr. Jan Duffy - Top 1% Las Vegas REALTOR®',
     },
     {
       property: 'og:description',
-      content: 'Find your dream home in Centennial Hills, Las Vegas with Dr. Janet Duffy, Top 1% REALTOR®. 30+ years expertise in luxury homes, new construction, and California equity buyer relocations.',
+      content: 'Find your dream home in Centennial Hills, Las Vegas with Dr. Jan Duffy, Top 1% REALTOR®. 30+ years expertise in luxury homes, new construction, and California equity buyer relocations.',
     },
     {
       property: 'og:image',
@@ -507,11 +452,11 @@ export const head: DocumentHead = {
     },
     {
       name: 'twitter:title',
-      content: 'Centennial Hills Real Estate | Dr. Janet Duffy - Top 1% Las Vegas REALTOR®',
+      content: 'Centennial Hills Real Estate | Dr. Jan Duffy - Top 1% Las Vegas REALTOR®',
     },
     {
       name: 'twitter:description',
-      content: 'Find your dream home in Centennial Hills, Las Vegas with Dr. Janet Duffy, Top 1% REALTOR®. 30+ years expertise in luxury homes, new construction, and California equity buyer relocations.',
+      content: 'Find your dream home in Centennial Hills, Las Vegas with Dr. Jan Duffy, Top 1% REALTOR®. 30+ years expertise in luxury homes, new construction, and California equity buyer relocations.',
     },
     {
       name: 'twitter:image',

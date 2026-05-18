@@ -5,7 +5,7 @@ import { pageSchemas } from '../../components/seo-structured-data';
 import FAQSection, { realtorServiceFAQs } from '../../components/faq-section';
 
 export default component$(() => {
-  // Schema data for Dr. Janet Duffy person page
+  // Schema data for Dr. Jan Duffy person page
   const janetDuffySchema = pageSchemas.personPage({});
 
   return (
@@ -22,7 +22,7 @@ export default component$(() => {
         data={pageSchemas.breadcrumbList([
           { name: 'Home', url: '/' },
           { name: 'About', url: '/about' },
-          { name: 'Dr. Janet Duffy', url: '/janet-duffy' }
+          { name: 'Dr. Jan Duffy', url: '/janet-duffy' }
         ])} 
       />
       
@@ -38,17 +38,17 @@ export default component$(() => {
           </li>
           <li class="flex items-center">
             <span class="mx-2 text-gray-400" aria-hidden="true">/</span>
-            <span class="font-semibold text-gray-800">Dr. Janet Duffy</span>
+            <span class="font-semibold text-gray-800">Dr. Jan Duffy</span>
           </li>
         </ol>
       </nav>
 
       <div class="container container-center py-12">
-        <h1 class="text-4xl font-bold text-gray-900 mb-6">Dr. Janet Duffy - Top 1% Las Vegas REALTOR®</h1>
+        <h1 class="text-4xl font-bold text-gray-900 mb-6">Dr. Jan Duffy - Top 1% Las Vegas REALTOR®</h1>
         
         <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Meet Your Real Estate Expert</h2>
         <p class="text-lg text-gray-700 mb-4">
-          Dr. Janet Duffy brings over 30 years of research expertise and real estate experience to serve Las Vegas homebuyers and sellers. As a Top 1% REALTOR®, Dr. Duffy specializes in luxury real estate, corporate relocations, and California equity buyers, providing personalized service and market insights for <a href="/centennial-hills" class="text-blue-600 hover:underline">Centennial Hills</a> and northwest Las Vegas properties. Available 24/7 for executive clients and luxury home investments, Dr. Duffy offers same-day showings and complimentary <a href="/market-analysis" class="text-blue-600 hover:underline">market analysis</a>.
+          Dr. Jan Duffy brings over 30 years of research expertise and real estate experience to serve Las Vegas homebuyers and sellers. As a Top 1% REALTOR®, Dr. Duffy specializes in luxury real estate, corporate relocations, and California equity buyers, providing personalized service and market insights for <a href="/centennial-hills" class="text-blue-600 hover:underline">Centennial Hills</a> and northwest Las Vegas properties. Available 24/7 for executive clients and luxury home investments, Dr. Duffy offers same-day showings and complimentary <a href="/market-analysis" class="text-blue-600 hover:underline">market analysis</a>.
         </p>
         <p class="text-lg text-gray-700 mb-4">
           With a unique combination of academic research expertise and hands-on real estate experience, Dr. Duffy provides clients with data-driven insights that go beyond traditional real estate services. Her approach combines rigorous market analysis with personalized attention, ensuring that every client receives expert guidance tailored to their specific needs and goals.
@@ -59,7 +59,7 @@ export default component$(() => {
 
         <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Professional Credentials and Achievements</h2>
         <p class="text-lg text-gray-700 mb-4">
-          Dr. Janet Duffy holds advanced degrees in research and has achieved recognition as a Top 1% REALTOR® in Las Vegas. Her credentials include specialized training in luxury home sales, investment properties, and relocation services. Dr. Duffy's research background provides clients with data-driven market analysis and strategic real estate guidance that sets her apart from traditional real estate agents.
+          Dr. Jan Duffy holds advanced degrees in research and has achieved recognition as a Top 1% REALTOR® in Las Vegas. Her credentials include specialized training in luxury home sales, investment properties, and relocation services. Dr. Duffy's research background provides clients with data-driven market analysis and strategic real estate guidance that sets her apart from traditional real estate agents.
         </p>
         
         <h3 class="text-2xl font-semibold text-gray-900 mt-6 mb-3">Academic Excellence</h3>
@@ -116,7 +116,7 @@ export default component$(() => {
 
         <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Client Success Stories</h2>
         <p class="text-lg text-gray-700 mb-4">
-          Dr. Janet Duffy has successfully helped hundreds of families find their dream homes in Centennial Hills and surrounding areas. Her clients include executives, professionals, families, and investors who appreciate her attention to detail, market expertise, and commitment to exceeding expectations throughout the real estate process.
+          Dr. Jan Duffy has successfully helped hundreds of families find their dream homes in Centennial Hills and surrounding areas. Her clients include executives, professionals, families, and investors who appreciate her attention to detail, market expertise, and commitment to exceeding expectations throughout the real estate process.
         </p>
         
         <h3 class="text-2xl font-semibold text-gray-900 mt-6 mb-3">California Equity Buyer Success</h3>
@@ -166,7 +166,7 @@ export default component$(() => {
 
         <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Personalized Service Philosophy</h2>
         <p class="text-lg text-gray-700 mb-4">
-          Dr. Janet Duffy believes in building long-term relationships with clients through personalized service, honest communication, and expert guidance. Whether you're buying your first home, upgrading to a luxury property, or investing in Las Vegas real estate, Dr. Duffy provides the expertise and dedication needed for successful outcomes.
+          Dr. Jan Duffy believes in building long-term relationships with clients through personalized service, honest communication, and expert guidance. Whether you're buying your first home, upgrading to a luxury property, or investing in Las Vegas real estate, Dr. Duffy provides the expertise and dedication needed for successful outcomes.
         </p>
         
         <h3 class="text-2xl font-semibold text-gray-900 mt-6 mb-3">24/7 Availability for Executive Clients</h3>
@@ -205,11 +205,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Dr. Janet Duffy - Top 1% Las Vegas REALTOR® | Real Estate Expert',
+  title: 'Dr. Jan Duffy - Top 1% Las Vegas REALTOR® | Real Estate Expert',
   meta: [
     {
       name: 'description',
-      content: 'Meet Dr. Janet Duffy, Top 1% Las Vegas REALTOR® with 30+ years of research expertise. Specializing in Centennial Hills luxury real estate, California equity buyers, and corporate relocations. Available 24/7 for executive clients with same-day showings and complimentary market analysis. Licensed in Nevada License #S.0197614.',
+      content: 'Meet Dr. Jan Duffy, Top 1% Las Vegas REALTOR® with 30+ years of research expertise. Specializing in Centennial Hills luxury real estate, California equity buyers, and corporate relocations. Available 24/7 for executive clients with same-day showings and complimentary market analysis. Licensed in Nevada License #S.0197614.',
     },
     {
       name: 'robots',
@@ -217,11 +217,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:title',
-      content: 'Dr. Janet Duffy - Top 1% Las Vegas REALTOR® | Real Estate Expert',
+      content: 'Dr. Jan Duffy - Top 1% Las Vegas REALTOR® | Real Estate Expert',
     },
     {
       property: 'og:description',
-      content: 'Meet Dr. Janet Duffy, Top 1% Las Vegas REALTOR® with 30+ years of research expertise. Specializing in Centennial Hills luxury real estate and corporate relocations.',
+      content: 'Meet Dr. Jan Duffy, Top 1% Las Vegas REALTOR® with 30+ years of research expertise. Specializing in Centennial Hills luxury real estate and corporate relocations.',
     },
     {
       property: 'og:image',
@@ -245,7 +245,7 @@ export const head: DocumentHead = {
     },
     {
       name: 'twitter:title',
-      content: 'Dr. Janet Duffy - Top 1% Las Vegas REALTOR®',
+      content: 'Dr. Jan Duffy - Top 1% Las Vegas REALTOR®',
     },
     {
       name: 'twitter:description',

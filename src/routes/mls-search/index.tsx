@@ -127,7 +127,7 @@ export default component$(() => {
               Professional Guidance
             </h2>
             <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-              Dr. Janet Duffy provides expert interpretation of MLS data and market insights
+              Dr. Jan Duffy provides expert interpretation of MLS data and market insights
             </p>
           </div>
           
@@ -137,7 +137,7 @@ export default component$(() => {
                 Expert Market Analysis
               </h3>
               <p class="text-gray-600 mb-6">
-                Dr. Janet Duffy provides expert interpretation of MLS data, helping you understand 
+                Dr. Jan Duffy provides expert interpretation of MLS data, helping you understand 
                 market trends, pricing strategies, and neighborhood dynamics. Our personalized 
                 service ensures you find properties that meet your specific needs and budget 
                 requirements in the Las Vegas market.
@@ -181,7 +181,7 @@ export default component$(() => {
                 Ready to Find Your Dream Home?
               </h4>
               <p class="text-gray-600 mb-6">
-                Contact Dr. Janet Duffy for personalized assistance with your property search.
+                Contact Dr. Jan Duffy for personalized assistance with your property search.
               </p>
               <div class="space-y-3">
                 <a href="/contact" class="btn btn-primary w-full">
@@ -200,11 +200,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'MLS Search - Las Vegas Real Estate Listings | Dr. Janet Duffy',
+  title: 'MLS Search - Las Vegas Real Estate Listings | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Search Las Vegas MLS listings with Dr. Janet Duffy. Find homes for sale, condos, and luxury properties across all Las Vegas neighborhoods with advanced search tools.',
+      content: 'Search Las Vegas MLS listings with Dr. Jan Duffy. Find homes for sale, condos, and luxury properties across all Las Vegas neighborhoods with advanced search tools.',
     },
   ],
 };

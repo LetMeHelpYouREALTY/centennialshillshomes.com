@@ -14,7 +14,7 @@ export default component$(() => {
             Sell Your <span class="highlight">Centennial Hills Home</span> for Maximum Value
           </h1>
           <p class="hero-subtitle">
-            Dr. Janet Duffy's proven selling strategies help Centennial Hills homeowners achieve top dollar for their properties. 
+            Dr. Jan Duffy's proven selling strategies help Centennial Hills homeowners achieve top dollar for their properties. 
             From market analysis to professional marketing, we provide comprehensive services for a successful home sale.
           </p>
           <div class="hero-buttons">
@@ -32,7 +32,7 @@ export default component$(() => {
             <div class="service-card">
               <LuBarChart3 class="service-icon" />
               <h3>Market Analysis & Pricing</h3>
-              <p>Get an accurate market analysis of your Centennial Hills home's value. Dr. Janet Duffy provides comprehensive pricing strategies based on recent sales, market trends, and property features to maximize your return on investment.</p>
+              <p>Get an accurate market analysis of your Centennial Hills home's value. Dr. Jan Duffy provides comprehensive pricing strategies based on recent sales, market trends, and property features to maximize your return on investment.</p>
               <ul>
                 <li>Comparative Market Analysis (CMA)</li>
                 <li>Current market conditions review</li>
@@ -71,7 +71,7 @@ export default component$(() => {
             <div class="service-card">
               <LuDollarSign class="service-icon" />
               <h3>Negotiation & Closing</h3>
-              <p>Expert negotiation skills to secure the best possible terms and price for your Centennial Hills home. Dr. Janet Duffy handles all aspects of the transaction from offer review to successful closing.</p>
+              <p>Expert negotiation skills to secure the best possible terms and price for your Centennial Hills home. Dr. Jan Duffy handles all aspects of the transaction from offer review to successful closing.</p>
               <ul>
                 <li>Offer evaluation & strategy</li>
                 <li>Contract negotiation</li>
@@ -221,7 +221,7 @@ export default component$(() => {
                 <p class="story-location">89135 - Central Centennial Hills</p>
               </div>
               <div class="story-content">
-                <p>"Dr. Janet Duffy sold our Centennial Hills home for $25,000 above asking price in just 18 days. Her marketing strategy and negotiation skills were exceptional."</p>
+                <p>"Dr. Jan Duffy sold our Centennial Hills home for $25,000 above asking price in just 18 days. Her marketing strategy and negotiation skills were exceptional."</p>
                 <div class="story-stats">
                   <span>Listed: $685,000</span>
                   <span>Sold: $710,000</span>
@@ -236,7 +236,7 @@ export default component$(() => {
                 <p class="story-location">89138 - North Centennial Hills</p>
               </div>
               <div class="story-content">
-                <p>"We trusted Dr. Janet Duffy with our new construction Centennial Hills home. She positioned it perfectly in the market and found the ideal buyers quickly."</p>
+                <p>"We trusted Dr. Jan Duffy with our new construction Centennial Hills home. She positioned it perfectly in the market and found the ideal buyers quickly."</p>
                 <div class="story-stats">
                   <span>Listed: $725,000</span>
                   <span>Sold: $725,000</span>
@@ -251,7 +251,7 @@ export default component$(() => {
                 <p class="story-location">89144 - West Centennial Hills</p>
               </div>
               <div class="story-content">
-                <p>"Dr. Janet Duffy helped us sell our Centennial Hills investment property with excellent returns. Her market knowledge and investor network were invaluable."</p>
+                <p>"Dr. Jan Duffy helped us sell our Centennial Hills investment property with excellent returns. Her market knowledge and investor network were invaluable."</p>
                 <div class="story-stats">
                   <span>Listed: $485,000</span>
                   <span>Sold: $495,000</span>
@@ -267,7 +267,7 @@ export default component$(() => {
       <section class="cta-section">
         <div class="container container-center">
           <h2>Ready to Sell Your Centennial Hills Home?</h2>
-          <p>Dr. Janet Duffy's proven track record and deep Centennial Hills market expertise ensure you'll achieve maximum value for your home. Contact us today for a complimentary consultation and market analysis.</p>
+          <p>Dr. Jan Duffy's proven track record and deep Centennial Hills market expertise ensure you'll achieve maximum value for your home. Contact us today for a complimentary consultation and market analysis.</p>
           <div class="cta-buttons">
             <a href="/contact" class="btn btn-primary btn-large">
               <HiPhoneMini class="btn-icon" />
@@ -645,11 +645,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Sell Your Centennial Hills Home | Dr. Janet Duffy Real Estate',
+  title: 'Sell Your Centennial Hills Home | Dr. Jan Duffy Real Estate',
   meta: [
     {
       name: 'description',
-      content: 'Sell your Centennial Hills home for maximum value with Dr. Janet Duffy. Expert marketing, pricing, and negotiation services for successful home sales in Northwest Las Vegas.',
+      content: 'Sell your Centennial Hills home for maximum value with Dr. Jan Duffy. Expert marketing, pricing, and negotiation services for successful home sales in Northwest Las Vegas.',
     },
   ],
 };

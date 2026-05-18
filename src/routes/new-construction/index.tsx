@@ -69,18 +69,18 @@ export default component$(() => {
         <p>Understand the new construction process from initial selection through final walkthrough, with typical timelines ranging from 6-12 months depending on the builder and customization level. We guide you through every step including design selections, construction monitoring, and final inspections to ensure your new home meets all expectations.</p>
 
         <h2>Expert New Construction Guidance</h2>
-        <p>Dr. Janet Duffy provides comprehensive assistance for new construction buyers, including builder negotiations, upgrade selections, and construction monitoring. Our expertise ensures you make informed decisions, avoid common pitfalls, and maximize the value of your investment when building your dream home in Las Vegas.</p>
+        <p>Dr. Jan Duffy provides comprehensive assistance for new construction buyers, including builder negotiations, upgrade selections, and construction monitoring. Our expertise ensures you make informed decisions, avoid common pitfalls, and maximize the value of your investment when building your dream home in Las Vegas.</p>
       </div>
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'New Construction Homes - Las Vegas Real Estate | Dr. Janet Duffy',
+  title: 'New Construction Homes - Las Vegas Real Estate | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore Las Vegas new construction homes with Dr. Janet Duffy. Brand new homes, modern designs, and builder partnerships across premier communities.',
+      content: 'Explore Las Vegas new construction homes with Dr. Jan Duffy. Brand new homes, modern designs, and builder partnerships across premier communities.',
     },
   ],
 };

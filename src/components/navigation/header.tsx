@@ -348,12 +348,12 @@ export default component$(() => {
                 <a href="/about-us" class="dropdown-link">
                   <div class="dropdown-item">
                     <h4>About Us</h4>
-                    <p>Dr. Janet Duffy's expertise</p>
+                    <p>Dr. Jan Duffy's expertise</p>
                   </div>
                 </a>
                 <a href="/janet-duffy" class="dropdown-link">
                   <div class="dropdown-item">
-                    <h4>Dr. Janet Duffy</h4>
+                    <h4>Dr. Jan Duffy</h4>
                     <p>Meet your real estate expert</p>
                   </div>
                 </a>
@@ -513,7 +513,7 @@ export default component$(() => {
                   <h3 class="mobile-nav-section-title">About</h3>
                   <ul class="mobile-nav-sublist">
                     <li><a href="/about-us" class="mobile-nav-sublink" onClick$={() => isMenuOpen.value = false}>About Us</a></li>
-                    <li><a href="/janet-duffy" class="mobile-nav-sublink" onClick$={() => isMenuOpen.value = false}>Dr. Janet Duffy</a></li>
+                    <li><a href="/janet-duffy" class="mobile-nav-sublink" onClick$={() => isMenuOpen.value = false}>Dr. Jan Duffy</a></li>
                     <li><a href="/testimonials" class="mobile-nav-sublink" onClick$={() => isMenuOpen.value = false}>Testimonials</a></li>
                     <li><a href="/market-insights" class="mobile-nav-sublink" onClick$={() => isMenuOpen.value = false}>Market Insights</a></li>
                     <li><a href="/press-media" class="mobile-nav-sublink" onClick$={() => isMenuOpen.value = false}>Press & Media</a></li>

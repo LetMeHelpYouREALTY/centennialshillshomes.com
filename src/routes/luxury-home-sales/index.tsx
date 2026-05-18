@@ -62,7 +62,7 @@ export default component$(() => {
             <div class="overview-content">
               <h2>Luxury Real Estate Expertise</h2>
               <p>
-                Dr. Janet Duffy specializes in luxury home sales, bringing years of experience and 
+                Dr. Jan Duffy specializes in luxury home sales, bringing years of experience and 
                 deep market knowledge to help clients navigate Las Vegas' most exclusive properties. 
                 From custom estates to golf course homes, we provide personalized service for 
                 discerning buyers and sellers.
@@ -244,7 +244,7 @@ export default component$(() => {
       <section class="cta-section">
         <div class="container container-center">
           <h2>Ready to Buy or Sell Luxury Real Estate?</h2>
-          <p>Contact Dr. Janet Duffy for personalized luxury real estate guidance and exclusive property access.</p>
+          <p>Contact Dr. Jan Duffy for personalized luxury real estate guidance and exclusive property access.</p>
           <div class="cta-buttons">
             <a href="/contact" class="btn btn-primary">Contact Dr. Duffy</a>
             <a href="/properties" class="btn btn-secondary">View All Properties</a>
@@ -256,11 +256,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Luxury Home Sales Las Vegas | Dr. Janet Duffy Real Estate',
+  title: 'Luxury Home Sales Las Vegas | Dr. Jan Duffy Real Estate',
   meta: [
     {
       name: 'description',
-      content: 'Expert luxury home sales in Las Vegas\' most exclusive communities. Dr. Janet Duffy specializes in high-end properties with personalized service. Top 1% REALTOR® with 30+ years of research expertise, available 24/7 for executive clients.',
+      content: 'Expert luxury home sales in Las Vegas\' most exclusive communities. Dr. Jan Duffy specializes in high-end properties with personalized service. Top 1% REALTOR® with 30+ years of research expertise, available 24/7 for executive clients.',
     },
   ],
 };

@@ -143,7 +143,7 @@ export default component$(() => {
             Ready to Find Your Dream Home?
           </h2>
           <p class="text-blue-100 mb-6">
-            Let Dr. Janet Duffy help you find the perfect home in Centennial Hills
+            Let Dr. Jan Duffy help you find the perfect home in Centennial Hills
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/mls-search" class="btn btn-primary bg-white text-blue-600 hover:bg-gray-100">
@@ -160,7 +160,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Home Buyers Guide | Centennial Hills Real Estate | Dr. Janet Duffy',
+  title: 'Home Buyers Guide | Centennial Hills Real Estate | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
@@ -168,7 +168,7 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:title',
-      content: 'Home Buyers Guide | Centennial Hills Real Estate | Dr. Janet Duffy',
+      content: 'Home Buyers Guide | Centennial Hills Real Estate | Dr. Jan Duffy',
     },
     {
       property: 'og:description',

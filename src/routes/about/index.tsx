@@ -42,7 +42,7 @@ export default component$(() => {
       <section class="hero-section">
         <div class="container container-center">
           <h1 class="hero-title">
-            About <span class="highlight">Dr. Janet Duffy</span>
+            About <span class="highlight">Dr. Jan Duffy</span>
           </h1>
           <p class="hero-subtitle">
             Your trusted real estate professional specializing in Las Vegas luxury properties. Top 1% REALTOR® with 30+ years of research expertise, available 24/7 for executive clients.
@@ -57,7 +57,7 @@ export default component$(() => {
             <div class="about-text">
               <h2>Professional Excellence in Real Estate</h2>
               <p>
-                Dr. Janet Duffy brings unparalleled expertise and dedication to the Las Vegas real estate market. 
+                Dr. Jan Duffy brings unparalleled expertise and dedication to the Las Vegas real estate market. 
                 With 30+ years of research expertise and years of experience in luxury home sales, California equity 
                 transactions, and corporate relocations, she has established herself as a trusted advisor for 
                 discerning clients. Her Top 1% REALTOR® designation reflects her commitment to excellence and 
@@ -344,7 +344,7 @@ export default component$(() => {
       <section class="cta-section">
         <div class="container container-center">
           <h2>Ready to Work with Dr. Duffy?</h2>
-          <p>Contact Dr. Janet Duffy today for personalized real estate guidance.</p>
+          <p>Contact Dr. Jan Duffy today for personalized real estate guidance.</p>
           <div class="cta-buttons">
             <a href="/contact" class="btn btn-primary">Contact Us</a>
             <a href="/properties" class="btn btn-secondary">View Properties</a>
@@ -356,11 +356,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'About Dr. Janet Duffy | Top 1% Las Vegas REALTOR® | Real Estate Expert',
+  title: 'About Dr. Jan Duffy | Top 1% Las Vegas REALTOR® | Real Estate Expert',
   meta: [
     {
       name: 'description',
-      content: 'Learn about Dr. Janet Duffy, your trusted Las Vegas real estate professional specializing in luxury homes, California equity buyers, and corporate relocations. Top 1% REALTOR® with 30+ years of research expertise, available 24/7 for executive clients. Licensed in Nevada License #S.0197614.',
+      content: 'Learn about Dr. Jan Duffy, your trusted Las Vegas real estate professional specializing in luxury homes, California equity buyers, and corporate relocations. Top 1% REALTOR® with 30+ years of research expertise, available 24/7 for executive clients. Licensed in Nevada License #S.0197614.',
     },
     {
       name: 'robots',
@@ -368,11 +368,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:title',
-      content: 'About Dr. Janet Duffy | Top 1% Las Vegas REALTOR®',
+      content: 'About Dr. Jan Duffy | Top 1% Las Vegas REALTOR®',
     },
     {
       property: 'og:description',
-      content: 'Learn about Dr. Janet Duffy, Top 1% Las Vegas REALTOR® specializing in luxury homes, California equity buyers, and corporate relocations.',
+      content: 'Learn about Dr. Jan Duffy, Top 1% Las Vegas REALTOR® specializing in luxury homes, California equity buyers, and corporate relocations.',
     },
     {
       property: 'og:image',
@@ -396,7 +396,7 @@ export const head: DocumentHead = {
     },
     {
       name: 'twitter:title',
-      content: 'About Dr. Janet Duffy | Top 1% Las Vegas REALTOR®',
+      content: 'About Dr. Jan Duffy | Top 1% Las Vegas REALTOR®',
     },
     {
       name: 'twitter:description',

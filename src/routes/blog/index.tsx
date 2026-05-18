@@ -141,7 +141,7 @@ export default component$(() => {
             Ready to Buy or Sell in Centennial Hills?
           </h2>
           <p class="text-gray-600 mb-6">
-            Get personalized assistance from Dr. Janet Duffy, Las Vegas' top luxury real estate expert
+            Get personalized assistance from Dr. Jan Duffy, Las Vegas' top luxury real estate expert
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/contact" class="btn btn-primary">
@@ -163,7 +163,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Expert real estate insights, market updates, and local news for Centennial Hills and Northwest Las Vegas. Get the latest trends and tips from Dr. Janet Duffy.',
+      content: 'Expert real estate insights, market updates, and local news for Centennial Hills and Northwest Las Vegas. Get the latest trends and tips from Dr. Jan Duffy.',
     },
     {
       property: 'og:title',
@@ -171,7 +171,7 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:description',
-      content: 'Expert real estate insights, market updates, and local news for Centennial Hills and Northwest Las Vegas. Get the latest trends and tips from Dr. Janet Duffy.',
+      content: 'Expert real estate insights, market updates, and local news for Centennial Hills and Northwest Las Vegas. Get the latest trends and tips from Dr. Jan Duffy.',
     },
     {
       property: 'og:type',

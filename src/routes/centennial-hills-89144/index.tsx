@@ -30,11 +30,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Centennial Hills 89144 - West Centennial Hills Homes | Dr. Janet Duffy',
+  title: 'Centennial Hills 89144 - West Centennial Hills Homes | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore Centennial Hills 89144 with Dr. Janet Duffy, Top 1% Las Vegas REALTOR®. West Centennial Hills homes, established neighborhoods, and luxury properties near Red Rock Canyon. Available 24/7 for executive clients.',
+      content: 'Explore Centennial Hills 89144 with Dr. Jan Duffy, Top 1% Las Vegas REALTOR®. West Centennial Hills homes, established neighborhoods, and luxury properties near Red Rock Canyon. Available 24/7 for executive clients.',
     },
   ],
 };

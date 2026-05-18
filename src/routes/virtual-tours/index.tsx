@@ -8,7 +8,7 @@ import FAQSection, { realtorServiceFAQs } from '../../components/faq-section';
 export default component$(() => {
   const virtualToursSchema = pageSchemas.servicePage({
     name: "Virtual Tours - Las Vegas Property Walkthroughs",
-    description: "Explore Las Vegas properties through virtual tours with Dr. Janet Duffy. 360-degree walkthroughs, luxury showcases, and interactive property features.",
+    description: "Explore Las Vegas properties through virtual tours with Dr. Jan Duffy. 360-degree walkthroughs, luxury showcases, and interactive property features.",
     slug: "virtual-tours",
     serviceType: "Property Tour Services"
   });
@@ -458,11 +458,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Virtual Tours - Las Vegas Property Walkthroughs | Dr. Janet Duffy',
+  title: 'Virtual Tours - Las Vegas Property Walkthroughs | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore Las Vegas properties through virtual tours with Dr. Janet Duffy. 360-degree walkthroughs, luxury showcases, and interactive property features.',
+      content: 'Explore Las Vegas properties through virtual tours with Dr. Jan Duffy. 360-degree walkthroughs, luxury showcases, and interactive property features.',
     },
   ],
 };

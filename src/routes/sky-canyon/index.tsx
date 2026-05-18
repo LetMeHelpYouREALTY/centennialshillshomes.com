@@ -8,7 +8,7 @@ import FAQSection, { realtorServiceFAQs } from '../../components/faq-section';
 export default component$(() => {
   const skyCanyonSchema = pageSchemas.servicePage({
     name: "Sky Canyon Real Estate - Modern New Development",
-    description: "Explore Sky Canyon real estate with Dr. Janet Duffy. New construction homes, modern amenities, and innovative community design in North Las Vegas.",
+    description: "Explore Sky Canyon real estate with Dr. Jan Duffy. New construction homes, modern amenities, and innovative community design in North Las Vegas.",
     slug: "sky-canyon",
     serviceType: "New Construction Services"
   });
@@ -471,11 +471,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Sky Canyon Real Estate - Modern New Development | Dr. Janet Duffy',
+  title: 'Sky Canyon Real Estate - Modern New Development | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Explore Sky Canyon real estate with Dr. Janet Duffy. New construction homes, modern amenities, and innovative community design in North Las Vegas.',
+      content: 'Explore Sky Canyon real estate with Dr. Jan Duffy. New construction homes, modern amenities, and innovative community design in North Las Vegas.',
     },
   ],
 };
