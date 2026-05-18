@@ -17,7 +17,7 @@ const nextConfig = {
   // Performance optimizations
   swcMinify: true,
 
-  // Redirect non-www to www
+  // Redirect non-www to www + legacy Qwik URLs (GSC "Page with redirect" / 404 recovery)
   async redirects() {
     return [
       {
@@ -26,6 +26,46 @@ const nextConfig = {
         destination: 'https://www.centennialhillshomesforsale.com/:path*',
         permanent: true,
       },
+      // Legacy homepage / static paths
+      { source: '/index.html', destination: '/', permanent: true },
+      // Legacy listing & search URLs → canonical /listings
+      { source: '/active-listings', destination: '/listings', permanent: true },
+      { source: '/active-listings/', destination: '/listings', permanent: true },
+      { source: '/mls-search', destination: '/listings', permanent: true },
+      { source: '/mls-search/', destination: '/listings', permanent: true },
+      { source: '/our-luxury-listings', destination: '/listings', permanent: true },
+      { source: '/our-luxury-listings/', destination: '/listings', permanent: true },
+      // Legacy blog → market insights
+      { source: '/blog', destination: '/market-insights', permanent: true },
+      { source: '/blog/', destination: '/market-insights', permanent: true },
+      { source: '/blog/:path*', destination: '/market-insights', permanent: true },
+      // Legacy about / neighborhood entry points
+      { source: '/about-us', destination: '/about', permanent: true },
+      { source: '/about-us/', destination: '/about', permanent: true },
+      { source: '/janet-duffy', destination: '/about', permanent: true },
+      { source: '/janet-duffy/', destination: '/about', permanent: true },
+      {
+        source: '/centennial-hills-homes-for-sale',
+        destination: '/neighborhoods/centennial-hills',
+        permanent: true,
+      },
+      {
+        source: '/centennial-hills-homes-for-sale/',
+        destination: '/neighborhoods/centennial-hills',
+        permanent: true,
+      },
+      {
+        source: '/centennial-hills-homes',
+        destination: '/neighborhoods/centennial-hills',
+        permanent: true,
+      },
+      {
+        source: '/centennial-hills-homes/',
+        destination: '/neighborhoods/centennial-hills',
+        permanent: true,
+      },
+      { source: '/tule-springs.html', destination: '/neighborhoods/north-las-vegas', permanent: true },
+      { source: '/skye-canyon.html', destination: '/neighborhoods/skye-canyon', permanent: true },
       { source: '/properties', destination: '/listings', permanent: true },
       { source: '/properties/', destination: '/listings', permanent: true },
       { source: '/market-report', destination: '/market-analysis', permanent: true },
@@ -33,8 +73,6 @@ const nextConfig = {
       { source: '/home-valuation', destination: '/market-analysis', permanent: true },
       { source: '/communities', destination: '/neighborhoods', permanent: true },
       { source: '/communities/', destination: '/neighborhoods', permanent: true },
-      { source: '/janet-duffy', destination: '/about', permanent: true },
-      { source: '/janet-duffy/', destination: '/about', permanent: true },
       { source: '/images/:path*', destination: '/media/:path*', permanent: true },
       { source: '/neighborhoods/summerlin', destination: '/neighborhoods/summerlin-west', permanent: true },
     ]
