@@ -51,7 +51,7 @@ export default component$(() => {
 	              Your Centennial Hills Real Estate Expert
 	            </h1>
 	            <p class="hero-subtitle">
-	              **Buying or Selling in Centennial Hills?** Dr. Jan Duffy, a Top 1% Las Vegas REALTOR® with 30+ years of expertise, specializes in luxury homes in ZIP codes 89138, 89144, and 89135. Get a competitive edge with our exclusive market insights and personalized, 24/7 service for both homebuyers and homesellers in the Centennial Hills area.
+	              <strong>Buying or Selling in Centennial Hills?</strong> Dr. Jan Duffy, a Top 1% Las Vegas REALTOR® with 30+ years of expertise, specializes in luxury homes in ZIP codes 89138, 89144, and 89135. Get a competitive edge with our exclusive market insights and personalized, 24/7 service for both homebuyers and homesellers in the Centennial Hills area.
 	            </p>
             <div class="hero-stats">
               <div class="stat">
@@ -187,7 +187,7 @@ export default component$(() => {
                   </div>
                   <div class="ml-3">
                     <h3 class="text-sm font-medium text-gray-900">Get Help</h3>
-                    <p class="text-sm text-gray-500">Contact Dr. Janet Duffy</p>
+                    <p class="text-sm text-gray-500">Contact Dr. Jan Duffy</p>
                   </div>
                 </a>
               </div>
