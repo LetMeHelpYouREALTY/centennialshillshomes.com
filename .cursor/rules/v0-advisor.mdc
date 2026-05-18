@@ -1,0 +1,19 @@
+---
+description: Route V0 and design requests through Claude Advisor prompt registry
+globs: prompts/v0/**,V0-*.md,src/routes/index.tsx,src/components/navigation/**
+alwaysApply: false
+---
+
+# V0 Claude Advisor
+
+When the user mentions **v0**, **v0 this**, **continue v0**, or **claude advisor**:
+
+1. Read skill: `.cursor/skills/v0-prompt-advisor/SKILL.md`
+2. Read registry: `prompts/v0/registry.json`
+3. Use canonical prompt in `prompts/v0/<id>.md` — not ad-hoc chat text
+4. Run REVIEW GATE before telling user to paste into v0.dev
+5. After v0 output, offer Qwik integration only for approved sections
+
+**Executor:** v0.dev · **Integrator:** this repo (Qwik)
+
+Never use "Janet" in V0 prompts. Agent: Dr. Jan Duffy, (702) 903-1952.

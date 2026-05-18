@@ -1,5 +1,7 @@
 # V0 Prompt: Modern Contact Form for Real Estate Website
 
+> **Managed by Claude Advisor.** Canonical copy: `prompts/v0/contact-form.md` · Registry: `prompts/v0/registry.json`
+
 Create a beautiful, user-friendly contact form component for a Las Vegas real estate website. The form should be modern, accessible, and optimized for lead generation.
 
 ## Requirements:

@@ -1,5 +1,7 @@
 # V0 Navigation Improvement Prompt
 
+> **Managed by Claude Advisor.** Canonical copy: `prompts/v0/navigation.md` · Registry: `prompts/v0/registry.json`
+
 Copy this prompt to v0.dev to generate an improved navigation component:
 
 ---
@@ -20,7 +22,7 @@ Create a modern, professional navigation header for a real estate website using 
 3. Buy & Sell (dropdown with: Buy a Home, Sell a Home, MLS Search, Home Valuation, Market Analysis, First-Time Buyers, Luxury Buyers)
 4. Our Listings (dropdown with: Luxury Listings, Active Listings, Investment Properties, Luxury Estates, New Construction, Virtual Tours, Recent Sales)
 5. Communities (dropdown with: North Las Vegas, Aliante, Sky Canyon, Providence, Tule Springs, Northwest Las Vegas)
-6. About (dropdown with: About Us, Dr. Janet Duffy, Testimonials, Market Insights, Press & Media)
+6. About (dropdown with: About Us, Dr. Jan Duffy, Testimonials, Market Insights, Press & Media)
 7. Commute Calculator (simple link)
 8. Contact (simple link)
 

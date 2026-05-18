@@ -1,0 +1,48 @@
+{
+  "$schema": "./registry.schema.json",
+  "project": "centennialhillshomesforsale.com",
+  "advisor": "v0-prompt-advisor",
+  "updated": "2026-05-18",
+  "prompts": [
+    {
+      "id": "homepage",
+      "component": "Homepage",
+      "file": "prompts/v0/homepage.md",
+      "legacyFile": null,
+      "status": "ready",
+      "version": "1.0.0",
+      "priority": 1,
+      "notes": "Dedupe featured listings, map fallback, Jan branding, hero strong tag"
+    },
+    {
+      "id": "header-nav",
+      "component": "Header & Navigation",
+      "file": "prompts/v0/header-nav.md",
+      "legacyFile": "V0-HEADER-NAV-PROMPT.md",
+      "status": "ready",
+      "version": "1.1.0",
+      "priority": 2,
+      "notes": "Centered nav; Jan Duffy in About dropdown"
+    },
+    {
+      "id": "navigation",
+      "component": "Navigation (Tailwind variant)",
+      "file": "prompts/v0/navigation.md",
+      "legacyFile": "V0-NAVIGATION-PROMPT.md",
+      "status": "ready",
+      "version": "1.1.0",
+      "priority": 3,
+      "notes": "Glassmorphism mobile menu"
+    },
+    {
+      "id": "contact-form",
+      "component": "Contact Form",
+      "file": "prompts/v0/contact-form.md",
+      "legacyFile": "V0-CONTACT-FORM-PROMPT.md",
+      "status": "ready",
+      "version": "1.0.0",
+      "priority": 4,
+      "notes": "Lead gen form for /contact"
+    }
+  ]
+}

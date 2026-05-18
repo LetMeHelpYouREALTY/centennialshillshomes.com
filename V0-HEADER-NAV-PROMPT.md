@@ -1,5 +1,8 @@
 # V0 Prompt: Modern Centered Header & Navigation
 
+> **Managed by Claude Advisor.** Canonical copy: `prompts/v0/header-nav.md` · Registry: `prompts/v0/registry.json`
+
+
 ## Design Requirements
 
 Create a modern, centered header and navigation for a real estate website using Qwik framework with TypeScript.
@@ -50,7 +53,7 @@ Create a modern, centered header and navigation for a real estate website using 
    - Northwest Las Vegas
 6. About (dropdown)
    - About Us
-   - Dr. Janet Duffy
+   - Dr. Jan Duffy
    - Testimonials
    - Market Insights
    - Press & Media
