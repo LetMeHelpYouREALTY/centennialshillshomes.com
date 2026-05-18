@@ -83,140 +83,74 @@ export default component$(() => {
 				image={siteImageUrl(SITE_IMAGES.agentHero)}
 			/>
 
-			{/* Luxury Hero Section */}
-			<section
-				class="relative min-h-screen overflow-hidden bg-slate-900 bg-cover bg-center"
-				style={`background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.82) 50%, rgba(51, 65, 85, 0.9) 100%), url('${SITE_IMAGES.agentHero}');`}
-				data-aos="fade-in"
-			>
-				<div class="absolute inset-0">
-					{/* Sophisticated Pattern Overlay */}
-					<div
-						class="absolute inset-0"
-						style="background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(51, 65, 85, 0.9) 50%, rgba(71, 85, 105, 0.95) 100%) !important;"
-					>
-						{/* Elegant Geometric Pattern */}
-						<div
-							class="absolute inset-0 opacity-10"
-							style="background-image: radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.05) 0%, transparent 50%) !important;"
-						></div>
-
-						{/* Subtle Accent Lines */}
-						<div
-							class="absolute top-1/4 left-0 w-full h-px"
-							style="background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) !important;"
-						></div>
-						<div
-							class="absolute bottom-1/4 left-0 w-full h-px"
-							style="background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) !important;"
-						></div>
-					</div>
-				</div>
-
-				{/* Hero headline + CTAs */}
-				<div class="relative z-10 min-h-screen flex flex-col items-center justify-center py-20 px-4">
-					<div class="text-center max-w-4xl mx-auto mb-12">
+			{/* Hero */}
+			<section class="hero-dark relative -mt-20 overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 pt-28 pb-14 md:pt-32 md:pb-16">
+				<div
+					class="pointer-events-none absolute inset-0 opacity-40"
+					aria-hidden="true"
+					style="background-image: radial-gradient(circle at 15% 20%, rgba(251, 191, 36, 0.12), transparent 42%), radial-gradient(circle at 85% 75%, rgba(59, 130, 246, 0.1), transparent 45%);"
+				/>
+				<div class="relative z-10 container mx-auto px-4">
+					<div class="mx-auto max-w-3xl text-center text-white">
 						<OptimizedImage
 							src={SITE_IMAGES.agentHero}
 							alt={`${SITE.agentName} - Centennial Hills luxury real estate`}
-							width={160}
-							height={160}
+							width={144}
+							height={144}
 							priority
-							className="mx-auto mb-6 w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-amber-400/80 shadow-xl object-cover"
+							className="mx-auto mb-5 h-28 w-28 rounded-full border-4 border-amber-400/90 object-cover shadow-lg md:h-36 md:w-36"
 						/>
-						<p class="text-amber-400 uppercase tracking-widest text-sm font-medium mb-4">
+						<p class="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-amber-400 md:text-sm">
 							Centennial Hills · Las Vegas · {SITE.zipCodes.join(" · ")}
 						</p>
-						<h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+						<h1 class="mb-4 text-3xl font-bold leading-tight md:text-5xl">
 							Centennial Hills Homes for Sale
 						</h1>
-						<p class="text-lg md:text-xl text-slate-200 mb-6">
+						<p class="mb-8 text-base text-slate-200 md:text-lg">
 							{SITE.agentName} · Top 1% REALTOR® · Same-day showings · Free
 							market analysis
 						</p>
-						<a
-							href={`tel:${SITE.phoneTel}`}
-							class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-3 rounded-lg font-bold text-lg transition-colors"
-						>
-							Call {SITE.phone}
-						</a>
+						<div class="mb-10 flex flex-col justify-center gap-3 sm:flex-row">
+							<a
+								href={`tel:${SITE.phoneTel}`}
+								class="inline-flex items-center justify-center rounded-lg bg-amber-500 px-8 py-3 text-base font-bold text-slate-900 transition-colors hover:bg-amber-400"
+							>
+								Call {SITE.phone}
+							</a>
+							<Link
+								href="/properties"
+								class="inline-flex items-center justify-center rounded-lg border border-white/30 bg-white/10 px-8 py-3 text-base font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
+							>
+								Browse MLS Listings
+							</Link>
+						</div>
 					</div>
-					<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto w-full">
-						{/* Top Left */}
+					<div class="mx-auto grid max-w-3xl grid-cols-2 gap-3 md:gap-4">
 						<Link
 							href="/sellers"
-							class="bg-transparent border border-gray-300 px-6 md:px-8 py-4 md:py-6 text-base md:text-lg font-light uppercase tracking-wider hover:bg-white/10 hover:border-gray-200 transition-all duration-300 text-center group backdrop-blur-sm"
-							style="color: #f8fafc !important; text-decoration: none !important;"
+							class="rounded-lg border border-white/20 bg-white/5 px-3 py-3 text-center text-xs font-medium uppercase tracking-wide text-white transition-colors hover:bg-white/10 md:text-sm"
 						>
-							<span class="group-hover:scale-105 transition-transform duration-300 inline-block">
-								LIST YOUR HOME
-							</span>
+							List your home
 						</Link>
-
-						{/* Top Right */}
 						<Link
 							href="/buyers"
-							class="bg-transparent border border-gray-300 px-6 md:px-8 py-4 md:py-6 text-base md:text-lg font-light uppercase tracking-wider hover:bg-white/10 hover:border-gray-200 transition-all duration-300 text-center backdrop-blur-sm"
-							style="color: #f8fafc !important; text-decoration: none !important;"
+							class="rounded-lg border border-white/20 bg-white/5 px-3 py-3 text-center text-xs font-medium uppercase tracking-wide text-white transition-colors hover:bg-white/10 md:text-sm"
 						>
-							BUY A HOME
+							Buy a home
 						</Link>
-
-						{/* Bottom Left */}
 						<Link
 							href="/centennial-hills"
-							class="bg-transparent border border-gray-300 px-6 md:px-8 py-4 md:py-6 text-base md:text-lg font-light uppercase tracking-wider hover:bg-white/10 hover:border-gray-200 transition-all duration-300 text-center backdrop-blur-sm"
-							style="color: #f8fafc !important; text-decoration: none !important;"
+							class="rounded-lg border border-white/20 bg-white/5 px-3 py-3 text-center text-xs font-medium uppercase tracking-wide text-white transition-colors hover:bg-white/10 md:text-sm"
 						>
-							CENTENNIAL HILLS HOMES
+							Centennial Hills
 						</Link>
-
-						{/* Bottom Right */}
 						<Link
 							href="/communities"
-							class="bg-transparent border border-gray-300 px-6 md:px-8 py-4 md:py-6 text-base md:text-lg font-light uppercase tracking-wider hover:bg-white/10 hover:border-gray-200 transition-all duration-300 text-center backdrop-blur-sm"
-							style="color: #f8fafc !important; text-decoration: none !important;"
+							class="rounded-lg border border-white/20 bg-white/5 px-3 py-3 text-center text-xs font-medium uppercase tracking-wide text-white transition-colors hover:bg-white/10 md:text-sm"
 						>
-							NEW BUILDER COMMUNITY DEVELOPMENTS
+							Communities
 						</Link>
 					</div>
-				</div>
-
-				{/* Accessibility and Privacy Elements */}
-				<div class="absolute bottom-4 left-4 flex items-center space-x-4">
-					<div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
-						<svg
-							class="w-4 h-4 text-white"
-							fill="currentColor"
-							viewBox="0 0 20 20"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-								clip-rule="evenodd"
-							/>
-						</svg>
-					</div>
-				</div>
-
-				<div class="absolute bottom-4 right-4 flex flex-col items-end space-y-2">
-					<div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
-						<svg
-							class="w-4 h-4 text-white"
-							fill="currentColor"
-							viewBox="0 0 20 20"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
-								clip-rule="evenodd"
-							/>
-						</svg>
-					</div>
-					<div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
-						<span class="text-white text-xs font-bold">i</span>
-					</div>
-					<div class="text-xs text-gray-600">Privacy - Terms</div>
 				</div>
 			</section>
 

@@ -1,9 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Breadcrumb } from "~/components/Breadcrumb";
-import { OptimizedImage } from "~/components/OptimizedImage";
 import { FeaturedListings } from "~/components/sections/FeaturedListings";
-import { SITE, SITE_IMAGES } from "~/config/site";
+import { SITE } from "~/config/site";
 
 export default component$(() => {
 	return (
@@ -16,10 +15,7 @@ export default component$(() => {
 				]}
 			/>
 
-			<section
-				class="relative text-white py-20 bg-cover bg-center"
-				style={`background-image: linear-gradient(to right, rgba(37, 99, 235, 0.9), rgba(30, 64, 175, 0.92)), url('${SITE_IMAGES.communities.lasVegasLuxury}');`}
-			>
+			<section class="relative text-white py-20 bg-gradient-to-r from-blue-700 to-blue-900">
 				<div class="container mx-auto px-4">
 					<div class="max-w-4xl mx-auto text-center">
 						<h1 class="text-4xl md:text-5xl font-bold mb-6">

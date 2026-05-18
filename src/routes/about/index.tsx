@@ -7,10 +7,7 @@ export default component$(() => {
 	return (
 		<div class="min-h-screen bg-gray-50">
 			{/* Hero Section */}
-			<section
-				class="relative text-white py-20 bg-cover bg-center"
-				style={`background-image: linear-gradient(to right, rgba(37, 99, 235, 0.88), rgba(30, 64, 175, 0.9)), url('${SITE_IMAGES.agentHero}');`}
-			>
+			<section class="relative text-white py-20 bg-gradient-to-r from-blue-700 to-blue-900">
 				<div class="container mx-auto px-4">
 					<div class="max-w-4xl mx-auto text-center">
 						<OptimizedImage

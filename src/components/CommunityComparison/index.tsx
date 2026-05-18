@@ -65,7 +65,7 @@ export const CommunityComparison = component$<CommunityComparisonProps>(
 											alt={`Luxury homes in ${community.name}, Las Vegas`}
 											width={320}
 											height={200}
-											className="rounded-lg mb-4 h-40 w-full"
+											className="rounded-lg mb-4 h-36 w-full max-w-xs mx-auto object-cover"
 										/>
 										<h3 class="text-lg font-semibold mb-2">{community.name}</h3>
 										<p class="text-blue-600 font-medium mb-2">

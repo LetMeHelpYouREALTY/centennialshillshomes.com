@@ -43,7 +43,7 @@ export const OptimizedImage = component$<OptimizedImageProps>((props) => {
 				height={height}
 				loading={priority ? "eager" : loading}
 				title={title}
-				class={`w-full h-auto object-cover ${className}`}
+				class={className || "max-w-full h-auto object-cover"}
 				decoding="async"
 				onError$={onImgError}
 			/>

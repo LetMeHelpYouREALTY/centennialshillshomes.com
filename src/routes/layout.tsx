@@ -78,7 +78,7 @@ export default component$(() => {
 				/>
 			</head>
 			<Navigation />
-			<main>
+			<main class="min-h-[50vh] pt-20 pb-20 lg:pb-0">
 				<Slot />
 			</main>
 			<Footer />

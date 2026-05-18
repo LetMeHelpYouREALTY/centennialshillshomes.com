@@ -1,25 +1,37 @@
 {
-	"compilerOptions": {
-		"allowJs": true,
-		"target": "ES2017",
-		"module": "ES2020",
-		"lib": ["es2020", "DOM", "WebWorker", "DOM.Iterable"],
-		"jsx": "react-jsx",
-		"jsxImportSource": "@builder.io/qwik",
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true,
-		"moduleResolution": "node",
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"incremental": true,
-		"isolatedModules": true,
-		"outDir": "tmp",
-		"noEmit": true,
-		"types": ["node", "vite/client"],
-		"paths": {
-			"~/*": ["./src/*"]
-		}
-	},
-	"include": ["src"]
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [{ "name": "next" }],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "src",
+    "adapters",
+    "adaptors",
+    "adapters/**",
+    "adaptors/**",
+    "dist",
+    ".vercel",
+    "workers",
+    "tests",
+    "vite.config.ts",
+    "scripts"
+  ]
 }
