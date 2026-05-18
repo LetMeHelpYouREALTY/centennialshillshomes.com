@@ -1,564 +1,112 @@
-import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
-import { Link } from "@builder.io/qwik-city";
-import { CTABanner } from "~/components/CTABanner";
-import { SITE_IMAGES, siteImageUrl } from "~/config/site";
+import { component$ } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
+import FAQSection, { realtorServiceFAQs } from '../../components/faq-section';
 
 export default component$(() => {
-	return (
-		<div class="min-h-screen bg-gray-50">
-			{/* Hero Section */}
-			<section class="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white py-20">
-				<div class="container mx-auto px-4">
-					<div class="max-w-4xl mx-auto text-center">
-						<h1 class="text-4xl md:text-5xl font-bold mb-6">Market Analysis</h1>
-						<p class="text-xl text-indigo-100">
-							Complimentary Market Analysis and Property Valuation for All
-							Luxury Properties
-						</p>
-					</div>
-				</div>
-			</section>
+  return (
+    <>
+      <div class="container container-center">
+        <h1>Las Vegas Real Estate Market Analysis</h1>
+        
+        <h2>Comprehensive Market Intelligence</h2>
+        <p>Access detailed Las Vegas real estate market analysis with Dr. Janet Duffy's 30+ years of research expertise. Our market analysis covers trends, pricing patterns, inventory levels, and future projections for <a href="/centennial-hills">Centennial Hills</a> and the broader Las Vegas metropolitan area to inform your real estate decisions. This comprehensive approach combines quantitative data analysis with qualitative market insights, providing a complete picture of current conditions and future opportunities. For specific neighborhood insights, review our <a href="/centennial-hills-market-report">Centennial Hills market report</a> and <a href="/market-reports">comprehensive market reports</a>.</p>
+        
+        <h3>Data-Driven Analysis Methodology</h3>
+        <p>Our market analysis methodology incorporates multiple data sources including MLS statistics, public records, economic indicators, and local market knowledge. This multi-faceted approach ensures accuracy and provides insights that automated systems cannot capture. By combining statistical analysis with on-the-ground expertise, we deliver market intelligence that helps clients make informed decisions based on both data and practical market realities.</p>
+        
+        <h3>Real-Time Market Monitoring</h3>
+        <p>Continuous monitoring of market conditions ensures our analysis reflects the most current trends and developments. We track daily listing activity, sales transactions, price changes, and market indicators to identify emerging patterns and shifts. This real-time monitoring allows us to provide timely insights that help clients capitalize on opportunities and avoid potential pitfalls in the dynamic Las Vegas real estate market.</p>
 
-			{/* Simple Search Widget */}
-			<section class="py-12 bg-white">
-				<div class="container mx-auto px-4">
-					<div class="max-w-4xl mx-auto text-center">
-						<h2 class="text-3xl font-bold text-gray-800 mb-4">
-							Explore Market Properties
-						</h2>
-						<p class="text-lg text-gray-600 mb-8">
-							Before getting your market analysis, explore available luxury
-							properties. Use our simple search to see current market inventory.
-						</p>
-						<div class="bg-gray-50 p-6 rounded-lg">
-							<realscout-simple-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-simple-search>
-						</div>
-					</div>
-				</div>
-			</section>
+        <h2>Centennial Hills Market Trends</h2>
+        <p>Specialized analysis of <a href="/centennial-hills">Centennial Hills</a> real estate market including price appreciation, sales volume, days on market, and neighborhood-specific trends. Our analysis covers different property types from starter homes to luxury estates, providing insights into market dynamics and investment opportunities. Understanding these trends helps buyers identify value opportunities and sellers optimize pricing strategies. Explore <a href="/centennial-hills-homes">available Centennial Hills homes</a> and review our <a href="/centennial-hills-market-report">detailed market report</a> for comprehensive neighborhood insights.</p>
+        
+        <h3>Price Appreciation Patterns</h3>
+        <p>Centennial Hills has demonstrated consistent price appreciation over the years, with property values increasing steadily as the community has matured. Our analysis tracks appreciation rates across different property types, price ranges, and neighborhoods within Centennial Hills. This detailed tracking helps identify areas with strongest appreciation potential and properties that may offer better value relative to market trends.</p>
+        
+        <h3>Sales Volume and Activity Trends</h3>
+        <p>Sales volume analysis reveals market activity levels and helps predict future trends. We track monthly and annual sales volumes, comparing current activity to historical patterns to identify market cycles and seasonal variations. This analysis helps buyers and sellers understand optimal timing for transactions and anticipate market conditions that may affect their goals.</p>
+        
+        <h3>Days on Market Analysis</h3>
+        <p>Days on market metrics provide insights into market velocity and buyer demand. Properties selling quickly typically indicate strong demand and competitive markets, while longer marketing times may suggest pricing adjustments or market shifts. Our analysis tracks days on market trends across different property types and price ranges, helping sellers set realistic expectations and buyers understand market competitiveness.</p>
 
-			{/* Service Overview */}
-			<section class="py-16">
-				<div class="container mx-auto px-4">
-					<div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 mb-12">
-						<h2 class="text-3xl font-bold mb-6 text-gray-800">
-							Professional Market Analysis Service
-						</h2>
-						<p class="text-lg text-gray-700 mb-6">
-							Dr. Jan Duffy provides comprehensive market analysis and property
-							valuation services for all luxury properties in West Summerlin.
-							With 30+ years of research expertise and Top 1% Las Vegas REALTOR®
-							status, Dr. Duffy delivers accurate, data-driven assessments to
-							help you make informed real estate decisions.
-						</p>
-						<p class="text-lg text-gray-700">
-							Our complimentary market analysis includes detailed market trends,
-							comparable sales, neighborhood insights, and strategic
-							recommendations tailored to your specific property and goals.
-						</p>
-					</div>
+        <h2>Economic Factors and Market Drivers</h2>
+        <p>Our market analysis examines economic factors affecting Las Vegas real estate including employment growth, population trends, interest rates, and development activity. We analyze how these factors impact Centennial Hills and northwest Las Vegas property values and market conditions. Understanding these drivers helps predict market direction and identify factors that may influence property values.</p>
+        
+        <h3>Employment and Economic Growth</h3>
+        <p>Las Vegas' diverse economy, including tourism, technology, healthcare, and professional services, drives real estate demand. Employment growth creates housing demand, while economic stability supports property values. Our analysis tracks employment trends, major employers, and economic indicators that influence real estate markets, providing insights into long-term market fundamentals.</p>
+        
+        <h3>Population Growth and Demographics</h3>
+        <p>Population growth directly impacts housing demand, with new residents creating demand for both rental and owner-occupied properties. Our analysis examines population trends, demographic shifts, and migration patterns affecting Las Vegas and Centennial Hills. Understanding these trends helps predict future demand and identify opportunities in growing markets.</p>
+        
+        <h3>Interest Rates and Financing Conditions</h3>
+        <p>Interest rates significantly impact affordability and buyer purchasing power. Our analysis tracks interest rate trends and their effects on market activity, pricing, and buyer behavior. Understanding financing conditions helps buyers evaluate affordability and sellers anticipate market demand based on financing availability and costs.</p>
+        
+        <h3>Development and Infrastructure</h3>
+        <p>New development and infrastructure improvements can significantly impact property values and market conditions. Our analysis tracks planned developments, infrastructure projects, and community improvements that may affect Centennial Hills and surrounding areas. This forward-looking analysis helps identify areas with appreciation potential and properties that may benefit from nearby development.</p>
 
-					{/* Analysis Components */}
-					<div class="grid md:grid-cols-3 gap-8 mb-12">
-						<div class="bg-white p-6 rounded-lg shadow-lg text-center">
-							<div class="text-4xl mb-4">📊</div>
-							<h3 class="text-xl font-semibold mb-2 text-gray-800">
-								Market Trends
-							</h3>
-							<p class="text-gray-600">
-								Current market conditions and future projections
-							</p>
-						</div>
-						<div class="bg-white p-6 rounded-lg shadow-lg text-center">
-							<div class="text-4xl mb-4">🏠</div>
-							<h3 class="text-xl font-semibold mb-2 text-gray-800">
-								Comparable Sales
-							</h3>
-							<p class="text-gray-600">
-								Recent sales data and market comparisons
-							</p>
-						</div>
-						<div class="bg-white p-6 rounded-lg shadow-lg text-center">
-							<div class="text-4xl mb-4">🎯</div>
-							<h3 class="text-xl font-semibold mb-2 text-gray-800">
-								Strategic Pricing
-							</h3>
-							<p class="text-gray-600">
-								Optimal pricing strategy for maximum value
-							</p>
-						</div>
-					</div>
+        <h2>Comparative Market Analysis</h2>
+        <p>Detailed comparison of Centennial Hills market performance against other Las Vegas neighborhoods including Summerlin, Henderson, and North Las Vegas. Our analysis identifies relative value opportunities, market positioning, and competitive advantages for different property types and price ranges. This comparative approach helps buyers identify value and sellers understand competitive positioning.</p>
+        
+        <h3>Neighborhood Performance Comparison</h3>
+        <p>Comparing Centennial Hills to other premier Las Vegas communities reveals relative strengths and value opportunities. Our analysis compares price appreciation, sales velocity, inventory levels, and market trends across neighborhoods. This comparison helps buyers evaluate different areas and sellers understand how their properties compare to similar homes in other communities.</p>
+        
+        <h3>Price Range Analysis</h3>
+        <p>Market performance varies significantly across price ranges, with different segments experiencing distinct trends. Our analysis examines market conditions for entry-level, mid-range, and luxury properties, identifying segments with strongest demand and best value opportunities. This price range analysis helps buyers focus on segments with favorable conditions and sellers understand competition within their price range.</p>
+        
+        <h3>Property Type Comparison</h3>
+        <p>Different property types perform differently in various market conditions. Our analysis compares single-family homes, condominiums, townhouses, and luxury estates across neighborhoods and price ranges. This comparison helps buyers identify property types that offer best value and sellers understand how their property type performs relative to alternatives.</p>
 
-					{/* Analysis Process */}
-					<div class="bg-indigo-50 rounded-lg p-8 mb-12">
-						<h3 class="text-2xl font-bold mb-6 text-gray-800">
-							Market Analysis Process
-						</h3>
-						<div class="grid md:grid-cols-4 gap-6">
-							<div class="text-center">
-								<div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-									<span class="text-xl font-bold">1</span>
-								</div>
-								<h4 class="font-semibold text-gray-800 mb-2">
-									Property Assessment
-								</h4>
-								<p class="text-sm text-gray-600">
-									Detailed evaluation of property features and condition
-								</p>
-							</div>
-							<div class="text-center">
-								<div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-									<span class="text-xl font-bold">2</span>
-								</div>
-								<h4 class="font-semibold text-gray-800 mb-2">
-									Market Research
-								</h4>
-								<p class="text-sm text-gray-600">
-									Comprehensive analysis of local market conditions
-								</p>
-							</div>
-							<div class="text-center">
-								<div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-									<span class="text-xl font-bold">3</span>
-								</div>
-								<h4 class="font-semibold text-gray-800 mb-2">
-									Comparable Analysis
-								</h4>
-								<p class="text-sm text-gray-600">
-									Recent sales and active listings comparison
-								</p>
-							</div>
-							<div class="text-center">
-								<div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-									<span class="text-xl font-bold">4</span>
-								</div>
-								<h4 class="font-semibold text-gray-800 mb-2">
-									Report Delivery
-								</h4>
-								<p class="text-sm text-gray-600">
-									Detailed report with recommendations and strategy
-								</p>
-							</div>
-						</div>
-					</div>
+        <h2>Investment Market Insights</h2>
+        <p>Specialized analysis for real estate investors including rental market trends, cap rates, appreciation potential, and development opportunities in Centennial Hills. Our research identifies emerging investment areas and provides data-driven recommendations for portfolio building and wealth creation. This investment-focused analysis helps investors make informed decisions about property selection, pricing, and portfolio strategy.</p>
+        
+        <h3>Rental Market Analysis</h3>
+        <p>Rental market analysis examines rental rates, occupancy levels, tenant demographics, and rental demand trends. Our analysis helps investors evaluate income potential, identify properties with strong rental demand, and understand rental market dynamics. This information is essential for investors seeking properties that provide positive cash flow and reliable rental income.</p>
+        
+        <h3>Cap Rates and ROI Projections</h3>
+        <p>Cap rate analysis helps investors evaluate properties based on income potential relative to purchase price. Our analysis calculates cap rates for different property types and locations, providing benchmarks for investment evaluation. Combined with ROI projections that account for appreciation, tax benefits, and operating expenses, this analysis helps investors identify properties with strongest returns.</p>
+        
+        <h3>Appreciation Potential Assessment</h3>
+        <p>Long-term appreciation potential is a critical factor for real estate investors. Our analysis evaluates appreciation potential based on market trends, development plans, infrastructure improvements, and demographic shifts. This forward-looking assessment helps investors identify properties and areas with strongest long-term value growth potential.</p>
+        
+        <h3>Development and Value-Add Opportunities</h3>
+        <p>Some investment properties offer opportunities to increase value through improvements, renovations, or development. Our analysis identifies properties with value-add potential, estimating improvement costs and potential value increases. This analysis helps investors identify properties where strategic improvements can significantly enhance returns.</p>
 
-					{/* Analysis Types */}
-					<div class="bg-white rounded-lg shadow-lg p-8 mb-12">
-						<h3 class="text-2xl font-bold mb-6 text-gray-800">
-							Types of Market Analysis
-						</h3>
-						<div class="grid md:grid-cols-2 gap-8">
-							<div>
-								<h4 class="font-semibold text-gray-800 mb-3">
-									Seller Market Analysis
-								</h4>
-								<ul class="space-y-2 text-gray-700">
-									<li>• Current market value assessment</li>
-									<li>• Optimal listing price recommendation</li>
-									<li>• Market timing analysis</li>
-									<li>• Competitive positioning strategy</li>
-									<li>• Marketing recommendations</li>
-								</ul>
-							</div>
-							<div>
-								<h4 class="font-semibold text-gray-800 mb-3">
-									Buyer Market Analysis
-								</h4>
-								<ul class="space-y-2 text-gray-700">
-									<li>• Market conditions for buyers</li>
-									<li>• Price trends and projections</li>
-									<li>• Neighborhood value analysis</li>
-									<li>• Investment potential assessment</li>
-									<li>• Negotiation strategy guidance</li>
-								</ul>
-							</div>
-							<div>
-								<h4 class="font-semibold text-gray-800 mb-3">
-									Investment Analysis
-								</h4>
-								<ul class="space-y-2 text-gray-700">
-									<li>• ROI projections and calculations</li>
-									<li>• Rental market analysis</li>
-									<li>• Appreciation potential assessment</li>
-									<li>• Tax implications and benefits</li>
-									<li>• Portfolio diversification analysis</li>
-								</ul>
-							</div>
-							<div>
-								<h4 class="font-semibold text-gray-800 mb-3">
-									Relocation Analysis
-								</h4>
-								<ul class="space-y-2 text-gray-700">
-									<li>• Market comparison with origin location</li>
-									<li>• Lifestyle and amenity assessment</li>
-									<li>• School district and family considerations</li>
-									<li>• Long-term value projections</li>
-									<li>• Community integration factors</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+        <h2>Future Market Projections</h2>
+        <p>Forward-looking market analysis based on development plans, infrastructure projects, and demographic trends affecting Centennial Hills and Las Vegas real estate. Our projections help buyers, sellers, and investors make informed decisions about timing and strategy in the Las Vegas market. While no projection can guarantee future results, our analysis provides data-driven insights into likely market directions.</p>
+        
+        <h3>Short-Term Market Forecasts</h3>
+        <p>Short-term forecasts examine market conditions expected over the next 6-12 months, including pricing trends, inventory levels, and sales activity. These forecasts help buyers and sellers time transactions optimally and anticipate near-term market conditions. Our short-term projections incorporate current trends, seasonal patterns, and immediate economic factors.</p>
+        
+        <h3>Long-Term Market Outlook</h3>
+        <p>Long-term outlook examines market fundamentals and trends expected to influence property values over 3-5 years. This analysis considers demographic trends, economic growth, development plans, and infrastructure projects that may affect long-term market conditions. Long-term projections help investors and homeowners make strategic decisions about property ownership and portfolio planning.</p>
+        
+        <h3>Risk Assessment and Market Scenarios</h3>
+        <p>Market analysis includes assessment of potential risks and alternative scenarios that may affect property values. We examine factors such as economic downturns, interest rate changes, and market corrections, evaluating how different scenarios might impact Centennial Hills and Las Vegas real estate. This risk assessment helps clients make informed decisions with awareness of potential market challenges.</p>
+      </div>
 
-					{/* Market Data Sources */}
-					<div class="bg-gray-50 rounded-lg p-8 mb-12">
-						<h3 class="text-2xl font-bold mb-6 text-gray-800">
-							Market Data Sources
-						</h3>
-						<div class="grid md:grid-cols-3 gap-6">
-							<div class="text-center p-4">
-								<h4 class="font-semibold text-gray-800 mb-2">MLS Data</h4>
-								<p class="text-sm text-gray-600">
-									Comprehensive Multiple Listing Service data
-								</p>
-							</div>
-							<div class="text-center p-4">
-								<h4 class="font-semibold text-gray-800 mb-2">Public Records</h4>
-								<p class="text-sm text-gray-600">
-									Official property records and tax assessments
-								</p>
-							</div>
-							<div class="text-center p-4">
-								<h4 class="font-semibold text-gray-800 mb-2">Market Reports</h4>
-								<p class="text-sm text-gray-600">
-									Industry reports and market intelligence
-								</p>
-							</div>
-						</div>
-					</div>
-
-					{/* Related Services */}
-					<div class="text-center">
-						<h3 class="text-2xl font-bold mb-6 text-gray-800">
-							Related Services
-						</h3>
-						<div class="flex flex-wrap justify-center gap-4">
-							<Link
-								href="/luxury-home-sales"
-								class="bg-white text-indigo-600 px-6 py-3 rounded-lg border border-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors"
-							>
-								Luxury Home Sales
-							</Link>
-							<Link
-								href="/investment-properties"
-								class="bg-white text-indigo-600 px-6 py-3 rounded-lg border border-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors"
-							>
-								Investment Properties
-							</Link>
-							<Link
-								href="/california-equity-buyers"
-								class="bg-white text-indigo-600 px-6 py-3 rounded-lg border border-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors"
-							>
-								California Equity Buyers
-							</Link>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* CTA Section */}
-			<CTABanner
-				title="Get Your Complimentary Market Analysis"
-				subtitle="Contact Dr. Jan Duffy for professional market analysis and property valuation"
-				primaryButtonText="Request Market Analysis"
-				primaryButtonLink="/contact"
-				secondaryButtonText="View Sample Report"
-				secondaryButtonLink="/contact"
-				backgroundColor="blue"
-			/>
-		</div>
-	);
+      {/* FAQ Section */}
+      <FAQSection 
+        faqs={realtorServiceFAQs}
+        title="Frequently Asked Questions About Las Vegas Market Analysis"
+        className="bg-gray-50"
+      />
+    </>
+  );
 });
 
 export const head: DocumentHead = {
-	title:
-		"Market Analysis | Dr. Jan Duffy | Complimentary Luxury Property Valuation | Top 1% REALTOR®",
-	meta: [
-		{
-			name: "description",
-			content:
-				"Dr. Jan Duffy provides complimentary market analysis and property valuation for luxury properties in West Summerlin. Professional market trends, comparable sales, and strategic pricing recommendations for Red Rock Country Club, The Ridges & Summerlin West. Call (702) 903-1952.",
-		},
-		{
-			name: "keywords",
-			content:
-				"market analysis Las Vegas, property valuation luxury homes, Dr. Jan Duffy market analysis, luxury real estate market trends, Red Rock Country Club market analysis, The Ridges property valuation, Summerlin West market data, free property valuation Las Vegas, luxury home appraisal, real estate market trends Las Vegas, property value analysis, home value estimator Las Vegas",
-		},
-		{
-			property: "og:title",
-			content:
-				"Market Analysis | Dr. Jan Duffy | Complimentary Luxury Property Valuation | Top 1% REALTOR®",
-		},
-		{
-			property: "og:description",
-			content:
-				"Professional market analysis and property valuation for luxury properties. Complimentary service with detailed market trends and strategic recommendations. Call (702) 903-1952.",
-		},
-		{
-			property: "og:type",
-			content: "website",
-		},
-		{
-			property: "og:url",
-			content: "https://www.centennialhillshomesforsale.com/market-analysis",
-		},
-		{
-			property: "og:image",
-			content: "siteImageUrl(SITE_IMAGES.services.marketAnalysis)",
-		},
-		{
-			property: "og:image:alt",
-			content: "Dr. Jan Duffy - Market Analysis Specialist in Las Vegas",
-		},
-		{
-			property: "og:site_name",
-			content: "Centennial Hills Homes",
-		},
-		{
-			property: "og:locale",
-			content: "en_US",
-		},
-		{
-			name: "twitter:card",
-			content: "summary_large_image",
-		},
-		{
-			name: "twitter:title",
-			content:
-				"Market Analysis | Dr. Jan Duffy | Complimentary Luxury Property Valuation",
-		},
-		{
-			name: "twitter:description",
-			content:
-				"Professional market analysis and property valuation for luxury properties. Complimentary service with detailed market trends and strategic recommendations.",
-		},
-		{
-			name: "twitter:image",
-			content: "siteImageUrl(SITE_IMAGES.services.marketAnalysis)",
-		},
-		{
-			name: "robots",
-			content:
-				"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
-		},
-		{
-			name: "author",
-			content: "Dr. Jan Duffy",
-		},
-		{
-			name: "geo.region",
-			content: "US-NV",
-		},
-		{
-			name: "geo.placename",
-			content: "Las Vegas",
-		},
-		{
-			name: "geo.position",
-			content: "36.1699;-115.1398",
-		},
-		{
-			name: "ICBM",
-			content: "36.1699, -115.1398",
-		},
-		{
-			name: "application/ld+json",
-			content: JSON.stringify({
-				"@context": "https://schema.org",
-				"@type": "Service",
-				name: "Market Analysis and Property Valuation",
-				description:
-					"Complimentary market analysis and property valuation for luxury properties in West Summerlin",
-				provider: {
-					"@type": "RealEstateAgent",
-					name: "Dr. Jan Duffy",
-					telephone: "(702) 903-1952",
-					url: "https://www.centennialhillshomesforsale.com",
-					email: "DrDuffy@CentennialHillsHomesForSale.com",
-					foundingDate: "1993-09-01",
-					description:
-						"Luxury real estate specialist serving West Summerlin's premier neighborhoods including ZIP codes 89138, 89144, and 89135. Dr. Jan Duffy, REALTOR® offers 30+ years of research expertise in luxury homes $400K-$750K. Specializing in Red Rock Country Club, The Ridges, and Summerlin West communities for California equity buyers and corporate relocations. Top 1% Las Vegas REALTOR® providing same-day showings and complimentary market analysis. Available 24/7 for executive clients and luxury home investments.",
-					address: {
-						"@type": "PostalAddress",
-						streetAddress: "1490 Center Crossing Rd",
-						addressLocality: "Las Vegas",
-						addressRegion: "NV",
-						postalCode: "89144",
-						addressCountry: "US",
-					},
-					openingHours: "Mo-Su 06:00-21:00",
-					availableLanguage: [
-						"English",
-						"Mandarin",
-						"Korean",
-						"French",
-						"American Sign Language",
-						"Filipino",
-						"Ukrainian",
-						"Russian",
-					],
-					paymentAccepted: ["Cash", "Check", "Credit Card", "Wire Transfer"],
-					currenciesAccepted: "USD",
-					sameAs: [
-						"https://www.linkedin.com/company/california-to-vegas-homes",
-						"https://www.instagram.com/drjanduffy/",
-						"https://www.facebook.com/SummerlinNewHomesBHHS",
-						"https://www.youtube.com/@DrDuffy",
-						"https://www.pinterest.com/DrJanDuffy/",
-					],
-					identifier: {
-						"@type": "PropertyValue",
-						name: "Google Business Profile ID",
-						value: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
-					},
-				},
-				areaServed: [
-					{ "@type": "City", name: "Lone Mountain, NV", postalCode: "89129" },
-					{ "@type": "City", name: "North Las Vegas, NV", postalCode: "89030" },
-					{
-						"@type": "City",
-						name: "Summerlin South, Las Vegas, NV",
-						postalCode: "89135",
-					},
-					{
-						"@type": "City",
-						name: "Summerlin, Las Vegas, NV",
-						postalCode: "89134",
-					},
-					{
-						"@type": "City",
-						name: "Providence, Las Vegas, NV",
-						postalCode: "89138",
-					},
-					{
-						"@type": "City",
-						name: "Kyle Canyon, Las Vegas, NV",
-						postalCode: "89124",
-					},
-					{
-						"@type": "City",
-						name: "Tule Springs, Las Vegas, NV",
-						postalCode: "89131",
-					},
-					{
-						"@type": "City",
-						name: "Elkhorn, Las Vegas, NV",
-						postalCode: "89131",
-					},
-					{
-						"@type": "City",
-						name: "Antelope, Las Vegas, NV",
-						postalCode: "89149",
-					},
-					{
-						"@type": "City",
-						name: "Summerlin West, Las Vegas, NV",
-						postalCode: "89138",
-					},
-					{
-						"@type": "City",
-						name: "Summerlin North, Las Vegas, NV",
-						postalCode: "89144",
-					},
-					{
-						"@type": "City",
-						name: "Centennial Hills, Las Vegas, NV",
-						postalCode: "89149",
-					},
-					{
-						"@type": "City",
-						name: "Los Prados, Las Vegas, NV",
-						postalCode: "89130",
-					},
-					{
-						"@type": "City",
-						name: "The Springs, Las Vegas, NV",
-						postalCode: "89130",
-					},
-					{
-						"@type": "City",
-						name: "Wyeth Ranch, Las Vegas, NV",
-						postalCode: "89131",
-					},
-					{
-						"@type": "City",
-						name: "La Madre Foothills, Las Vegas, NV",
-						postalCode: "89135",
-					},
-					{
-						"@type": "City",
-						name: "Carmel Canyon, Las Vegas, NV",
-						postalCode: "89131",
-					},
-					{
-						"@type": "City",
-						name: "Silverstone Ranch, Las Vegas, NV",
-						postalCode: "89131",
-					},
-					{
-						"@type": "City",
-						name: "Iron Mountain Ranch, Las Vegas, NV",
-						postalCode: "89131",
-					},
-					{
-						"@type": "City",
-						name: "Lone Mountain Heights, Las Vegas, NV",
-						postalCode: "89129",
-					},
-				],
-				serviceType: "Market Analysis and Property Valuation",
-				priceRange: "$400K-$750K",
-				businessType: "Real Estate Agent",
-				additionalType: [
-					"Real Estate Agency",
-					"Real Estate Consultant",
-					"Property Management Company",
-				],
-				keywords:
-					"market analysis, property valuation, luxury real estate, West Summerlin, Red Rock Country Club, The Ridges, Summerlin West, complimentary analysis",
-				knowsAbout: [
-					"Market Analysis",
-					"Property Valuation",
-					"Luxury Real Estate",
-					"West Summerlin Properties",
-					"Red Rock Country Club",
-					"The Ridges",
-					"Summerlin West",
-					"Real Estate Trends",
-				],
-				hasOfferCatalog: {
-					"@type": "OfferCatalog",
-					name: "Market Analysis Services",
-					itemListElement: [
-						{
-							"@type": "Offer",
-							itemOffered: {
-								"@type": "Service",
-								name: "Property Assessment",
-								description:
-									"Detailed evaluation of property features and condition",
-							},
-						},
-						{
-							"@type": "Offer",
-							itemOffered: {
-								"@type": "Service",
-								name: "Market Research",
-								description:
-									"Comprehensive analysis of local market conditions",
-							},
-						},
-						{
-							"@type": "Offer",
-							itemOffered: {
-								"@type": "Service",
-								name: "Comparable Analysis",
-								description: "Recent sales and active listings comparison",
-							},
-						},
-					],
-				},
-			}),
-		},
-	],
+  title: 'Las Vegas Real Estate Market Analysis | Dr. Janet Duffy',
+  meta: [
+    {
+      name: 'description',
+      content: 'Comprehensive Las Vegas real estate market analysis with Dr. Janet Duffy. Market trends, pricing patterns, and investment insights for Centennial Hills and Las Vegas.',
+    },
+  ],
 };
+
+
+
+
+
+
+

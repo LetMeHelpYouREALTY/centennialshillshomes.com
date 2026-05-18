@@ -1,730 +1,521 @@
-import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
-import { Link } from "@builder.io/qwik-city";
-
-import { FAQPageSchema } from "~/components/FAQPageSchema";
-import {
-	communityLinks,
-	InternalLinks,
-	mainPageLinks,
-} from "~/components/InternalLinks";
-import { LocalBusinessSchema } from "~/components/LocalBusinessSchema";
-import { OptimizedImage } from "~/components/OptimizedImage";
-import { SEOOptimizer } from "~/components/SEOOptimizer";
-import { AnswerSummary } from "~/components/sections/AnswerSummary";
-import { FAQAccordion } from "~/components/sections/FAQAccordion";
-import { FeaturedListings } from "~/components/sections/FeaturedListings";
-import { LocalMapSection } from "~/components/sections/LocalMapSection";
-import { ZipCodeHub } from "~/components/sections/ZipCodeHub";
-import { TestimonialSlider } from "~/components/TestimonialSlider";
-import {
-	HOME_FAQ,
-	HOME_SEO,
-	SITE,
-	SITE_IMAGES,
-	siteImageUrl,
-} from "~/config/site";
+import { component$ } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
+import SimpleMapsWidget from '../components/simple-maps-widget';
+import RealScoutSearchWidget from '../components/realscout-search-widget';
+import RealScoutOfficeListings from '../components/realscout-office-listings';
+import SEOStructuredData from '../components/seo-structured-data';
+import { centennialHillsProperties } from '../data/sample-properties';
+import { janetDuffyStructuredData } from '../components/seo-structured-data';
+import FAQSection, { realtorServiceFAQs } from '../components/faq-section';
 
 export default component$(() => {
-	return (
-		<>
-			{/* SEO Optimization */}
-			<SEOOptimizer
-				pageTitle={HOME_SEO.title}
-				pageDescription={HOME_SEO.description}
-				canonicalUrl={SITE.url}
-				keywords={[...HOME_SEO.keywords]}
-				imageUrl={siteImageUrl(SITE_IMAGES.agentHero)}
-				author={SITE.agentName}
-				breadcrumbItems={[{ name: "Home", url: SITE.url }]}
-			/>
 
-			<FAQPageSchema items={[...HOME_FAQ]} />
+  return (
+    <>
+      {/* SEO Structured Data - 2025: Multiple schemas for better indexing */}
+      <SEOStructuredData 
+        type="RealEstateAgent" 
+        data={janetDuffyStructuredData} 
+      />
+      {/* 2025: Organization schema for better brand recognition */}
+      <SEOStructuredData 
+        type="Organization" 
+        data={{
+          name: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
+          url: "https://www.centennialhillshomesforsale.com",
+          logo: "https://www.centennialhillshomesforsale.com/images/logo.png",
+          telephone: "+1-702-903-1952",
+          sameAs: [
+            "https://www.instagram.com/drjanduffy/",
+            "https://www.youtube.com/@DrDuffy",
+            "https://www.pinterest.com/DrJanDuffy/",
+            "https://www.facebook.com/SummerlinNewHomesBHHS",
+            "https://www.linkedin.com/company/california-to-vegas-homes"
+          ]
+        }} 
+      />
+      {/* 2025: WebSite schema with SearchAction for sitelinks */}
+      <SEOStructuredData 
+        type="WebSite" 
+        data={{
+          name: "Centennial Hills Real Estate",
+          url: "https://www.centennialhillshomesforsale.com"
+        }} 
+      />
 
-			<LocalBusinessSchema
-				businessName={SITE.name}
-				description={HOME_SEO.description}
-				address={{
-					streetAddress: SITE.address.streetAddress,
-					addressLocality: SITE.address.addressLocality,
-					addressRegion: SITE.address.addressRegion,
-					postalCode: SITE.address.postalCode,
-					addressCountry: SITE.address.addressCountry,
-				}}
-				phone={SITE.phoneTel}
-				email={SITE.email}
-				website={SITE.url}
-				hours={[...SITE.hours]}
-				licenseNumber={SITE.license}
-				geo={SITE.geo}
-				services={[
-					"Luxury Home Sales",
-					"California Equity Buyers",
-					"Corporate Relocations",
-					"Market Analysis",
-					"Same-Day Showings",
-					"Investment Properties",
-				]}
-				areasServed={[...SITE.areasServed]}
-				socialMedia={{
-					linkedin:
-						"https://www.linkedin.com/company/california-to-vegas-homes",
-					instagram: "https://www.instagram.com/drjanduffy/",
-					facebook: "https://www.facebook.com/SummerlinNewHomesBHHS",
-					youtube: "https://www.youtube.com/@DrDuffy",
-					pinterest: "https://www.pinterest.com/DrJanDuffy/",
-				}}
-				priceRange={SITE.priceRange}
-				paymentAccepted={["Cash", "Check", "Credit Card", "Wire Transfer"]}
-				currenciesAccepted="USD"
-				foundingDate="1993-09-01"
-				employee={SITE.agentName}
-				logo={siteImageUrl(SITE_IMAGES.logoRaster)}
-				image={siteImageUrl(SITE_IMAGES.agentHero)}
-			/>
+      {/* Hero Section */}
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+	            <h1 class="hero-title">
+	              Your Centennial Hills Real Estate Expert
+	            </h1>
+	            <p class="hero-subtitle">
+	              **Buying or Selling in Centennial Hills?** Dr. Jan Duffy, a Top 1% Las Vegas REALTOR® with 30+ years of expertise, specializes in luxury homes in ZIP codes 89138, 89144, and 89135. Get a competitive edge with our exclusive market insights and personalized, 24/7 service for both homebuyers and homesellers in the Centennial Hills area.
+	            </p>
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-number">$2.4M+</div>
+                <div class="stat-label">Total Sales Volume</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Homes Sold</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+            </div>
+            <div class="hero-cta">
+	              <a href="/centennial-hills-homes-for-sale" class="btn btn-primary">
+	                Find Your Centennial Hills Home
+	              </a>
+	              <a href="/home-valuation" class="btn btn-secondary">
+	                Get Your Home Value
+	              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img 
+              src="/images/modern-home-exterior.jpg" 
+              alt="Modern luxury home in Centennial Hills, Las Vegas with desert landscaping and mountain views"
+              class="hero-image-main"
+              loading="eager"
+            />
+            <div class="hero-image-card">
+              <div class="property-price">$675,000</div>
+              <div class="property-details">4 bed • 3 bath • 2,800 sq ft</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			{/* Hero */}
-			<section class="hero-dark relative -mt-20 overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 pt-28 pb-14 md:pt-32 md:pb-16">
-				<div
-					class="pointer-events-none absolute inset-0 opacity-40"
-					aria-hidden="true"
-					style="background-image: radial-gradient(circle at 15% 20%, rgba(251, 191, 36, 0.12), transparent 42%), radial-gradient(circle at 85% 75%, rgba(59, 130, 246, 0.1), transparent 45%);"
-				/>
-				<div class="relative z-10 container mx-auto px-4">
-					<div class="mx-auto max-w-3xl text-center text-white">
-						<OptimizedImage
-							src={SITE_IMAGES.agentHero}
-							alt={`${SITE.agentName} - Centennial Hills luxury real estate`}
-							width={144}
-							height={144}
-							priority
-							className="mx-auto mb-5 h-28 w-28 rounded-full border-4 border-amber-400/90 object-cover shadow-lg md:h-36 md:w-36"
-						/>
-						<p class="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-amber-400 md:text-sm">
-							Centennial Hills · Las Vegas · {SITE.zipCodes.join(" · ")}
-						</p>
-						<h1 class="mb-4 text-3xl font-bold leading-tight md:text-5xl">
-							Centennial Hills Homes for Sale
-						</h1>
-						<p class="mb-8 text-base text-slate-200 md:text-lg">
-							{SITE.agentName} · Top 1% REALTOR® · Same-day showings · Free
-							market analysis
-						</p>
-						<div class="mb-10 flex flex-col justify-center gap-3 sm:flex-row">
-							<a
-								href={`tel:${SITE.phoneTel}`}
-								class="inline-flex items-center justify-center rounded-lg bg-amber-500 px-8 py-3 text-base font-bold text-slate-900 transition-colors hover:bg-amber-400"
-							>
-								Call {SITE.phone}
-							</a>
-							<Link
-								href="/properties"
-								class="inline-flex items-center justify-center rounded-lg border border-white/30 bg-white/10 px-8 py-3 text-base font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
-							>
-								Browse MLS Listings
-							</Link>
-						</div>
-					</div>
-					<div class="mx-auto grid max-w-3xl grid-cols-2 gap-3 md:gap-4">
-						<Link
-							href="/sellers"
-							class="rounded-lg border border-white/20 bg-white/5 px-3 py-3 text-center text-xs font-medium uppercase tracking-wide text-white transition-colors hover:bg-white/10 md:text-sm"
-						>
-							List your home
-						</Link>
-						<Link
-							href="/buyers"
-							class="rounded-lg border border-white/20 bg-white/5 px-3 py-3 text-center text-xs font-medium uppercase tracking-wide text-white transition-colors hover:bg-white/10 md:text-sm"
-						>
-							Buy a home
-						</Link>
-						<Link
-							href="/centennial-hills"
-							class="rounded-lg border border-white/20 bg-white/5 px-3 py-3 text-center text-xs font-medium uppercase tracking-wide text-white transition-colors hover:bg-white/10 md:text-sm"
-						>
-							Centennial Hills
-						</Link>
-						<Link
-							href="/communities"
-							class="rounded-lg border border-white/20 bg-white/5 px-3 py-3 text-center text-xs font-medium uppercase tracking-wide text-white transition-colors hover:bg-white/10 md:text-sm"
-						>
-							Communities
-						</Link>
-					</div>
-				</div>
-			</section>
+      {/* Featured Properties - #1 Lead Generator */}
+      <section class="featured-listings-section bg-gray-50">
+        <div class="container mx-auto px-4 py-16">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Featured Centennial Hills Properties
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Discover our latest luxury homes in Las Vegas' premier Northwest community. Explore <a href="/centennial-hills" class="text-blue-600 hover:underline">Centennial Hills homes</a>, <a href="/our-luxury-listings" class="text-blue-600 hover:underline">luxury listings</a>, and <a href="/new-construction" class="text-blue-600 hover:underline">new construction</a> opportunities.
+            </p>
+          </div>
+          
+          {/* RealScout Office Listings - Primary Lead Generator */}
+          <RealScoutOfficeListings
+            agentEncodedId="QWdlbnQtMjI1MDUw"
+            sortOrder="NEWEST"
+            listingStatus="For Sale"
+            propertyTypes=",SFR"
+            priceMin="500000"
+            priceMax="6000000"
+          />
+          
+          <div class="text-center mt-8">
+            <a href="/mls-search" class="btn btn-primary btn-lg">
+              View All Available Properties
+            </a>
+          </div>
+        </div>
+      </section>
 
-			<AnswerSummary />
+      {/* RealScout Advanced Search Section */}
+      <section class="search-section">
+        <div class="container mx-auto px-4 py-16">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Search Centennial Hills Properties
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Find your perfect home in Las Vegas' premier Northwest community with our advanced <a href="/mls-search" class="text-blue-600 hover:underline">MLS search</a>. Browse <a href="/properties" class="text-blue-600 hover:underline">all properties</a>, <a href="/active-listings" class="text-blue-600 hover:underline">active listings</a>, or explore <a href="/centennial-hills-homes-for-sale" class="text-blue-600 hover:underline">Centennial Hills homes for sale</a>.
+            </p>
+          </div>
+          
+          {/* RealScout Advanced Search Widget */}
+          <div class="realscout-search-container bg-white rounded-lg shadow-lg p-6 max-w-6xl mx-auto">
+            <div class="text-center mb-6">
+              <div class="inline-flex items-center gap-2 text-sm text-gray-600 mb-4">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+                </svg>
+                <span>Powered by RealScout MLS Search</span>
+              </div>
+            </div>
+            
+            {/* RealScout Search Widget Integration */}
+            <RealScoutSearchWidget
+              agentEncodedId="QWdlbnQtMjI1MDUw"
+              height="600px"
+              width="100%"
+            />
+            
+            {/* Alternative Search Options */}
+            <div class="mt-8 border-t pt-6">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="/mls-search" class="flex items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+                  <div class="flex-shrink-0">
+                    <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <h3 class="text-sm font-medium text-gray-900">MLS Search</h3>
+                    <p class="text-sm text-gray-500">Browse all available listings</p>
+                  </div>
+                </a>
+                
+                <a href="/centennial-hills-homes-for-sale" class="flex items-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                  <div class="flex-shrink-0">
+                    <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <h3 class="text-sm font-medium text-gray-900">Centennial Hills</h3>
+                    <p class="text-sm text-gray-500">Featured community homes</p>
+                  </div>
+                </a>
+                
+                <a href="/contact" class="flex items-center p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
+                  <div class="flex-shrink-0">
+                    <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <h3 class="text-sm font-medium text-gray-900">Get Help</h3>
+                    <p class="text-sm text-gray-500">Contact Dr. Janet Duffy</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<section class="py-16 bg-slate-50 border-b border-slate-200">
-				<div class="container mx-auto px-4 max-w-5xl text-center">
-					<h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-						Your Centennial Hills Real Estate Expert
-					</h2>
-					<p class="text-lg md:text-xl text-slate-600 leading-relaxed mb-8">
-						Buying or selling in Centennial Hills? {SITE.agentName}, a Top 1%
-						Las Vegas REALTOR®, specializes in luxury homes in ZIP codes{" "}
-						{SITE.zipCodes.join(", ")} with same-day showings and complimentary
-						market analysis.
-					</p>
-					<div class="flex flex-col sm:flex-row gap-4 justify-center">
-						<Link
-							href="/properties"
-							class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-						>
-							Find Your Centennial Hills Home
-						</Link>
-						<Link
-							href="/market-analysis"
-							class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
-						>
-							Get Your Home Value
-						</Link>
-					</div>
-				</div>
-			</section>
+      {/* Featured Properties */}
+      <section class="featured-properties bg-gray-50">
+        <div class="container mx-auto px-4 py-16">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Featured Centennial Hills Properties
+            </h2>
+            <p class="text-lg text-gray-600">
+              Handpicked luxury homes in Las Vegas' most desirable neighborhoods including <a href="/red-rock-country-club" class="text-blue-600 hover:underline">Red Rock Country Club</a>, <a href="/the-ridges" class="text-blue-600 hover:underline">The Ridges</a>, <a href="/summerlin-west" class="text-blue-600 hover:underline">Summerlin West</a>, and <a href="/lone-mountain" class="text-blue-600 hover:underline">Lone Mountain</a>.
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {centennialHillsProperties.slice(0, 3).map((property) => (
+              <div key={property.id} class="property-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="property-image-container">
+                  <div class="property-status-badge">
+                    <span class={`status-badge ${property.status}`}>
+                      {property.status.replace('-', ' ')}
+                    </span>
+                  </div>
+                  <img 
+                    src="/images/modern-home-exterior.jpg" 
+                    alt={`${property.address} - ${property.beds} bed, ${property.baths} bath home in Centennial Hills`}
+                    class="w-full h-48 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="property-content p-6">
+                  <div class="property-price text-2xl font-bold text-gray-900 mb-2">
+                    ${Number(property.price).toLocaleString()}
+                  </div>
+                  <div class="property-address text-gray-600 mb-3">
+                    {property.address}
+                  </div>
+                  <div class="property-details flex gap-4 text-sm text-gray-500 mb-4">
+                    <span>{property.beds} bed</span>
+                    <span>{property.baths} bath</span>
+                    <span>{property.sqft.toLocaleString()} sq ft</span>
+                  </div>
+                  <a href="/contact" class="btn btn-outline w-full">
+                    Schedule Showing
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div class="text-center mt-12">
+            <a href="/centennial-hills-homes-for-sale" class="btn btn-primary btn-lg">
+              View All Properties
+            </a>
+          </div>
+        </div>
+      </section>
 
-			{/* Trust Indicators */}
-			<section class="py-16 bg-white border-b border-slate-200">
-				<div class="container mx-auto px-4">
-					<div class="max-w-5xl mx-auto">
-						<div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-							<div class="flex items-center space-x-2">
-								<div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-									<span class="text-white text-sm font-bold">✓</span>
-								</div>
-								<span class="text-slate-700 font-medium">
-									Licensed REALTOR®
-								</span>
-							</div>
-							<div class="flex items-center space-x-2">
-								<div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-									<span class="text-white text-sm font-bold">★</span>
-								</div>
-								<span class="text-slate-700 font-medium">Top 1% Producer</span>
-							</div>
-							<div class="flex items-center space-x-2">
-								<div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
-									<span class="text-white text-sm font-bold">★</span>
-								</div>
-								<span class="text-slate-700 font-medium">5-Star Reviews</span>
-							</div>
-							<div class="flex items-center space-x-2">
-								<div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center">
-									<span class="text-white text-sm font-bold">🔐</span>
-								</div>
-								<span class="text-slate-700 font-medium">
-									Secure Transactions
-								</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+      {/* Market Statistics */}
+      <section class="market-stats">
+        <div class="container mx-auto px-4 py-16">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Centennial Hills Market Overview
+            </h2>
+            <p class="text-lg text-gray-600">
+              Current market trends and statistics for Northwest Las Vegas. For detailed insights, review our <a href="/centennial-hills-market-report" class="text-blue-600 hover:underline">Centennial Hills market report</a>, <a href="/market-analysis" class="text-blue-600 hover:underline">comprehensive market analysis</a>, and <a href="/market-reports" class="text-blue-600 hover:underline">monthly market reports</a>. Explore <a href="/recent-sales" class="text-blue-600 hover:underline">recent sales</a> data and <a href="/market-insights" class="text-blue-600 hover:underline">market insights</a>.
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="stat-card text-center">
+              <div class="stat-icon mb-4">
+                <svg class="w-12 h-12 text-blue-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/>
+                </svg>
+              </div>
+              <div class="stat-number text-3xl font-bold text-gray-900 mb-2">$625,000</div>
+              <div class="stat-label text-gray-600">Median Home Price</div>
+              <div class="stat-change text-green-600 text-sm">+8.5% vs last year</div>
+            </div>
+            
+            <div class="stat-card text-center">
+              <div class="stat-icon mb-4">
+                <svg class="w-12 h-12 text-blue-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div class="stat-number text-3xl font-bold text-gray-900 mb-2">23</div>
+              <div class="stat-label text-gray-600">Days on Market</div>
+              <div class="stat-change text-red-600 text-sm">-12% vs last year</div>
+            </div>
+            
+            <div class="stat-card text-center">
+              <div class="stat-icon mb-4">
+                <svg class="w-12 h-12 text-blue-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div class="stat-number text-3xl font-bold text-gray-900 mb-2">142</div>
+              <div class="stat-label text-gray-600">Active Listings</div>
+              <div class="stat-change text-green-600 text-sm">+15% vs last month</div>
+            </div>
+            
+            <div class="stat-card text-center">
+              <div class="stat-icon mb-4">
+                <svg class="w-12 h-12 text-blue-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div class="stat-number text-3xl font-bold text-gray-900 mb-2">98.2%</div>
+              <div class="stat-label text-gray-600">List to Sale Ratio</div>
+              <div class="stat-change text-green-600 text-sm">+2.1% vs last year</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			{/* Advanced Search Widget */}
-			<section class="py-24 bg-gradient-to-br from-slate-50 to-white">
-				<div class="container mx-auto px-4">
-					<div class="max-w-5xl mx-auto text-center">
-						<div class="mb-16">
-							<h2 class="text-4xl md:text-6xl font-bold text-slate-900 mb-8">
-								Find Your{" "}
-								<span class="bg-gradient-to-r from-amber-500 to-amber-600 bg-clip-text text-transparent">
-									Dream Home
-								</span>
-							</h2>
-							<p class="text-xl md:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-								Discover luxury properties in Las Vegas's most prestigious
-								communities with our advanced search technology.
-							</p>
-						</div>
-						<div class="bg-white rounded-2xl shadow-2xl p-8 border border-slate-200 min-h-[420px]">
-							<realscout-advanced-search
-								agent-encoded-id={SITE.realScoutAgentId}
-							></realscout-advanced-search>
-						</div>
-					</div>
-				</div>
-			</section>
+      {/* Interactive Map */}
+      <section class="map-section">
+        <div class="container mx-auto px-4 py-16">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Explore Centennial Hills Properties
+            </h2>
+            <p class="text-lg text-gray-600">
+              Interactive map showing available homes in Northwest Las Vegas. Explore <a href="/neighborhoods" class="text-blue-600 hover:underline">neighborhoods</a>, <a href="/area-explorer" class="text-blue-600 hover:underline">area explorer</a>, and discover <a href="/centennial-hills-amenities" class="text-blue-600 hover:underline">local amenities</a>.
+            </p>
+          </div>
+          
+          <div class="map-container">
+        <SimpleMapsWidget
+          center={{ lat: 36.3080, lng: -115.2980 }}
+          zoom={13}
+          title="Centennial Hills Properties Map"
+          height="500px"
+          properties={centennialHillsProperties}
+        />
+      </div>
+    </div>
+      </section>
 
-			{/* Featured Listings */}
-			<FeaturedListings />
+      {/* Services Section */}
+      <section class="services-section bg-gray-50">
+        <div class="container mx-auto px-4 py-16">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Why Choose Dr. Janet Duffy?
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Top 1% REALTOR® with unmatched expertise in Las Vegas luxury real estate
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="service-card text-center">
+              <div class="service-icon mb-6">
+                <svg class="w-16 h-16 text-blue-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">30+ Years Experience</h3>
+              <p class="text-gray-600">
+                Decades of research expertise and local market knowledge in Las Vegas real estate. Learn more <a href="/about" class="text-blue-600 hover:underline">about Dr. Duffy</a> and her <a href="/janet-duffy" class="text-blue-600 hover:underline">professional background</a>.
+              </p>
+            </div>
+            
+            <div class="service-card text-center">
+              <div class="service-icon mb-6">
+                <svg class="w-16 h-16 text-blue-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Top 1% REALTOR®</h3>
+              <p class="text-gray-600">
+                Consistently ranked among the highest-performing real estate professionals in Las Vegas
+              </p>
+            </div>
+            
+            <div class="service-card text-center">
+              <div class="service-icon mb-6">
+                <svg class="w-16 h-16 text-blue-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Local Expertise</h3>
+              <p class="text-gray-600">
+                Deep knowledge of <a href="/centennial-hills" class="text-blue-600 hover:underline">Centennial Hills</a>, <a href="/summerlin" class="text-blue-600 hover:underline">Summerlin</a>, <a href="/northwest-las-vegas" class="text-blue-600 hover:underline">Northwest Las Vegas</a>, <a href="/north-las-vegas" class="text-blue-600 hover:underline">North Las Vegas</a>, and surrounding communities. Explore <a href="/centennial-hills-89135" class="text-blue-600 hover:underline">ZIP code 89135</a>, <a href="/centennial-hills-89138" class="text-blue-600 hover:underline">89138</a>, and <a href="/centennial-hills-89144" class="text-blue-600 hover:underline">89144</a>.
+              </p>
+            </div>
+            
+            <div class="service-card text-center">
+              <div class="service-icon mb-6">
+                <svg class="w-16 h-16 text-blue-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">24/7 Service</h3>
+              <p class="text-gray-600">
+                Same-day showings and executive-level service available around the clock. Perfect for <a href="/corporate-relocation-services" class="text-blue-600 hover:underline">corporate relocations</a> and <a href="/luxury-home-buyers" class="text-blue-600 hover:underline">luxury home buyers</a>.
+              </p>
+            </div>
+            
+            <div class="service-card text-center">
+              <div class="service-icon mb-6">
+                <svg class="w-16 h-16 text-blue-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Market Analysis</h3>
+              <p class="text-gray-600">
+                Comprehensive <a href="/market-analysis" class="text-blue-600 hover:underline">market insights</a> and data-driven pricing strategies for maximum value. Get a free <a href="/home-valuation" class="text-blue-600 hover:underline">home valuation</a> or review our <a href="/market-reports" class="text-blue-600 hover:underline">market reports</a> for detailed analysis.
+              </p>
+            </div>
+            
+            <div class="service-card text-center">
+              <div class="service-icon mb-6">
+                <svg class="w-16 h-16 text-blue-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 000 2h2a1 1 0 100-2H9z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Luxury Specialists</h3>
+              <p class="text-gray-600">
+                Expertise in <a href="/luxury-home-sales" class="text-blue-600 hover:underline">high-end properties</a>, <a href="/luxury-estates" class="text-blue-600 hover:underline">luxury estates</a>, <a href="/homes-over-1m" class="text-blue-600 hover:underline">homes over $1M</a>, and <a href="/california-equity-buyers" class="text-blue-600 hover:underline">California equity buyer relocations</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			{/* Centennial Homes Excellence Section */}
-			<section class="py-24 bg-gradient-to-r from-slate-900 to-slate-800 scroll-fade-in">
-				<div class="container mx-auto px-4">
-					<div class="max-w-7xl mx-auto">
-						<div class="text-center mb-20">
-							<h2 class="text-4xl md:text-6xl font-bold text-white mb-8">
-								Centennial Homes{" "}
-								<span class="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
-									Excellence
-								</span>
-							</h2>
-							<p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-								Dr. Jan Duffy brings decades of research expertise and luxury
-								real estate mastery to every Centennial Homes transaction.
-							</p>
-						</div>
-						<div class="grid md:grid-cols-4 gap-8">
-							<div class="text-center">
-								<h3 class="text-4xl font-bold text-white mb-2">30+ Years</h3>
-								<p class="text-slate-400">
-									Research & luxury real estate expertise
-								</p>
-							</div>
-							<div class="text-center">
-								<h3 class="text-4xl font-bold text-white mb-2">Top 1%</h3>
-								<p class="text-slate-400">Las Vegas luxury market leader</p>
-							</div>
-							<div class="text-center">
-								<h3 class="text-4xl font-bold text-white mb-2">5-Star</h3>
-								<p class="text-slate-400">Client-rated service</p>
-							</div>
-							<div class="text-center">
-								<h3 class="text-4xl font-bold text-white mb-2">24/7</h3>
-								<p class="text-slate-400">Executive-level service</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+      {/* FAQ Section */}
+      <FAQSection 
+        faqs={realtorServiceFAQs}
+        title="Frequently Asked Questions About Dr. Jan Duffy's Real Estate Services"
+        className="bg-gray-50"
+      />
 
-			{/* Centennial Homes Services Section */}
-			<section class="py-24 bg-white">
-				<div class="container mx-auto px-4">
-					<div class="max-w-7xl mx-auto">
-						<div class="text-center mb-20">
-							<h2 class="text-4xl md:text-6xl font-bold text-slate-900 mb-8">
-								Centennial Homes{" "}
-								<span class="bg-gradient-to-r from-amber-500 to-amber-600 bg-clip-text text-transparent">
-									Services
-								</span>
-							</h2>
-							<p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-								Premium real estate solutions by Dr. Jan Duffy, specializing in
-								Las Vegas luxury communities including Red Rock Country Club,
-								The Ridges, Summerlin West, and Centennial Hills.
-							</p>
-						</div>
-						<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-							<Link href="/luxury-home-sales" class="group">
-								<div class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 hover:border-amber-300 transform hover:-translate-y-2">
-									<h3 class="text-2xl font-bold text-slate-900 mb-4">
-										Luxury Home Sales
-									</h3>
-									<p class="text-slate-600 mb-6">
-										Expert guidance for high-end properties in Red Rock Country
-										Club, The Ridges, and Summerlin West.
-									</p>
-									<div class="text-amber-600 font-semibold group-hover:text-amber-700">
-										<span>Learn More</span>
-									</div>
-								</div>
-							</Link>
-							<Link href="/california-equity-buyers" class="group">
-								<div class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 hover:border-amber-300 transform hover:-translate-y-2">
-									<h3 class="text-2xl font-bold text-slate-900 mb-4">
-										California Equity Buyers
-									</h3>
-									<p class="text-slate-600 mb-6">
-										Seamless relocation services for buyers leveraging
-										California home equity.
-									</p>
-									<div class="text-amber-600 font-semibold group-hover:text-amber-700">
-										<span>Learn More</span>
-									</div>
-								</div>
-							</Link>
-							<Link href="/corporate-relocations" class="group">
-								<div class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 hover:border-amber-300 transform hover:-translate-y-2">
-									<h3 class="text-2xl font-bold text-slate-900 mb-4">
-										Corporate Relocations
-									</h3>
-									<p class="text-slate-600 mb-6">
-										Expert assistance for executives and professionals
-										relocating to Las Vegas.
-									</p>
-									<div class="text-amber-600 font-semibold group-hover:text-amber-700">
-										<span>Learn More</span>
-									</div>
-								</div>
-							</Link>
-							<Link href="/market-analysis" class="group">
-								<div class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 hover:border-amber-300 transform hover:-translate-y-2">
-									<h3 class="text-2xl font-bold text-slate-900 mb-4">
-										Market Analysis
-									</h3>
-									<p class="text-slate-600 mb-6">
-										Receive a complimentary, in-depth market analysis for your
-										luxury property.
-									</p>
-									<div class="text-amber-600 font-semibold group-hover:text-amber-700">
-										<span>Learn More</span>
-									</div>
-								</div>
-							</Link>
-							<Link href="/same-day-showings" class="group">
-								<div class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 hover:border-amber-300 transform hover:-translate-y-2">
-									<h3 class="text-2xl font-bold text-slate-900 mb-4">
-										Same-Day Showings
-									</h3>
-									<p class="text-slate-600 mb-6">
-										Flexible and prompt property viewings to fit your busy
-										schedule.
-									</p>
-									<div class="text-amber-600 font-semibold group-hover:text-amber-700">
-										<span>Learn More</span>
-									</div>
-								</div>
-							</Link>
-							<Link href="/investment-properties" class="group">
-								<div class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 hover:border-amber-300 transform hover:-translate-y-2">
-									<h3 class="text-2xl font-bold text-slate-900 mb-4">
-										Investment Properties
-									</h3>
-									<p class="text-slate-600 mb-6">
-										Identify lucrative real estate investment opportunities in
-										the Las Vegas market.
-									</p>
-									<div class="text-amber-600 font-semibold group-hover:text-amber-700">
-										<span>Learn More</span>
-									</div>
-								</div>
-							</Link>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* Luxury Communities Section */}
-			<section class="py-24 bg-gradient-to-br from-slate-50 to-white">
-				<div class="container mx-auto px-4">
-					<div class="max-w-7xl mx-auto">
-						<div class="text-center mb-20">
-							<h2 class="text-4xl md:text-6xl font-bold text-slate-900 mb-8">
-								Las Vegas Luxury{" "}
-								<span class="bg-gradient-to-r from-amber-500 to-amber-600 bg-clip-text text-transparent">
-									Communities
-								</span>
-							</h2>
-							<p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-								Centennial Homes specializes in Las Vegas's most prestigious
-								neighborhoods, where luxury meets lifestyle.
-							</p>
-						</div>
-						<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-							<div class="text-center group">
-								<div class="bg-gradient-to-br from-slate-100 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 hover:border-amber-300 transform hover:-translate-y-2">
-									<div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-										<span class="text-white font-bold text-xl">RR</span>
-									</div>
-									<h3 class="text-xl font-bold text-slate-900 mb-3">
-										Red Rock Country Club
-									</h3>
-									<p class="text-slate-600 mb-4">
-										Premier golf course community with luxury estates and
-										mountain views.
-									</p>
-									<div class="text-amber-600 font-semibold group-hover:text-amber-700">
-										<span>Explore Properties</span>
-									</div>
-								</div>
-							</div>
-							<div class="text-center group">
-								<div class="bg-gradient-to-br from-slate-100 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 hover:border-amber-300 transform hover:-translate-y-2">
-									<div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-										<span class="text-white font-bold text-xl">TR</span>
-									</div>
-									<h3 class="text-xl font-bold text-slate-900 mb-3">
-										The Ridges
-									</h3>
-									<p class="text-slate-600 mb-4">
-										Exclusive gated community with custom homes and panoramic
-										city views.
-									</p>
-									<div class="text-amber-600 font-semibold group-hover:text-amber-700">
-										<span>Explore Properties</span>
-									</div>
-								</div>
-							</div>
-							<div class="text-center group">
-								<div class="bg-gradient-to-br from-slate-100 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 hover:border-amber-300 transform hover:-translate-y-2">
-									<div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-										<span class="text-white font-bold text-xl">SW</span>
-									</div>
-									<h3 class="text-xl font-bold text-slate-900 mb-3">
-										Summerlin West
-									</h3>
-									<p class="text-slate-600 mb-4">
-										Master-planned community with luxury homes and resort-style
-										amenities.
-									</p>
-									<div class="text-amber-600 font-semibold group-hover:text-amber-700">
-										<span>Explore Properties</span>
-									</div>
-								</div>
-							</div>
-							<div class="text-center group">
-								<div class="bg-gradient-to-br from-slate-100 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 hover:border-amber-300 transform hover:-translate-y-2">
-									<div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-										<span class="text-white font-bold text-xl">CH</span>
-									</div>
-									<h3 class="text-xl font-bold text-slate-900 mb-3">
-										Centennial Hills
-									</h3>
-									<p class="text-slate-600 mb-4">
-										Growing luxury community with new construction and
-										established neighborhoods.
-									</p>
-									<div class="text-amber-600 font-semibold group-hover:text-amber-700">
-										<span>Explore Properties</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* Client Success Stories — see Testimonials for verified reviews */}
-			<section class="hidden py-20 bg-gradient-to-r from-slate-900 to-slate-800">
-				<div class="container mx-auto px-4">
-					<div class="max-w-6xl mx-auto">
-						<div class="text-center mb-16">
-							<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-								Client{" "}
-								<span class="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
-									Success Stories
-								</span>
-							</h2>
-							<p class="text-xl text-slate-300 max-w-2xl mx-auto">
-								Real results from real clients who chose Centennial Homes and
-								Dr. Jan Duffy for their luxury real estate journey.
-							</p>
-						</div>
-						<div class="grid md:grid-cols-3 gap-8">
-							<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-								<div class="text-amber-400 text-4xl font-bold mb-4">$2.1M</div>
-								<h3 class="text-xl font-bold text-white mb-3">
-									Red Rock Country Club Sale
-								</h3>
-								<p class="text-slate-300 mb-4">
-									"Dr. Jan Duffy's market expertise helped us sell our luxury
-									estate 15% above asking price in just 3 weeks."
-								</p>
-								<div class="text-sm text-slate-400">
-									- Executive Couple, California
-								</div>
-							</div>
-							<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-								<div class="text-amber-400 text-4xl font-bold mb-4">$1.8M</div>
-								<h3 class="text-xl font-bold text-white mb-3">
-									The Ridges Purchase
-								</h3>
-								<p class="text-slate-300 mb-4">
-									"Centennial Homes made our relocation from Silicon Valley
-									seamless. Found our dream home before we even moved."
-								</p>
-								<div class="text-sm text-slate-400">
-									- Tech Executive, Bay Area
-								</div>
-							</div>
-							<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-								<div class="text-amber-400 text-4xl font-bold mb-4">$1.2M</div>
-								<h3 class="text-xl font-bold text-white mb-3">
-									Summerlin West Investment
-								</h3>
-								<p class="text-slate-300 mb-4">
-									"Dr. Jan Duffy's investment property analysis led to a 25% ROI
-									in the first year. Exceptional market knowledge."
-								</p>
-								<div class="text-sm text-slate-400">
-									- Investment Group, New York
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* Testimonials Slider */}
-			<TestimonialSlider />
-
-			<ZipCodeHub />
-
-			<InternalLinks
-				title="Las Vegas luxury communities"
-				links={communityLinks}
-				className="bg-gradient-to-br from-slate-50 to-white"
-			/>
-
-			<InternalLinks
-				title="Explore our website"
-				links={mainPageLinks}
-				className="bg-white"
-			/>
-
-			<FAQAccordion items={HOME_FAQ} />
-
-			<LocalMapSection />
-
-			<section class="hidden py-20 bg-white">
-				<div class="container mx-auto px-4">
-					<div class="max-w-4xl mx-auto">
-						<div class="text-center mb-16">
-							<h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-								Frequently Asked{" "}
-								<span class="bg-gradient-to-r from-amber-500 to-amber-600 bg-clip-text text-transparent">
-									Questions
-								</span>
-							</h2>
-							<p class="text-xl text-slate-600 max-w-2xl mx-auto">
-								Common questions about luxury real estate in Las Vegas with
-								Centennial Homes and Dr. Jan Duffy.
-							</p>
-						</div>
-						<div class="space-y-8">
-							<div class="bg-slate-50 rounded-lg p-6">
-								<h3 class="text-xl font-bold text-slate-900 mb-3">
-									What luxury communities does Centennial Homes serve?
-								</h3>
-								<p class="text-slate-600">
-									Centennial Homes specializes in Las Vegas luxury communities
-									including Red Rock Country Club, The Ridges, Summerlin West,
-									and Centennial Hills. Dr. Jan Duffy has extensive expertise in
-									these premier neighborhoods.
-								</p>
-							</div>
-							<div class="bg-slate-50 rounded-lg p-6">
-								<h3 class="text-xl font-bold text-slate-900 mb-3">
-									How much experience does Dr. Jan Duffy have?
-								</h3>
-								<p class="text-slate-600">
-									Dr. Jan Duffy brings over 30 years of research expertise and
-									luxury real estate mastery to every Centennial Homes
-									transaction. She's a top 1% REALTOR® in the Las Vegas luxury
-									market.
-								</p>
-							</div>
-							<div class="bg-slate-50 rounded-lg p-6">
-								<h3 class="text-xl font-bold text-slate-900 mb-3">
-									What services does Centennial Homes offer?
-								</h3>
-								<p class="text-slate-600">
-									Centennial Homes offers comprehensive luxury real estate
-									services including luxury home sales, California equity buyer
-									assistance, corporate relocations, market analysis, same-day
-									showings, and investment property consulting.
-								</p>
-							</div>
-							<div class="bg-slate-50 rounded-lg p-6">
-								<h3 class="text-xl font-bold text-slate-900 mb-3">
-									Do you offer free market analysis?
-								</h3>
-								<p class="text-slate-600">
-									Yes, Centennial Homes provides complimentary market analysis
-									for luxury properties. Dr. Jan Duffy's research background
-									ensures detailed, accurate property valuations for informed
-									decision-making.
-								</p>
-							</div>
-							<div class="bg-slate-50 rounded-lg p-6">
-								<h3 class="text-xl font-bold text-slate-900 mb-3">
-									What price range do you work with?
-								</h3>
-								<p class="text-slate-600">
-									Centennial Homes specializes in luxury properties ranging from
-									$400K to $2M+ in Las Vegas's most prestigious communities. We
-									cater to discerning clients seeking premium real estate
-									solutions.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* Centennial Homes CTA Section */}
-			<section class="py-24 bg-gradient-to-r from-amber-500 to-amber-600">
-				<div class="container mx-auto px-4">
-					<div class="max-w-5xl mx-auto text-center">
-						<h2 class="text-4xl md:text-6xl font-bold text-white mb-8">
-							Ready to Experience{" "}
-							<span class="text-slate-900">Centennial Homes</span> Excellence?
-						</h2>
-						<p class="text-xl md:text-2xl text-white mb-12 max-w-3xl mx-auto leading-relaxed">
-							Join hundreds of satisfied clients who chose Dr. Jan Duffy for
-							their luxury real estate journey in Las Vegas.
-						</p>
-						<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-							<a
-								href={`tel:${SITE.phoneTel}`}
-								class="bg-white text-amber-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-slate-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-							>
-								Call {SITE.phone}
-							</a>
-							<Link
-								href="/contact"
-								class="bg-slate-900 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-							>
-								Schedule Consultation
-							</Link>
-						</div>
-						<div class="mt-8 text-white/80 text-sm">
-							<p>
-								Free Market Analysis • Same-Day Showings • 30+ Years Experience
-							</p>
-						</div>
-						<div class="mt-6 flex justify-center space-x-6">
-							<div class="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-								<span class="text-white text-sm font-medium">
-									Top 1% REALTOR®
-								</span>
-							</div>
-							<div class="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-								<span class="text-white text-sm font-medium">
-									5-Star Reviews
-								</span>
-							</div>
-							<div class="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-								<span class="text-white text-sm font-medium">
-									{SITE.brokerage}
-								</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* Floating Phone Button - Mobile Only */}
-			<div class="fixed bottom-6 right-6 z-50 lg:hidden">
-				<a
-					href="tel:+17029031952"
-					class="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-pulse"
-					aria-label="Call Centennial Homes (702) 903-1952"
-				>
-					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-						<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-					</svg>
-				</a>
-			</div>
-		</>
-	);
+      {/* Contact CTA Section */}
+      <section class="cta-section">
+        <div class="container mx-auto px-4 py-16">
+          <div class="bg-blue-600 rounded-2xl p-12 text-center text-white">
+            <h2 class="text-3xl font-bold mb-4">
+              Ready to Find Your Dream Home?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+              Get personalized guidance from Las Vegas' top real estate expert. Whether you're <a href="/buy-a-home" class="text-white underline hover:no-underline">buying a home</a>, <a href="/sell-a-home" class="text-white underline hover:no-underline">selling a home</a>, or need <a href="/home-valuation" class="text-white underline hover:no-underline">home valuation</a> services, we're here to help.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="/contact" class="btn btn-white">
+                Schedule Consultation
+              </a>
+              <a href="/buy-a-home" class="btn btn-outline-white">
+                Buy a Home
+              </a>
+              <a href="/sell-a-home" class="btn btn-outline-white">
+                Sell a Home
+              </a>
+              <a href="tel:+17029031952" class="btn btn-outline-white">
+                Call (702) 903-1952
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 });
 
 export const head: DocumentHead = {
-	title: HOME_SEO.title,
-	meta: [
-		{ name: "description", content: HOME_SEO.description },
-		{ property: "og:title", content: HOME_SEO.title },
-		{ property: "og:description", content: HOME_SEO.description },
-		{ property: "og:url", content: SITE.url },
-		{
-			property: "og:image",
-			content: siteImageUrl(SITE_IMAGES.agentHero),
-		},
-		{ name: "twitter:card", content: "summary_large_image" },
-		{ name: "keywords", content: HOME_SEO.keywords.join(", ") },
-	],
+  title: 'Centennial Hills Real Estate | Homes by Dr. Jan Duffy - Top 1% Las Vegas REALTOR®',
+  meta: [
+    {
+      name: 'description',
+      content: 'Luxury real estate specialist serving West Summerlin\'s premier neighborhoods including ZIP codes 89138, 89144, and 89135. Dr. Jan Duffy, REALTOR® offers 30+ years of research expertise in luxury homes $400K-$750K. Specializing in Red Rock Country Club, The Ridges, and Summerlin West communities for California equity buyers and corporate relocations. Top 1% Las Vegas REALTOR® providing same-day showings and complimentary market analysis. Available 24/7 for executive clients and luxury home investments.',
+    },
+    {
+      name: 'robots',
+      content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+    },
+    {
+      name: 'theme-color',
+      content: '#1a365d',
+    },
+    {
+      property: 'og:title',
+      content: 'Centennial Hills Real Estate | Dr. Janet Duffy - Top 1% Las Vegas REALTOR®',
+    },
+    {
+      property: 'og:description',
+      content: 'Find your dream home in Centennial Hills, Las Vegas with Dr. Janet Duffy, Top 1% REALTOR®. 30+ years expertise in luxury homes, new construction, and California equity buyer relocations.',
+    },
+    {
+      property: 'og:image',
+      content: 'https://www.centennialhillshomesforsale.com/images/dr-janet-duffy-og.jpg',
+    },
+    {
+      property: 'og:type',
+      content: 'website',
+    },
+    {
+      property: 'og:url',
+      content: 'https://www.centennialhillshomesforsale.com/',
+    },
+    {
+      property: 'og:site_name',
+      content: 'Centennial Hills Real Estate',
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image',
+    },
+    {
+      name: 'twitter:title',
+      content: 'Centennial Hills Real Estate | Dr. Janet Duffy - Top 1% Las Vegas REALTOR®',
+    },
+    {
+      name: 'twitter:description',
+      content: 'Find your dream home in Centennial Hills, Las Vegas with Dr. Janet Duffy, Top 1% REALTOR®. 30+ years expertise in luxury homes, new construction, and California equity buyer relocations.',
+    },
+    {
+      name: 'twitter:image',
+      content: 'https://www.centennialhillshomesforsale.com/images/dr-janet-duffy-twitter.jpg',
+    },
+  ],
 };
