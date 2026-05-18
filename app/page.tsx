@@ -18,6 +18,9 @@ import {
   valuePropositions,
 } from "@/lib/site-config";
 import { buildPageMetadata } from "@/lib/seo";
+import SchemaScript from "@/components/SchemaScript";
+import { generateReviewGraphSchema } from "@/lib/schema";
+import { homepageReviews } from "@/lib/reviews";
 
 export const metadata: Metadata = buildPageMetadata({
   title: siteConfig.fullName,
@@ -71,6 +74,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <SchemaScript
+        schema={generateReviewGraphSchema(homepageReviews)}
+        id="homepage-review-schema"
       />
       <Navbar />
       <main>

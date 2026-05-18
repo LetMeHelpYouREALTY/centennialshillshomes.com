@@ -56,7 +56,8 @@ export const officeInfo = {
 
 /** Root-relative static image paths (files in public/) */
 export const siteImages = {
-  logo: "/logo.svg",
+  logo: "/logo.png",
+  logoSvg: "/logo.svg",
   logoRaster: "/logo.png",
   ogDefault: "/og-image.jpg",
   fallback: "/media/fallback.svg",

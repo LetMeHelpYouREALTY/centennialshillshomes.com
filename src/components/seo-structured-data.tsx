@@ -240,6 +240,11 @@ export default component$<StructuredDataProps>(({ type, data }) => {
         return {
           ...baseData,
           "@type": "Review",
+          "itemReviewed": {
+            "@type": "RealEstateAgent",
+            "@id": "https://www.centennialhillshomesforsale.com#organization",
+            "name": "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties"
+          },
           "author": {
             "@type": "Person",
             "name": data.author?.name || "Client"
@@ -249,6 +254,7 @@ export default component$<StructuredDataProps>(({ type, data }) => {
             "ratingValue": data.rating || 5,
             "bestRating": 5
           },
+          "reviewBody": data.reviewBody,
           "datePublished": data.datePublished || new Date().toISOString()
         };
 

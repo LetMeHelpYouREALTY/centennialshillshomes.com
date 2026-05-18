@@ -182,7 +182,7 @@ export function generateOrganizationSchema() {
     "@id": `${BASE_URL}#parent-organization`,
     name: "Berkshire Hathaway HomeServices Nevada Properties",
     url: "https://www.bfrre.com",
-    logo: `${BASE_URL}/favicon-32x32.png`,
+    logo: `${BASE_URL}/logo.png`,
     parentOrganization: {
       "@type": "Organization",
       name: "Berkshire Hathaway HomeServices",
@@ -272,34 +272,58 @@ export function generateAggregateRatingSchema(
   };
 }
 
+/** Entity being reviewed (matches site-wide RealEstateAgent @id) */
+export const reviewedRealEstateAgent = {
+  "@type": "RealEstateAgent" as const,
+  "@id": `${BASE_URL}#organization`,
+  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+};
+
+function mapReviewItemToSchema(review: ReviewItem, index: number) {
+  return {
+    "@type": "Review" as const,
+    "@id": `${BASE_URL}#review-${index + 1}`,
+    itemReviewed: reviewedRealEstateAgent,
+    author: {
+      "@type": "Person" as const,
+      name: review.author,
+    },
+    reviewRating: {
+      "@type": "Rating" as const,
+      ratingValue: review.rating.toString(),
+      bestRating: "5",
+      worstRating: "1",
+    },
+    reviewBody: review.reviewBody,
+    datePublished: review.datePublished || new Date().toISOString().split("T")[0],
+  };
+}
+
 /**
- * Generate Review schema for individual testimonials
+ * Standalone Review entities for rich results (homepage testimonials).
+ * @see https://developers.google.com/search/docs/appearance/structured-data/review-snippet
+ */
+export function generateReviewGraphSchema(reviews: ReviewItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": reviews.map(mapReviewItemToSchema),
+  };
+}
+
+/**
+ * Generate Review schema nested under RealEstateAgent
  */
 export function generateReviewSchema(reviews: ReviewItem[]) {
   return {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "@id": `${BASE_URL}#organization`,
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: reviewedRealEstateAgent.name,
     aggregateRating: generateAggregateRatingSchema(
       agentStats.averageRating,
       agentStats.reviewCount
     ),
-    review: reviews.map((review) => ({
-      "@type": "Review",
-      author: {
-        "@type": "Person",
-        name: review.author,
-      },
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: review.rating.toString(),
-        bestRating: "5",
-        worstRating: "1",
-      },
-      reviewBody: review.reviewBody,
-      datePublished: review.datePublished || new Date().toISOString().split("T")[0],
-    })),
+    review: reviews.map(mapReviewItemToSchema),
   };
 }
 

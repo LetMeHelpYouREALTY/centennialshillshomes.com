@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     images: [siteImageUrl(siteImages.ogDefault)],
   },
   icons: {
-    icon: "/favicon-32x32.png",
+    icon: "/favicon.svg",
   },
   robots: {
     index: true,

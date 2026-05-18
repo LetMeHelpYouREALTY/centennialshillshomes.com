@@ -2,11 +2,16 @@
   "name": "faq-gen",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "flask-dev": "FLASK_DEBUG=1 pip3 install -r requirements.txt && python3 -m flask --app api/index run -p 5328",
     "next-dev": "next dev",
     "dev": "concurrently \"pnpm run next-dev\" \"pnpm run flask-dev\"",
     "build": "next build",
+    "vercel-build": "next build",
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
@@ -24,8 +29,9 @@
     "lighthouse:manual": "lighthouse https://heyberkshire.com --view --preset=desktop",
     "perf": "npm run analyze && npm run lighthouse",
     "vercel:build": "vercel build",
-    "vercel:deploy": "vercel deploy --prebuilt",
-    "vercel:prod": "vercel deploy --prod --prebuilt",
+    "vercel:deploy": "vercel deploy --prod",
+    "vercel:preview": "vercel deploy",
+    "vercel:prod": "vercel deploy --prod",
     "cloudflare:dev": "wrangler dev",
     "cloudflare:deploy": "wrangler deploy",
     "cloudflare:pages": "npx @cloudflare/next-on-pages",

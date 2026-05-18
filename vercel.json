@@ -1,6 +1,51 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "buildCommand": null,
+  "outputDirectory": null,
+  "devCommand": "pnpm run next-dev",
   "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/active-listings",
+      "destination": "/listings",
+      "permanent": true
+    },
+    {
+      "source": "/active-listings/",
+      "destination": "/listings",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/market-insights",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/market-insights",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/market-insights",
+      "permanent": true
+    },
+    {
+      "source": "/mls-search",
+      "destination": "/listings",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about",
+      "permanent": true
+    },
     {
       "source": "/janet-duffy",
       "destination": "/about",
@@ -9,6 +54,16 @@
     {
       "source": "/janet-duffy/",
       "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/images/logo.png",
+      "destination": "/logo.png",
+      "permanent": true
+    },
+    {
+      "source": "/images/logo.svg",
+      "destination": "/logo.svg",
       "permanent": true
     },
     {

@@ -7,7 +7,11 @@
  * <SchemaScript schemas={[schema1, schema2]} />
  */
 
-import { combineSchemas, schemaToJsonLd } from "@/lib/schema";
+import {
+  combineSchemas,
+  reviewedRealEstateAgent,
+  schemaToJsonLd,
+} from "@/lib/schema";
 
 interface SchemaScriptProps {
   /** Single schema object */
@@ -133,8 +137,10 @@ export function ReviewSchema({
   }
 
   if (reviews && reviews.length > 0) {
-    schema.review = reviews.map((review) => ({
+    schema.review = reviews.map((review, index) => ({
       "@type": "Review",
+      "@id": `https://www.centennialhillshomesforsale.com#review-${index + 1}`,
+      itemReviewed: reviewedRealEstateAgent,
       author: {
         "@type": "Person",
         name: review.author,
