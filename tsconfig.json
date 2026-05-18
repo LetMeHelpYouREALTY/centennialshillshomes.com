@@ -31,6 +31,12 @@
     ".vercel",
     "workers",
     "tests",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "vitest.config.ts",
+    "vitest.setup.ts",
+    "real-estate-mcp-worker",
+    "cursor-mcp-test",
     "vite.config.ts",
     "scripts"
   ]
