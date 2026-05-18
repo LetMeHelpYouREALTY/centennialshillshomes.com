@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-05-18",
+  "basePath": "/images",
+  "v0Rule": "Use these local paths in v0 previews. Do NOT hotlink external URLs that may be blocked. Regenerate via prompts/v0/site-images.md if needed.",
+  "assets": [
+    { "file": "logo.png", "section": "header, footer", "alt": "Centennial Hills Real Estate - Homes by Dr. Jan Duffy" },
+    { "file": "modern-home-exterior.jpg", "section": "homepage-hero, listings, properties", "alt": "Modern luxury home in Centennial Hills, Las Vegas" },
+    { "file": "clubhouse-exterior.jpg", "section": "luxury communities, properties", "alt": "Modern clubhouse in Las Vegas community" },
+    { "file": "community-lounge.jpg", "section": "amenities, centennial-hills", "alt": "Modern community lounge in Centennial Hills" },
+    { "file": "community-lounge-2.jpg", "section": "the-ridges, luxury", "alt": "Elegant community lounge with fireplace" },
+    { "file": "fitness-center.jpg", "section": "amenities", "alt": "Fitness center in Centennial Hills community" },
+    { "file": "swimming-pool.jpg", "section": "amenities, centennial-hills", "alt": "Resort-style swimming pool" },
+    { "file": "swimming-pool-2.jpg", "section": "summerlin, amenities", "alt": "Luxury swimming pool with mountain views" },
+    { "file": "outdoor-patio.jpg", "section": "amenities, the-ridges", "alt": "Outdoor patio with fire pit" },
+    { "file": "bocce-courts.jpg", "section": "amenities", "alt": "Bocce ball courts" },
+    { "file": "pickleball-courts.jpg", "section": "amenities, summerlin", "alt": "Pickleball courts" },
+    { "file": "community-kitchen.jpg", "section": "amenities, summerlin", "alt": "Modern community kitchen" },
+    { "file": "entrance-guardhouse.jpg", "section": "summerlin, communities", "alt": "Community entrance guardhouse" },
+    { "file": "dr-jan-duffy.jpg", "section": "about, schema, agent", "alt": "Dr. Jan Duffy, Las Vegas REALTOR" },
+    { "file": "blog-default.jpg", "section": "blog, RSS fallback", "alt": "Centennial Hills real estate blog" },
+    { "file": "centennial-hills-hero-bg.jpg", "section": "global-css-hero-bg", "alt": "Centennial Hills Las Vegas panorama" },
+    { "file": "property-default.jpg", "section": "schema-listings", "alt": "Las Vegas luxury home" }
+  ]
+}

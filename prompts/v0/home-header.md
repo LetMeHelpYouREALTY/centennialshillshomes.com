@@ -8,7 +8,7 @@
 <context>
 Global site header for centennialhillshomesforsale.com — used on homepage and all interior pages.
 Brand: Centennial Hills Real Estate | Homes by Dr. Jan Duffy
-Logo image: /images/logo.png (40px height)
+Logo image: `/images/logo.png` (bundled, 40px height) — generate via site-images.md if missing in v0
 Phone CTA: Call (702) 903-1952 → tel:+17029031952
 Fixed position, z-index 1000, height ~72px.
 </context>

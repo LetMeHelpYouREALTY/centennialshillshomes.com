@@ -37,7 +37,9 @@ Please add the following image files to this directory:
 
 ## Current Status
 
-⚠️ **Images are currently missing** - Add the image files listed above for them to display on the website.
+✅ **Core image pack added** (May 2026) — see `image-manifest.json` for section mapping.
+
+v0 / design: use `prompts/v0/site-images.md` for generation prompts. Do not hotlink external URLs in v0 previews.
 
 See `IMAGE-FILES-REFERENCE.md` in the project root for detailed descriptions of each image.
 

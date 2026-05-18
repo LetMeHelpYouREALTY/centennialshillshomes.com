@@ -15,7 +15,7 @@ Sits below a fixed 72px header (add padding-top ~100px).
 - NEVER use "Janet" — only Dr. Jan Duffy
 - Do NOT include navigation or footer — hero section only
 - No raw markdown asterisks in copy — use semantic emphasis in JSX
-- Hero image: use placeholder `/images/modern-home-exterior.jpg` or Unsplash Las Vegas luxury home
+- Hero image: **must use** `/images/modern-home-exterior.jpg` (bundled asset) OR generate in v0 with site-images.md prompt — never hotlink Unsplash
 - Stats and price card are illustrative marketing numbers (not live MLS)
 </constraints>
 

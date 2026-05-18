@@ -20,6 +20,7 @@ Design one polished template; content is driven by props (see below).
 - Include FAQ accordion (3–5 items) + FAQ schema-ready markup
 - Bottom CTA band before footer (or assume global layout adds CTA — include slim inline CTA if standalone)
 - Fair housing friendly copy; no discriminatory language
+- **Images:** hero `/images/modern-home-exterior.jpg`; amenities use `/images/community-lounge.jpg`, `swimming-pool.jpg`, `fitness-center.jpg` etc. from image-manifest.json — generate per site-images.md if needed
 </constraints>
 
 <design_system>

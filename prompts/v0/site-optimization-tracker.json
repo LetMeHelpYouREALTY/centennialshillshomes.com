@@ -6,16 +6,17 @@
     "Homepage hero strong tag + OG meta Jan branding",
     "Map widget embed fallback when API key missing or load fails",
     "Global consultation CTA on pages without existing cta-section",
-    "Claude Advisor V0 prompt registry"
+    "Claude Advisor V0 prompt registry",
+    "public/images core asset pack (17 files)"
   ],
-  "pendingV0": [
-    "market-report-template",
-    "blog-article-template"
-  ],
+  "pendingV0": [],
   "readyV0": [
+    "prompts/v0/site-images.md",
     "prompts/v0/home-hero.md",
     "prompts/v0/home-header.md",
-    "prompts/v0/neighborhood-landing.md"
+    "prompts/v0/neighborhood-landing.md",
+    "prompts/v0/market-report-template.md",
+    "prompts/v0/blog-article-template.md"
   ],
   "routesWithGlobalCta": "All index routes except PAGE_HAS_OWN_CTA in layout.tsx and /demo/*"
 }

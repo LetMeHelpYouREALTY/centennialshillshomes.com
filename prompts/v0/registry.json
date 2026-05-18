@@ -4,7 +4,19 @@
   "advisor": "v0-prompt-advisor",
   "updated": "2026-05-18",
   "optimizationTracker": "prompts/v0/site-optimization-tracker.json",
+  "imageManifest": "public/images/image-manifest.json",
+  "imageGuide": "prompts/v0/site-images.md",
   "prompts": [
+    {
+      "id": "site-images",
+      "component": "Site Image Pack",
+      "file": "prompts/v0/site-images.md",
+      "legacyFile": null,
+      "status": "integrated",
+      "version": "1.0.0",
+      "priority": 0,
+      "notes": "17 assets in public/images; v0 gen prompts per section"
+    },
     {
       "id": "homepage",
       "component": "Homepage (full)",
@@ -13,7 +25,7 @@
       "status": "integrated",
       "version": "1.1.0",
       "priority": 1,
-      "notes": "Integrated: dedupe listings, map fallback, Jan branding, global CTA pattern"
+      "notes": "Use site-images.md for all image paths"
     },
     {
       "id": "home-hero",
@@ -21,9 +33,9 @@
       "file": "prompts/v0/home-hero.md",
       "legacyFile": null,
       "status": "ready",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "priority": 2,
-      "notes": "Hero band only — 2-col stats + image card"
+      "notes": "modern-home-exterior.jpg"
     },
     {
       "id": "home-header",
@@ -31,9 +43,9 @@
       "file": "prompts/v0/home-header.md",
       "legacyFile": "V0-HEADER-NAV-PROMPT.md",
       "status": "ready",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "priority": 3,
-      "notes": "Full nav tree, mobile drawer, phone CTA — v0 primary header prompt"
+      "notes": "logo.png bundled"
     },
     {
       "id": "neighborhood-landing",
@@ -41,9 +53,29 @@
       "file": "prompts/v0/neighborhood-landing.md",
       "legacyFile": null,
       "status": "ready",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "priority": 4,
-      "notes": "Reusable for Aliante, Providence, Tule Springs, etc."
+      "notes": "Amenity images from manifest"
+    },
+    {
+      "id": "market-report-template",
+      "component": "Market Report Page",
+      "file": "prompts/v0/market-report-template.md",
+      "legacyFile": null,
+      "status": "ready",
+      "version": "1.0.0",
+      "priority": 5,
+      "notes": "centennial-hills-hero-bg.jpg"
+    },
+    {
+      "id": "blog-article-template",
+      "component": "Blog & Article Layout",
+      "file": "prompts/v0/blog-article-template.md",
+      "legacyFile": null,
+      "status": "ready",
+      "version": "1.0.0",
+      "priority": 6,
+      "notes": "Image on every card; blog-default.jpg fallback"
     },
     {
       "id": "header-nav",
@@ -52,8 +84,8 @@
       "legacyFile": "V0-HEADER-NAV-PROMPT.md",
       "status": "ready",
       "version": "1.1.0",
-      "priority": 5,
-      "notes": "Abbreviated; prefer home-header.md for v0"
+      "priority": 7,
+      "notes": "Abbreviated"
     },
     {
       "id": "navigation",
@@ -62,7 +94,7 @@
       "legacyFile": "V0-NAVIGATION-PROMPT.md",
       "status": "ready",
       "version": "1.1.0",
-      "priority": 6,
+      "priority": 8,
       "notes": "Glassmorphism mobile menu"
     },
     {
@@ -72,7 +104,7 @@
       "legacyFile": "V0-CONTACT-FORM-PROMPT.md",
       "status": "ready",
       "version": "1.0.0",
-      "priority": 7,
+      "priority": 9,
       "notes": "Lead gen form for /contact"
     }
   ]
