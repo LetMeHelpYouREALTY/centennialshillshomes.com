@@ -1,6 +1,6 @@
 # V0 Prompt: Modern Centered Header & Navigation
 
-> **Managed by Claude Advisor.** Canonical copy: `prompts/v0/header-nav.md` · Registry: `prompts/v0/registry.json`
+> **Managed by Claude Advisor.** Canonical copy: `prompts/v0/home-header.md` (full) or `prompts/v0/header-nav.md` (short) · Registry: `prompts/v0/registry.json`
 
 
 ## Design Requirements

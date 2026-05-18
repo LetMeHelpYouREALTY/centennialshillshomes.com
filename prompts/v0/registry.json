@@ -7,7 +7,7 @@
   "prompts": [
     {
       "id": "homepage",
-      "component": "Homepage",
+      "component": "Homepage (full)",
       "file": "prompts/v0/homepage.md",
       "legacyFile": null,
       "status": "integrated",
@@ -16,14 +16,44 @@
       "notes": "Integrated: dedupe listings, map fallback, Jan branding, global CTA pattern"
     },
     {
+      "id": "home-hero",
+      "component": "Homepage Hero",
+      "file": "prompts/v0/home-hero.md",
+      "legacyFile": null,
+      "status": "ready",
+      "version": "1.0.0",
+      "priority": 2,
+      "notes": "Hero band only — 2-col stats + image card"
+    },
+    {
+      "id": "home-header",
+      "component": "Site Header & Nav",
+      "file": "prompts/v0/home-header.md",
+      "legacyFile": "V0-HEADER-NAV-PROMPT.md",
+      "status": "ready",
+      "version": "2.0.0",
+      "priority": 3,
+      "notes": "Full nav tree, mobile drawer, phone CTA — v0 primary header prompt"
+    },
+    {
+      "id": "neighborhood-landing",
+      "component": "Neighborhood Landing Template",
+      "file": "prompts/v0/neighborhood-landing.md",
+      "legacyFile": null,
+      "status": "ready",
+      "version": "1.0.0",
+      "priority": 4,
+      "notes": "Reusable for Aliante, Providence, Tule Springs, etc."
+    },
+    {
       "id": "header-nav",
-      "component": "Header & Navigation",
+      "component": "Header (short variant)",
       "file": "prompts/v0/header-nav.md",
       "legacyFile": "V0-HEADER-NAV-PROMPT.md",
       "status": "ready",
       "version": "1.1.0",
-      "priority": 2,
-      "notes": "Centered nav; Jan Duffy in About dropdown"
+      "priority": 5,
+      "notes": "Abbreviated; prefer home-header.md for v0"
     },
     {
       "id": "navigation",
@@ -32,7 +62,7 @@
       "legacyFile": "V0-NAVIGATION-PROMPT.md",
       "status": "ready",
       "version": "1.1.0",
-      "priority": 3,
+      "priority": 6,
       "notes": "Glassmorphism mobile menu"
     },
     {
@@ -42,7 +72,7 @@
       "legacyFile": "V0-CONTACT-FORM-PROMPT.md",
       "status": "ready",
       "version": "1.0.0",
-      "priority": 4,
+      "priority": 7,
       "notes": "Lead gen form for /contact"
     }
   ]

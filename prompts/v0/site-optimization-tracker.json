@@ -9,9 +9,13 @@
     "Claude Advisor V0 prompt registry"
   ],
   "pendingV0": [
-    "neighborhood-landing-template",
     "market-report-template",
     "blog-article-template"
+  ],
+  "readyV0": [
+    "prompts/v0/home-hero.md",
+    "prompts/v0/home-header.md",
+    "prompts/v0/neighborhood-landing.md"
   ],
   "routesWithGlobalCta": "All index routes except PAGE_HAS_OWN_CTA in layout.tsx and /demo/*"
 }
