@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { PropertyCard } from "~/components/PropertyCard";
+import { FeaturedListings } from "~/components/sections/FeaturedListings";
 
 export default component$(() => {
 	return (
@@ -123,45 +124,34 @@ export default component$(() => {
 				</div>
 			</section>
 
-			{/* Featured Properties */}
-			<section class="py-16 bg-white">
+			{/* Advanced Search Widget */}
+			<section class="py-12 bg-white">
 				<div class="container mx-auto px-4">
-					<div class="max-w-7xl mx-auto">
-						<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
-							Featured Red Rock Country Club Properties
+					<div class="max-w-4xl mx-auto text-center">
+						<h2 class="text-3xl font-bold text-gray-800 mb-4">
+							Search Red Rock Country Club Properties
 						</h2>
-						<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-							<PropertyCard
-								title="Golf Course Estate"
-								price="$875,000"
-								bedrooms="5"
-								bathrooms="4.5"
-								sqft="3,800"
-								address="Red Rock Country Club, Las Vegas, NV"
-								image="/api/placeholder/400/300"
-							/>
-							<PropertyCard
-								title="Custom Luxury Home"
-								price="$725,000"
-								bedrooms="4"
-								bathrooms="3.5"
-								sqft="3,200"
-								address="Red Rock Country Club, Las Vegas, NV"
-								image="/api/placeholder/400/300"
-							/>
-							<PropertyCard
-								title="Executive Villa"
-								price="$950,000"
-								bedrooms="6"
-								bathrooms="5"
-								sqft="4,200"
-								address="Red Rock Country Club, Las Vegas, NV"
-								image="/api/placeholder/400/300"
-							/>
+						<p class="text-lg text-gray-600 mb-8">
+							Find luxury golf course homes and custom estates in Red Rock
+							Country Club. Filter by price, home type, and golf course
+							proximity.
+						</p>
+						<div class="bg-gray-50 p-6 rounded-lg">
+							<realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
 						</div>
 					</div>
 				</div>
 			</section>
+
+			{/* Current Listings in Red Rock Country Club */}
+			<FeaturedListings
+				title="Current Listings in Red Rock Country Club - Updated Daily"
+				subtitle="Explore available luxury estates in Las Vegas's most exclusive gated community. From golf course frontage to custom mountain view homes, discover your perfect Red Rock Country Club residence."
+				ctaText="Schedule Private Golf Course Tour"
+				ctaLink="/contact"
+				priceMin="600000"
+				priceMax="1500000"
+			/>
 
 			{/* Why Choose Red Rock */}
 			<section class="py-16 bg-blue-50">

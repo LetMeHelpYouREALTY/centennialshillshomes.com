@@ -1,5 +1,6 @@
 import { $, component$, useComputed$, useSignal } from "@builder.io/qwik";
 import { PropertyCard } from "~/components/PropertyCard";
+import { SITE_IMAGES } from "~/config/site";
 
 export interface PropertySearchProps {}
 
@@ -17,7 +18,7 @@ export const PropertySearch = component$<PropertySearchProps>((props) => {
 			bathrooms: "4.5",
 			sqft: "3,800",
 			address: "Red Rock Country Club, Las Vegas, NV",
-			image: "/api/placeholder/400/300",
+			image: SITE_IMAGES.communities.redRockCountryClub,
 			community: "red-rock",
 			priceRange: "750k+",
 			bedroomCount: 5,
@@ -30,7 +31,7 @@ export const PropertySearch = component$<PropertySearchProps>((props) => {
 			bathrooms: "3.5",
 			sqft: "3,200",
 			address: "The Ridges, Summerlin West, NV",
-			image: "/api/placeholder/400/300",
+			image: SITE_IMAGES.communities.theRidges,
 			community: "ridges",
 			priceRange: "600k-750k",
 			bedroomCount: 4,
@@ -43,7 +44,7 @@ export const PropertySearch = component$<PropertySearchProps>((props) => {
 			bathrooms: "3",
 			sqft: "2,500",
 			address: "Summerlin West, Las Vegas, NV",
-			image: "/api/placeholder/400/300",
+			image: SITE_IMAGES.communities.summerlinWest,
 			community: "summerlin-west",
 			priceRange: "500k-600k",
 			bedroomCount: 4,
@@ -56,7 +57,7 @@ export const PropertySearch = component$<PropertySearchProps>((props) => {
 			bathrooms: "3",
 			sqft: "2,400",
 			address: "Centennial Hills, Las Vegas, NV",
-			image: "/api/placeholder/400/300",
+			image: SITE_IMAGES.communities.centennialHills,
 			community: "centennial-hills",
 			priceRange: "500k-600k",
 			bedroomCount: 4,
@@ -69,7 +70,7 @@ export const PropertySearch = component$<PropertySearchProps>((props) => {
 			bathrooms: "3.5",
 			sqft: "2,600",
 			address: "Lone Mountain, Las Vegas, NV",
-			image: "/api/placeholder/400/300",
+			image: SITE_IMAGES.communities.loneMountain,
 			community: "lone-mountain",
 			priceRange: "500k-600k",
 			bedroomCount: 4,
@@ -82,7 +83,7 @@ export const PropertySearch = component$<PropertySearchProps>((props) => {
 			bathrooms: "2.5",
 			sqft: "2,200",
 			address: "North Las Vegas, NV",
-			image: "/api/placeholder/400/300",
+			image: SITE_IMAGES.communities.northLasVegas,
 			community: "north-las-vegas",
 			priceRange: "400k-500k",
 			bedroomCount: 3,

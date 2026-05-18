@@ -19,6 +19,25 @@ export default component$(() => {
 				</div>
 			</section>
 
+			{/* Advanced Search Widget */}
+			<section class="py-12 bg-white">
+				<div class="container mx-auto px-4">
+					<div class="max-w-4xl mx-auto text-center">
+						<h2 class="text-3xl font-bold text-gray-800 mb-4">
+							Ready to Find Your Dream Home?
+						</h2>
+						<p class="text-lg text-gray-600 mb-8">
+							Join our satisfied clients and start your luxury home search
+							today. Use our advanced property finder to discover homes in Las
+							Vegas's most prestigious communities.
+						</p>
+						<div class="bg-gray-50 p-6 rounded-lg">
+							<realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* Testimonials Grid */}
 			<section class="py-16">
 				<div class="container mx-auto px-4">

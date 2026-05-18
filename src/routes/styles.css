@@ -9,9 +9,20 @@ html {
 }
 
 body {
-	background: var(--qwik-dark-background);
-	color: var(--qwik-dark-text);
+	background: transparent !important;
+	color: #374151 !important;
 	overflow-x: hidden;
+}
+
+/* Override all CSS variables */
+* {
+	--qwik-dark-background: transparent !important;
+	--qwik-dark-text: #374151 !important;
+}
+
+/* Ensure hero section background shows */
+section {
+	background: inherit !important;
 }
 
 /* HEADINGS ------------------------------------- */

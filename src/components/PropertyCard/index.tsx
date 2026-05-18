@@ -1,4 +1,5 @@
-import { component$ } from "@builder.io/qwik";
+import { $, component$, useSignal } from "@builder.io/qwik";
+import { SITE_IMAGES } from "~/config/site";
 
 export interface PropertyCardProps {
 	title: string;
@@ -11,12 +12,24 @@ export interface PropertyCardProps {
 }
 
 export const PropertyCard = component$<PropertyCardProps>((props) => {
+	const imgSrc = useSignal(props.image);
+
+	const onImgError = $(() => {
+		if (imgSrc.value !== SITE_IMAGES.fallback) {
+			imgSrc.value = SITE_IMAGES.fallback;
+		}
+	});
+
 	return (
 		<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
 			<img
-				src={props.image}
+				src={imgSrc.value}
 				alt={props.title}
+				width={400}
+				height={300}
+				loading="lazy"
 				class="w-full h-48 object-cover"
+				onError$={onImgError}
 			/>
 			<div class="p-6">
 				<h3 class="text-xl font-semibold mb-2 text-gray-800">{props.title}</h3>

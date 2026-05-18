@@ -20,6 +20,24 @@ export default component$(() => {
 				</div>
 			</section>
 
+			{/* Advanced Search Widget */}
+			<section class="py-12 bg-white">
+				<div class="container mx-auto px-4">
+					<div class="max-w-4xl mx-auto text-center">
+						<h2 class="text-3xl font-bold text-gray-800 mb-4">
+							Find Your Perfect Luxury Home
+						</h2>
+						<p class="text-lg text-gray-600 mb-8">
+							Start your luxury home search with our advanced property finder.
+							Filter by community, price range, amenities, and more.
+						</p>
+						<div class="bg-gray-50 p-6 rounded-lg">
+							<realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* Services Grid */}
 			<section class="py-16">
 				<div class="container mx-auto px-4">

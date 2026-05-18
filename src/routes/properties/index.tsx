@@ -1,24 +1,63 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import { PropertyCard } from "~/components/PropertyCard";
+import { Breadcrumb } from "~/components/Breadcrumb";
+import { OptimizedImage } from "~/components/OptimizedImage";
+import { FeaturedListings } from "~/components/sections/FeaturedListings";
+import { SITE, SITE_IMAGES } from "~/config/site";
 
 export default component$(() => {
 	return (
 		<div class="min-h-screen bg-gray-50">
-			{/* Hero Section */}
-			<section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+			{/* Breadcrumb Navigation */}
+			<Breadcrumb
+				items={[
+					{ label: "Home", href: "/" },
+					{ label: "Properties", href: "/properties" },
+				]}
+			/>
+
+			<section
+				class="relative text-white py-20 bg-cover bg-center"
+				style={`background-image: linear-gradient(to right, rgba(37, 99, 235, 0.9), rgba(30, 64, 175, 0.92)), url('${SITE_IMAGES.communities.lasVegasLuxury}');`}
+			>
 				<div class="container mx-auto px-4">
 					<div class="max-w-4xl mx-auto text-center">
 						<h1 class="text-4xl md:text-5xl font-bold mb-6">
 							Luxury Properties
 						</h1>
 						<p class="text-xl text-blue-100">
-							Discover Premium Homes in West Summerlin's Most Exclusive
-							Communities
+							Discover premium MLS listings in Centennial Hills and northwest
+							Las Vegas with {SITE.agentName}
 						</p>
 					</div>
 				</div>
 			</section>
+
+			{/* Advanced Search Widget */}
+			<section class="py-12 bg-white">
+				<div class="container mx-auto px-4">
+					<div class="max-w-4xl mx-auto text-center">
+						<h2 class="text-3xl font-bold text-gray-800 mb-4">
+							Advanced Property Search
+						</h2>
+						<p class="text-lg text-gray-600 mb-8">
+							Use our advanced search tool to find your perfect luxury home with
+							detailed filters and criteria.
+						</p>
+						<div class="bg-gray-50 p-6 rounded-lg">
+							<realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* Featured Listings - Browse all available properties */}
+			<FeaturedListings
+				title="Browse All Available Luxury Properties in Las Vegas"
+				subtitle="Explore comprehensive MLS listings across Summerlin, Red Rock Country Club, The Ridges, and Centennial Hills. Updated in real-time with the latest market activity."
+				ctaText="Schedule Private Property Tours"
+				ctaLink="/contact"
+			/>
 
 			{/* Filter Section */}
 			<section class="py-8 bg-white shadow-sm">
@@ -49,73 +88,6 @@ export default component$(() => {
 							<button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
 								Search Properties
 							</button>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* Properties Grid */}
-			<section class="py-16">
-				<div class="container mx-auto px-4">
-					<div class="max-w-7xl mx-auto">
-						<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
-							Featured Luxury Properties
-						</h2>
-						<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-							<PropertyCard
-								title="Red Rock Country Club Estate"
-								price="$725,000"
-								bedrooms="5"
-								bathrooms="4"
-								sqft="3,200"
-								address="Red Rock Country Club, Las Vegas, NV"
-								image="/api/placeholder/400/300"
-							/>
-							<PropertyCard
-								title="The Ridges Executive Home"
-								price="$650,000"
-								bedrooms="4"
-								bathrooms="3.5"
-								sqft="2,800"
-								address="The Ridges, Summerlin West, NV"
-								image="/api/placeholder/400/300"
-							/>
-							<PropertyCard
-								title="Summerlin West Luxury"
-								price="$575,000"
-								bedrooms="4"
-								bathrooms="3"
-								sqft="2,500"
-								address="Summerlin West, Las Vegas, NV"
-								image="/api/placeholder/400/300"
-							/>
-							<PropertyCard
-								title="Centennial Hills Estate"
-								price="$525,000"
-								bedrooms="4"
-								bathrooms="3"
-								sqft="2,400"
-								address="Centennial Hills, Las Vegas, NV"
-								image="/api/placeholder/400/300"
-							/>
-							<PropertyCard
-								title="Lone Mountain Luxury"
-								price="$600,000"
-								bedrooms="4"
-								bathrooms="3.5"
-								sqft="2,600"
-								address="Lone Mountain, Las Vegas, NV"
-								image="/api/placeholder/400/300"
-							/>
-							<PropertyCard
-								title="North Las Vegas Executive"
-								price="$475,000"
-								bedrooms="3"
-								bathrooms="2.5"
-								sqft="2,200"
-								address="North Las Vegas, NV"
-								image="/api/placeholder/400/300"
-							/>
 						</div>
 					</div>
 				</div>

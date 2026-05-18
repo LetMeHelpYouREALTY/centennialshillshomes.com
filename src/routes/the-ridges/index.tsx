@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { PropertyCard } from "~/components/PropertyCard";
+import { FeaturedListings } from "~/components/sections/FeaturedListings";
 
 export default component$(() => {
 	return (
@@ -125,45 +126,33 @@ export default component$(() => {
 				</div>
 			</section>
 
-			{/* Featured Properties */}
-			<section class="py-16 bg-white">
+			{/* Advanced Search Widget */}
+			<section class="py-12 bg-white">
 				<div class="container mx-auto px-4">
-					<div class="max-w-7xl mx-auto">
-						<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
-							Featured The Ridges Properties
+					<div class="max-w-4xl mx-auto text-center">
+						<h2 class="text-3xl font-bold text-gray-800 mb-4">
+							Search The Ridges Properties
 						</h2>
-						<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-							<PropertyCard
-								title="Mountain View Executive"
-								price="$750,000"
-								bedrooms="4"
-								bathrooms="3.5"
-								sqft="3,200"
-								address="The Ridges, Summerlin West, NV"
-								image="/api/placeholder/400/300"
-							/>
-							<PropertyCard
-								title="Modern Luxury Home"
-								price="$650,000"
-								bedrooms="4"
-								bathrooms="3"
-								sqft="2,800"
-								address="The Ridges, Summerlin West, NV"
-								image="/api/placeholder/400/300"
-							/>
-							<PropertyCard
-								title="Contemporary Estate"
-								price="$800,000"
-								bedrooms="5"
-								bathrooms="4"
-								sqft="3,600"
-								address="The Ridges, Summerlin West, NV"
-								image="/api/placeholder/400/300"
-							/>
+						<p class="text-lg text-gray-600 mb-8">
+							Find executive homes and modern estates in The Ridges. Filter by
+							price, home type, mountain views, and executive amenities.
+						</p>
+						<div class="bg-gray-50 p-6 rounded-lg">
+							<realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
 						</div>
 					</div>
 				</div>
 			</section>
+
+			{/* Current Listings in The Ridges */}
+			<FeaturedListings
+				title="Current Listings in The Ridges - Updated Daily"
+				subtitle="Discover available executive homes in Summerlin West's most exclusive community. From modern mountain view estates to contemporary luxury residences, find your perfect Ridges home."
+				ctaText="Schedule Executive Community Tour"
+				ctaLink="/contact"
+				priceMin="600000"
+				priceMax="1200000"
+			/>
 
 			{/* Why Choose The Ridges */}
 			<section class="py-16 bg-blue-50">

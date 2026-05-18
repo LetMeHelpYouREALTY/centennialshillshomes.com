@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { ContactForm } from "~/components/ContactForm";
+import { GoogleMap } from "~/components/GoogleMap";
 
 export default component$(() => {
 	return (
@@ -16,6 +17,25 @@ export default component$(() => {
 							Ready to Find Your Luxury Home? Get Your Free Market Analysis
 							Today
 						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* Advanced Search Widget */}
+			<section class="py-12 bg-white">
+				<div class="container mx-auto px-4">
+					<div class="max-w-4xl mx-auto text-center">
+						<h2 class="text-3xl font-bold text-gray-800 mb-4">
+							Start Your Property Search
+						</h2>
+						<p class="text-lg text-gray-600 mb-8">
+							Before contacting Dr. Duffy, explore available luxury properties
+							with our advanced search tool. Find homes that match your
+							criteria.
+						</p>
+						<div class="bg-gray-50 p-6 rounded-lg">
+							<realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -63,6 +83,85 @@ export default component$(() => {
 												</p>
 											</div>
 										</div>
+									</div>
+								</div>
+
+								{/* Service Areas */}
+								<div class="bg-white rounded-lg shadow-lg p-8">
+									<h3 class="text-2xl font-bold mb-6 text-gray-800">
+										Service Areas and Communities
+									</h3>
+									<p class="text-gray-700 mb-4">
+										Dr. Jan Duffy specializes in luxury real estate throughout
+										West Summerlin's premier communities. Our service areas
+										include Red Rock Country Club, The Ridges, Summerlin West,
+										Centennial Hills, Lone Mountain, and North Las Vegas.
+									</p>
+									<p class="text-gray-700 mb-4">
+										Whether you're a California equity buyer, corporate
+										executive, or luxury home investor, we provide comprehensive
+										real estate services tailored to your specific needs and
+										timeline.
+									</p>
+									<div class="grid md:grid-cols-2 gap-4 mt-6">
+										<div>
+											<h4 class="font-semibold text-gray-800 mb-2">
+												Primary Communities
+											</h4>
+											<ul class="text-gray-700 space-y-1">
+												<li>• Red Rock Country Club</li>
+												<li>• The Ridges</li>
+												<li>• Summerlin West</li>
+												<li>• Centennial Hills</li>
+											</ul>
+										</div>
+										<div>
+											<h4 class="font-semibold text-gray-800 mb-2">
+												Specialized Services
+											</h4>
+											<ul class="text-gray-700 space-y-1">
+												<li>• California Equity Buyers</li>
+												<li>• Corporate Relocations</li>
+												<li>• Investment Properties</li>
+												<li>• Same-Day Showings</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								{/* Google Map */}
+								<div class="bg-white rounded-lg shadow-lg p-8">
+									<h3 class="text-2xl font-bold mb-6 text-gray-800">
+										Visit Our Office
+									</h3>
+									<p class="text-gray-700 mb-4">
+										Located in the heart of Las Vegas, our office provides
+										convenient access to all major luxury communities. We're
+										strategically positioned to serve clients throughout the Las
+										Vegas Valley with same-day showings and flexible scheduling.
+									</p>
+									<GoogleMap
+										center={{ lat: 36.1699, lng: -115.1398 }}
+										zoom={15}
+										markers={[
+											{
+												position: { lat: 36.1699, lng: -115.1398 },
+												title: "Dr. Jan Duffy Real Estate",
+												info: "1490 Center Crossing Rd<br>Las Vegas, NV 89144<br><br>📞 (702) 903-1952",
+											},
+										]}
+										height="300px"
+									/>
+									<div class="mt-4 text-center">
+										<a
+											href="https://maps.google.com/?q=1490+Center+Crossing+Rd,+Las+Vegas,+NV+89144"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+										>
+											<span class="mr-2">🗺️</span>
+											Get Directions
+										</a>
 									</div>
 								</div>
 

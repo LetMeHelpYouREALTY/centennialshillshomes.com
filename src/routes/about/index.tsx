@@ -1,19 +1,51 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { OptimizedImage } from "~/components/OptimizedImage";
+import { SITE, SITE_IMAGES } from "~/config/site";
 
 export default component$(() => {
 	return (
 		<div class="min-h-screen bg-gray-50">
 			{/* Hero Section */}
-			<section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+			<section
+				class="relative text-white py-20 bg-cover bg-center"
+				style={`background-image: linear-gradient(to right, rgba(37, 99, 235, 0.88), rgba(30, 64, 175, 0.9)), url('${SITE_IMAGES.agentHero}');`}
+			>
 				<div class="container mx-auto px-4">
 					<div class="max-w-4xl mx-auto text-center">
+						<OptimizedImage
+							src={SITE_IMAGES.agentHero}
+							alt={`${SITE.agentName} - Las Vegas luxury REALTOR`}
+							width={176}
+							height={176}
+							priority
+							className="mx-auto mb-6 w-36 h-36 rounded-full border-4 border-white/80 shadow-lg"
+						/>
 						<h1 class="text-4xl md:text-5xl font-bold mb-6">
-							About Dr. Jan Duffy
+							About {SITE.agentName}
 						</h1>
 						<p class="text-xl text-blue-100">
 							Top 1% Las Vegas REALTOR® | Luxury Real Estate Specialist
 						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* Advanced Search Widget */}
+			<section class="py-12 bg-white">
+				<div class="container mx-auto px-4">
+					<div class="max-w-4xl mx-auto text-center">
+						<h2 class="text-3xl font-bold text-gray-800 mb-4">
+							Ready to Work with Dr. Duffy?
+						</h2>
+						<p class="text-lg text-gray-600 mb-8">
+							Start your luxury home search with Dr. Jan Duffy's advanced
+							property finder. Find your perfect home in Las Vegas's most
+							prestigious communities.
+						</p>
+						<div class="bg-gray-50 p-6 rounded-lg">
+							<realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
+						</div>
 					</div>
 				</div>
 			</section>

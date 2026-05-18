@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
+import { SITE } from "~/config/site";
 
 export interface CTABannerProps {
 	title: string;
@@ -49,11 +50,17 @@ export const CTABanner = component$<CTABannerProps>((props) => {
 							</Link>
 						)}
 					</div>
-					{props.phoneNumber && (
+					{(props.phoneNumber ?? SITE.phone) && (
 						<div class="mt-8 text-blue-200">
-							<p class="text-lg">📞 {props.phoneNumber} | Available 24/7</p>
+							<p class="text-lg">
+								<a href={`tel:${SITE.phoneTel}`} class="hover:underline">
+									📞 {props.phoneNumber ?? SITE.phone}
+								</a>{" "}
+								| Daily 6 AM – 9 PM
+							</p>
 							<p class="text-sm">
-								1490 Center Crossing Rd, Las Vegas, NV 89144
+								{SITE.address.streetAddress}, {SITE.address.addressLocality},{" "}
+								{SITE.address.addressRegion} {SITE.address.postalCode}
 							</p>
 						</div>
 					)}

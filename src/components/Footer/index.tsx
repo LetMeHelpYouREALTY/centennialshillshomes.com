@@ -1,4 +1,6 @@
 import { component$ } from "@builder.io/qwik";
+import { Link } from "@builder.io/qwik-city";
+import { SITE, SITE_IMAGES } from "~/config/site";
 
 export interface FooterProps {}
 
@@ -7,41 +9,69 @@ export const Footer = component$<FooterProps>((props) => {
 		<footer class="bg-gray-900 text-white">
 			{/* Main Footer Content */}
 			<div class="container mx-auto px-4 py-16">
-				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{/* Company Info */}
 					<div class="lg:col-span-1">
 						<div class="flex items-center space-x-3 mb-6">
-							<div class="bg-blue-600 text-white p-2 rounded-lg">
-								<span class="text-xl font-bold">JD</span>
-							</div>
+							<img
+								src={SITE_IMAGES.logo}
+								alt={`${SITE.shortName} - ${SITE.agentName}`}
+								width={48}
+								height={48}
+								class="h-12 w-12 object-contain bg-white rounded-lg p-1"
+							/>
 							<div>
-								<div class="text-xl font-bold">Dr. Jan Duffy</div>
+								<div class="text-xl font-bold">{SITE.shortName}</div>
 								<div class="text-sm text-gray-400">
-									Top 1% Las Vegas REALTOR®
+									{SITE.agentName} | Top 1% REALTOR®
 								</div>
 							</div>
 						</div>
-						<p class="text-gray-400 mb-6">
-							Luxury real estate specialist serving West Summerlin's premier
-							neighborhoods. 30+ years expertise in luxury homes $400K-$750K.
-						</p>
 						<div class="space-y-2">
 							<div class="flex items-center text-gray-400">
 								<span class="mr-2">📞</span>
 								<a
-									href="tel:+17029031952"
+									href={`tel:${SITE.phoneTel}`}
 									class="hover:text-white transition-colors"
 								>
-									(702) 903-1952
+									{SITE.phone}
+								</a>
+							</div>
+							<div class="flex items-center text-gray-400">
+								<span class="mr-2">✉️</span>
+								<a
+									href={`mailto:${SITE.email}`}
+									class="hover:text-white transition-colors text-sm"
+								>
+									{SITE.email}
 								</a>
 							</div>
 							<div class="flex items-center text-gray-400">
 								<span class="mr-2">📍</span>
-								<span>1490 Center Crossing Rd, Las Vegas, NV 89144</span>
+								<address class="not-italic">
+									{SITE.address.streetAddress}, {SITE.address.addressLocality},{" "}
+									{SITE.address.addressRegion} {SITE.address.postalCode}
+								</address>
 							</div>
 							<div class="flex items-center text-gray-400">
 								<span class="mr-2">⏰</span>
-								<span>Available 24/7</span>
+								<span>Daily 6:00 AM – 9:00 PM</span>
+							</div>
+							<div class="flex flex-wrap gap-3 pt-2">
+								<a
+									href={SITE.directionsUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="text-amber-400 hover:text-amber-300 text-sm font-medium"
+								>
+									Directions
+								</a>
+								<Link
+									href="/market-analysis"
+									class="text-amber-400 hover:text-amber-300 text-sm font-medium"
+								>
+									Home value
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -68,10 +98,10 @@ export const Footer = component$<FooterProps>((props) => {
 							</li>
 							<li>
 								<a
-									href="/services"
+									href="/neighborhoods"
 									class="text-gray-400 hover:text-white transition-colors"
 								>
-									Services
+									Neighborhoods
 								</a>
 							</li>
 							<li>
@@ -123,25 +153,36 @@ export const Footer = component$<FooterProps>((props) => {
 							</li>
 							<li>
 								<a
-									href="/properties"
+									href="/centennial-hills"
 									class="text-gray-400 hover:text-white transition-colors"
+								>
+									Centennial Hills
+								</a>
+							</li>
+							<li>
+								<a
+									href="/lone-mountain"
+									class="text-gray-400 hover:text-white transition-colors"
+								>
+									Lone Mountain
+								</a>
+							</li>
+							<li>
+								<a
+									href="/north-las-vegas"
+									class="text-gray-400 hover:text-white transition-colors"
+								>
+									North Las Vegas
+								</a>
+							</li>
+							<li>
+								<a
+									href="/properties"
+									class="text-gray-400 hover:text-white transition-colors font-semibold"
 								>
 									All Properties
 								</a>
 							</li>
-						</ul>
-					</div>
-
-					{/* Services */}
-					<div>
-						<h3 class="text-lg font-semibold mb-6">Services</h3>
-						<ul class="space-y-3">
-							<li class="text-gray-400">Luxury Home Sales</li>
-							<li class="text-gray-400">California Equity Buyers</li>
-							<li class="text-gray-400">Corporate Relocations</li>
-							<li class="text-gray-400">Market Analysis</li>
-							<li class="text-gray-400">Same-Day Showings</li>
-							<li class="text-gray-400">Investment Properties</li>
 						</ul>
 					</div>
 				</div>
@@ -241,7 +282,8 @@ export const Footer = component$<FooterProps>((props) => {
 				<div class="container mx-auto px-4 py-6">
 					<div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
 						<div class="text-gray-400 text-sm">
-							© 2025 Dr. Jan Duffy Real Estate. All rights reserved.
+							© {new Date().getFullYear()} {SITE.agentName}. License{" "}
+							{SITE.license} | {SITE.brokerage}
 						</div>
 						<div class="flex space-x-6 text-sm">
 							<a

@@ -1,7 +1,24 @@
 {
-	"buildCommand": "pnpm build",
+	"buildCommand": "pnpm run build && pnpm run build.types",
 	"outputDirectory": ".vercel/output",
 	"framework": "vite",
+	"redirects": [
+		{
+			"source": "/janet-duffy",
+			"destination": "/about/",
+			"permanent": true
+		},
+		{
+			"source": "/janet-duffy/",
+			"destination": "/about/",
+			"permanent": true
+		},
+		{
+			"source": "/images/:path*",
+			"destination": "/media/:path*",
+			"permanent": true
+		}
+	],
 	"headers": [
 		{
 			"source": "/build/(.*)",
@@ -18,6 +35,50 @@
 				{
 					"key": "Cache-Control",
 					"value": "public, max-age=31536000, s-maxage=31536000, immutable"
+				}
+			]
+		},
+		{
+			"source": "/media/(.*)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=31536000, s-maxage=31536000, immutable"
+				}
+			]
+		},
+		{
+			"source": "/(logo\\.png|logo\\.svg|og-image\\.jpg)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=31536000, s-maxage=31536000, immutable"
+				}
+			]
+		},
+		{
+			"source": "/sitemap.xml",
+			"headers": [
+				{
+					"key": "Content-Type",
+					"value": "application/xml"
+				},
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=3600"
+				}
+			]
+		},
+		{
+			"source": "/robots.txt",
+			"headers": [
+				{
+					"key": "Content-Type",
+					"value": "text/plain"
+				},
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=86400"
 				}
 			]
 		}

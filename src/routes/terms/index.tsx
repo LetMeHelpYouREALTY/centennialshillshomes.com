@@ -25,30 +25,71 @@ export default component$(() => {
 						<div class="bg-white rounded-lg shadow-lg p-8">
 							<div class="prose max-w-none">
 								<h2 class="text-2xl font-bold mb-6 text-gray-800">
-									Real Estate Services
+									Real Estate Services and Expertise
 								</h2>
 								<p class="text-gray-700 mb-6">
-									Dr. Jan Duffy provides professional real estate services
-									including property sales, purchases, market analysis, and
-									consultation services in the Las Vegas area.
+									Dr. Jan Duffy provides comprehensive professional real estate
+									services including luxury property sales, purchases, market
+									analysis, and consultation services throughout the Las Vegas
+									area. Our services specialize in West Summerlin's premier
+									communities including Red Rock Country Club, The Ridges,
+									Summerlin West, and Centennial Hills.
+								</p>
+								<p class="text-gray-700 mb-6">
+									We offer specialized services for California equity buyers,
+									corporate relocations, investment properties, and same-day
+									showings. All services are provided with 30+ years of research
+									expertise and Top 1% Las Vegas REALTOR® status.
 								</p>
 
 								<h2 class="text-2xl font-bold mb-6 text-gray-800">
-									Client Responsibilities
+									Client Responsibilities and Cooperation
 								</h2>
 								<p class="text-gray-700 mb-6">
-									Clients are responsible for providing accurate information and
-									cooperating with the real estate process. All transactions are
-									subject to applicable laws and regulations.
+									Clients are responsible for providing accurate and complete
+									information throughout the real estate process. This includes
+									financial documentation, property preferences, and any
+									relevant personal information required for transactions.
+								</p>
+								<p class="text-gray-700 mb-6">
+									All real estate transactions are subject to applicable
+									federal, state, and local laws and regulations. Clients must
+									cooperate with inspections, appraisals, and other necessary
+									steps in the buying or selling process.
 								</p>
 
 								<h2 class="text-2xl font-bold mb-6 text-gray-800">
-									Limitation of Liability
+									Limitation of Liability and Disclaimers
 								</h2>
 								<p class="text-gray-700 mb-6">
-									While we strive to provide accurate information, we cannot
-									guarantee the accuracy of all property information or market
-									data. Clients should verify all information independently.
+									While we strive to provide accurate and up-to-date
+									information, we cannot guarantee the accuracy of all property
+									information, market data, or third-party content. Real estate
+									markets are subject to change, and property values may
+									fluctuate.
+								</p>
+								<p class="text-gray-700 mb-6">
+									Our liability is limited to the extent permitted by law. We
+									recommend that clients conduct their own due diligence and
+									consult with appropriate professionals including attorneys,
+									accountants, and inspectors.
+								</p>
+
+								<h2 class="text-2xl font-bold mb-6 text-gray-800">
+									Service Availability and Scheduling
+								</h2>
+								<p class="text-gray-700 mb-6">
+									We offer flexible scheduling including same-day showings and
+									24/7 availability for executive clients. However, service
+									availability may be subject to property access, seller
+									cooperation, and market conditions.
+								</p>
+								<p class="text-gray-700 mb-6">
+									Market analysis reports and property valuations are provided
+									as professional opinions based on available data and market
+									conditions at the time of analysis. Results may vary based on
+									market changes and additional factors. Clients should verify
+									all information independently.
 								</p>
 
 								<h2 class="text-2xl font-bold mb-6 text-gray-800">
@@ -63,7 +104,7 @@ export default component$(() => {
 										<br />
 										Phone: (702) 903-1952
 										<br />
-										Email: info@centennialshillshomes.com
+										Email: DrDuffy@CentennialHillsHomesForSale.com
 										<br />
 										Address: 1490 Center Crossing Rd, Las Vegas, NV 89144
 									</p>
