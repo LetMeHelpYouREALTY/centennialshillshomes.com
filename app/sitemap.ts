@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { legacyLandingSlugs } from "@/lib/legacy-landing-content";
 import { neighborhoods, services, siteConfig } from "@/lib/site-config";
 
 /** Primary Centennial Hills URLs — aligned with Google sitemap best practices */
@@ -29,7 +30,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
   }));
 
-  const all = [...core, ...servicePaths, ...neighborhoodPaths];
+  const legacyPaths = legacyLandingSlugs.map((slug) => ({
+    path: `/${slug}`,
+    priority: 0.8,
+    changeFrequency: "weekly" as const,
+  }));
+
+  const all = [...core, ...servicePaths, ...neighborhoodPaths, ...legacyPaths];
 
   return all.map(({ path, priority, changeFrequency }) => ({
     url: `${baseUrl}${path}`,

@@ -30,6 +30,7 @@
     "dist",
     ".vercel",
     "workers",
+    "real-estate-mcp-worker",
     "tests",
     "vite.config.ts",
     "scripts"
