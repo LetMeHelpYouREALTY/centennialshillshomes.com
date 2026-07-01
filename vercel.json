@@ -1,5 +1,9 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
+  "buildCommand": null,
+  "outputDirectory": null,
+  "installCommand": null,
   "redirects": [
     {
       "source": "/janet-duffy",
