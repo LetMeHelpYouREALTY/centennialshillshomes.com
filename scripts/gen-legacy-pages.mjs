@@ -4,7 +4,6 @@ import { fileURLToPath } from "node:url";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 
-/** Slugs migrated from Qwik src/routes/ to Next.js app/ */
 const slugs = [
   "homes-over-1m",
   "active-listings",
@@ -21,6 +20,26 @@ const slugs = [
   "centennial-hills-89144",
   "search",
   "area-explorer",
+  "centennial-hills-vs-summerlin",
+  "centennial-hills-schools",
+  "best-schools-centennial-hills",
+  "condos-centennial-hills",
+  "northwest-las-vegas",
+  "homes-under-400k",
+  "homes-400k-600k",
+  "luxury-estates",
+  "buying-guide",
+  "selling-guide",
+  "move-up-buyers",
+  "recent-sales",
+  "testimonials",
+  "press-media",
+  "providence",
+  "tule-springs",
+  "sky-canyon",
+  "centennial-hills-market-report",
+  "local-business-optimization",
+  "commute-calculator",
 ];
 
 for (const slug of slugs) {
@@ -40,5 +59,34 @@ export default function Page() {
 }
 `;
   fs.writeFileSync(path.join(dir, "page.tsx"), content);
-  console.log("wrote", slug);
+  console.log("wrote legacy", slug);
 }
+
+const legalSlugs = [
+  "privacy-policy",
+  "privacy",
+  "terms-of-service",
+  "terms",
+  "fair-housing",
+  "accessibility",
+];
+
+for (const slug of legalSlugs) {
+  const dir = path.join(root, "app", slug);
+  fs.mkdirSync(dir, { recursive: true });
+  const content = `import LegalPage, { legalMetadata } from "@/components/templates/LegalPage";
+import { legalPages } from "@/lib/legal-content";
+
+const page = legalPages["${slug}"];
+
+export const metadata = legalMetadata(page);
+
+export default function Page() {
+  return <LegalPage page={page} />;
+}
+`;
+  fs.writeFileSync(path.join(dir, "page.tsx"), content);
+  console.log("wrote legal", slug);
+}
+
+console.log("Done. Calculator and blog category pages are hand-maintained.");

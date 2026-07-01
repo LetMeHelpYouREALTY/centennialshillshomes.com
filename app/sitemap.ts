@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
+import { blogCategorySlugs } from "@/lib/blog-content";
 import { legacyLandingSlugs } from "@/lib/legacy-landing-content";
+import { legalPageSlugs } from "@/lib/legal-content";
 import { neighborhoods, services, siteConfig } from "@/lib/site-config";
 
 /** Primary Centennial Hills URLs — aligned with Google sitemap best practices */
@@ -36,7 +38,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
   }));
 
-  const all = [...core, ...servicePaths, ...neighborhoodPaths, ...legacyPaths];
+  const legalPaths = legalPageSlugs.map((slug) => ({
+    path: `/${slug}`,
+    priority: 0.4,
+    changeFrequency: "yearly" as const,
+  }));
+
+  const calculatorPaths = [
+    { path: "/mortgage-calculator", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/affordability-calculator", priority: 0.7, changeFrequency: "monthly" as const },
+  ];
+
+  const blogCategoryPaths = blogCategorySlugs.map((slug) => ({
+    path: `/blog/category/${slug}`,
+    priority: 0.75,
+    changeFrequency: "weekly" as const,
+  }));
+
+  const all = [
+    ...core,
+    ...servicePaths,
+    ...neighborhoodPaths,
+    ...legacyPaths,
+    ...legalPaths,
+    ...calculatorPaths,
+    ...blogCategoryPaths,
+  ];
 
   return all.map(({ path, priority, changeFrequency }) => ({
     url: `${baseUrl}${path}`,
