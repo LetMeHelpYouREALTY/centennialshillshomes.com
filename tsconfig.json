@@ -32,6 +32,8 @@
     "workers",
     "tests",
     "vite.config.ts",
-    "scripts"
+    "scripts",
+    "real-estate-mcp-worker",
+    "cursor-mcp-test"
   ]
 }
