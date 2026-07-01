@@ -9,12 +9,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const core: Array<{ path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[0]["changeFrequency"] }> = [
     { path: "", priority: 1, changeFrequency: "weekly" },
     { path: "/listings", priority: 0.9, changeFrequency: "daily" },
+    { path: "/centennial-hills-homes-for-sale", priority: 0.95, changeFrequency: "daily" },
     { path: "/neighborhoods", priority: 0.9, changeFrequency: "weekly" },
     { path: "/about", priority: 0.85, changeFrequency: "monthly" },
     { path: "/contact", priority: 0.85, changeFrequency: "monthly" },
     { path: "/faq", priority: 0.75, changeFrequency: "monthly" },
     { path: "/buyers", priority: 0.8, changeFrequency: "monthly" },
     { path: "/sellers", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/blog", priority: 0.75, changeFrequency: "weekly" },
+    { path: "/mortgage-calculator", priority: 0.7, changeFrequency: "monthly" },
+  ];
+
+  const zipAndLanding: Array<{ path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[0]["changeFrequency"] }> = [
+    { path: "/centennial-hills-89135", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/centennial-hills-89138", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/centennial-hills-89144", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/centennial-hills-new-construction", priority: 0.8, changeFrequency: "weekly" },
+    { path: "/centennial-hills-market-report", priority: 0.8, changeFrequency: "weekly" },
+    { path: "/centennial-hills-schools", priority: 0.75, changeFrequency: "monthly" },
+    { path: "/centennial-hills-vs-summerlin", priority: 0.75, changeFrequency: "monthly" },
+    { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
+    { path: "/terms-of-service", priority: 0.3, changeFrequency: "yearly" },
   ];
 
   const servicePaths = services.map((s) => ({
@@ -29,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
   }));
 
-  const all = [...core, ...servicePaths, ...neighborhoodPaths];
+  const all = [...core, ...zipAndLanding, ...servicePaths, ...neighborhoodPaths];
 
   return all.map(({ path, priority, changeFrequency }) => ({
     url: `${baseUrl}${path}`,

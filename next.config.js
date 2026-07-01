@@ -37,6 +37,16 @@ const nextConfig = {
       { source: '/janet-duffy/', destination: '/about', permanent: true },
       { source: '/images/:path*', destination: '/media/:path*', permanent: true },
       { source: '/neighborhoods/summerlin', destination: '/neighborhoods/summerlin-west', permanent: true },
+      { source: '/buy-a-home', destination: '/buyers', permanent: true },
+      { source: '/buy-a-home/', destination: '/buyers', permanent: true },
+      { source: '/sell-a-home', destination: '/sellers', permanent: true },
+      { source: '/sell-a-home/', destination: '/sellers', permanent: true },
+      { source: '/privacy', destination: '/privacy-policy', permanent: true },
+      { source: '/terms', destination: '/terms-of-service', permanent: true },
+      { source: '/centennial-hills', destination: '/neighborhoods/centennial-hills', permanent: true },
+      { source: '/mls-search', destination: '/listings', permanent: true },
+      { source: '/search', destination: '/listings', permanent: true },
+      { source: '/active-listings', destination: '/listings', permanent: true },
     ]
   },
 
