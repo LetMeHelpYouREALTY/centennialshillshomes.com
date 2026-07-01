@@ -1,11 +1,11 @@
-import Navbar from "@/components/layouts/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
 import LocalMapSection from "@/components/sections/LocalMapSection";
-import Footer from "@/components/layouts/Footer";
+import { LocalBusinessCtaBar } from "@/components/sections/HyperlocalSections";
+import SchemaScript from "@/components/SchemaScript";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
@@ -18,6 +18,7 @@ import {
   valuePropositions,
 } from "@/lib/site-config";
 import { buildPageMetadata } from "@/lib/seo";
+import { generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = buildPageMetadata({
   title: siteConfig.fullName,
@@ -35,46 +36,36 @@ export const metadata: Metadata = buildPageMetadata({
   ],
 });
 
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  name: `${agentInfo.name} - ${agentInfo.brokerage}`,
-  url: siteConfig.url,
-  telephone: agentInfo.phoneTel.replace("tel:", ""),
-  email: agentInfo.email,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "1490 Center Crossing Rd",
-    addressLocality: "Las Vegas",
-    addressRegion: "NV",
-    postalCode: "89144",
-  },
-};
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: homeFaqs.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: { "@type": "Answer", text: item.answer },
-  })),
-};
-
 export default function Home() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Navbar />
+      <SchemaScript schema={generateFAQSchema(homeFaqs)} id="home-faq-schema" />
       <main>
         <HeroSection />
+
+        <section className="py-10 bg-gradient-to-b from-blue-50/60 to-white border-b border-slate-200">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">
+              Hyperlocal REALTOR® Services
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+              Who is the best REALTOR® in Centennial Hills?
+            </h2>
+            <p className="text-lg text-slate-700 leading-relaxed">
+              Dr. Jan Duffy is a Top 1% Berkshire Hathaway HomeServices Nevada Properties REALTOR®
+              (License {agentInfo.license}) serving ZIP codes 89135, 89138, and 89144 with same-day
+              showings, complimentary market analysis, and 500+ closed transactions since 2008.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3 mt-6">
+              <Link href="/realtor-services" className="text-blue-600 font-semibold hover:underline">
+                View realtor services →
+              </Link>
+              <Link href="/centennial-hills-realtor" className="text-blue-600 font-semibold hover:underline">
+                About Dr. Jan Duffy →
+              </Link>
+            </div>
+          </div>
+        </section>
 
         <section className="py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4">
@@ -82,46 +73,55 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
                 Northwest Las Vegas Real Estate Expertise
               </h2>
-              <p className="text-lg text-slate-700 leading-relaxed">
-                {valuePropositions.main}
-              </p>
+              <p className="text-lg text-slate-700 leading-relaxed">{valuePropositions.main}</p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              <div className="text-center p-6">
-                <div className="bg-amber-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Shield className="h-8 w-8 text-amber-600" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">BHHS Nevada Properties</h3>
-                <p className="text-slate-600 text-sm">{valuePropositions.trust}</p>
-              </div>
-              <div className="text-center p-6">
-                <div className="bg-amber-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Users className="h-8 w-8 text-amber-600" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Hyperlocal Focus</h3>
-                <p className="text-slate-600 text-sm">
-                  Centennial Hills, Red Rock, The Ridges, Summerlin West & more
-                </p>
-              </div>
-              <div className="text-center p-6">
-                <div className="bg-amber-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <HomeIcon className="h-8 w-8 text-amber-600" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">{siteConfig.priceRange}</h3>
-                <p className="text-slate-600 text-sm">Luxury & move-up homes in northwest Las Vegas</p>
-              </div>
-              <div className="text-center p-6">
-                <div className="bg-amber-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Phone className="h-8 w-8 text-amber-600" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Same-Day Showings</h3>
-                <p className="text-slate-600 text-sm">
-                  <Link href="/same-day-showings" className="text-blue-600 hover:underline">
-                    Schedule quickly
-                  </Link>{" "}
-                  for qualified buyers
-                </p>
-              </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {[
+                { icon: Shield, title: "BHHS Nevada Properties", text: valuePropositions.trust },
+                {
+                  icon: Users,
+                  title: "Hyperlocal Focus",
+                  text: "Centennial Hills, Red Rock, The Ridges, Summerlin West & more",
+                },
+                {
+                  icon: HomeIcon,
+                  title: siteConfig.priceRange,
+                  text: "Luxury & move-up homes in northwest Las Vegas",
+                },
+                {
+                  icon: Phone,
+                  title: "Same-Day Showings",
+                  text: "Fast tours for qualified buyers",
+                  link: "/same-day-showings",
+                  linkLabel: "Schedule quickly",
+                },
+              ].map((item) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={item.title}
+                    className="text-center p-6 rounded-2xl border border-slate-200 bg-slate-50/50"
+                  >
+                    <div className="bg-amber-500 rounded-xl p-3 w-14 h-14 mx-auto mb-4 flex items-center justify-center">
+                      <Icon className="h-7 w-7 text-white" aria-hidden />
+                    </div>
+                    <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+                    <p className="text-slate-600 text-sm">
+                      {item.link ? (
+                        <>
+                          <Link href={item.link} className="text-blue-600 hover:underline">
+                            {item.linkLabel}
+                          </Link>
+                          {" — "}
+                          {item.text}
+                        </>
+                      ) : (
+                        item.text
+                      )}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -148,7 +148,7 @@ export default function Home() {
                   <div className="relative h-44">
                     <Image
                       src={area.image}
-                      alt={`${area.name} homes for sale`}
+                      alt={`${area.name} homes for sale near Centennial Hills`}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                       sizes="(max-width: 768px) 100vw, 33vw"
@@ -163,9 +163,18 @@ export default function Home() {
                 </Link>
               ))}
             </div>
-            <div className="text-center mt-8">
-              <Link href="/neighborhoods" className="text-blue-600 hover:text-blue-700 font-semibold">
-                View all neighborhoods →
+            <div className="flex flex-wrap justify-center gap-4 mt-8 text-sm font-semibold">
+              <Link href="/neighborhoods" className="text-blue-600 hover:text-blue-700">
+                All neighborhoods →
+              </Link>
+              <Link href="/zip-89144-homes-for-sale" className="text-blue-600 hover:text-blue-700">
+                89144 homes →
+              </Link>
+              <Link href="/zip-89138-homes-for-sale" className="text-blue-600 hover:text-blue-700">
+                89138 homes →
+              </Link>
+              <Link href="/zip-89135-homes-for-sale" className="text-blue-600 hover:text-blue-700">
+                89135 homes →
               </Link>
             </div>
           </div>
@@ -175,38 +184,8 @@ export default function Home() {
         <ReviewsSection />
         <FAQSection faqs={homeFaqs} title="Centennial Hills Real Estate FAQ" />
         <LocalMapSection />
-
-        <section className="py-16 md:py-20 bg-blue-700 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Buy or Sell in Centennial Hills?
-            </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Call {agentInfo.name} for same-day showings, complimentary market analysis, and
-              executive-level service in northwest Las Vegas.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href={agentInfo.phoneTel}
-                className="inline-flex items-center justify-center bg-white text-blue-700 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
-              >
-                <Phone className="h-5 w-5 mr-2" />
-                Call {agentInfo.phone}
-              </a>
-              <Link
-                href="/contact"
-                className="inline-block bg-blue-800 hover:bg-blue-900 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
-              >
-                Send a Message
-              </Link>
-            </div>
-            <p className="mt-6 text-blue-200 text-sm">
-              {agentInfo.name} | License {agentInfo.license} | {agentInfo.brokerage}
-            </p>
-          </div>
-        </section>
+        <LocalBusinessCtaBar />
       </main>
-      <Footer />
     </>
   );
 }

@@ -8,6 +8,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { cn } from "lib/utils";
 import AIChatWidget from "@/components/chat/AIChatWidget";
 import CalendlyBadge from "@/components/calendly/CalendlyBadge";
+import Navbar from "@/components/layouts/Navbar";
+import Footer from "@/components/layouts/Footer";
 import SchemaScript from "@/components/SchemaScript";
 import {
   generateRealEstateAgentSchema,
@@ -120,7 +122,9 @@ export default function RootLayout({
           "antialiased bg-white text-sm md:text-base text-slate-800",
         )}
       >
+        <Navbar />
         {children}
+        <Footer />
         <AIChatWidget />
         <CalendlyBadge />
         <Analytics />

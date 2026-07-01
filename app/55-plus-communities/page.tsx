@@ -1,5 +1,3 @@
-import Navbar from "@/components/layouts/Navbar";
-import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import {
@@ -333,7 +331,6 @@ export default function FiftyFiveCommunitiesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-      <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
@@ -886,7 +883,6 @@ export default function FiftyFiveCommunitiesPage() {
         </div>
       </main>
       <RealScoutListings />
-      <Footer />
     </>
   );
 }

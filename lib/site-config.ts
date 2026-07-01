@@ -24,6 +24,11 @@ export const siteConfig = {
   googleReviewsUrl:
     "https://www.google.com/maps/search/?api=1&query=1490+Center+Crossing+Rd,+Las+Vegas,+NV+89144",
   hoursLabel: "Daily 6:00 AM – 9:00 PM",
+  social: {
+    facebook: "https://www.facebook.com/drjanduffy",
+    instagram: "https://www.instagram.com/drjanduffy",
+    linkedin: "https://www.linkedin.com/in/drjanduffy",
+  },
 };
 
 export const agentInfo = {
@@ -150,6 +155,55 @@ export const neighborhoods = [
     description: "Growing area adjacent to Centennial Hills",
     highlights: ["New builds", "Value", "Family-friendly", "89131–89149"],
     image: siteImages.communities.northLasVegas,
+  },
+  {
+    name: "Summerlin",
+    slug: "summerlin",
+    description: "Master-planned west Las Vegas with top amenities",
+    highlights: ["89135", "Trails", "Downtown Summerlin", "Top schools"],
+    image: siteImages.communities.summerlinWest,
+  },
+  {
+    name: "Henderson",
+    slug: "henderson",
+    description: "Southeast valley city with established neighborhoods",
+    highlights: ["Green Valley", "Anthem", "Lake Las Vegas", "Family-friendly"],
+    image: siteImages.communities.lasVegasLuxury,
+  },
+  {
+    name: "Green Valley",
+    slug: "green-valley",
+    description: "Mature Henderson community with parks and shopping",
+    highlights: ["89014", "Golf", "Parks", "Established homes"],
+    image: siteImages.communities.lasVegasLuxury,
+  },
+  {
+    name: "Southern Highlands",
+    slug: "southern-highlands",
+    description: "Guard-gated luxury in southwest Las Vegas",
+    highlights: ["89141", "Golf", "Custom homes", "Views"],
+    image: siteImages.communities.theRidges,
+  },
+  {
+    name: "Skye Canyon",
+    slug: "skye-canyon",
+    description: "Newer northwest master plan near Centennial Hills",
+    highlights: ["89166", "Trails", "New construction", "Parks"],
+    image: siteImages.communities.centennialHills,
+  },
+  {
+    name: "Inspirada",
+    slug: "inspirada",
+    description: "Henderson master plan with pools and events",
+    highlights: ["89044", "Community pools", "Newer builds", "Families"],
+    image: siteImages.communities.lasVegasLuxury,
+  },
+  {
+    name: "Mountains Edge",
+    slug: "mountains-edge",
+    description: "Southwest Las Vegas with mountain and Strip views",
+    highlights: ["89178", "Trails", "Parks", "Move-up homes"],
+    image: siteImages.communities.loneMountain,
   },
 ];
 

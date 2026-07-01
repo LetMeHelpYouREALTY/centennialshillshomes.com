@@ -8,7 +8,7 @@ export const businessInfo = {
     streetAddress: "1490 Center Crossing Rd",
     addressLocality: "Las Vegas",
     addressRegion: "NV",
-    postalCode: "89134",
+    postalCode: "89144",
     addressCountry: "US",
   },
   phone: {
@@ -35,8 +35,8 @@ export const businessInfo = {
 
   // Geo coordinates for distance ranking
   geo: {
-    latitude: 36.1941,
-    longitude: -115.2678,
+    latitude: 36.2792,
+    longitude: -115.2744,
   },
 
   // Service areas - Start focused, expand with prominence

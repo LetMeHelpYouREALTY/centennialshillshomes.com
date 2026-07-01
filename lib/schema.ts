@@ -63,12 +63,7 @@ export interface SeniorCommunityData {
 
 const BASE_URL = siteConfig.url;
 
-// Social media profiles (to be updated with actual URLs)
-export const socialProfiles = {
-  facebook: "https://www.facebook.com/drjanduffy",
-  instagram: "https://www.instagram.com/drjanduffy",
-  linkedin: "https://www.linkedin.com/in/drjanduffy",
-};
+export const socialProfiles = siteConfig.social;
 
 // ============================================================================
 // Core Schema Generators
