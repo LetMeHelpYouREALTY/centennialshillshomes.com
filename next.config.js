@@ -47,6 +47,16 @@ const nextConfig = {
       { source: '/mls-search', destination: '/listings', permanent: true },
       { source: '/search', destination: '/listings', permanent: true },
       { source: '/active-listings', destination: '/listings', permanent: true },
+      { source: '/first-time-homebuyers', destination: '/buyers/first-time-buyers', permanent: true },
+      { source: '/move-up-buyers', destination: '/sellers/move-up', permanent: true },
+      { source: '/sky-canyon', destination: '/neighborhoods/skye-canyon', permanent: true },
+      { source: '/skye-canyon.html', destination: '/neighborhoods/skye-canyon', permanent: true },
+      { source: '/tule-springs.html', destination: '/tule-springs', permanent: true },
+      { source: '/best-schools-centennial-hills', destination: '/centennial-hills-schools', permanent: true },
+      { source: '/market-reports', destination: '/centennial-hills-market-report', permanent: true },
+      { source: '/market-data', destination: '/market-analysis', permanent: true },
+      { source: '/our-luxury-listings', destination: '/listings', permanent: true },
+      { source: '/recent-sales', destination: '/listings', permanent: true },
     ]
   },
 
