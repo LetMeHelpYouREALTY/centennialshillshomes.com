@@ -6,6 +6,37 @@
   "installCommand": null,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "centennialhillshomesforsale.com" }],
+      "destination": "https://www.centennialhillshomesforsale.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "https://www.centennialhillshomesforsale.com/",
+      "permanent": true
+    },
+    {
+      "source": "/active-listings",
+      "destination": "https://www.centennialhillshomesforsale.com/listings",
+      "permanent": true
+    },
+    {
+      "source": "/active-listings/",
+      "destination": "https://www.centennialhillshomesforsale.com/listings",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "https://www.centennialhillshomesforsale.com/market-insights",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://www.centennialhillshomesforsale.com/market-insights",
+      "permanent": true
+    },
+    {
       "source": "/janet-duffy",
       "destination": "/about",
       "permanent": true
