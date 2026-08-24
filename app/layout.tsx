@@ -4,6 +4,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Script from "next/script";
 import { GeistSans } from "geist/font/sans";
+import { Fraunces, Outfit } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { cn } from "lib/utils";
 import AIChatWidget from "@/components/chat/AIChatWidget";
@@ -17,6 +18,18 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import { siteConfig, siteImages, siteImageUrl } from "@/lib/site-config";
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  display: "swap",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
+});
 
 const title = siteConfig.fullName;
 const description = siteConfig.description;
@@ -119,7 +132,9 @@ export default function RootLayout({
       <body
         className={cn(
           GeistSans.variable,
-          "antialiased bg-white text-sm md:text-base text-slate-800",
+          fraunces.variable,
+          outfit.variable,
+          "font-sans antialiased bg-sand text-sm md:text-base text-ink",
         )}
       >
         <Navbar />

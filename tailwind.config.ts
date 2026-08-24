@@ -4,10 +4,18 @@ const config = {
   content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      extend: {
-        fontFamily: {
-          sans: ["var(--font-geist-sans)"],
+      colors: {
+        sand: "#F6F1EA",
+        terracotta: {
+          DEFAULT: "#A8683A",
+          dark: "#8C542C",
+          light: "#C4895C",
         },
+        ink: "#1C1917",
+      },
+      fontFamily: {
+        sans: ["var(--font-outfit)", "var(--font-geist-sans)", "system-ui", "sans-serif"],
+        display: ["var(--font-fraunces)", "Georgia", "serif"],
       },
       keyframes: {
         "accordion-down": {
