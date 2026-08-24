@@ -181,29 +181,54 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden items-center gap-1 lg:flex">
-            {mainNavLinks.slice(0, 3).map((link) => (
-              <Link key={link.href} href={link.href} className={linkClass(link.href)}>
-                {link.label}
-              </Link>
-            ))}
-            {navDropdownGroups.map((group) => (
-              <NavDropdown
-                key={group.id}
-                group={group}
-                isOpen={openDropdown === group.id}
-                onOpen={() => setOpenDropdown(group.id)}
-                onToggle={() =>
-                  setOpenDropdown((prev) => (prev === group.id ? null : group.id))
-                }
-                onClose={() => setOpenDropdown(null)}
-                overlay={overlay}
-              />
-            ))}
-            {mainNavLinks.slice(3).map((link) => (
-              <Link key={link.href} href={link.href} className={linkClass(link.href)}>
-                {link.label}
-              </Link>
-            ))}
+            {mainNavLinks
+              .filter((link) =>
+                ["/", "/listings", "/neighborhoods", "/about", "/contact"].includes(link.href),
+              )
+              .map((link) => (
+                <Link key={link.href} href={link.href} className={linkClass(link.href)}>
+                  {link.label}
+                </Link>
+              ))}
+            {navDropdownGroups
+              .filter((group) => group.id === "buyers" || group.id === "sellers")
+              .map((group) => (
+                <NavDropdown
+                  key={group.id}
+                  group={group}
+                  isOpen={openDropdown === group.id}
+                  onOpen={() => setOpenDropdown(group.id)}
+                  onToggle={() =>
+                    setOpenDropdown((prev) => (prev === group.id ? null : group.id))
+                  }
+                  onClose={() => setOpenDropdown(null)}
+                  overlay={overlay}
+                />
+              ))}
+            <NavDropdown
+              group={{
+                id: "more",
+                label: "More",
+                href: "/realtor-services",
+                links: [
+                  {
+                    href: "/realtor-services",
+                    label: "Realtor Services",
+                    description: "Buyer, seller, and luxury representation",
+                  },
+                  ...navDropdownGroups
+                    .filter((group) => group.id !== "buyers" && group.id !== "sellers")
+                    .flatMap((group) => group.links),
+                ],
+              }}
+              isOpen={openDropdown === "more"}
+              onOpen={() => setOpenDropdown("more")}
+              onToggle={() =>
+                setOpenDropdown((prev) => (prev === "more" ? null : "more"))
+              }
+              onClose={() => setOpenDropdown(null)}
+              overlay={overlay}
+            />
             <Link
               href="/listings"
               className={`ml-2 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold ${

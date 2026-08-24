@@ -50,7 +50,7 @@ export default function ContactPage() {
           <PageBreadcrumbs items={[{ name: "Contact", href: "/contact" }]} className="mb-8" />
           {/* Hero */}
           <div className="text-center mb-12">
-            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            <div className="inline-block bg-sand text-ink px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
@@ -77,12 +77,12 @@ export default function ContactPage() {
               {/* NAP Information */}
               <div className="space-y-4 mb-8">
                 <div className="flex items-start bg-slate-50 rounded-lg p-4">
-                  <Phone className="h-6 w-6 text-blue-600 mr-4 flex-shrink-0 mt-1" />
+                  <Phone className="h-6 w-6 text-terracotta-dark mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Phone (Call or Text)</h3>
                     <a
                       href="tel:+17029031952"
-                      className="text-2xl font-bold text-blue-600 hover:text-blue-700"
+                      className="text-2xl font-bold text-terracotta-dark hover:text-terracotta"
                     >
                       (702) 903-1952
                     </a>
@@ -93,12 +93,12 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start bg-slate-50 rounded-lg p-4">
-                  <Mail className="h-6 w-6 text-blue-600 mr-4 flex-shrink-0 mt-1" />
+                  <Mail className="h-6 w-6 text-terracotta-dark mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
                     <a
                       href="mailto:DrDuffy@CentennialHillsHomesForSale.com"
-                      className="text-blue-600 hover:text-blue-700 font-medium"
+                      className="text-terracotta-dark hover:text-terracotta font-medium"
                     >
                       DrDuffy@CentennialHillsHomesForSale.com
                     </a>
@@ -109,7 +109,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start bg-slate-50 rounded-lg p-4">
-                  <MapPin className="h-6 w-6 text-blue-600 mr-4 flex-shrink-0 mt-1" />
+                  <MapPin className="h-6 w-6 text-terracotta-dark mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Office Address</h3>
                     <address className="not-italic text-slate-700">
@@ -122,7 +122,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start bg-slate-50 rounded-lg p-4">
-                  <Clock className="h-6 w-6 text-blue-600 mr-4 flex-shrink-0 mt-1" />
+                  <Clock className="h-6 w-6 text-terracotta-dark mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Office Hours</h3>
                     <p className="text-slate-700">Daily 6:00 AM – 9:00 PM</p>
@@ -154,7 +154,7 @@ export default function ContactPage() {
                   href="https://www.google.com/maps/dir/?api=1&destination=1490+Center+Crossing+Rd,+Las+Vegas,+NV+89144"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium transition-colors"
+                  className="flex-1 inline-flex items-center justify-center bg-terracotta hover:bg-terracotta-dark text-ink px-4 py-3 rounded-lg font-medium transition-colors"
                 >
                   <MapPin className="h-4 w-4 mr-2" />
                   Get Directions
@@ -170,7 +170,7 @@ export default function ContactPage() {
               </div>
 
               {/* Credentials */}
-              <div className="p-4 bg-blue-50 rounded-lg">
+              <div className="p-4 bg-sand rounded-lg">
                 <p className="text-sm text-slate-700">
                   <strong>Dr. Jan Duffy, REALTOR®</strong><br />
                   License S.0197614.LLC<br />
@@ -182,10 +182,10 @@ export default function ContactPage() {
             {/* Schedule Appointment - Calendly Widget */}
             <div>
               <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-                <div className="bg-blue-600 text-white p-6 text-center">
+                <div className="bg-ink text-white p-6 text-center">
                   <Calendar className="h-10 w-10 mx-auto mb-3" />
                   <h2 className="text-2xl font-bold mb-2">Schedule an Appointment</h2>
-                  <p className="text-blue-100">
+                  <p className="text-white/75">
                     Book a time that works for you—phone consultation, property showing, 
                     or in-person meeting at our office.
                   </p>
@@ -198,19 +198,19 @@ export default function ContactPage() {
                 <h3 className="font-bold text-lg mb-4">Why Contact Berkshire Hathaway HomeServices?</h3>
                 <div className="space-y-3">
                   <div className="flex items-start">
-                    <Shield className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
+                    <Shield className="h-5 w-5 text-terracotta-light mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
                       <strong className="text-white">Trusted Brand:</strong> The only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc.
                     </p>
                   </div>
                   <div className="flex items-start">
-                    <Star className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="h-5 w-5 text-terracotta-light mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
                       <strong className="text-white">Proven Results:</strong> $127M+ in closed transactions serving Las Vegas since 2008.
                     </p>
                   </div>
                   <div className="flex items-start">
-                    <Users className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
+                    <Users className="h-5 w-5 text-terracotta-light mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
                       <strong className="text-white">Global Network:</strong> 50,000+ agents worldwide for seamless relocations and referrals.
                     </p>
@@ -245,7 +245,7 @@ export default function ContactPage() {
                 "Mountains Edge",
                 "Spring Valley",
               ].map((area) => (
-                <div key={area} className="bg-slate-50 rounded-lg p-3 text-center hover:bg-blue-50 transition-colors">
+                <div key={area} className="bg-slate-50 rounded-lg p-3 text-center hover:bg-sand transition-colors">
                   <span className="text-slate-700 font-medium text-sm">{area}</span>
                 </div>
               ))}
@@ -260,12 +260,12 @@ export default function ContactPage() {
             <div className="grid md:grid-cols-2 gap-6">
               <a
                 href="tel:+17029031952"
-                className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white p-6 rounded-xl transition-colors"
+                className="flex items-center justify-center bg-terracotta hover:bg-terracotta-dark text-ink p-6 rounded-xl transition-colors"
               >
                 <Phone className="h-8 w-8 mr-4" />
                 <div className="text-left">
                   <div className="font-bold text-lg">Call Now</div>
-                  <div className="text-blue-100">(702) 903-1952</div>
+                  <div className="text-white/75">(702) 903-1952</div>
                 </div>
               </a>
               <a

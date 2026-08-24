@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { homepageCommunities } from "@/lib/homepage-communities";
 
 export default function NeighborhoodGrid() {
@@ -16,17 +17,18 @@ export default function NeighborhoodGrid() {
             <Link
               key={community.slug}
               href={community.href}
-              className="group relative block h-72 overflow-hidden rounded-2xl bg-ink bg-cover bg-center text-white no-underline"
-              style={{ backgroundImage: `url('${community.image}')` }}
+              className="group relative block h-72 overflow-hidden rounded-2xl bg-ink text-white no-underline"
             >
+              <Image
+                src={community.image}
+                alt={`${community.name} homes for sale in northwest Las Vegas near Centennial Hills`}
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
               <div
                 className="absolute inset-0 z-[1] bg-gradient-to-t from-ink via-ink/55 to-ink/20"
                 aria-hidden
-              />
-              <div
-                role="img"
-                aria-label={`${community.name} homes for sale in northwest Las Vegas near Centennial Hills`}
-                className="sr-only"
               />
               <div className="absolute inset-x-0 bottom-0 z-[2] p-5">
                 <h3 className="font-display text-2xl">{community.name}</h3>
