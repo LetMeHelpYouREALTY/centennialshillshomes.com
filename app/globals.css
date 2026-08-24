@@ -9,11 +9,17 @@
   }
 
   a {
-    @apply outline-0 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-terracotta;
+    outline: 0;
+  }
+
+  a:focus-visible {
+    outline: 2px solid #a8683a;
+    outline-offset: 2px;
   }
 
   ::selection {
-    @apply bg-terracotta/20 text-ink;
+    background-color: rgb(168 104 58 / 0.2);
+    color: #1c1917;
   }
 
   label,
