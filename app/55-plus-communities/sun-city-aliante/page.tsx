@@ -83,7 +83,7 @@ export default function SunCityAliantePage() {
               Most Affordable Sun City in Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Sun City Aliante
+              Sun City Aliante Homes for Sale
               <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
                 Dr. Jan Duffy, REALTOR®
               </span>
