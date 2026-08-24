@@ -24,7 +24,7 @@ export default function CtaBanner() {
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
             href={agentInfo.phoneTel}
-            className="inline-flex min-w-[200px] items-center justify-center rounded-xl bg-terracotta px-6 py-3.5 font-semibold text-white no-underline hover:bg-terracotta-dark"
+            className="inline-flex min-w-[200px] items-center justify-center rounded-xl bg-terracotta px-6 py-3.5 font-semibold text-ink no-underline hover:bg-terracotta-dark hover:text-white"
           >
             Schedule a Showing
           </Link>

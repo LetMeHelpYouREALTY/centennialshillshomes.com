@@ -17,8 +17,10 @@ describe("NeighborhoodGrid", () => {
       expect(screen.getByRole("heading", { name })).toBeInTheDocument();
     }
 
-    expect(screen.getByAltText(/Providence homes for sale/i)).toBeInTheDocument();
-    expect(screen.getByAltText(/Centennial Hills homes for sale/i)).toBeInTheDocument();
+    expect(screen.getByRole("img", { name: /Providence homes for sale/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("img", { name: /Centennial Hills homes for sale/i }),
+    ).toBeInTheDocument();
     expect(screen.queryByText(/family-friendly/i)).not.toBeInTheDocument();
     expect(screen.queryByText(/good schools/i)).not.toBeInTheDocument();
   });

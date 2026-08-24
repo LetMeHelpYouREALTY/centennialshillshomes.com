@@ -35,13 +35,16 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-ivory">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-terracotta">
+            Private client service
+          </p>
+          <h2 className="mt-3 font-display text-3xl italic text-ink md:text-5xl mb-4">
             Why Hire Dr. Jan Duffy in Centennial Hills
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-xl text-stone-600 max-w-3xl mx-auto">
             Northwest Las Vegas real estate with Berkshire Hathaway HomeServices backing
           </p>
         </div>
@@ -52,10 +55,10 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={feature.title}
-                className="flex flex-col p-6 rounded-2xl border border-slate-200 bg-gradient-to-b from-white to-slate-50/80 shadow-sm hover:shadow-md hover:border-blue-200 transition-all"
+                className="flex flex-col p-6 rounded-2xl border border-terracotta/20 bg-white shadow-sm hover:shadow-md hover:border-terracotta/40 transition-all"
               >
-                <div className="bg-blue-600 rounded-xl p-3 mb-4 w-fit">
-                  <Icon className="h-6 w-6 text-white" aria-hidden />
+                <div className="bg-ink rounded-xl p-3 mb-4 w-fit">
+                  <Icon className="h-6 w-6 text-terracotta-light" aria-hidden />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2">{feature.title}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">{feature.description}</p>

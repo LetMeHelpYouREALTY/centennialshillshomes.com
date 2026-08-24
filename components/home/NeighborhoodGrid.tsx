@@ -1,10 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 import { homepageCommunities } from "@/lib/homepage-communities";
 
 export default function NeighborhoodGrid() {
   return (
-    <section className="bg-sand py-16 md:py-24" id="neighborhoods">
+    <section className="bg-ivory py-16 md:py-24" id="neighborhoods">
       <div className="container mx-auto max-w-6xl px-4">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-terracotta">
           Explore by community
@@ -17,17 +16,19 @@ export default function NeighborhoodGrid() {
             <Link
               key={community.slug}
               href={community.href}
-              className="group relative block h-72 overflow-hidden rounded-2xl bg-ink text-white no-underline"
+              className="group relative block h-72 overflow-hidden rounded-2xl bg-ink bg-cover bg-center text-white no-underline"
+              style={{ backgroundImage: `url('${community.image}')` }}
             >
-              <Image
-                src={community.image}
-                alt={`${community.name} homes for sale in northwest Las Vegas near Centennial Hills`}
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              <div
+                className="absolute inset-0 z-[1] bg-gradient-to-t from-ink via-ink/55 to-ink/20"
+                aria-hidden
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/15" />
-              <div className="absolute inset-x-0 bottom-0 p-5">
+              <div
+                role="img"
+                aria-label={`${community.name} homes for sale in northwest Las Vegas near Centennial Hills`}
+                className="sr-only"
+              />
+              <div className="absolute inset-x-0 bottom-0 z-[2] p-5">
                 <h3 className="font-display text-2xl">{community.name}</h3>
                 <p className="mt-1 text-sm text-white/85">{community.description}</p>
                 <p className="mt-3 text-sm font-semibold text-terracotta-light">{community.zipHint}</p>

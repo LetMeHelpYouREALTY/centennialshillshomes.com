@@ -213,7 +213,7 @@ export function generateLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "@id": "https://www.centennialhillshomesforsale.com/#organization",
+    "@id": "https://www.centennialhillshomesforsale.com#organization",
     name: businessInfo.name,
     image: "https://www.centennialhillshomesforsale.com/images/dr-jan-duffy.jpg",
     url: businessInfo.url,
@@ -252,12 +252,6 @@ export function generateLocalBusinessSchema() {
           description: service.description,
         },
       })),
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "200",
-      bestRating: "5",
     },
     sameAs: [
       "https://www.facebook.com/drjanduffy",

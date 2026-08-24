@@ -17,8 +17,8 @@ const CALENDLY_CSS = "https://assets.calendly.com/assets/external/widget.css";
 export default function CalendlyBadge({
   url = "https://calendly.com/drjanduffy/showing",
   text = "Schedule time with me",
-  color = "#0069ff",
-  textColor = "#ffffff",
+  color = "#C4A574",
+  textColor = "#12100E",
   branding = true,
 }: CalendlyBadgeProps) {
   useEffect(() => {

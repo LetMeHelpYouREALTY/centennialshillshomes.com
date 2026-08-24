@@ -97,12 +97,11 @@ export function FAQSchema({
 }
 
 /**
- * Helper component for Review/Rating schema
- * Used on pages with testimonials
+ * Nested reviews only. Site-wide aggregateRating lives on the layout RealEstateAgent schema.
+ * Do not emit a second aggregateRating (GSC: "Review has multiple aggregate ratings").
  */
 export function ReviewSchema({
   reviews,
-  aggregateRating,
 }: {
   reviews?: Array<{
     author: string;
@@ -110,30 +109,17 @@ export function ReviewSchema({
     text: string;
     date?: string;
   }>;
-  aggregateRating?: {
-    ratingValue: number;
-    reviewCount: number;
-  };
 }) {
+  if (!reviews || reviews.length === 0) {
+    return null;
+  }
+
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "@id": "https://www.centennialhillshomesforsale.com#organization",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-  };
-
-  if (aggregateRating) {
-    schema.aggregateRating = {
-      "@type": "AggregateRating",
-      ratingValue: aggregateRating.ratingValue.toString(),
-      reviewCount: aggregateRating.reviewCount.toString(),
-      bestRating: "5",
-      worstRating: "1",
-    };
-  }
-
-  if (reviews && reviews.length > 0) {
-    schema.review = reviews.map((review) => ({
+    review: reviews.map((review) => ({
       "@type": "Review",
       author: {
         "@type": "Person",
@@ -146,9 +132,9 @@ export function ReviewSchema({
         worstRating: "1",
       },
       reviewBody: review.text,
-      datePublished: review.date || new Date().toISOString().split("T")[0],
-    }));
-  }
+      datePublished: review.date,
+    })),
+  };
 
   return <SchemaScript schema={schema} id="review-schema" />;
 }

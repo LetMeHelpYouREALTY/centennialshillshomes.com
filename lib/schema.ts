@@ -268,7 +268,10 @@ export function generateAggregateRatingSchema(
 }
 
 /**
- * Generate Review schema for individual testimonials
+ * Nested Google reviews for the same RealEstateAgent entity.
+ * Do not add a second aggregateRating — that is already on the site-wide agent schema.
+ * Author must be a Person (string authors fail GSC "Invalid object type for field author").
+ * Reviews are nested, so itemReviewed is omitted per Google's review-snippet docs.
  */
 export function generateReviewSchema(reviews: ReviewItem[]) {
   return {
@@ -276,10 +279,6 @@ export function generateReviewSchema(reviews: ReviewItem[]) {
     "@type": "RealEstateAgent",
     "@id": `${BASE_URL}#organization`,
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-    aggregateRating: generateAggregateRatingSchema(
-      agentStats.averageRating,
-      agentStats.reviewCount
-    ),
     review: reviews.map((review) => ({
       "@type": "Review",
       author: {
@@ -293,7 +292,7 @@ export function generateReviewSchema(reviews: ReviewItem[]) {
         worstRating: "1",
       },
       reviewBody: review.reviewBody,
-      datePublished: review.datePublished || new Date().toISOString().split("T")[0],
+      datePublished: review.datePublished,
     })),
   };
 }

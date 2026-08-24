@@ -5,16 +5,17 @@ const config = {
   theme: {
     extend: {
       colors: {
-        sand: "#F6F1EA",
+        sand: "#F4EFE6",
+        ivory: "#FAF7F2",
         terracotta: {
-          DEFAULT: "#A8683A",
-          dark: "#8C542C",
-          light: "#C4895C",
+          DEFAULT: "#C4A574",
+          dark: "#9A7B4F",
+          light: "#E0C9A4",
         },
-        ink: "#1C1917",
+        ink: "#12100E",
       },
       fontFamily: {
-        sans: ["var(--font-outfit)", "var(--font-geist-sans)", "system-ui", "sans-serif"],
+        sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
         display: ["var(--font-fraunces)", "Georgia", "serif"],
       },
       keyframes: {

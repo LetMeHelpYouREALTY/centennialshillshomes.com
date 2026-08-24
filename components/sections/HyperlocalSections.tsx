@@ -61,9 +61,9 @@ type AnswerLeadProps = {
 /** AEO-first answer block — direct answer in first 40–80 words for AI extraction */
 export function AnswerLeadSection({ question, answer, bullets }: AnswerLeadProps) {
   return (
-    <section className="border-b border-slate-200 bg-gradient-to-b from-blue-50/80 to-white py-10 md:py-14">
+    <section className="border-b border-stone-200 bg-gradient-to-b from-sand to-ivory py-10 md:py-14">
       <div className="container mx-auto px-4 max-w-4xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">
+        <p className="text-xs font-bold uppercase tracking-widest text-terracotta-dark mb-2">
           Quick answer · Centennial Hills · {AGENT_HEADING}
         </p>
         <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">{question}</h2>
@@ -75,7 +75,7 @@ export function AnswerLeadSection({ question, answer, bullets }: AnswerLeadProps
                 key={item}
                 className="flex items-start gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm"
               >
-                <MapPin className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" aria-hidden />
+                <MapPin className="h-4 w-4 text-terracotta-dark shrink-0 mt-0.5" aria-hidden />
                 {item}
               </li>
             ))}
@@ -114,7 +114,7 @@ export function HyperlocalFaqSection({
           >
             <summary className="cursor-pointer list-none px-5 py-4 font-semibold text-slate-900 flex items-center justify-between gap-4">
               {faq.question}
-              <ArrowRight className="h-4 w-4 text-blue-600 shrink-0 transition-transform group-open:rotate-90" />
+              <ArrowRight className="h-4 w-4 text-terracotta-dark shrink-0 transition-transform group-open:rotate-90" />
             </summary>
             <div className="px-5 pb-5 text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
               {faq.answer}
@@ -139,13 +139,13 @@ export function RealtorServicesGrid({ services }: { services: ServiceCard[] }) {
         <Link
           key={service.href}
           href={service.href}
-          className="group rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-blue-300 hover:shadow-md transition-all"
+          className="group rounded-xl border border-stone-200 bg-white p-6 shadow-sm hover:border-terracotta/50 hover:shadow-md transition-all"
         >
-          <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-700">
+          <h3 className="text-lg font-bold text-ink mb-2 group-hover:text-terracotta-dark">
             {service.title}
           </h3>
-          <p className="text-sm text-slate-600 mb-4 leading-relaxed">{service.description}</p>
-          <span className="inline-flex items-center gap-1 text-sm font-semibold text-blue-600">
+          <p className="text-sm text-stone-600 mb-4 leading-relaxed">{service.description}</p>
+          <span className="inline-flex items-center gap-1 text-sm font-semibold text-terracotta-dark">
             Learn more <ArrowRight className="h-4 w-4" />
           </span>
         </Link>
@@ -156,11 +156,11 @@ export function RealtorServicesGrid({ services }: { services: ServiceCard[] }) {
 
 export function LocalBusinessCtaBar() {
   return (
-    <section className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white py-12 md:py-16">
+    <section className="bg-ink text-white py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div>
-            <p className="text-amber-400 text-sm font-semibold uppercase tracking-widest mb-2">
+            <p className="text-terracotta-light text-sm font-semibold uppercase tracking-widest mb-2">
               {siteConfig.brandName}
             </p>
             <h2 className="text-2xl md:text-3xl font-bold mb-3">
@@ -171,7 +171,7 @@ export function LocalBusinessCtaBar() {
               sellers with same-day showings, complimentary market analysis, and Berkshire Hathaway
               HomeServices backing.
             </p>
-            <div className="flex items-center gap-2 text-amber-400 mb-6">
+            <div className="flex items-center gap-2 text-terracotta-light mb-6">
               <Star className="h-5 w-5 fill-current" aria-hidden />
               <span className="font-semibold">
                 {agentStats.averageRating} · {agentStats.reviewCount}+ Google reviews
@@ -185,7 +185,7 @@ export function LocalBusinessCtaBar() {
           <div className="flex flex-col sm:flex-row lg:flex-col gap-3">
             <Link
               href={agentInfo.phoneTel}
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-4 font-semibold hover:bg-blue-500 transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-terracotta px-6 py-4 font-semibold text-ink hover:bg-terracotta-light transition-colors"
             >
               <Phone className="h-5 w-5" aria-hidden />
               Call {agentInfo.phone}
@@ -240,10 +240,10 @@ export function PageHero({
             role="img"
             aria-label={imageAlt ?? title}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-900/85 to-blue-950/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/95 via-ink/85 to-ink/70" />
         </>
       ) : (
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900" />
+        <div className="absolute inset-0 bg-gradient-to-br from-ink via-stone-900 to-ink" />
       )}
       <div className="container relative z-10 mx-auto px-4 py-16 md:py-24 max-w-4xl">
         {eyebrow ? (

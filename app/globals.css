@@ -13,13 +13,13 @@
   }
 
   a:focus-visible {
-    outline: 2px solid #a8683a;
+    outline: 2px solid #c4a574;
     outline-offset: 2px;
   }
 
   ::selection {
-    background-color: rgb(168 104 58 / 0.2);
-    color: #1c1917;
+    background-color: rgb(196 165 116 / 0.28);
+    color: #12100e;
   }
 
   label,
@@ -55,7 +55,7 @@ realscout-simple-search {
 /* RealScout Office Listings */
 realscout-office-listings,
 realscout-your-listings {
-  --rs-listing-divider-color: #2563eb;
+  --rs-listing-divider-color: #c4a574;
   display: block;
   width: 100%;
   min-height: 240px;

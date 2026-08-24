@@ -35,38 +35,41 @@ export default function FAQSection({
   };
 
   return (
-    <section className={`py-16 md:py-24 bg-white ${className}`}>
+    <section className={`py-16 md:py-24 bg-ivory ${className}`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-terracotta">
+            Buyer questions
+          </p>
+          <h2 className="mt-3 font-display text-3xl italic text-ink md:text-5xl mb-4">
             {title}
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">{subtitle}</p>
+          <p className="text-xl text-stone-600 max-w-3xl mx-auto">{subtitle}</p>
         </div>
 
         <div className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border border-slate-200 rounded-lg mb-4 overflow-hidden"
+              className="border border-terracotta/20 rounded-lg mb-4 overflow-hidden bg-white"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition-colors"
+                className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-sand transition-colors"
               >
-                <span className="font-semibold text-slate-900 pr-4">{faq.question}</span>
+                <span className="font-semibold text-ink pr-4">{faq.question}</span>
                 {openIndex === index ? (
-                  <ChevronUp className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                  <ChevronUp className="h-5 w-5 text-terracotta-dark flex-shrink-0" />
                 ) : (
-                  <ChevronDown className="h-5 w-5 text-slate-400 flex-shrink-0" />
+                  <ChevronDown className="h-5 w-5 text-stone-400 flex-shrink-0" />
                 )}
               </button>
               <div
-                className={`px-6 py-4 bg-slate-50 border-t border-slate-200 ${
+                className={`px-6 py-4 bg-sand/60 border-t border-terracotta/15 ${
                   openIndex === index ? "block" : "hidden"
                 }`}
               >
-                <p className="text-slate-700">{faq.answer}</p>
+                <p className="text-stone-700">{faq.answer}</p>
               </div>
             </div>
           ))}

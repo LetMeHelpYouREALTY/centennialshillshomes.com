@@ -82,7 +82,7 @@ export default function HomeHero() {
                   onClick={() => setTab(item.id)}
                   className={`rounded-xl px-4 py-2 text-sm font-semibold transition-colors ${
                     selected
-                      ? "bg-terracotta text-white"
+                      ? "bg-terracotta text-ink"
                       : "text-white/80 hover:bg-white/10"
                   }`}
                 >
@@ -104,7 +104,7 @@ export default function HomeHero() {
             />
             <button
               type="submit"
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-terracotta px-6 font-semibold text-white hover:bg-terracotta-dark"
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-terracotta px-6 font-semibold text-ink hover:bg-terracotta-dark hover:text-white"
             >
               <Search className="h-4 w-4" aria-hidden />
               Search

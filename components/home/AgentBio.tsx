@@ -30,7 +30,7 @@ export default function AgentBio() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href={agentInfo.phoneTel}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-terracotta px-6 py-3.5 font-semibold text-white no-underline hover:bg-terracotta-dark"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-terracotta px-6 py-3.5 font-semibold text-ink no-underline hover:bg-terracotta-dark hover:text-white"
             >
               <Phone className="h-4 w-4" aria-hidden />
               Call {agentInfo.phone}
@@ -57,8 +57,8 @@ export default function AgentBio() {
             />
           </div>
           <div className="absolute -bottom-5 left-6 rounded-xl bg-terracotta px-5 py-4 shadow-xl">
-            <p className="font-display text-2xl text-white">{agentStats.volumeClosed}</p>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/85">
+            <p className="font-display text-2xl text-ink">{agentStats.volumeClosed}</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink/70">
               Total sales volume
             </p>
           </div>

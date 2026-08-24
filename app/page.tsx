@@ -32,17 +32,19 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 export default function Home() {
+  // Trust and community first (reviews + neighborhoods), then live MLS,
+  // then advisor proof, FAQ, and visit/CTA — for SEO and buyer engagement.
   return (
     <>
       <SchemaScript schema={generateFAQSchema(homeFaqs)} id="home-faq-schema" />
       <main>
         <HomeHero />
         <StatsBand />
-        <RealScoutListings />
+        <ReviewsSection />
         <NeighborhoodGrid />
+        <RealScoutListings />
         <AgentBio />
         <WhyChooseUs />
-        <ReviewsSection />
         <FAQSection
           faqs={homeFaqs}
           title="Centennial Hills Real Estate FAQ"
