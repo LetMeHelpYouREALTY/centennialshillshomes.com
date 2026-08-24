@@ -1,3 +1,5 @@
+const { expandRedirects, gscLegacyRedirects } = require("./lib/gsc-legacy-redirects");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Image optimization
@@ -29,14 +31,19 @@ const nextConfig = {
       { source: '/properties', destination: '/listings', permanent: true },
       { source: '/properties/', destination: '/listings', permanent: true },
       { source: '/market-report', destination: '/market-analysis', permanent: true },
+      { source: '/market-report/', destination: '/market-analysis', permanent: true },
       { source: '/luxury-homes', destination: '/luxury-home-sales', permanent: true },
+      { source: '/luxury-homes/', destination: '/luxury-home-sales', permanent: true },
       { source: '/home-valuation', destination: '/market-analysis', permanent: true },
+      { source: '/home-valuation/', destination: '/market-analysis', permanent: true },
       { source: '/communities', destination: '/neighborhoods', permanent: true },
       { source: '/communities/', destination: '/neighborhoods', permanent: true },
       { source: '/janet-duffy', destination: '/about', permanent: true },
       { source: '/janet-duffy/', destination: '/about', permanent: true },
       { source: '/images/:path*', destination: '/media/:path*', permanent: true },
       { source: '/neighborhoods/summerlin', destination: '/neighborhoods/summerlin-west', permanent: true },
+      { source: '/neighborhoods/summerlin/', destination: '/neighborhoods/summerlin-west', permanent: true },
+      ...expandRedirects(gscLegacyRedirects),
     ]
   },
 

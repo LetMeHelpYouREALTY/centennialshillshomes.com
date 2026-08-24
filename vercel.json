@@ -6,6 +6,12 @@
   "installCommand": null,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "centennialhillshomesforsale.com" }],
+      "destination": "https://www.centennialhillshomesforsale.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/janet-duffy",
       "destination": "/about",
       "permanent": true

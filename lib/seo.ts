@@ -12,6 +12,34 @@ type PageSeoOptions = {
   noIndex?: boolean;
 };
 
+/** Absolute canonical URL. Never trailing-slash except the homepage. */
+export function pageCanonical(path: string): string {
+  if (!path || path === "/") {
+    return `${siteConfig.url}/`;
+  }
+  const withSlash = path.startsWith("/") ? path : `/${path}`;
+  const trimmed = withSlash.replace(/\/+$/, "");
+  return `${siteConfig.url}${trimmed}`;
+}
+
+/**
+ * Attach a self-referencing canonical so child pages do not inherit `/` from the root layout.
+ */
+export function withSelfCanonical(path: string, metadata: Metadata): Metadata {
+  const canonical = pageCanonical(path);
+  return {
+    ...metadata,
+    alternates: {
+      ...metadata.alternates,
+      canonical,
+    },
+    openGraph: {
+      ...metadata.openGraph,
+      url: canonical,
+    },
+  };
+}
+
 /**
  * Consistent per-page metadata per Google SEO Starter Guide:
  * unique title, unique description, canonical URL, Open Graph / Twitter cards.
@@ -23,20 +51,19 @@ export function buildPageMetadata({
   keywords = [],
   noIndex = false,
 }: PageSeoOptions): Metadata {
-  const normalizedPath = path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
-  const canonicalPath = normalizedPath || "/";
+  const canonical = pageCanonical(path);
 
   return {
     title,
     description,
     keywords: keywords.length > 0 ? keywords : undefined,
     alternates: {
-      canonical: canonicalPath,
+      canonical,
     },
     openGraph: {
       title,
       description,
-      url: canonicalPath,
+      url: canonical,
       siteName: siteConfig.brandLine,
       locale: "en_US",
       type: "website",

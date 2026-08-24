@@ -15,6 +15,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/55-plus-communities/heritage-stonebridge" },
   title: "Heritage at Stonebridge Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Heritage at Stonebridge - boutique guard-gated 55+ community in Summerlin. Homes from $400K-$750K. Near Downtown Summerlin, Red Rock Canyon. Dr. Jan Duffy, BHHS. Call (702) 903-1952.",

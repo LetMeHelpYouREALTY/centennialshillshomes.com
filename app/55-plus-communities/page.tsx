@@ -24,6 +24,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/55-plus-communities" },
   title:
     "55+ Communities Near Centennial Hills | Dr. Jan Duffy, REALTOR®",
   description:

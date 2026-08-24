@@ -5,6 +5,7 @@ import { Phone, Mountain, Users, Home as HomeIcon, GraduationCap } from "lucide-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/skye-canyon" },
   title: "Skye Canyon Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Find Skye Canyon homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this northwest Las Vegas community. Complimentary CMA. Call (702) 903-1952.",

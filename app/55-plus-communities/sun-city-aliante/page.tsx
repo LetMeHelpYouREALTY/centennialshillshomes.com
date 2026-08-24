@@ -14,6 +14,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/55-plus-communities/sun-city-aliante" },
   title: "Sun City Aliante Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Sun City Aliante - the most affordable Sun City in Las Vegas. Homes from $280K-$550K with full amenities. 18-hole golf course, pools, fitness center. Dr. Jan Duffy, BHHS. Call (702) 903-1952.",

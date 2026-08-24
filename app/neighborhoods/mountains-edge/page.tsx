@@ -5,6 +5,7 @@ import { Phone, Mountain, TreePine, DollarSign, Home as HomeIcon } from "lucide-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/mountains-edge" },
   title: "Mountains Edge Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Find Mountains Edge homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this southwest Las Vegas community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",

@@ -12,6 +12,7 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/summerlin" },
   title: "Summerlin Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Find Summerlin homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy offers expert guidance in Las Vegas's premier master-planned community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",

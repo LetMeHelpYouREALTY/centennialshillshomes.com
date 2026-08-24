@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import {
   REALSCOUT_OFFICE_LISTINGS_HTML,
   REALSCOUT_SIMPLE_SEARCH_HTML,
-  REALSCOUT_YOUR_LISTINGS_HTML,
   realScoutListingsUrl,
 } from "@/lib/realscout";
+import RealScoutScript from "@/components/realscout/RealScoutScript";
 import { agentInfo } from "@/lib/site-config";
 
 export default function RealScoutListings() {
@@ -12,6 +12,7 @@ export default function RealScoutListings() {
 
   return (
     <section className="py-16 md:py-24 bg-slate-50" id="featured-listings">
+      <RealScoutScript />
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div>
@@ -32,11 +33,6 @@ export default function RealScoutListings() {
         <div
           className="realscout-wrapper mb-10 flex justify-center"
           dangerouslySetInnerHTML={{ __html: REALSCOUT_SIMPLE_SEARCH_HTML() }}
-        />
-
-        <div
-          className="realscout-office-listings-host w-full min-h-[240px] mb-8"
-          dangerouslySetInnerHTML={{ __html: REALSCOUT_YOUR_LISTINGS_HTML() }}
         />
 
         <div

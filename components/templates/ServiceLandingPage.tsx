@@ -14,6 +14,7 @@ import {
 } from "@/components/sections/HyperlocalSections";
 import { generateServiceSchema, generateWebPageSchema, combineSchemas } from "@/lib/schema";
 import type { FaqItem } from "@/lib/site-config";
+import RealScoutScript from "@/components/realscout/RealScoutScript";
 
 export type ServiceLandingProps = {
   slug: string;
@@ -92,6 +93,7 @@ export default function ServiceLandingPage({
 
         {widgetHtml ? (
           <section className="py-12 bg-white border-b border-slate-200">
+            <RealScoutScript />
             <div className="container mx-auto px-4 max-w-4xl">
               <div
                 className="bg-slate-50 p-6 rounded-xl border border-slate-200"

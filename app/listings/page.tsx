@@ -17,9 +17,11 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import { REALSCOUT_OFFICE_LISTINGS_HTML } from "@/lib/realscout";
+import RealScoutScript from "@/components/realscout/RealScoutScript";
 import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/listings" },
   title: "Centennial Hills Homes for Sale | MLS Property Search | Berkshire Hathaway HomeServices",
   description:
     "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features. Dr. Jan Duffy, Berkshire Hathaway HomeServices. Call (702) 903-1952.",
@@ -129,6 +131,7 @@ export default function ListingsPage() {
 
           {/* RealScout Widget - Live MLS Listings */}
           <section className="mb-16">
+            <RealScoutScript />
             <div className="max-w-7xl mx-auto">
               <div
                 className="realscout-office-listings-host w-full min-h-[240px]"

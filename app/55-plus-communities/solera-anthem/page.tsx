@@ -15,6 +15,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/55-plus-communities/solera-anthem" },
   title: "Solera at Anthem Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Solera at Anthem - intimate guard-gated 55+ community in Henderson. Homes from $380K-$650K. Lower HOA fees, close-knit atmosphere. Dr. Jan Duffy, BHHS. Call (702) 903-1952.",

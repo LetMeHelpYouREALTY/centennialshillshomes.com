@@ -5,6 +5,7 @@ import { Phone, Shield, Users, GraduationCap, TreePine } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/henderson" },
   title: "Henderson Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Find Henderson homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's established communities. Complimentary CMA from live MLS comps. Call (702) 903-1952.",

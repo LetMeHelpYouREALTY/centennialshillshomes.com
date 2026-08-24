@@ -1,4 +1,5 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
+import { siteConfig } from "@/lib/site-config";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -7,6 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://www.centennialhillshomesforsale.com/sitemap.xml",
+    host: siteConfig.url.replace(/^https?:\/\//, ""),
+    sitemap: `${siteConfig.url}/sitemap.xml`,
   };
 }

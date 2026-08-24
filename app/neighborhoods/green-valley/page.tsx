@@ -5,6 +5,7 @@ import { Phone, TreePine, ShoppingBag, GraduationCap, MapPin } from "lucide-reac
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/green-valley" },
   title: "Green Valley Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Find Green Valley homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's most established community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",

@@ -2,13 +2,12 @@ import "./globals.css";
 
 import React from "react";
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import Script from "next/script";
 import { GeistSans } from "geist/font/sans";
-import { Fraunces, Outfit } from "next/font/google";
+import { Fraunces } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { cn } from "lib/utils";
-import AIChatWidget from "@/components/chat/AIChatWidget";
-import CalendlyBadge from "@/components/calendly/CalendlyBadge";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import SchemaScript from "@/components/SchemaScript";
@@ -25,10 +24,11 @@ const fraunces = Fraunces({
   display: "swap",
 });
 
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-  display: "swap",
+const AIChatWidget = dynamic(() => import("@/components/chat/AIChatWidget"), {
+  ssr: false,
+});
+const CalendlyBadge = dynamic(() => import("@/components/calendly/CalendlyBadge"), {
+  ssr: false,
 });
 
 const title = siteConfig.fullName;
@@ -53,9 +53,6 @@ export const metadata: Metadata = {
     "Red Rock Country Club",
     "Summerlin West",
   ],
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title,
     description,
@@ -117,25 +114,11 @@ export default function RootLayout({
             gtag('config', 'G-WB5DLLZ4C6');
           `}
         </Script>
-        {/* RealScout: native module tag required. next/script beforeInteractive
-            queues via __next_s and never emits <script type="module">. */}
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script
-          src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
-          type="module"
-          async
-        />
-        {/* Calendly Widget Script - loaded once globally */}
-        <Script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          strategy="afterInteractive"
-        />
       </head>
       <body
         className={cn(
           GeistSans.variable,
           fraunces.variable,
-          outfit.variable,
           "font-sans antialiased bg-sand text-sm md:text-base text-ink",
         )}
       >

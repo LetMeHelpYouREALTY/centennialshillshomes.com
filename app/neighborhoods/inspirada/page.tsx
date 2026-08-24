@@ -5,6 +5,7 @@ import { Phone, Waves, TreePine, GraduationCap, Home as HomeIcon } from "lucide-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/inspirada" },
   title: "Inspirada Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Find Inspirada homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's resort-style community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",

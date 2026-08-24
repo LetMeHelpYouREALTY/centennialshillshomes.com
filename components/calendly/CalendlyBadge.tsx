@@ -12,6 +12,8 @@ interface CalendlyBadgeProps {
   branding?: boolean;
 }
 
+const CALENDLY_CSS = "https://assets.calendly.com/assets/external/widget.css";
+
 export default function CalendlyBadge({
   url = "https://calendly.com/drjanduffy/showing",
   text = "Schedule time with me",
@@ -20,7 +22,14 @@ export default function CalendlyBadge({
   branding = true,
 }: CalendlyBadgeProps) {
   useEffect(() => {
-    // Initialize badge widget when Calendly script is loaded
+    if (!document.getElementById("calendly-widget-css")) {
+      const link = document.createElement("link");
+      link.id = "calendly-widget-css";
+      link.rel = "stylesheet";
+      link.href = CALENDLY_CSS;
+      document.head.appendChild(link);
+    }
+
     const initBadge = () => {
       if (window.Calendly) {
         window.Calendly.initBadgeWidget({
@@ -33,11 +42,9 @@ export default function CalendlyBadge({
       }
     };
 
-    // Check if Calendly is already loaded
     if (window.Calendly) {
       initBadge();
     } else {
-      // Wait for script to load
       window.addEventListener("calendly-loaded", initBadge);
     }
 
@@ -47,26 +54,20 @@ export default function CalendlyBadge({
   }, [url, text, color, textColor, branding]);
 
   return (
-    <>
-      <link
-        href="https://assets.calendly.com/assets/external/widget.css"
-        rel="stylesheet"
-      />
-      <Script
-        src="https://assets.calendly.com/assets/external/widget.js"
-        strategy="lazyOnload"
-        onLoad={() => {
-          if (window.Calendly) {
-            window.Calendly.initBadgeWidget({
-              url,
-              text,
-              color,
-              textColor,
-              branding,
-            });
-          }
-        }}
-      />
-    </>
+    <Script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      strategy="lazyOnload"
+      onLoad={() => {
+        if (window.Calendly) {
+          window.Calendly.initBadgeWidget({
+            url,
+            text,
+            color,
+            textColor,
+            branding,
+          });
+        }
+      }}
+    />
   );
 }

@@ -1,16 +1,20 @@
 import type { MetadataRoute } from "next";
 import { sitemapPaths } from "@/lib/navigation";
-import { siteConfig } from "@/lib/site-config";
+import { sitemapExcludedRedirectSources } from "@/lib/gsc-legacy-redirects.js";
+import { pageCanonical } from "@/lib/seo";
 
-/** Full sitemap — all indexable Centennial Hills & northwest Las Vegas pages */
+const excluded = new Set(sitemapExcludedRedirectSources);
+
+/** Indexable URLs only — no trailing slashes (except homepage) and no 308 sources. */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = siteConfig.url;
   const lastModified = new Date();
 
-  return sitemapPaths.map(({ path, priority, changeFrequency }) => ({
-    url: `${baseUrl}${path}`,
-    lastModified,
-    changeFrequency,
-    priority,
-  }));
+  return sitemapPaths
+    .filter(({ path }) => !excluded.has(path))
+    .map(({ path, priority, changeFrequency }) => ({
+      url: pageCanonical(path || "/"),
+      lastModified,
+      changeFrequency,
+      priority,
+    }));
 }
