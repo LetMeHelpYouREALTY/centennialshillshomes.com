@@ -32,6 +32,12 @@
     "workers",
     "tests",
     "vite.config.ts",
+    "vitest.config.ts",
+    "vitest.setup.ts",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
     "scripts",
     "real-estate-mcp-worker",
     "cursor-mcp-test"
