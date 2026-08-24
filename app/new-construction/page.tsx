@@ -18,7 +18,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
+  title: "New Construction Homes in Centennial Hills | Buyer's Guide",
   description:
     "Free buyer representation on new construction homes in Las Vegas. Dr. Jan Duffy helps you navigate builder contracts, negotiate upgrades, and secure incentives. Call (702) 903-1952.",
   keywords: [
@@ -196,7 +196,7 @@ const builders = [
     segment: "55+ & Luxury",
     priceRange: "$500,000 - $1,100,000",
     communities: [
-      "Trilogy at Summerlin (55+)",
+      "Trilogy at Summerlin Homes for Sale (55+)",
       "Trilogy at Inspirada (55+)",
     ],
     currentIncentives: "Resort membership included + up to $40K in upgrades",
@@ -252,7 +252,7 @@ export default function NewConstructionPage() {
               Free Buyer Representation
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices New Construction Las Vegas
+              New Construction Homes in Centennial Hills
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Your complete buyer's guide to new homes in Las Vegas. Free representation,
@@ -375,7 +375,7 @@ export default function NewConstructionPage() {
                 </div>
               </div>
               <p className="text-center text-slate-600 mt-6">
-                Incentives change frequently. Contact Dr. Jan Duffy for current offers specific
+                Incentives change frequently. Contact Dr. Jan Duffy in Centennial Hills for current offers specific
                 to your preferred communities.
               </p>
             </div>
@@ -659,7 +659,7 @@ export default function NewConstructionPage() {
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Tour New Construction?
+              Ready to Tour New Construction in Centennial Hills?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Call <strong>(702) 903-1952</strong> to register Dr. Jan Duffy as your buyer's agent 

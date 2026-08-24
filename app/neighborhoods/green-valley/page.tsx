@@ -4,11 +4,11 @@ import { Phone, TreePine, ShoppingBag, GraduationCap, MapPin } from "lucide-reac
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Green Valley | Henderson Real Estate",
+  title: "Green Valley Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Find Green Valley homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's most established community. Median price $520K. Call (702) 903-1952.",
   keywords: [
-    "Berkshire Hathaway HomeServices Green Valley",
+    "Green Valley Homes for Sale",
     "Green Valley homes for sale",
     "Green Valley Henderson",
     "Green Valley real estate",
@@ -81,7 +81,10 @@ export default function GreenValleyPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Green Valley
+              Green Valley Homes for Sale
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600">
               Henderson's original master-planned community. Find your Green Valley home with{" "}
@@ -145,7 +148,7 @@ export default function GreenValleyPage() {
               </p>
 
               {/* Community Highlights */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Community Highlights</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Green Valley Homes, Parks & Amenities</h3>
               <div className="grid md:grid-cols-2 gap-8 not-prose">
                 <div className="bg-slate-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
@@ -174,7 +177,7 @@ export default function GreenValleyPage() {
               </div>
 
               {/* School Districts */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Green Valley School Districts</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Green Valley Nearby Schools & Commute</h3>
               <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-slate-700 mb-4">
                   Green Valley is home to some of Henderson's most sought-after schools with 35+ years
@@ -294,7 +297,7 @@ export default function GreenValleyPage() {
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions About Green Valley Real Estate
+              Green Valley Homes for Sale FAQ
             </h2>
             <div className="space-y-6">
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -345,7 +348,7 @@ export default function GreenValleyPage() {
               Discover Green Valley Living
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Green Valley specialist,
+              Contact Dr. Jan Duffy in Centennial Hills, your Green Valley specialist,
               for expert guidance in Henderson's most established community.
             </p>
             <a

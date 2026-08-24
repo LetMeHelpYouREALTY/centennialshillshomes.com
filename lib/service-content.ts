@@ -7,7 +7,7 @@ const agentId = siteConfig.realScoutAgentId;
 
 export const servicePages: Record<string, ServicePageContent> = {
   "luxury-home-sales": {
-    title: "Luxury Home Sales",
+    title: "Luxury Homes for Sale in Centennial Hills",
     description:
       "Luxury and move-up home sales $400K–$750K in Centennial Hills, Red Rock Country Club, and northwest Las Vegas.",
     heroSubtitle: "Expert representation for discerning buyers and sellers in northwest Las Vegas",
@@ -19,7 +19,7 @@ export const servicePages: Record<string, ServicePageContent> = {
     ],
   },
   "market-analysis": {
-    title: "Complimentary Market Analysis",
+    title: "Centennial Hills Home Valuation",
     description:
       "Free Centennial Hills home valuation and pricing strategy from Dr. Jan Duffy, Top 1% Las Vegas REALTOR®.",
     heroSubtitle: "Know your home's value before you buy or sell in northwest Las Vegas",
@@ -30,7 +30,7 @@ export const servicePages: Record<string, ServicePageContent> = {
     ],
   },
   "same-day-showings": {
-    title: "Same-Day Showings",
+    title: "Same-Day Showings in Centennial Hills",
     description:
       "Fast property showings for qualified buyers in Centennial Hills and northwest Las Vegas with Dr. Jan Duffy.",
     heroSubtitle: "Schedule quickly — including evenings and weekends for executive clients",
@@ -41,7 +41,7 @@ export const servicePages: Record<string, ServicePageContent> = {
     ],
   },
   "california-equity-buyers": {
-    title: "California Equity Buyers",
+    title: "California Buyers Relocating to Centennial Hills",
     description:
       "Relocate California equity into Centennial Hills and northwest Las Vegas homes with Dr. Jan Duffy.",
     heroSubtitle: "Deploy equity into Las Vegas with a trusted local BHHS advisor",
@@ -52,7 +52,7 @@ export const servicePages: Record<string, ServicePageContent> = {
     ],
   },
   "corporate-relocations": {
-    title: "Corporate Relocations",
+    title: "Corporate Relocation to Centennial Hills",
     description:
       "Executive relocation support for moves to Centennial Hills and northwest Las Vegas.",
     heroSubtitle: "White-glove coordination for corporate and executive relocations",
@@ -63,7 +63,7 @@ export const servicePages: Record<string, ServicePageContent> = {
     ],
   },
   "investment-properties": {
-    title: "Investment Properties",
+    title: "Investment Properties in Centennial Hills",
     description:
       "Rental and investment property guidance near Centennial Hills and northwest Las Vegas.",
     heroSubtitle: "Identify opportunities aligned with your investment criteria",

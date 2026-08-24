@@ -49,7 +49,7 @@ export default function DownsizingPage() {
               Embrace Low-Maintenance Living
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Simplify. Downsize. Enjoy.
+              Downsizing Homes in Centennial Hills
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Extract your equity. Embrace low-maintenance living. Start your next chapter.
@@ -442,7 +442,7 @@ export default function DownsizingPage() {
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Simplify Your Life?
+              Ready to Downsize in Centennial Hills?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Get a free home valuation and explore your downsizing options.

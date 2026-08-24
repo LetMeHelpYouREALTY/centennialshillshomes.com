@@ -9,7 +9,7 @@ export default function LocalMapSection() {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
           <div>
             <h2 id="office-map-heading" className="text-3xl font-bold text-slate-900 mb-4">
-              Visit {agentInfo.name}
+              Visit Dr. Jan Duffy in Centennial Hills
             </h2>
             <p className="text-slate-600 mb-6 leading-relaxed">
               Meet at our northwest Las Vegas office — same address as our Google Business Profile.

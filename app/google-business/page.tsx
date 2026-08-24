@@ -71,9 +71,9 @@ export default function GoogleBusinessPage() {
                     <span className="text-yellow-400 font-semibold">Berkshire Hathaway HomeServices</span>
                   </div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                    Dr. Jan Duffy
+                    Dr. Jan Duffy, Centennial Hills REALTOR®
                   </h1>
-                  <p className="text-xl text-blue-200 mb-2">REALTOR® | License {businessInfo.license}</p>
+                  <p className="text-xl text-blue-200 mb-2">License {businessInfo.license}</p>
                   <p className="text-slate-300 mb-6">Nevada Properties</p>
                   
                   {/* NAP - Exact match to GBP */}
@@ -239,7 +239,7 @@ export default function GoogleBusinessPage() {
           {/* FAQ Section - Extra ranking boost */}
           <section className="max-w-4xl mx-auto mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions
+              Dr. Jan Duffy Google Business FAQ
             </h2>
             <div className="space-y-4">
               {gbpFAQs.map((faq, index) => (
@@ -279,9 +279,9 @@ export default function GoogleBusinessPage() {
           {/* Contact CTA */}
           <section className="max-w-4xl mx-auto">
             <div className="bg-slate-900 text-white rounded-2xl p-8 md:p-12 text-center">
-              <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+              <h2 className="text-3xl font-bold mb-4">Work with Dr. Jan Duffy in Centennial Hills</h2>
               <p className="text-xl text-slate-300 mb-8">
-                Contact Dr. Jan Duffy for a free consultation about buying or selling in Las Vegas.
+                Contact Dr. Jan Duffy in Centennial Hills for a free consultation about buying or selling in Las Vegas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

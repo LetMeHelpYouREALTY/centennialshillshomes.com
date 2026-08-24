@@ -14,7 +14,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Las Vegas Market Update | January 2026",
+  title: "Centennial Hills Las Vegas Market Update | January 2026",
   description:
     "Weekly Las Vegas real estate market update from Berkshire Hathaway HomeServices Nevada Properties. Get the latest stats, notable sales, and expert analysis from Dr. Jan Duffy. Call (702) 903-1952.",
   keywords: [
@@ -77,7 +77,7 @@ export default function MarketUpdatePage() {
               Week of January 20, 2026
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Berkshire Hathaway HomeServices Las Vegas Market Update
+              Centennial Hills Las Vegas Market Update
             </h1>
             <p className="text-xl text-slate-600">
               Your weekly insider report on Las Vegas Valley real estate from{" "}
@@ -379,7 +379,7 @@ export default function MarketUpdatePage() {
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Want to know what these trends mean for your specific situation?
-              Contact Dr. Jan Duffy for a free consultation tailored to your goals.
+              Contact Dr. Jan Duffy in Centennial Hills for a free consultation tailored to your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

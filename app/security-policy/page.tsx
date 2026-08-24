@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Security Policy',
+  title: 'Website Security Policy for Centennial Hills Homes',
   description: 'Security policy and responsible disclosure information for centennialhillshomesforsale.com',
   robots: {
     index: true,
@@ -14,7 +14,7 @@ export default function SecurityPolicyPage() {
     <div className="min-h-screen bg-white py-12">
       <div className="container mx-auto max-w-4xl px-4">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
-          Security Policy
+          Website Security Policy for Centennial Hills Homes
         </h1>
 
         <div className="prose prose-lg max-w-none">

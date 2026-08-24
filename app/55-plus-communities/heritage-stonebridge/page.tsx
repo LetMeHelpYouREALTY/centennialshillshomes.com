@@ -15,7 +15,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Heritage at Stonebridge Homes for Sale | Guard-Gated 55+ Summerlin | Dr. Jan Duffy",
+  title: "Heritage at Stonebridge Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Heritage at Stonebridge - boutique guard-gated 55+ community in Summerlin. Homes from $400K-$750K. Near Downtown Summerlin, Red Rock Canyon. Dr. Jan Duffy, BHHS. Call (702) 903-1952.",
   keywords: [
@@ -84,7 +84,10 @@ export default function HeritageAtStonebridgePage() {
               Guard-Gated Summerlin 55+ Community
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Heritage at Stonebridge
+              Heritage at Stonebridge Homes for Sale
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600">
               Boutique 55+ living with guard-gated privacy in the heart of

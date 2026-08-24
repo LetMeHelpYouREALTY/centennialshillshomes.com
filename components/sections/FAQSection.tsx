@@ -25,8 +25,8 @@ interface FAQSectionProps {
 
 export default function FAQSection({
   faqs = defaultFaqs,
-  title = "Frequently Asked Questions",
-  subtitle = "Get answers to common questions about our real estate services",
+  title = "Centennial Hills Homes for Sale FAQ",
+  subtitle = "Direct answers for buyers and sellers in ZIP codes 89135, 89138, and 89144",
   className = "",
 }: FAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);

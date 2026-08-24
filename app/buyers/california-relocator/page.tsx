@@ -125,8 +125,10 @@ export default function CaliforniaRelocatorPage() {
               37% of Las Vegas Buyers Are From California
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Relocating from California?<br />
-              <span className="text-blue-600">Welcome Home to Las Vegas</span>
+              California Relocators Buying in Centennial Hills
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 mb-8">
               Zero state income tax. 40-60% lower home prices. Same sunshine.
@@ -459,7 +461,7 @@ export default function CaliforniaRelocatorPage() {
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Start Your Tax-Free Life?
+              Ready to Buy in Centennial Hills from California?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Get a personalized relocation consultation with Dr. Jan Duffy. She'll show you exactly

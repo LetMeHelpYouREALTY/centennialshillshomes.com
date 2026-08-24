@@ -10,7 +10,7 @@ export default function NeighborhoodGrid() {
           Explore by community
         </p>
         <h2 className="mt-3 font-display text-3xl italic text-ink md:text-5xl">
-          Northwest Las Vegas Neighborhoods
+          Centennial Hills & Northwest Las Vegas Neighborhoods
         </h2>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {homepageCommunities.map((community) => (

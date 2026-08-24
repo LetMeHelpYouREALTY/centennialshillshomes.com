@@ -87,7 +87,7 @@ export default function LuxuryHomesPage() {
               $1.2M - $10M+
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Luxury Real Estate
+              Luxury Homes for Sale in Centennial Hills
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Guard-gated estates. Strip penthouses. Uncompromising privacy.

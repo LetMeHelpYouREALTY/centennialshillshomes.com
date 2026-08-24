@@ -15,7 +15,7 @@ export default function CtaBanner() {
       <div className="absolute inset-0 bg-ink/70" />
       <div className="relative z-10 mx-auto max-w-3xl px-4 text-center text-white">
         <h2 className="font-display text-3xl italic md:text-5xl">
-          Ready to Find Your Perfect Home?
+          Tour Centennial Hills Homes with Dr. Jan Duffy
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-base text-white/85 md:text-lg">
           Same-day showings available. Complimentary market analysis included. No pressure — just

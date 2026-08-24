@@ -4,11 +4,11 @@ import { Phone, Shield, Users, GraduationCap, TreePine } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Henderson | Nevada Real Estate",
+  title: "Henderson Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Find Henderson homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's family-friendly communities. Median price $485K. Call (702) 903-1952.",
   keywords: [
-    "Berkshire Hathaway HomeServices Henderson",
+    "Henderson Homes for Sale",
     "Henderson homes for sale",
     "Henderson real estate agent",
     "Henderson Nevada",
@@ -97,7 +97,10 @@ export default function HendersonPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Henderson
+              Henderson Homes for Sale
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600">
               Nevada's safest city. Find your Henderson home with Dr. Jan Duffy, your trusted{" "}
@@ -160,7 +163,7 @@ export default function HendersonPage() {
               </p>
 
               {/* Community Highlights */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Community Highlights</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Henderson Homes, Parks & Amenities</h3>
               <div className="grid md:grid-cols-2 gap-8 not-prose">
                 <div className="bg-slate-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
@@ -189,7 +192,7 @@ export default function HendersonPage() {
               </div>
 
               {/* School Districts */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Henderson School Districts</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Henderson Nearby Schools & Commute</h3>
               <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-slate-700 mb-4">
                   Henderson offers some of Nevada's best public schools through Clark County School District,
@@ -331,7 +334,7 @@ export default function HendersonPage() {
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions About Henderson Real Estate
+              Henderson Homes for Sale FAQ
             </h2>
             <div className="space-y-6">
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -383,7 +386,7 @@ export default function HendersonPage() {
               Find Your Henderson Home Today
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Henderson expert,
+              Contact Dr. Jan Duffy in Centennial Hills, your Henderson specialist,
               for personalized guidance and local market insights.
             </p>
             <a

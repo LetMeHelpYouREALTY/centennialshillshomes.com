@@ -24,7 +24,9 @@ export function LeadCaptureForm({
   return (
     <section className="space-y-4">
       <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-        <h3 className="text-lg font-semibold text-slate-900">Book With Dr. Jan Duffy</h3>
+        <h3 className="text-lg font-semibold text-slate-900">
+          Book a Centennial Hills Tour with Dr. Jan Duffy
+        </h3>
         <p className="mt-1 text-sm text-slate-600">
           Use the Calendly widget to schedule your consultation instead of filling out a form.
         </p>

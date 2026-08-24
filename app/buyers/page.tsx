@@ -103,7 +103,7 @@ export default function BuyersPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Buy Your Las Vegas Home with Confidence
+              Buy a Home in Centennial Hills
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               When you work with a <strong>Berkshire Hathaway HomeServices</strong> buyer's agent,
@@ -389,7 +389,7 @@ export default function BuyersPage() {
           {/* FAQ */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              Frequently Asked Questions About Buying in Las Vegas
+              Buying a Home in Centennial Hills FAQ
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Get answers to the most common questions from Las Vegas home buyers. If you don't 
@@ -432,7 +432,7 @@ export default function BuyersPage() {
 
           {/* CTA */}
           <section className="text-center bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Las Vegas Home?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Tour Centennial Hills Homes with Dr. Jan Duffy</h2>
             <p className="text-xl text-slate-300 mb-8">
               Questions about buying in Las Vegas? Call or text Dr. Jan Duffy for a free buyer
               consultation. Get expert guidance backed by Berkshire Hathaway HomeServices—the 

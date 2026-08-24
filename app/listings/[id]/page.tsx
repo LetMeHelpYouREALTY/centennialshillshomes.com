@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Property Details | Las Vegas & Henderson Real Estate",
-  description: "View detailed information about this property listing in Las Vegas or Henderson, NV.",
+  title: "Property Details | Centennial Hills Homes | Dr. Jan Duffy",
+  description: "View listing details for homes in Centennial Hills and northwest Las Vegas with Dr. Jan Duffy, REALTOR®.",
 };
 
 // This would typically fetch from RealScout API
@@ -22,7 +22,7 @@ async function getProperty(id: string) {
     squareFeet: 3200,
     yearBuilt: 2018,
     description:
-      "Stunning modern home in desirable Summerlin community. Features open floor plan, updated kitchen, and beautiful backyard. Close to schools, shopping, and entertainment.",
+      "Stunning modern home in a desirable Summerlin community. Features open floor plan, updated kitchen, and a landscaped backyard. Close to shopping, trails, and the 215 beltway.",
   };
 }
 
@@ -62,6 +62,9 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
               {property.name}
             </h1>
+            <h2 className="text-lg font-semibold text-slate-700 mb-3">
+              Centennial Hills listing with Dr. Jan Duffy, REALTOR®
+            </h2>
             <div className="flex items-center text-slate-600 mb-4">
               <MapPin className="h-5 w-5 mr-2" />
               {property.location}

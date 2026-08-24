@@ -14,7 +14,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sun City Aliante Homes for Sale | Most Affordable Sun City | Dr. Jan Duffy",
+  title: "Sun City Aliante Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Sun City Aliante - the most affordable Sun City in Las Vegas. Homes from $280K-$550K with full amenities. 18-hole golf course, pools, fitness center. Dr. Jan Duffy, BHHS. Call (702) 903-1952.",
   keywords: [
@@ -84,6 +84,9 @@ export default function SunCityAliantePage() {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Sun City Aliante
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600">
               Full Sun City amenities at the best value. Golf, pools, fitness, and

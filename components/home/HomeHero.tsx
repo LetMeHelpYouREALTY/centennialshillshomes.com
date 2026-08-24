@@ -52,8 +52,10 @@ export default function HomeHero() {
           Northwest Las Vegas · {siteConfig.brandName}
         </p>
         <h1 className="font-display text-4xl font-semibold leading-[1.05] text-white md:text-6xl lg:text-7xl">
-          Centennial Hills
-          <span className="mt-1 block italic font-normal">Homes for Sale</span>
+          Centennial Hills Homes for Sale
+          <span className="mt-2 block text-2xl italic font-normal md:text-4xl lg:text-5xl">
+            Dr. Jan Duffy, REALTOR®
+          </span>
         </h1>
         <p className="mt-6 max-w-2xl text-base text-white/90 md:text-xl">
           {agentStats.transactionsClosed}+ closings. Hyperlocal expertise across Providence, Skye

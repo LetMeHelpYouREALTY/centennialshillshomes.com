@@ -96,8 +96,10 @@ export default function FirstTimeBuyersPage() {
               Down Payment Assistance Available
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Your First Home in Las Vegas<br />
-              <span className="text-blue-600">Starts Here</span>
+              First-Time Homebuyers in Centennial Hills
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Down payment assistance. Builder incentives. Expert guidance every step of the way.
@@ -493,7 +495,7 @@ export default function FirstTimeBuyersPage() {
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Stop Renting?
+              Ready to Buy Your First Centennial Hills Home?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Let's talk about your options. Dr. Jan Duffy will help you understand what you can

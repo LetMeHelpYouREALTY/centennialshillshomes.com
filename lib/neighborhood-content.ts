@@ -18,12 +18,12 @@ export const neighborhoodPages: Record<string, NeighborhoodPageData> = {
     title: "Centennial Hills Homes for Sale",
     description:
       "Homes for sale in Centennial Hills, Las Vegas (89144, 89138, 89135). Dr. Jan Duffy, Top 1% REALTOR® — same-day showings and complimentary market analysis.",
-    heroSubtitle: "Family-friendly northwest Las Vegas with newer homes, parks, and mountain access",
+    heroSubtitle: "Northwest Las Vegas with newer homes, parks, and mountain access",
     image: siteImages.communities.centennialHills,
     highlights: ["89144 · 89138", "Newer construction", "Parks & trails", "Move-up homes"],
     zipCodes: ["89144", "89138", "89135"],
     body: [
-      "Centennial Hills is one of northwest Las Vegas's most sought-after areas for move-up and luxury buyers, with contemporary floor plans, strong schools, and quick access to shopping along Ann Road and the 215 beltway.",
+      "Centennial Hills is one of northwest Las Vegas's most sought-after areas for move-up and luxury buyers, with contemporary floor plans and quick access to shopping along Ann Road and the 215 beltway.",
       "Dr. Jan Duffy focuses on homes roughly $400K–$750K in Centennial Hills and adjacent communities, with same-day showings and data-backed pricing guidance for buyers and sellers.",
     ],
   },
@@ -60,9 +60,9 @@ export const neighborhoodPages: Record<string, NeighborhoodPageData> = {
       "Homes for sale in Summerlin West near Centennial Hills. Established neighborhoods, top amenities, and expert guidance from Dr. Jan Duffy.",
     heroSubtitle: "Established west Summerlin neighborhoods with premium amenities",
     image: siteImages.communities.summerlinWest,
-    highlights: ["Top schools", "Trails & parks", "Dining & retail", "Move-up inventory"],
+    highlights: ["Trails & parks", "Dining & retail", "Move-up inventory", "West Summerlin access"],
     body: [
-      "Summerlin West offers mature landscaping, respected schools, and a wide range of price points for buyers stepping up from Centennial Hills or relocating into the valley.",
+      "Summerlin West offers mature landscaping, trail access, and a wide range of price points for buyers stepping up from Centennial Hills or relocating into the valley.",
       "Dr. Jan Duffy helps you compare villages, HOA structures, and commute patterns so you choose the right fit—not just the right floor plan.",
     ],
   },
@@ -86,9 +86,9 @@ export const neighborhoodPages: Record<string, NeighborhoodPageData> = {
       "Homes for sale in North Las Vegas near Centennial Hills. New construction, family communities, and investor-friendly options with Dr. Jan Duffy.",
     heroSubtitle: "Growing north valley communities adjacent to Centennial Hills",
     image: siteImages.communities.northLasVegas,
-    highlights: ["New builds", "Family-friendly", "Investor interest", "Near 215 corridor"],
+    highlights: ["New builds", "Investor interest", "Near 215 corridor", "Adjacent to Centennial Hills"],
     body: [
-      "North Las Vegas continues to add inventory and amenities, making it a practical choice for first-time buyers, growing families, and investors watching northwest Las Vegas.",
+      "North Las Vegas continues to add inventory and amenities, making it a practical choice for first-time buyers, move-up buyers, and investors watching northwest Las Vegas.",
       "Dr. Jan Duffy helps you evaluate builders, resale potential, and how north valley homes compare to Centennial Hills and Summerlin West alternatives.",
     ],
   },

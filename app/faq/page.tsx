@@ -11,7 +11,7 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "FAQ | Berkshire Hathaway HomeServices Las Vegas Real Estate",
+  title: "Centennial Hills Real Estate FAQ | Dr. Jan Duffy",
   description:
     "Frequently asked questions about Las Vegas real estate, Berkshire Hathaway HomeServices, buying, selling, and working with Dr. Jan Duffy at BHHS Nevada Properties.",
   keywords: [
@@ -188,7 +188,7 @@ export default function FAQPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Frequently Asked Questions
+              Centennial Hills Real Estate FAQ
             </h1>
             <p className="text-xl text-slate-600">
               Everything you need to know about working with{" "}

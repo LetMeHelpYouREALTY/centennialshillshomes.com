@@ -138,7 +138,7 @@ export const hyperlocalPages: Record<string, HyperlocalPageData> = {
     description:
       "Buy a home in Centennial Hills with Dr. Jan Duffy. Homes for sale in ZIP 89144 with same-day showings, buyer representation, and neighborhood expertise in northwest Las Vegas.",
     heroSubtitle:
-      "Buyer representation in Centennial Hills — newer homes, mountain views, and family-friendly northwest Las Vegas neighborhoods.",
+      "Buyer representation in Centennial Hills — newer homes, mountain views, and northwest Las Vegas neighborhoods.",
     image: siteImages.communities.centennialHills,
     answerQuestion: "How do I buy a home in Centennial Hills Las Vegas?",
     answerText:
@@ -218,7 +218,7 @@ export const hyperlocalPages: Record<string, HyperlocalPageData> = {
     answerQuestion: "What homes are for sale in ZIP code 89144?",
     answerText:
       "ZIP 89144 covers Centennial Hills — one of northwest Las Vegas's most sought-after areas for newer homes, parks, and mountain access. Dr. Jan Duffy lists and shows 89144 homes daily. Browse live listings below or call (702) 903-1952 for same-day tours.",
-    answerBullets: ["Centennial Hills · Northwest Las Vegas", "Family-friendly · Newer construction", "Near Skye Canyon & Lone Mountain", "Dr. Jan Duffy · License S.0197614.LLC"],
+    answerBullets: ["Centennial Hills · Northwest Las Vegas", "Parks & newer construction", "Near Skye Canyon & Lone Mountain", "Dr. Jan Duffy · License S.0197614.LLC"],
     body: [
       "89144 buyers often compare Centennial Hills against Skye Canyon new builds and Summerlin West resales. Dr. Jan Duffy provides side-by-side value analysis so you understand lot premiums, HOA structures, and commute patterns before you offer.",
     ],
@@ -230,7 +230,7 @@ export const hyperlocalPages: Record<string, HyperlocalPageData> = {
       {
         question: "Is 89144 a good area to buy?",
         answer:
-          "Centennial Hills (89144) attracts families and move-up buyers for newer homes, parks, and relative value compared to Summerlin. Schedule a neighborhood tour to compare blocks and price points.",
+          "Centennial Hills (89144) attracts move-up buyers for newer homes, parks, and relative value compared to Summerlin. Schedule a neighborhood tour to compare blocks and price points.",
       },
     ],
     serviceLinks: sharedServiceLinks,
@@ -288,7 +288,7 @@ export const hyperlocalPages: Record<string, HyperlocalPageData> = {
       "ZIP 89135 includes Summerlin West and communities near Red Rock Country Club — among Las Vegas's most desirable luxury corridors. Dr. Jan Duffy represents buyers and sellers in guard-gated and golf-course neighborhoods throughout 89135.",
     answerBullets: ["Summerlin West · Red Rock area", "Golf & guard-gated options", "Luxury $400K–$750K+ focus", "Same-day private showings"],
     body: [
-      "89135 buyers prioritize schools, trails, and Red Rock Canyon access. Dr. Jan Duffy provides subdivision-level insight for The Ridges, Summerlin West enclaves, and Red Rock Country Club inventory.",
+      "89135 buyers prioritize trails and Red Rock Canyon access. Dr. Jan Duffy provides subdivision-level insight for The Ridges, Summerlin West enclaves, and Red Rock Country Club inventory.",
     ],
     faqs: [
       {

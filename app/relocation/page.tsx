@@ -116,7 +116,7 @@ export default function RelocationPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Relocating to Las Vegas?
+              Relocating to Centennial Hills & Las Vegas
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               <strong>Berkshire Hathaway HomeServices</strong> makes your move seamless. With
@@ -133,7 +133,7 @@ export default function RelocationPage() {
 
           {/* Why Las Vegas */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4 text-center">Why People Are Moving to Las Vegas</h2>
+            <h2 className="text-2xl font-bold mb-4 text-center">Why Buyers Relocate to Centennial Hills & Las Vegas</h2>
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
               Las Vegas has become one of the fastest-growing cities in America, attracting 
               families, professionals, and retirees from across the country. Here's why so 
@@ -373,7 +373,7 @@ export default function RelocationPage() {
           {/* FAQ */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              Relocation Frequently Asked Questions
+              Relocating to Centennial Hills FAQ
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Moving to a new city raises many questions. Here are answers to the most common 
@@ -416,7 +416,7 @@ export default function RelocationPage() {
 
           {/* CTA */}
           <section className="text-center bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Planning Your Move to Las Vegas?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Planning Your Move to Centennial Hills?</h2>
             <p className="text-xl text-slate-300 mb-8">
               Let Dr. Jan Duffy and Berkshire Hathaway HomeServices make your relocation stress-free.
               Whether you're moving next month or exploring options, a free consultation can help 

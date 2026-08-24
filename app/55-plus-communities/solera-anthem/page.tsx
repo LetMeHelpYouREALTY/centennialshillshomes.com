@@ -15,7 +15,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Solera at Anthem Homes for Sale | Intimate Guard-Gated 55+ Henderson | Dr. Jan Duffy",
+  title: "Solera at Anthem Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Solera at Anthem - intimate guard-gated 55+ community in Henderson. Homes from $380K-$650K. Lower HOA fees, close-knit atmosphere. Dr. Jan Duffy, BHHS. Call (702) 903-1952.",
   keywords: [
@@ -84,7 +84,10 @@ export default function SoleraAnthemPage() {
               Intimate Guard-Gated 55+ Community
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Solera at Anthem
+              Solera at Anthem Homes for Sale
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600">
               The close-knit alternative to mega-communities. Guard-gated security

@@ -69,7 +69,7 @@ export default function MarketInsightsPage() {
               2026 Economic & Real Estate Analysis
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Market Insights
+              Centennial Hills Market Insights
             </h1>
             <p className="text-xl text-slate-600">
               Technology trends, economic forces, and market dynamics shaping Las Vegas

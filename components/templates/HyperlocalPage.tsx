@@ -103,6 +103,7 @@ export default function HyperlocalPage({ data }: { data: HyperlocalPageData }) {
           subtitle={data.heroSubtitle}
           image={data.image}
           imageAlt={data.title}
+          place={data.placeName?.split(",")[0] ?? "Centennial Hills"}
         />
 
         <AnswerLeadSection
@@ -155,7 +156,7 @@ export default function HyperlocalPage({ data }: { data: HyperlocalPageData }) {
         {data.serviceLinks && data.serviceLinks.length > 0 ? (
           <SectionShell
             eyebrow="Realtor services"
-            title="Related services in Centennial Hills"
+            title="Centennial Hills realtor services with Dr. Jan Duffy"
             className="bg-slate-50"
           >
             <RealtorServicesGrid services={data.serviceLinks} />

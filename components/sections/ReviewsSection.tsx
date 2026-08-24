@@ -68,7 +68,7 @@ interface ReviewsSectionProps {
 
 export default function ReviewsSection({
   reviews = defaultReviews,
-  title = "What Our Clients Say",
+  title = "What Centennial Hills Clients Say About Dr. Jan Duffy",
   subtitle = "Client feedback from buyers and sellers in Centennial Hills and northwest Las Vegas",
   googleReviewsUrl = siteConfig.googleReviewsUrl,
   className = "",

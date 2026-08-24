@@ -11,11 +11,11 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Summerlin | Las Vegas Luxury Real Estate",
+  title: "Summerlin Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Find Summerlin homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy offers expert guidance in Las Vegas's premier master-planned community. Median price $625K. Call (702) 903-1952.",
   keywords: [
-    "Berkshire Hathaway HomeServices Summerlin",
+    "Summerlin Homes for Sale",
     "Summerlin homes for sale",
     "Summerlin real estate agent",
     "Summerlin Las Vegas",
@@ -93,7 +93,10 @@ export default function SummerlinPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Summerlin
+              Summerlin Homes for Sale
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600">
               Discover Las Vegas's premier master-planned community with Dr. Jan Duffy, your trusted{" "}
@@ -154,7 +157,7 @@ export default function SummerlinPage() {
               </p>
 
               {/* Community Highlights */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Community Highlights</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Summerlin Homes, Parks & Amenities</h3>
               <div className="grid md:grid-cols-2 gap-8 not-prose">
                 <div className="bg-slate-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
@@ -183,7 +186,7 @@ export default function SummerlinPage() {
               </div>
 
               {/* School Districts */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Summerlin School Districts</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Summerlin Nearby Schools & Commute</h3>
               <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-slate-700 mb-4">
                   Summerlin is served by the Clark County School District with some of Nevada's
@@ -309,7 +312,7 @@ export default function SummerlinPage() {
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions About Summerlin Real Estate
+              Summerlin Homes for Sale FAQ
             </h2>
             <div className="space-y-6">
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -359,10 +362,10 @@ export default function SummerlinPage() {
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Find Your Summerlin Home?
+              Tour Summerlin Homes with Dr. Jan Duffy
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Summerlin specialist,
+              Contact Dr. Jan Duffy in Centennial Hills, your Summerlin specialist,
               for a personalized home search or free market analysis.
             </p>
             <a

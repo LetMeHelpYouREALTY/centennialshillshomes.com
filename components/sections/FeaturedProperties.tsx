@@ -95,7 +95,7 @@ export default function FeaturedProperties() {
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-              Featured Properties
+              Featured Properties in Centennial Hills
             </h2>
             <p className="text-slate-600 text-lg">
               Discover exceptional homes in Las Vegas and Henderson

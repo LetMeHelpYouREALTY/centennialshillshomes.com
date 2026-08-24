@@ -135,7 +135,7 @@ export default function SellersPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Sell Your Las Vegas Home for Top Dollar
+              Sell Your Centennial Hills Home
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               When you list with <strong>Berkshire Hathaway HomeServices</strong>, you get
@@ -346,7 +346,7 @@ export default function SellersPage() {
           <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-4">What's Your Home Worth?</h2>
+                <h2 className="text-3xl font-bold mb-4">What&apos;s Your Centennial Hills Home Worth?</h2>
                 <p className="text-blue-100 mb-6">
                   Get a free, no-obligation home valuation from Dr. Jan Duffy. Using current MLS
                   data and expertise serving Las Vegas since 2008, you'll know exactly what your 
@@ -372,7 +372,7 @@ export default function SellersPage() {
           {/* FAQ */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              Frequently Asked Questions About Selling in Las Vegas
+              Selling a Home in Centennial Hills FAQ
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Selling your home raises many questions. Here are answers to the most common 
@@ -415,7 +415,7 @@ export default function SellersPage() {
 
           {/* CTA */}
           <section className="text-center bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Sell Your Las Vegas Home?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Sell Your Centennial Hills Home?</h2>
             <p className="text-xl text-slate-300 mb-8">
               Schedule a free listing consultation with Dr. Jan Duffy and discover what your home
               could sell for with Berkshire Hathaway HomeServices. No obligation, no pressure—just 

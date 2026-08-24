@@ -85,7 +85,7 @@ export default function HomeValuationPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              What's Your Las Vegas Home Worth?
+              Centennial Hills Home Valuation
             </h1>
             <p className="text-xl text-slate-600">
               Get a free, no-obligation home valuation from Dr. Jan Duffy at{" "}
@@ -420,7 +420,7 @@ export default function HomeValuationPage() {
           {/* FAQ Section */}
           <section className="max-w-4xl mx-auto mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions About Home Valuations
+              Centennial Hills Home Valuation FAQ
             </h2>
             <div className="space-y-4">
               {[
@@ -456,7 +456,7 @@ export default function HomeValuationPage() {
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Know What Your Home Is Worth?
+              Ready for a Centennial Hills Home Valuation?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Get a free, no-obligation home valuation from Dr. Jan Duffy and Berkshire Hathaway

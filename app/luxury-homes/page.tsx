@@ -126,7 +126,7 @@ export default function LuxuryHomesPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Luxury Real Estate
+              Luxury Homes for Sale in Centennial Hills
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               <strong>Berkshire Hathaway HomeServices</strong> represents the gold standard in
@@ -372,7 +372,7 @@ export default function LuxuryHomesPage() {
           {/* FAQ */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              Frequently Asked Questions About Las Vegas Luxury Homes
+              Centennial Hills Luxury Homes for Sale FAQ
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Luxury real estate transactions involve unique considerations. Here are answers 

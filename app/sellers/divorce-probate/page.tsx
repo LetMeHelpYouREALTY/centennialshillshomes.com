@@ -49,7 +49,7 @@ export default function DivorceProbatePage() {
               Handled with Discretion & Professionalism
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Difficult Situations,<br />Expert Guidance
+              Divorce & Probate Home Sales in Centennial Hills
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               When life gets complicated, you need an agent who handles sensitive transactions
@@ -405,7 +405,7 @@ export default function DivorceProbatePage() {
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions
+              Divorce & Probate Home Sales in Centennial Hills FAQ
             </h2>
             <div className="space-y-4">
               {[

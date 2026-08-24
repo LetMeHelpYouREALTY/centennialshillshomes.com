@@ -176,7 +176,7 @@ export default function ServicesPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Real Estate Services
+              Centennial Hills Realtor Services
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Comprehensive real estate solutions from Dr. Jan Duffy, backed by the most trusted
@@ -477,9 +477,9 @@ export default function ServicesPage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Get Started?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Start Your Centennial Hills Search with Dr. Jan Duffy</h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy for a free consultation about any of our real estate services. 
+              Contact Dr. Jan Duffy in Centennial Hills for a free consultation about any of our real estate services. 
               Whether you're buying, selling, investing, or relocating, you'll receive expert 
               guidance backed by Berkshire Hathaway HomeServices.
             </p>

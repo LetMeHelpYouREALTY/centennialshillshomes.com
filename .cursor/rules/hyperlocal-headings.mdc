@@ -1,0 +1,19 @@
+---
+description: Hyperlocal H1/H2/H3 formulas for Dr. Jan Duffy realtor search
+globs: ["app/**/*.tsx", "components/**/*.tsx", "lib/**/*content*.ts"]
+alwaysApply: false
+---
+
+# Hyperlocal Headings
+
+Use Parallel Search before inventing ranking claims. Formulas live in `lib/heading-copy.ts` (Parallel Search, 2026-08-24).
+
+## Pattern
+- **H1**: `{Place/Service} Homes for Sale` plus `Dr. Jan Duffy, REALTOR®` if the title is not already branded.
+- **H2**: Buy/sell/market in that place + ZIP (89144, 89138, 89135) + Dr. Jan Duffy.
+- **H3**: Named community, ZIP, or service — not "Why Choose Us" or "Community Highlights".
+- One H1 per page. No keyword stuffing. Fair Housing: no "family-friendly", "good schools", "safe neighborhood".
+
+## Do not
+- Lead with "Berkshire Hathaway HomeServices {Place}" as the H1 (brokerage in body/NAP, not the ranking title).
+- Use generic CTAs ("Ready for Your Next Chapter?") as the only H1.

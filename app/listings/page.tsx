@@ -18,7 +18,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Homes for Sale | MLS Property Search | Berkshire Hathaway HomeServices",
+  title: "Centennial Hills Homes for Sale | MLS Property Search | Berkshire Hathaway HomeServices",
   description:
     "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features. Dr. Jan Duffy, Berkshire Hathaway HomeServices. Call (702) 903-1952.",
   keywords: [
@@ -119,7 +119,7 @@ export default function ListingsPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Homes for Sale
+              Centennial Hills Homes for Sale
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Search thousands of Las Vegas, Henderson, and Summerlin properties with live MLS 
@@ -413,7 +413,7 @@ export default function ListingsPage() {
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions About Las Vegas Real Estate
+              Centennial Hills Homes for Sale FAQ
             </h2>
             <div className="space-y-4">
               <div className="bg-slate-50 rounded-lg p-6">
@@ -466,10 +466,10 @@ export default function ListingsPage() {
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Find Your Las Vegas Home?
+              Tour Centennial Hills Homes with Dr. Jan Duffy
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy for personalized guidance, off-market listings, and expert 
+              Contact Dr. Jan Duffy in Centennial Hills for personalized guidance, off-market listings, and expert 
               representation backed by Berkshire Hathaway HomeServices. Free buyer consultations 
               available—the seller pays the commission.
             </p>

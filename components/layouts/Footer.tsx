@@ -35,7 +35,7 @@ export default function Footer() {
 
           <div>
             <h3 className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-white/70">
-              Quick Links
+              Centennial Hills Home Links
             </h3>
             <ul className="space-y-2">
               {footerQuickLinks.map((link) => (
@@ -56,7 +56,7 @@ export default function Footer() {
 
           <div>
             <h3 className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-white/70">
-              Communities
+              Northwest Las Vegas Communities
             </h3>
             <ul className="space-y-2">
               {neighborhoods.slice(0, 6).map((n) => (
@@ -71,7 +71,7 @@ export default function Footer() {
 
           <div>
             <h3 className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-white/70">
-              Contact
+              Contact Dr. Jan Duffy
             </h3>
             <ul className="space-y-3 text-sm text-white/70">
               <li className="flex items-start gap-2">

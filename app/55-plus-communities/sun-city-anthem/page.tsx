@@ -20,7 +20,7 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Sun City Anthem Homes for Sale | Berkshire Hathaway HomeServices",
+  title: "Sun City Anthem Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Henderson's premier 55+ community. Sun City Anthem homes from $350K-$1.2M. 2 championship golf courses, stunning mountain views. Dr. Jan Duffy. Call (702) 903-1952.",
   keywords: [
@@ -121,7 +121,10 @@ export default function SunCityAnthemPage() {
               Henderson's Premier 55+ Community
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Sun City Anthem
+              Sun City Anthem Homes for Sale
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600">
               7,100+ homes. Mountain views. Henderson safety. Championship golf.

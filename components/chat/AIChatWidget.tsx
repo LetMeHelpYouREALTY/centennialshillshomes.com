@@ -114,7 +114,7 @@ export default function AIChatWidget() {
           {/* Header */}
           <div className="bg-blue-600 text-white p-4 rounded-t-lg flex justify-between items-center">
             <div>
-              <h3 className="font-semibold">Real Estate Assistant</h3>
+              <h3 className="font-semibold">Ask Dr. Jan Duffy about Centennial Hills</h3>
               <p className="text-xs text-blue-100">Ask me anything!</p>
             </div>
             <button

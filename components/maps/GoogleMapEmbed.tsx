@@ -8,10 +8,11 @@ export default function GoogleMapEmbed() {
           Visit the office
         </p>
         <h2 className="mt-3 font-display text-3xl italic text-ink md:text-4xl">
-          {officeInfo.address.full}
+          Dr. Jan Duffy Office in Centennial Hills, 89144
         </h2>
         <p className="mt-3 max-w-2xl text-stone-600">
-          {siteConfig.hoursLabel}. Call, get directions, or read Google reviews before you visit.
+          {officeInfo.address.full}. {siteConfig.hoursLabel}. Call, get directions, or read Google
+          reviews before you visit.
         </p>
         <div className="mt-8 overflow-hidden rounded-2xl border border-stone-200 shadow-sm">
           <iframe

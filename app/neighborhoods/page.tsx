@@ -10,7 +10,7 @@ import { LocalBusinessCtaBar } from "@/components/sections/HyperlocalSections";
 import { zipNav } from "@/lib/navigation";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Centennial Hills Area Neighborhoods",
+  title: "Centennial Hills Neighborhoods | Dr. Jan Duffy, REALTOR®",
   description:
     "Explore northwest Las Vegas communities near Centennial Hills — Red Rock Country Club, The Ridges, Summerlin West, Lone Mountain, Henderson, and more. Dr. Jan Duffy, REALTOR®. Call (702) 903-1952.",
   path: "/neighborhoods",
@@ -38,7 +38,7 @@ export default function NeighborhoodsPage() {
             Hyperlocal guides
           </p>
           <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">
-            Northwest Las Vegas Neighborhoods
+            Centennial Hills & Northwest Las Vegas Neighborhoods
           </h1>
           <p className="text-lg text-slate-600 mb-6 leading-relaxed">
             Dr. Jan Duffy serves Centennial Hills and adjacent luxury and move-up communities in ZIP
@@ -57,7 +57,9 @@ export default function NeighborhoodsPage() {
 
       <section className="py-8 bg-blue-50 border-b border-blue-100">
         <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-lg font-bold text-slate-900 mb-4 text-center">Search by ZIP code</h2>
+          <h2 className="text-lg font-bold text-slate-900 mb-4 text-center">
+            Centennial Hills Homes by ZIP: 89144, 89138, 89135
+          </h2>
           <div className="flex flex-wrap justify-center gap-3">
             {zipNav.links.map((z) => (
               <Link

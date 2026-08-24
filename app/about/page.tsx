@@ -17,7 +17,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
+  title: "About Dr. Jan Duffy | Centennial Hills REALTOR®",
   description:
     "Meet Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent. Serving Las Vegas since 2008, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 903-1952.",
   keywords: [
@@ -125,7 +125,7 @@ export default function AboutPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Meet Your Berkshire Hathaway HomeServices Agent
+              Dr. Jan Duffy, Centennial Hills REALTOR®
             </h1>
             <p className="text-xl text-slate-600">
               Dr. Jan Duffy has been serving Las Vegas since 2008—backed by the most
@@ -176,7 +176,7 @@ export default function AboutPage() {
 
                 {/* Contact Info */}
                 <div className="bg-slate-50 rounded-lg p-6 mb-8">
-                  <h3 className="font-bold text-slate-900 mb-4">Contact Dr. Jan Duffy</h3>
+                  <h3 className="font-bold text-slate-900 mb-4">Contact Dr. Jan Duffy in Centennial Hills</h3>
                   <div className="space-y-3">
                     <a
                       href="tel:+17029031952"
@@ -424,7 +424,7 @@ export default function AboutPage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Get Started?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Work with Dr. Jan Duffy in Centennial Hills</h2>
             <p className="text-xl text-blue-100 mb-8">
               Questions about buying or selling in Las Vegas? Call or text Dr. Jan Duffy today 
               for a free consultation. Whether you're ready to start your search or just exploring 

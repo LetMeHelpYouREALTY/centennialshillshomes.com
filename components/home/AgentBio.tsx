@@ -14,7 +14,7 @@ export default function AgentBio() {
             Your advisor
           </p>
           <h2 className="mt-3 font-display text-3xl md:text-5xl">
-            {agentInfo.name}, {agentInfo.title}
+            {agentInfo.name}, Centennial Hills {agentInfo.title}
           </h2>
           <p className="mt-6 text-base leading-relaxed text-white/85 md:text-lg">
             Since {agentStats.servingSince}, {agentInfo.name} has represented buyers and sellers

@@ -48,7 +48,7 @@ export default function MoveUpSellerPage() {
               Your Equity Unlocks Your Dream Home
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Ready for Your Next Chapter?
+              Move-Up Homes in Centennial Hills
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Your home's equity unlocks your dream home. Let's make the upgrade seamless.
@@ -374,7 +374,7 @@ export default function MoveUpSellerPage() {
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              What's Your Home Worth Today?
+              What&apos;s Your Centennial Hills Home Worth Today?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Get a free equity analysis and see what your next home could look like.

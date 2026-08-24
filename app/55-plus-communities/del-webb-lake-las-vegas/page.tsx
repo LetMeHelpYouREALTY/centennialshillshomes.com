@@ -12,7 +12,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Del Webb at Lake Las Vegas Homes | Berkshire Hathaway HomeServices",
+  title: "Del Webb at Lake Las Vegas Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Lakefront 55+ living at Del Webb Lake Las Vegas. Homes from $400K-$900K. Resort amenities, stunning lake and mountain views. Dr. Jan Duffy. Call (702) 903-1952.",
   keywords: [
@@ -47,7 +47,10 @@ export default function DelWebbLakeLasVegasPage() {
               Lakefront 55+ Living
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Del Webb at Lake Las Vegas
+              Del Webb at Lake Las Vegas Homes for Sale
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600">
               Modern homes. Lake views. Resort living. The newest Del Webb in Las Vegas.

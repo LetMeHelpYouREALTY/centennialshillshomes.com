@@ -1,4 +1,3 @@
-import Navbar from "@/components/layouts/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -78,7 +77,13 @@ export default function ServiceLandingPage({
           />
         </div>
 
-        <PageHero title={title} subtitle={heroSubtitle} image={image} imageAlt={title} />
+        <PageHero
+          title={title}
+          subtitle={heroSubtitle}
+          image={image}
+          imageAlt={title}
+          place="Centennial Hills"
+        />
 
         <AnswerLeadSection
           question={answerQuestion ?? `What is ${title} in Centennial Hills?`}
@@ -98,6 +103,9 @@ export default function ServiceLandingPage({
 
         <section className="py-14 md:py-20 bg-white">
           <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8">
+              {title} with Dr. Jan Duffy in Centennial Hills
+            </h2>
             <div className="grid lg:grid-cols-2 gap-10 items-start">
               <div className="space-y-5">
                 {body.map((paragraph) => (

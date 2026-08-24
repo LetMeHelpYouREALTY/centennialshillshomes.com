@@ -3,17 +3,17 @@ import { Shield, TrendingUp, Users, Award, Clock, Home } from "lucide-react";
 const features = [
   {
     icon: Shield,
-    title: "BHHS Nevada Properties",
+    title: "BHHS Nevada Properties in 89144",
     description: "Berkshire Hathaway HomeServices brand trust with local northwest Las Vegas expertise.",
   },
   {
     icon: TrendingUp,
-    title: "Centennial Hills Focus",
+    title: "Centennial Hills 89144 · 89138 · 89135",
     description: "Hyperlocal knowledge of 89135, 89138, 89144 and adjacent luxury communities.",
   },
   {
     icon: Users,
-    title: "Top 1% REALTOR®",
+    title: "Top 1% Centennial Hills REALTOR®",
     description: "Dr. Jan Duffy — recognized results for move-up and luxury buyers and sellers.",
   },
   {
@@ -23,12 +23,12 @@ const features = [
   },
   {
     icon: Clock,
-    title: "Same-Day Showings",
+    title: "Same-Day Showings in 89144",
     description: "Fast scheduling for qualified buyers, including evenings and weekends.",
   },
   {
     icon: Home,
-    title: "Complimentary CMA",
+    title: "Complimentary Centennial Hills CMA",
     description: "Free market analysis and pricing strategy before you list or make an offer.",
   },
 ];
@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-            Why Choose Dr. Jan Duffy
+            Why Hire Dr. Jan Duffy in Centennial Hills
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Northwest Las Vegas real estate with Berkshire Hathaway HomeServices backing

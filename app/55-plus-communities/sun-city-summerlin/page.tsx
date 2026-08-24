@@ -15,7 +15,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sun City Summerlin Homes for Sale | Berkshire Hathaway HomeServices",
+  title: "Sun City Summerlin Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Nevada's largest 55+ community. Sun City Summerlin homes from $320K-$850K. 3 golf courses, 4 rec centers, 100+ clubs. Dr. Jan Duffy, BHHS specialist. Call (702) 903-1952.",
   keywords: [
@@ -72,7 +72,10 @@ export default function SunCitySummerlinPage() {
               Nevada's Largest 55+ Community
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Sun City Summerlin
+              Sun City Summerlin Homes for Sale
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600">
               7,700+ homes. 3 golf courses. 4 recreation centers. The gold standard of active adult living.

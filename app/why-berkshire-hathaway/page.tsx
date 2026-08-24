@@ -4,7 +4,7 @@ import { Shield, Users, Globe, Award, TrendingUp, CheckCircle, Phone } from "luc
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Why Choose Berkshire Hathaway HomeServices | Las Vegas Real Estate",
+  title: "Why Dr. Jan Duffy & BHHS in Centennial Hills",
   description:
     "Discover why Berkshire Hathaway HomeServices is the most trusted name in real estate. Backed by Warren Buffett, with 50,000+ agents worldwide. Work with BHHS Nevada Properties today.",
   keywords: [
@@ -47,7 +47,7 @@ export default function WhyBerkshireHathawayPage() {
               The Most Trusted Name in Real Estate
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Why Choose Berkshire Hathaway HomeServices?
+              Why Dr. Jan Duffy & BHHS in Centennial Hills
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
               When you work with a <strong>Berkshire Hathaway HomeServices</strong> agent, you're
@@ -87,7 +87,7 @@ export default function WhyBerkshireHathawayPage() {
           {/* Key Benefits */}
           <section className="mb-16 max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">
-              The BHHS Advantage
+              Why BHHS Matters for Centennial Hills Buyers
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white border border-slate-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
@@ -233,7 +233,7 @@ export default function WhyBerkshireHathawayPage() {
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions About BHHS
+              BHHS Centennial Hills REALTOR® FAQ
             </h2>
             <div className="space-y-4">
               {[
@@ -268,7 +268,7 @@ export default function WhyBerkshireHathawayPage() {
               Experience the Berkshire Hathaway Difference
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Ready to work with the most trusted name in real estate? Contact Dr. Jan Duffy today.
+              Ready to work with the most trusted name in real estate? Contact Dr. Jan Duffy in Centennial Hills today.
             </p>
             <a
               href="tel:+17029031952"

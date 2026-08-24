@@ -4,11 +4,11 @@ import { Phone, Mountain, Users, Home as HomeIcon, GraduationCap } from "lucide-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Skye Canyon | Northwest Las Vegas",
+  title: "Skye Canyon Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Find Skye Canyon homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier northwest community. Median price $550K. Call (702) 903-1952.",
   keywords: [
-    "Berkshire Hathaway HomeServices Skye Canyon",
+    "Skye Canyon Homes for Sale",
     "Skye Canyon homes for sale",
     "Skye Canyon Las Vegas",
     "northwest Las Vegas homes",
@@ -81,7 +81,10 @@ export default function SkyeCanyonPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Skye Canyon
+              Skye Canyon Homes for Sale
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600">
               Northwest Las Vegas's fastest-growing community. Discover Skye Canyon with{" "}
@@ -145,7 +148,7 @@ export default function SkyeCanyonPage() {
               </p>
 
               {/* Community Highlights */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Community Highlights</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Skye Canyon Homes, Parks & Amenities</h3>
               <div className="grid md:grid-cols-2 gap-8 not-prose">
                 <div className="bg-slate-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
@@ -318,7 +321,7 @@ export default function SkyeCanyonPage() {
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions About Skye Canyon
+              Skye Canyon Homes for Sale FAQ
             </h2>
             <div className="space-y-6">
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -370,7 +373,7 @@ export default function SkyeCanyonPage() {
               Discover Skye Canyon Living
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Skye Canyon specialist,
+              Contact Dr. Jan Duffy in Centennial Hills, your Skye Canyon specialist,
               for expert guidance on new construction and resale homes.
             </p>
             <a

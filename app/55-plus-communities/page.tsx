@@ -24,7 +24,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "55+ Active Adult Communities Las Vegas | Sun City, Del Webb, Heritage | Dr. Jan Duffy",
+    "55+ Communities Near Centennial Hills | Dr. Jan Duffy, REALTOR®",
   description:
     "Find your perfect 55+ community in Las Vegas. Sun City Summerlin, Sun City Aliante, Del Webb Lake Las Vegas, Heritage at Stonebridge, Solera, Trilogy. Dr. Jan Duffy specializes in active adult living. Call (702) 903-1952.",
   keywords: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     "55 plus homes Las Vegas",
   ],
   openGraph: {
-    title: "Find Your Perfect 55+ Community in Las Vegas | Dr. Jan Duffy",
+    title: "55+ Communities Near Centennial Hills | Dr. Jan Duffy",
     description:
       "Sun City, Del Webb, Heritage at Stonebridge & more—Dr. Duffy specializes in active adult living. Berkshire Hathaway HomeServices Nevada Properties.",
     type: "website",
@@ -355,7 +355,7 @@ export default function FiftyFiveCommunitiesPage() {
               Active Adult Living Specialist
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Find Your Perfect 55+ Community in Las Vegas
+              55+ Communities Near Centennial Hills
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 mb-8">
               Sun City, Del Webb, Heritage at Stonebridge & more—
@@ -778,7 +778,7 @@ export default function FiftyFiveCommunitiesPage() {
           {/* Why BHHS */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
-              Why Choose Dr. Jan Duffy for 55+ Communities?
+              Why Hire Dr. Jan Duffy for 55+ Homes Near Centennial Hills
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex items-start">

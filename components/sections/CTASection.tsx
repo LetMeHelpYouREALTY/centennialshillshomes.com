@@ -8,7 +8,7 @@ export default function CTASection() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Find Your Dream Home?
+            Tour Centennial Hills Homes with Dr. Jan Duffy
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Let's start your real estate journey today. Get expert guidance, personalized service,

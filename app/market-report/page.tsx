@@ -4,7 +4,7 @@ import { TrendingUp, TrendingDown, Home, Calendar, DollarSign, BarChart, Phone }
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Real Estate Market Report January 2026 | Berkshire Hathaway HomeServices",
+  title: "Centennial Hills Market Report January 2026 | Berkshire Hathaway HomeServices",
   description:
     "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Berkshire Hathaway HomeServices Nevada Properties.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const reportSchema = {
   "@context": "https://schema.org",
   "@type": "Report",
-  name: "Las Vegas Real Estate Market Report - January 2026",
+  name: "Centennial Hills Market Report - January 2026",
   author: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy",
@@ -48,7 +48,7 @@ export default function MarketReportPage() {
               Berkshire Hathaway HomeServices Market Intelligence
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Real Estate Market Report
+              Centennial Hills Market Report
             </h1>
             <p className="text-xl text-slate-600">
               January 2026 | Expert analysis from{" "}

@@ -4,6 +4,7 @@ import { agentInfo, officeInfo, siteConfig, agentStats } from "@/lib/site-config
 import type { FaqItem } from "@/lib/site-config";
 import SchemaScript from "@/components/SchemaScript";
 import { generateFAQSchema } from "@/lib/schema";
+import { AGENT_HEADING, agentHeadingLine, includesAgentName } from "@/lib/heading-copy";
 
 type SectionShellProps = {
   id?: string;
@@ -63,7 +64,7 @@ export function AnswerLeadSection({ question, answer, bullets }: AnswerLeadProps
     <section className="border-b border-slate-200 bg-gradient-to-b from-blue-50/80 to-white py-10 md:py-14">
       <div className="container mx-auto px-4 max-w-4xl">
         <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">
-          Quick answer · Centennial Hills
+          Quick answer · Centennial Hills · {AGENT_HEADING}
         </p>
         <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">{question}</h2>
         <p className="text-lg text-slate-700 leading-relaxed mb-6">{answer}</p>
@@ -92,7 +93,7 @@ type HyperlocalFaqProps = {
 };
 
 export function HyperlocalFaqSection({
-  title = "Centennial Hills Real Estate FAQ",
+  title = "Centennial Hills Homes for Sale FAQ",
   faqs,
   schemaId = "page-faq-schema",
 }: HyperlocalFaqProps) {
@@ -163,7 +164,7 @@ export function LocalBusinessCtaBar() {
               {siteConfig.brandName}
             </p>
             <h2 className="text-2xl md:text-3xl font-bold mb-3">
-              Work with Dr. Jan Duffy in Centennial Hills
+              Work with Dr. Jan Duffy, Centennial Hills REALTOR®
             </h2>
             <p className="text-slate-300 mb-4 leading-relaxed">
               Licensed Nevada REALTOR® {agentInfo.license}. Serving northwest Las Vegas buyers and
@@ -220,12 +221,14 @@ export function PageHero({
   subtitle,
   image,
   imageAlt,
+  place,
 }: {
   eyebrow?: string;
   title: string;
   subtitle: string;
   image?: string;
   imageAlt?: string;
+  place?: string;
 }) {
   return (
     <section className="relative overflow-hidden bg-slate-900 text-white">
@@ -248,7 +251,14 @@ export function PageHero({
             {eyebrow}
           </p>
         ) : null}
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">{title}</h1>
+        <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
+          {title}
+          {!includesAgentName(title) ? (
+            <span className="mt-2 block text-xl md:text-2xl font-semibold text-amber-400">
+              {agentHeadingLine(place)}
+            </span>
+          ) : null}
+        </h1>
         <p className="text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl">{subtitle}</p>
       </div>
     </section>

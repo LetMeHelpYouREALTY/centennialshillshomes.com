@@ -7,9 +7,9 @@ import { buildPageMetadata } from "@/lib/seo";
 import PageBreadcrumbs from "@/components/seo/PageBreadcrumbs";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Contact Dr. Jan Duffy | Centennial Hills REALTOR®",
+  title: "Contact Dr. Jan Duffy in Centennial Hills | Centennial Hills REALTOR®",
   description:
-    "Contact Dr. Jan Duffy at 1490 Center Crossing Rd, Las Vegas NV 89144. Call (702) 903-1952 or email DrDuffy@CentennialHillsHomesForSale.com for Centennial Hills real estate.",
+    "Contact Dr. Jan Duffy in Centennial Hills at 1490 Center Crossing Rd, Las Vegas NV 89144. Call (702) 903-1952 or email DrDuffy@CentennialHillsHomesForSale.com for Centennial Hills real estate.",
   path: "/contact",
   keywords: [
     "contact Dr. Jan Duffy",
@@ -54,7 +54,7 @@ export default function ContactPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Contact Dr. Jan Duffy
+              Contact Dr. Jan Duffy in Centennial Hills
             </h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Questions about Las Vegas real estate? Your{" "}
@@ -66,7 +66,7 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Info & Map */}
             <div>
-              <h2 className="text-2xl font-bold text-slate-900 mb-6">Get In Touch</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-6">Call Dr. Jan Duffy in Centennial Hills 89144</h2>
               <p className="text-slate-700 mb-8">
                 Whether you're buying your first home, selling a luxury property, or exploring
                 investment opportunities, I'm here to provide expert guidance backed by the trusted{" "}
@@ -284,7 +284,7 @@ export default function ContactPage() {
           {/* FAQ Section */}
           <section className="max-w-4xl mx-auto mt-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions
+              Contact Dr. Jan Duffy — FAQ
             </h2>
             <div className="space-y-4">
               {[

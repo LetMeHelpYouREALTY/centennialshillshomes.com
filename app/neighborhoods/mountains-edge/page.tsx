@@ -4,11 +4,11 @@ import { Phone, Mountain, TreePine, DollarSign, Home as HomeIcon } from "lucide-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Mountains Edge | Southwest Las Vegas",
+  title: "Mountains Edge Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Find Mountains Edge homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this southwest Las Vegas community. Median price $475K. Call (702) 903-1952.",
   keywords: [
-    "Berkshire Hathaway HomeServices Mountains Edge",
+    "Mountains Edge Homes for Sale",
     "Mountains Edge homes for sale",
     "Mountains Edge Las Vegas",
     "southwest Las Vegas homes",
@@ -81,7 +81,10 @@ export default function MountainsEdgePage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Mountains Edge
+              Mountains Edge Homes for Sale
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600">
               Affordable luxury in southwest Las Vegas. Find your Mountains Edge home with{" "}
@@ -145,7 +148,7 @@ export default function MountainsEdgePage() {
               </p>
 
               {/* Community Highlights */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Community Highlights</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Mountains Edge Homes, Parks & Amenities</h3>
               <div className="grid md:grid-cols-2 gap-8 not-prose">
                 <div className="bg-slate-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
@@ -174,7 +177,7 @@ export default function MountainsEdgePage() {
               </div>
 
               {/* Schools */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Mountains Edge School Districts</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Mountains Edge Nearby Schools & Commute</h3>
               <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-slate-700 mb-4">
                   Mountains Edge is served by Clark County School District with several newer schools
@@ -315,7 +318,7 @@ export default function MountainsEdgePage() {
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions About Mountains Edge
+              Mountains Edge Homes for Sale FAQ
             </h2>
             <div className="space-y-6">
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -368,7 +371,7 @@ export default function MountainsEdgePage() {
               Discover Mountains Edge Value
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Mountains Edge specialist,
+              Contact Dr. Jan Duffy in Centennial Hills, your Mountains Edge specialist,
               for expert guidance in finding exceptional value in southwest Las Vegas.
             </p>
             <a

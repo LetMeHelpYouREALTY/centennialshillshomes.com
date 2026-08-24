@@ -15,7 +15,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Trilogy at Summerlin Homes for Sale | Luxury Resort 55+ Living | Dr. Jan Duffy",
+  title: "Trilogy at Summerlin Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Trilogy at Summerlin - luxury resort-style 55+ community. Homes from $500K-$1.1M. On-site farm-to-table restaurant, spa, contemporary designs. Dr. Jan Duffy, BHHS. Call (702) 903-1952.",
   keywords: [
@@ -84,7 +84,10 @@ export default function TrilogySummerlinPage() {
               Luxury Resort-Style 55+ Living
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Trilogy at Summerlin
+              Trilogy at Summerlin Homes for Sale
+              <span className="mt-3 block text-2xl md:text-3xl font-semibold text-blue-600">
+                Dr. Jan Duffy, REALTOR®
+              </span>
             </h1>
             <p className="text-xl text-slate-600">
               Where five-star resort living meets 55+ community. Farm-to-table

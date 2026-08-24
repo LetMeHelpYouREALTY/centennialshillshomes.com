@@ -19,6 +19,7 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import type { FaqItem } from "@/lib/site-config";
+import { agentHeadingLine, buyOrSellH2 } from "@/lib/heading-copy";
 
 export function neighborhoodMetadata(data: NeighborhoodPageData): Metadata {
   return buildPageMetadata({
@@ -94,7 +95,12 @@ export default function NeighborhoodPage({ data }: { data: NeighborhoodPageData 
             <p className="text-amber-400 text-sm font-semibold uppercase tracking-widest mb-3">
               {siteConfig.shortName}
             </p>
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">{data.title}</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">
+              {data.title}
+              <span className="mt-2 block text-xl md:text-2xl font-semibold text-amber-400">
+                {agentHeadingLine(data.title.replace(" Homes for Sale", ""))}
+              </span>
+            </h1>
             <p className="text-lg text-slate-200 mb-8 max-w-2xl">{data.heroSubtitle}</p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -115,7 +121,10 @@ export default function NeighborhoodPage({ data }: { data: NeighborhoodPageData 
         </section>
 
         <AnswerLeadSection
-          question={`Why buy or sell in ${data.title.replace(" Homes for Sale", "")}?`}
+          question={buyOrSellH2(
+            data.title.replace(" Homes for Sale", ""),
+            data.zipCodes?.join(", "),
+          )}
           answer={data.body[0] ?? data.heroSubtitle}
           bullets={data.highlights}
         />
@@ -138,7 +147,10 @@ export default function NeighborhoodPage({ data }: { data: NeighborhoodPageData 
           </div>
         </section>
 
-        <HyperlocalFaqSection faqs={faqs} title={`${data.title.replace(" Homes for Sale", "")} — FAQ`} />
+        <HyperlocalFaqSection
+          faqs={faqs}
+          title={`${data.title.replace(" Homes for Sale", "")} Homes for Sale FAQ`}
+        />
         <RealScoutListings />
         <LocalBusinessCtaBar />
       </div>
