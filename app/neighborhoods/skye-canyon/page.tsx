@@ -1,4 +1,5 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
 import Link from "next/link";
 import { Phone, Mountain, Users, Home as HomeIcon, GraduationCap } from "lucide-react";
 import type { Metadata } from "next";
@@ -6,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Skye Canyon Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Find Skye Canyon homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier northwest community. Median price $550K. Call (702) 903-1952.",
+    "Find Skye Canyon homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this northwest Las Vegas community. Complimentary CMA. Call (702) 903-1952.",
   keywords: [
     "Skye Canyon Homes for Sale",
     "Skye Canyon homes for sale",
@@ -25,7 +26,7 @@ const faqSchema = {
       name: "What is the current median home price in Skye Canyon?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of January 2026, Skye Canyon's median home price is $550,000, up 5.5% year-over-year. New construction ranges from $450,000 to $800,000, while resales offer additional options across all price points.",
+        text: "MLS prices change weekly. Dr. Jan Duffy prepares a complimentary CMA from current active and sold listings. Call (702) 903-1952 — we do not publish stale snapshot numbers.",
       },
     },
     {
@@ -38,10 +39,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Is Skye Canyon good for families?",
+      name: "Is Skye Canyon a fit for buyers who want new construction and trail access?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, Skye Canyon is designed for families with new schools, extensive children's amenities, community events, and safe neighborhoods. The community hosts family-friendly events throughout the year at Skye Center.",
+        text: "Skye Canyon is a 1,700-acre master plan with Skye Center amenities, trails, and access to Floyd Lamb Park. Dr. Jan Duffy represents buyers on new construction and resale in 89166.",
       },
     },
     {
@@ -91,31 +92,7 @@ export default function SkyeCanyonPage() {
               <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
             </p>
           </div>
-
-          {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Skye Canyon Real Estate Market | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$550,000</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">21 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">124</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+5.5%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <CurrentMarketBand area="Skye Canyon" zipLabel="89166" />
 
           {/* Main Content */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -285,19 +262,17 @@ export default function SkyeCanyonPage() {
               </div>
 
               <p className="mt-8">
-                The current Skye Canyon market shows <strong>124 active listings</strong> with homes
-                averaging just <strong>21 days on market</strong>—among the fastest in the valley.
-                The median price of <strong>$550,000</strong> reflects 5.5% year-over-year appreciation,
-                driven by continued demand from families seeking modern homes with exceptional amenities.
-                New construction from builders like Toll Brothers, Lennar, and Woodside Homes ranges
-                from $450,000 to $800,000.
+                Skye Canyon inventory and builder pricing move weekly. Dr. Jan Duffy prepares a
+                complimentary CMA from current active and sold listings in 89166 — including Toll
+                Brothers, Lennar, and Woodside Homes new construction as well as resales. Call
+                (702) 903-1952 rather than relying on a stale median.
               </p>
               <p>
                 Choosing <strong>Berkshire Hathaway HomeServices</strong> for your Skye Canyon purchase
                 means working with agents who know which builders offer the best quality, which lots
                 have the best views, and which upgrades deliver the best value. Dr. Jan Duffy has
-                helped dozens of families find their Skye Canyon homes, and that experience translates
-                into better outcomes for buyers navigating this competitive market.
+                helped dozens of buyers find Skye Canyon homes, and that experience translates
+                into better outcomes when navigating this competitive market.
               </p>
             </div>
           </section>
@@ -306,11 +281,10 @@ export default function SkyeCanyonPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Skye Canyon is where young families want to be right now. The amenities are incredible,
-                the homes are modern and energy-efficient, and the community vibe is exactly what people
-                are looking for. As a Berkshire Hathaway HomeServices agent, I make sure my clients get
-                the best value—whether that's negotiating builder upgrades or finding a resale with
-                features already included."
+                &quot;Skye Canyon buyers want Skye Center amenities, energy-efficient new construction,
+                and trail access to Floyd Lamb Park. As a Berkshire Hathaway HomeServices agent, I make
+                sure clients get the best value—whether that is negotiating builder upgrades or finding
+                a resale with features already included.&quot;
               </blockquote>
               <cite className="text-slate-900 font-semibold">
                 — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
@@ -329,9 +303,7 @@ export default function SkyeCanyonPage() {
                   What is the current median home price in Skye Canyon?
                 </h3>
                 <p className="text-slate-600">
-                  As of January 2026, Skye Canyon's median home price is $550,000, up 5.5% year-over-year.
-                  New construction ranges from $450,000 to $800,000, while resales offer additional
-                  options across all price points.
+                  MLS prices change weekly. Dr. Jan Duffy prepares a complimentary CMA from current active and sold listings. Call (702) 903-1952 — we do not publish stale snapshot numbers.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -346,12 +318,12 @@ export default function SkyeCanyonPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Is Skye Canyon good for families?
+                  Is Skye Canyon a fit for buyers who want new construction and trail access?
                 </h3>
                 <p className="text-slate-600">
-                  Yes, Skye Canyon is designed for families with new schools, extensive children's
-                  amenities, community events, and safe neighborhoods. The community hosts family-friendly
-                  events throughout the year at Skye Center.
+                  Skye Canyon is a 1,700-acre master plan with Skye Center amenities, trails, and
+                  access to Floyd Lamb Park. Dr. Jan Duffy represents buyers on new construction and
+                  resale in 89166.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -388,7 +360,7 @@ export default function SkyeCanyonPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
     </>

@@ -1,4 +1,5 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
 import Link from "next/link";
 import {
   Phone,
@@ -382,36 +383,7 @@ export default function FiftyFiveCommunitiesPage() {
             </div>
           </div>
 
-          {/* Quick Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Las Vegas 55+ Market Overview | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-amber-400 mb-1">
-                  25,000+
-                </div>
-                <div className="text-slate-300 text-sm">55+ Homes Available</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">
-                  $280K-$1.2M
-                </div>
-                <div className="text-slate-300 text-sm">Price Range</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">$140-$350</div>
-                <div className="text-slate-300 text-sm">Monthly HOA Range</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">
-                  +5.8%
-                </div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <CurrentMarketBand area="Las Vegas 55+ communities" heading="Current 55+ pricing via live MLS" />
 
           {/* California Relocator Section */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -879,7 +851,7 @@ export default function FiftyFiveCommunitiesPage() {
           </section>
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">
-          Last Updated: January 2026
+          Last Updated: August 2026
         </div>
       </main>
       <RealScoutListings />

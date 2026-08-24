@@ -298,7 +298,7 @@ export default function ContactPage() {
                 },
                 {
                   q: "How quickly can you respond to inquiries?",
-                  a: "I typically respond to calls, texts, and emails within 2 hours during business hours (9am-6pm daily). For urgent matters, calling or texting (702) 903-1952 is the fastest way to reach me.",
+                  a: "I typically respond to calls, texts, and emails within 2 hours during office hours (Daily 6:00 AM – 9:00 PM). For urgent matters, calling or texting (702) 903-1952 is the fastest way to reach me.",
                 },
                 {
                   q: "Do you charge for consultations?",
@@ -315,7 +315,7 @@ export default function ContactPage() {
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
     </>

@@ -1,4 +1,5 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
 import Link from "next/link";
 import { Phone, TreePine, ShoppingBag, GraduationCap, MapPin } from "lucide-react";
 import type { Metadata } from "next";
@@ -6,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Green Valley Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Find Green Valley homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's most established community. Median price $520K. Call (702) 903-1952.",
+    "Find Green Valley homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's most established community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
   keywords: [
     "Green Valley Homes for Sale",
     "Green Valley homes for sale",
@@ -25,7 +26,7 @@ const faqSchema = {
       name: "What is the current median home price in Green Valley?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of January 2026, Green Valley's median home price is $520,000, with 4.8% appreciation year-over-year. Prices range from $400,000 for smaller homes to over $1.2 million for luxury properties.",
+        text: "MLS prices change weekly. Dr. Jan Duffy prepares a complimentary CMA from current active and sold listings. Call (702) 903-1952 — we do not publish stale snapshot numbers.",
       },
     },
     {
@@ -91,31 +92,7 @@ export default function GreenValleyPage() {
               <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
             </p>
           </div>
-
-          {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Green Valley Real Estate Market | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$520,000</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">26 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">187</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+4.8%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <CurrentMarketBand area="Green Valley" zipLabel="89014" />
 
           {/* Main Content */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -305,9 +282,7 @@ export default function GreenValleyPage() {
                   What is the current median home price in Green Valley?
                 </h3>
                 <p className="text-slate-600">
-                  As of January 2026, Green Valley's median home price is $520,000, with 4.8% appreciation
-                  year-over-year. Prices range from $400,000 for smaller homes to over $1.2 million for
-                  luxury properties.
+                  MLS prices change weekly. Dr. Jan Duffy prepares a complimentary CMA from current active and sold listings. Call (702) 903-1952 — we do not publish stale snapshot numbers.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -363,7 +338,7 @@ export default function GreenValleyPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
     </>

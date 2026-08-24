@@ -1,18 +1,19 @@
-"use client";
-
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import {
+  REALSCOUT_OFFICE_LISTINGS_HTML,
+  REALSCOUT_SIMPLE_SEARCH_HTML,
+  REALSCOUT_YOUR_LISTINGS_HTML,
+  realScoutListingsUrl,
+} from "@/lib/realscout";
+import { agentInfo } from "@/lib/site-config";
 
 export default function RealScoutListings() {
-  const realScoutAgentEncodedId =
-    process.env.NEXT_PUBLIC_REALSCOUT_AGENT_ID?.trim() || "QWdlbnQtMjI1MDUw";
-  const realScoutHomeSearchUrl =
-    process.env.NEXT_PUBLIC_REALSCOUT_URL?.trim() || "https://drjanduffy.realscout.com/";
+  const realScoutHomeSearchUrl = realScoutListingsUrl();
 
   return (
-    <section className="py-16 md:py-24 bg-slate-50">
+    <section className="py-16 md:py-24 bg-slate-50" id="featured-listings">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
               Featured Centennial Hills Homes for Sale
@@ -28,19 +29,37 @@ export default function RealScoutListings() {
           </Button>
         </div>
 
-        {/* RealScout Widget - using dangerouslySetInnerHTML per rules */}
         <div
-          dangerouslySetInnerHTML={{
-            __html: `<realscout-office-listings 
-              agent-encoded-id="${realScoutAgentEncodedId}" 
-              sort-order="NEWEST" 
-              listing-status="For Sale" 
-              property-types=",SFR,MF,TC" 
-              price-min="400000" 
-              price-max="900000"
-            ></realscout-office-listings>`,
-          }}
+          className="realscout-wrapper mb-10 flex justify-center"
+          dangerouslySetInnerHTML={{ __html: REALSCOUT_SIMPLE_SEARCH_HTML() }}
         />
+
+        <div
+          className="realscout-office-listings-host w-full min-h-[240px] mb-8"
+          dangerouslySetInnerHTML={{ __html: REALSCOUT_YOUR_LISTINGS_HTML() }}
+        />
+
+        <div
+          className="realscout-office-listings-host w-full min-h-[240px]"
+          dangerouslySetInnerHTML={{ __html: REALSCOUT_OFFICE_LISTINGS_HTML() }}
+        />
+
+        <p className="mt-8 text-center text-slate-600">
+          Need a specific street in 89144, 89138, or 89135? Call{" "}
+          <a href={agentInfo.phoneTel} className="font-semibold text-blue-700 hover:underline">
+            {agentInfo.phone}
+          </a>{" "}
+          for same-day showings, or{" "}
+          <a
+            href={realScoutHomeSearchUrl}
+            className="font-semibold text-blue-700 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            search the full MLS
+          </a>
+          .
+        </p>
       </div>
     </section>
   );

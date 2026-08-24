@@ -1,4 +1,5 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
 import Link from "next/link";
 import { Phone, Shield, Users, GraduationCap, TreePine } from "lucide-react";
 import type { Metadata } from "next";
@@ -6,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Henderson Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Find Henderson homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's family-friendly communities. Median price $485K. Call (702) 903-1952.",
+    "Find Henderson homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's established communities. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
   keywords: [
     "Henderson Homes for Sale",
     "Henderson homes for sale",
@@ -20,7 +21,7 @@ const neighborhoodSchema = {
   "@context": "https://schema.org",
   "@type": "Place",
   name: "Henderson, Nevada",
-  description: "Nevada's second-largest city known for safety, schools, and family-friendly communities",
+  description: "Nevada's second-largest city known for safety, schools, and established communities",
   geo: {
     "@type": "GeoCoordinates",
     latitude: "36.0395",
@@ -37,7 +38,7 @@ const faqSchema = {
       name: "What is the current median home price in Henderson?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of January 2026, Henderson's median home price is $485,000, up 5.1% from last year. Prices range from $350,000 for condos to over $2 million in luxury communities like MacDonald Highlands.",
+        text: "MLS prices change weekly. Dr. Jan Duffy prepares a complimentary CMA from current active and sold listings. Call (702) 903-1952 — we do not publish stale snapshot numbers.",
       },
     },
     {
@@ -45,7 +46,7 @@ const faqSchema = {
       name: "How safe is Henderson compared to Las Vegas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Henderson consistently ranks as one of America's safest cities. It has been named the safest city in Nevada and frequently appears in national 'Best Places to Live' rankings for its low crime rates and family-friendly environment.",
+        text: "Henderson consistently ranks as one of America's safest cities. It has been named the safest city in Nevada and frequently appears in national 'Best Places to Live' rankings for its low crime rates and community pools, trails, and event calendars.",
       },
     },
     {
@@ -103,35 +104,11 @@ export default function HendersonPage() {
               </span>
             </h1>
             <p className="text-xl text-slate-600">
-              Nevada's safest city. Find your Henderson home with Dr. Jan Duffy, your trusted{" "}
+              Henderson, Nevada's second-largest city. Find your Henderson home with Dr. Jan Duffy, your trusted{" "}
               <strong>Berkshire Hathaway HomeServices</strong> Henderson specialist.
             </p>
           </div>
-
-          {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Henderson Real Estate Market | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$485,000</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">24 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">1,280</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+5.1%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <CurrentMarketBand area="Henderson" />
 
           {/* Main Content */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -342,9 +319,7 @@ export default function HendersonPage() {
                   What is the current median home price in Henderson?
                 </h3>
                 <p className="text-slate-600">
-                  As of January 2026, Henderson's median home price is $485,000, up 5.1% from last year.
-                  Prices range from $350,000 for condos to over $2 million in luxury communities like
-                  MacDonald Highlands.
+                  MLS prices change weekly. Dr. Jan Duffy prepares a complimentary CMA from current active and sold listings. Call (702) 903-1952 — we do not publish stale snapshot numbers.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -354,7 +329,7 @@ export default function HendersonPage() {
                 <p className="text-slate-600">
                   Henderson consistently ranks as one of America's safest cities. It has been named the
                   safest city in Nevada and frequently appears in national "Best Places to Live" rankings
-                  for its low crime rates and family-friendly environment.
+                  for its low crime rates and community pools, trails, and event calendars.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -401,7 +376,7 @@ export default function HendersonPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
     </>

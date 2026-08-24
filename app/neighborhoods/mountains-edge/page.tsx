@@ -1,4 +1,5 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
 import Link from "next/link";
 import { Phone, Mountain, TreePine, DollarSign, Home as HomeIcon } from "lucide-react";
 import type { Metadata } from "next";
@@ -6,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Mountains Edge Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Find Mountains Edge homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this southwest Las Vegas community. Median price $475K. Call (702) 903-1952.",
+    "Find Mountains Edge homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this southwest Las Vegas community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
   keywords: [
     "Mountains Edge Homes for Sale",
     "Mountains Edge homes for sale",
@@ -25,7 +26,7 @@ const faqSchema = {
       name: "What is the current median home price in Mountains Edge?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of January 2026, Mountains Edge's median home price is $475,000, up 4.5% year-over-year. Prices range from $380,000 for smaller homes to over $750,000 for larger properties with mountain and Strip views.",
+        text: "MLS prices change weekly. Dr. Jan Duffy prepares a complimentary CMA from current active and sold listings. Call (702) 903-1952 — we do not publish stale snapshot numbers.",
       },
     },
     {
@@ -91,31 +92,7 @@ export default function MountainsEdgePage() {
               <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
             </p>
           </div>
-
-          {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Mountains Edge Market | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$475,000</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">27 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">234</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+4.5%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <CurrentMarketBand area="Mountains Edge" zipLabel="89178" />
 
           {/* Main Content */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -326,9 +303,7 @@ export default function MountainsEdgePage() {
                   What is the current median home price in Mountains Edge?
                 </h3>
                 <p className="text-slate-600">
-                  As of January 2026, Mountains Edge's median home price is $475,000, up 4.5%
-                  year-over-year. Prices range from $380,000 for smaller homes to over $750,000
-                  for larger properties with mountain and Strip views.
+                  MLS prices change weekly. Dr. Jan Duffy prepares a complimentary CMA from current active and sold listings. Call (702) 903-1952 — we do not publish stale snapshot numbers.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -386,7 +361,7 @@ export default function MountainsEdgePage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
     </>

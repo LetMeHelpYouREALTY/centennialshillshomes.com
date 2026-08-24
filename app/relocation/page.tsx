@@ -387,7 +387,7 @@ export default function RelocationPage() {
                 },
                 {
                   q: "What are the best areas for families relocating to Las Vegas?",
-                  a: "Summerlin, Henderson (especially Green Valley and Inspirada), and Skye Canyon consistently rank highest for families due to excellent schools, low crime, and family-friendly amenities. Dr. Jan can match you with the right area based on your specific priorities—schools, commute, budget, and lifestyle.",
+                  a: "Summerlin, Henderson (especially Green Valley and Inspirada), and Skye Canyon consistently rank highest for families due to excellent schools, low crime, and parks, trails, and recreation centers. Dr. Jan can match you with the right area based on your specific priorities—schools, commute, budget, and lifestyle.",
                 },
                 {
                   q: "How does the cost of living compare to California?",
@@ -444,7 +444,7 @@ export default function RelocationPage() {
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
     </>

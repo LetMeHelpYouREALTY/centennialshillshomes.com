@@ -1,4 +1,5 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
 import Link from "next/link";
 import {
   Phone,
@@ -150,35 +151,7 @@ export default function SellersPage() {
             </div>
           </div>
 
-          {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4 text-center">
-              Las Vegas Seller Market Statistics | January 2026
-            </h2>
-            <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              The Las Vegas housing market remains favorable for sellers with low inventory and 
-              steady demand. Well-priced homes are selling quickly, and appreciation continues 
-              to outpace national averages. Here's what sellers need to know about current conditions.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+4.2%</div>
-                <div className="text-slate-300 text-sm">Year-Over-Year Appreciation</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">28 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">2.1 Mo</div>
-                <div className="text-slate-300 text-sm">Inventory (Seller's Market)</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">98.5%</div>
-                <div className="text-slate-300 text-sm">List-to-Sale Price Ratio</div>
-              </div>
-            </div>
-          </section>
+          <CurrentMarketBand area="Centennial Hills" zipLabel="89144, 89138, 89135" heading="Current seller pricing in Centennial Hills" />
 
           {/* Benefits */}
           <section className="mb-16 max-w-6xl mx-auto">
@@ -362,9 +335,9 @@ export default function SellersPage() {
               </div>
               <div className="text-center">
                 <TrendingUp className="h-24 w-24 text-blue-200 mx-auto mb-4" />
-                <p className="text-2xl font-bold">$450,000</p>
-                <p className="text-blue-200">Median Home Price (Jan 2026)</p>
-                <p className="text-blue-300 text-sm mt-2">Up 4.2% from last year</p>
+                <p className="text-2xl font-bold">Complimentary CMA</p>
+                <p className="text-blue-200">Current sold comps for your address</p>
+                <p className="text-blue-300 text-sm mt-2">Call (702) 903-1952</p>
               </div>
             </div>
           </section>
@@ -443,7 +416,7 @@ export default function SellersPage() {
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
     </>

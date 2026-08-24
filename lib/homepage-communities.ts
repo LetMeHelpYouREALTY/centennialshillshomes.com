@@ -20,7 +20,7 @@ export const homepageCommunities: HomepageCommunity[] = [
     slug: "providence",
     href: "/neighborhoods",
     description: "Master-planned streets with parks, trails, and a community center",
-    image: siteImages.communities.northLasVegas,
+    image: "/Image/hero_bg_1.jpg",
     zipHint: "Northwest Las Vegas",
   },
   {
@@ -36,7 +36,7 @@ export const homepageCommunities: HomepageCommunity[] = [
     slug: "tule-springs",
     href: "/neighborhoods/centennial-hills",
     description: "Established streets bordering the Tule Springs Fossil Beds",
-    image: siteImages.communities.loneMountain,
+    image: "/Image/hero_bg_2.jpg",
     zipHint: "Northwest Las Vegas",
   },
   {
@@ -44,7 +44,7 @@ export const homepageCommunities: HomepageCommunity[] = [
     slug: "centennial-hills",
     href: "/neighborhoods/centennial-hills",
     description: "The hub of northwest Las Vegas living near 89144, 89138, and 89135",
-    image: siteImages.communities.centennialHills,
+    image: "/Image/hero_bg_3.jpg",
     zipHint: "89144",
   },
   {
@@ -60,7 +60,7 @@ export const homepageCommunities: HomepageCommunity[] = [
     slug: "sheep-mountain",
     href: "/neighborhoods",
     description: "Gated enclaves with Spring Mountain panoramas",
-    image: siteImages.communities.theRidges,
+    image: "/Image/house.jpeg",
     zipHint: "Northwest Las Vegas",
   },
 ];

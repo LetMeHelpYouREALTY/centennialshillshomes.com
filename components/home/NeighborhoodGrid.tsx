@@ -17,16 +17,16 @@ export default function NeighborhoodGrid() {
             <Link
               key={community.slug}
               href={community.href}
-              className="group relative block h-72 overflow-hidden rounded-2xl text-white no-underline"
+              className="group relative block h-72 overflow-hidden rounded-2xl bg-ink text-white no-underline"
             >
               <Image
                 src={community.image}
-                alt={`${community.name} homes in northwest Las Vegas`}
+                alt={`${community.name} homes for sale in northwest Las Vegas near Centennial Hills`}
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/35 to-ink/10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/15" />
               <div className="absolute inset-x-0 bottom-0 p-5">
                 <h3 className="font-display text-2xl">{community.name}</h3>
                 <p className="mt-1 text-sm text-white/85">{community.description}</p>

@@ -65,7 +65,7 @@ const faqSchema = {
       name: "What builder incentives are currently available?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of January 2026, builders are offering 4-6% toward closing costs, rate buydowns (some as low as 4.99%), free upgrades ($15K-$50K value), and appliance packages. Incentives change monthly. Dr. Jan tracks current offers across all builders.",
+        text: "Builder incentives change by community and month. Dr. Jan Duffy tracks current credits, rate buydowns, and closing-cost offers. Call (702) 903-1952 before your first model-home visit.",
       },
     },
     {
@@ -345,7 +345,7 @@ export default function NewConstructionPage() {
               <div className="flex items-center justify-between flex-wrap gap-4 mb-6">
                 <h2 className="text-2xl font-bold text-slate-900 flex items-center">
                   <Calendar className="h-7 w-7 text-green-600 mr-3" />
-                  January 2026 Builder Incentives
+                  Current Builder Incentives
                 </h2>
                 <span className="bg-green-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
                   Limited Time Offers
@@ -597,9 +597,7 @@ export default function NewConstructionPage() {
                   What builder incentives are currently available?
                 </h3>
                 <p className="text-slate-600">
-                  As of January 2026, builders are offering 4-6% toward closing costs, rate buydowns
-                  (some as low as 4.99%), free upgrades ($15K-$50K value), and appliance packages.
-                  Incentives change monthly. Dr. Jan tracks current offers across all builders.
+                  Builder incentives change by community and month. Dr. Jan Duffy tracks current credits, rate buydowns, and closing-cost offers for the builders you are touring. Call (702) 903-1952 before your first model-home visit.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -687,7 +685,7 @@ export default function NewConstructionPage() {
           </section>
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">
-          Last Updated: January 2026 | Incentives subject to change
+          Last Updated: August 2026 | Incentives subject to change
         </div>
       </main>
       <RealScoutListings />

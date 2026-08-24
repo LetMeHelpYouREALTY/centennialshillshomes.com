@@ -1,4 +1,5 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
 import Link from "next/link";
 import { 
   Phone, 
@@ -141,35 +142,7 @@ export default function LuxuryHomesPage() {
             </div>
           </div>
 
-          {/* Luxury Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4 text-center">
-              Las Vegas Luxury Market Statistics | January 2026
-            </h2>
-            <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              The Las Vegas luxury market continues to attract affluent buyers from California, 
-              the Midwest, and international markets. Understanding current market conditions 
-              is essential for both buyers and sellers in this segment.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$1.2M</div>
-                <div className="text-slate-300 text-sm">Median Luxury Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+8.5%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">890</div>
-                <div className="text-slate-300 text-sm">Active $1M+ Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">45 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-            </div>
-          </section>
+          <CurrentMarketBand area="Las Vegas luxury" zipLabel="89135, 89144" heading="Current luxury inventory via live MLS" />
 
           {/* Why BHHS for Luxury */}
           <section className="mb-16 max-w-6xl mx-auto">
@@ -445,7 +418,7 @@ export default function LuxuryHomesPage() {
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
     </>

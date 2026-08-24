@@ -2,13 +2,12 @@
 
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { homeFaqs } from "@/lib/site-config";
 
 export interface FAQ {
   question: string;
   answer: string;
 }
-
-import { homeFaqs } from "@/lib/site-config";
 
 export const defaultFaqs: FAQ[] = homeFaqs;
 
@@ -62,11 +61,13 @@ export default function FAQSection({
                   <ChevronDown className="h-5 w-5 text-slate-400 flex-shrink-0" />
                 )}
               </button>
-              {openIndex === index && (
-                <div className="px-6 py-4 bg-slate-50 border-t border-slate-200">
-                  <p className="text-slate-700">{faq.answer}</p>
-                </div>
-              )}
+              <div
+                className={`px-6 py-4 bg-slate-50 border-t border-slate-200 ${
+                  openIndex === index ? "block" : "hidden"
+                }`}
+              >
+                <p className="text-slate-700">{faq.answer}</p>
+              </div>
             </div>
           ))}
         </div>

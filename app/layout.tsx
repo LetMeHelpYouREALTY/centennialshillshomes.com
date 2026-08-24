@@ -117,11 +117,13 @@ export default function RootLayout({
             gtag('config', 'G-WB5DLLZ4C6');
           `}
         </Script>
-        {/* RealScout Widget Script - loaded once globally */}
-        <Script
+        {/* RealScout: native module tag required. next/script beforeInteractive
+            queues via __next_s and never emits <script type="module">. */}
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script
           src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
           type="module"
-          strategy="beforeInteractive"
+          async
         />
         {/* Calendly Widget Script - loaded once globally */}
         <Script

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { 
@@ -15,6 +16,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import { siteConfig, siteImages } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Centennial Hills REALTOR®",
@@ -201,7 +203,7 @@ export default function AboutPage() {
                     </div>
                     <div className="flex items-center text-slate-700">
                       <Clock className="h-5 w-5 mr-3 text-blue-600" />
-                      Mon-Fri 9am-6pm, Sat 10am-4pm, Sun by appointment
+                      {siteConfig.hoursLabel}
                     </div>
                   </div>
                 </div>
@@ -220,13 +222,15 @@ export default function AboutPage() {
 
               {/* Stats & Credentials */}
               <div className="space-y-6">
-                {/* Agent Photo Placeholder */}
-                <div className="bg-gradient-to-br from-blue-100 to-slate-100 rounded-lg p-8 aspect-square flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">👩‍💼</div>
-                    <p className="text-slate-600 font-semibold">Dr. Jan Duffy</p>
-                    <p className="text-sm text-slate-500">BHHS Nevada Properties</p>
-                  </div>
+                <div className="relative aspect-square overflow-hidden rounded-lg">
+                  <Image
+                    src={siteImages.agentHero}
+                    alt="Dr. Jan Duffy, REALTOR®, Berkshire Hathaway HomeServices Nevada Properties in Centennial Hills"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                    className="object-cover"
+                    priority
+                  />
                 </div>
 
                 {/* Stats Grid */}
@@ -453,7 +457,7 @@ export default function AboutPage() {
 
         {/* Last Updated */}
         <div className="text-center text-sm text-slate-500 mt-8">
-          Last Updated: January 2026
+          Last Updated: August 2026
         </div>
       </main>
       <RealScoutListings />

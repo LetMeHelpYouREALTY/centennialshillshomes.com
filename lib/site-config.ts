@@ -117,7 +117,7 @@ export const neighborhoods = [
     name: "Centennial Hills",
     slug: "centennial-hills",
     description:
-      "Family-friendly northwest Las Vegas with newer homes, parks, and mountain access",
+      "Northwest Las Vegas with newer homes, parks, and mountain access",
     highlights: ["89144", "Newer construction", "Parks", "Shopping"],
     image: siteImages.communities.centennialHills,
   },
@@ -139,7 +139,7 @@ export const neighborhoods = [
     name: "Summerlin West",
     slug: "summerlin-west",
     description: "Established west Summerlin neighborhoods and amenities",
-    highlights: ["Top schools", "Trails", "Dining", "Move-up homes"],
+    highlights: ["Trails", "Dining", "Move-up homes", "89135"],
     image: siteImages.communities.summerlinWest,
   },
   {
@@ -153,21 +153,21 @@ export const neighborhoods = [
     name: "North Las Vegas",
     slug: "north-las-vegas",
     description: "Growing area adjacent to Centennial Hills",
-    highlights: ["New builds", "Value", "Family-friendly", "89131–89149"],
+    highlights: ["New builds", "Value", "89131–89149"],
     image: siteImages.communities.northLasVegas,
   },
   {
     name: "Summerlin",
     slug: "summerlin",
     description: "Master-planned west Las Vegas with top amenities",
-    highlights: ["89135", "Trails", "Downtown Summerlin", "Top schools"],
+    highlights: ["89135", "Trails", "Downtown Summerlin"],
     image: siteImages.communities.summerlinWest,
   },
   {
     name: "Henderson",
     slug: "henderson",
     description: "Southeast valley city with established neighborhoods",
-    highlights: ["Green Valley", "Anthem", "Lake Las Vegas", "Family-friendly"],
+    highlights: ["Green Valley", "Anthem", "Lake Las Vegas"],
     image: siteImages.communities.lasVegasLuxury,
   },
   {
@@ -195,7 +195,7 @@ export const neighborhoods = [
     name: "Inspirada",
     slug: "inspirada",
     description: "Henderson master plan with pools and events",
-    highlights: ["89044", "Community pools", "Newer builds", "Families"],
+    highlights: ["89044", "Community pools", "Newer builds"],
     image: siteImages.communities.lasVegasLuxury,
   },
   {
