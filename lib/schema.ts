@@ -86,7 +86,7 @@ export function generateRealEstateAgentSchema() {
     ],
     url: BASE_URL,
     logo: `${BASE_URL}/logo.png`,
-    image: `${BASE_URL}/media/dr-jan-duffy-luxury-real-estate.jpg`,
+    image: `${BASE_URL}/media/dr-jan-duffy-portrait.png`,
     description: siteConfig.description,
     telephone: "+1-702-903-1952",
     email: agentInfo.email,

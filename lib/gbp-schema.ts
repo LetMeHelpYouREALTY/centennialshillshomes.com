@@ -212,7 +212,7 @@ export function generateLocalBusinessSchema() {
     "@type": "RealEstateAgent",
     "@id": "https://www.centennialhillshomesforsale.com#organization",
     name: businessInfo.name,
-    image: "https://www.centennialhillshomesforsale.com/images/dr-jan-duffy.jpg",
+    image: "https://www.centennialhillshomesforsale.com/media/dr-jan-duffy-portrait.png",
     url: businessInfo.url,
     telephone: businessInfo.phone.tel,
     email: businessInfo.email,

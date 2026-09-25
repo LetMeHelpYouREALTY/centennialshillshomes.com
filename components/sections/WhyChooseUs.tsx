@@ -1,4 +1,5 @@
 import { Shield, TrendingUp, Users, Award, Clock, Home } from "lucide-react";
+import AgentPortrait from "@/components/AgentPortrait";
 
 const features = [
   {
@@ -37,7 +38,8 @@ export default function WhyChooseUs() {
   return (
     <section className="py-16 md:py-24 bg-ivory">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="mb-12 flex flex-col items-center text-center">
+          <AgentPortrait size="lg" className="mb-5" />
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-terracotta">
             Private client service
           </p>

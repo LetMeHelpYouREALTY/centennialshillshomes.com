@@ -66,6 +66,7 @@ export const siteImages = {
   ogDefault: "/og-image.jpg",
   fallback: "/media/fallback.svg",
   agentHero: "/media/dr-jan-duffy-luxury-real-estate.jpg",
+  agentPortrait: "/media/dr-jan-duffy-portrait.png",
   hero: [
     "/media/centennial-hills.jpg",
     "/media/las-vegas-luxury-communities.jpg",

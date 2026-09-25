@@ -1,4 +1,4 @@
-import Image from "next/image";
+import AgentPortrait from "@/components/AgentPortrait";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { 
@@ -16,7 +16,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
-import { siteConfig, siteImages } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/about" },
@@ -124,6 +124,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
+            <AgentPortrait size="xl" priority className="mx-auto mb-6" />
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
@@ -223,15 +224,8 @@ export default function AboutPage() {
 
               {/* Stats & Credentials */}
               <div className="space-y-6">
-                <div className="relative aspect-square overflow-hidden rounded-lg">
-                  <Image
-                    src={siteImages.agentHero}
-                    alt="Dr. Jan Duffy, REALTOR®, Berkshire Hathaway HomeServices Nevada Properties in Centennial Hills"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 40vw"
-                    className="object-cover"
-                    priority
-                  />
+                <div className="flex justify-center">
+                  <AgentPortrait size="xl" />
                 </div>
 
                 {/* Stats Grid */}

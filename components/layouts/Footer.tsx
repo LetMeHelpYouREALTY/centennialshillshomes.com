@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Star, Calendar } from "lucide-react";
 import { agentInfo, officeInfo, siteConfig, neighborhoods, gbpReviews } from "@/lib/site-config";
+import AgentPortrait from "@/components/AgentPortrait";
 import { footerQuickLinks, footerServiceLinks } from "@/lib/navigation";
 
 export default function Footer() {
@@ -47,10 +48,15 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
+            <div className="flex items-center gap-4">
+              <AgentPortrait size="md" decorative />
+              <div>
             <p className="font-display text-2xl">{agentInfo.name}</p>
             <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-terracotta-light">
               {agentInfo.title} · Centennial Hills
             </p>
+              </div>
+            </div>
             <p className="mt-4 text-sm leading-relaxed text-white/70">
               {agentInfo.brokerage}
             </p>

@@ -5,6 +5,7 @@ import type { FaqItem } from "@/lib/site-config";
 import SchemaScript from "@/components/SchemaScript";
 import { generateFAQSchema } from "@/lib/schema";
 import { AGENT_HEADING, agentHeadingLine, includesAgentName } from "@/lib/heading-copy";
+import AgentPortrait from "@/components/AgentPortrait";
 
 type SectionShellProps = {
   id?: string;
@@ -159,7 +160,9 @@ export function LocalBusinessCtaBar() {
     <section className="bg-ink text-white py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
-          <div>
+          <div className="flex items-start gap-5">
+            <AgentPortrait size="lg" />
+            <div>
             <p className="text-terracotta-light text-sm font-semibold uppercase tracking-widest mb-2">
               {siteConfig.brandName}
             </p>
@@ -181,6 +184,7 @@ export function LocalBusinessCtaBar() {
               <MapPin className="h-4 w-4 shrink-0 mt-0.5" aria-hidden />
               {officeInfo.address.full} · {siteConfig.hoursLabel}
             </p>
+            </div>
           </div>
           <div className="flex flex-col sm:flex-row lg:flex-col gap-3">
             <Link
@@ -245,7 +249,9 @@ export function PageHero({
       ) : (
         <div className="absolute inset-0 bg-gradient-to-br from-ink via-stone-900 to-ink" />
       )}
-      <div className="container relative z-10 mx-auto px-4 py-16 md:py-24 max-w-4xl">
+      <div className="container relative z-10 mx-auto flex max-w-5xl flex-col items-start gap-6 px-4 py-16 sm:flex-row sm:items-center md:gap-10 md:py-24">
+        <AgentPortrait size="lg" className="ring-2 ring-white/30" />
+        <div className="min-w-0">
         {eyebrow ? (
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-widest mb-3">
             {eyebrow}
@@ -260,6 +266,7 @@ export function PageHero({
           ) : null}
         </h1>
         <p className="text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl">{subtitle}</p>
+        </div>
       </div>
     </section>
   );

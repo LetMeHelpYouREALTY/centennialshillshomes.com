@@ -339,7 +339,7 @@ export const janetDuffyStructuredData = {
   "url": "https://www.centennialhillshomesforsale.com/",
   "telephone": "(702) 903-1952",
   "email": "DrDuffy@CentennialHillsHomesForSale.com",
-  "image": "https://www.centennialhillshomesforsale.com/images/dr-janet-duffy.jpg",
+  "image": "https://www.centennialhillshomesforsale.com/media/dr-jan-duffy-portrait.png",
   "logo": "https://www.centennialhillshomesforsale.com/images/logo.png",
   "foundingDate": "1993-09-01",
   "address": {
@@ -683,7 +683,7 @@ export const pageSchemas = {
     "url": "https://www.centennialhillshomesforsale.com/janet-duffy",
     "telephone": "(702) 903-1952",
     "email": "DrDuffy@CentennialHillsHomesForSale.com",
-    "image": "https://www.centennialhillshomesforsale.com/images/dr-janet-duffy.jpg",
+    "image": "https://www.centennialhillshomesforsale.com/media/dr-jan-duffy-portrait.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "1490 Center Crossing Rd",

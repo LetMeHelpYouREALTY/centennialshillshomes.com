@@ -4,6 +4,7 @@ import CalendlyWidget from "@/components/calendly/CalendlyWidget";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
+import AgentPortrait from "@/components/AgentPortrait";
 import PageBreadcrumbs from "@/components/seo/PageBreadcrumbs";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -50,6 +51,7 @@ export default function ContactPage() {
           <PageBreadcrumbs items={[{ name: "Contact", href: "/contact" }]} className="mb-8" />
           {/* Hero */}
           <div className="text-center mb-12">
+            <AgentPortrait size="xl" priority className="mx-auto mb-6" />
             <div className="inline-block bg-sand text-ink px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Berkshire Hathaway HomeServices Nevada Properties
             </div>

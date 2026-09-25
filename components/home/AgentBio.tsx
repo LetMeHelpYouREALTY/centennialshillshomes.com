@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Phone } from "lucide-react";
-import { agentInfo, agentStats, officeInfo, siteConfig, siteImages } from "@/lib/site-config";
+import { agentInfo, agentStats, officeInfo, siteConfig } from "@/lib/site-config";
+import AgentPortrait from "@/components/AgentPortrait";
 
 export default function AgentBio() {
   const years = new Date().getFullYear() - agentStats.servingSince;
@@ -46,17 +46,9 @@ export default function AgentBio() {
             License {agentInfo.license} · {officeInfo.address.full}
           </p>
         </div>
-        <div className="relative">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
-            <Image
-              src={siteImages.agentHero}
-              alt={`${agentInfo.name} with northwest Las Vegas luxury homes`}
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-          <div className="absolute -bottom-5 left-6 rounded-xl bg-terracotta px-5 py-4 shadow-xl">
+        <div className="flex flex-col items-center gap-6 lg:items-end">
+          <AgentPortrait size="xl" />
+          <div className="rounded-xl bg-terracotta px-5 py-4 shadow-xl">
             <p className="font-display text-2xl text-ink">{agentStats.volumeClosed}</p>
             <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink/70">
               Total sales volume

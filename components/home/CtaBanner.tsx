@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { agentInfo, siteImages } from "@/lib/site-config";
+import AgentPortrait from "@/components/AgentPortrait";
 
 export default function CtaBanner() {
   return (
@@ -14,6 +15,7 @@ export default function CtaBanner() {
       />
       <div className="absolute inset-0 bg-ink/70" />
       <div className="relative z-10 mx-auto max-w-3xl px-4 text-center text-white">
+        <AgentPortrait size="lg" className="mx-auto mb-6" />
         <h2 className="font-display text-3xl italic md:text-5xl">
           Tour Centennial Hills Homes with Dr. Jan Duffy
         </h2>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, ChevronDown, Search, Star, Clock } from "lucide-react";
 import { agentInfo, agentStats, siteConfig } from "@/lib/site-config";
+import AgentPortrait from "@/components/AgentPortrait";
 import {
   mainNavLinks,
   navDropdownGroups,
@@ -167,7 +168,9 @@ export default function Navbar() {
 
       <nav className="container mx-auto px-4" aria-label="Main navigation">
         <div className={`flex items-center justify-between ${isScrolled ? "py-2" : "py-3"}`}>
-          <Link href="/" className="flex min-w-0 shrink-0 flex-col leading-tight">
+          <Link href="/" className="flex min-w-0 shrink-0 items-center gap-2.5 leading-tight">
+            <AgentPortrait size="sm" priority decorative />
+            <span className="flex flex-col">
             <span className={`font-display text-lg ${overlay ? "text-white" : "text-ink"}`}>
               {agentInfo.name}
             </span>
@@ -177,6 +180,7 @@ export default function Navbar() {
               }`}
             >
               Centennial Hills REALTOR®
+            </span>
             </span>
           </Link>
 

@@ -1,5 +1,6 @@
 import { Star, Phone, MapPin, ExternalLink } from "lucide-react";
 import { agentInfo, agentStats, gbpReviews, officeInfo, siteConfig } from "@/lib/site-config";
+import AgentPortrait from "@/components/AgentPortrait";
 
 interface ReviewsSectionProps {
   title?: string;
@@ -35,7 +36,9 @@ export default function ReviewsSection({
   return (
     <section className={`bg-sand py-16 md:py-24 ${className}`} aria-labelledby="reviews-heading">
       <div className="container mx-auto px-4">
-        <div className="mb-10 max-w-3xl">
+        <div className="mb-10 flex max-w-3xl items-center gap-5">
+          <AgentPortrait size="lg" />
+          <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-terracotta">
             Google reviews
           </p>
@@ -43,6 +46,7 @@ export default function ReviewsSection({
             {title}
           </h2>
           <p className="mt-4 text-lg text-stone-600">{subtitle}</p>
+          </div>
         </div>
 
         <div className="grid gap-5 md:grid-cols-3">

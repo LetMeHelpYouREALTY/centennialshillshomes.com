@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Search } from "lucide-react";
 import { agentInfo, agentStats, siteConfig, siteImages } from "@/lib/site-config";
+import AgentPortrait from "@/components/AgentPortrait";
 
 type SearchTab = "buy" | "rent" | "sold";
 
@@ -48,9 +49,12 @@ export default function HomeHero() {
       <div className="absolute inset-0 bg-gradient-to-b from-ink/55 via-ink/45 to-ink/85" />
 
       <div className="relative z-10 mx-auto w-full max-w-5xl px-4 pb-16 pt-32 md:pb-24 md:pt-40">
-        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-terracotta-light md:text-sm">
-          Northwest Las Vegas · {siteConfig.brandName}
-        </p>
+        <div className="mb-5 flex items-center gap-4">
+          <AgentPortrait size="lg" priority />
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-terracotta-light md:text-sm">
+            Northwest Las Vegas · {siteConfig.brandName}
+          </p>
+        </div>
         <h1 className="font-display text-4xl font-semibold leading-[1.05] text-white md:text-6xl lg:text-7xl">
           Centennial Hills Homes for Sale
           <span className="mt-2 block text-2xl italic font-normal md:text-4xl lg:text-5xl">
