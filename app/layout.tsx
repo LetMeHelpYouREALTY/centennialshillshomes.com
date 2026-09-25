@@ -2,7 +2,6 @@ import "./globals.css";
 
 import React from "react";
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import Script from "next/script";
 import { GeistSans } from "geist/font/sans";
 import { Fraunces } from "next/font/google";
@@ -10,6 +9,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { cn } from "lib/utils";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
+import ClientWidgets from "@/components/layouts/ClientWidgets";
 import SchemaScript from "@/components/SchemaScript";
 import {
   generateRealEstateAgentSchema,
@@ -22,13 +22,6 @@ const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-fraunces",
   display: "swap",
-});
-
-const AIChatWidget = dynamic(() => import("@/components/chat/AIChatWidget"), {
-  ssr: false,
-});
-const CalendlyBadge = dynamic(() => import("@/components/calendly/CalendlyBadge"), {
-  ssr: false,
 });
 
 const title = siteConfig.fullName;
@@ -125,8 +118,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <AIChatWidget />
-        <CalendlyBadge />
+        <ClientWidgets />
         <Analytics />
       </body>
     </html>
