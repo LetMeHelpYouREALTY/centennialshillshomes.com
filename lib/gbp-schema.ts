@@ -57,27 +57,24 @@ export const businessInfo = {
     secondary: [
       "Real Estate Agency",
       "Real Estate Consultant",
+      "Property management company",
     ],
   },
 
-  // Services - Each creates searchable fields in GBP
+  // Services — names match the GBP service list (checked 2026-09-25).
   services: [
-    // Core Services
-    { name: "Buyer Representation", description: "Full-service home buying assistance" },
-    { name: "Seller Representation", description: "List and sell your home for top dollar" },
-    { name: "Luxury Home Sales", description: "High-end properties $1M+" },
-    // Niche Services (trigger intent phrases)
-    { name: "California Relocation Services", description: "Helping CA buyers transition to Las Vegas" },
-    { name: "55+ Community Specialist", description: "Sun City, Anthem, Del Webb communities" },
-    { name: "First-Time Home Buyer Guidance", description: "FHA, VA, down payment assistance" },
-    { name: "Probate Real Estate Sales", description: "Estate and probate property transactions" },
-    { name: "Divorce Real Estate Sales", description: "Neutral representation for marital asset division" },
-    { name: "Relocation Services", description: "Corporate and individual relocation assistance" },
-    { name: "Investment Property Consulting", description: "Rental properties and investment analysis" },
-    { name: "New Construction Representation", description: "Builder negotiations and buyer protection" },
-    { name: "Military/VA Home Buying", description: "Specialized service for veterans" },
-    { name: "Downsizing Consultation", description: "Transition to smaller, maintenance-free living" },
-    { name: "Luxury Condo Sales", description: "High-rise and resort-style condominiums" },
+    { name: "Building lots for sale", description: "Vacant lots in Centennial Hills and northwest Las Vegas, including 89144, 89138, and 89135." },
+    { name: "Buying agent services", description: "Buyer representation for homes in Centennial Hills, with same-day showings and a written offer strategy." },
+    { name: "Commercial real estate", description: "Commercial purchase and sale guidance in northwest Las Vegas through Berkshire Hathaway HomeServices Nevada Properties." },
+    { name: "First-time home buyer services", description: "Step-by-step buying help for a first Las Vegas purchase, including loan-type options and offer timing." },
+    { name: "Luxury property buying and sales", description: "Luxury listings and purchases in Centennial Hills, Skye Canyon, and nearby northwest Las Vegas communities." },
+    { name: "New real estate", description: "Newly listed homes in Centennial Hills, matched to price, size, and preferred ZIP." },
+    { name: "New construction", description: "Builder negotiations and buyer representation for new construction in Centennial Hills and northwest Las Vegas." },
+    { name: "Property management", description: "Property management coordination for rental homes in the Centennial Hills service area." },
+    { name: "Real estate investment", description: "Investment purchase analysis for rental and resale homes in 89144, 89138, and 89135." },
+    { name: "Real estate management", description: "Ongoing management support for owners of Centennial Hills investment property." },
+    { name: "Relocation services", description: "Move-in and move-out planning for people relocating to or from Centennial Hills and northwest Las Vegas." },
+    { name: "Seller's agent services", description: "Listing, pricing, and negotiation for sellers in Centennial Hills, with a complimentary market analysis." },
   ],
 
   // Attributes for GBP - Fill out ALL available
@@ -147,14 +144,14 @@ export const gbpDescription = {
   // Section 1: Who you are/mission (~250 words)
   whoWeAre: `Dr. Jan Duffy is a trusted REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, serving the Las Vegas real estate market since 2008. Backed by Warren Buffett's Berkshire Hathaway—the most recognized name in real estate—Dr. Jan combines local expertise with world-class resources to deliver exceptional results for buyers and sellers alike.
 
-With $127 million in closed transactions and hundreds of satisfied clients, Dr. Jan has earned a reputation for integrity, market knowledge, and personalized service. Whether you're a first-time buyer navigating the process, a luxury home seeker exploring The Ridges or MacDonald Highlands, or a California family relocating for Nevada's tax advantages, Dr. Jan provides the guidance you need to make confident real estate decisions.`,
+Dr. Jan holds Nevada license S.0197614.LLC and works from 1490 Center Crossing Rd, Las Vegas, NV 89144. The Google Business Profile shows 5.0 from 1 Google review. Call (702) 903-1952, daily 8:00 AM–8:00 PM.`,
 
   // Section 2: What/why - Value proposition (~250 words)
   whatWeDo: `What sets Dr. Jan apart is a commitment to education and advocacy. Clients receive comprehensive market analysis, expert negotiation, and honest advice—not sales pressure. As a Berkshire Hathaway HomeServices agent, Dr. Jan offers access to a global network of 50,000+ agents, world-class marketing for sellers, and off-market opportunities for buyers.
 
-Specialized services include: buyer and seller representation, luxury home sales, 55+ active adult community expertise (Sun City Summerlin, Sun City Anthem, Del Webb Lake Las Vegas), California relocation assistance, probate and divorce real estate, investment property consulting, new construction representation, and first-time buyer programs including FHA, VA, and down payment assistance guidance.
+Services on the Google Business Profile: building lots for sale, buying agent services, commercial real estate, first-time home buyer services, luxury property buying and sales, new real estate, new construction, property management, real estate investment, real estate management, relocation services, and seller's agent services.
 
-Dr. Jan's approach is simple: treat every client like family, know the market inside and out, and never stop working until the deal closes successfully.`,
+Dr. Jan prices from current comps, answers in plain numbers, and stays on the file until it closes.`,
 
   // Section 3: Where - Areas served (~250 words)
   whereWeServe: `Dr. Jan serves the entire Las Vegas Valley with specialized knowledge of Las Vegas, Summerlin, Henderson, North Las Vegas, and all of Clark County. Neighborhood expertise includes Summerlin's master-planned communities, Henderson's Green Valley and Inspirada, the luxury enclaves of The Ridges and Southern Highlands, Centennial Hills and Skye Canyon, and affordable options in Mountains Edge and North Las Vegas.

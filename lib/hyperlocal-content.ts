@@ -98,11 +98,11 @@ export const hyperlocalPages: Record<string, HyperlocalPageData> = {
     image: siteImages.agentHero,
     answerQuestion: "Who is the best REALTOR® in Centennial Hills Las Vegas?",
     answerText:
-      "Dr. Jan Duffy is a Berkshire Hathaway HomeServices Nevada Properties REALTOR® (License S.0197614.LLC) specializing in Centennial Hills and northwest Las Vegas. With 500+ transactions, $127M+ in volume, and a 4.9-star Google rating, she offers same-day showings and complimentary market analysis in ZIP codes 89144, 89138, and 89135.",
+      "Dr. Jan Duffy is a Berkshire Hathaway HomeServices Nevada Properties REALTOR® (License S.0197614.LLC) specializing in Centennial Hills and northwest Las Vegas. The Google Business Profile shows 5.0 from 1 Google review. She offers same-day showings and complimentary market analysis in ZIP codes 89144, 89138, and 89135.",
     answerBullets: [
       "Office: 1490 Center Crossing Rd, Las Vegas, NV 89144",
       "Top 1% Las Vegas agent · Serving since 2008",
-      "4.9★ · 200+ verified Google reviews",
+      "5.0 from 1 Google review",
       "Same-day showings · Free CMA",
     ],
     body: [

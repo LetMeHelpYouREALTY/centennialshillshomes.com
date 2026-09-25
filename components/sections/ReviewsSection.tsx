@@ -1,5 +1,5 @@
 import { Star, Phone, MapPin, ExternalLink } from "lucide-react";
-import { agentInfo, agentStats, officeInfo, siteConfig } from "@/lib/site-config";
+import { agentInfo, agentStats, gbpReviews, officeInfo, siteConfig } from "@/lib/site-config";
 
 interface ReviewsSectionProps {
   title?: string;
@@ -17,13 +17,13 @@ export default function ReviewsSection({
   const snippets = [
     {
       label: "Google rating",
-      value: `${agentStats.averageRating} / 5`,
-      detail: "Average from Google reviews",
+      value: `${gbpReviews.ratingValue}.0 / 5`,
+      detail: "Google Business Profile",
     },
     {
       label: "Review count",
-      value: `${agentStats.reviewCount}+`,
-      detail: "Client reviews on Google",
+      value: `${gbpReviews.reviewCount}`,
+      detail: "Google review on the Business Profile",
     },
     {
       label: "Office",
@@ -75,7 +75,7 @@ export default function ReviewsSection({
               ))}
             </div>
             <p className="text-stone-700">
-              {agentStats.averageRating} from {agentStats.reviewCount}+ Google reviews for{" "}
+              {gbpReviews.label} for{" "}
               {agentInfo.name}, {agentInfo.title}
             </p>
           </div>

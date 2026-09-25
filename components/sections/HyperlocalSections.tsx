@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, MapPin, Phone, Star } from "lucide-react";
-import { agentInfo, officeInfo, siteConfig, agentStats } from "@/lib/site-config";
+import { agentInfo, officeInfo, siteConfig, gbpReviews } from "@/lib/site-config";
 import type { FaqItem } from "@/lib/site-config";
 import SchemaScript from "@/components/SchemaScript";
 import { generateFAQSchema } from "@/lib/schema";
@@ -174,7 +174,7 @@ export function LocalBusinessCtaBar() {
             <div className="flex items-center gap-2 text-terracotta-light mb-6">
               <Star className="h-5 w-5 fill-current" aria-hidden />
               <span className="font-semibold">
-                {agentStats.averageRating} · {agentStats.reviewCount}+ Google reviews
+                {gbpReviews.label}
               </span>
             </div>
             <p className="text-sm text-slate-400 flex items-start gap-2">

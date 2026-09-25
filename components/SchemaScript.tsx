@@ -97,8 +97,8 @@ export function FAQSchema({
 }
 
 /**
- * Nested reviews only. Site-wide aggregateRating lives on the layout RealEstateAgent schema.
- * Do not emit a second aggregateRating (GSC: "Review has multiple aggregate ratings").
+ * Nested reviews only. Do not emit aggregateRating (GSC: "Review has multiple aggregate ratings").
+ * Google review snippets do not allow a self-serving rating on the business's own site.
  */
 export function ReviewSchema({
   reviews,

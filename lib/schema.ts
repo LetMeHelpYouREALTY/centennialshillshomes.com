@@ -6,7 +6,7 @@
  * @see https://developers.google.com/search/docs/appearance/structured-data
  */
 
-import { siteConfig, agentInfo, officeInfo, agentStats } from "./site-config";
+import { siteConfig, agentInfo, officeInfo } from "./site-config";
 
 // ============================================================================
 // Types
@@ -146,13 +146,6 @@ export function generateRealEstateAgentSchema() {
         sameAs: "https://en.wikipedia.org/wiki/Berkshire_Hathaway_HomeServices",
       },
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: agentStats.averageRating.toString(),
-      reviewCount: agentStats.reviewCount.toString(),
-      bestRating: "5",
-      worstRating: "1",
-    },
     knowsAbout: [
       "Centennial Hills real estate",
       "Northwest Las Vegas homes",
@@ -250,26 +243,9 @@ export function generateFAQSchema(faqs: FAQItem[]) {
 }
 
 /**
- * Generate AggregateRating schema
- */
-export function generateAggregateRatingSchema(
-  ratingValue: number,
-  reviewCount: number,
-  bestRating = 5,
-  worstRating = 1
-) {
-  return {
-    "@type": "AggregateRating",
-    ratingValue: ratingValue.toString(),
-    reviewCount: reviewCount.toString(),
-    bestRating: bestRating.toString(),
-    worstRating: worstRating.toString(),
-  };
-}
-
-/**
  * Nested Google reviews for the same RealEstateAgent entity.
- * Do not add a second aggregateRating — that is already on the site-wide agent schema.
+ * Do not add aggregateRating. Google review snippets (updated 2026-09-08) do not
+ * allow self-serving LocalBusiness ratings or ratings imported from other sites.
  * Author must be a Person (string authors fail GSC "Invalid object type for field author").
  * Reviews are nested, so itemReviewed is omitted per Google's review-snippet docs.
  */

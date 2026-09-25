@@ -95,12 +95,26 @@ export function siteImageUrl(path: string): string {
   return `${siteConfig.url}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
+/**
+ * Google Business Profile review snapshot.
+ * Source: GBP knowledge panel for "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
+ * 1490 Center Crossing Rd, checked 2026-09-25 (5.0, 1 review).
+ * Do not copy this into AggregateRating JSON-LD. Google's review-snippet docs
+ * (updated 2026-09-08) bar self-serving LocalBusiness ratings and ratings
+ * imported from other sites. Stars in Search stay off until the profile has 5+ reviews.
+ */
+export const gbpReviews = {
+  ratingValue: 5,
+  reviewCount: 1,
+  label: "5.0 from 1 Google review",
+};
+
 export const agentStats = {
   servingSince: 2008,
   transactionsClosed: 500,
   volumeClosed: "$127M+",
-  averageRating: 4.9,
-  reviewCount: 200,
+  averageRating: gbpReviews.ratingValue,
+  reviewCount: gbpReviews.reviewCount,
 };
 
 export const valuePropositions = {

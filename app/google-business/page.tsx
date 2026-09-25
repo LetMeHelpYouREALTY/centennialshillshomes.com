@@ -23,12 +23,13 @@ import {
   generateLocalBusinessSchema,
   generateFAQSchema,
 } from "@/lib/gbp-schema";
+import { gbpReviews, siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/google-business" },
-  title: "Dr. Jan Duffy, REALTOR® Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
   description:
-    "Dr. Jan Duffy is a trusted Las Vegas REALTOR® with Berkshire Hathaway HomeServices Nevada Properties. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 903-1952.",
+    "Centennial Hills Real Estate | Homes by Dr. Jan Duffy. Office at 1490 Center Crossing Rd, Las Vegas, NV 89144. Call (702) 903-1952. Daily 8:00 AM–8:00 PM. 5.0 from 1 Google review.",
   keywords: [
     "Dr. Jan Duffy realtor",
     "Las Vegas real estate agent",
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
-    description: "Trusted Las Vegas REALTOR® serving since 2008. Summerlin, Henderson, luxury homes, 55+ communities.",
+    description: "Office at 1490 Center Crossing Rd, Las Vegas, NV 89144. Call (702) 903-1952. Daily 8:00 AM–8:00 PM.",
     url: "https://www.centennialhillshomesforsale.com/google-business",
     type: "profile",
   },
@@ -72,7 +73,7 @@ export default function GoogleBusinessPage() {
                     <span className="text-yellow-400 font-semibold">Berkshire Hathaway HomeServices</span>
                   </div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                    Dr. Jan Duffy, Centennial Hills REALTOR®
+                    {businessInfo.name}
                   </h1>
                   <p className="text-xl text-blue-200 mb-2">License {businessInfo.license}</p>
                   <p className="text-slate-300 mb-6">Nevada Properties</p>
@@ -108,8 +109,8 @@ export default function GoogleBusinessPage() {
                       <Star key={star} className="h-8 w-8 text-yellow-400 fill-yellow-400" />
                     ))}
                   </div>
-                  <p className="text-3xl font-bold mb-2">4.9 / 5.0</p>
-                  <p className="text-blue-200 mb-6">200+ Client Reviews</p>
+                  <p className="text-3xl font-bold mb-2">5.0 / 5.0</p>
+                  <p className="text-blue-200 mb-6">{gbpReviews.label}</p>
                   <a
                     href={`tel:${businessInfo.phone.tel}`}
                     className="inline-block w-full bg-blue-600 hover:bg-blue-500 text-white px-6 py-4 rounded-lg font-bold text-lg transition-colors"
@@ -267,7 +268,7 @@ export default function GoogleBusinessPage() {
                 Mention your neighborhood, type of transaction, and what made the experience valuable.
               </p>
               <a
-                href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review"
+                href={siteConfig.googleReviewsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"

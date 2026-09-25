@@ -1,4 +1,4 @@
-import { agentStats } from "@/lib/site-config";
+import { agentStats, gbpReviews } from "@/lib/site-config";
 
 export default function StatsBand() {
   const years = new Date().getFullYear() - agentStats.servingSince;
@@ -6,7 +6,7 @@ export default function StatsBand() {
     { value: `${agentStats.transactionsClosed}+`, label: "Closed transactions" },
     { value: "Top 1%", label: "Nevada agents" },
     { value: `${years} yrs`, label: "Hyperlocal expertise" },
-    { value: `${agentStats.averageRating}★`, label: "Client rating" },
+    { value: `${gbpReviews.ratingValue}.0★`, label: "Google rating" },
   ];
 
   return (

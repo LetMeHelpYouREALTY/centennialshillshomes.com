@@ -6,24 +6,17 @@ import {
   combineSchemas,
 } from "./schema";
 import { generateLocalBusinessSchema } from "./gbp-schema";
-import { siteConfig, agentStats } from "./site-config";
+import { siteConfig } from "./site-config";
 
 const AGENT_ID = `${siteConfig.url}#organization`;
 
 describe("review snippet JSON-LD", () => {
-  it("nests a single AggregateRating on the site-wide RealEstateAgent", () => {
+  it("omits AggregateRating on the site-wide RealEstateAgent", () => {
     const schema = generateRealEstateAgentSchema();
 
     expect(schema["@id"]).toBe(AGENT_ID);
-    expect(schema.name).toBeTruthy();
-    expect(schema.aggregateRating).toEqual({
-      "@type": "AggregateRating",
-      ratingValue: agentStats.averageRating.toString(),
-      reviewCount: agentStats.reviewCount.toString(),
-      bestRating: "5",
-      worstRating: "1",
-    });
-    expect(schema.aggregateRating).not.toHaveProperty("itemReviewed");
+    expect(schema.name).toBe(siteConfig.fullName);
+    expect(schema).not.toHaveProperty("aggregateRating");
     expect(schema).not.toHaveProperty("review");
   });
 
@@ -56,7 +49,7 @@ describe("review snippet JSON-LD", () => {
     expect(typeof review.author).not.toBe("string");
   });
 
-  it("keeps one AggregateRating when site-wide schemas are combined", () => {
+  it("emits no AggregateRating when site-wide schemas are combined", () => {
     const graph = combineSchemas(
       generateRealEstateAgentSchema(),
       generateWebSiteSchema(),
@@ -64,7 +57,8 @@ describe("review snippet JSON-LD", () => {
     ) as { "@graph": Array<Record<string, unknown>> };
 
     const ratings = graph["@graph"].filter((node) => node.aggregateRating);
-    expect(ratings).toHaveLength(1);
-    expect(ratings[0]["@id"]).toBe(AGENT_ID);
+    expect(ratings).toHaveLength(0);
+    const agent = graph["@graph"].find((node) => node["@id"] === AGENT_ID);
+    expect(agent?.name).toBe(siteConfig.fullName);
   });
 });

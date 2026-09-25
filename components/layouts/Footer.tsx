@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Star, Calendar } from "lucide-react";
-import { agentInfo, officeInfo, siteConfig, neighborhoods, agentStats } from "@/lib/site-config";
+import { agentInfo, officeInfo, siteConfig, neighborhoods, gbpReviews } from "@/lib/site-config";
 import { footerQuickLinks, footerServiceLinks } from "@/lib/navigation";
 
 export default function Footer() {
@@ -57,7 +57,7 @@ export default function Footer() {
             <p className="mt-2 text-sm text-white/55">License {agentInfo.license}</p>
             <p className="mt-3 inline-flex items-center gap-2 text-sm text-white/80">
               <Star className="h-4 w-4 fill-terracotta-light text-terracotta-light" aria-hidden />
-              {agentStats.averageRating} from {agentStats.reviewCount}+ Google reviews
+              {gbpReviews.label}
             </p>
             <div className="mt-5 flex gap-3">
               <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="rounded-lg bg-white/10 p-2 text-white/70 hover:bg-white/20 hover:text-white">

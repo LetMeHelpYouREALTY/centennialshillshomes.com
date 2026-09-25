@@ -25,6 +25,10 @@ const gscNotFoundExamples = [
   "/luxury-home-buyers",
   "/area-explorer",
   "/summerlin-west",
+  "/services/selling",
+  "/interior-photos",
+  "/testimonials",
+  "/real-estate-tools",
 ];
 
 describe("gscLegacyRedirects", () => {

@@ -61,14 +61,7 @@ export default component$<StructuredDataProps>(({ type, data }) => {
             "name": "Berkshire Hathaway HomeServices"
           },
           // 2025: Add award for Trustworthiness
-          "award": "Top 1% REALTOR®",
-          // 2025: Add aggregateRating for Trust signals
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "150",
-            "bestRating": "5"
-          }
+          "award": "Top 1% REALTOR®"
         };
 
       case 'RealEstateListing':
@@ -95,19 +88,12 @@ export default component$<StructuredDataProps>(({ type, data }) => {
           },
           "geo": data.geo || {
             "@type": "GeoCoordinates",
-            "latitude": 36.1699,
-            "longitude": -115.1398
+            "latitude": 36.2792,
+            "longitude": -115.2744
           },
           "openingHours": data.openingHours || "Mo-Su 08:00-20:00",
           "priceRange": "$$$",
           "telephone": data.telephone || "+1-702-903-1952",
-          // 2025: Add aggregateRating for trust signals
-          "aggregateRating": data.aggregateRating || {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "150",
-            "bestRating": "5"
-          },
           // 2025: Add serviceArea for local SEO
           "serviceArea": data.serviceArea || [
             {
@@ -142,7 +128,7 @@ export default component$<StructuredDataProps>(({ type, data }) => {
             "@type": "RealEstateAgent",
             "name": "Dr. Jan Duffy",
             "telephone": "(702) 903-1952",
-            "email": "janet@centennialhillshomesforsale.com"
+            "email": "DrDuffy@CentennialHillsHomesForSale.com"
           },
           "serviceType": data.serviceType || "Real Estate Services",
           // 2025: Add areaServed for local SEO
@@ -256,8 +242,8 @@ export default component$<StructuredDataProps>(({ type, data }) => {
         return {
           ...baseData,
           "@type": "AggregateRating",
-          "ratingValue": data.ratingValue || 5,
-          "reviewCount": data.reviewCount || 150,
+          "ratingValue": data.ratingValue,
+          "reviewCount": data.reviewCount,
           "bestRating": 5,
           "worstRating": 1
         };
@@ -352,7 +338,7 @@ export const janetDuffyStructuredData = {
   "description": "Luxury real estate specialist serving West Summerlin's premier neighborhoods including ZIP codes 89138, 89144, and 89135. Dr. Jan Duffy, REALTOR® offers 30+ years of research expertise in luxury homes $400K-$750K. Specializing in Red Rock Country Club, The Ridges, and Summerlin West communities for California equity buyers and corporate relocations. Top 1% Las Vegas REALTOR® providing same-day showings and complimentary market analysis. Available 24/7 for executive clients and luxury home investments.",
   "url": "https://www.centennialhillshomesforsale.com/",
   "telephone": "(702) 903-1952",
-  "email": "janet@centennialhillshomesforsale.com",
+  "email": "DrDuffy@CentennialHillsHomesForSale.com",
   "image": "https://www.centennialhillshomesforsale.com/images/dr-janet-duffy.jpg",
   "logo": "https://www.centennialhillshomesforsale.com/images/logo.png",
   "foundingDate": "1993-09-01",
@@ -366,8 +352,8 @@ export const janetDuffyStructuredData = {
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 36.1699,
-    "longitude": -115.1398
+    "latitude": 36.2792,
+    "longitude": -115.2744
   },
   "openingHours": "Mo-Su 08:00-20:00",
   "priceRange": "$$$",
@@ -575,8 +561,8 @@ export const pageSchemas = {
     },
     "geo": propertyData.geo || {
       "@type": "GeoCoordinates",
-      "latitude": 36.1699,
-      "longitude": -115.1398
+      "latitude": 36.2792,
+      "longitude": -115.2744
     },
     "offers": {
       "@type": "Offer",
@@ -609,8 +595,8 @@ export const pageSchemas = {
     },
     "geo": neighborhoodData.geo || {
       "@type": "GeoCoordinates",
-      "latitude": 36.1699,
-      "longitude": -115.1398
+      "latitude": 36.2792,
+      "longitude": -115.2744
     },
     "areaServed": [
       {
@@ -635,7 +621,7 @@ export const pageSchemas = {
       "@type": "RealEstateAgent",
       "name": "Dr. Jan Duffy",
       "telephone": "(702) 903-1952",
-      "email": "janet@centennialhillshomesforsale.com"
+      "email": "DrDuffy@CentennialHillsHomesForSale.com"
     },
     "serviceType": serviceData.serviceType || "Real Estate Services",
     "areaServed": [
@@ -696,7 +682,7 @@ export const pageSchemas = {
     "description": "Top 1% Las Vegas REALTOR® with 30+ years of research expertise in luxury homes",
     "url": "https://www.centennialhillshomesforsale.com/janet-duffy",
     "telephone": "(702) 903-1952",
-    "email": "janet@centennialhillshomesforsale.com",
+    "email": "DrDuffy@CentennialHillsHomesForSale.com",
     "image": "https://www.centennialhillshomesforsale.com/images/dr-janet-duffy.jpg",
     "address": {
       "@type": "PostalAddress",
