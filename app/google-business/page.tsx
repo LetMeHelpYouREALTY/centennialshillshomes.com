@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "California relocation Las Vegas",
   ],
   openGraph: {
-    title: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    title: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
     description: "Trusted Las Vegas REALTOR® serving since 2008. Summerlin, Henderson, luxury homes, 55+ communities.",
     url: "https://www.centennialhillshomesforsale.com/google-business",
     type: "profile",

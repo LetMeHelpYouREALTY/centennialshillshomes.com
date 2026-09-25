@@ -42,7 +42,7 @@ const listingsSchema = {
   description: "Live MLS property listings for Las Vegas, Henderson, and Summerlin homes for sale",
   provider: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
     telephone: "+17029031952",
   },
   areaServed: [

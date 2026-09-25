@@ -81,7 +81,7 @@ const faqSchema = {
 const realEstateAgentSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+  name: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
   telephone: "+17029031952",
   url: "https://www.centennialhillshomesforsale.com/buyers/california-relocator",
   address: {

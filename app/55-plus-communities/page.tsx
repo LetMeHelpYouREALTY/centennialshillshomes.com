@@ -107,7 +107,7 @@ const faqSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+  name: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
   description:
     "55+ community specialist helping active adults find their perfect Las Vegas retirement home",
   telephone: "(702) 903-1952",

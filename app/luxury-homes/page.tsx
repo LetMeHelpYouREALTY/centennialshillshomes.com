@@ -41,7 +41,7 @@ const luxurySchema = {
   name: "Las Vegas Luxury Home Services",
   provider: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
     telephone: "+17029031952",
   },
   areaServed: "Las Vegas, Henderson, Summerlin luxury communities",

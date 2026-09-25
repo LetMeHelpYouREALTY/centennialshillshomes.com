@@ -3,7 +3,7 @@
 
 export const businessInfo = {
   // NAP - Must match GBP exactly
-  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+  name: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
   address: {
     streetAddress: "1490 Center Crossing Rd",
     addressLocality: "Las Vegas",

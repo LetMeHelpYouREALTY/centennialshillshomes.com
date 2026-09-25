@@ -24,7 +24,7 @@ const contactSchema = {
   "@type": "ContactPage",
   mainEntity: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
     telephone: "+17029031952",
     email: "DrDuffy@CentennialHillsHomesForSale.com",
     address: {

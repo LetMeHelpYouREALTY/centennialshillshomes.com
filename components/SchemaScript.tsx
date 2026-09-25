@@ -118,7 +118,7 @@ export function ReviewSchema({
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "@id": "https://www.centennialhillshomesforsale.com#organization",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
     review: reviews.map((review) => ({
       "@type": "Review",
       author: {
