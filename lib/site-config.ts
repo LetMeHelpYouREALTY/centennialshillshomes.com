@@ -23,7 +23,7 @@ export const siteConfig = {
   /** Link to GBP listing for reviews (update when Place ID is available) */
   googleReviewsUrl:
     "https://www.google.com/maps/search/?api=1&query=1490+Center+Crossing+Rd,+Las+Vegas,+NV+89144",
-  hoursLabel: "Daily 6:00 AM – 9:00 PM",
+  hoursLabel: "Daily 8:00 AM – 8:00 PM",
   social: {
     facebook: "https://www.facebook.com/drjanduffy",
     instagram: "https://www.instagram.com/drjanduffy",
@@ -289,7 +289,7 @@ export const homeFaqs: FaqItem[] = [
   {
     question: "How do I contact Dr. Jan Duffy's office?",
     answer:
-      "Call (702) 903-1952, email DrDuffy@CentennialHillsHomesForSale.com, or visit 1490 Center Crossing Rd, Las Vegas, NV 89144. Office hours are 6:00 AM–9:00 PM daily.",
+      "Call (702) 903-1952, email DrDuffy@CentennialHillsHomesForSale.com, or visit 1490 Center Crossing Rd, Las Vegas, NV 89144. Office hours are 8:00 AM–8:00 PM daily.",
   },
 ];
 

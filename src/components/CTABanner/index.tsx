@@ -56,7 +56,7 @@ export const CTABanner = component$<CTABannerProps>((props) => {
 								<a href={`tel:${SITE.phoneTel}`} class="hover:underline">
 									📞 {props.phoneNumber ?? SITE.phone}
 								</a>{" "}
-								| Daily 6 AM – 9 PM
+								| Daily 8 AM – 8 PM
 							</p>
 							<p class="text-sm">
 								{SITE.address.streetAddress}, {SITE.address.addressLocality},{" "}

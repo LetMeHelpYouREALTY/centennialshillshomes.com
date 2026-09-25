@@ -98,7 +98,7 @@ export default component$<StructuredDataProps>(({ type, data }) => {
             "latitude": 36.1699,
             "longitude": -115.1398
           },
-          "openingHours": data.openingHours || "Mo-Su 06:00-21:00",
+          "openingHours": data.openingHours || "Mo-Su 08:00-20:00",
           "priceRange": "$$$",
           "telephone": data.telephone || "+1-702-903-1952",
           // 2025: Add aggregateRating for trust signals
@@ -283,8 +283,8 @@ export default component$<StructuredDataProps>(({ type, data }) => {
             "hoursAvailable": {
               "@type": "OpeningHoursSpecification",
               "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-              "opens": "06:00",
-              "closes": "21:00"
+              "opens": "08:00",
+              "closes": "20:00"
             }
           },
           // 2025: Add address for LocalBusiness signals
@@ -369,7 +369,7 @@ export const janetDuffyStructuredData = {
     "latitude": 36.1699,
     "longitude": -115.1398
   },
-  "openingHours": "Mo-Su 06:00-21:00",
+  "openingHours": "Mo-Su 08:00-20:00",
   "priceRange": "$$$",
   "paymentAccepted": "Cash, Check, Credit Card, Financing",
   "currenciesAccepted": "USD",

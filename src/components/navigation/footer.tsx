@@ -93,31 +93,31 @@ export default component$(() => {
               <div class="hours-list">
                 <div class="hours-item">
                   <span class="day">Sunday</span>
-                  <span class="time">6:00 AM - 9:00 PM</span>
+                  <span class="time">8:00 AM - 8:00 PM</span>
                 </div>
                 <div class="hours-item">
                   <span class="day">Monday</span>
-                  <span class="time">6:00 AM - 9:00 PM</span>
+                  <span class="time">8:00 AM - 8:00 PM</span>
                 </div>
                 <div class="hours-item">
                   <span class="day">Tuesday</span>
-                  <span class="time">6:00 AM - 9:00 PM</span>
+                  <span class="time">8:00 AM - 8:00 PM</span>
                 </div>
                 <div class="hours-item">
                   <span class="day">Wednesday</span>
-                  <span class="time">6:00 AM - 9:00 PM</span>
+                  <span class="time">8:00 AM - 8:00 PM</span>
                 </div>
                 <div class="hours-item">
                   <span class="day">Thursday</span>
-                  <span class="time">6:00 AM - 9:00 PM</span>
+                  <span class="time">8:00 AM - 8:00 PM</span>
                 </div>
                 <div class="hours-item">
                   <span class="day">Friday</span>
-                  <span class="time">6:00 AM - 9:00 PM</span>
+                  <span class="time">8:00 AM - 8:00 PM</span>
                 </div>
                 <div class="hours-item">
                   <span class="day">Saturday</span>
-                  <span class="time">6:00 AM - 9:00 PM</span>
+                  <span class="time">8:00 AM - 8:00 PM</span>
                 </div>
                 <div class="hours-item special">
                   <span class="day">Same-Day Showings</span>

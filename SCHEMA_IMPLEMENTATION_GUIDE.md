@@ -11,7 +11,7 @@ This guide explains how to implement appropriate schema markup for every page on
 - **Phone**: (702) 903-1952
 - **Website**: http://centennialhillshomesforsale.com/
 - **Address**: 1490 Center Crossing Rd, Las Vegas, NV 89144
-- **Business Hours**: Sunday-Saturday 6:00 AM–9:00 PM
+- **Business Hours**: Sunday-Saturday 8:00 AM–8:00 PM
 - **Special Hours**: Closed July 4, 2025; Closed Labor Day Sep 1, 2025
 
 ## Schema Types Available

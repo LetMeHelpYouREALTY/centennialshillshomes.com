@@ -87,7 +87,7 @@ export default function ContactPage() {
                       (702) 903-1952
                     </a>
                     <p className="text-sm text-slate-500 mt-1">
-                      Daily 6:00 AM – 9:00 PM (matches Google Business Profile)
+                      Daily 8:00 AM – 8:00 PM (matches Google Business Profile)
                     </p>
                   </div>
                 </div>
@@ -125,7 +125,7 @@ export default function ContactPage() {
                   <Clock className="h-6 w-6 text-terracotta-dark mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Office Hours</h3>
-                    <p className="text-slate-700">Daily 6:00 AM – 9:00 PM</p>
+                    <p className="text-slate-700">Daily 8:00 AM – 8:00 PM</p>
                     <p className="text-sm text-slate-500 mt-1">
                       Same-day showings available for qualified buyers
                     </p>
@@ -298,7 +298,7 @@ export default function ContactPage() {
                 },
                 {
                   q: "How quickly can you respond to inquiries?",
-                  a: "I typically respond to calls, texts, and emails within 2 hours during office hours (Daily 6:00 AM – 9:00 PM). For urgent matters, calling or texting (702) 903-1952 is the fastest way to reach me.",
+                  a: "I typically respond to calls, texts, and emails within 2 hours during office hours (Daily 8:00 AM – 8:00 PM). For urgent matters, calling or texting (702) 903-1952 is the fastest way to reach me.",
                 },
                 {
                   q: "Do you charge for consultations?",

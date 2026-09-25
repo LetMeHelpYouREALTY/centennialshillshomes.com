@@ -21,7 +21,7 @@ export const SITE = {
 		latitude: 36.2792,
 		longitude: -115.2744,
 	},
-	hours: ["Mo-Su 06:00-21:00"],
+	hours: ["Mo-Su 08:00-20:00"],
 	zipCodes: ["89135", "89138", "89144"],
 	areasServed: [
 		"Centennial Hills, Las Vegas, NV",
@@ -106,7 +106,7 @@ export const HOME_FAQ: FaqItem[] = [
 	{
 		question: "How do I contact Dr. Jan Duffy's office?",
 		answer:
-			"Call (702) 903-1952, email DrDuffy@CentennialHillsHomesForSale.com, or visit 1490 Center Crossing Rd, Las Vegas, NV 89144. Office hours are 6:00 AM–9:00 PM daily.",
+			"Call (702) 903-1952, email DrDuffy@CentennialHillsHomesForSale.com, or visit 1490 Center Crossing Rd, Las Vegas, NV 89144. Office hours are 8:00 AM–8:00 PM daily.",
 	},
 ];
 

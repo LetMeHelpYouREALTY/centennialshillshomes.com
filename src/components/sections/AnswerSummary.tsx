@@ -45,7 +45,7 @@ export const AnswerSummary = component$(() => {
 					</div>
 					<div class="rounded-lg bg-slate-50 p-4 border border-slate-100">
 						<dt class="font-semibold text-slate-900 mb-1">Hours</dt>
-						<dd>Daily 6:00 AM – 9:00 PM</dd>
+						<dd>Daily 8:00 AM – 8:00 PM</dd>
 					</div>
 					<div class="rounded-lg bg-slate-50 p-4 border border-slate-100">
 						<dt class="font-semibold text-slate-900 mb-1">License</dt>

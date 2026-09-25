@@ -54,7 +54,7 @@ export default component$(() => {
 				phone="+17029031952"
 				email="DrDuffy@CentennialHillsHomesForSale.com"
 				website="https://www.centennialhillshomesforsale.com"
-				hours={["Mo-Su 06:00-21:00"]}
+				hours={["Mo-Su 08:00-20:00"]}
 				services={[
 					"Luxury Home Sales",
 					"California Equity Buyers",

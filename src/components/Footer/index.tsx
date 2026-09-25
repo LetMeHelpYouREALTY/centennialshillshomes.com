@@ -55,7 +55,7 @@ export const Footer = component$<FooterProps>((props) => {
 							</div>
 							<div class="flex items-center text-gray-400">
 								<span class="mr-2">⏰</span>
-								<span>Daily 6:00 AM – 9:00 PM</span>
+								<span>Daily 8:00 AM – 8:00 PM</span>
 							</div>
 							<div class="flex flex-wrap gap-3 pt-2">
 								<a

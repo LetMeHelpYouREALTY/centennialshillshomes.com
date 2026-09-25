@@ -414,7 +414,7 @@ export const head: DocumentHead = {
 						postalCode: "89144",
 						addressCountry: "US",
 					},
-					openingHours: "Mo-Su 06:00-21:00",
+					openingHours: "Mo-Su 08:00-20:00",
 					availableLanguage: [
 						"English",
 						"Mandarin",

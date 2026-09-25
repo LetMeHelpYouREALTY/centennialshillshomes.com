@@ -25,7 +25,7 @@ export const LocalMapSection = component$(() => {
 							{addressLine}
 						</address>
 						<p class="text-slate-600 mb-2">
-							<strong>Hours:</strong> Daily 6:00 AM – 9:00 PM
+							<strong>Hours:</strong> Daily 8:00 AM – 8:00 PM
 						</p>
 						<p class="text-slate-600 mb-8">
 							<strong>Phone:</strong>{" "}

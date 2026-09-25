@@ -116,8 +116,8 @@ export function generateRealEstateAgentSchema() {
       {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        opens: "06:00",
-        closes: "21:00",
+        opens: "08:00",
+        closes: "20:00",
       },
     ],
     hasCredential: {

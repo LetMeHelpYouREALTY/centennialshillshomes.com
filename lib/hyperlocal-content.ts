@@ -94,7 +94,7 @@ export const hyperlocalPages: Record<string, HyperlocalPageData> = {
     description:
       "Dr. Jan Duffy is a Top 1% Centennial Hills REALTOR® with Berkshire Hathaway HomeServices. License S.0197614.LLC. Serving 89144, 89138, and 89135 with 500+ closed transactions.",
     heroSubtitle:
-      "Top 1% Las Vegas REALTOR® focused on Centennial Hills luxury and move-up homes. Licensed, local, and available 6 AM–9 PM daily.",
+      "Top 1% Las Vegas REALTOR® focused on Centennial Hills luxury and move-up homes. Licensed, local, and available 8 AM–8 PM daily.",
     image: siteImages.agentHero,
     answerQuestion: "Who is the best REALTOR® in Centennial Hills Las Vegas?",
     answerText:
