@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Search } from "lucide-react";
-import { agentInfo, agentStats, siteConfig, siteImages } from "@/lib/site-config";
+import { agentStats, siteConfig, siteImages } from "@/lib/site-config";
 import AgentPortrait from "@/components/AgentPortrait";
 
 type SearchTab = "buy" | "rent" | "sold";
@@ -62,9 +62,9 @@ export default function HomeHero() {
           </span>
         </h1>
         <p className="mt-6 max-w-2xl text-base text-white/90 md:text-xl">
-          {agentStats.transactionsClosed}+ closings. Hyperlocal expertise across Providence, Skye
-          Canyon, Tule Springs, and ZIP codes {siteConfig.zipCodes.join(", ")}. {agentInfo.name} —
-          Top 1% Nevada, since {agentStats.servingSince}.
+          Centennial Hills Las Vegas real estate for ZIP codes {siteConfig.zipCodes.join(", ")}.{" "}
+          {agentStats.transactionsClosed}+ closings since {agentStats.servingSince}, across
+          Providence, Skye Canyon, and Tule Springs.
         </p>
 
         <form

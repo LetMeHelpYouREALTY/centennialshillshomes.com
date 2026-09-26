@@ -22,9 +22,9 @@ import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/listings" },
-  title: "Centennial Hills Homes for Sale | MLS Property Search",
+  title: "Homes for Sale in Centennial Hills, NV",
   description:
-    "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features. Dr. Jan Duffy, Centennial Hills Real Estate. Call (702) 903-1952.",
+    "Homes for sale in Centennial Hills, NV, including houses and townhomes in 89144, 89138, and 89135. Live MLS search with Dr. Jan Duffy. Call (702) 903-1952.",
   keywords: [
     "Las Vegas homes for sale",
     "Henderson real estate",
@@ -117,12 +117,12 @@ export default function ListingsPage() {
               Centennial Hills Real Estate
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Centennial Hills Homes for Sale
+              Homes for Sale in Centennial Hills, NV
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              Search thousands of Las Vegas, Henderson, and Summerlin properties with live MLS 
-              listings updated every 15 minutes. Find your dream home with expert guidance from 
-              Dr. Jan Duffy at <strong>Centennial Hills Real Estate</strong>.
+              Homes for sale in Centennial Hills, NV include detached houses and townhomes
+              in 89144, 89138, and 89135. Live MLS listings come through RealScout. Dr. Jan
+              Duffy at Centennial Hills Real Estate sets up the search and the showing.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Live MLS Data</span>

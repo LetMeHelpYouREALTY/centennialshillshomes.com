@@ -10,9 +10,9 @@ import { LocalBusinessCtaBar } from "@/components/sections/HyperlocalSections";
 import { zipNav } from "@/lib/navigation";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Centennial Hills Neighborhoods",
+  title: "Homes for Sale in Las Vegas Near Centennial Hills",
   description:
-    "Explore northwest Las Vegas communities near Centennial Hills — Red Rock Country Club, The Ridges, Summerlin West, Lone Mountain, Henderson, and more. Dr. Jan Duffy, REALTOR®. Call (702) 903-1952.",
+    "Homes for sale in Las Vegas near Centennial Hills, including Summerlin, Tournament Hills, Skye Canyon, and Lone Mountain. Dr. Jan Duffy. Call (702) 903-1952.",
   path: "/neighborhoods",
   keywords: [
     "Centennial Hills neighborhoods",
@@ -38,12 +38,12 @@ export default function NeighborhoodsPage() {
             Hyperlocal guides
           </p>
           <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">
-            Centennial Hills & Northwest Las Vegas Neighborhoods
+            Homes for Sale in Las Vegas Near Centennial Hills
           </h1>
           <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-            Dr. Jan Duffy serves Centennial Hills and adjacent luxury and move-up communities in ZIP
-            codes {siteConfig.zipCodes.join(", ")} — with Place and FAQ schema on every guide for
-            Google and AI search visibility.
+            Homes for sale in Las Vegas near Centennial Hills include Summerlin, Tournament Hills,
+            Skye Canyon, Lone Mountain, and North Las Vegas. Dr. Jan Duffy covers ZIP codes{" "}
+            {siteConfig.zipCodes.join(", ")} from the office at 1490 Center Crossing Rd.
           </p>
           <a
             href={agentInfo.phoneTel}

@@ -138,6 +138,11 @@ export const servicesNav: NavGroup = {
       description: "Rental and ROI analysis",
     },
     {
+      href: "/property-management",
+      label: "Property Management",
+      description: "Rental coordination in Centennial Hills",
+    },
+    {
       href: "/new-construction",
       label: "New Construction",
       description: "Builder representation and incentives",
@@ -278,6 +283,7 @@ export const sitemapPaths: Array<{
   { path: "/california-equity-buyers", priority: 0.8, changeFrequency: "monthly" },
   { path: "/corporate-relocations", priority: 0.8, changeFrequency: "monthly" },
   { path: "/investment-properties", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/property-management", priority: 0.8, changeFrequency: "monthly" },
   { path: "/new-construction", priority: 0.8, changeFrequency: "monthly" },
   { path: "/relocation", priority: 0.75, changeFrequency: "monthly" },
   { path: "/services", priority: 0.7, changeFrequency: "monthly" },
@@ -300,6 +306,7 @@ export const sitemapPaths: Array<{
   { path: "/neighborhoods/green-valley", priority: 0.8, changeFrequency: "weekly" },
   { path: "/neighborhoods/southern-highlands", priority: 0.8, changeFrequency: "weekly" },
   { path: "/neighborhoods/skye-canyon", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/neighborhoods/tournament-hills", priority: 0.8, changeFrequency: "weekly" },
   { path: "/neighborhoods/inspirada", priority: 0.8, changeFrequency: "weekly" },
   { path: "/neighborhoods/mountains-edge", priority: 0.8, changeFrequency: "weekly" },
 ];

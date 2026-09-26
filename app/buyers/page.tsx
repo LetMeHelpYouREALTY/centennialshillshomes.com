@@ -21,9 +21,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/buyers" },
-  title: "Home Buying Guide Las Vegas",
+  title: "Centennial Hills Residential Home Buyers",
   description:
-    "Looking to buy a home in Las Vegas? Dr. Jan Duffy with Centennial Hills Real Estate guides you through every step. Free buyer consultation. Call (702) 903-1952.",
+    "Centennial Hills NV residential home buyers get buyer representation from Dr. Jan Duffy. The seller typically pays the commission. Call (702) 903-1952.",
   keywords: [
     "buy home Las Vegas",
     "Las Vegas home buyer",
@@ -105,12 +105,12 @@ export default function BuyersPage() {
               Centennial Hills Real Estate
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Buy a Home in Centennial Hills
+              Centennial Hills Residential Home Buyers
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              When you work with a <strong>Centennial Hills Real Estate</strong> buyer's agent,
-              you're backed by the most trusted name in real estate—and it costs you nothing.
-              The seller pays the commission, but the representation is yours.
+              Centennial Hills NV residential home buyers work with Dr. Jan Duffy from the first
+              tour through closing. Buyer representation is arranged so the seller typically pays
+              the commission.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Free Buyer Representation</span>

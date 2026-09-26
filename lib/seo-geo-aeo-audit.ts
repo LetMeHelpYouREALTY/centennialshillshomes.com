@@ -82,6 +82,33 @@ function lineIndent(text: string): number {
   return text.match(/^\s*/)?.[0].length ?? 0;
 }
 
+export const GSC_QUERY_PHRASES = [
+  "homes for sale in centennial hills, nv",
+  "homes for sale in las vegas near centennial hills",
+  "centennial hills property management",
+  "centennial hills las vegas real estate",
+  "tournament hills summerlin real estate",
+  "centennial hills nv residential home buyers",
+];
+
+/** Phrases from Search Console queries with impressions. Add a phrase when a new query earns impressions and the page copy should answer it. */
+export function findMissingQueryPhrases(repoRoot: string): string[] {
+  const files: string[] = [];
+  for (const folder of ["app", "components", "lib"]) {
+    walk(path.join(repoRoot, folder), files);
+  }
+  const corpus = files
+    .filter((file) => {
+      const name = path.basename(file);
+      return name !== "seo-geo-aeo-audit.ts" && !name.endsWith(".test.ts") && !name.endsWith(".test.tsx");
+    })
+    .map((file) => fs.readFileSync(file, "utf8"))
+    .join("\n")
+    .toLowerCase();
+
+  return GSC_QUERY_PHRASES.filter((phrase) => !corpus.includes(phrase));
+}
+
 export function findDuplicateSearchTitles(repoRoot: string): AuditHit[] {
   const files: string[] = [];
   walk(path.join(repoRoot, "app"), files);

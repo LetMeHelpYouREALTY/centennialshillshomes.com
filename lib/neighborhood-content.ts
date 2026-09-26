@@ -92,4 +92,18 @@ export const neighborhoodPages: Record<string, NeighborhoodPageData> = {
       "Dr. Jan Duffy helps you evaluate builders, resale potential, and how north valley homes compare to Centennial Hills and Summerlin West alternatives.",
     ],
   },
+  "tournament-hills": {
+    slug: "tournament-hills",
+    title: "Tournament Hills Summerlin Real Estate",
+    description:
+      "Tournament Hills Summerlin real estate: guard-gated custom homes around TPC Summerlin in ZIP 89134. Dr. Jan Duffy. Call (702) 903-1952.",
+    heroSubtitle: "Guard-gated custom homes around TPC Summerlin, south of Centennial Hills",
+    image: siteImages.communities.summerlinWest,
+    highlights: ["ZIP 89134", "TPC Summerlin", "Guard-gated", "Custom homes"],
+    zipCodes: ["89134"],
+    body: [
+      "Tournament Hills is a guard-gated custom-home community in central Summerlin, ZIP 89134, wrapped around TPC Summerlin. It sits south of Centennial Hills, with access to Summerlin Parkway, the 215 Beltway, Downtown Summerlin, and Red Rock Canyon.",
+      "Homes here are resales, not a production-builder village. Dr. Jan Duffy tours Tournament Hills with buyers comparing it to The Ridges and other Summerlin luxury homes, and prices each home from current MLS comps rather than a published average.",
+    ],
+  },
 };

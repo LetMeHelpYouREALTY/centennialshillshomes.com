@@ -74,4 +74,28 @@ export const servicePages: Record<string, ServicePageContent> = {
       "Work with a Top 1% REALTOR® who understands both lifestyle purchases and income-producing assets.",
     ],
   },
+  "property-management": {
+    title: "Centennial Hills Property Management",
+    description:
+      "Centennial Hills property management coordination for rental homes in 89144, 89138, and 89135. Dr. Jan Duffy connects owners with a manager. Call (702) 903-1952.",
+    heroSubtitle: "Rental-home coordination in Centennial Hills — leasing is handled by a manager Dr. Jan introduces",
+    image: siteImages.services.investmentProperties,
+    answerQuestion: "Who handles Centennial Hills property management?",
+    faqs: [
+      {
+        question: "Does Dr. Jan Duffy manage rental homes day to day?",
+        answer:
+          "No. Centennial Hills property management on this site means purchase, sale, and coordination. Dr. Jan introduces owners to a property manager for leasing, rent collection, and maintenance. Call (702) 903-1952.",
+      },
+      {
+        question: "Is this a commercial property management company?",
+        answer:
+          "Commercial purchase and sale guidance is a separate service. Day-to-day commercial property management is referred to a manager. Dr. Jan does not publish a managed-unit count.",
+      },
+    ],
+    body: [
+      "Centennial Hills property management starts with the rental home itself. Dr. Jan Duffy helps owners buy or sell rentals in 89144, 89138, and 89135, then connects them with a property manager for leasing and upkeep.",
+      "She does not collect rent or dispatch repairs. Commercial property management companies in Las Vegas are a different business; commercial buyers and sellers can still use her for the purchase or sale, and a manager for operations.",
+    ],
+  },
 };

@@ -12,7 +12,7 @@ export const siteConfig = {
   shortName: "Centennial Hills Homes",
   url: "https://www.centennialhillshomesforsale.com",
   description:
-    "Homes for sale in Centennial Hills, Las Vegas — ZIPs 89144, 89138, and 89135. Centennial Hills Real Estate, Homes by Dr. Jan Duffy. 1490 Center Crossing Rd. Call (702) 903-1952.",
+    "Centennial Hills Las Vegas real estate. Homes for sale in Centennial Hills, NV, and homes for sale in Las Vegas near Centennial Hills. 1490 Center Crossing Rd. Call (702) 903-1952.",
   zipCodes: ["89135", "89138", "89144"],
   priceRange: "$400K-$750K",
   realScoutAgentId: "QWdlbnQtMjI1MDUw",
@@ -150,6 +150,13 @@ export const neighborhoods = [
     description: "Ultra-luxury Summerlin community with custom estates",
     highlights: ["Custom estates", "Strip views", "Privacy", "Golf nearby"],
     image: siteImages.communities.theRidges,
+  },
+  {
+    name: "Tournament Hills",
+    slug: "tournament-hills",
+    description: "Guard-gated custom homes around TPC Summerlin in ZIP 89134",
+    highlights: ["89134", "TPC Summerlin", "Guard-gated"],
+    image: siteImages.communities.summerlinWest,
   },
   {
     name: "Summerlin West",
