@@ -10,7 +10,7 @@ export default function NeighborhoodGrid() {
           Explore by community
         </p>
         <h2 className="mt-3 font-display text-3xl italic text-ink md:text-5xl">
-          Centennial Hills & Northwest Las Vegas Neighborhoods
+          Homes for Sale in Las Vegas Near Centennial Hills
         </h2>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {homepageCommunities.map((community) => (
@@ -45,6 +45,15 @@ export default function NeighborhoodGrid() {
           >
             View all neighborhoods →
           </Link>
+          <p className="mt-4 text-sm text-ink/80">
+            <Link href="/listings" className="font-semibold text-terracotta no-underline hover:text-terracotta-dark">
+              Centennial homes for sale
+            </Link>
+            {" · "}
+            <Link href="/property-management" className="font-semibold text-terracotta no-underline hover:text-terracotta-dark">
+              Centennial Hills property management
+            </Link>
+          </p>
         </div>
       </div>
     </section>

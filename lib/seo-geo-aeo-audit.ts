@@ -89,6 +89,13 @@ export const GSC_QUERY_PHRASES = [
   "centennial hills las vegas real estate",
   "tournament hills summerlin real estate",
   "centennial hills nv residential home buyers",
+  "tournament hills real estate",
+  "centennial homes for sale",
+  "summerlin luxury homes",
+  "centennial hills houses",
+  "centennial hills townhomes",
+  "centennial property management",
+  "centennial real estate in las vegas",
 ];
 
 /** Phrases from Search Console queries with impressions. Add a phrase when a new query earns impressions and the page copy should answer it. */

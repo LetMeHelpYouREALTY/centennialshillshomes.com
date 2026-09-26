@@ -63,4 +63,12 @@ export const homepageCommunities: HomepageCommunity[] = [
     image: siteImages.communities.theRidges,
     zipHint: "Northwest Las Vegas",
   },
+  {
+    name: "Tournament Hills",
+    slug: "tournament-hills",
+    href: "/neighborhoods/tournament-hills",
+    description: "Tournament Hills real estate around TPC Summerlin",
+    image: siteImages.communities.summerlinWest,
+    zipHint: "89134",
+  },
 ];

@@ -119,10 +119,16 @@ export default function ListingsPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Homes for Sale in Centennial Hills, NV
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-slate-600 mb-4">
               Homes for sale in Centennial Hills, NV include detached houses and townhomes
               in 89144, 89138, and 89135. Live MLS listings come through RealScout. Dr. Jan
               Duffy at Centennial Hills Real Estate sets up the search and the showing.
+            </p>
+            <h2 className="text-2xl font-semibold text-slate-900 mb-3">
+              Centennial homes for sale
+            </h2>
+            <p className="text-lg text-slate-600 mb-8">
+              Centennial Hills houses and Centennial Hills townhomes are in the same search.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Live MLS Data</span>

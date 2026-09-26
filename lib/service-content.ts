@@ -94,7 +94,7 @@ export const servicePages: Record<string, ServicePageContent> = {
       },
     ],
     body: [
-      "Centennial Hills property management starts with the rental home itself. Dr. Jan Duffy helps owners buy or sell rentals in 89144, 89138, and 89135, then connects them with a property manager for leasing and upkeep.",
+      "Centennial Hills property management, and Centennial property management for the same rentals, starts with the home itself. Dr. Jan Duffy helps owners buy or sell rentals in 89144, 89138, and 89135, then connects them with a property manager for leasing and upkeep.",
       "She does not collect rent or dispatch repairs. Commercial property management companies in Las Vegas are a different business; commercial buyers and sellers can still use her for the purchase or sale, and a manager for operations.",
     ],
   },

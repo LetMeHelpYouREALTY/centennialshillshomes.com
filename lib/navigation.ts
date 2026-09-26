@@ -236,7 +236,9 @@ export const footerServiceLinks: NavLink[] = [
   { href: "/luxury-home-sales", label: "Luxury Home Sales" },
   { href: "/55-plus-communities", label: "55+ Communities" },
   { href: "/new-construction", label: "New Construction" },
-  { href: "/market-insights", label: "Market Insights" },
+  { href: "/listings", label: "Centennial homes for sale" },
+  { href: "/property-management", label: "Centennial Hills property management" },
+  { href: "/neighborhoods/tournament-hills", label: "Tournament Hills real estate" },
 ];
 
 function siteConfigListingsUrl(): string {

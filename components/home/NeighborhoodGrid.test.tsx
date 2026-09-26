@@ -13,6 +13,7 @@ describe("NeighborhoodGrid", () => {
       "Centennial Hills",
       "Lone Mountain",
       "Sheep Mountain",
+      "Tournament Hills",
     ]) {
       expect(screen.getByRole("heading", { name })).toBeInTheDocument();
     }

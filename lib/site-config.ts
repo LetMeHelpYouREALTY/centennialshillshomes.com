@@ -12,7 +12,7 @@ export const siteConfig = {
   shortName: "Centennial Hills Homes",
   url: "https://www.centennialhillshomesforsale.com",
   description:
-    "Centennial Hills Las Vegas real estate. Homes for sale in Centennial Hills, NV, and homes for sale in Las Vegas near Centennial Hills. 1490 Center Crossing Rd. Call (702) 903-1952.",
+    "Centennial Hills Las Vegas real estate. Centennial real estate in Las Vegas: homes for sale in Centennial Hills, NV, and homes for sale in Las Vegas near Centennial Hills. 1490 Center Crossing Rd. Call (702) 903-1952.",
   zipCodes: ["89135", "89138", "89144"],
   priceRange: "$400K-$750K",
   realScoutAgentId: "QWdlbnQtMjI1MDUw",

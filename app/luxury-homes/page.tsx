@@ -20,9 +20,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/luxury-homes" },
-  title: "Las Vegas Luxury Homes for Sale",
+  title: "Summerlin Luxury Homes",
   description:
-    "Discover Las Vegas luxury real estate with Dr. Jan Duffy at Centennial Hills Real Estate. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 903-1952.",
+    "Summerlin luxury homes, including Tournament Hills and The Ridges. Dr. Jan Duffy prices each home from current MLS comps. Call (702) 903-1952.",
   keywords: [
     "Las Vegas luxury homes",
     "The Ridges Las Vegas",
@@ -128,18 +128,16 @@ export default function LuxuryHomesPage() {
               Centennial Hills Real Estate
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Luxury Homes for Sale in Centennial Hills
+              Summerlin Luxury Homes
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              <strong>Centennial Hills Real Estate</strong> represents the gold standard in
-              luxury real estate. When you're buying or selling a $1M+ home, trust matters more than
-              ever. Our global network, discretion, and expertise ensure your luxury transaction 
-              receives the exceptional service it deserves.
+              Summerlin luxury homes include Tournament Hills around TPC Summerlin and The Ridges.
+              Dr. Jan Duffy prices each one from current MLS comps. Call (702) 903-1952.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> White Glove Service</span>
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Global Buyer Network</span>
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Discrete Transactions</span>
+              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Live MLS comps</span>
+              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Tournament Hills</span>
+              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> The Ridges</span>
             </div>
           </div>
 
