@@ -69,7 +69,7 @@ export default component$(() => {
         
         <h3 class="text-2xl font-semibold text-gray-900 mt-6 mb-3">Real Estate Certifications</h3>
         <p class="text-lg text-gray-700 mb-4">
-          Licensed in Nevada (License #S.0197614), Dr. Duffy maintains active membership in professional real estate organizations and continuously updates her knowledge through ongoing education. Her certifications and training cover luxury home sales, investment property analysis, corporate relocation services, and specialized market segments that serve her diverse client base.
+          Licensed in Nevada (), Dr. Duffy maintains active membership in professional real estate organizations and continuously updates her knowledge through ongoing education. Her certifications and training cover luxury home sales, investment property analysis, corporate relocation services, and specialized market segments that serve her diverse client base.
         </p>
         
         <h3 class="text-2xl font-semibold text-gray-900 mt-6 mb-3">Top 1% REALTOR® Recognition</h3>
@@ -209,7 +209,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Meet Dr. Janet Duffy, Top 1% Las Vegas REALTOR® with 30+ years of research expertise. Specializing in Centennial Hills luxury real estate, California equity buyers, and corporate relocations. Available 24/7 for executive clients with same-day showings and complimentary market analysis. Licensed in Nevada License #S.0197614.',
+      content: 'Meet Dr. Janet Duffy, Top 1% Las Vegas REALTOR® with 30+ years of research expertise. Specializing in Centennial Hills luxury real estate, California equity buyers, and corporate relocations. Available 24/7 for executive clients with same-day showings and complimentary market analysis. Licensed in Nevada .',
     },
     {
       name: 'robots',

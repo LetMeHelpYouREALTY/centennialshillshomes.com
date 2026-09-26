@@ -170,9 +170,8 @@ export function LocalBusinessCtaBar() {
               Work with Dr. Jan Duffy, Centennial Hills REALTOR®
             </h2>
             <p className="text-slate-300 mb-4 leading-relaxed">
-              Licensed Nevada REALTOR® {agentInfo.license}. Serving northwest Las Vegas buyers and
-              sellers with same-day showings, complimentary market analysis, and Berkshire Hathaway
-              HomeServices backing.
+              Licensed Nevada REALTOR®. Serving northwest Las Vegas buyers and sellers with
+              same-day showings and complimentary market analysis.
             </p>
             <div className="flex items-center gap-2 text-terracotta-light mb-6">
               <Star className="h-5 w-5 fill-current" aria-hidden />

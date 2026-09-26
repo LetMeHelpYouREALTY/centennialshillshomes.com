@@ -18,19 +18,19 @@ export const metadata: Metadata = {
   alternates: { canonical: "/55-plus-communities/heritage-stonebridge" },
   title: "Heritage at Stonebridge Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Heritage at Stonebridge - boutique guard-gated 55+ community in Summerlin. Homes from $400K-$750K. Near Downtown Summerlin, Red Rock Canyon. Dr. Jan Duffy, BHHS. Call (702) 903-1952.",
+    "Heritage at Stonebridge - boutique guard-gated 55+ community in Summerlin. Homes from $400K-$750K. Near Downtown Summerlin, Red Rock Canyon. Dr. Jan Duffy. Call (702) 903-1952.",
   keywords: [
     "Heritage at Stonebridge homes for sale",
     "Heritage Stonebridge Summerlin",
     "guard-gated 55+ community Las Vegas",
     "Summerlin 55+ communities",
     "boutique 55+ community Las Vegas",
-    "Berkshire Hathaway Heritage Stonebridge",
+    " Heritage Stonebridge",
   ],
   openGraph: {
     title: "Heritage at Stonebridge - Guard-Gated 55+ Living in Summerlin",
     description:
-      "Boutique community with premium Summerlin location. Guard-gated security, near Downtown Summerlin. From $400K. Dr. Jan Duffy, BHHS.",
+      "Boutique community with premium Summerlin location. Guard-gated security, near Downtown Summerlin. From $400K. Dr. Jan Duffy.",
     type: "website",
   },
 };
@@ -149,7 +149,7 @@ export default function HeritageAtStonebridgePage() {
                 rather than committing to a community course.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
+                <strong>Centennial Hills Real Estate</strong>{" "}
                 helps buyers who value privacy and location over massive amenity
                 complexes. Dr. Jan Duffy understands why Heritage at Stonebridge
                 appeals to buyers seeking a more exclusive, intimate 55+
@@ -377,12 +377,12 @@ export default function HeritageAtStonebridgePage() {
                 privacy without the sprawl of larger 55+ communities. The
                 guard-gated security is genuine—not just a code anyone can get.
                 And the location in Summerlin is simply unbeatable. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I help
+                <strong>Centennial Hills Real Estate</strong> agent, I help
                 buyers who prioritize quality over quantity find their perfect
                 fit here."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Centennial Hills Real Estate
               </cite>
             </div>
           </section>

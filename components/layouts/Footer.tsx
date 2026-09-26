@@ -57,11 +57,7 @@ export default function Footer() {
             </p>
               </div>
             </div>
-            <p className="mt-4 text-sm leading-relaxed text-white/70">
-              {agentInfo.brokerage}
-            </p>
-            <p className="mt-2 text-sm text-white/55">License {agentInfo.license}</p>
-            <p className="mt-3 inline-flex items-center gap-2 text-sm text-white/80">
+            <p className="mt-4 inline-flex items-center gap-2 text-sm text-white/80">
               <Star className="h-4 w-4 fill-terracotta-light text-terracotta-light" aria-hidden />
               {gbpReviews.label}
             </p>
@@ -140,9 +136,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/50 md:flex-row md:items-center md:justify-between">
+        <div className="mt-12 border-t border-white/10 pt-6 text-xs text-white/50">
+          <p className="text-sm text-white/80">
+            {agentInfo.brokerage} · License {agentInfo.license}
+          </p>
+          <div className="mt-3 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <p>
-            © {year} {agentInfo.name}, {agentInfo.title}. All rights reserved. Equal Housing
+            © {year} {siteConfig.logoTitle}. {siteConfig.logoSubtitle}. All rights reserved. Equal Housing
             Opportunity. MLS information deemed reliable but not guaranteed.
           </p>
           <div className="flex flex-wrap gap-4">
@@ -153,6 +153,7 @@ export default function Footer() {
                 {link.label}
               </Link>
             ))}
+          </div>
           </div>
         </div>
       </div>

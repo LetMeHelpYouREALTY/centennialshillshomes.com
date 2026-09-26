@@ -15,7 +15,7 @@ export default function LocalMapSection() {
               Meet at our northwest Las Vegas office — same address as our Google Business Profile.
             </p>
             <address className="not-italic text-slate-800 mb-6 block">
-              <strong className="block text-lg">{agentInfo.brokerage}</strong>
+              <strong className="block text-lg">Centennial Hills Real Estate</strong>
               {addressLine}
             </address>
             <p className="text-slate-600 mb-2">

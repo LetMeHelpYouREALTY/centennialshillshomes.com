@@ -360,7 +360,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Learn about Dr. Janet Duffy, your trusted Las Vegas real estate professional specializing in luxury homes, California equity buyers, and corporate relocations. Top 1% REALTOR® with 30+ years of research expertise, available 24/7 for executive clients. Licensed in Nevada License #S.0197614.',
+      content: 'Learn about Dr. Janet Duffy, your trusted Las Vegas real estate professional specializing in luxury homes, California equity buyers, and corporate relocations. Top 1% REALTOR® with 30+ years of research expertise, available 24/7 for executive clients. Licensed in Nevada .',
     },
     {
       name: 'robots',

@@ -171,15 +171,15 @@ export default function Navbar() {
           <Link href="/" className="flex min-w-0 shrink-0 items-center gap-2.5 leading-tight">
             <AgentPortrait size="sm" priority decorative />
             <span className="flex flex-col">
-            <span className={`font-display text-lg ${overlay ? "text-white" : "text-ink"}`}>
-              {agentInfo.name}
+            <span className={`font-display text-lg leading-tight ${overlay ? "text-white" : "text-ink"}`}>
+              {siteConfig.logoTitle}
             </span>
             <span
-              className={`text-[10px] font-semibold uppercase tracking-[0.22em] ${
+              className={`text-[10px] font-semibold uppercase tracking-[0.16em] ${
                 overlay ? "text-white/70" : "text-stone-500"
               }`}
             >
-              Centennial Hills REALTOR®
+              {siteConfig.logoSubtitle}
             </span>
             </span>
           </Link>

@@ -37,7 +37,7 @@ export const neighborhoodPages: Record<string, NeighborhoodPageData> = {
     highlights: ["Golf community", "Guard-gated options", "Custom homes", "Red Rock views"],
     body: [
       "Red Rock Country Club attracts buyers who want golf-course lifestyle, privacy, and proximity to outdoor recreation, while remaining close to Centennial Hills amenities.",
-      "Whether you are relocating from California or upgrading within Las Vegas, Dr. Jan Duffy provides discreet, executive-level service backed by Berkshire Hathaway HomeServices Nevada Properties.",
+      "Whether you are relocating from California or upgrading within Las Vegas, Dr. Jan Duffy provides discreet, executive-level service backed by Centennial Hills Real Estate.",
     ],
   },
   "the-ridges": {

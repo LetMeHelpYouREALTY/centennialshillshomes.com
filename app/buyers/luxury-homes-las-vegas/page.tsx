@@ -17,7 +17,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/buyers/luxury-homes-las-vegas" },
-  title: "Luxury Homes Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Luxury Homes Las Vegas | Centennial Hills Real Estate",
   description:
     "Las Vegas luxury real estate from $1.2M to $10M+. Guard-gated estates, Strip penthouses, and custom homes. Dr. Jan Duffy provides discrete, expert representation. Call (702) 903-1952.",
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "MacDonald Highlands",
     "luxury real estate Henderson",
     "guard gated communities Las Vegas",
-    "Berkshire Hathaway luxury homes",
+    " luxury homes",
   ],
 };
 
@@ -55,7 +55,7 @@ const faqSchema = {
       name: "Do luxury buyers need representation?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely. Luxury transactions involve complex negotiations, privacy concerns, and significant financial exposure. One wrong move can cost hundreds of thousands. Berkshire Hathaway HomeServices provides discrete, sophisticated representation for discerning buyers.",
+        text: "Absolutely. Luxury transactions involve complex negotiations, privacy concerns, and significant financial exposure. One wrong move can cost hundreds of thousands. Centennial Hills Real Estate provides discrete, sophisticated representation for discerning buyers.",
       },
     },
   ],
@@ -325,7 +325,7 @@ export default function LuxuryHomesPage() {
               <div>
                 <p className="text-slate-700 mb-4">
                   Luxury transactions require a level of discretion that most agents can't provide.
-                  Dr. Jan Duffy and <strong>Berkshire Hathaway HomeServices</strong> understand that
+                  Dr. Jan Duffy and <strong>Centennial Hills Real Estate</strong> understand that
                   privacy isn't a luxury—it's a requirement.
                 </p>
                 <ul className="space-y-3">
@@ -369,11 +369,11 @@ export default function LuxuryHomesPage() {
                 "Luxury buyers expect discretion, market expertise, and flawless execution. In this
                 price range, one wrong move can cost hundreds of thousands of dollars. My clients
                 trust me because I've closed $127M+ in transactions and understand that their time
-                and privacy are worth more than any commission. <strong>Berkshire Hathaway HomeServices</strong>
+                and privacy are worth more than any commission. <strong>Centennial Hills Real Estate</strong>
                 provides the global resources and credibility that luxury transactions demand."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Centennial Hills Real Estate
               </cite>
             </div>
           </section>
@@ -403,7 +403,7 @@ export default function LuxuryHomesPage() {
               </Link>
             </div>
             <p className="mt-6 text-slate-400 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </p>
           </section>
         </div>

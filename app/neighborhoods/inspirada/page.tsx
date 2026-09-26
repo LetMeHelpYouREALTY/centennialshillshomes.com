@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/neighborhoods/inspirada" },
   title: "Inspirada Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Find Inspirada homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's resort-style community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
+    "Find Inspirada homes with Centennial Hills Real Estate. Dr. Jan Duffy specializes in Henderson's resort-style community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
   keywords: [
     "Inspirada Homes for Sale",
     "Inspirada homes for sale",
@@ -80,7 +80,7 @@ export default function InspiradaPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Inspirada Homes for Sale
@@ -90,7 +90,7 @@ export default function InspiradaPage() {
             </h1>
             <p className="text-xl text-slate-600">
               Resort-style living in Henderson. Discover Inspirada with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
+              <strong>Centennial Hills Real Estate</strong> and Dr. Jan Duffy.
             </p>
           </div>
           <CurrentMarketBand area="Inspirada" zipLabel="89044" />
@@ -105,7 +105,7 @@ export default function InspiradaPage() {
                 <strong>Inspirada</strong> redefines what a master-planned community can be. This
                 2,000-acre development in Henderson consistently ranks among the nation's top-selling
                 communities, and for good reason: Inspirada delivers resort-style amenities that make
-                every day feel like a vacation. <strong>Berkshire Hathaway HomeServices</strong>
+                every day feel like a vacation. <strong>Centennial Hills Real Estate</strong>
                 is proud to represent buyers and sellers in this exceptional community.
               </p>
               <p>
@@ -117,11 +117,11 @@ export default function InspiradaPage() {
                 to Inspirada's identity.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> provides free
+                <strong>Centennial Hills Real Estate</strong> provides free
                 buyer representation on Inspirada new construction purchases. With multiple builders
                 offering homes in the community, navigating options can be overwhelming. Dr. Jan Duffy
                 helps buyers compare builders, negotiate upgrades, and avoid common new construction
-                pitfalls. For resales, BHHS agents identify properties where previous owners made
+                pitfalls. For resales, Dr. Jan agents identify properties where previous owners made
                 smart upgrade decisions, delivering better value than comparable new construction.
               </p>
 
@@ -267,7 +267,7 @@ export default function InspiradaPage() {
                 established yards and upgraded features offer compelling alternatives.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for your Inspirada purchase
+                Choosing <strong>Centennial Hills Real Estate</strong> for your Inspirada purchase
                 means working with agents who understand the community's various neighborhoods, which
                 builders offer the best quality, and which lots provide the best value. Dr. Jan Duffy
                 has helped dozens of families find their Inspirada homes, and that experience
@@ -282,12 +282,12 @@ export default function InspiradaPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Inspirada isn't just a place to live—it's a lifestyle. Families move here for the
                 pools, the trails, and the community events that make weekends special. As a
-                Berkshire Hathaway HomeServices agent, I help clients find the specific neighborhood
+                Centennial Hills Real Estate agent, I help clients find the specific neighborhood
                 within Inspirada that matches how they want to live, whether that's close to the
                 main pool complex or on a quiet cul-de-sac backing to open space."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Centennial Hills Real Estate
               </cite>
             </div>
           </section>
@@ -356,7 +356,7 @@ export default function InspiradaPage() {
               Call (702) 903-1952
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </p>
           </section>
         </div>

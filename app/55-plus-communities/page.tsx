@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "55+ Communities Near Centennial Hills | Dr. Jan Duffy",
     description:
-      "Sun City, Del Webb, Heritage at Stonebridge & more—Dr. Duffy specializes in active adult living. Berkshire Hathaway HomeServices Nevada Properties.",
+      "Sun City, Del Webb, Heritage at Stonebridge & more—Dr. Duffy specializes in active adult living. Centennial Hills Real Estate.",
     type: "website",
   },
 };
@@ -66,7 +66,7 @@ const faqSchema = {
       name: "Can I buy in a 55+ community if I'm under 55?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Generally no, but there are exceptions. You may purchase if you'll be 55 by close of escrow, or as an investor who will rent to 55+ tenants. Some communities allow residents 45-54 in limited circumstances. A BHHS agent can explain each community's specific rules.",
+        text: "Generally no, but there are exceptions. You may purchase if you'll be 55 by close of escrow, or as an investor who will rent to 55+ tenants. Some communities allow residents 45-54 in limited circumstances. A Dr. Jan agent can explain each community's specific rules.",
       },
     },
     {
@@ -665,14 +665,14 @@ export default function FiftyFiveCommunitiesPage() {
                 typical purchase. You need to understand HOA rules, age
                 verification processes, and how the community fits your
                 lifestyle. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent
+                <strong>Centennial Hills Real Estate</strong> agent
                 specializing in active adult communities, I guide clients through
                 every step—from touring amenities to reviewing HOA documents. Many
                 clients are relocating from California, and they rely on my local
                 knowledge to make confident decisions."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Centennial Hills Real Estate
               </cite>
             </div>
           </section>
@@ -748,7 +748,7 @@ export default function FiftyFiveCommunitiesPage() {
             </div>
           </section>
 
-          {/* Why BHHS */}
+          {/* Why Dr. Jan */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Why Hire Dr. Jan Duffy for 55+ Homes Near Centennial Hills
@@ -778,7 +778,7 @@ export default function FiftyFiveCommunitiesPage() {
                     Relocation Support
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Many 55+ buyers relocate from out of state. Our national BHHS
+                    Many 55+ buyers relocate from out of state. Our national Dr. Jan
                     network provides referrals, and Dr. Jan offers virtual tours
                     and detailed community information.
                   </p>
@@ -791,7 +791,7 @@ export default function FiftyFiveCommunitiesPage() {
                 <div>
                   <h3 className="font-bold text-slate-900 mb-1">Trusted Brand</h3>
                   <p className="text-slate-600 text-sm">
-                    The Berkshire Hathaway name represents trust and
+                    The  name represents trust and
                     integrity—values that matter when making one of life's biggest
                     decisions.
                   </p>
@@ -847,7 +847,7 @@ export default function FiftyFiveCommunitiesPage() {
               </span>
             </p>
             <p className="mt-4 text-blue-300 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </p>
           </section>
         </div>

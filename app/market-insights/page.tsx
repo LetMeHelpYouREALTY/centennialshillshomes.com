@@ -16,7 +16,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/market-insights" },
-  title: "Las Vegas Real Estate Market Insights 2026 | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Real Estate Market Insights 2026 | Centennial Hills Real Estate",
   description:
     "Technology trends, economic forecasts, and market analysis shaping Las Vegas real estate in 2026. AI, data centers, California migration, and what it means for buyers and sellers. Call (702) 903-1952.",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "Nevada economic outlook",
     "California to Las Vegas migration",
     "Las Vegas tech hub",
-    "Berkshire Hathaway market insights",
+    " market insights",
   ],
 };
 
@@ -36,7 +36,7 @@ const reportSchema = {
   author: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy",
-    worksFor: "Berkshire Hathaway HomeServices Nevada Properties",
+    worksFor: "Centennial Hills Real Estate",
   },
   datePublished: "2026-01-23",
   about: {
@@ -410,11 +410,11 @@ export default function MarketInsightsPage() {
                 from reactive ones. Las Vegas is no longer just a gaming and tourism economy.
                 Tech investment, California migration, and economic diversification are reshaping
                 which neighborhoods will outperform. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I help clients position
+                <strong>Centennial Hills Real Estate</strong> agent, I help clients position
                 themselves for where the market is going, not just where it's been."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Centennial Hills Real Estate
               </cite>
             </div>
           </section>

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "Sun City Anthem Henderson",
     "55 plus communities Henderson",
     "active adult Henderson",
-    "Berkshire Hathaway Sun City Anthem",
+    " Sun City Anthem",
   ],
 };
 
@@ -176,7 +176,7 @@ export default function SunCityAnthemPage() {
                 the adjacent Revere Golf Club—provide world-class golf experiences.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices</strong> agents know Sun City Anthem intimately.
+                <strong>Centennial Hills Real Estate</strong> agents know Sun City Anthem intimately.
                 Dr. Jan Duffy helps buyers understand the community's various phases, elevation differences,
                 and which neighborhoods offer the best mountain or Strip views.
               </p>
@@ -304,11 +304,11 @@ export default function SunCityAnthemPage() {
                 "Sun City Anthem combines everything Henderson is known for—safety, quality, and
                 stunning scenery—with the Del Webb lifestyle. The views from the upper sections
                 are spectacular, and the Anthem Center rivals any resort clubhouse I've seen.
-                As a <strong>Berkshire Hathaway HomeServices</strong> agent, I help buyers find
+                As a <strong>Centennial Hills Real Estate</strong> agent, I help buyers find
                 the right balance of views, price, and proximity to amenities."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Centennial Hills Real Estate
               </cite>
             </div>
           </section>

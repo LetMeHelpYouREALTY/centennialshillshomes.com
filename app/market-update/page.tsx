@@ -53,7 +53,7 @@ const schemas = combineSchemas(
     },
     publisher: {
       "@type": "RealEstateAgent",
-      name: agentInfo.brokerage,
+      name: siteConfig.fullName,
       url: siteConfig.url,
     },
     mainEntityOfPage: `${siteConfig.url}/market-update`,
@@ -96,7 +96,7 @@ export default function MarketUpdatePage() {
             <h2>How Dr. Jan Duffy reads this week&apos;s MLS</h2>
             <p>
               Valley-wide headlines hide what matters on a specific street in Centennial Hills.
-              Dr. Jan Duffy, REALTOR® with {agentInfo.brokerage}, reviews active listings, pending
+              Dr. Jan Duffy, REALTOR® with Centennial Hills Real Estate, reviews active listings, pending
               sales, and closed comps in the same subdivision and price band as your home — then
               explains list-to-sale ratios and days on market in plain language.
             </p>
@@ -152,7 +152,7 @@ export default function MarketUpdatePage() {
                   </li>
                   <li className="flex items-start">
                     <ArrowRight className="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" />
-                    Berkshire Hathaway HomeServices marketing reach for qualified buyers
+                    Centennial Hills Real Estate marketing reach for qualified buyers
                   </li>
                 </ul>
               </div>
@@ -195,7 +195,7 @@ export default function MarketUpdatePage() {
                 Market analysis
               </Link>
             </div>
-            <p className="mt-4 text-blue-200 text-sm">{agentInfo.brokerage}</p>
+            <p className="mt-4 text-blue-200 text-sm">Centennial Hills Real Estate</p>
           </section>
           <PageLastUpdated />
         </div>

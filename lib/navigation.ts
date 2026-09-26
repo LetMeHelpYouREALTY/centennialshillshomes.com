@@ -72,7 +72,7 @@ export const sellerNav: NavGroup = {
     {
       href: "/sellers",
       label: "Home Selling Services",
-      description: "List and sell with BHHS marketing",
+      description: "List and sell with Dr. Jan marketing",
     },
     {
       href: "/sell-home-centennial-hills",
@@ -218,7 +218,7 @@ export const footerQuickLinks: NavLink[] = [
   { href: siteConfigListingsUrl(), label: "Search All Listings", external: true },
   { href: "/neighborhoods/centennial-hills", label: "Centennial Hills Homes" },
   { href: "/centennial-hills-realtor", label: "Centennial Hills REALTOR®" },
-  { href: "/why-berkshire-hathaway", label: "Why Berkshire Hathaway" },
+  { href: "/about", label: "About Dr. Jan Duffy" },
   { href: "/faq", label: "FAQ" },
   { href: "/google-business", label: "Google Reviews & Hours" },
 ];
@@ -259,7 +259,6 @@ export const sitemapPaths: Array<{
   { path: "/faq", priority: 0.8, changeFrequency: "monthly" },
   { path: "/home-valuation", priority: 0.85, changeFrequency: "monthly" },
   { path: "/google-business", priority: 0.75, changeFrequency: "monthly" },
-  { path: "/why-berkshire-hathaway", priority: 0.7, changeFrequency: "monthly" },
   { path: "/buyers", priority: 0.8, changeFrequency: "monthly" },
   { path: "/buyers/first-time-buyers", priority: 0.75, changeFrequency: "monthly" },
   { path: "/buyers/california-relocator", priority: 0.75, changeFrequency: "monthly" },

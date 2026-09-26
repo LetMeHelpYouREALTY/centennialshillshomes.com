@@ -15,7 +15,7 @@ export const servicePages: Record<string, ServicePageContent> = {
     widgetHtml: `<realscout-advanced-search agent-encoded-id="${agentId}"></realscout-advanced-search>`,
     body: [
       "Dr. Jan Duffy specializes in luxury and move-up homes in Centennial Hills and adjacent northwest Las Vegas communities, with a focus on the $400K–$750K range.",
-      "From pricing strategy to same-day showings, you receive executive-level service backed by Berkshire Hathaway HomeServices Nevada Properties.",
+      "From pricing strategy to same-day showings, you receive executive-level service backed by Centennial Hills Real Estate.",
     ],
   },
   "market-analysis": {
@@ -44,7 +44,7 @@ export const servicePages: Record<string, ServicePageContent> = {
     title: "California Buyers Relocating to Centennial Hills",
     description:
       "Relocate California equity into Centennial Hills and northwest Las Vegas homes with Dr. Jan Duffy.",
-    heroSubtitle: "Deploy equity into Las Vegas with a trusted local BHHS advisor",
+    heroSubtitle: "Deploy equity into Las Vegas with a trusted local Dr. Jan advisor",
     image: siteImages.services.californiaEquityBuyers,
     body: [
       "California relocators benefit from hyperlocal knowledge of Centennial Hills, Summerlin West, and guard-gated communities near Red Rock.",

@@ -18,19 +18,19 @@ export const metadata: Metadata = {
   alternates: { canonical: "/55-plus-communities/solera-anthem" },
   title: "Solera at Anthem Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Solera at Anthem - intimate guard-gated 55+ community in Henderson. Homes from $380K-$650K. Lower HOA fees, close-knit atmosphere. Dr. Jan Duffy, BHHS. Call (702) 903-1952.",
+    "Solera at Anthem - intimate guard-gated 55+ community in Henderson. Homes from $380K-$650K. Lower HOA fees, close-knit atmosphere. Dr. Jan Duffy. Call (702) 903-1952.",
   keywords: [
     "Solera at Anthem homes for sale",
     "Solera Anthem Henderson",
     "guard-gated 55+ community Henderson",
     "Henderson 55+ communities",
     "intimate 55+ community Las Vegas",
-    "Berkshire Hathaway Solera Anthem",
+    " Solera Anthem",
   ],
   openGraph: {
     title: "Solera at Anthem - Intimate Guard-Gated 55+ in Henderson",
     description:
-      "Close-knit community with guard-gated security. Lower HOA fees, Henderson safety. From $380K. Dr. Jan Duffy, BHHS.",
+      "Close-knit community with guard-gated security. Lower HOA fees, Henderson safety. From $380K. Dr. Jan Duffy.",
     type: "website",
   },
 };
@@ -150,7 +150,7 @@ export default function SoleraAnthemPage() {
                 community demographic.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
+                <strong>Centennial Hills Real Estate</strong>{" "}
                 helps buyers who value community over amenity overload. Dr. Jan
                 Duffy understands why some buyers prefer Solera's intimate scale
                 and all-55+ requirement to larger developments.
@@ -377,12 +377,12 @@ export default function SoleraAnthemPage() {
                 overwhelming. It's intimate, genuinely guard-gated, and everyone
                 is actually 55+. The community feels like a neighborhood, not a
                 small city. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I often
+                <strong>Centennial Hills Real Estate</strong> agent, I often
                 recommend Solera to buyers who prioritize community connection
                 over endless amenities."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Centennial Hills Real Estate
               </cite>
             </div>
           </section>

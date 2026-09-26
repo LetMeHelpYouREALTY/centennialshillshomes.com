@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/neighborhoods/southern-highlands" },
   title: "Southern Highlands Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Find Southern Highlands homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier golf community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
+    "Find Southern Highlands homes with Centennial Hills Real Estate. Dr. Jan Duffy specializes in this premier golf community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
   keywords: [
     "Southern Highlands Homes for Sale",
     "Southern Highlands homes for sale",
@@ -80,7 +80,7 @@ export default function SouthernHighlandsPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Southern Highlands Homes for Sale
@@ -90,7 +90,7 @@ export default function SouthernHighlandsPage() {
             </h1>
             <p className="text-xl text-slate-600">
               Premier golf course living in southwest Las Vegas. Discover Southern Highlands with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
+              <strong>Centennial Hills Real Estate</strong> and Dr. Jan Duffy.
             </p>
           </div>
           <CurrentMarketBand area="Southern Highlands" zipLabel="89141" />
@@ -105,7 +105,7 @@ export default function SouthernHighlandsPage() {
                 <strong>Southern Highlands</strong> stands as southwest Las Vegas's answer to Summerlin—a
                 meticulously planned 2,200-acre community centered around an award-winning championship
                 golf course. For buyers seeking luxury living with convenient access to the Strip, airport,
-                and I-15 corridor, <strong>Berkshire Hathaway HomeServices</strong> considers Southern
+                and I-15 corridor, <strong>Centennial Hills Real Estate</strong> considers Southern
                 Highlands among Las Vegas's finest residential options.
               </p>
               <p>
@@ -117,12 +117,12 @@ export default function SouthernHighlandsPage() {
                 entire community's aesthetic.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> has represented buyers
+                <strong>Centennial Hills Real Estate</strong> has represented buyers
                 and sellers in Southern Highlands for over two decades. Dr. Jan Duffy understands the
                 community's various sections—from the guard-gated luxury estates surrounding the golf
                 course to the established residential streets in the community's newer phases. Whether
                 you're seeking a golf course lot with Strip views or a spacious family home with top-rated
-                schools, BHHS has the local expertise to guide your search.
+                schools, Dr. Jan has the local expertise to guide your search.
               </p>
 
               {/* Community Highlights */}
@@ -270,10 +270,10 @@ export default function SouthernHighlandsPage() {
                 from $500,000 in non-gated sections to over $3 million for golf course estates.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for Southern Highlands means
+                Choosing <strong>Centennial Hills Real Estate</strong> for Southern Highlands means
                 working with agents who understand the community's unique value proposition. Dr. Jan Duffy
                 can explain the differences between various sections, which lots offer the best views,
-                and how HOA fees vary across the community. This knowledge, combined with the BHHS
+                and how HOA fees vary across the community. This knowledge, combined with the Dr. Jan
                 reputation for excellence, ensures Southern Highlands buyers and sellers receive
                 exceptional service.
               </p>
@@ -284,13 +284,13 @@ export default function SouthernHighlandsPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Southern Highlands delivers luxury living at prices that often surprise buyers—especially
-                those relocating from California. You get championship golf, guard-gated security, mountain
-                views, and excellent schools, all just 15 minutes from the Strip. As a Berkshire Hathaway
-                HomeServices agent, I help clients see beyond the golf course to the community's full potential."
+                "Southern Highlands delivers luxury living at prices that often surprise buyers relocating
+                from California. You get championship golf, guard-gated security, and mountain views,
+                about 15 minutes from the Strip. I help clients look at the lot, the HOA, and the comps,
+                not just the golf course."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Centennial Hills Real Estate
               </cite>
             </div>
           </section>
@@ -359,7 +359,7 @@ export default function SouthernHighlandsPage() {
               Call (702) 903-1952
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </p>
           </section>
         </div>

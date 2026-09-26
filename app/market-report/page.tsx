@@ -22,7 +22,7 @@ export const metadata: Metadata = buildPageMetadata({
     "Centennial Hills market report",
     "Las Vegas home prices",
     "89144 CMA",
-    "Berkshire Hathaway HomeServices",
+    "Centennial Hills Real Estate",
   ],
 });
 
@@ -63,14 +63,14 @@ export default function MarketReportPage() {
 
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices · {CONTENT_LAST_UPDATED_LABEL}
+              Centennial Hills Real Estate · {CONTENT_LAST_UPDATED_LABEL}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Centennial Hills Market Report
             </h1>
             <p className="text-lg font-semibold text-blue-700 mb-4">{agentHeadingLine()}</p>
             <p className="text-xl text-slate-600">
-              Expert analysis from {agentInfo.brokerage} using current MLS listings — not a frozen
+              Expert analysis from Centennial Hills Real Estate using current MLS listings — not a frozen
               January dashboard.
             </p>
           </div>
@@ -107,7 +107,7 @@ export default function MarketReportPage() {
                 Call me and I will send the comps.&quot;
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — {agentInfo.name}, {agentInfo.brokerage}
+                — {agentInfo.name}, Centennial Hills Real Estate
               </cite>
             </div>
             <div className="mt-8 grid md:grid-cols-2 gap-6">
@@ -130,7 +130,7 @@ export default function MarketReportPage() {
                 <ul className="space-y-2 text-slate-600">
                   <li>• List price from active competition on your street</li>
                   <li>• Staging and photo plan before going live</li>
-                  <li>• BHHS marketing to local and out-of-state buyers</li>
+                  <li>• Dr. Jan marketing to local and out-of-state buyers</li>
                 </ul>
               </div>
             </div>

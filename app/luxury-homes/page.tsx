@@ -20,15 +20,15 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/luxury-homes" },
-  title: "Las Vegas Luxury Homes for Sale | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Luxury Homes for Sale | Centennial Hills Real Estate",
   description:
-    "Discover Las Vegas luxury real estate with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 903-1952.",
+    "Discover Las Vegas luxury real estate with Dr. Jan Duffy at Centennial Hills Real Estate. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 903-1952.",
   keywords: [
     "Las Vegas luxury homes",
     "The Ridges Las Vegas",
     "Summerlin luxury real estate",
     "Southern Highlands homes",
-    "Berkshire Hathaway luxury",
+    " luxury",
     "million dollar homes Las Vegas",
     "MacDonald Highlands Henderson",
     "luxury real estate agent Las Vegas",
@@ -125,13 +125,13 @@ export default function LuxuryHomesPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Luxury Homes for Sale in Centennial Hills
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              <strong>Berkshire Hathaway HomeServices</strong> represents the gold standard in
+              <strong>Centennial Hills Real Estate</strong> represents the gold standard in
               luxury real estate. When you're buying or selling a $1M+ home, trust matters more than
               ever. Our global network, discretion, and expertise ensure your luxury transaction 
               receives the exceptional service it deserves.
@@ -145,14 +145,14 @@ export default function LuxuryHomesPage() {
 
           <CurrentMarketBand area="Las Vegas luxury" zipLabel="89135, 89144" heading="Current luxury inventory via live MLS" />
 
-          {/* Why BHHS for Luxury */}
+          {/* Why Dr. Jan for Luxury */}
           <section className="mb-16 max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              Why Choose Berkshire Hathaway for Luxury Real Estate
+              Why Choose  for Luxury Real Estate
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               In luxury real estate, the agent you choose can impact both the sale price and 
-              the transaction experience. Berkshire Hathaway HomeServices agents bring resources, 
+              the transaction experience. Centennial Hills Real Estate agents bring resources, 
               reputation, and expertise that make a measurable difference in this competitive segment.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -160,7 +160,7 @@ export default function LuxuryHomesPage() {
                 {
                   icon: Shield,
                   title: "Trusted Brand",
-                  desc: "The Berkshire Hathaway name commands respect and attracts serious, qualified buyers to your property",
+                  desc: "The  name commands respect and attracts serious, qualified buyers to your property",
                 },
                 {
                   icon: Globe,
@@ -201,13 +201,13 @@ export default function LuxuryHomesPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Luxury buyers expect discretion, market expertise, and flawless execution. In this
                 price range, one wrong move can cost hundreds of thousands of dollars. That's why
-                the Berkshire Hathaway HomeServices name matters—it tells buyers and sellers alike
+                the Centennial Hills Real Estate name matters—it tells buyers and sellers alike
                 that they're working with the best. I've helped clients purchase and sell homes from 
                 $1 million to over $10 million, and every transaction receives my full attention 
-                and the complete resources of BHHS."
+                and the complete resources of Dr. Jan."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties | Serving Las Vegas Since 2008
+                — Dr. Jan Duffy, Centennial Hills Real Estate | Serving Las Vegas Since 2008
               </cite>
             </div>
           </section>
@@ -264,7 +264,7 @@ export default function LuxuryHomesPage() {
             <p className="text-blue-100 text-center max-w-3xl mx-auto mb-8">
               Selling a luxury home requires more than just an MLS listing. Dr. Jan Duffy provides 
               comprehensive marketing services that showcase your property to qualified buyers 
-              worldwide through Berkshire Hathaway HomeServices' premium marketing channels.
+              worldwide through Centennial Hills Real Estate' premium marketing channels.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               {luxuryServices.map((service) => (
@@ -317,9 +317,8 @@ export default function LuxuryHomesPage() {
                   For Luxury Sellers
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  World-class marketing that reaches qualified buyers globally. The Berkshire 
-                  Hathaway brand attracts serious buyers and commands premium prices for 
-                  exceptional properties.
+                  The home is priced from current comps and marketed to buyers already searching
+                  that community.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-center text-slate-700">
@@ -364,15 +363,15 @@ export default function LuxuryHomesPage() {
                 },
                 {
                   q: "Can I sell my luxury home privately without public listing?",
-                  a: "Yes. Dr. Jan offers confidential, off-market sales for clients who prefer discretion. Berkshire Hathaway HomeServices' network can connect your property with qualified buyers without public marketing, protecting your privacy while still reaching serious buyers.",
+                  a: "Yes. Dr. Jan offers confidential, off-market sales for clients who prefer discretion. Centennial Hills Real Estate' network can connect your property with qualified buyers without public marketing, protecting your privacy while still reaching serious buyers.",
                 },
                 {
                   q: "What commission do you charge for luxury home sales?",
-                  a: "Commission rates are negotiable and discussed during your consultation. Dr. Jan provides transparent pricing based on your property and marketing needs. The value of Berkshire Hathaway's global reach and reputation often results in higher sale prices that more than offset commission.",
+                  a: "Commission rates are negotiable and discussed during your consultation. Dr. Jan provides transparent pricing based on your property and marketing needs. The value of the global reach and reputation often results in higher sale prices that more than offset commission.",
                 },
                 {
                   q: "Do you work with international buyers?",
-                  a: "Yes. Berkshire Hathaway HomeServices' global network includes agents in major international markets. Dr. Jan has experience working with buyers from Asia, Europe, and the Middle East who are interested in Las Vegas luxury properties.",
+                  a: "Yes. Centennial Hills Real Estate' global network includes agents in major international markets. Dr. Jan has experience working with buyers from Asia, Europe, and the Middle East who are interested in Las Vegas luxury properties.",
                 },
                 {
                   q: "What's the process for buying a luxury home in Las Vegas?",
@@ -394,7 +393,7 @@ export default function LuxuryHomesPage() {
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Whether buying or selling a luxury property, Dr. Jan Duffy provides the expertise and
-              Berkshire Hathaway prestige your transaction deserves. Confidential consultations 
+               prestige your transaction deserves. Confidential consultations 
               available for discerning clients.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -413,7 +412,7 @@ export default function LuxuryHomesPage() {
               </Link>
             </div>
             <p className="mt-4 text-slate-400 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </p>
           </section>
         </div>

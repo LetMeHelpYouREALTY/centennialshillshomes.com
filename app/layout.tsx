@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     "89135 Las Vegas",
     "Dr. Jan Duffy",
     "northwest Las Vegas REALTOR",
-    "Berkshire Hathaway HomeServices",
+    "Centennial Hills Real Estate",
     "Red Rock Country Club",
     "Summerlin West",
   ],

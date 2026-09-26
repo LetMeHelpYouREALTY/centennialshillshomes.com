@@ -22,12 +22,12 @@ import AgentPortrait from "@/components/AgentPortrait";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/services" },
-  title: "Real Estate Services Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Real Estate Services Las Vegas | Centennial Hills Real Estate",
   description:
-    "Comprehensive real estate services from Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Buying, selling, luxury, investment, relocation, 55+ communities, and new construction. Call (702) 903-1952.",
+    "Comprehensive real estate services from Dr. Jan Duffy at Centennial Hills Real Estate. Buying, selling, luxury, investment, relocation, 55+ communities, and new construction. Call (702) 903-1952.",
   keywords: [
     "Las Vegas real estate services",
-    "Berkshire Hathaway services",
+    " services",
     "home buying Las Vegas",
     "home selling Henderson",
     "luxury real estate services",
@@ -63,7 +63,7 @@ const coreServices = [
     title: "Home Selling Services",
     slug: "sellers",
     description:
-      "Maximize your home's value with professional marketing, accurate pricing, and expert negotiation from Berkshire Hathaway HomeServices—the most trusted name in real estate.",
+      "Maximize your home's value with professional marketing, accurate pricing, and expert negotiation from Centennial Hills Real Estate—the most trusted name in real estate.",
     highlights: ["World-class marketing", "Accurate pricing", "Global exposure", "Staging guidance"],
     stats: { label: "Homes Sold", value: "500+" },
   },
@@ -101,7 +101,7 @@ const specializedServices = [
     title: "Relocation Services",
     slug: "relocation",
     description:
-      "Comprehensive relocation assistance for moves to Las Vegas. Berkshire Hathaway HomeServices' global network of 50,000+ agents makes interstate transitions seamless.",
+      "Comprehensive relocation assistance for moves to Las Vegas. Centennial Hills Real Estate' global network of 50,000+ agents makes interstate transitions seamless.",
     highlights: ["Neighborhood matching", "School research", "Remote buying", "Moving coordination"],
   },
   {
@@ -159,7 +159,7 @@ const sellerTypes = [
   {
     title: "Relocation Sellers",
     href: "/sellers/relocation",
-    description: "Selling from out of state? Remote coordination with BHHS network support.",
+    description: "Selling from out of state? Remote coordination with Dr. Jan network support.",
   },
 ];
 
@@ -176,14 +176,14 @@ export default function ServicesPage() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <AgentPortrait size="xl" priority className="mx-auto mb-6" />
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Centennial Hills Realtor Services
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Comprehensive real estate solutions from Dr. Jan Duffy, backed by the most trusted
-              name in the business—<strong>Berkshire Hathaway HomeServices</strong>. Whether you're 
+              name in the business—<strong>Centennial Hills Real Estate</strong>. Whether you're 
               buying your first home, selling a luxury estate, or relocating from California, 
               you'll receive expert guidance every step of the way.
             </p>
@@ -211,8 +211,8 @@ export default function ServicesPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               These foundational services cover the majority of real estate transactions in Las Vegas. 
               Each service is delivered with the professionalism, resources, and ethical standards 
-              that define Berkshire Hathaway HomeServices—the only real estate brand backed by 
-              Warren Buffett's Berkshire Hathaway Inc.
+              that define Centennial Hills Real Estate—the only real estate brand backed by 
+              Centennial Hills
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {coreServices.map((service) => {
@@ -364,12 +364,12 @@ export default function ServicesPage() {
           {/* Value Proposition */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">
-              The Berkshire Hathaway HomeServices Difference
+              The Centennial Hills Real Estate Difference
             </h2>
             <p className="text-lg text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              When you work with a Berkshire Hathaway HomeServices agent, you're backed by a name
+              When you work with a Centennial Hills Real Estate agent, you're backed by a name
               synonymous with trust, ethical standards, and financial strength—the same principles
-              that built Warren Buffett's empire. This isn't just a logo; it's a commitment to 
+              that built empire. This isn't just a logo; it's a commitment to 
               putting your interests first.
             </p>
             <div className="grid md:grid-cols-4 gap-6 text-center mb-8">
@@ -395,7 +395,7 @@ export default function ServicesPage() {
                 <Shield className="h-10 w-10 text-blue-400 mx-auto mb-3" />
                 <h3 className="font-bold mb-2">Financial Strength</h3>
                 <p className="text-slate-400 text-sm">
-                  Backed by Berkshire Hathaway Inc., providing unmatched stability and trust
+                  Backed by Centennial Hills, providing unmatched stability and trust
                 </p>
               </div>
               <div className="text-center">
@@ -424,7 +424,7 @@ export default function ServicesPage() {
               Whether you're buying or selling, the process begins with a free consultation 
               to understand your goals, timeline, and unique circumstances. From there, 
               Dr. Jan creates a customized strategy that leverages the full resources of 
-              Berkshire Hathaway HomeServices to achieve the best possible outcome.
+              Centennial Hills Real Estate to achieve the best possible outcome.
             </p>
             <div className="space-y-6">
               <div className="flex items-start">
@@ -484,7 +484,7 @@ export default function ServicesPage() {
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy in Centennial Hills for a free consultation about any of our real estate services. 
               Whether you're buying, selling, investing, or relocating, you'll receive expert 
-              guidance backed by Berkshire Hathaway HomeServices.
+              guidance backed by Centennial Hills Real Estate.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -502,7 +502,7 @@ export default function ServicesPage() {
               </Link>
             </div>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </p>
           </section>
         </div>

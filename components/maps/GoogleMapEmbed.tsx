@@ -20,7 +20,7 @@ export default function GoogleMapEmbed() {
         <div className="mt-8 grid gap-6 lg:grid-cols-5">
           <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-sm lg:col-span-3">
             <iframe
-              title={`Map to ${officeInfo.name} at ${officeInfo.address.full}`}
+              title={`Map to $Centennial Hills Real Estate at ${officeInfo.address.full}`}
               src={OSM_EMBED}
               className="h-[320px] w-full border-0 md:h-[400px]"
               loading="lazy"
@@ -28,7 +28,7 @@ export default function GoogleMapEmbed() {
             />
           </div>
           <div className="rounded-2xl border border-terracotta/20 bg-ivory p-6 lg:col-span-2">
-            <p className="font-display text-2xl text-ink">{officeInfo.name}</p>
+            <p className="font-display text-2xl text-ink">Centennial Hills Real Estate</p>
             <p className="mt-3 text-stone-700">{officeInfo.address.full}</p>
             <p className="mt-2 text-sm text-stone-500">{siteConfig.hoursLabel}</p>
             <div className="mt-6 flex flex-col gap-3">

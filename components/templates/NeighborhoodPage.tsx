@@ -41,7 +41,7 @@ function neighborhoodFaqs(data: NeighborhoodPageData): FaqItem[] {
   return [
     {
       question: `Does Dr. Jan Duffy serve ${area}?`,
-      answer: `Yes. Dr. Jan Duffy specializes in ${area} and northwest Las Vegas with same-day showings, complimentary market analysis, and Berkshire Hathaway HomeServices representation. Call ${agentInfo.phone}.`,
+      answer: `Yes. Dr. Jan Duffy specializes in ${area} and northwest Las Vegas with same-day showings, complimentary market analysis, and Centennial Hills Real Estate representation. Call ${agentInfo.phone}.`,
     },
     {
       question: `What is the home price range in ${area}?`,

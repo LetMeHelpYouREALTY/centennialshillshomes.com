@@ -18,7 +18,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/buyers/california-relocator" },
-  title: "Relocating from California to Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Relocating from California to Las Vegas | Centennial Hills Real Estate",
   description:
     "Moving from California to Las Vegas? Zero state income tax, 40-60% lower home prices, same sunshine. Dr. Jan Duffy helps CA relocators find their perfect Las Vegas home. Call (702) 903-1952.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "California relocator Las Vegas",
     "no state income tax Nevada",
     "Las Vegas homes California buyers",
-    "Berkshire Hathaway HomeServices relocation",
+    "Centennial Hills Real Estate relocation",
   ],
 };
 
@@ -449,12 +449,12 @@ export default function CaliforniaRelocatorPage() {
                 "I've helped hundreds of California families make the move to Las Vegas. The most
                 common reaction? 'Why didn't we do this sooner?' Between the tax savings, the space,
                 and the lifestyle, most clients can't believe what their California equity buys here.
-                As a <strong>Berkshire Hathaway HomeServices</strong> agent, I coordinate with our
+                As a <strong>Centennial Hills Real Estate</strong> agent, I coordinate with our
                 California offices to make the transition seamless—you don't have to figure this
                 out alone."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Centennial Hills Real Estate
               </cite>
             </div>
           </section>
@@ -484,7 +484,7 @@ export default function CaliforniaRelocatorPage() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </p>
           </section>
         </div>

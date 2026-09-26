@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   keywords: [
     "Dr. Jan Duffy realtor",
     "Las Vegas real estate agent",
-    "Berkshire Hathaway HomeServices Las Vegas",
+    "Centennial Hills Real Estate Las Vegas",
     "Summerlin realtor",
     "Henderson real estate agent",
     "55+ communities Las Vegas",
@@ -71,12 +71,12 @@ export default function GoogleBusinessPage() {
                 <div>
                   <div className="flex items-center gap-2 mb-4">
                     <Award className="h-6 w-6 text-yellow-400" />
-                    <span className="text-yellow-400 font-semibold">Berkshire Hathaway HomeServices</span>
+                    <span className="text-yellow-400 font-semibold">Centennial Hills Real Estate</span>
                   </div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     {businessInfo.name}
                   </h1>
-                  <p className="text-xl text-blue-200 mb-2">License {businessInfo.license}</p>
+                  <p className="text-xl text-blue-200 mb-2"></p>
                   <p className="text-slate-300 mb-6">Nevada Properties</p>
                   
                   {/* NAP - Exact match to GBP */}

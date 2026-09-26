@@ -94,7 +94,7 @@ export const LocalBusinessSchema = component$<LocalBusinessSchemaProps>(
 			}),
 			memberOf: {
 				"@type": "Organization",
-				name: "Berkshire Hathaway HomeServices Nevada Properties",
+				name: "Centennial Hills Real Estate",
 			},
 			openingHours: hours,
 			serviceArea: areasServed.map((area) => ({

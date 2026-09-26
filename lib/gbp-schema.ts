@@ -65,7 +65,7 @@ export const businessInfo = {
   services: [
     { name: "Building lots for sale", description: "Vacant lots in Centennial Hills and northwest Las Vegas, including 89144, 89138, and 89135." },
     { name: "Buying agent services", description: "Buyer representation for homes in Centennial Hills, with same-day showings and a written offer strategy." },
-    { name: "Commercial real estate", description: "Commercial purchase and sale guidance in northwest Las Vegas through Berkshire Hathaway HomeServices Nevada Properties." },
+    { name: "Commercial real estate", description: "Commercial purchase and sale guidance in northwest Las Vegas through Centennial Hills Real Estate." },
     { name: "First-time home buyer services", description: "Step-by-step buying help for a first Las Vegas purchase, including loan-type options and offer timing." },
     { name: "Luxury property buying and sales", description: "Luxury listings and purchases in Centennial Hills, Skye Canyon, and nearby northwest Las Vegas communities." },
     { name: "New real estate", description: "Newly listed homes in Centennial Hills, matched to price, size, and preferred ZIP." },
@@ -142,12 +142,12 @@ export const businessInfo = {
 // 750-word GBP Description (3 sections)
 export const gbpDescription = {
   // Section 1: Who you are/mission (~250 words)
-  whoWeAre: `Dr. Jan Duffy is a trusted REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, serving the Las Vegas real estate market since 2008. Backed by Warren Buffett's Berkshire Hathaway—the most recognized name in real estate—Dr. Jan combines local expertise with world-class resources to deliver exceptional results for buyers and sellers alike.
+  whoWeAre: `Dr. Jan Duffy is a REALTOR® with Centennial Hills Real Estate, serving northwest Las Vegas since 2008. She prices from current comps and stays on the file until it closes.
 
-Dr. Jan holds Nevada license S.0197614.LLC and works from 1490 Center Crossing Rd, Las Vegas, NV 89144. The Google Business Profile shows 5.0 from 1 Google review. Call (702) 903-1952, daily 8:00 AM–8:00 PM.`,
+The office is 1490 Center Crossing Rd, Las Vegas, NV 89144. The Google Business Profile shows 5.0 from 1 Google review. Call (702) 903-1952, daily 8:00 AM–8:00 PM.`,
 
   // Section 2: What/why - Value proposition (~250 words)
-  whatWeDo: `What sets Dr. Jan apart is a commitment to education and advocacy. Clients receive comprehensive market analysis, expert negotiation, and honest advice—not sales pressure. As a Berkshire Hathaway HomeServices agent, Dr. Jan offers access to a global network of 50,000+ agents, world-class marketing for sellers, and off-market opportunities for buyers.
+  whatWeDo: `What sets Dr. Jan apart is a commitment to education and advocacy. Clients receive comprehensive market analysis, expert negotiation, and honest advice—not sales pressure. As a Centennial Hills Real Estate agent, Dr. Jan offers access to a global network of 50,000+ agents, world-class marketing for sellers, and off-market opportunities for buyers.
 
 Services on the Google Business Profile: building lots for sale, buying agent services, commercial real estate, first-time home buyer services, luxury property buying and sales, new real estate, new construction, property management, real estate investment, real estate management, relocation services, and seller's agent services.
 
@@ -176,7 +176,7 @@ export const gbpFAQs = [
     answer: "Dr. Jan specializes in Sun City Summerlin (Nevada's largest 55+ community with 7,700+ homes), Sun City Anthem in Henderson, Del Webb Lake Las Vegas, and Solera at Anthem. Each community offers different amenities and price points for active adult living.",
   },
   {
-    question: "Does Berkshire Hathaway HomeServices help with new construction?",
+    question: "Does Centennial Hills Real Estate help with new construction?",
     answer: "Yes! Dr. Jan provides free buyer representation for new construction purchases from builders like Toll Brothers, Lennar, and Century Communities. The builder pays the commission, but Dr. Jan works exclusively for you—protecting your interests during the build process.",
   },
   {
@@ -192,8 +192,8 @@ export const gbpFAQs = [
     answer: "Absolutely! Dr. Jan guides first-time buyers through every step, including pre-approval, loan programs (FHA 3.5% down, VA 0% down, conventional options), Nevada down payment assistance programs, and new construction incentives. Free buyer consultations available.",
   },
   {
-    question: "Why choose Berkshire Hathaway HomeServices over other agencies?",
-    answer: "Berkshire Hathaway HomeServices is backed by Warren Buffett's Berkshire Hathaway Inc.—the only real estate brand with this level of financial stability and trust. You get a global network of 50,000+ agents, world-class marketing, and a name synonymous with integrity.",
+    question: "Why choose Centennial Hills Real Estate over other agencies?",
+    answer: "Dr. Jan Duffy works from 1490 Center Crossing Rd in Centennial Hills, prices from current comps, and is available daily 8:00 AM–8:00 PM. Call (702) 903-1952.",
   },
   {
     question: "How do I schedule a consultation with Dr. Jan Duffy?",

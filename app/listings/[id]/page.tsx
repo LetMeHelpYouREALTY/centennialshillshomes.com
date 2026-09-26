@@ -122,7 +122,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
               <div className="bg-white border border-slate-200 rounded-lg p-6 sticky top-24">
                 <h2 className="text-xl font-bold text-slate-900 mb-4">Contact Dr. Jan Duffy</h2>
                 <p className="text-slate-600 mb-1">{agentInfo.name}, {agentInfo.title}</p>
-                <p className="text-sm text-slate-600 mb-4">{agentInfo.brokerage}</p>
+                <p className="text-sm text-slate-600 mb-4">Centennial Hills Real Estate</p>
                 <p className="text-sm text-slate-600 mb-2 flex items-start">
                   <MapPin className="h-4 w-4 mr-2 mt-0.5 shrink-0" />
                   {officeInfo.address.full}

@@ -5,9 +5,10 @@ export const siteConfig = {
   name: "Centennial Hills Homes",
   fullName: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
   tagline: "Northwest Las Vegas Luxury & Move-Up Homes",
-  brandLine:
-    "Centennial Hills Real Estate | Berkshire Hathaway HomeServices Nevada Properties",
-  brandName: "Berkshire Hathaway HomeServices",
+  logoTitle: "Centennial Hills Real Estate",
+  logoSubtitle: "Homes by Dr. Jan Duffy",
+  brandLine: "Homes by Dr. Jan Duffy",
+  brandName: "Centennial Hills Real Estate",
   shortName: "Centennial Hills Homes",
   url: "https://www.centennialhillshomesforsale.com",
   description:
@@ -119,7 +120,7 @@ export const agentStats = {
 };
 
 export const valuePropositions = {
-  main: "Northwest Las Vegas expertise backed by Berkshire Hathaway HomeServices — trusted brand, ethical standards, and a global referral network when you buy or sell in Centennial Hills.",
+  main: "Northwest Las Vegas expertise for buyers and sellers in Centennial Hills — same-day showings, current comps, and a clear next step.",
   trust:
     "Dr. Jan Duffy focuses on Centennial Hills and adjacent communities (89135, 89138, 89144) with same-day showings, complimentary market analysis, and executive-level service.",
   expertise:

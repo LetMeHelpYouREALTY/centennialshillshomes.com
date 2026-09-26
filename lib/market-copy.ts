@@ -39,7 +39,7 @@ export function areaTourFaq(area: string): FaqItem {
 export function areaRepresentationFaq(area: string): FaqItem {
   return {
     question: `Does Dr. Jan Duffy represent buyers and sellers in ${area}?`,
-    answer: `Yes. Dr. Jan Duffy, REALTOR® (license ${agentInfo.license}) with ${agentInfo.brokerage}, represents buyers and sellers in ${area} and northwest Las Vegas ZIP codes 89144, 89138, and 89135. Buyer representation on resale and new construction is typically paid by the listing side.`,
+    answer: `Yes. Dr. Jan Duffy, REALTOR® with Centennial Hills Real Estate, represents buyers and sellers in ${area} and northwest Las Vegas ZIP codes 89144, 89138, and 89135. Buyer representation on resale and new construction is typically paid by the listing side.`,
   };
 }
 
@@ -75,6 +75,6 @@ export const listingTourFaqs: FaqItem[] = [
   },
   {
     question: "Who is the listing agent for these homes?",
-    answer: `Office listings shown in the widget are associated with Dr. Jan Duffy, ${agentInfo.brokerage}, 1490 Center Crossing Rd, Las Vegas, NV 89144. Call ${agentInfo.phone} to confirm a specific MLS number.`,
+    answer: `Office listings shown in the widget are associated with Dr. Jan Duffy, Centennial Hills Real Estate, 1490 Center Crossing Rd, Las Vegas, NV 89144. Call ${agentInfo.phone} to confirm a specific MLS number.`,
   },
 ];

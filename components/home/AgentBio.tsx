@@ -23,9 +23,8 @@ export default function AgentBio() {
             negotiation and data-driven guidance from move-up homes through luxury listings.
           </p>
           <p className="mt-4 text-base leading-relaxed text-white/85 md:text-lg">
-            As a {agentInfo.brokerage} agent, she offers same-day showings, complimentary market
-            analysis, and a referral network that surfaces opportunities before they hit every
-            portal.
+            She offers same-day showings, complimentary market analysis, and a referral network
+            that surfaces opportunities before they hit every portal.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
@@ -43,7 +42,7 @@ export default function AgentBio() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-white/60">
-            License {agentInfo.license} · {officeInfo.address.full}
+            {officeInfo.address.full}
           </p>
         </div>
         <div className="flex flex-col items-center gap-6 lg:items-end">

@@ -11,7 +11,7 @@ interface ReviewsSectionProps {
 
 export default function ReviewsSection({
   title = "Google Reviews for Dr. Jan Duffy in Centennial Hills",
-  subtitle = "Verified Google ratings for Berkshire Hathaway HomeServices Nevada Properties in ZIP 89144.",
+  subtitle = "Verified Google ratings for Centennial Hills Real Estate in ZIP 89144.",
   googleReviewsUrl = siteConfig.googleReviewsUrl,
   className = "",
 }: ReviewsSectionProps) {

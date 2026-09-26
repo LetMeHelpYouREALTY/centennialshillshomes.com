@@ -15,7 +15,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/sellers/downsizing" },
-  title: "Downsizing in Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Downsizing in Las Vegas | Centennial Hills Real Estate",
   description:
     "Ready to simplify? Dr. Jan Duffy helps Las Vegas homeowners extract equity and transition to low-maintenance living. 55+ communities, condos, and more. Call (702) 903-1952.",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "sell large home Las Vegas",
     "55 plus communities Las Vegas",
     "empty nester Las Vegas",
-    "Berkshire Hathaway HomeServices downsizing",
+    "Centennial Hills Real Estate downsizing",
   ],
 };
 
@@ -431,11 +431,11 @@ export default function DownsizingPage() {
                 raised families, and now deserve to enjoy life without maintaining a 4,000 square
                 foot house. I help them extract the equity they've earned, find a home that fits
                 their current lifestyle, and often pocket significant cash for travel, grandkids,
-                or just peace of mind. As a <strong>Berkshire Hathaway HomeServices</strong> agent,
+                or just peace of mind. As a <strong>Centennial Hills Real Estate</strong> agent,
                 I have the experience and compassion this transition requires."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Centennial Hills Real Estate
               </cite>
             </div>
           </section>

@@ -58,7 +58,7 @@ export default component$<StructuredDataProps>(({ type, data }) => {
           // 2025: Add memberOf for Authoritativeness
           "memberOf": {
             "@type": "Organization",
-            "name": "Berkshire Hathaway HomeServices"
+            "name": "Centennial Hills Real Estate"
           },
           // 2025: Add award for Trustworthiness
           "award": "Top 1% REALTOR®"

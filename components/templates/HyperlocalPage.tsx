@@ -115,7 +115,7 @@ export default function HyperlocalPage({ data }: { data: HyperlocalPageData }) {
         <SectionShell
           eyebrow="Local expertise"
           title={`${data.title} — how Dr. Jan Duffy helps`}
-          subtitle="Hyperlocal guidance backed by Berkshire Hathaway HomeServices for northwest Las Vegas buyers and sellers."
+          subtitle="Hyperlocal guidance backed by Centennial Hills Real Estate for northwest Las Vegas buyers and sellers."
         >
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <div className="space-y-5">

@@ -17,19 +17,19 @@ export const metadata: Metadata = {
   alternates: { canonical: "/55-plus-communities/sun-city-aliante" },
   title: "Sun City Aliante Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Sun City Aliante - the most affordable Sun City in Las Vegas. Homes from $280K-$550K with full amenities. 18-hole golf course, pools, fitness center. Dr. Jan Duffy, BHHS. Call (702) 903-1952.",
+    "Sun City Aliante - the most affordable Sun City in Las Vegas. Homes from $280K-$550K with full amenities. 18-hole golf course, pools, fitness center. Dr. Jan Duffy. Call (702) 903-1952.",
   keywords: [
     "Sun City Aliante homes for sale",
     "Sun City Aliante Las Vegas",
     "55 plus communities North Las Vegas",
     "affordable 55+ community Las Vegas",
     "Sun City Aliante HOA fees",
-    "Berkshire Hathaway Sun City Aliante",
+    " Sun City Aliante",
   ],
   openGraph: {
     title: "Sun City Aliante - Most Affordable Sun City in Las Vegas",
     description:
-      "Full amenities at the lowest price point. Golf, pools, fitness, 100+ clubs. From $280K. Dr. Jan Duffy, BHHS Nevada Properties.",
+      "Full amenities at the lowest price point. Golf, pools, fitness, 100+ clubs. From $280K. Dr. Jan Duffy, Centennial Hills Real Estate.",
     type: "website",
   },
 };
@@ -147,7 +147,7 @@ export default function SunCityAliantePage() {
                 community's many clubs and activities.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
+                <strong>Centennial Hills Real Estate</strong>{" "}
                 helps buyers understand why Sun City Aliante represents
                 exceptional value. Dr. Jan Duffy guides clients through the
                 community's various floor plans and helps identify homes that
@@ -390,12 +390,12 @@ export default function SunCityAliantePage() {
                 full Sun City lifestyle at the best possible price. The amenities
                 are excellent, the community is active and welcoming, and you
                 simply can't beat the value. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I help
+                <strong>Centennial Hills Real Estate</strong> agent, I help
                 buyers compare all the Sun City options and understand why Aliante
                 often makes the most financial sense."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Centennial Hills Real Estate
               </cite>
             </div>
           </section>

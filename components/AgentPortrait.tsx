@@ -28,7 +28,7 @@ export default function AgentPortrait({
       alt={
         decorative
           ? ""
-          : `${agentInfo.name}, ${agentInfo.title}, ${agentInfo.brokerage}`
+          : `${agentInfo.name}, ${agentInfo.title}, Centennial Hills Real Estate`
       }
       width={320}
       height={320}

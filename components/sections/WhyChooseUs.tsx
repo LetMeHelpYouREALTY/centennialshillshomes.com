@@ -4,8 +4,8 @@ import AgentPortrait from "@/components/AgentPortrait";
 const features = [
   {
     icon: Shield,
-    title: "BHHS Nevada Properties in 89144",
-    description: "Berkshire Hathaway HomeServices brand trust with local northwest Las Vegas expertise.",
+    title: "Centennial Hills Real Estate in 89144",
+    description: "Centennial Hills Real Estate brand trust with local northwest Las Vegas expertise.",
   },
   {
     icon: TrendingUp,
@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
             Why Hire Dr. Jan Duffy in Centennial Hills
           </h2>
           <p className="text-xl text-stone-600 max-w-3xl mx-auto">
-            Northwest Las Vegas real estate with Berkshire Hathaway HomeServices backing
+            Northwest Las Vegas real estate with Centennial Hills Real Estate backing
           </p>
         </div>
 

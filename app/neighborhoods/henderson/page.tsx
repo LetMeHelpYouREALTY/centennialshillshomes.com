@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/neighborhoods/henderson" },
   title: "Henderson Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Find Henderson homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's established communities. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
+    "Find Henderson homes with Centennial Hills Real Estate. Dr. Jan Duffy specializes in Henderson's established communities. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
   keywords: [
     "Henderson Homes for Sale",
     "Henderson homes for sale",
@@ -60,10 +60,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Why choose Berkshire Hathaway HomeServices for Henderson real estate?",
+      name: "Why choose Centennial Hills Real Estate for Henderson real estate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BHHS Nevada Properties has served Henderson for decades. Our agents like Dr. Jan Duffy know every community, school district, and HOA. The Berkshire Hathaway name provides trust and resources that benefit both buyers and sellers.",
+        text: "Centennial Hills Real Estate has served Henderson for decades. Our agents like Dr. Jan Duffy know every community, school district, and HOA. The  name provides trust and resources that benefit both buyers and sellers.",
       },
     },
   ],
@@ -96,7 +96,7 @@ export default function HendersonPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Henderson Homes for Sale
@@ -106,7 +106,7 @@ export default function HendersonPage() {
             </h1>
             <p className="text-xl text-slate-600">
               Henderson, Nevada's second-largest city. Find your Henderson home with Dr. Jan Duffy, your trusted{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> Henderson specialist.
+              <strong>Centennial Hills Real Estate</strong> Henderson specialist.
             </p>
           </div>
           <CurrentMarketBand area="Henderson" />
@@ -120,7 +120,7 @@ export default function HendersonPage() {
               <p>
                 <strong>Henderson</strong> has quietly become one of the most desirable cities in the American
                 Southwest. As Nevada's second-largest city with over 320,000 residents, Henderson offers the
-                perfect balance of suburban tranquility and urban convenience. <strong>Berkshire Hathaway
+                perfect balance of suburban tranquility and urban convenience. <strong>
                 HomeServices</strong> has been helping families find their Henderson dream homes for decades,
                 and Dr. Jan Duffy brings unmatched expertise to every transaction.
               </p>
@@ -136,7 +136,7 @@ export default function HendersonPage() {
                 streets of <strong>Green Valley</strong> to the resort-style amenities of <strong>Inspirada</strong>,
                 from the luxury estates of <strong>MacDonald Highlands</strong> to the waterfront properties at
                 <strong> Lake Las Vegas</strong>—Henderson has a community for every lifestyle and budget.
-                <strong> Berkshire Hathaway HomeServices Nevada Properties</strong> agents know each of these
+                <strong> Centennial Hills Real Estate</strong> agents know each of these
                 communities intimately.
               </p>
 
@@ -284,11 +284,11 @@ export default function HendersonPage() {
                 properties exceeding $2 million in guard-gated communities.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for your Henderson home search means
+                Choosing <strong>Centennial Hills Real Estate</strong> for your Henderson home search means
                 working with agents who understand the subtle differences between Henderson's many communities.
                 Dr. Jan Duffy can explain which neighborhoods have the best schools for your children's ages,
                 which HOAs are well-managed, and which areas offer the strongest investment potential. That
-                local knowledge, backed by the resources and reputation of Berkshire Hathaway, makes all the
+                local knowledge, backed by the resources and reputation of , makes all the
                 difference.
               </p>
             </div>
@@ -299,12 +299,12 @@ export default function HendersonPage() {
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Henderson offers something for everyone—young professionals, growing families, active retirees.
-                As a Berkshire Hathaway HomeServices agent, I help clients cut through the options and find
+                As a Centennial Hills Real Estate agent, I help clients cut through the options and find
                 the community that fits their lifestyle. There's a reason Henderson keeps winning 'Best Places
                 to Live' awards."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Centennial Hills Real Estate
               </cite>
             </div>
           </section>
@@ -345,11 +345,11 @@ export default function HendersonPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Why choose Berkshire Hathaway HomeServices for Henderson real estate?
+                  Why choose Centennial Hills Real Estate for Henderson real estate?
                 </h3>
                 <p className="text-slate-600">
-                  BHHS Nevada Properties has served Henderson for decades. Our agents like Dr. Jan Duffy
-                  know every community, school district, and HOA. The Berkshire Hathaway name provides
+                  Centennial Hills Real Estate has served Henderson for decades. Our agents like Dr. Jan Duffy
+                  know every community, school district, and HOA. The  name provides
                   trust and resources that benefit both buyers and sellers.
                 </p>
               </div>
@@ -373,7 +373,7 @@ export default function HendersonPage() {
               Call (702) 903-1952
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Centennial Hills Real Estate
             </p>
           </section>
         </div>
