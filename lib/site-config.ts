@@ -12,7 +12,7 @@ export const siteConfig = {
   shortName: "Centennial Hills Homes",
   url: "https://www.centennialhillshomesforsale.com",
   description:
-    "Buying or selling in Centennial Hills? Dr. Jan Duffy, Top 1% Las Vegas REALTOR®, serves ZIP codes 89138, 89144, and 89135 with luxury homes, same-day showings, and complimentary market analysis.",
+    "Homes for sale in Centennial Hills, Las Vegas — ZIPs 89144, 89138, and 89135. Centennial Hills Real Estate, Homes by Dr. Jan Duffy. 1490 Center Crossing Rd. Call (702) 903-1952.",
   zipCodes: ["89135", "89138", "89144"],
   priceRange: "$400K-$750K",
   realScoutAgentId: "QWdlbnQtMjI1MDUw",

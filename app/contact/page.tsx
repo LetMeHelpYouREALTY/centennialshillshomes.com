@@ -8,7 +8,7 @@ import AgentPortrait from "@/components/AgentPortrait";
 import PageBreadcrumbs from "@/components/seo/PageBreadcrumbs";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Contact Dr. Jan Duffy in Centennial Hills | Centennial Hills REALTOR®",
+  title: "Contact Dr. Jan Duffy in Centennial Hills",
   description:
     "Contact Dr. Jan Duffy in Centennial Hills at 1490 Center Crossing Rd, Las Vegas NV 89144. Call (702) 903-1952 or email DrDuffy@CentennialHillsHomesForSale.com for Centennial Hills real estate.",
   path: "/contact",

@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/home-valuation" },
-  title: "Free Home Valuation Las Vegas | What's Your Home Worth? | Centennial Hills Real Estate",
+  title: "Free Home Valuation in Las Vegas",
   description:
     "Get a free, accurate home valuation in Las Vegas from Dr. Jan Duffy at Centennial Hills Real Estate. Expert CMA analysis for Summerlin, Henderson, Green Valley & all Las Vegas neighborhoods. Call (702) 903-1952.",
   keywords: [

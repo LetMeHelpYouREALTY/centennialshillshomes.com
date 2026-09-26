@@ -26,7 +26,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   alternates: { canonical: "/55-plus-communities" },
   title:
-    "55+ Communities Near Centennial Hills | Dr. Jan Duffy, REALTOR®",
+    "55+ Communities Near Centennial Hills",
   description:
     "Find your perfect 55+ community in Las Vegas. Sun City Summerlin, Sun City Aliante, Del Webb Lake Las Vegas, Heritage at Stonebridge, Solera, Trilogy. Dr. Jan Duffy specializes in active adult living. Call (702) 903-1952.",
   keywords: [
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     "55 plus homes Las Vegas",
   ],
   openGraph: {
-    title: "55+ Communities Near Centennial Hills | Dr. Jan Duffy",
+    title: "55+ Communities Near Centennial Hills | Homes by Dr. Jan Duffy",
     description:
       "Sun City, Del Webb, Heritage at Stonebridge & more—Dr. Duffy specializes in active adult living. Centennial Hills Real Estate.",
     type: "website",

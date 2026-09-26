@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/neighborhoods/southern-highlands" },
-  title: "Southern Highlands Homes for Sale | Dr. Jan Duffy, REALTOR®",
+  title: "Southern Highlands Homes for Sale",
   description:
     "Find Southern Highlands homes with Centennial Hills Real Estate. Dr. Jan Duffy specializes in this premier golf community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
   keywords: [

@@ -21,7 +21,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/buyers" },
-  title: "Home Buying Guide Las Vegas | Centennial Hills Real Estate",
+  title: "Home Buying Guide Las Vegas",
   description:
     "Looking to buy a home in Las Vegas? Dr. Jan Duffy with Centennial Hills Real Estate guides you through every step. Free buyer consultation. Call (702) 903-1952.",
   keywords: [

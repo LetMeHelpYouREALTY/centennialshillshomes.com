@@ -22,7 +22,7 @@ import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/listings" },
-  title: "Centennial Hills Homes for Sale | MLS Property Search | Centennial Hills Real Estate",
+  title: "Centennial Hills Homes for Sale | MLS Property Search",
   description:
     "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features. Dr. Jan Duffy, Centennial Hills Real Estate. Call (702) 903-1952.",
   keywords: [

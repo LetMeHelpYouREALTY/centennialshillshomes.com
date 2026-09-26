@@ -10,7 +10,7 @@ import { LocalBusinessCtaBar } from "@/components/sections/HyperlocalSections";
 import { zipNav } from "@/lib/navigation";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Centennial Hills Neighborhoods | Dr. Jan Duffy, REALTOR®",
+  title: "Centennial Hills Neighborhoods",
   description:
     "Explore northwest Las Vegas communities near Centennial Hills — Red Rock Country Club, The Ridges, Summerlin West, Lone Mountain, Henderson, and more. Dr. Jan Duffy, REALTOR®. Call (702) 903-1952.",
   path: "/neighborhoods",

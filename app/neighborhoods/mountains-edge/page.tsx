@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/neighborhoods/mountains-edge" },
-  title: "Mountains Edge Homes for Sale | Dr. Jan Duffy, REALTOR®",
+  title: "Mountains Edge Homes for Sale",
   description:
     "Find Mountains Edge homes with Centennial Hills Real Estate. Dr. Jan Duffy specializes in this southwest Las Vegas community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
   keywords: [

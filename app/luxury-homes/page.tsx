@@ -20,7 +20,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/luxury-homes" },
-  title: "Las Vegas Luxury Homes for Sale | Centennial Hills Real Estate",
+  title: "Las Vegas Luxury Homes for Sale",
   description:
     "Discover Las Vegas luxury real estate with Dr. Jan Duffy at Centennial Hills Real Estate. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 903-1952.",
   keywords: [

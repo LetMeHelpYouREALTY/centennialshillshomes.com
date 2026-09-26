@@ -20,7 +20,7 @@ import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/about" },
-  title: "About Dr. Jan Duffy | Centennial Hills REALTOR®",
+  title: "About Dr. Jan Duffy",
   description:
     "Meet Dr. Jan Duffy, your trusted Centennial Hills Real Estate agent. Serving Las Vegas since 2008, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 903-1952.",
   keywords: [

@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title,
     description,
     url,
-    siteName: siteConfig.brandLine,
+    siteName: siteConfig.fullName,
     type: "website",
     locale: "en_US",
     images: [

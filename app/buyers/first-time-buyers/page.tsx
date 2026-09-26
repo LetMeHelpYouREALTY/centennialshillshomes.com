@@ -18,7 +18,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/buyers/first-time-buyers" },
-  title: "First-Time Home Buyers Las Vegas | Centennial Hills Real Estate",
+  title: "First-Time Home Buyers Las Vegas",
   description:
     "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy at Centennial Hills Real Estate. Call (702) 903-1952.",
   keywords: [

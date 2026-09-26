@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
-import { findBrandLeaks, GBP_NAME, LOGO_SUBTITLE, LOGO_TITLE } from "./seo-geo-aeo-audit";
+import { findBrandLeaks, findDuplicateSearchTitles, GBP_NAME, LOGO_SUBTITLE, LOGO_TITLE } from "./seo-geo-aeo-audit";
 import { generateRealEstateAgentSchema } from "./schema";
 import { siteConfig } from "./site-config";
 
@@ -22,6 +22,10 @@ describe("SEO / GEO / AEO brand audit", () => {
     expect(footer).toContain("{agentInfo.brokerage} · License {agentInfo.license}");
     const leaks = findBrandLeaks(root);
     expect(leaks).toEqual([]);
+  });
+
+  it("gives Search Console one brand in each title", () => {
+    expect(findDuplicateSearchTitles(root)).toEqual([]);
   });
 
   it("keeps the schema entity name aligned with the Business Profile", () => {

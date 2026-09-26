@@ -41,8 +41,56 @@ export function withSelfCanonical(path: string, metadata: Metadata): Metadata {
 }
 
 /**
- * Consistent per-page metadata per Google SEO Starter Guide:
+ * Brand suffixes the root layout already appends via `title.template`.
+ * Google Search Central (title links, updated 2025-12-10) rewrites titles
+ * that repeat the site name.
+ */
+const REDUNDANT_TITLE_SUFFIXES = [
+  ` | ${siteConfig.brandLine}`,
+  ` | ${siteConfig.brandName}`,
+  " | Dr. Jan Duffy, REALTOR®",
+  " | Centennial Hills REALTOR®",
+  " | Dr. Jan Duffy",
+  " | Centennial Hills Homes",
+] as const;
+
+/**
+ * One topic, then one brand. The full Business Profile name is absolute so
+ * the layout template does not append the subtitle a second time.
+ */
+export function searchDocumentTitle(raw: string): { title: string; absolute: boolean } {
+  let title = raw.trim().replace(/\s+/g, " ");
+  if (title === siteConfig.fullName) {
+    return { title: siteConfig.fullName, absolute: true };
+  }
+
+  let guard = 0;
+  while (guard < REDUNDANT_TITLE_SUFFIXES.length) {
+    guard += 1;
+    const suffix = REDUNDANT_TITLE_SUFFIXES.find(
+      (item) => title.endsWith(item) && title.length > item.length,
+    );
+    if (!suffix) break;
+    title = title.slice(0, -suffix.length).trim();
+  }
+
+  if (title === siteConfig.fullName || title === siteConfig.brandName) {
+    return { title: siteConfig.fullName, absolute: true };
+  }
+
+  return { title, absolute: false };
+}
+
+/** Title link Google should be able to show without rewriting a repeated brand. */
+export function renderedSearchTitle(raw: string): string {
+  const doc = searchDocumentTitle(raw);
+  return doc.absolute ? doc.title : `${doc.title} | ${siteConfig.brandLine}`;
+}
+
+/**
+ * Consistent per-page metadata per Google Search Central:
  * unique title, unique description, canonical URL, Open Graph / Twitter cards.
+ * Current title-link guidance (2025-12-10): brand the title once.
  */
 export function buildPageMetadata({
   title,
@@ -52,19 +100,21 @@ export function buildPageMetadata({
   noIndex = false,
 }: PageSeoOptions): Metadata {
   const canonical = pageCanonical(path);
+  const doc = searchDocumentTitle(title);
+  const rendered = renderedSearchTitle(title);
 
   return {
-    title,
+    title: doc.absolute ? { absolute: doc.title } : doc.title,
     description,
     keywords: keywords.length > 0 ? keywords : undefined,
     alternates: {
       canonical,
     },
     openGraph: {
-      title,
+      title: rendered,
       description,
       url: canonical,
-      siteName: siteConfig.brandLine,
+      siteName: siteConfig.fullName,
       locale: "en_US",
       type: "website",
       images: [
@@ -72,13 +122,13 @@ export function buildPageMetadata({
           url: siteImageUrl(siteImages.ogDefault),
           width: 1200,
           height: 630,
-          alt: `${siteConfig.shortName} — ${title}`,
+          alt: `${siteConfig.fullName} — ${doc.title}`,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: rendered,
       description,
       images: [siteImageUrl(siteImages.ogDefault)],
     },

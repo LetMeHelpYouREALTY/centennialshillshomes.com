@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/neighborhoods/skye-canyon" },
-  title: "Skye Canyon Homes for Sale | Dr. Jan Duffy, REALTOR®",
+  title: "Skye Canyon Homes for Sale",
   description:
     "Find Skye Canyon homes with Centennial Hills Real Estate. Dr. Jan Duffy specializes in this northwest Las Vegas community. Complimentary CMA. Call (702) 903-1952.",
   keywords: [

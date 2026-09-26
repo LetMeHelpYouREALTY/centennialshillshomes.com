@@ -13,7 +13,7 @@ import {
 
 export const metadata: Metadata = {
   alternates: { canonical: "/neighborhoods/summerlin" },
-  title: "Summerlin Homes for Sale | Dr. Jan Duffy, REALTOR®",
+  title: "Summerlin Homes for Sale",
   description:
     "Find Summerlin homes with Centennial Hills Real Estate. Dr. Jan Duffy offers expert guidance in Las Vegas's premier master-planned community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
   keywords: [

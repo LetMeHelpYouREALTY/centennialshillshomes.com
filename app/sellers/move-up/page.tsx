@@ -14,7 +14,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/sellers/move-up" },
-  title: "Move-Up Sellers Las Vegas | Centennial Hills Real Estate",
+  title: "Move-Up Sellers Las Vegas",
   description:
     "Ready for your next chapter? Dr. Jan Duffy helps Las Vegas homeowners leverage equity into their dream home. Sell and buy seamlessly. Call (702) 903-1952.",
   keywords: [

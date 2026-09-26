@@ -3,7 +3,7 @@ import Link from "next/link";
 import { agentInfo, officeInfo } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Page not found | Centennial Hills Homes",
+  title: "Page not found",
   description: `This URL is not a live page. Browse Centennial Hills homes for sale or call ${agentInfo.phone}.`,
   robots: { index: false, follow: true },
 };

@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/neighborhoods/inspirada" },
-  title: "Inspirada Homes for Sale | Dr. Jan Duffy, REALTOR®",
+  title: "Inspirada Homes for Sale",
   description:
     "Find Inspirada homes with Centennial Hills Real Estate. Dr. Jan Duffy specializes in Henderson's resort-style community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
   keywords: [

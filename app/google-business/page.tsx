@@ -28,7 +28,7 @@ import AgentPortrait from "@/components/AgentPortrait";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/google-business" },
-  title: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy",
+  title: { absolute: "Centennial Hills Real Estate | Homes by Dr. Jan Duffy" },
   description:
     "Centennial Hills Real Estate | Homes by Dr. Jan Duffy. Office at 1490 Center Crossing Rd, Las Vegas, NV 89144. Call (702) 903-1952. Daily 8:00 AM–8:00 PM. 5.0 from 1 Google review.",
   keywords: [

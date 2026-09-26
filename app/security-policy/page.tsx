@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   alternates: { canonical: "/security-policy" },
-  title: 'Website Security Policy for Centennial Hills Homes',
+  title: 'Website Security Policy',
   description: 'Security policy and responsible disclosure information for centennialhillshomesforsale.com',
   robots: {
     index: true,

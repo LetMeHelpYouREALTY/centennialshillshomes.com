@@ -20,7 +20,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/relocation" },
-  title: "Relocating to Las Vegas | Centennial Hills Real Estate",
+  title: "Relocating to Las Vegas",
   description:
     "Moving to Las Vegas? Dr. Jan Duffy at Centennial Hills Real Estate provides comprehensive relocation services. Schools, neighborhoods, cost of living. Call (702) 903-1952.",
   keywords: [

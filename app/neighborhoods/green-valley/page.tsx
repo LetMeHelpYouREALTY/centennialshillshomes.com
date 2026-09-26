@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/neighborhoods/green-valley" },
-  title: "Green Valley Homes for Sale | Dr. Jan Duffy, REALTOR®",
+  title: "Green Valley Homes for Sale",
   description:
     "Find Green Valley homes with Centennial Hills Real Estate. Dr. Jan Duffy specializes in Henderson's most established community. Complimentary CMA from live MLS comps. Call (702) 903-1952.",
   keywords: [

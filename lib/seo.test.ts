@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { buildPageMetadata, pageCanonical, withSelfCanonical } from "./seo";
+import { buildPageMetadata, pageCanonical, renderedSearchTitle, withSelfCanonical } from "./seo";
 import { siteConfig } from "./site-config";
 
 describe("pageCanonical", () => {
@@ -26,6 +26,25 @@ describe("buildPageMetadata", () => {
       `${siteConfig.url}/55-plus-communities/solera-anthem`,
     );
     expect(metadata.alternates?.canonical).not.toBe(`${siteConfig.url}/`);
+  });
+
+  it("brands the homepage once and strips a repeated brand from other titles", () => {
+    const home = buildPageMetadata({
+      title: siteConfig.fullName,
+      description: siteConfig.description,
+      path: "/",
+    });
+    expect(home.title).toEqual({ absolute: siteConfig.fullName });
+    expect(home.openGraph && "title" in home.openGraph ? home.openGraph.title : "").toBe(
+      siteConfig.fullName,
+    );
+    expect(home.openGraph && "siteName" in home.openGraph ? home.openGraph.siteName : "").toBe(
+      siteConfig.fullName,
+    );
+
+    expect(renderedSearchTitle("Summerlin Homes for Sale | Dr. Jan Duffy, REALTOR®")).toBe(
+      "Summerlin Homes for Sale | Homes by Dr. Jan Duffy",
+    );
   });
 });
 

@@ -20,7 +20,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/sellers" },
-  title: "Sell Your Las Vegas Home | Centennial Hills Real Estate",
+  title: "Sell Your Las Vegas Home",
   description:
     "Sell your Las Vegas or Henderson home for top dollar with Dr. Jan Duffy at Centennial Hills Real Estate. Free home valuation. World-class marketing. Call (702) 903-1952.",
   keywords: [

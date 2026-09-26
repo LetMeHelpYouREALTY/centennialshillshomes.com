@@ -22,7 +22,7 @@ import AgentPortrait from "@/components/AgentPortrait";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/services" },
-  title: "Real Estate Services Las Vegas | Centennial Hills Real Estate",
+  title: "Real Estate Services Las Vegas",
   description:
     "Comprehensive real estate services from Dr. Jan Duffy at Centennial Hills Real Estate. Buying, selling, luxury, investment, relocation, 55+ communities, and new construction. Call (702) 903-1952.",
   keywords: [

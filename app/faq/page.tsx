@@ -12,7 +12,7 @@ import {
 
 export const metadata: Metadata = {
   alternates: { canonical: "/faq" },
-  title: "Centennial Hills Real Estate FAQ | Dr. Jan Duffy",
+  title: "Centennial Hills Real Estate FAQ",
   description:
     "Frequently asked questions about Las Vegas real estate, Centennial Hills Real Estate, buying, selling, and working with Dr. Jan Duffy at Centennial Hills Real Estate.",
   keywords: [

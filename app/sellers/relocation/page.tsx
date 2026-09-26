@@ -15,7 +15,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/sellers/relocation" },
-  title: "Relocation Home Sales Las Vegas | Centennial Hills Real Estate",
+  title: "Relocation Home Sales Las Vegas",
   description:
     "Leaving Las Vegas for a new opportunity? Dr. Jan Duffy helps relocating homeowners sell fast and coordinates with Dr. Jan offices nationwide. Call (702) 903-1952.",
   keywords: [
