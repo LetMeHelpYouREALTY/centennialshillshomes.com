@@ -32,8 +32,6 @@ const EXCLUDED_ROUTES = [
   '/sitemap.xml',
   '/robots.txt',
   '/service-worker',
-  '/api-test',
-  '/map-test',
   '/maps-test',
   '/demo',
   '/test-seo-content',

@@ -10,7 +10,7 @@ import {
   amenitiesFaqs,
   amenityWrittenSections,
   communityAmenitiesConfig,
-  curatedPlaces,
+  curatedPlacesForSchema,
 } from "@/lib/community-amenities";
 import { agentInfo, siteConfig } from "@/lib/site-config";
 import { buildPageMetadata } from "@/lib/seo";
@@ -62,7 +62,7 @@ export default function AmenitiesPage() {
       { name: "Nearby Amenities", url: amenitiesPagePath },
     ]),
     generateFeaturedPlacesItemListSchema(
-      curatedPlaces.map((p) => ({
+      curatedPlacesForSchema().map((p) => ({
         name: p.name,
         address: p.address,
         schemaType: p.schemaType,
@@ -105,8 +105,7 @@ export default function AmenitiesPage() {
               {communityAmenitiesConfig.zipCodes.join(", ")}.
             </p>
             <p className="mt-4 text-sm text-stone-600">
-              Map center: {center.label} ({center.address}). Coordinates used for search: {center.lat.toFixed(4)},{" "}
-              {center.lng.toFixed(4)}.
+              Map anchor: {center.label}, {center.address}.
             </p>
           </div>
         </section>

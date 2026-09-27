@@ -80,8 +80,9 @@ export default component$<SimpleMapsWidgetProps>((props) => {
       if (!window.google || !window.google.maps) {
         const script = document.createElement('script');
         // Use environment variable for API key
-        const apiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY || 'AIzaSyBUvLymcTSnhOAffrlzM_rzYhmIbVfGEn8';
-        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}`;
+        const apiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
+        if (!apiKey) return;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(apiKey)}`;
         script.async = true;
         script.defer = true;
         document.head.appendChild(script);

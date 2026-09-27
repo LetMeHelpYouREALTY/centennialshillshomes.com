@@ -202,7 +202,7 @@ export default component$<CommuteWidgetProps>(({
             "maxZoom": 20,
             "mapId": ""
           },
-          "mapsApiKey": "AIzaSyD_gdHoCg0SdY29tFIk1vYY7dvgp9vgy_M"
+          "mapsApiKey": import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY ?? ""
         };
 
         new (window as any).Commutes(CONFIGURATION);
@@ -216,9 +216,12 @@ export default component$<CommuteWidgetProps>(({
     if (typeof window === 'undefined' || typeof document === 'undefined') return;
 
     // Load Google Maps API and commutes widget script if not already loaded
+    const mapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
+    if (!mapsApiKey) return;
+
     if (!document.querySelector('script[src*="maps.googleapis.com"]')) {
       const mapsScript = document.createElement('script');
-      mapsScript.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD_gdHoCg0SdY29tFIk1vYY7dvgp9vgy_M&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_commutes_v3_c';
+      mapsScript.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(mapsApiKey)}&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_commutes_v3_c`;
       mapsScript.async = true;
       mapsScript.defer = true;
       document.head.appendChild(mapsScript);

@@ -9,21 +9,11 @@ import {
   googleMapsEmbedUrl,
   type AmenityCategoryId,
 } from "@/lib/community-amenities";
-
-type MapPlaceResult = {
-  id: string;
-  name: string;
-  address: string;
-  rating?: number;
-  lat: number;
-  lng: number;
-  mapsUrl: string;
-};
+import { loadGoogleMaps, mapsAuthFailed } from "@/lib/google-maps-loader";
+import { searchCategory, type NearbyPlaceResult } from "@/lib/places-search";
 
 type AmenityMapProps = {
-  /** Shorter map on homepage sections */
   compact?: boolean;
-  /** Show static curated list beside or below map */
   showCuratedList?: boolean;
   className?: string;
 };
@@ -39,86 +29,37 @@ function getMapId(): string | undefined {
   return process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID?.trim() || undefined;
 }
 
-declare global {
-  interface Window {
-    google?: {
-      maps: {
-        importLibrary: (name: string) => Promise<unknown>;
-        Map: new (
-          el: HTMLElement,
-          opts: Record<string, unknown>,
-        ) => {
-          setCenter: (c: { lat: number; lng: number }) => void;
-          setZoom: (z: number) => void;
-          fitBounds: (b: unknown) => void;
-        };
-        InfoWindow: new (opts: { content: string }) => {
-          open: (opts: { map: unknown; anchor?: unknown }) => void;
-          close: () => void;
-        };
-        LatLng: new (lat: number, lng: number) => unknown;
-        LatLngBounds: new () => {
-          extend: (latLng: unknown) => void;
-        };
-        marker?: {
-          AdvancedMarkerElement: new (opts: Record<string, unknown>) => {
-            map: unknown;
-            position: unknown;
-            title: string;
-            addListener: (event: string, fn: () => void) => void;
-          };
-        };
-        Marker: new (opts: Record<string, unknown>) => {
-          setMap: (map: unknown | null) => void;
-          addListener: (event: string, fn: () => void) => void;
-        };
-      };
-    };
+function buildInfoWindowContent(place: NearbyPlaceResult): HTMLElement {
+  const wrap = document.createElement("div");
+  wrap.style.maxWidth = "240px";
+  wrap.style.padding = "4px 2px";
+  wrap.style.fontFamily = "system-ui, sans-serif";
+
+  const title = document.createElement("strong");
+  title.style.fontSize = "14px";
+  title.textContent = place.name;
+  wrap.appendChild(title);
+
+  if (place.address) {
+    const addr = document.createElement("p");
+    addr.style.margin = "6px 0 8px";
+    addr.style.fontSize = "12px";
+    addr.style.color = "#555";
+    addr.textContent = place.address;
+    wrap.appendChild(addr);
   }
-}
 
-function loadGoogleMapsScript(apiKey: string): Promise<void> {
-  return new Promise((resolve, reject) => {
-    if (window.google?.maps) {
-      resolve();
-      return;
-    }
+  const link = document.createElement("a");
+  link.href = place.mapsUrl;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.style.fontSize = "13px";
+  link.style.color = "#1d4ed8";
+  link.style.fontWeight = "600";
+  link.textContent = "Directions";
+  wrap.appendChild(link);
 
-    const existing = document.querySelector<HTMLScriptElement>("script[data-centennial-amenity-map]");
-    if (existing) {
-      existing.addEventListener("load", () => resolve());
-      existing.addEventListener("error", () => reject(new Error("Maps script error")));
-      return;
-    }
-
-    const callbackName = `__centennialAmenityMapsCb_${Math.random().toString(36).slice(2)}`;
-    const win = window as unknown as Record<string, () => void>;
-    win[callbackName] = () => {
-      delete win[callbackName];
-      resolve();
-    };
-
-    const script = document.createElement("script");
-    script.dataset.centennialAmenityMap = "true";
-    script.async = true;
-    script.defer = true;
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(apiKey)}&libraries=places,marker&loading=async&callback=${callbackName}`;
-    script.onerror = () => reject(new Error("Maps script failed"));
-    document.head.appendChild(script);
-  });
-}
-
-function infoWindowHtml(place: MapPlaceResult): string {
-  const rating =
-    place.rating !== undefined
-      ? `<p style="margin:4px 0;font-size:13px;color:#444">Rating: ${place.rating.toFixed(1)}</p>`
-      : "";
-  return `<div style="max-width:240px;padding:4px 2px;font-family:system-ui,sans-serif">
-    <strong style="font-size:14px">${place.name}</strong>
-    ${rating}
-    <p style="margin:6px 0 8px;font-size:12px;color:#555">${place.address}</p>
-    <a href="${place.mapsUrl}" target="_blank" rel="noopener noreferrer" style="font-size:13px;color:#1d4ed8;font-weight:600">Directions</a>
-  </div>`;
+  return wrap;
 }
 
 export default function AmenityMap({
@@ -128,29 +69,50 @@ export default function AmenityMap({
 }: AmenityMapProps) {
   const apiKey = getApiKey();
   const mapId = getMapId();
-  const { center, communityMarker } = communityAmenitiesConfig;
+  const { center, communityMarker, searchRadiusMeters } = communityAmenitiesConfig;
   const height = compact ? MAP_HEIGHT_COMPACT : MAP_HEIGHT_FULL;
 
   const [activeCategory, setActiveCategory] = useState<AmenityCategoryId>("parks");
-  const [useFallback, setUseFallback] = useState(!apiKey);
-  const [loadError, setLoadError] = useState(false);
+  const [useFallback, setUseFallback] = useState(!apiKey || mapsAuthFailed);
   const [isVisible, setIsVisible] = useState(false);
-  const [places, setPlaces] = useState<MapPlaceResult[]>([]);
+  const [places, setPlaces] = useState<NearbyPlaceResult[]>([]);
   const [loadingPlaces, setLoadingPlaces] = useState(false);
+  const [placesFailed, setPlacesFailed] = useState(false);
 
   const containerRef = useRef<HTMLDivElement>(null);
   const mapDivRef = useRef<HTMLDivElement>(null);
-  const mapRef = useRef<unknown>(null);
+  const mapRef = useRef<google.maps.Map | null>(null);
   const [mapReady, setMapReady] = useState(false);
-  const markersRef = useRef<unknown[]>([]);
-  const communityMarkerRef = useRef<unknown>(null);
-  const infoWindowRef = useRef<{
-    close: () => void;
-    open: (o: { map: unknown; anchor?: unknown }) => void;
-    setContent: (html: string) => void;
-  } | null>(null);
+  const markersRef = useRef<Array<google.maps.Marker | google.maps.marker.AdvancedMarkerElement>>([]);
+  const communityMarkerRef = useRef<google.maps.Marker | google.maps.marker.AdvancedMarkerElement | null>(
+    null,
+  );
+  const infoWindowRef = useRef<google.maps.InfoWindow | null>(null);
 
   const filterGroupId = useId();
+
+  const clearMarkers = useCallback(() => {
+    const gmaps = typeof window !== "undefined" ? window.google?.maps : undefined;
+    if (!gmaps) {
+      markersRef.current = [];
+      return;
+    }
+    for (const marker of markersRef.current) {
+      if (marker instanceof gmaps.Marker) {
+        marker.setMap(null);
+      } else {
+        marker.map = null;
+      }
+    }
+    markersRef.current = [];
+  }, []);
+
+  const enterFallback = useCallback(() => {
+    setUseFallback(true);
+    mapRef.current = null;
+    setMapReady(false);
+    clearMarkers();
+  }, [clearMarkers]);
 
   useEffect(() => {
     const node = containerRef.current;
@@ -169,29 +131,25 @@ export default function AmenityMap({
     return () => observer.disconnect();
   }, []);
 
-  const clearMarkers = useCallback(() => {
-    for (const marker of markersRef.current) {
-      if (marker && typeof marker === "object" && "setMap" in marker) {
-        (marker as { setMap: (m: null) => void }).setMap(null);
-      } else if (marker && typeof marker === "object" && "map" in marker) {
-        (marker as { map: null }).map = null;
-      }
+  useEffect(() => {
+    if (mapsAuthFailed) {
+      enterFallback();
     }
-    markersRef.current = [];
-  }, []);
+    const onAuthFailure = () => enterFallback();
+    window.addEventListener("gmaps:auth-failure", onAuthFailure);
+    return () => window.removeEventListener("gmaps:auth-failure", onAuthFailure);
+  }, [enterFallback]);
 
   const initMap = useCallback(async () => {
-    if (!apiKey || !mapDivRef.current || mapRef.current) return;
+    if (!apiKey || mapsAuthFailed || !mapDivRef.current || mapRef.current) return;
 
     try {
-      await loadGoogleMapsScript(apiKey);
-      const google = window.google;
-      if (!google?.maps) {
-        setUseFallback(true);
-        return;
+      await loadGoogleMaps(apiKey);
+      if (mapId) {
+        await google.maps.importLibrary("marker");
       }
-
-      const mapOptions: Record<string, unknown> = {
+      await google.maps.importLibrary("places");
+      const mapOptions: google.maps.MapOptions = {
         center: { lat: center.lat, lng: center.lng },
         zoom: 13,
         mapTypeControl: false,
@@ -204,7 +162,7 @@ export default function AmenityMap({
 
       const map = new google.maps.Map(mapDivRef.current, mapOptions);
       mapRef.current = map;
-      infoWindowRef.current = new google.maps.InfoWindow({ content: "" }) as typeof infoWindowRef.current;
+      infoWindowRef.current = new google.maps.InfoWindow();
       setMapReady(true);
 
       const communityPosition = { lat: center.lat, lng: center.lng };
@@ -215,13 +173,12 @@ export default function AmenityMap({
         pin.className =
           "rounded-full bg-terracotta px-3 py-1 text-xs font-bold text-ink shadow-md border-2 border-white";
         pin.textContent = communityMarker.title;
-        const adv = new google.maps.marker.AdvancedMarkerElement({
+        communityMarkerRef.current = new google.maps.marker.AdvancedMarkerElement({
           map,
           position: communityPosition,
           title: communityTitle,
           content: pin,
         });
-        communityMarkerRef.current = adv;
       } else {
         communityMarkerRef.current = new google.maps.Marker({
           map,
@@ -231,69 +188,32 @@ export default function AmenityMap({
         });
       }
     } catch {
-      setLoadError(true);
-      setUseFallback(true);
+      enterFallback();
     }
-  }, [apiKey, center.lat, center.lng, communityMarker.subtitle, communityMarker.title, mapId]);
+  }, [apiKey, center.lat, center.lng, communityMarker.subtitle, communityMarker.title, enterFallback, mapId]);
 
   useEffect(() => {
-    if (!isVisible || useFallback || !apiKey) return;
+    if (!isVisible || useFallback || !apiKey || mapsAuthFailed) return;
     void initMap();
   }, [apiKey, initMap, isVisible, useFallback]);
 
   const fetchPlaces = useCallback(
     async (categoryId: AmenityCategoryId) => {
-      if (!apiKey || useFallback || !mapRef.current) return;
+      if (!apiKey || useFallback || mapsAuthFailed || !mapRef.current) return;
 
       const category = amenityCategories.find((c) => c.id === categoryId);
       if (!category) return;
 
       setLoadingPlaces(true);
+      setPlacesFailed(false);
       try {
-        const google = window.google;
-        if (!google?.maps?.importLibrary) {
-          setUseFallback(true);
-          return;
-        }
-
-        const placesLib = (await google.maps.importLibrary("places")) as {
-          Place: {
-            searchNearby: (req: Record<string, unknown>) => Promise<{ places: Array<Record<string, unknown>> }>;
-          };
-        };
-
-        const { places: rawPlaces } = await placesLib.Place.searchNearby({
-          fields: ["displayName", "location", "formattedAddress", "rating", "googleMapsURI"],
-          locationRestriction: {
-            center: { lat: center.lat, lng: center.lng },
-            radius: communityAmenitiesConfig.searchRadiusMeters,
-          },
-          includedPrimaryTypes: category.placeTypes,
-          maxResultCount: 12,
-        });
-
-        const parsed: MapPlaceResult[] = rawPlaces
-          .map((p, index) => {
-            const loc = p.location as { lat: () => number; lng: () => number } | undefined;
-            const lat = loc?.lat?.() ?? center.lat;
-            const lng = loc?.lng?.() ?? center.lng;
-            const displayName = (p.displayName as { text?: string })?.text ?? "Place";
-            const address = (p.formattedAddress as string) ?? "";
-            const rating = typeof p.rating === "number" ? p.rating : undefined;
-            const mapsUrl =
-              (p.googleMapsURI as string) ??
-              directionsUrlForPlace(displayName, address || `${lat},${lng}`);
-            return {
-              id: `${categoryId}-${index}`,
-              name: displayName,
-              address,
-              rating,
-              lat,
-              lng,
-              mapsUrl,
-            };
-          })
-          .filter((p) => p.name);
+        const centerLiteral = { lat: center.lat, lng: center.lng };
+        const parsed = await searchCategory(
+          centerLiteral,
+          categoryId,
+          category.placeTypes,
+          searchRadiusMeters,
+        );
 
         setPlaces(parsed);
         clearMarkers();
@@ -301,13 +221,13 @@ export default function AmenityMap({
         const map = mapRef.current;
         const infoWindow = infoWindowRef.current;
         const bounds = new google.maps.LatLngBounds();
-        bounds.extend(new google.maps.LatLng(center.lat, center.lng));
+        bounds.extend(centerLiteral);
 
         for (const place of parsed) {
           const position = { lat: place.lat, lng: place.lng };
-          bounds.extend(new google.maps.LatLng(place.lat, place.lng));
+          bounds.extend(position);
 
-          let marker: { addListener: (e: string, fn: () => void) => void };
+          let marker: google.maps.Marker | google.maps.marker.AdvancedMarkerElement;
           if (mapId && google.maps.marker?.AdvancedMarkerElement) {
             marker = new google.maps.marker.AdvancedMarkerElement({
               map,
@@ -322,27 +242,26 @@ export default function AmenityMap({
             });
           }
 
-          marker.addListener("click", () => {
-            infoWindow?.setContent(infoWindowHtml(place));
+          const openInfo = () => {
+            infoWindow?.setContent(buildInfoWindowContent(place));
             infoWindow?.close();
-            infoWindow?.open({
-              map,
-              anchor: marker as unknown,
-            });
-          });
+            infoWindow?.open({ map, anchor: marker });
+          };
+          marker.addListener("click", openInfo);
           markersRef.current.push(marker);
         }
 
-        if (parsed.length > 0 && map && typeof map === "object" && "fitBounds" in map) {
-          (map as { fitBounds: (b: unknown) => void }).fitBounds(bounds);
+        if (parsed.length > 0) {
+          map.fitBounds(bounds);
         }
       } catch {
         setPlaces([]);
+        setPlacesFailed(true);
       } finally {
         setLoadingPlaces(false);
       }
     },
-    [apiKey, center.lat, center.lng, clearMarkers, mapId, useFallback],
+    [apiKey, center.lat, center.lng, clearMarkers, mapId, searchRadiusMeters, useFallback],
   );
 
   useEffect(() => {
@@ -350,8 +269,16 @@ export default function AmenityMap({
     void fetchPlaces(activeCategory);
   }, [activeCategory, fetchPlaces, mapReady, useFallback]);
 
-  const showEmbed = useFallback || loadError || !apiKey;
+  const showEmbed = useFallback || !apiKey || mapsAuthFailed;
   const curated = curatedPlacesForCategory(activeCategory);
+  const listItems =
+    !showEmbed && places.length > 0
+      ? places
+      : placesFailed || showEmbed
+        ? curated
+        : places.length > 0
+          ? places
+          : curated;
 
   return (
     <div ref={containerRef} className={className}>
@@ -416,11 +343,6 @@ export default function AmenityMap({
           {!showEmbed && loadingPlaces ? (
             <p className="mt-2 text-sm text-stone-500" aria-live="polite">Loading places…</p>
           ) : null}
-          {showEmbed && apiKey && isVisible && !loadError ? (
-            <p className="mt-2 text-sm text-stone-500">
-              Interactive map unavailable — showing map preview. Check API key configuration in Vercel.
-            </p>
-          ) : null}
         </div>
 
         {showCuratedList ? (
@@ -430,7 +352,7 @@ export default function AmenityMap({
               {communityAmenitiesConfig.communityName}
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-stone-700">
-              {(places.length > 0 && !showEmbed ? places : curated).map((item) => {
+              {listItems.map((item) => {
                 const name = "name" in item ? item.name : "";
                 const address = "address" in item ? item.address : "";
                 const mapsUrl =
@@ -441,9 +363,6 @@ export default function AmenityMap({
                   <li key={`${name}-${address}`} className="border-b border-stone-200 pb-3 last:border-0">
                     <p className="font-semibold text-ink">{name}</p>
                     {address ? <p className="mt-0.5 text-stone-600">{address}</p> : null}
-                    {"rating" in item && item.rating !== undefined ? (
-                      <p className="text-xs text-stone-500">Google rating: {item.rating.toFixed(1)}</p>
-                    ) : null}
                     {"note" in item && item.note ? (
                       <p className="mt-1 text-xs text-stone-500">{item.note}</p>
                     ) : null}
@@ -458,11 +377,11 @@ export default function AmenityMap({
                   </li>
                 );
               })}
-              {places.length === 0 && curated.length === 0 ? (
+              {listItems.length === 0 ? (
                 <li className="text-stone-500">Explore other categories for curated local places.</li>
               ) : null}
             </ul>
-            {!showEmbed && places.length === 0 && curated.length > 0 ? (
+            {!showEmbed && (placesFailed || places.length === 0) && curated.length > 0 ? (
               <p className="mt-3 text-xs text-stone-500">
                 Showing verified local highlights while live results load.
               </p>

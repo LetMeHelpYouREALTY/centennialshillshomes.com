@@ -1,6 +1,6 @@
 /**
  * Hyperlocal amenity map configuration — Centennial Hills, Las Vegas (89135, 89138, 89144).
- * Map center: Centennial Hills Park (Clark County Parks), a documented community anchor.
+ * Map center: Centennial Hills Park (City of Las Vegas), a documented community anchor.
  */
 
 export const communityAmenitiesConfig = {
@@ -10,14 +10,14 @@ export const communityAmenitiesConfig = {
   regionLabel: "Northwest Las Vegas",
   zipCodes: ["89135", "89138", "89144"],
   /**
-   * Center for map search — Centennial Hills Park, 7101 W Azure Dr, Las Vegas, NV 89131.
-   * Coordinates from Google Maps place listing (public).
+   * Center for map search — Centennial Hills Park (City of Las Vegas).
+   * @see https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Centennial-hills-park
    */
   center: {
-    lat: 36.2887,
-    lng: -115.2761,
+    lat: 36.28694,
+    lng: -115.26278,
     label: "Centennial Hills Park",
-    address: "7101 W Azure Dr, Las Vegas, NV 89131",
+    address: "7101 N Buffalo Dr, Las Vegas, NV 89131",
   },
   communityMarker: {
     title: "Centennial Hills",
@@ -49,7 +49,7 @@ export type AmenityCategory = {
   placeTypes: string[];
 };
 
-/** Family / move-up suburban community — parks and daily essentials first. */
+/** Move-up suburban community — parks and daily essentials first. */
 export const amenityCategories: AmenityCategory[] = [
   { id: "parks", label: "Parks", placeTypes: ["park", "national_park"] },
   { id: "grocery", label: "Grocery", placeTypes: ["grocery_store", "supermarket"] },
@@ -66,27 +66,41 @@ export const amenityCategories: AmenityCategory[] = [
 
 export type CuratedPlace = {
   name: string;
+  /** Omit from JSON-LD when empty — only verified street addresses */
   address: string;
   category: AmenityCategoryId;
   schemaType: string;
   note?: string;
+  /** Official source used to verify name and address */
+  sourceUrl: string;
 };
 
 /** Verified public places — used for static HTML, fallback list, and ItemList schema. */
 export const curatedPlaces: CuratedPlace[] = [
   {
     name: "Centennial Hills Park",
-    address: "7101 W Azure Dr, Las Vegas, NV 89131",
+    address: "7101 N Buffalo Dr, Las Vegas, NV 89131",
     category: "parks",
     schemaType: "Park",
-    note: "Sports fields, playgrounds, and walking paths.",
+    note: "City of Las Vegas regional park with sports fields, splash pads, and trails.",
+    sourceUrl: "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Centennial-hills-park",
   },
   {
     name: "Lone Mountain Regional Park",
-    address: "6404 N Durango Dr, Las Vegas, NV 89149",
+    address: "9825 W Lone Mountain Rd, Las Vegas, NV 89129",
     category: "parks",
     schemaType: "Park",
-    note: "Trails and open desert recreation.",
+    note: "Clark County regional park with trails and picnic areas.",
+    sourceUrl:
+      "https://www.clarkcountynv.gov/government/departments/parks___recreation/services/area_reservations/",
+  },
+  {
+    name: "Red Rock Canyon National Conservation Area",
+    address: "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+    category: "parks",
+    schemaType: "Park",
+    note: "BLM scenic loop and visitor center west of Centennial Hills.",
+    sourceUrl: "https://www.blm.gov/visit/red-rock-canyon-national-conservation-area",
   },
   {
     name: "Centennial Hills Active Adult Center",
@@ -94,6 +108,7 @@ export const curatedPlaces: CuratedPlace[] = [
     category: "fitness",
     schemaType: "ExerciseGym",
     note: "Clark County recreation programs for adults 50+.",
+    sourceUrl: "https://www.clarkcountynv.gov/government/departments/parks___recreation/",
   },
   {
     name: "Centennial Hills Library",
@@ -101,56 +116,59 @@ export const curatedPlaces: CuratedPlace[] = [
     category: "shopping",
     schemaType: "Library",
     note: "Las Vegas-Clark County Library District branch.",
+    sourceUrl: "https://lvccld.org/locations/CH/",
   },
   {
     name: "Smith's Food and Drug",
-    address: "7150 N Durango Dr, Las Vegas, NV 89149",
+    address: "7130 N Durango Dr, Las Vegas, NV 89149",
     category: "grocery",
     schemaType: "GroceryStore",
+    sourceUrl: "https://www.kroger.com/stores/grocery/nv/las-vegas/smiths-food-and-drug-montecito-marketplace/70600320",
   },
   {
     name: "Downtown Summerlin",
     address: "1980 Festival Plaza Dr, Las Vegas, NV 89135",
     category: "shopping",
     schemaType: "ShoppingCenter",
-    note: "Dining, retail, and events west of the Strip.",
+    note: "Dining and retail west of the Strip.",
+    sourceUrl: "https://summerlin.com/experience/downtown-summerlin/",
   },
   {
     name: "MountainView Hospital",
-    address: "3100 N Tenaya Way, Las Vegas, NV 89129",
+    address: "3100 N Tenaya Way, Las Vegas, NV 89128",
     category: "healthcare",
     schemaType: "Hospital",
+    sourceUrl: "https://www.sunrisehealthinfo.com/locations/mountainview-hospital",
   },
   {
-    name: "Centennial Hills Hospital",
+    name: "Centennial Hills Hospital Medical Center",
     address: "6900 N Durango Dr, Las Vegas, NV 89149",
     category: "healthcare",
     schemaType: "Hospital",
+    sourceUrl: "https://www.centennialhillshospital.com/about",
   },
   {
     name: "Dean Lamar Allen Elementary School",
     address: "6641 N Buffalo Dr, Las Vegas, NV 89131",
     category: "schools",
     schemaType: "School",
+    note: "Verify assigned schools for each listing on the CCSD Zoning Search.",
+    sourceUrl: "https://www.ccsd.net/schools/dean-lamar-allen-elementary-school",
   },
   {
     name: "Centennial High School",
     address: "7111 W Azure Dr, Las Vegas, NV 89131",
     category: "schools",
     schemaType: "School",
+    note: "Verify assigned schools for each listing on the CCSD Zoning Search.",
+    sourceUrl: "https://www.ccsd.net/schools/centennial-high-school",
   },
   {
     name: "Badlands Golf Club",
     address: "911 Alta Dr, Las Vegas, NV 89128",
     category: "golf",
     schemaType: "GolfCourse",
-  },
-  {
-    name: "Red Rock Canyon National Conservation Area",
-    address: "1000 Scenic Loop Dr, Las Vegas, NV 89161",
-    category: "parks",
-    schemaType: "Park",
-    note: "Scenic loop and visitor center west of Centennial Hills.",
+    sourceUrl: "https://www.badlandsgc.com/",
   },
 ];
 
@@ -203,7 +221,7 @@ export const amenityWrittenSections: AmenityContentSection[] = [
     id: "schools",
     title: "Schools",
     paragraphs: [
-      "Centennial Hills sits in the Clark County School District. Dean Lamar Allen Elementary and Centennial High School are well-known anchors in the 89131 / 89144 area. Boundaries and zoning change; verify assigned schools for a specific address on the district website before you buy.",
+      "Centennial Hills sits in the Clark County School District. Dean Lamar Allen Elementary and Centennial High School are well-known anchors in the 89131 / 89144 area. Which CCSD schools are assigned to a specific address? Verify with the CCSD Zoning Search before you buy.",
     ],
   },
   {
@@ -234,12 +252,12 @@ export const amenitiesFaqs = [
   {
     question: "What parks does Centennial Hills have?",
     answer:
-      "Centennial Hills Park on Azure Drive is the flagship community park with sports fields and playgrounds; Lone Mountain Regional Park and Red Rock Canyon add trails and desert recreation within a short drive.",
+      "Centennial Hills Park on Buffalo Drive is the flagship community park with sports fields and playgrounds; Lone Mountain Regional Park and Red Rock Canyon add trails and desert recreation within a short drive.",
   },
   {
-    question: "Is Centennial Hills good for families?",
+    question: "Which CCSD schools are assigned to Centennial Hills addresses?",
     answer:
-      "Centennial Hills attracts families with newer homes, parks, and CCSD schools such as Dean Lamar Allen Elementary and Centennial High School; confirm school zoning for each listing address.",
+      "Centennial Hills is in the Clark County School District. Assigned schools depend on the street address — use the CCSD Zoning Search to confirm elementary, middle, and high school assignments before you buy.",
   },
   {
     question: "Where do Centennial Hills residents shop?",
@@ -264,4 +282,9 @@ export function directionsUrlForPlace(name: string, address: string): string {
 
 export function curatedPlacesForCategory(category: AmenityCategoryId): CuratedPlace[] {
   return curatedPlaces.filter((place) => place.category === category);
+}
+
+/** Places with verified street addresses — safe for ItemList JSON-LD */
+export function curatedPlacesForSchema(): CuratedPlace[] {
+  return curatedPlaces.filter((place) => place.address.trim().length > 0);
 }
