@@ -1,7 +1,4 @@
 import Link from "next/link";
-import SchemaScript from "@/components/SchemaScript";
-import { generateBreadcrumbSchema } from "@/lib/schema";
-import { siteConfig } from "@/lib/site-config";
 
 export type BreadcrumbItem = {
   name: string;
@@ -14,17 +11,8 @@ type PageBreadcrumbsProps = {
 };
 
 export default function PageBreadcrumbs({ items, className = "" }: PageBreadcrumbsProps) {
-  const schemaItems = [
-    { name: "Home", url: siteConfig.url },
-    ...items.map((item) => ({
-      name: item.name,
-      url: item.href.startsWith("http") ? item.href : `${siteConfig.url}${item.href}`,
-    })),
-  ];
-
   return (
     <>
-      <SchemaScript schema={generateBreadcrumbSchema(schemaItems)} id="breadcrumb-schema" />
       <nav aria-label="Breadcrumb" className={`text-sm text-slate-600 ${className}`}>
         <ol className="flex flex-wrap items-center gap-1">
           <li>

@@ -11,6 +11,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import ClientWidgets from "@/components/layouts/ClientWidgets";
 import SchemaScript from "@/components/SchemaScript";
+import GlobalBreadcrumbSchema from "@/components/seo/GlobalBreadcrumbSchema";
 import {
   generateRealEstateAgentSchema,
   generateWebSiteSchema,
@@ -94,6 +95,7 @@ export default function RootLayout({
         <meta name="color-scheme" content="light" />
         {/* Site-wide JSON-LD Schema: RealEstateAgent + WebSite */}
         <SchemaScript schema={siteWideSchemas} id="site-schema" />
+        <GlobalBreadcrumbSchema />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-WB5DLLZ4C6"
