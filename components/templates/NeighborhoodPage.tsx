@@ -13,6 +13,7 @@ import {
   HyperlocalFaqSection,
   LocalBusinessCtaBar,
 } from "@/components/sections/HyperlocalSections";
+import NearbyAmenitiesSection from "@/components/sections/NearbyAmenitiesSection";
 import {
   generateNeighborhoodSchema,
   generateWebPageSchema,
@@ -151,6 +152,7 @@ export default function NeighborhoodPage({ data }: { data: NeighborhoodPageData 
           faqs={faqs}
           title={`${data.title.replace(" Homes for Sale", "")} Homes for Sale FAQ`}
         />
+        {data.slug === "centennial-hills" ? <NearbyAmenitiesSection /> : null}
         <RealScoutListings />
         <LocalBusinessCtaBar />
       </div>

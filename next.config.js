@@ -68,11 +68,11 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://em.realscout.com https://www.realscout.com https://*.realscout.com https://assets.calendly.com https://www.googletagmanager.com https://www.google-analytics.com",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://em.realscout.com https://www.realscout.com https://*.realscout.com https://assets.calendly.com https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com",
               "style-src 'self' 'unsafe-inline' https://em.realscout.com https://www.realscout.com https://*.realscout.com https://fonts.googleapis.com https://assets.calendly.com",
               "img-src 'self' data: blob: https: http:",
               "font-src 'self' data: https://fonts.gstatic.com https://fonts.googleapis.com https://em.realscout.com https://assets.calendly.com",
-              "connect-src 'self' https://em.realscout.com https://www.realscout.com https://*.realscout.com https://api.mapbox.com https://*.mapbox.com https://openrouter.ai https://api.openai.com https://calendly.com https://www.google-analytics.com https://analytics.google.com https://*.ingest.sentry.io",
+              "connect-src 'self' https://em.realscout.com https://www.realscout.com https://*.realscout.com https://api.mapbox.com https://*.mapbox.com https://openrouter.ai https://api.openai.com https://calendly.com https://www.google-analytics.com https://analytics.google.com https://*.ingest.sentry.io https://maps.googleapis.com https://*.googleapis.com",
               "frame-src 'self' https://em.realscout.com https://www.realscout.com https://*.realscout.com https://calendly.com https://assets.calendly.com https://www.google.com https://maps.google.com https://*.google.com https://www.openstreetmap.org",
               "form-action 'self' https://www.realscout.com https://*.realscout.com",
               "worker-src 'self' blob:",

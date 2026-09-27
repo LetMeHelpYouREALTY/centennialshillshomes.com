@@ -13,6 +13,7 @@ import {
   RealtorServicesGrid,
   SectionShell,
 } from "@/components/sections/HyperlocalSections";
+import NearbyAmenitiesSection from "@/components/sections/NearbyAmenitiesSection";
 import { agentInfo } from "@/lib/site-config";
 import { buildPageMetadata } from "@/lib/seo";
 import {
@@ -40,6 +41,7 @@ export type HyperlocalPageData = {
   schemaType: "service" | "place";
   placeName?: string;
   zipCodes?: string[];
+  showNearbyAmenities?: boolean;
 };
 
 export function hyperlocalMetadata(data: HyperlocalPageData): Metadata {
@@ -164,6 +166,8 @@ export default function HyperlocalPage({ data }: { data: HyperlocalPageData }) {
         ) : null}
 
         <HyperlocalFaqSection faqs={data.faqs} schemaId={`faq-${data.slug}`} />
+
+        {data.showNearbyAmenities ? <NearbyAmenitiesSection /> : null}
 
         <RealScoutListings />
 

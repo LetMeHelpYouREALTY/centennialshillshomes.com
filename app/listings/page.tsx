@@ -19,6 +19,7 @@ import type { Metadata } from "next";
 import { REALSCOUT_OFFICE_LISTINGS_HTML } from "@/lib/realscout";
 import RealScoutScript from "@/components/realscout/RealScoutScript";
 import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
+import NearbyAmenitiesSection from "@/components/sections/NearbyAmenitiesSection";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/listings" },
@@ -429,6 +430,8 @@ export default function ListingsPage() {
               </div>
             </div>
           </section>
+
+          <NearbyAmenitiesSection className="!bg-white" />
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">

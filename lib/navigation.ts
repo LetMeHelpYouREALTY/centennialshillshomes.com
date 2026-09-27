@@ -21,6 +21,7 @@ export const mainNavLinks: NavLink[] = [
   { href: "/", label: "Home" },
   { href: "/listings", label: "Listings" },
   { href: "/neighborhoods", label: "Neighborhoods" },
+  { href: "/amenities", label: "Nearby Amenities" },
   { href: "/realtor-services", label: "Realtor Services" },
   { href: "/about", label: "About Dr. Jan" },
   { href: "/contact", label: "Contact" },
@@ -225,6 +226,7 @@ export const footerQuickLinks: NavLink[] = [
   { href: "/centennial-hills-realtor", label: "Centennial Hills REALTOR®" },
   { href: "/about", label: "About Dr. Jan Duffy" },
   { href: "/faq", label: "FAQ" },
+  { href: "/amenities", label: "Nearby Amenities" },
   { href: "/google-business", label: "Google Reviews & Hours" },
 ];
 
@@ -254,6 +256,7 @@ export const sitemapPaths: Array<{
   { path: "", priority: 1, changeFrequency: "weekly" },
   { path: "/listings", priority: 0.9, changeFrequency: "daily" },
   { path: "/neighborhoods", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/amenities", priority: 0.85, changeFrequency: "monthly" },
   { path: "/realtor-services", priority: 0.9, changeFrequency: "weekly" },
   { path: "/centennial-hills-realtor", priority: 0.9, changeFrequency: "monthly" },
   { path: "/buy-home-centennial-hills", priority: 0.9, changeFrequency: "weekly" },
