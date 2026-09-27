@@ -227,6 +227,70 @@ export function generateWebSiteSchema() {
 /**
  * Generate FAQPage schema from FAQ items
  */
+export interface FeaturedNearbyPlace {
+  name: string;
+  address: string;
+  schemaType: string;
+}
+
+/**
+ * ItemList of verified nearby places for amenities / hyperlocal pages.
+ */
+export function generateFeaturedPlacesItemListSchema(
+  places: FeaturedNearbyPlace[],
+  listName: string,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: listName,
+    numberOfItems: places.length,
+    itemListElement: places.map((place, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": place.schemaType,
+        name: place.name,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: place.address.split(",")[0]?.trim() ?? place.address,
+          addressLocality: officeInfo.address.city,
+          addressRegion: officeInfo.address.state,
+          addressCountry: "US",
+        },
+      },
+    })),
+  };
+}
+
+/**
+ * Community center Place with geo coordinates for amenities pages.
+ */
+export function generateCommunityCenterPlaceSchema(options: {
+  name: string;
+  description: string;
+  lat: number;
+  lng: number;
+  pagePath: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "@id": `${BASE_URL}${options.pagePath}#community-center`,
+    name: options.name,
+    description: options.description,
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: options.lat,
+      longitude: options.lng,
+    },
+    containedInPlace: {
+      "@type": "City",
+      name: `${officeInfo.address.city}, ${officeInfo.address.state}`,
+    },
+  };
+}
+
 export function generateFAQSchema(faqs: FAQItem[]) {
   return {
     "@context": "https://schema.org",

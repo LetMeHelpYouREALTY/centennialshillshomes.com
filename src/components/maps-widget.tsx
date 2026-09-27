@@ -81,8 +81,9 @@ export default component$<MapsWidgetProps>((props) => {
       // Load Google Maps API dynamically
       if (!window.google || !window.google.maps) {
         const script = document.createElement('script');
-        // Use fallback API key to avoid SSR issues with environment variables
-        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBUvLymcTSnhOAffrlzM_rzYhmIbVfGEn8&libraries=places`;
+        const apiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
+        if (!apiKey) return;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(apiKey)}&libraries=places`;
         script.async = true;
         script.defer = true;
         document.head.appendChild(script);

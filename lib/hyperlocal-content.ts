@@ -167,6 +167,7 @@ export const hyperlocalPages: Record<string, HyperlocalPageData> = {
     ],
     schemaType: "service",
     zipCodes: ["89144"],
+    showNearbyAmenities: true,
   },
 
   "sell-home-centennial-hills": {

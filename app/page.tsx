@@ -8,6 +8,7 @@ import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
 import GoogleMapEmbed from "@/components/maps/GoogleMapEmbed";
+import NearbyAmenitiesSection from "@/components/sections/NearbyAmenitiesSection";
 import { LocalBusinessCtaBar } from "@/components/sections/HyperlocalSections";
 import SchemaScript from "@/components/SchemaScript";
 import type { Metadata } from "next";
@@ -54,6 +55,7 @@ export default function Home() {
           title="Centennial Hills Real Estate FAQ"
           subtitle="Direct answers for buyers and sellers in ZIP codes 89135, 89138, and 89144"
         />
+        <NearbyAmenitiesSection />
         <GoogleMapEmbed />
         <CtaBanner />
         <LocalBusinessCtaBar />
