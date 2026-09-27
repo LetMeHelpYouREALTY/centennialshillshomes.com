@@ -3,12 +3,7 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 import type { Metadata } from "next";
 import SchemaScript from "@/components/SchemaScript";
-import {
-  generateBreadcrumbSchema,
-  generateFAQSchema,
-  generateWebPageSchema,
-  combineSchemas,
-} from "@/lib/schema";
+import { generateFAQSchema, generateWebPageSchema, combineSchemas } from "@/lib/schema";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/faq" },
@@ -23,12 +18,6 @@ export const metadata: Metadata = {
     "Dr. Jan agent questions",
   ],
 };
-
-// Breadcrumb items
-const breadcrumbs = [
-  { name: "Home", url: "/" },
-  { name: "FAQ", url: "/faq" },
-];
 
 const faqCategories = [
   {
@@ -165,7 +154,6 @@ const allFaqs = faqCategories.flatMap((category) =>
 
 // Combined page schemas including all FAQs
 const pageSchemas = combineSchemas(
-  generateBreadcrumbSchema(breadcrumbs),
   generateWebPageSchema({
     name: "Frequently Asked Questions | Centennial Hills Real Estate Las Vegas",
     description:

@@ -14,7 +14,7 @@ import SchemaScript from "@/components/SchemaScript";
 import type { Metadata } from "next";
 import { homeFaqs, siteConfig } from "@/lib/site-config";
 import { buildPageMetadata } from "@/lib/seo";
-import { generateFAQSchema } from "@/lib/schema";
+import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = buildPageMetadata({
   title: siteConfig.fullName,
@@ -37,6 +37,10 @@ export default function Home() {
   // then advisor proof, FAQ, and visit/CTA — for SEO and buyer engagement.
   return (
     <>
+      <SchemaScript
+        schema={generateBreadcrumbSchema([{ name: "Home", url: "/" }])}
+        id="home-breadcrumb-schema"
+      />
       <SchemaScript schema={generateFAQSchema(homeFaqs)} id="home-faq-schema" />
       <main>
         <HomeHero />
