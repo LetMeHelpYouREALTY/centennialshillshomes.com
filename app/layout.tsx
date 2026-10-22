@@ -119,6 +119,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Script src="/ads-conversions.js" strategy="afterInteractive" />
         <Footer />
         <ClientWidgets />
         <Analytics />
