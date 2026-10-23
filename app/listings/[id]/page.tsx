@@ -2,6 +2,7 @@ import { Phone, MapPin, Calendar, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CalendlyAfterListings from "@/components/calendly/CalendlyAfterListings";
 import PageBreadcrumbs from "@/components/seo/PageBreadcrumbs";
 import PageLastUpdated from "@/components/seo/PageLastUpdated";
 import SchemaScript from "@/components/SchemaScript";
@@ -147,6 +148,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
         </div>
       </main>
       <RealScoutListings />
+      <CalendlyAfterListings />
     </>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Script from "next/script";
+import { calendlyUrlFor } from "@/lib/calendly";
 import "./types";
 
 interface CalendlyBadgeProps {
@@ -15,7 +16,7 @@ interface CalendlyBadgeProps {
 const CALENDLY_CSS = "https://assets.calendly.com/assets/external/widget.css";
 
 export default function CalendlyBadge({
-  url = "https://calendly.com/drjanduffy/showing",
+  url = calendlyUrlFor(typeof window === "undefined" ? "/" : window.location.pathname, "badge"),
   text = "Schedule time with me",
   color = "#C4A574",
   textColor = "#12100E",
