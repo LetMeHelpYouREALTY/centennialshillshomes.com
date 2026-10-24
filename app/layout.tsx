@@ -98,7 +98,7 @@ export default function RootLayout({
         <GlobalBreadcrumbSchema />
         {/* Google Analytics */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-WB5DLLZ4C6"
+          src="https://www.googletagmanager.com/gtag/js?id=G-BXTZ077LFQ"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -106,7 +106,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-WB5DLLZ4C6');
+            gtag('config', 'G-BXTZ077LFQ');
           `}
         </Script>
       </head>
