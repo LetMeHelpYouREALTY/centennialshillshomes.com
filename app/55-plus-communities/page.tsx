@@ -1,4 +1,5 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CalendlyAfterListings from "@/components/calendly/CalendlyAfterListings";
 import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
 import Link from "next/link";
 import {
@@ -856,6 +857,7 @@ export default function FiftyFiveCommunitiesPage() {
         </div>
       </main>
       <RealScoutListings />
+      <CalendlyAfterListings />
     </>
   );
 }

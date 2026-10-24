@@ -4,6 +4,7 @@ import NeighborhoodGrid from "@/components/home/NeighborhoodGrid";
 import AgentBio from "@/components/home/AgentBio";
 import CtaBanner from "@/components/home/CtaBanner";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CalendlyAfterListings from "@/components/calendly/CalendlyAfterListings";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
@@ -47,6 +48,7 @@ export default function Home() {
         <ReviewsSection />
         <NeighborhoodGrid />
         <RealScoutListings />
+        <CalendlyAfterListings />
         <AgentBio />
         <WhyChooseUs />
         <FAQSection

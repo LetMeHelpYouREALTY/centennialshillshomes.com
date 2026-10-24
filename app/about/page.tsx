@@ -1,5 +1,6 @@
 import AgentPortrait from "@/components/AgentPortrait";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CalendlyAfterListings from "@/components/calendly/CalendlyAfterListings";
 import Link from "next/link";
 import { 
   Phone, 
@@ -454,6 +455,7 @@ export default function AboutPage() {
         </div>
       </main>
       <RealScoutListings />
+      <CalendlyAfterListings />
     </>
   );
 }
