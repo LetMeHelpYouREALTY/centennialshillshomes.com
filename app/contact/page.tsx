@@ -72,8 +72,7 @@ export default function ContactPage() {
               <p className="text-slate-700 mb-8">
                 Whether you're buying your first home, selling a luxury property, or exploring
                 investment opportunities, I'm here to provide expert guidance backed by the trusted{" "}
-                <strong>Centennial Hills Real Estate</strong> brand. Serving Las Vegas since 2008 
-                with $127M+ in closed transactions.
+                <strong>Centennial Hills Real Estate</strong> brand. In real estate since 1983, with $127M+ in closed transactions.
               </p>
 
               {/* NAP Information */}
@@ -208,7 +207,7 @@ export default function ContactPage() {
                   <div className="flex items-start">
                     <Star className="h-5 w-5 text-terracotta-light mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
-                      <strong className="text-white">Proven Results:</strong> $127M+ in closed transactions serving Las Vegas since 2008.
+                      <strong className="text-white">Proven Results:</strong> $127M+ in closed transactions.
                     </p>
                   </div>
                   <div className="flex items-start">

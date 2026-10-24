@@ -44,7 +44,7 @@ export const hyperlocalPages: Record<string, HyperlocalPageData> = {
       "Luxury, relocation & 55+ specialists",
     ],
     body: [
-      "Centennial Hills buyers and sellers need a REALTOR® who knows northwest Las Vegas block by block — not a generic Las Vegas agent. Dr. Jan Duffy has closed 500+ transactions since 2008 with a focus on Centennial Hills, Red Rock Country Club, Summerlin West, and adjacent communities.",
+      "Centennial Hills buyers and sellers need a REALTOR® who knows northwest Las Vegas block by block — not a generic Las Vegas agent. Dr. Jan Duffy has closed 500+ transactions, with a focus on Centennial Hills, Red Rock Country Club, Summerlin West, and adjacent communities.",
       "Every service includes Centennial Hills Real Estate marketing, professional photography coordination, negotiation strategy, and access to a global referral network when you relocate in or out of Nevada.",
       "Whether you are deploying California equity, accepting a corporate transfer, downsizing to a 55+ community, or listing a move-up home near Lone Mountain, you get executive-level communication and hyperlocal pricing guidance.",
     ],
@@ -98,10 +98,10 @@ export const hyperlocalPages: Record<string, HyperlocalPageData> = {
     image: siteImages.agentHero,
     answerQuestion: "Who is the best REALTOR® in Centennial Hills Las Vegas?",
     answerText:
-      "Dr. Jan Duffy is a Centennial Hills Real Estate REALTOR® () specializing in Centennial Hills and northwest Las Vegas. The Google Business Profile shows 5.0 from 1 Google review. She offers same-day showings and complimentary market analysis in ZIP codes 89144, 89138, and 89135.",
+      "Dr. Jan Duffy is a Centennial Hills Real Estate REALTOR® specializing in Centennial Hills and northwest Las Vegas. The Google Business Profile shows 5.0 from 1 Google review. She offers same-day showings and complimentary market analysis in ZIP codes 89144, 89138, and 89135.",
     answerBullets: [
       "Office: 1490 Center Crossing Rd, Las Vegas, NV 89144",
-      "Top 1% Las Vegas agent · Serving since 2008",
+      "Top 1% Las Vegas REALTOR® · In real estate since 1983",
       "5.0 from 1 Google review",
       "Same-day showings · Free CMA",
     ],

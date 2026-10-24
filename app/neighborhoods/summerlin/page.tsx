@@ -252,7 +252,7 @@ export default function SummerlinPage() {
               <p>
                 Working with a <strong>Centennial Hills Real Estate</strong> agent gives you access to listings
                 before they hit the market, expert negotiation skills, and the backing of a globally trusted brand.
-                Dr. Jan Duffy has been serving Summerlin since 2008, which means you'll have insights that online 
+                Dr. Jan Duffy has been in real estate since 1983, which means you'll have insights that online 
                 searches simply can't provide—from which streets have the best mountain views to which builders 
                 offer the best construction quality.
               </p>

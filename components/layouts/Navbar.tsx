@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, ChevronDown, Search, Star, Clock } from "lucide-react";
-import { agentInfo, agentStats, siteConfig } from "@/lib/site-config";
+import { agentInfo, agentStats, gbpReviews, siteConfig } from "@/lib/site-config";
 import AgentPortrait from "@/components/AgentPortrait";
 import {
   mainNavLinks,
@@ -157,7 +157,7 @@ export default function Navbar() {
               className="inline-flex items-center gap-1.5 hover:text-terracotta-light"
             >
               <Star className="h-3 w-3 fill-terracotta-light text-terracotta-light" aria-hidden />
-              {agentStats.averageRating} Google reviews
+              {gbpReviews.label}
             </a>
             <Link href={agentInfo.phoneTel} className="hover:text-terracotta-light">
               {agentInfo.phone}
@@ -336,7 +336,7 @@ export default function Navbar() {
                   className="flex w-full items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold text-terracotta-dark"
                 >
                   <Star className="h-4 w-4" />
-                  {agentStats.averageRating} Google reviews
+                  {gbpReviews.label}
                 </a>
               </div>
             </div>

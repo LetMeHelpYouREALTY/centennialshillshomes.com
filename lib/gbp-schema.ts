@@ -142,7 +142,7 @@ export const businessInfo = {
 // 750-word GBP Description (3 sections)
 export const gbpDescription = {
   // Section 1: Who you are/mission (~250 words)
-  whoWeAre: `Dr. Jan Duffy is a REALTOR® with Centennial Hills Real Estate, serving northwest Las Vegas since 2008. She prices from current comps and stays on the file until it closes.
+  whoWeAre: `Dr. Jan Duffy is a REALTOR® with Centennial Hills Real Estate, in real estate since 1983 and serving northwest Las Vegas. She prices from current comps and stays on the file until it closes.
 
 The office is 1490 Center Crossing Rd, Las Vegas, NV 89144. The Google Business Profile shows 5.0 from 1 Google review. Call (702) 903-1952, daily 8:00 AM–8:00 PM.`,
 

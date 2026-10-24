@@ -138,7 +138,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-white/10 pt-6 text-xs text-white/50">
           <p className="text-sm text-white/80">
-            {agentInfo.brokerage} · License {agentInfo.license}
+            {agentInfo.brokerage} since September 2008 · License {agentInfo.license}
           </p>
           <div className="mt-3 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <p>

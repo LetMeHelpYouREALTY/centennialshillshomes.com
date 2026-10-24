@@ -14,7 +14,7 @@ const features = [
   },
   {
     icon: Users,
-    title: "Top 1% Centennial Hills REALTOR®",
+    title: "Top 1% Las Vegas REALTOR®",
     description: "Dr. Jan Duffy — recognized results for move-up and luxury buyers and sellers.",
   },
   {

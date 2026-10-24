@@ -29,7 +29,7 @@ export default function HomeHero() {
   const router = useRouter();
   const [tab, setTab] = useState<SearchTab>("buy");
   const [query, setQuery] = useState("");
-  const years = new Date().getFullYear() - agentStats.servingSince;
+  
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -63,7 +63,7 @@ export default function HomeHero() {
         </h1>
         <p className="mt-6 max-w-2xl text-base text-white/90 md:text-xl">
           Centennial Hills Las Vegas real estate for ZIP codes {siteConfig.zipCodes.join(", ")}.{" "}
-          {agentStats.transactionsClosed}+ closings since {agentStats.servingSince}, across
+          {agentStats.transactionsClosed}+ closings across
           Providence, Skye Canyon, and Tule Springs.
         </p>
 
@@ -116,7 +116,7 @@ export default function HomeHero() {
           </div>
         </form>
         <p className="mt-3 text-xs text-white/70">
-          Live MLS search · {years} years in northwest Las Vegas · Same-day showings
+          Live MLS search · In real estate since 1983 · Same-day showings
         </p>
       </div>
     </section>

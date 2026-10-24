@@ -217,8 +217,7 @@ export default function ListingsPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Each Las Vegas neighborhood offers a unique lifestyle, from the resort-style living 
               of Summerlin to the established Henderson communities with parks and shopping. Understanding these 
-              differences is crucial to finding a home that fits your needs. Dr. Jan Duffy has worked here since 2008. As a local 
-              agent serving Las Vegas since 2008, Dr. Jan Duffy provides 
+              differences is crucial to finding a home that fits your needs. As a local agent in real estate since 1983, Dr. Jan Duffy provides 
               expert guidance on which neighborhoods match your priorities—whether that's schools, 
               commute times, amenities, or investment potential.
             </p>
@@ -252,9 +251,7 @@ export default function ListingsPage() {
             </h2>
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
               In today's competitive Las Vegas market, having expert representation can mean the 
-              difference between winning your dream home and losing out. Dr. Jan Duffy brings 
-              the resources of Centennial Hills Real Estate—the most trusted name in real estate—
-              combined with deep local market knowledge from serving Las Vegas since 2008.
+              difference between winning your dream home and losing out. Dr. Jan Duffy brings deep local market knowledge from a career in real estate since 1983.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">

@@ -1,11 +1,11 @@
 import { agentStats, gbpReviews } from "@/lib/site-config";
 
 export default function StatsBand() {
-  const years = new Date().getFullYear() - agentStats.servingSince;
+  
   const stats = [
     { value: `${agentStats.transactionsClosed}+`, label: "Closed transactions" },
-    { value: "Top 1%", label: "Nevada agents" },
-    { value: `${years} yrs`, label: "Hyperlocal expertise" },
+    { value: "Top 1%", label: "Las Vegas REALTOR®" },
+    { value: "Since 1983", label: "In real estate" },
     { value: `${gbpReviews.ratingValue}.0★`, label: "Google rating" },
   ];
 

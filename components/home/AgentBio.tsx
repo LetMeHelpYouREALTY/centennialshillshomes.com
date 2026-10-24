@@ -4,7 +4,7 @@ import { agentInfo, agentStats, officeInfo, siteConfig } from "@/lib/site-config
 import AgentPortrait from "@/components/AgentPortrait";
 
 export default function AgentBio() {
-  const years = new Date().getFullYear() - agentStats.servingSince;
+  
 
   return (
     <section className="bg-ink py-16 text-white md:py-24" id="about">
@@ -17,9 +17,9 @@ export default function AgentBio() {
             {agentInfo.name}, Centennial Hills {agentInfo.title}
           </h2>
           <p className="mt-6 text-base leading-relaxed text-white/85 md:text-lg">
-            Since {agentStats.servingSince}, {agentInfo.name} has represented buyers and sellers
+            In real estate since 1983, {agentInfo.name} represents buyers and sellers
             across the ZIP codes that define this northwest Las Vegas practice —{" "}
-            {siteConfig.zipCodes.join(", ")}. {years} years of on-the-ground work means disciplined
+            {siteConfig.zipCodes.join(", ")}. Her on-the-ground work means disciplined
             negotiation and data-driven guidance from move-up homes through luxury listings.
           </p>
           <p className="mt-4 text-base leading-relaxed text-white/85 md:text-lg">
