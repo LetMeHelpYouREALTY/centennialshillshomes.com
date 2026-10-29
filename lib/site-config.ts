@@ -189,7 +189,7 @@ export const neighborhoods = [
   {
     name: "Henderson",
     slug: "henderson",
-    description: "Southeast valley city with established neighborhoods",
+    description: "Southeast valley city with older neighborhoods",
     highlights: ["Green Valley", "Anthem", "Lake Las Vegas"],
     image: siteImages.communities.lasVegasLuxury,
   },

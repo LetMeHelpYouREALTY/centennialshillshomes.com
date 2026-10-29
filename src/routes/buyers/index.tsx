@@ -115,7 +115,7 @@ export default component$(() => {
               </li>
               <li class="flex items-start">
                 <span class="text-blue-600 mr-3 mt-1">✓</span>
-                <span class="text-gray-600">Excellent schools and amenities</span>
+                <span class="text-gray-600">Nearby public schools and amenities</span>
               </li>
               <li class="flex items-start">
                 <span class="text-blue-600 mr-3 mt-1">✓</span>

@@ -191,7 +191,7 @@ export default component$(() => {
               </div>
               <div class="neighborhood-info">
                 <h3>Central Centennial Hills (89135)</h3>
-                <p>Established neighborhoods with mature landscaping, excellent schools, and convenient amenities. Perfect for families seeking a stable, well-established community in Centennial Hills.</p>
+                <p>Older neighborhoods with mature landscaping, nearby schools, and convenient amenities in Centennial Hills.</p>
                 <div class="neighborhood-stats">
                   <span>Avg Price: $485,000</span>
                   <span>Homes: 2,500+</span>

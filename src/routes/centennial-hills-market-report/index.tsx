@@ -35,8 +35,8 @@ export default component$(() => {
           <h2>Current Market Overview</h2>
           <p>
             The Centennial Hills real estate market continues to show strong performance with steady demand 
-            from families, first-time buyers, and California equity buyers. The area's excellent schools, 
-            new construction, and family-friendly amenities drive consistent interest.
+            from families, first-time buyers, and California equity buyers. The area's nearby public schools, 
+            new construction, and amenities drive consistent interest.
           </p>
 
           <h3>Market Statistics</h3>
@@ -53,8 +53,8 @@ export default component$(() => {
             <li>Steady price appreciation year-over-year</li>
             <li>Strong demand for new construction homes</li>
             <li>Growing interest from California equity buyers</li>
-            <li>Family-friendly neighborhoods remain highly sought after</li>
-            <li>Excellent school districts drive property values</li>
+            <li>Neighborhoods remain highly sought after</li>
+            <li>Clark County School District campuses drive property values</li>
           </ul>
 
           <h3>Property Types</h3>
@@ -71,7 +71,7 @@ export default component$(() => {
           </p>
           <ul>
             <li><strong>ZIP 89135:</strong> Strong demand, new construction focus</li>
-            <li><strong>ZIP 89138:</strong> Established neighborhoods, steady appreciation</li>
+            <li><strong>ZIP 89138:</strong> Older neighborhoods, steady appreciation</li>
             <li><strong>ZIP 89144:</strong> Mixed inventory, good value opportunities</li>
           </ul>
 
@@ -98,7 +98,7 @@ export default component$(() => {
           <h3>Demographic Trends</h3>
           <p>
             Centennial Hills attracts families, first-time buyers, and relocating professionals seeking 
-            quality homes, excellent schools, and family-friendly communities. These demographic trends 
+            quality homes, nearby schools, and master-planned communities. These market trends 
             drive consistent demand for housing in the area.
           </p>
           <p>
@@ -130,7 +130,7 @@ export default component$(() => {
           <p>
             Historical price data shows consistent appreciation in Centennial Hills, with property values 
             increasing steadily over time. This appreciation reflects the area's strong fundamentals, 
-            including excellent schools, new construction, and family-friendly amenities.
+            including nearby schools, new construction, and community amenities.
           </p>
           <p>
             While past performance doesn't guarantee future results, historical trends provide context for 
@@ -235,7 +235,7 @@ export default component$(() => {
           <h3>Demographic Trends</h3>
           <p>
             Demographic trends favor Centennial Hills, with continued growth in families, professionals, 
-            and relocating buyers seeking quality homes and excellent schools. These trends support 
+            and relocating buyers seeking quality homes and nearby public schools. These trends support 
             continued demand and market stability.
           </p>
           <p>
@@ -246,7 +246,7 @@ export default component$(() => {
 
           <h3>Market Stability</h3>
           <p>
-            Centennial Hills' strong fundamentals, including excellent schools, family-friendly amenities, 
+            Centennial Hills' strong fundamentals, including nearby schools, community amenities, 
             and quality housing, support market stability and long-term appreciation. These fundamentals 
             help the area maintain value and attract buyers even during broader market corrections.
           </p>

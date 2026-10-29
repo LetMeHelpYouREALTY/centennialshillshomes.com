@@ -36,7 +36,7 @@ export default component$(() => {
           <h2>Golf Course Communities in Las Vegas</h2>
           <p>
             Las Vegas is home to world-class golf courses and luxury communities that offer golf course living. 
-            These exclusive communities provide residents with private golf course access, stunning views, and 
+            These communities provide residents with private golf course access, stunning views, and 
             resort-style amenities. Golf course living in Las Vegas represents the pinnacle of luxury residential 
             experiences, combining championship golf with luxury homes, world-class amenities, and exceptional 
             quality of life.
@@ -75,7 +75,7 @@ export default component$(() => {
             with active recreation.
           </p>
           <p>
-            The community's location in Summerlin West provides residents with access to excellent schools, 
+            The community's location in Summerlin West provides residents with access to public schools, 
             premium shopping and dining, and proximity to Red Rock Canyon National Conservation Area. This 
             combination of golf course living, luxury amenities, and convenient location makes Red Rock 
             Country Club one of Las Vegas' most desirable golf course communities.
@@ -97,7 +97,7 @@ export default component$(() => {
             Bear's Best Las Vegas features 18 holes inspired by Nicklaus' favorite designs from around the 
             world, creating a unique and challenging golfing experience. Residents of The Ridges enjoy 
             preferred tee times, reduced green fees, and access to the club's premium facilities, 
-            enhancing the value of golf course living in this exclusive community.
+            enhancing the value of golf course living in this luxury community.
           </p>
 
           <h3>Summerlin Golf Communities</h3>
@@ -108,7 +108,7 @@ export default component$(() => {
             with different budgets and preferences.
           </p>
           <p>
-            Summerlin's golf communities include established neighborhoods with mature landscaping, new 
+            Summerlin's golf communities include older neighborhoods with mature landscaping, new 
             construction with modern features, and custom homes that allow buyers to create their dream 
             golf course homes. This diversity ensures that Summerlin has golf course living options for 
             various needs and budgets.
@@ -125,11 +125,11 @@ export default component$(() => {
             Las Vegas Country Club is an established golf course community featuring a championship course, 
             luxury homes, and a rich history that reflects Las Vegas' development as a premier residential 
             destination. The community's established reputation, mature landscaping, and proven property 
-            values make it attractive to buyers seeking golf course living in a well-established community.
+            values make it attractive to buyers seeking golf course living in an older community.
           </p>
           <p>
             The community's championship course provides residents with challenging golf and stunning course 
-            views, while the area's established neighborhoods offer luxury homes with proven property values. 
+            views, while the area's older neighborhoods offer luxury homes with proven property values. 
             This combination of golf course access, established reputation, and luxury living makes Las Vegas 
             Country Club attractive to buyers seeking golf course living in a proven community.
           </p>

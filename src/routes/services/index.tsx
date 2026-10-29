@@ -175,11 +175,11 @@ export default component$(() => {
 								</h3>
 								<p class="text-gray-700 mb-4">
 									Established luxury community with mature landscaping,
-									excellent schools, and diverse luxury home options.
+									nearby public schools, and diverse luxury home options.
 								</p>
 								<ul class="text-sm text-gray-600 space-y-2">
-									<li>• Mature communities</li>
-									<li>• Top-rated schools</li>
+									<li>• Older communities</li>
+									<li>• Nearby public schools</li>
 									<li>• Diverse home styles</li>
 									<li>• Established amenities</li>
 								</ul>
@@ -190,11 +190,11 @@ export default component$(() => {
 								</h3>
 								<p class="text-gray-700 mb-4">
 									Growing luxury community with new construction and resale
-									opportunities, perfect for families and executives.
+									opportunities, with homes in every size range.
 								</p>
 								<ul class="text-sm text-gray-600 space-y-2">
 									<li>• New construction</li>
-									<li>• Family-friendly</li>
+									<li>• Parks nearby</li>
 									<li>• Growing community</li>
 									<li>• Modern amenities</li>
 								</ul>

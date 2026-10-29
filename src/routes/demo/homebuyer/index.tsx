@@ -334,11 +334,11 @@ export default component$(() => {
 
               <div class="community-card">
                 <h3>Summerlin West</h3>
-                <p>Established neighborhood with mature landscaping</p>
+                <p>Older neighborhood with mature landscaping</p>
                 <ul>
                   <li>Tree-Lined Streets</li>
                   <li>Price Range: $450K - $700K</li>
-                  <li>Top-Rated Schools</li>
+                  <li>Nearby Public Schools</li>
                 </ul>
                 <a href="/summerlin-west" class="btn btn-outline">Explore</a>
               </div>

@@ -657,7 +657,7 @@ export default class RealEstateWorker extends WorkerEntrypoint<Env> {
 
   private generateMockLifestyle(neighborhood: string): string[] {
     return [
-      "Family-friendly community",
+      "Community with parks",
       "Active outdoor lifestyle",
       "Close to Red Rock Canyon",
       "Golf course communities",

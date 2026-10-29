@@ -97,7 +97,7 @@ export default component$(() => {
           <h2>Luxury Home Buyer Testimonials</h2>
           <p>
             Discover how Dr. Janet Duffy has helped luxury home buyers find their dream properties in Las Vegas' most 
-            exclusive communities. Our luxury clients appreciate Dr. Duffy's attention to detail, market expertise, and 
+            communities. Our luxury clients appreciate Dr. Duffy's attention to detail, market expertise, and 
             personalized service that exceeds expectations for high-end real estate transactions. These testimonials 
             demonstrate Dr. Duffy's ability to serve luxury buyers and deliver exceptional results in premium property 
             transactions.

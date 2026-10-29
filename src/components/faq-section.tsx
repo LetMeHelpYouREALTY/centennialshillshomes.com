@@ -106,7 +106,7 @@ export const buyerServiceFAQs: FAQItem[] = [
   },
   {
     question: "What should first-time homebuyers know about Centennial Hills?",
-    answer: "Centennial Hills offers excellent value for first-time buyers with new construction options, great schools, and family-friendly amenities. Dr. Jan Duffy provides first-time buyer guidance including financing options, down payment assistance programs, home inspection guidance, and neighborhood insights. ZIP codes 89135, 89138, and 89144 offer diverse housing options from starter homes to luxury properties."
+    answer: "Centennial Hills offers excellent value for first-time buyers with new construction options, nearby public schools, and amenities. Dr. Jan Duffy provides first-time buyer guidance including financing options, down payment assistance programs, home inspection guidance, and neighborhood insights. ZIP codes 89135, 89138, and 89144 offer diverse housing options from starter homes to luxury properties."
   },
   {
     question: "Are there new construction homes available in Centennial Hills?",
@@ -152,7 +152,7 @@ export const investmentServiceFAQs: FAQItem[] = [
   },
   {
     question: "Is Centennial Hills a good area for rental properties?",
-    answer: "Yes, Centennial Hills is attractive for rental investments due to strong rental demand, good schools, family-friendly amenities, and proximity to employment centers. Dr. Jan Duffy provides rental market analysis including average rents, occupancy rates, tenant demographics, and property management resources. She helps investors evaluate rental potential and cash flow projections."
+    answer: "Yes, Centennial Hills is attractive for rental investments due to strong rental demand, nearby public schools, amenities, and proximity to employment centers. Dr. Jan Duffy provides rental market analysis including average rents, occupancy rates, tenant demographics, and property management resources. She helps investors evaluate rental potential and cash flow projections."
   },
   {
     question: "What should investors know about Las Vegas real estate?",
@@ -175,7 +175,7 @@ export const californiaEquityBuyerFAQs: FAQItem[] = [
   },
   {
     question: "What should California buyers know about Centennial Hills?",
-    answer: "Centennial Hills offers California buyers excellent value with luxury homes at significantly lower prices than California markets. The area features new construction, great schools, family amenities, and proximity to Red Rock Canyon. Dr. Jan Duffy provides neighborhood tours, school information, and lifestyle insights to help California buyers find communities that match their preferences and budget."
+    answer: "Centennial Hills offers California buyers excellent value with luxury homes at significantly lower prices than California markets. The area features new construction, nearby public schools, parks, and proximity to Red Rock Canyon. Dr. Jan Duffy provides neighborhood tours, school information, and lifestyle insights to help California buyers find communities that match their preferences and budget."
   }
 ];
 
@@ -186,7 +186,7 @@ export const corporateRelocationFAQs: FAQItem[] = [
   },
   {
     question: "What neighborhoods are best for corporate relocations?",
-    answer: "Centennial Hills, Summerlin West, and northwest Las Vegas are popular for corporate relocations due to excellent schools, family amenities, proximity to employment centers, and luxury housing options. Dr. Jan Duffy provides neighborhood tours and insights to help relocating professionals find communities that match their lifestyle, commute needs, and family requirements."
+    answer: "Centennial Hills, Summerlin West, and northwest Las Vegas are popular for corporate relocations due to nearby public schools, family amenities, proximity to employment centers, and luxury housing options. Dr. Jan Duffy provides neighborhood tours and insights to help relocating professionals find communities that match their lifestyle, commute needs, and family requirements."
   },
   {
     question: "How quickly can corporate relocations be completed?",
