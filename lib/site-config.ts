@@ -124,7 +124,7 @@ export const valuePropositions = {
   trust:
     "Dr. Jan Duffy focuses on Centennial Hills and adjacent communities (89135, 89138, 89144) with same-day showings, complimentary market analysis, and executive-level service.",
   expertise:
-    "Top 1% Las Vegas REALTOR® serving luxury and move-up buyers and sellers in Red Rock Country Club, The Ridges, Summerlin West, Lone Mountain, and North Las Vegas.",
+    "Las Vegas REALTOR® serving luxury and move-up buyers and sellers in Red Rock Country Club, The Ridges, Summerlin West, Lone Mountain, and North Las Vegas.",
 };
 
 /** Primary neighborhoods for this hyperlocal site */

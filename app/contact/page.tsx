@@ -72,7 +72,7 @@ export default function ContactPage() {
               <p className="text-slate-700 mb-8">
                 Whether you're buying your first home, selling a luxury property, or exploring
                 investment opportunities, I'm here to provide expert guidance backed by the trusted{" "}
-                <strong>Centennial Hills Real Estate</strong> brand. In real estate since 1983, with $127M+ in closed transactions.
+                <strong>Centennial Hills Real Estate</strong> brand. Licensed since 2008 · 35 years in Las Vegas, with $127M+ in Dr. Duffy Group career sales.
               </p>
 
               {/* NAP Information */}

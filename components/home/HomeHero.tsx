@@ -116,7 +116,7 @@ export default function HomeHero() {
           </div>
         </form>
         <p className="mt-3 text-xs text-white/70">
-          Live MLS search · In real estate since 1983 · Same-day showings
+          Live MLS search · Licensed since 2008 · Same-day showings
         </p>
       </div>
     </section>
