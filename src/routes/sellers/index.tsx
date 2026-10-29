@@ -246,7 +246,7 @@ export default component$(() => {
 									</h3>
 									<p class="text-gray-600">
 										Growing luxury community with new construction and
-										established neighborhoods.
+										older neighborhoods.
 									</p>
 								</div>
 							</Link>

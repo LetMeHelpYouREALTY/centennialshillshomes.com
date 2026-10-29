@@ -29,7 +29,7 @@ export default component$(() => {
           </h1>
           <p class="hero-subtitle">
             Discover Lone Mountain, a growing northwest Las Vegas area offering new construction, 
-            family-friendly neighborhoods, and mountain views. Dr. Jan Duffy specializes in Lone Mountain 
+            neighborhoods, and mountain views. Dr. Jan Duffy specializes in Lone Mountain 
             real estate with expertise in new construction and first-time homebuyer guidance.
           </p>
         </div>
@@ -40,8 +40,8 @@ export default component$(() => {
           <h2>About Lone Mountain</h2>
           <p>
             Lone Mountain is a rapidly developing area in northwest Las Vegas, known for its new construction 
-            communities, affordable housing options, and family-friendly atmosphere. The area offers excellent 
-            value for first-time buyers and growing families seeking quality homes in a growing community. 
+            communities, affordable housing options, and parks. The area offers excellent 
+            value for first-time and move-up buyers seeking quality homes in a growing community. 
             Named after the prominent mountain peak that provides stunning backdrop views, Lone Mountain has 
             become one of Las Vegas' most attractive areas for new homebuyers and families.
           </p>
@@ -62,7 +62,7 @@ export default component$(() => {
           <h2>Community Features and Amenities</h2>
           <p>
             Lone Mountain offers a comprehensive array of features and amenities that support active, 
-            family-friendly lifestyles. These features make the area attractive to buyers seeking quality 
+            lifestyles. These features make the area attractive to buyers seeking quality 
             homes in communities that provide both convenience and recreational opportunities.
           </p>
 
@@ -94,10 +94,10 @@ export default component$(() => {
             modern features and quality construction.
           </p>
 
-          <h3>Family-Friendly Neighborhoods</h3>
+          <h3>Neighborhoods</h3>
           <p>
-            Lone Mountain's neighborhoods are designed with families in mind, featuring safe streets, 
-            community parks, and family-oriented amenities. These neighborhoods provide environments where 
+            Lone Mountain's neighborhoods are designed with families in mind, featuring streets, 
+            community parks, and amenities. These neighborhoods provide environments where 
             children can play safely, families can connect with neighbors, and residents can enjoy 
             community activities and events.
           </p>
@@ -108,9 +108,9 @@ export default component$(() => {
             relationships with neighbors.
           </p>
           <p>
-            The family-friendly atmosphere is enhanced by the area's excellent schools, safe neighborhoods, 
+            Parks, trails, and nearby public schools add to the area's appeal, 
             and proximity to recreational opportunities. These factors combine to create an environment 
-            that supports family life and makes Lone Mountain attractive to families with children.
+            that makes Lone Mountain attractive to many buyers.
           </p>
 
           <h3>Natural Beauty and Mountain Views</h3>
@@ -200,7 +200,7 @@ export default component$(() => {
             Lone Mountain's real estate market includes single-family homes, townhomes, and planned 
             communities that offer various options for different needs and budgets. Single-family homes 
             typically range from 1,500 to 3,500 square feet, providing options for first-time buyers, 
-            growing families, and those seeking more space.
+            move-up buyers, and those seeking more space.
           </p>
           <p>
             Townhomes in Lone Mountain offer an attractive option for buyers seeking lower maintenance 
@@ -212,7 +212,7 @@ export default component$(() => {
             Planned communities in Lone Mountain offer the benefits of master-planned development, 
             including community amenities, cohesive design, and thoughtful planning that enhances 
             property values and quality of life. These communities provide residents with well-designed 
-            neighborhoods that support active, family-friendly lifestyles.
+            neighborhoods that support active, lifestyles.
           </p>
 
           <h3>Price Range and Value</h3>
@@ -257,7 +257,7 @@ export default component$(() => {
           <p>
             Lone Mountain offers a unique combination of affordability, quality, and growth potential 
             that makes it an attractive choice for many homebuyers. The area's new construction, 
-            family-friendly atmosphere, and convenient location create a compelling value proposition 
+            parks, and convenient location create a compelling value proposition 
             for buyers seeking quality homes in northwest Las Vegas.
           </p>
 
@@ -352,7 +352,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Lone Mountain homes for sale in northwest Las Vegas. New construction communities and family-friendly neighborhoods. Dr. Jan Duffy specializes in Lone Mountain real estate.',
+      content: 'Lone Mountain homes for sale in northwest Las Vegas. New construction communities and master-planned neighborhoods. Dr. Jan Duffy specializes in Lone Mountain real estate.',
     },
   ],
 };

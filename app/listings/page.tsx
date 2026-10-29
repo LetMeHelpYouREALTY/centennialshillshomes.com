@@ -63,7 +63,7 @@ const popularSearches = [
 
 const priceRanges = [
   { range: "Under $400K", description: "Condos, townhomes, and entry-level detached homes", count: "See MLS" },
-  { range: "$400K - $600K", description: "Single-family homes in established neighborhoods", count: "See MLS" },
+  { range: "$400K - $600K", description: "Single-family homes in older neighborhoods", count: "See MLS" },
   { range: "$600K - $1M", description: "Larger lots and premium northwest locations", count: "See MLS" },
   { range: "$1M - $2M", description: "Luxury homes and guard-gated communities", count: "See MLS" },
   { range: "$2M+", description: "Custom estates and view properties", count: "See MLS" },

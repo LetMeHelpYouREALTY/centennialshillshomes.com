@@ -100,7 +100,7 @@ export default component$(() => {
             <div class="p-6">
               <h3 class="text-xl font-semibold text-gray-900 mb-2">Providence</h3>
               <p class="text-gray-600 mb-4">
-                Established community with mature landscaping and family-friendly amenities.
+                Mature landscaping and community amenities.
               </p>
               <div class="text-sm text-gray-500 mb-4">
                 <div>Avg. Price: $650K</div>

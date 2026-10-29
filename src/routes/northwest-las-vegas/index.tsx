@@ -24,8 +24,8 @@ export default component$(() => {
           </h1>
           <p class="hero-subtitle">
             Explore the premier northwest Las Vegas real estate market featuring master-planned communities, luxury 
-            developments, and established neighborhoods. Northwest Las Vegas offers exceptional value with diverse 
-            housing options, excellent schools, and convenient access to employment centers, making it one of Las 
+            developments, and older neighborhoods. Northwest Las Vegas offers exceptional value with diverse 
+            housing options, nearby public schools, and convenient access to employment centers, making it one of Las 
             Vegas' most desirable areas for families, professionals, and investors.
           </p>
         </div>
@@ -36,8 +36,8 @@ export default component$(() => {
           <h2>Northwest Las Vegas Overview</h2>
           <p>
             Explore the premier northwest Las Vegas real estate market featuring master-planned communities, luxury 
-            developments, and established neighborhoods. Northwest Las Vegas offers exceptional value with diverse 
-            housing options, excellent schools, and convenient access to employment centers, making it one of Las 
+            developments, and older neighborhoods. Northwest Las Vegas offers exceptional value with diverse 
+            housing options, nearby public schools, and convenient access to employment centers, making it one of Las 
             Vegas' most desirable areas for families, professionals, and investors. The area's combination of quality 
             development, natural beauty, and urban convenience creates a distinctive living experience that appeals to 
             diverse buyer segments.
@@ -47,7 +47,7 @@ export default component$(() => {
             evolving from a primarily rural area to one of Las Vegas' most prestigious and desirable residential 
             regions. This growth has been carefully planned to balance development with quality of life, ensuring that 
             new construction enhances rather than overwhelms the area's natural character. The result is a collection 
-            of master-planned communities, luxury developments, and established neighborhoods that offer exceptional 
+            of master-planned communities, luxury developments, and older neighborhoods that offer exceptional 
             quality of life.
           </p>
           <p>
@@ -105,13 +105,13 @@ export default component$(() => {
           <p>
             Northwest Las Vegas encompasses prestigious communities including Centennial Hills, Summerlin, Aliante, and 
             Sky Canyon, each offering unique characteristics and amenities. The area features master-planned developments 
-            with community amenities, excellent schools, and recreational facilities designed to enhance quality of life 
+            with community amenities, nearby public schools, and recreational facilities designed to enhance quality of life 
             and property values. This diversity ensures that buyers can find communities that match their preferences, 
             budgets, and lifestyle needs.
           </p>
           <p>
             Centennial Hills represents one of northwest Las Vegas' premier master-planned communities, featuring new 
-            construction, family-friendly neighborhoods, and comprehensive amenities. The community's master-planned 
+            construction, neighborhoods, and comprehensive amenities. The community's master-planned 
             design ensures that residents have access to parks, schools, shopping, and recreational facilities within 
             convenient distances. This comprehensive planning creates a living environment that supports active lifestyles 
             and community interaction.
@@ -127,7 +127,7 @@ export default component$(() => {
           <h3>Centennial Hills Master-Planned Community</h3>
           <p>
             Centennial Hills represents one of northwest Las Vegas' premier master-planned communities, featuring new 
-            construction, family-friendly neighborhoods, and comprehensive amenities. The community's master-planned 
+            construction, neighborhoods, and comprehensive amenities. The community's master-planned 
             design ensures that residents have access to parks, schools, shopping, and recreational facilities within 
             convenient distances. This comprehensive planning creates a living environment that supports active lifestyles 
             and community interaction.
@@ -168,24 +168,24 @@ export default component$(() => {
             buyers and supports property appreciation.
           </p>
 
-          <h3>Established Neighborhoods</h3>
+          <h3>Older Neighborhoods</h3>
           <p>
-            Established neighborhoods in northwest Las Vegas offer mature communities with proven track records, 
+            Older neighborhoods in northwest Las Vegas offer older communities with proven track records, 
             established amenities, and stable property values. These neighborhoods provide buyers with opportunities to 
             purchase homes in communities with established character and amenities. This established option creates value 
-            for buyers seeking mature communities with proven appeal.
+            for buyers seeking older communities with proven appeal.
           </p>
           <p>
             Neighborhood features in established northwest Las Vegas communities include mature landscaping, established 
             amenities, and stable property values that create attractive living environments. These neighborhoods provide 
             buyers with opportunities to purchase homes in communities with proven appeal and established character. This 
-            established option creates value for buyers seeking mature communities.
+            established option creates value for buyers seeking older communities.
           </p>
 
           <h2>Housing Market and Investment Opportunities</h2>
           <p>
-            Northwest Las Vegas presents strong investment opportunities with new construction, established neighborhoods, 
-            and growing demand for quality housing. The area's master-planned communities, excellent schools, and 
+            Northwest Las Vegas presents strong investment opportunities with new construction, older neighborhoods, 
+            and growing demand for quality housing. The area's master-planned communities, nearby public schools, and 
             convenient location make it attractive to both owner-occupants and real estate investors seeking properties 
             with strong appreciation potential. This investment potential, combined with lifestyle benefits, makes 
             northwest Las Vegas attractive to diverse buyer segments.
@@ -205,15 +205,15 @@ export default component$(() => {
 
           <h3>Property Appreciation Trends</h3>
           <p>
-            Property appreciation trends in northwest Las Vegas reflect the area's quality development, excellent schools, 
+            Property appreciation trends in northwest Las Vegas reflect the area's quality development, nearby public schools, 
             and desirable location that create strong demand. Properties in the area have demonstrated consistent 
-            appreciation due to the area's reputation for quality living and excellent schools. This appreciation trend 
+            appreciation due to the area's reputation for quality living and nearby public schools. This appreciation trend 
             supports investment potential and makes northwest Las Vegas attractive to buyers seeking properties with 
             strong value growth.
           </p>
           <p>
-            The area's quality development and excellent schools ensure that properties maintain their appeal and value. 
-            The combination of quality living, excellent schools, and desirable location creates conditions that support 
+            The area's quality development and nearby public schools ensure that properties maintain their appeal and value. 
+            The combination of quality living, nearby public schools, and desirable location creates conditions that support 
             property values and appreciation. Understanding these appreciation trends helps buyers evaluate investment 
             potential and long-term value.
           </p>
@@ -233,9 +233,9 @@ export default component$(() => {
             Vegas attractive to investors seeking properties with strong fundamentals.
           </p>
 
-          <h3>Established Neighborhood Investment</h3>
+          <h3>Older Neighborhood Investment</h3>
           <p>
-            Established neighborhood investment in northwest Las Vegas includes properties with proven track records, 
+            Older neighborhood investment in northwest Las Vegas includes properties with proven track records, 
             established amenities, and stable property values. These properties provide investors with opportunities to 
             purchase homes in communities with established character and amenities. This established option creates value 
             for investors seeking properties with proven appeal and stable values.

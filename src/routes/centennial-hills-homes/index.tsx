@@ -74,7 +74,7 @@ export default component$(() => {
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
               </svg>
               <h3>Master-Planned Community</h3>
-              <p>Centennial Hills is a carefully planned community featuring modern <a href="/centennial-hills-amenities">amenities</a>, well-maintained parks, and family-friendly neighborhoods. The area boasts excellent <a href="/centennial-hills-schools">schools</a>, recreational facilities, and a strong sense of community that makes it ideal for families and professionals. Learn more about the <a href="/centennial-hills">Centennial Hills community</a> and what makes it special.</p>
+              <p>Centennial Hills is a carefully planned community featuring modern <a href="/centennial-hills-amenities">amenities</a>, well-maintained parks, and master-planned neighborhoods. The area has nearby <a href="/centennial-hills-schools">schools</a>, recreational facilities, and a strong sense of community. Learn more about the <a href="/centennial-hills">Centennial Hills community</a> and what makes it special.</p>
             </div>
             <div class="feature-card">
               <svg class="feature-icon" fill="currentColor" viewBox="0 0 20 20">
@@ -88,7 +88,7 @@ export default component$(() => {
                 <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
               </svg>
               <h3>New Construction Available</h3>
-              <p>Centennial Hills continues to expand with new construction projects offering modern floor plans, energy-efficient features, and contemporary designs. Buyers can choose from established neighborhoods or brand-new Centennial Hills homes.</p>
+              <p>Centennial Hills continues to expand with new construction projects offering modern floor plans, energy-efficient features, and contemporary designs. Buyers can choose from older neighborhoods or brand-new Centennial Hills homes.</p>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default component$(() => {
           <div class="zip-grid">
             <div class="zip-card">
               <h3>89135 - Central Centennial Hills</h3>
-              <p>Central Centennial Hills homes feature established neighborhoods with mature landscaping, excellent schools, and convenient access to shopping and dining. This area offers a mix of single-family homes, townhouses, and condos.</p>
+              <p>Central Centennial Hills homes feature older neighborhoods with mature landscaping, nearby public schools, and convenient access to shopping and dining. This area offers a mix of single-family homes, townhouses, and condos.</p>
               <ul>
                 <li>Average Home Price: $450,000 - $650,000</li>
                 <li>Property Types: Single-family, Townhouses</li>
@@ -125,7 +125,7 @@ export default component$(() => {
 
             <div class="zip-card">
               <h3>89144 - West Centennial Hills</h3>
-              <p>West Centennial Hills offers a mix of established communities and new developments, providing diverse housing options for buyers. This area features excellent transportation access and proximity to major employment centers.</p>
+              <p>West Centennial Hills offers a mix of communities and new developments, providing diverse housing options for buyers. This area features excellent transportation access and proximity to major employment centers.</p>
               <ul>
                 <li>Average Home Price: $425,000 - $600,000</li>
                 <li>Property Types: Condos, Townhouses, Single-family</li>

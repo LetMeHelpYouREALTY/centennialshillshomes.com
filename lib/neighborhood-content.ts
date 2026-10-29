@@ -57,7 +57,7 @@ export const neighborhoodPages: Record<string, NeighborhoodPageData> = {
     slug: "summerlin-west",
     title: "Summerlin West Homes for Sale",
     description:
-      "Homes for sale in Summerlin West near Centennial Hills. Established neighborhoods, top amenities, and expert guidance from Dr. Jan Duffy.",
+      "Homes for sale in Summerlin West near Centennial Hills. Older neighborhoods, top amenities, and expert guidance from Dr. Jan Duffy.",
     heroSubtitle: "Established west Summerlin neighborhoods with premium amenities",
     image: siteImages.communities.summerlinWest,
     highlights: ["Trails & parks", "Dining & retail", "Move-up inventory", "West Summerlin access"],

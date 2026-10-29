@@ -79,10 +79,10 @@ export default component$(() => {
         <p>Experience white-glove service for luxury home buyers in Las Vegas with Dr. Janet Duffy's specialized expertise in premium properties. Our luxury buyer services include private showings, off-market opportunities, and access to exclusive <a href="/centennial-hills">Centennial Hills</a> estates, <a href="/summerlin">Summerlin</a> luxury communities, <a href="/the-ridges">The Ridges</a>, <a href="/red-rock-country-club">Red Rock Country Club</a>, and high-end properties throughout Las Vegas. Explore our <a href="/luxury-home-sales">luxury home sales</a> and <a href="/our-luxury-listings">luxury listings</a>, including <a href="/homes-over-1m">homes over $1M</a> and <a href="/golf-course-homes">golf course homes</a>.</p>
 
         <h2>Luxury Market Expertise</h2>
-        <p>Navigate the Las Vegas luxury real estate market with confidence, understanding market dynamics, pricing strategies, and investment potential. Our luxury market analysis covers properties from $750,000 to multi-million dollar estates, with specialized knowledge of Centennial Hills luxury developments and exclusive communities.</p>
+        <p>Navigate the Las Vegas luxury real estate market with confidence, understanding market dynamics, pricing strategies, and investment potential. Our luxury market analysis covers properties from $750,000 to multi-million dollar estates, with specialized knowledge of Centennial Hills luxury developments and luxury communities.</p>
 
         <h2>Exclusive Property Access</h2>
-        <p>Gain access to off-market luxury properties, pre-market listings, and exclusive communities not available to the general public. Our network of luxury real estate professionals provides early access to premium properties in Centennial Hills, The Ridges, and other exclusive Las Vegas communities.</p>
+        <p>Gain access to off-market luxury properties, pre-market listings, and communities not available to the general public. Our network of luxury real estate professionals provides early access to premium properties in Centennial Hills, The Ridges, and other exclusive Las Vegas communities.</p>
 
         <h2>Custom Home and Estate Services</h2>
         <p>Explore custom home opportunities, luxury estate developments, and high-end new construction in Las Vegas' premier locations. We work with luxury builders, architects, and designers to help you create or find the perfect luxury home that meets your exact specifications and lifestyle requirements.</p>
