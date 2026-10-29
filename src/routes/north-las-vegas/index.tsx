@@ -8,7 +8,7 @@ import RealScoutOfficeListings from '../../components/realscout-office-listings'
 export default component$(() => {
   const northLasVegasSchema = pageSchemas.servicePage({
     name: "North Las Vegas Real Estate - Growing Community",
-    description: "Explore North Las Vegas real estate with Dr. Janet Duffy. New developments, established neighborhoods, and investment opportunities in growing Las Vegas community.",
+    description: "Explore North Las Vegas real estate with Dr. Janet Duffy. New developments, older neighborhoods, and investment opportunities in growing Las Vegas community.",
     slug: "north-las-vegas",
     serviceType: "Area Real Estate Services"
   });
@@ -23,9 +23,9 @@ export default component$(() => {
             North Las Vegas Real Estate - <span class="highlight">Growing Community</span>
           </h1>
           <p class="hero-subtitle">
-            Explore the dynamic North Las Vegas real estate market featuring new developments, established neighborhoods, 
+            Explore the dynamic North Las Vegas real estate market featuring new developments, older neighborhoods, 
             and growing communities. North Las Vegas offers excellent value with newer construction, planned communities, 
-            and convenient access to major employment centers, making it ideal for families, professionals, and investors.
+            and convenient access to major employment centers, drawing first-time buyers, move-up buyers, and investors.
           </p>
         </div>
       </section>
@@ -34,9 +34,9 @@ export default component$(() => {
         <div class="container container-center">
           <h2>Discover North Las Vegas Living</h2>
           <p>
-            Explore the dynamic North Las Vegas real estate market featuring new developments, established neighborhoods, 
+            Explore the dynamic North Las Vegas real estate market featuring new developments, older neighborhoods, 
             and growing communities. North Las Vegas offers excellent value with newer construction, planned communities, 
-            and convenient access to major employment centers, making it ideal for families, professionals, and investors. 
+            and convenient access to major employment centers, drawing first-time buyers, move-up buyers, and investors. 
             The area's rapid growth and development create opportunities for buyers seeking quality homes in growing 
             communities.
           </p>
@@ -48,16 +48,16 @@ export default component$(() => {
             attractive to diverse buyer segments.
           </p>
           <p>
-            The area's combination of new development, established neighborhoods, and growing communities creates diverse 
+            The area's combination of new development, older neighborhoods, and growing communities creates diverse 
             housing options that accommodate different preferences, budgets, and lifestyle needs. Buyers can choose from 
-            new construction in master-planned communities, established homes in mature neighborhoods, or growing 
+            new construction in master-planned communities, established homes in older neighborhoods, or growing 
             communities with ongoing development. This diversity ensures that buyers can find properties that match their 
             specific needs and preferences.
           </p>
 
           <h3>Dynamic Real Estate Market</h3>
           <p>
-            North Las Vegas' dynamic real estate market features new developments, established neighborhoods, and growing 
+            North Las Vegas' dynamic real estate market features new developments, older neighborhoods, and growing 
             communities that create diverse opportunities for buyers. The area's rapid growth and development reflect 
             strong demand for quality housing and create opportunities for property appreciation. This dynamic market 
             makes North Las Vegas attractive to buyers seeking quality homes in growing communities.
@@ -164,14 +164,14 @@ export default component$(() => {
           <h2>Neighborhood Highlights</h2>
           <p>
             North Las Vegas encompasses diverse neighborhoods including Aliante, Sky Canyon, and Providence, each 
-            offering unique characteristics and amenities. The area features excellent schools, medical facilities, and 
+            offering unique characteristics and amenities. The area features nearby public schools, medical facilities, and 
             shopping centers while maintaining easy access to downtown Las Vegas and the Las Vegas Strip. This neighborhood 
             diversity creates opportunities for buyers to find communities that match their preferences and lifestyle 
             needs.
           </p>
           <p>
             Aliante represents one of North Las Vegas' premier master-planned communities, featuring golf course living, 
-            comprehensive amenities, and quality schools. The community's master-planned design ensures that residents have 
+            comprehensive amenities, and nearby public schools. The community's master-planned design ensures that residents have 
             access to parks, schools, shopping, and recreational facilities within convenient distances. This comprehensive 
             planning creates a living environment that supports active lifestyles and community interaction.
           </p>
@@ -185,7 +185,7 @@ export default component$(() => {
           <h3>Aliante Master-Planned Community</h3>
           <p>
             Aliante represents one of North Las Vegas' premier master-planned communities, featuring golf course living, 
-            comprehensive amenities, and quality schools. The community's master-planned design ensures that residents have 
+            comprehensive amenities, and nearby public schools. The community's master-planned design ensures that residents have 
             access to parks, schools, shopping, and recreational facilities within convenient distances. This comprehensive 
             planning creates a living environment that supports active lifestyles and community interaction.
           </p>
@@ -210,18 +210,18 @@ export default component$(() => {
             modern homes with advanced features.
           </p>
 
-          <h3>Established Neighborhoods</h3>
+          <h3>Older Neighborhoods</h3>
           <p>
-            Established neighborhoods in North Las Vegas offer mature communities with proven track records, established 
+            Older neighborhoods in North Las Vegas offer older communities with proven track records, established 
             amenities, and stable property values. These neighborhoods provide buyers with opportunities to purchase homes 
             in communities with established character and amenities. This established option creates value for buyers 
-            seeking mature communities with proven appeal.
+            seeking older communities with proven appeal.
           </p>
           <p>
             Neighborhood features in established North Las Vegas communities include mature landscaping, established 
             amenities, and stable property values that create attractive living environments. These neighborhoods provide 
             buyers with opportunities to purchase homes in communities with proven appeal and established character. This 
-            established option creates value for buyers seeking mature communities.
+            established option creates value for buyers seeking older communities.
           </p>
 
           <h2>Investment and Growth Potential</h2>
@@ -351,8 +351,8 @@ export default component$(() => {
           <h2>Quality of Life and Amenities</h2>
           <p>
             Residents enjoy a high quality of life with access to parks, recreational facilities, shopping centers, and 
-            entertainment venues. North Las Vegas offers a suburban lifestyle with urban conveniences, excellent schools, 
-            and family-friendly communities perfect for raising children and building long-term roots. This quality of life 
+            entertainment venues. North Las Vegas offers a suburban lifestyle with urban conveniences, nearby public schools, 
+            and master-planned communities with parks and long-term value. This quality of life 
             makes North Las Vegas attractive to families, professionals, and those seeking balanced living environments.
           </p>
           <p>
@@ -396,17 +396,17 @@ export default component$(() => {
             and supports quality of life.
           </p>
 
-          <h3>Family-Friendly Communities</h3>
+          <h3>Communities</h3>
           <p>
-            Family-friendly communities in North Las Vegas offer safe neighborhoods, excellent schools, and recreational 
+            Communities in North Las Vegas offer parks, nearby schools, and recreational 
             facilities that support family life. The area's communities provide environments where children can play 
-            safely, families can connect with neighbors, and residents can enjoy community activities. This family-friendly 
-            character makes North Las Vegas attractive to families with children.
+            sidewalks and parks, neighbors can connect, and residents can enjoy community activities. This community 
+            character draws a wide range of North Las Vegas buyers.
           </p>
           <p>
-            Community features in North Las Vegas family-friendly neighborhoods include safe streets, community parks, and 
-            family-oriented amenities that support family life. The area's communities provide environments where families 
-            can build lasting relationships and participate in community activities. This family-friendly character creates 
+            Community features in North Las Vegas neighborhoods include streets, community parks, and 
+            community amenities like parks and recreation centers. The area's communities provide environments where residents 
+            can build lasting relationships and participate in community activities. This character creates 
             value for families and supports quality of life.
           </p>
         </div>
@@ -450,7 +450,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Explore North Las Vegas real estate with Dr. Janet Duffy. New developments, established neighborhoods, and investment opportunities in growing Las Vegas community.',
+      content: 'Explore North Las Vegas real estate with Dr. Janet Duffy. New developments, older neighborhoods, and investment opportunities in growing Las Vegas community.',
     },
   ],
 };

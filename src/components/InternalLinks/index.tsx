@@ -61,7 +61,7 @@ export const communityLinks: InternalLink[] = [
 	{
 		href: "/centennial-hills",
 		text: "Centennial Hills",
-		description: "Family-friendly neighborhood with new construction",
+		description: "Neighborhood with new construction",
 	},
 	{
 		href: "/lone-mountain",

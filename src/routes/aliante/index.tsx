@@ -91,7 +91,7 @@ export default component$(() => {
           <p>
             Strong community character in Aliante is fostered through shared amenities, community events, and 
             well-designed neighborhoods that encourage interaction among residents. The community's character reflects 
-            its commitment to quality living, family-friendly environments, and active lifestyles. This community 
+            its commitment to quality living, parks, and active lifestyles. This community 
             character makes Aliante attractive to buyers seeking neighborhoods with a strong sense of community.
           </p>
           <p>
@@ -189,7 +189,7 @@ export default component$(() => {
           </p>
           <p>
             Single-family homes in Aliante range from starter homes to luxury estates, providing options for first-time 
-            buyers, growing families, and luxury buyers. The variety of architectural styles and floor plans ensures that 
+            buyers, move-up buyers, and luxury buyers. The variety of architectural styles and floor plans ensures that 
             buyers can find homes that match their preferences and lifestyle needs. This diversity makes Aliante 
             attractive to diverse buyer segments.
           </p>
@@ -203,7 +203,7 @@ export default component$(() => {
           <h3>Single-Family Home Options</h3>
           <p>
             Single-family homes in Aliante range from starter homes to luxury estates, providing options for first-time 
-            buyers, growing families, and luxury buyers. The variety of architectural styles and floor plans ensures that 
+            buyers, move-up buyers, and luxury buyers. The variety of architectural styles and floor plans ensures that 
             buyers can find homes that match their preferences and lifestyle needs. This diversity makes Aliante 
             attractive to diverse buyer segments.
           </p>
@@ -242,19 +242,19 @@ export default component$(() => {
             community benefits.
           </p>
 
-          <h2>Excellent Schools and Education</h2>
+          <h2>Nearby Public Schools and Education</h2>
           <p>
-            Aliante is served by the Clark County School District with highly-rated schools including Aliante Elementary, 
+            Aliante is served by the Clark County School District with nearby public schools including Aliante Elementary, 
             Del Webb Middle School, and Shadow Ridge High School. The area also provides access to private school 
             options and is within reasonable distance to higher education institutions including UNLV and Nevada State 
-            College. This educational infrastructure makes Aliante attractive to families with children and those 
+            College. This educational infrastructure makes Aliante attractive to buyers who want nearby schools and those 
             pursuing higher education.
           </p>
           <p>
-            Highly-rated schools in Aliante provide families with access to quality education that supports children's 
+            Aliante is served by Clark County School District schools; check CCSD and state data for current ratings, 
             academic success. The community's schools are known for strong academic programs, dedicated teachers, and 
             supportive learning environments. This educational quality makes Aliante attractive to families seeking 
-            excellent schools for their children.
+            nearby public schools for their children.
           </p>
           <p>
             Access to higher education institutions including UNLV and Nevada State College provides residents with 
@@ -268,7 +268,7 @@ export default component$(() => {
             Elementary and middle schools in Aliante provide families with access to quality education that supports 
             children's academic success. The community's schools are known for strong academic programs, dedicated 
             teachers, and supportive learning environments. This educational quality makes Aliante attractive to families 
-            seeking excellent schools for their children.
+            seeking nearby public schools for their children.
           </p>
           <p>
             School features in Aliante include modern facilities, strong academic programs, and supportive learning 
@@ -372,7 +372,7 @@ export default component$(() => {
           <p>
             Aliante properties have shown consistent appreciation and strong resale values due to the community's 
             master-planned design, quality amenities, and desirable location. The community's reputation for quality 
-            living and excellent schools makes it attractive to both owner-occupants and real estate investors seeking 
+            living and nearby public schools makes it attractive to both owner-occupants and real estate investors seeking 
             stable returns. This investment potential, combined with lifestyle benefits, makes Aliante attractive to 
             diverse buyer segments.
           </p>
@@ -383,7 +383,7 @@ export default component$(() => {
             to buyers seeking properties with strong investment fundamentals.
           </p>
           <p>
-            Resale values in Aliante benefit from the community's reputation for quality, amenities, and excellent schools 
+            Resale values in Aliante benefit from the community's reputation for quality, amenities, and nearby public schools 
             that attract buyers. Properties in the community typically maintain their value and appeal due to the 
             community's master-planned design and quality amenities. This resale value potential makes Aliante attractive 
             to buyers seeking properties with strong investment fundamentals.
@@ -393,13 +393,13 @@ export default component$(() => {
           <p>
             Property appreciation in Aliante reflects the community's master-planned design, quality amenities, and 
             desirable location that create strong demand. Properties in the community have demonstrated consistent 
-            appreciation due to the community's reputation for quality living and excellent schools. This appreciation 
+            appreciation due to the community's reputation for quality living and nearby public schools. This appreciation 
             trend supports investment potential and makes Aliante attractive to buyers seeking properties with strong 
             value growth.
           </p>
           <p>
             The community's master-planned design and quality amenities ensure that properties maintain their appeal and 
-            value. The combination of quality living, excellent schools, and desirable location creates conditions that 
+            value. The combination of quality living, nearby public schools, and desirable location creates conditions that 
             support property values and appreciation. Understanding these appreciation trends helps buyers evaluate 
             investment potential and long-term value.
           </p>
@@ -407,7 +407,7 @@ export default component$(() => {
           <h3>Resale Market Performance</h3>
           <p>
             Resale market performance in Aliante benefits from the community's reputation for quality, amenities, and 
-            excellent schools that attract buyers. Properties in the community typically sell quickly and at competitive 
+            nearby public schools that attract buyers. Properties in the community typically sell quickly and at competitive 
             prices due to the community's master-planned design and quality amenities. This resale performance supports 
             property values and makes Aliante attractive to buyers seeking properties with strong resale potential.
           </p>

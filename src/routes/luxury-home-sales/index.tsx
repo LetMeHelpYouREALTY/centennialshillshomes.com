@@ -176,7 +176,7 @@ export default component$(() => {
             center={{ lat: 36.1200, lng: -115.1800 }}
             zoom={12}
             title="Luxury Properties Map"
-            description="Explore Las Vegas' most exclusive neighborhoods and luxury properties with interactive property markers and neighborhood boundaries"
+            description="Explore Las Vegas' most luxury neighborhoods and luxury properties with interactive property markers and neighborhood boundaries"
             height="500px"
             placeholder="Search for luxury communities, golf courses, or specific addresses..."
             showSearch={true}
@@ -260,7 +260,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Expert luxury home sales in Las Vegas\' most exclusive communities. Dr. Janet Duffy specializes in high-end properties with personalized service. Top 1% REALTOR® with 30+ years of research expertise, available 24/7 for executive clients.',
+      content: 'Expert luxury home sales in Las Vegas\' guard-gated and luxury communities. Dr. Janet Duffy specializes in high-end properties with personalized service. Top 1% REALTOR® with 30+ years of research expertise, available 24/7 for executive clients.',
     },
   ],
 };

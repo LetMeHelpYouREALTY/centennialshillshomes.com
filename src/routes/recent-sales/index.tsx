@@ -122,7 +122,7 @@ export default component$(() => {
           <p>
             Recent sales in Centennial Hills demonstrate strong market fundamentals with properties selling 
             at competitive prices and reasonable timeframes. The community's combination of new construction, 
-            established neighborhoods, and diverse housing options creates opportunities for buyers across 
+            older neighborhoods, and diverse housing options creates opportunities for buyers across 
             different price ranges and preferences. Understanding recent sales activity helps buyers identify 
             value and sellers establish competitive pricing.
           </p>
@@ -168,14 +168,14 @@ export default component$(() => {
           </p>
           <p>
             These price ranges offer excellent opportunities for buyers seeking quality homes in established 
-            neighborhoods with good schools and amenities. Our sales analysis helps identify properties that 
+            neighborhoods with nearby public schools and amenities. Our sales analysis helps identify properties that 
             offer best value and neighborhoods with strongest appreciation potential. This information 
             supports informed decision-making for buyers in these important market segments.
           </p>
 
           <h2>Luxury Property Sales</h2>
           <p>
-            Track recent sales of luxury properties in Las Vegas' most exclusive communities including 
+            Track recent sales of luxury properties in Las Vegas' guard-gated and luxury communities including 
             The Ridges, MacDonald Highlands, Red Rock Country Club, and luxury developments in Centennial 
             Hills. Our luxury sales data helps high-end buyers and sellers understand market positioning, 
             pricing strategies, and investment potential. This specialized analysis supports successful 

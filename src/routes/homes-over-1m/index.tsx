@@ -8,7 +8,7 @@ import FAQSection, { buyerServiceFAQs } from '../../components/faq-section';
 export default component$(() => {
   const luxurySchema = pageSchemas.servicePage({
     name: "Luxury Homes Over $1M Las Vegas",
-    description: "Luxury homes for sale over $1M in Las Vegas. Premium estates in The Ridges, Red Rock Country Club, and Summerlin's most exclusive communities.",
+    description: "Luxury homes for sale over $1M in Las Vegas. Premium estates in The Ridges, Red Rock Country Club, and Summerlin's guard-gated communities.",
     slug: "homes-over-1m",
     serviceType: "Luxury Property Services"
   });
@@ -26,7 +26,7 @@ export default component$(() => {
           </h1>
           <p class="hero-subtitle">
             Discover luxury homes for sale over $1M in Las Vegas. Premium estates in The Ridges, Red Rock 
-            Country Club, and Summerlin's most exclusive communities.
+            Country Club, and Summerlin's guard-gated communities.
           </p>
         </div>
       </section>
@@ -197,7 +197,7 @@ export default component$(() => {
           <p>
             Summerlin West features several luxury communities with homes over $1M, including established 
             neighborhoods and new construction that offer diverse options for luxury homebuyers. These 
-            communities provide access to Summerlin's extensive amenities, excellent schools, and natural 
+            communities provide access to Summerlin's extensive amenities, nearby public schools, and natural 
             beauty that enhance luxury living experiences.
           </p>
 
@@ -287,7 +287,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Luxury homes for sale over $1M in Las Vegas. Premium estates in The Ridges, Red Rock Country Club, and Summerlin\'s most exclusive communities.',
+      content: 'Luxury homes for sale over $1M in Las Vegas. Premium estates in The Ridges, Red Rock Country Club, and Summerlin\'s guard-gated communities.',
     },
   ],
 };

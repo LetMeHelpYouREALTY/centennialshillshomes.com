@@ -256,7 +256,7 @@ export const hyperlocalPages: Record<string, HyperlocalPageData> = {
       "ZIP 89138 covers northwest Las Vegas communities northwest of the Strip, including areas near Lone Mountain and approaches to Summerlin West. Dr. Jan Duffy serves 89138 buyers and sellers with same-day showings and hyperlocal pricing analysis.",
     answerBullets: ["Northwest Las Vegas · 89138", "Move-up & luxury inventory", "Near Lone Mountain & Centennial Hills", "Dr. Jan buyer & seller representation"],
     body: [
-      "89138 offers a mix of established neighborhoods and newer infill — popular with buyers who want northwest Las Vegas access without Summerlin premiums. Dr. Jan Duffy tracks 89138 inventory alongside 89144 for cross-ZIP comparisons.",
+      "89138 offers a mix of older neighborhoods and newer infill — popular with buyers who want northwest Las Vegas access without Summerlin premiums. Dr. Jan Duffy tracks 89138 inventory alongside 89144 for cross-ZIP comparisons.",
     ],
     faqs: [
       {

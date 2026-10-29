@@ -159,8 +159,8 @@ export default component$(() => {
             ranges, providing comprehensive insights for anyone interested in this market.
           </p>
           <p>
-            Centennial Hills' market dynamics reflect its status as a growing, family-friendly community 
-            with excellent schools and new construction. Our reports analyze how these factors affect 
+            Centennial Hills' market dynamics reflect its status as a growing, community 
+            with nearby public schools and new construction. Our reports analyze how these factors affect 
             market performance and what they mean for buyers and sellers in this area.
           </p>
 
@@ -180,13 +180,13 @@ export default component$(() => {
           <h3>The Ridges Market Report</h3>
           <p>
             The Ridges represents the pinnacle of luxury living in Las Vegas, and our market reports 
-            provide detailed analysis of this exclusive community. The reports analyze luxury market 
+            provide detailed analysis of this luxury community. The reports analyze luxury market 
             trends, property values, and sales activity in this gated community with golf course access.
           </p>
           <p>
             Luxury markets like The Ridges have unique dynamics that differ from the broader market. Our 
             reports analyze these dynamics, helping buyers and sellers understand how luxury markets 
-            perform and what factors affect property values in exclusive communities.
+            perform and what factors affect property values in luxury communities.
           </p>
 
           <h3>Red Rock Country Club Market Report</h3>

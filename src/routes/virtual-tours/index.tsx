@@ -155,17 +155,17 @@ export default component$(() => {
             remote exploration of modern homes.
           </p>
 
-          <h3>Established Neighborhood Tours</h3>
+          <h3>Older Neighborhood Tours</h3>
           <p>
-            Established neighborhood virtual tours in Centennial Hills showcase mature communities with proven track records, 
+            Older neighborhood virtual tours in Centennial Hills showcase older communities with proven track records, 
             established amenities, and stable property values. These tours provide views of established properties that help 
-            buyers understand neighborhood character and appeal. Established neighborhood tours highlight community features that 
+            buyers understand neighborhood character and appeal. Older neighborhood tours highlight community features that 
             make these areas attractive to buyers.
           </p>
           <p>
             Tour features include neighborhood overviews, community amenities, and property views that help buyers understand 
-            established neighborhood appeal. These tours create opportunities for buyers to explore established communities 
-            remotely. This established neighborhood tour coverage enables convenient exploration of mature communities.
+            neighborhood appeal. These tours create opportunities for buyers to explore communities 
+            remotely. This older neighborhood tour coverage enables convenient exploration of older communities.
           </p>
 
           <h2>Luxury Property Showcases</h2>
@@ -176,7 +176,7 @@ export default component$(() => {
             buyers understand luxury property value and appeal, enabling informed decision-making about premium properties.
           </p>
           <p>
-            Luxury property virtual tours showcase properties in Las Vegas' most exclusive communities including The Ridges, 
+            Luxury property virtual tours showcase properties in Las Vegas' guard-gated and luxury communities including The Ridges, 
             Red Rock Country Club, and Summerlin West. These tours provide detailed views of luxury features including custom 
             architecture, premium finishes, and resort-style amenities that justify premium pricing. The comprehensive nature 
             of luxury virtual tours helps buyers understand property quality and make informed decisions about high-end 
