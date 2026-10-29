@@ -17,7 +17,7 @@ export const neighborhoodPages: Record<string, NeighborhoodPageData> = {
     slug: "centennial-hills",
     title: "Centennial Hills Homes for Sale",
     description:
-      "Homes for sale in Centennial Hills, Las Vegas (89144, 89138, 89135). Dr. Jan Duffy, Top 1% REALTOR® — same-day showings and complimentary market analysis.",
+      "Homes for sale in Centennial Hills, Las Vegas (89144, 89138, 89135). Dr. Jan Duffy, REALTOR® — same-day showings and complimentary market analysis.",
     heroSubtitle: "Northwest Las Vegas with newer homes, parks, and mountain access",
     image: siteImages.communities.centennialHills,
     highlights: ["89144 · 89138", "Newer construction", "Parks & trails", "Move-up homes"],

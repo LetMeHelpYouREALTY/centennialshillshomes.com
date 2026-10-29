@@ -205,7 +205,7 @@ export default function LuxuryHomesPage() {
                 and the complete resources of Dr. Jan."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Centennial Hills Real Estate | In Real Estate Since 1983
+                — Dr. Jan Duffy, Centennial Hills Real Estate | Licensed Since 2008
               </cite>
             </div>
           </section>

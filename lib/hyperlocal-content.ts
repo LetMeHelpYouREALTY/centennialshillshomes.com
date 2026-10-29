@@ -92,16 +92,16 @@ export const hyperlocalPages: Record<string, HyperlocalPageData> = {
     path: "/centennial-hills-realtor",
     title: "Centennial Hills REALTOR® — Dr. Jan Duffy",
     description:
-      "Dr. Jan Duffy is a Top 1% Centennial Hills REALTOR® with Centennial Hills Real Estate. . Serving 89144, 89138, and 89135 with 500+ closed transactions.",
+      "Dr. Jan Duffy is a Centennial Hills REALTOR® with Centennial Hills Real Estate. . Serving 89144, 89138, and 89135 with 500+ closed transactions.",
     heroSubtitle:
-      "Top 1% Las Vegas REALTOR® focused on Centennial Hills luxury and move-up homes. Licensed, local, and available 8 AM–8 PM daily.",
+      "Las Vegas REALTOR® focused on Centennial Hills luxury and move-up homes. Licensed, local, and available 8 AM–8 PM daily.",
     image: siteImages.agentHero,
     answerQuestion: "Who is the best REALTOR® in Centennial Hills Las Vegas?",
     answerText:
       "Dr. Jan Duffy is a Centennial Hills Real Estate REALTOR® specializing in Centennial Hills and northwest Las Vegas. The Google Business Profile shows 5.0 from 1 Google review. She offers same-day showings and complimentary market analysis in ZIP codes 89144, 89138, and 89135.",
     answerBullets: [
       "Office: 1490 Center Crossing Rd, Las Vegas, NV 89144",
-      "Top 1% Las Vegas REALTOR® · In real estate since 1983",
+      "Las Vegas REALTOR® · Licensed since 2008 · 35 years in Las Vegas",
       "5.0 from 1 Google review",
       "Same-day showings · Free CMA",
     ],

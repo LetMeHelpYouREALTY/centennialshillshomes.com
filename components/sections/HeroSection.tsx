@@ -65,7 +65,7 @@ export default function HeroSection() {
 
         <div className="mt-6 flex flex-wrap justify-center gap-6 text-white/90 text-sm">
           <div>
-            <span className="font-semibold">Top 1%</span> Las Vegas REALTOR®
+            Las Vegas REALTOR® · licensed since 2008
           </div>
           <div>
             <span className="font-semibold">89135 · 89138 · 89144</span>

@@ -64,7 +64,7 @@ const sellingBenefits = [
     icon: BarChart,
     title: "Expert Pricing Strategy",
     description:
-      "Dr. Jan has been in real estate since 1983, which means accurate pricing that attracts buyers without leaving money on the table. Overpriced homes sit and lose value; well-priced homes generate competition and sell for more.",
+      "Dr. Jan has been licensed since 2008 · 35 years in Las Vegas, which means accurate pricing that attracts buyers without leaving money on the table. Overpriced homes sit and lose value; well-priced homes generate competition and sell for more.",
   },
   {
     icon: DollarSign,
@@ -142,7 +142,7 @@ export default function SellersPage() {
             <p className="text-xl text-slate-600 mb-8">
               When you list with <strong>Centennial Hills Real Estate</strong>, you get
               world-class marketing, expert pricing, and a name that buyers trust. Dr. Jan Duffy 
-              has been in real estate since 1983—helping sellers achieve top-dollar results 
+              has been licensed since 2008 · 35 years in Las Vegas—helping sellers achieve top-dollar results 
               with proven marketing strategies and skilled negotiation.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
@@ -287,11 +287,11 @@ export default function SellersPage() {
                 "Pricing your home correctly from day one is the single most important factor in
                 getting top dollar. Overpriced homes sit on the market, and every day on market costs 
                 you money—both in carrying costs and buyer perception. That's why I use comprehensive 
-                market analysis and my experience in real estate since 1983 to price homes right 
+                market analysis and my experience licensed since 2008 · 35 years in Las Vegas to price homes right 
                 the first time. The result? My listings typically sell within 2% of asking price."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Centennial Hills Real Estate | In Real Estate Since 1983
+                — Dr. Jan Duffy, Centennial Hills Real Estate | Licensed Since 2008
               </cite>
             </div>
           </section>
@@ -323,7 +323,7 @@ export default function SellersPage() {
                 <h2 className="text-3xl font-bold mb-4">What&apos;s Your Centennial Hills Home Worth?</h2>
                 <p className="text-blue-100 mb-6">
                   Get a free, no-obligation home valuation from Dr. Jan Duffy. Using current MLS
-                  data and expertise in real estate since 1983, you'll know exactly what your 
+                  data and expertise as a REALTOR® licensed since 2008 · 35 years in Las Vegas, you'll know exactly what your 
                   home could sell for in today's market. No algorithms—just real analysis from 
                   a local expert.
                 </p>

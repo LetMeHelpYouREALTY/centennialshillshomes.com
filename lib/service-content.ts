@@ -21,7 +21,7 @@ export const servicePages: Record<string, ServicePageContent> = {
   "market-analysis": {
     title: "Centennial Hills Home Valuation",
     description:
-      "Free Centennial Hills home valuation and pricing strategy from Dr. Jan Duffy, Top 1% Las Vegas REALTOR®.",
+      "Free Centennial Hills home valuation and pricing strategy from Dr. Jan Duffy, Las Vegas REALTOR®.",
     heroSubtitle: "Know your home's value before you buy or sell in northwest Las Vegas",
     image: siteImages.services.marketAnalysis,
     body: [
@@ -71,7 +71,7 @@ export const servicePages: Record<string, ServicePageContent> = {
     widgetHtml: `<realscout-office-listings agent-encoded-id="${agentId}" sort-order="NEWEST" listing-status="For Sale" property-types="SFR,MF,TC" price-min="300000" price-max="900000"></realscout-office-listings>`,
     body: [
       "Investment buyers receive neighborhood-level insight on demand, rental potential, and resale dynamics in northwest Las Vegas.",
-      "Work with a Top 1% REALTOR® who understands both lifestyle purchases and income-producing assets.",
+      "Work with a REALTOR® who understands both lifestyle purchases and income-producing assets.",
     ],
   },
   "property-management": {

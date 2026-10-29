@@ -117,7 +117,7 @@ export default function SouthernHighlandsPage() {
                 entire community's aesthetic.
               </p>
               <p>
-                Dr. Jan Duffy, in real estate since 1983, understands the
+                Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas, understands the
                 community's various sections—from the guard-gated luxury estates surrounding the golf
                 course to the established residential streets in the community's newer phases. Whether
                 you're seeking a golf course lot with Strip views or a spacious family home with top-rated
