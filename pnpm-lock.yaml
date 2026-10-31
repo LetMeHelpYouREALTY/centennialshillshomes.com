@@ -32,6 +32,9 @@ importers:
       '@vercel/analytics':
         specifier: ^1.6.1
         version: 1.6.1(next@15.5.28(@babel/core@7.29.0)(@opentelemetry/api@1.9.1)(@types/node@20.11.24)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
+      '@vercel/speed-insights':
+        specifier: ^2.0.0
+        version: 2.0.0(next@15.5.28(@babel/core@7.29.0)(@opentelemetry/api@1.9.1)(@types/node@20.11.24)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.1
@@ -2406,6 +2409,32 @@ packages:
 
   '@vercel/ruby@2.2.1':
     resolution: {integrity: sha512-DsmTCggOa/Uvt/9JkafXx9U+Bz5eNIb6Bs422EOQo2zKwcxW88ITSh8mM5m0dQ0+B4k02X/moVim6iFa4sjazg==}
+
+  '@vercel/speed-insights@2.0.0':
+    resolution: {integrity: sha512-jwkNcrTeafWxjmWq4AHBaptSqZiJkYU5adLC9QBSqeim0GcqDMgN5Ievh8OG1rJ6W3A4l1oiP7qr9CWxGuzu3w==}
+    peerDependencies:
+      '@sveltejs/kit': ^1 || ^2
+      next: '>= 13'
+      nuxt: '>= 3'
+      react: ^18 || ^19 || ^19.0.0-rc
+      svelte: '>= 4'
+      vue: ^3
+      vue-router: ^4
+    peerDependenciesMeta:
+      '@sveltejs/kit':
+        optional: true
+      next:
+        optional: true
+      nuxt:
+        optional: true
+      react:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
+        optional: true
 
   '@vercel/static-build@2.7.23':
     resolution: {integrity: sha512-F9u6FGWShfHbhldA9nRW6FdHfM7nVESYVGg+XOuWUlnyHnN6HiOFAze8wCb5yOuF5XXlp3bpn2IUByy4CPnjHQ==}
@@ -8936,6 +8965,11 @@ snapshots:
       - supports-color
 
   '@vercel/ruby@2.2.1': {}
+
+  '@vercel/speed-insights@2.0.0(next@15.5.28(@babel/core@7.29.0)(@opentelemetry/api@1.9.1)(@types/node@20.11.24)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)':
+    optionalDependencies:
+      next: 15.5.28(@babel/core@7.29.0)(@opentelemetry/api@1.9.1)(@types/node@20.11.24)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      react: 19.3.0
 
   '@vercel/static-build@2.7.23':
     dependencies:
