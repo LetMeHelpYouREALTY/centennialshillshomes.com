@@ -58,21 +58,21 @@ export default component$(() => {
             helps you make informed decisions about timing, budget, and property selection.
           </p>
 
-          <h3>Growing Family Needs More Space</h3>
+          <h3>Need More Space?</h3>
           <p>
-            Growing families often need more space as children grow, family members are added, or lifestyle needs 
+            Many buyers need more space as their household or lifestyle needs 
             change. Moving up to a larger home provides additional bedrooms, bathrooms, living spaces, and storage 
-            that accommodate growing families and changing needs.
+            that accommodate changing needs.
           </p>
           <p>
             Larger homes provide space for children's activities, home offices, guest accommodations, and other 
-            uses that growing families need. This additional space enhances quality of life and provides flexibility 
+            uses that many buyers need. This additional space enhances quality of life and provides flexibility 
             for various family activities and needs.
           </p>
           <p>
             Moving up for space reasons often involves purchasing homes with more square footage, additional 
             bedrooms and bathrooms, and larger lots that provide room for expansion and outdoor activities. These 
-            properties accommodate growing families and provide space for various activities and needs.
+            properties provide extra bedrooms and space for various activities and needs.
           </p>
 
           <h3>Upgrade to Better Neighborhood or Schools</h3>
@@ -89,7 +89,7 @@ export default component$(() => {
           <p>
             Upgrading to better school districts provides children with improved educational opportunities while 
             enhancing property values. School quality is a significant factor in property values, and homes in 
-            areas with top-rated schools typically command premium prices and maintain their value better than 
+            areas with nearby public schools typically command premium prices and maintain their value better than 
             homes in areas with lower-rated schools.
           </p>
 
@@ -272,8 +272,8 @@ export default component$(() => {
             you make decisions that support your current and future needs.
           </p>
           <p>
-            Growing families may prioritize space and schools, while established families may prioritize amenities 
-            and lifestyle. Empty nesters may prioritize downsizing or lifestyle improvements. Understanding your 
+            Some buyers prioritize space and schools, while others prioritize amenities 
+            and lifestyle. Downsizers may prioritize downsizing or lifestyle improvements. Understanding your 
             life stage helps you identify move-up goals that match your current and future needs.
           </p>
 

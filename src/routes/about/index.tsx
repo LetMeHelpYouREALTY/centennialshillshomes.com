@@ -176,7 +176,7 @@ export default component$(() => {
               <h3>Centennial Hills</h3>
               <p>
                 <a href="/centennial-hills">Centennial Hills</a> is a master-planned community in northwest Las Vegas that offers excellent value, 
-                new construction, and family-friendly neighborhoods. Dr. Duffy's expertise in Centennial Hills 
+                new construction, and master-planned neighborhoods. Dr. Duffy's expertise in Centennial Hills 
                 helps clients understand the area's growth, <a href="/centennial-hills-amenities">amenities</a>, and property values. Explore <a href="/centennial-hills-homes">available Centennial Hills homes</a> and learn about <a href="/centennial-hills-schools">area schools</a>.
               </p>
 
@@ -184,7 +184,7 @@ export default component$(() => {
               <p>
                 <a href="/red-rock-country-club">Red Rock Country Club</a> is a premier golf course community featuring luxury homes, championship 
                 golf, and resort-style amenities. Dr. Duffy's expertise in golf course communities helps clients 
-                understand the benefits and value of golf course living. Explore <a href="/golf-course-homes">golf course homes</a> in this exclusive community.
+                understand the benefits and value of golf course living. Explore <a href="/golf-course-homes">golf course homes</a> in this luxury community.
               </p>
 
               <h3>The Ridges</h3>
@@ -198,7 +198,7 @@ export default component$(() => {
               <h3>Summerlin West</h3>
               <p>
                 <a href="/summerlin-west">Summerlin West</a> is the premier section of the master-planned <a href="/summerlin">Summerlin</a> community, offering luxury 
-                homes, excellent schools, and world-class amenities. Dr. Duffy's expertise in Summerlin helps 
+                homes, nearby public schools, and world-class amenities. Dr. Duffy's expertise in Summerlin helps 
                 clients understand the area's established reputation and comprehensive amenities. Compare <a href="/centennial-hills-vs-summerlin">Centennial Hills vs Summerlin</a> to understand the differences.
               </p>
 
@@ -264,7 +264,7 @@ export default component$(() => {
               <h3>Centennial Hills and Northwest Las Vegas</h3>
               <p>
                 <a href="/centennial-hills" class="text-blue-600 hover:underline">Centennial Hills</a> is one of Dr. Duffy's primary service areas, offering excellent value, new construction, and 
-                family-friendly neighborhoods. Her expertise in Centennial Hills includes understanding of the area's 
+                neighborhoods. Her expertise in Centennial Hills includes understanding of the area's 
                 growth, <a href="/centennial-hills-amenities" class="text-blue-600 hover:underline">amenities</a>, property values, and investment potential. She specializes in ZIP codes 89135, 89138, 
                 and 89144, providing clients with comprehensive insights into these premier northwest Las Vegas 
                 communities. Explore <a href="/centennial-hills-homes" class="text-blue-600 hover:underline">available Centennial Hills homes</a> and learn about <a href="/centennial-hills-schools" class="text-blue-600 hover:underline">area schools</a>.
@@ -286,7 +286,7 @@ export default component$(() => {
                 Compare <a href="/centennial-hills-vs-summerlin" class="text-blue-600 hover:underline">Centennial Hills vs Summerlin</a> to understand the differences.
               </p>
               <p>
-                Summerlin offers diverse housing options from luxury estates to family-friendly neighborhoods. Dr. Duffy's 
+                Summerlin offers diverse housing options from luxury estates to neighborhoods. Dr. Duffy's 
                 expertise in Summerlin includes understanding of market trends, property values, and neighborhood 
                 characteristics that help clients find properties that match their needs and lifestyle preferences. Her 
                 knowledge of Summerlin communities ensures that clients receive expert guidance tailored to their specific 
@@ -295,10 +295,10 @@ export default component$(() => {
               
               <h3>Luxury Communities</h3>
               <p>
-                <a href="/red-rock-country-club" class="text-blue-600 hover:underline">Red Rock Country Club</a> and <a href="/the-ridges" class="text-blue-600 hover:underline">The Ridges</a> are among Las Vegas' most exclusive communities, featuring 
+                <a href="/red-rock-country-club" class="text-blue-600 hover:underline">Red Rock Country Club</a> and <a href="/the-ridges" class="text-blue-600 hover:underline">The Ridges</a> are guard-gated Las Vegas communities, featuring 
                 luxury estates, private golf course access, and stunning mountain views. Dr. Duffy's expertise in luxury 
                 communities includes understanding of high-end market dynamics, pricing strategies, and buyer preferences 
-                unique to the luxury segment. Her knowledge of these exclusive communities helps clients navigate the 
+                unique to the luxury segment. Her knowledge of these communities helps clients navigate the 
                 luxury market and find properties that match their preferences. Explore <a href="/golf-course-homes" class="text-blue-600 hover:underline">golf course homes</a> 
                 and view <a href="/homes-over-1m" class="text-blue-600 hover:underline">luxury homes over $1M</a>.
               </p>
@@ -306,7 +306,7 @@ export default component$(() => {
                 Luxury communities require specialized knowledge of market timing, pricing strategies, and negotiation 
                 techniques. Dr. Duffy's experience in luxury markets ensures that clients receive comprehensive guidance 
                 on pricing, marketing, and negotiation strategies that maximize value and ensure successful transactions. 
-                Her luxury home specialization includes understanding of gated communities, exclusive neighborhoods, and 
+                Her luxury home specialization includes understanding of gated communities, luxury neighborhoods, and 
                 high-end amenities that appeal to luxury buyers.
               </p>
             </div>

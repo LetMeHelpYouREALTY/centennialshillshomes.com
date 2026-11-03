@@ -44,7 +44,7 @@ export default component$(() => {
           <p>
             This price range offers the sweet spot in Las Vegas real estate, providing luxury features 
             and quality construction at prices that are accessible to many buyers. Properties in this 
-            range typically include premium finishes, desirable locations, and access to excellent schools 
+            range typically include premium finishes, desirable locations, and access to public schools 
             and amenities that enhance quality of life and property values.
           </p>
           <p>
@@ -93,7 +93,7 @@ export default component$(() => {
             kitchen areas, creating social spaces that support family activities and entertaining.
           </p>
           <p>
-            The spacious nature of homes in this price range makes them attractive to growing families, 
+            The spacious nature of homes in this price range makes them attractive to buyers who want more bedrooms, 
             professionals who work from home, and those who value generous living spaces. This space 
             provides flexibility for various uses and ensures homes can accommodate changing needs over time.
           </p>
@@ -101,7 +101,7 @@ export default component$(() => {
           <h3>Desirable Locations</h3>
           <p>
             Properties in the $400K-$600K range are typically located in premier communities that offer 
-            excellent schools, quality amenities, and convenient access to employment centers, shopping, 
+            nearby public schools, quality amenities, and convenient access to employment centers, shopping, 
             and dining. These locations enhance property values and quality of life, making homes in this 
             range attractive investments as well as great places to live.
           </p>
@@ -127,17 +127,17 @@ export default component$(() => {
             maintenance requirements.
           </p>
           <p>
-            Established homes in this range offer the benefits of mature communities, proven property 
+            Established homes in this range offer the benefits of older communities, proven property 
             values, and potentially lower prices than new construction. These homes often feature mature 
-            landscaping, established neighborhoods, and the character that comes with established 
+            landscaping, older neighborhoods, and the character that comes with established 
             communities.
           </p>
 
-          <h3>Excellent Schools and Amenities</h3>
+          <h3>Nearby Public Schools and Amenities</h3>
           <p>
-            Properties in the $400K-$600K range are typically located in areas with excellent schools 
+            Properties in the $400K-$600K range are typically located in areas with nearby public schools 
             and quality amenities that enhance quality of life and property values. School quality is a 
-            significant factor in property values, and homes in areas with top-rated schools command 
+            significant factor in property values, and homes in areas with nearby public schools command 
             premium prices and maintain their value better than homes in areas with lower-rated schools.
           </p>
           <p>
@@ -158,15 +158,15 @@ export default component$(() => {
           <h3>Centennial Hills</h3>
           <p>
             Centennial Hills offers excellent value in the $400K-$600K range, with new construction, 
-            family-friendly neighborhoods, and access to excellent schools and amenities. The area's 
+            master-planned neighborhoods, and access to nearby schools and amenities. The area's 
             new construction provides buyers with opportunities to purchase new homes with warranties, 
             modern features, and current design trends.
           </p>
           <p>
             Properties in Centennial Hills in this price range typically feature 3-4 bedrooms, 2-3 
             bathrooms, and 2,000-3,500 square feet, providing generous living spaces for families. The 
-            area's excellent schools, parks, and amenities make it attractive to families seeking quality 
-            homes in family-friendly communities.
+            area's nearby public schools, parks, and amenities make it attractive to families seeking quality 
+            homes in master-planned communities.
           </p>
           <p>
             Centennial Hills' location in northwest Las Vegas provides convenient access to employment 
@@ -177,16 +177,16 @@ export default component$(() => {
 
           <h3>Summerlin</h3>
           <p>
-            Summerlin offers established communities with excellent schools, mature landscaping, and 
+            Summerlin offers older communities with nearby schools, mature landscaping, and 
             proven property values in the $400K-$600K range. Properties in Summerlin in this range 
             typically feature quality construction, desirable locations, and access to Summerlin's 
             extensive amenities and recreational facilities.
           </p>
           <p>
-            The area's established reputation, excellent schools, and quality amenities make Summerlin 
+            The area's established reputation, nearby public schools, and quality amenities make Summerlin 
             attractive to buyers seeking proven property values and quality communities. Properties in 
-            this range in Summerlin often feature mature landscaping, established neighborhoods, and 
-            the character that comes with established communities.
+            this range in Summerlin often feature mature landscaping, older neighborhoods, and 
+            the character that comes with older communities.
           </p>
           <p>
             Summerlin's location, amenities, and reputation support property values and make properties 

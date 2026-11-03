@@ -35,7 +35,7 @@ const faqSchema = {
       name: "Does Southern Highlands have guard-gated sections?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, Southern Highlands features multiple guard-gated luxury sections including Southern Highlands Golf Club estates and exclusive enclaves with 24/7 security. Non-gated sections also offer excellent value with community amenities.",
+        text: "Yes, Southern Highlands features multiple guard-gated luxury sections including Southern Highlands Golf Club estates and luxury enclaves with 24/7 security. Non-gated sections also offer excellent value with community amenities.",
       },
     },
     {
@@ -117,7 +117,7 @@ export default function SouthernHighlandsPage() {
                 entire community's aesthetic.
               </p>
               <p>
-                Dr. Jan Duffy, in real estate since 1983, understands the
+                Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas, understands the
                 community's various sections—from the guard-gated luxury estates surrounding the golf
                 course to the established residential streets in the community's newer phases. Whether
                 you're seeking a golf course lot with Strip views or a spacious family home with top-rated
@@ -314,7 +314,7 @@ export default function SouthernHighlandsPage() {
                 </h3>
                 <p className="text-slate-600">
                   Yes, Southern Highlands features multiple guard-gated luxury sections including
-                  Southern Highlands Golf Club estates and exclusive enclaves with 24/7 security.
+                  Southern Highlands Golf Club estates and luxury enclaves with 24/7 security.
                   Non-gated sections also offer excellent value with community amenities.
                 </p>
               </div>

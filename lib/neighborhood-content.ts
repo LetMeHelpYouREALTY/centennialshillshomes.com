@@ -17,7 +17,7 @@ export const neighborhoodPages: Record<string, NeighborhoodPageData> = {
     slug: "centennial-hills",
     title: "Centennial Hills Homes for Sale",
     description:
-      "Homes for sale in Centennial Hills, Las Vegas (89144, 89138, 89135). Dr. Jan Duffy, Top 1% REALTOR® — same-day showings and complimentary market analysis.",
+      "Homes for sale in Centennial Hills, Las Vegas (89144, 89138, 89135). Dr. Jan Duffy, REALTOR® — same-day showings and complimentary market analysis.",
     heroSubtitle: "Northwest Las Vegas with newer homes, parks, and mountain access",
     image: siteImages.communities.centennialHills,
     highlights: ["89144 · 89138", "Newer construction", "Parks & trails", "Move-up homes"],
@@ -57,7 +57,7 @@ export const neighborhoodPages: Record<string, NeighborhoodPageData> = {
     slug: "summerlin-west",
     title: "Summerlin West Homes for Sale",
     description:
-      "Homes for sale in Summerlin West near Centennial Hills. Established neighborhoods, top amenities, and expert guidance from Dr. Jan Duffy.",
+      "Homes for sale in Summerlin West near Centennial Hills. Older neighborhoods, top amenities, and expert guidance from Dr. Jan Duffy.",
     heroSubtitle: "Established west Summerlin neighborhoods with premium amenities",
     image: siteImages.communities.summerlinWest,
     highlights: ["Trails & parks", "Dining & retail", "Move-up inventory", "West Summerlin access"],

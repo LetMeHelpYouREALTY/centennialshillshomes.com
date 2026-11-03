@@ -306,7 +306,7 @@ export default component$(() => {
             <h3>Luxury Property Searches</h3>
             <p>
               Luxury property searches enable you to find high-end homes, custom estates, and premium properties in 
-              Las Vegas' most exclusive communities. Our search tool indexes luxury properties including custom 
+              Las Vegas' guard-gated and luxury communities. Our search tool indexes luxury properties including custom 
               estates, golf course homes, and mountain view properties. Luxury property searches help you find 
               premium properties that match luxury buyer preferences.
             </p>

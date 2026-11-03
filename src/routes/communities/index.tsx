@@ -203,7 +203,7 @@ export default component$(() => {
 									</h3>
 									<p class="text-slate-600 mb-6 text-center">
 										Master-planned community with luxury homes and resort-style
-										amenities. Perfect for families seeking the ultimate
+										amenities. Ideal for buyers seeking the ultimate
 										lifestyle.
 									</p>
 									<div class="text-center">
@@ -225,7 +225,7 @@ export default component$(() => {
 									</h3>
 									<p class="text-slate-600 mb-6 text-center">
 										Growing luxury community with new construction and
-										established neighborhoods. Modern living with mountain
+										older neighborhoods. Modern living with mountain
 										views.
 									</p>
 									<div class="text-center">
@@ -352,7 +352,7 @@ export default component$(() => {
 												Single Family, Townhomes
 											</td>
 											<td class="py-4 px-6 text-slate-600">
-												Master Planned, Amenities, Family-Friendly
+												Master Planned, Amenities, Parks
 											</td>
 										</tr>
 										<tr class="hover:bg-slate-50 transition-colors">

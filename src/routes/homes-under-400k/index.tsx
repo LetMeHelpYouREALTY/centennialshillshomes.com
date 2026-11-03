@@ -35,7 +35,7 @@ export default component$(() => {
         <div class="container container-center">
           <h2>Affordable Home Options</h2>
           <p>
-            The under $400K price range offers excellent opportunities for first-time buyers, young families, 
+            The under $400K price range offers excellent opportunities for first-time buyers, move-up buyers, 
             and budget-conscious homebuyers. This range includes condos, townhomes, and single-family homes 
             in growing Las Vegas neighborhoods. This price range makes homeownership accessible to many buyers 
             who might not otherwise be able to purchase homes, providing opportunities to build equity and 
@@ -70,7 +70,7 @@ export default component$(() => {
           </p>
           <p>
             Condos and townhomes in this price range are particularly attractive to first-time buyers, 
-            young professionals, and those seeking low-maintenance living. These properties often feature 
+            professionals, and those seeking low-maintenance living. These properties often feature 
             HOA-managed maintenance that reduces homeowner responsibilities while providing access to 
             amenities that enhance quality of life.
           </p>
@@ -89,8 +89,8 @@ export default component$(() => {
             providing adequate space for small families and first-time buyers.
           </p>
           <p>
-            Starter homes in this range often feature established neighborhoods with mature landscaping, 
-            proven property values, and the character that comes with established communities. These homes 
+            Starter homes in this range often feature older neighborhoods with mature landscaping, 
+            proven property values, and the character that comes with older communities. These homes 
             provide opportunities for buyers to enter the single-family home market at affordable prices 
             while building equity for future moves.
           </p>

@@ -56,7 +56,7 @@ export default component$(() => {
           <h2>Centennial Hills Overview</h2>
           <p>
             Centennial Hills is a master-planned community in northwest Las Vegas that offers excellent value, 
-            new construction, and family-friendly neighborhoods. The area has grown significantly in recent 
+            new construction, and master-planned neighborhoods. The area has grown significantly in recent 
             years, attracting families, first-time buyers, and value-conscious homebuyers seeking quality homes 
             at accessible prices.
           </p>
@@ -90,8 +90,8 @@ export default component$(() => {
           <h3>Best For</h3>
           <p>
             Centennial Hills is best for families, first-time buyers, and value seekers who want quality homes, 
-            excellent schools, and family-friendly neighborhoods at accessible prices. The area's new 
-            construction, growing amenities, and family-oriented atmosphere make it particularly attractive to 
+            nearby public schools, and master-planned neighborhoods at accessible prices. The area's new 
+            construction, growing amenities, and atmosphere make it particularly attractive to 
             these buyer segments.
           </p>
           <p>
@@ -102,14 +102,14 @@ export default component$(() => {
 
           <h3>Highlights</h3>
           <p>
-            Centennial Hills highlights include new construction, excellent schools, and family-friendly 
+            Centennial Hills highlights include new construction, nearby public schools, and master-planned 
             neighborhoods that create attractive living environments. The area's growth brings new amenities, 
             improved infrastructure, and increased property values that benefit residents.
           </p>
           <p>
             New construction in Centennial Hills provides buyers with opportunities to purchase new homes with 
-            warranties, modern features, and current design trends. Excellent schools make the area attractive 
-            to families, while family-friendly neighborhoods create supportive environments for children and 
+            warranties, modern features, and current design trends. Nearby public schools make the area attractive 
+            to buyers, while parks and community centers create gathering places for residents and 
             families.
           </p>
 
@@ -123,7 +123,7 @@ export default component$(() => {
           <h2>Summerlin Overview</h2>
           <p>
             Summerlin is Las Vegas' largest and most prestigious master-planned community, offering luxury homes, 
-            world-class amenities, and established neighborhoods. The community has been developed over decades, 
+            world-class amenities, and older neighborhoods. The community has been developed over decades, 
             creating a mature, well-established area with comprehensive amenities and proven property values.
           </p>
 
@@ -149,7 +149,7 @@ export default component$(() => {
           <p>
             Summerlin's established reputation, comprehensive amenities, and proven property values support 
             premium prices that reflect the area's desirability and quality. This pricing makes Summerlin 
-            attractive to buyers seeking established communities with proven property values and comprehensive 
+            attractive to buyers seeking communities with proven property values and comprehensive 
             amenities.
           </p>
 
@@ -163,14 +163,14 @@ export default component$(() => {
           <p>
             Luxury buyers appreciate Summerlin's high-end properties, golf course communities, and resort-style 
             amenities. Executives value the area's proximity to employment centers, established reputation, and 
-            luxury living options. Established families appreciate the area's excellent schools, comprehensive 
+            luxury living options. Established families appreciate the area's nearby public schools, comprehensive 
             amenities, and proven property values.
           </p>
 
           <h3>Highlights</h3>
           <p>
             Summerlin highlights include golf courses, country clubs, and established amenities that create 
-            resort-style living experiences. The area's comprehensive amenities, excellent schools, and natural 
+            resort-style living experiences. The area's comprehensive amenities, nearby public schools, and natural 
             beauty make it one of Las Vegas' most desirable residential areas.
           </p>
           <p>
@@ -199,7 +199,7 @@ export default component$(() => {
             Centennial Hills offers better value with more affordable prices and quality homes at accessible 
             price points. Summerlin has luxury options with higher prices that reflect the area's established 
             reputation and comprehensive amenities. This price difference makes Centennial Hills attractive to 
-            value-conscious buyers while Summerlin appeals to those seeking luxury and established communities.
+            value-conscious buyers while Summerlin appeals to those seeking luxury and older communities.
           </p>
           <p>
             The value proposition of Centennial Hills is enhanced by new construction, modern features, and 
@@ -211,7 +211,7 @@ export default component$(() => {
           <h3>Age and Development</h3>
           <p>
             Centennial Hills is newer with ongoing development and growth that brings new amenities and 
-            opportunities. Summerlin is more established with mature neighborhoods, proven property values, and 
+            opportunities. Summerlin is more established with older neighborhoods, proven property values, and 
             comprehensive amenities that reflect decades of development.
           </p>
           <p>
@@ -236,14 +236,14 @@ export default component$(() => {
 
           <h3>Schools</h3>
           <p>
-            Both Centennial Hills and Summerlin have excellent schools that consistently rank among the best in 
+            Both Centennial Hills and Summerlin have nearby public schools that consistently rank among the best in 
             Clark County. School quality is a significant factor in both communities' desirability and property 
             values, making both areas attractive to families who prioritize education.
           </p>
           <p>
-            The excellent schools in both communities support property values and make both areas attractive to 
+            The public schools in both communities support property values and make both areas attractive to 
             families. School quality is a key factor in both communities' appeal, with homes in areas with 
-            top-rated schools commanding premium prices and maintaining their value better than homes in areas 
+            nearby public schools commanding premium prices and maintaining their value better than homes in areas 
             with lower-rated schools.
           </p>
 
@@ -268,14 +268,14 @@ export default component$(() => {
 
           <h3>Choose Centennial Hills If:</h3>
           <p>
-            You're seeking excellent value, new construction, and family-friendly neighborhoods at accessible 
-            prices. Centennial Hills is ideal for first-time buyers, growing families, and value-conscious 
-            homebuyers who want quality homes, excellent schools, and growing amenities at affordable prices.
+            You're seeking excellent value, new construction, and neighborhoods at accessible 
+            prices. Centennial Hills draws first-time buyers, move-up buyers, and value-conscious 
+            homebuyers who want quality homes, nearby public schools, and growing amenities at affordable prices.
           </p>
 
           <h3>Choose Summerlin If:</h3>
           <p>
-            You're seeking luxury options, established communities, and comprehensive amenities with proven 
+            You're seeking luxury options, communities, and comprehensive amenities with proven 
             property values. Summerlin is ideal for luxury buyers, executives, and established families who 
             want comprehensive amenities, proven property values, and upscale living environments.
           </p>

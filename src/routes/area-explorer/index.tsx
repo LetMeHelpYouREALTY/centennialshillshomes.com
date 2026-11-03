@@ -163,7 +163,7 @@ export default component$(() => {
             <div class="text-4xl text-green-600 mb-4">🎓</div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Education</h3>
             <p class="text-gray-600 text-sm">
-              Top-rated schools including Centennial Hills Elementary and Northwest Career Academy.
+              Nearby public schools including Centennial Hills Elementary and Northwest Career Academy.
             </p>
           </div>
           <div class="bg-white rounded-lg shadow-md p-6 text-center">

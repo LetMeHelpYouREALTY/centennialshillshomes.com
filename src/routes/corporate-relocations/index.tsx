@@ -175,7 +175,7 @@ export default component$(() => {
 							<div class="text-center p-4 border border-gray-200 rounded-lg">
 								<h4 class="font-semibold text-gray-800 mb-2">Summerlin West</h4>
 								<p class="text-sm text-gray-600 mb-2">
-									Established luxury with top-rated schools
+									Established luxury with nearby public schools
 								</p>
 								<p class="text-xs text-gray-500">
 									Excellent for families and executives

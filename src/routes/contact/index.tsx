@@ -71,7 +71,7 @@ export default component$(() => {
             
             <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
               <h3 class="text-xl font-semibold text-gray-900 mb-3">Personalized Service Approach</h3>
-              <p class="text-gray-700 leading-relaxed">Every client receives personalized attention tailored to their unique needs, timeline, and goals. Dr. Duffy takes time to understand your priorities, whether you're seeking a family home in a top-rated school district, a luxury estate with resort-style amenities, or an investment property with strong rental potential. This personalized approach ensures that every recommendation and strategy aligns with your specific objectives.</p>
+              <p class="text-gray-700 leading-relaxed">Every client receives personalized attention tailored to their unique needs, timeline, and goals. Dr. Duffy takes time to understand your priorities, whether you're seeking a family home in a school district, a luxury estate with resort-style amenities, or an investment property with strong rental potential. This personalized approach ensures that every recommendation and strategy aligns with your specific objectives.</p>
             </div>
             
             <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">

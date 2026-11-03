@@ -17,7 +17,7 @@ export default function AgentBio() {
             {agentInfo.name}, Centennial Hills {agentInfo.title}
           </h2>
           <p className="mt-6 text-base leading-relaxed text-white/85 md:text-lg">
-            In real estate since 1983, {agentInfo.name} represents buyers and sellers
+            Licensed since 2008 · 35 years in Las Vegas, {agentInfo.name} represents buyers and sellers
             across the ZIP codes that define this northwest Las Vegas practice —{" "}
             {siteConfig.zipCodes.join(", ")}. Her on-the-ground work means disciplined
             negotiation and data-driven guidance from move-up homes through luxury listings.

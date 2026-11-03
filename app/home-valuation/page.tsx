@@ -91,7 +91,7 @@ export default function HomeValuationPage() {
             </h1>
             <p className="text-xl text-slate-600">
               Get a free, no-obligation home valuation from Dr. Jan Duffy at{" "}
-              <strong>Centennial Hills Real Estate</strong>. Accurate pricing backed by a career in real estate since 1983 and $127M+ in closed transactions.
+              <strong>Centennial Hills Real Estate</strong>. Accurate pricing backed by a career licensed since 2008 · 35 years in Las Vegas and $127M+ in closed transactions.
             </p>
           </div>
 
@@ -118,7 +118,7 @@ export default function HomeValuationPage() {
                 <p className="text-slate-300 mb-6">
                   Online estimators like Zillow's "Zestimate" can be off by 10% or more—that's
                   $45,000+ on a typical Las Vegas home. Dr. Jan Duffy provides a comprehensive
-                  market analysis using current MLS data, recent comparable sales, and her expertise in real estate since 1983. The result? Accurate pricing that helps you sell
+                  market analysis using current MLS data, recent comparable sales, and her expertise as a REALTOR® licensed since 2008 · 35 years in Las Vegas. The result? Accurate pricing that helps you sell
                   faster and for more money.
                 </p>
                 <div className="space-y-3">

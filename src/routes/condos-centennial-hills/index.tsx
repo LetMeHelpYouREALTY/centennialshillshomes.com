@@ -76,7 +76,7 @@ export default component$(() => {
           </p>
           <p>
             Condominium affordability is particularly valuable in Centennial Hills, where single-family home 
-            prices can be higher. This affordability allows buyers to enjoy Centennial Hills' excellent schools, 
+            prices can be higher. This affordability allows buyers to enjoy Centennial Hills' nearby public schools, 
             amenities, and location while building equity and working toward future real estate goals.
           </p>
 
@@ -124,7 +124,7 @@ export default component$(() => {
             particularly convenient.
           </p>
           <p>
-            The area's proximity to excellent schools makes condominiums attractive to families who want access 
+            The area's proximity to public schools makes condominiums attractive to families who want access 
             to quality education while enjoying affordable, low-maintenance living. This proximity reduces commute 
             times for school-related activities and provides convenient access to educational resources.
           </p>
@@ -221,9 +221,9 @@ export default component$(() => {
 
           <h3>Proximity to Schools and Employment Centers</h3>
           <p>
-            Condominiums in Centennial Hills provide convenient proximity to excellent schools and employment 
+            Condominiums in Centennial Hills provide convenient proximity to public schools and employment 
             centers, reducing commute times and enhancing quality of life. This proximity is particularly valuable 
-            for families with children and professionals who need convenient access to work and education.
+            for buyers who need convenient access to work and education.
           </p>
 
           <h2>Condominium Market in Centennial Hills</h2>

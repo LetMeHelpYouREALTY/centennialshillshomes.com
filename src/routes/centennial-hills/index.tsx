@@ -36,7 +36,7 @@ export default component$(() => {
             Master-Planned Living in Las Vegas
           </h1>
           <p class="hero-subtitle">
-            Discover modern amenities, family-friendly atmosphere, and exceptional value in one of Las Vegas' most desirable communities.
+            Discover modern amenities, parks, and exceptional value in one of Las Vegas' most desirable communities.
           </p>
         </div>
       </section>
@@ -49,8 +49,8 @@ export default component$(() => {
               <h2>About Centennial Hills</h2>
               <p>
                 Centennial Hills is a master-planned community located in northwest Las Vegas, offering residents 
-                a perfect blend of suburban tranquility and urban convenience. This family-friendly neighborhood 
-                features modern amenities, excellent schools, and a strong sense of community. Developed over the past two decades, Centennial Hills has grown into one of Las Vegas' most desirable residential areas, attracting families, professionals, and retirees seeking quality living in a well-planned environment. Explore <a href="/centennial-hills-homes">available Centennial Hills homes</a>, learn about <a href="/centennial-hills-schools">area schools</a>, and discover <a href="/centennial-hills-amenities">community amenities</a> that make this neighborhood exceptional.
+                a perfect blend of suburban tranquility and urban convenience. This neighborhood 
+                features modern amenities, nearby public schools, and a strong sense of community. Developed over the past two decades, Centennial Hills has grown into one of Las Vegas' most desirable residential areas, attracting families, professionals, and retirees seeking quality living in a well-planned environment. Explore <a href="/centennial-hills-homes">available Centennial Hills homes</a>, learn about <a href="/centennial-hills-schools">area schools</a>, and discover <a href="/centennial-hills-amenities">community amenities</a> that make this neighborhood exceptional.
               </p>
               
               <h3>Community Development and Growth</h3>
@@ -62,18 +62,18 @@ export default component$(() => {
               <h3>Key Features</h3>
               <ul class="feature-list">
                 <li>Master-planned community with modern infrastructure</li>
-                <li>Family-friendly atmosphere with parks and recreational facilities</li>
-                <li>Excellent schools in the Clark County School District</li>
+                <li>Atmosphere with parks and recreational facilities</li>
+                <li>public schools in the Clark County School District</li>
                 <li>Convenient access to shopping, dining, and entertainment</li>
                 <li>Close proximity to Red Rock Canyon National Conservation Area</li>
                 <li>Growing area with new developments and amenities</li>
               </ul>
               
               <h3>Housing Diversity and Options</h3>
-              <p>Centennial Hills offers diverse housing options to accommodate various lifestyles and budgets. The community includes single-family homes ranging from starter homes to luxury estates, providing options for first-time buyers, growing families, and luxury home purchasers. This diversity ensures that buyers at different price points can find properties that meet their needs while enjoying the benefits of living in a master-planned community.</p>
+              <p>Centennial Hills offers diverse housing options to accommodate various lifestyles and budgets. The community includes single-family homes ranging from starter homes to luxury estates, providing options for first-time buyers, move-up buyers, and luxury home purchasers. This diversity ensures that buyers at different price points can find properties that meet their needs while enjoying the benefits of living in a master-planned community.</p>
               
               <h3>Community Character and Lifestyle</h3>
-              <p>The community's character reflects its family-oriented planning, with safe neighborhoods, well-maintained common areas, and active community associations. Residents enjoy a strong sense of community, with neighborhood events, recreational programs, and social activities that bring neighbors together. This community spirit, combined with the area's natural beauty and modern amenities, creates a desirable lifestyle that appeals to families and individuals seeking quality living in Las Vegas.</p>
+              <p>The community's character reflects its master planning, with well-maintained common areas, and active community associations. Residents enjoy a strong sense of community, with neighborhood events, recreational programs, and social activities that bring neighbors together. This community spirit, combined with the area's natural beauty and modern amenities, creates a desirable lifestyle that appeals to buyers seeking quality living in Las Vegas.</p>
               
               <div class="my-8 grid md:grid-cols-2 gap-6">
                 <img 
@@ -126,7 +126,7 @@ export default component$(() => {
             </div>
             <div class="amenity-card">
               <h3>Schools</h3>
-              <p>Top-rated schools in the Clark County School District. Centennial Hills is served by highly-rated elementary, middle, and high schools that consistently perform above district and state averages. The area's schools offer comprehensive educational programs, extracurricular activities, and strong community support. This educational quality attracts families and contributes to property values.</p>
+              <p>public schools in the Clark County School District. Centennial Hills is served by highly-rated elementary, middle, and high schools that consistently perform above district and state averages. The area's schools offer comprehensive educational programs, extracurricular activities, and strong community support. This educational quality attracts families and contributes to property values.</p>
             </div>
             <div class="amenity-card">
               <h3>Shopping</h3>
@@ -155,7 +155,7 @@ export default component$(() => {
       <section class="market-section">
         <div class="container container-center">
           <h2>Centennial Hills Real Estate Market</h2>
-          <p>The Centennial Hills real estate market has demonstrated consistent strength and growth, making it an attractive area for both homebuyers and investors. The community's master-planned design, quality schools, and extensive amenities have contributed to strong property values and steady appreciation. Understanding market trends, pricing patterns, and investment potential helps buyers make informed decisions about purchasing property in this desirable community.</p>
+          <p>The Centennial Hills real estate market has demonstrated consistent strength and growth, making it an attractive area for both homebuyers and investors. The community's master-planned design, nearby public schools, and extensive amenities have contributed to strong property values and steady appreciation. Understanding market trends, pricing patterns, and investment potential helps buyers make informed decisions about purchasing property in this desirable community.</p>
           
           <h3>Market Trends and Appreciation</h3>
           <p>Centennial Hills has experienced consistent appreciation over the years, with property values increasing steadily as the community has matured and amenities have expanded. The area's desirability, combined with limited available land for new development, has created a supply-demand dynamic that supports property values. Recent market trends show continued strength, with properties selling quickly and often receiving multiple offers, particularly in desirable price ranges and locations. For detailed market insights, review our <a href="/centennial-hills-market-report">Centennial Hills market report</a> and <a href="/market-analysis">comprehensive market analysis</a>.</p>
@@ -164,7 +164,7 @@ export default component$(() => {
           <p>Property values in Centennial Hills span a wide range, accommodating buyers from various price points. Entry-level homes typically start in the $400,000s, mid-range properties range from $500,000 to $800,000, and luxury homes extend beyond $1,000,000. This price diversity ensures that buyers at different budget levels can find properties in the community, while the overall quality and amenities maintain strong values across all price ranges.</p>
           
           <h3>Investment Potential</h3>
-          <p>Centennial Hills offers strong investment potential for real estate investors seeking rental properties or long-term appreciation. The area's desirability, quality schools, and amenities create consistent rental demand, while the community's growth and development support long-term appreciation. Properties in Centennial Hills often provide positive cash flow for investors and strong returns over time, making the area attractive for both individual and portfolio investors.</p>
+          <p>Centennial Hills offers strong investment potential for real estate investors seeking rental properties or long-term appreciation. The area's desirability, nearby public schools, and amenities create consistent rental demand, while the community's growth and development support long-term appreciation. Properties in Centennial Hills often provide positive cash flow for investors and strong returns over time, making the area attractive for both individual and portfolio investors.</p>
         </div>
       </section>
 
@@ -294,7 +294,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Explore Centennial Hills homes for sale with our interactive property map. Master-planned community in northwest Las Vegas featuring modern amenities, family-friendly atmosphere, excellent schools, and convenient access to Red Rock Canyon. Dr. Janet Duffy specializes in Centennial Hills real estate.',
+      content: 'Explore Centennial Hills homes for sale with our interactive property map. Master-planned community in northwest Las Vegas featuring modern amenities, parks, nearby public schools, and convenient access to Red Rock Canyon. Dr. Janet Duffy specializes in Centennial Hills real estate.',
     },
     {
       name: 'author',
@@ -322,7 +322,7 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:description',
-      content: 'Explore Centennial Hills homes for sale with our interactive property map. Master-planned community in northwest Las Vegas with modern amenities and excellent schools.',
+      content: 'Explore Centennial Hills homes for sale with our interactive property map. Master-planned community in northwest Las Vegas with modern amenities and nearby public schools.',
     },
     {
       property: 'og:type',

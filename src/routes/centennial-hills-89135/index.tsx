@@ -13,8 +13,8 @@ export default component$(() => {
             Centennial Hills Homes in <span class="highlight">ZIP Code 89135</span>
           </h1>
           <p class="hero-subtitle">
-            Discover Central Centennial Hills real estate in ZIP code 89135. Established neighborhoods, excellent schools, 
-            and mature landscaping make this area perfect for families seeking a stable, well-established community.
+            Discover Central Centennial Hills real estate in ZIP code 89135. Older neighborhoods, nearby public schools, 
+            and mature landscaping make this area a strong choice for buyers seeking long-term value.
           </p>
           <div class="hero-search">
             <div class="search-box">
@@ -42,13 +42,13 @@ export default component$(() => {
             </div>
             <div class="overview-card">
               <HiStarMini class="overview-icon" />
-              <h3>Established Community</h3>
-              <p>Central Centennial Hills features well-established neighborhoods with mature landscaping, tree-lined streets, and a strong sense of community. The area has been carefully developed over the years to create a family-friendly environment with excellent amenities and services.</p>
+              <h3>Community</h3>
+              <p>Central Centennial Hills features older neighborhoods with mature landscaping, tree-lined streets, and a strong sense of community. The area has been carefully developed over the years to create a community environment with excellent amenities and services.</p>
             </div>
             <div class="overview-card">
               <LuTrendingUp class="overview-icon" />
               <h3>Strong Investment</h3>
-              <p>Centennial Hills 89135 has shown consistent appreciation and strong market performance. With established infrastructure, excellent schools, and growing demand, homes in this area represent excellent long-term investment opportunities for both homeowners and investors.</p>
+              <p>Centennial Hills 89135 has shown consistent appreciation and strong market performance. With established infrastructure, nearby public schools, and growing demand, homes in this area represent excellent long-term investment opportunities for both homeowners and investors.</p>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ export default component$(() => {
                   <span>0.25 Acres</span>
                 </div>
                 <p class="property-price">$485,000</p>
-                <p class="property-description">Beautiful family home in Central Centennial Hills featuring mature landscaping, updated kitchen, and spacious living areas perfect for growing families.</p>
+                <p class="property-description">Beautiful home in Central Centennial Hills featuring mature landscaping, updated kitchen, and spacious living areas with flexible rooms.</p>
                 <a href="/properties" class="btn btn-outline">View Details</a>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default component$(() => {
                   <span>0.35 Acres</span>
                 </div>
                 <p class="property-price">$625,000</p>
-                <p class="property-description">Spacious estate in Central Centennial Hills with custom finishes, private backyard, and proximity to excellent schools and amenities.</p>
+                <p class="property-description">Spacious estate in Central Centennial Hills with custom finishes, private backyard, and proximity to public schools and amenities.</p>
                 <a href="/properties" class="btn btn-outline">View Details</a>
               </div>
             </div>
@@ -176,7 +176,7 @@ export default component$(() => {
           <h2>Schools & Amenities in Centennial Hills 89135</h2>
           <div class="amenities-grid">
             <div class="amenity-section">
-              <h3>Top-Rated Schools</h3>
+              <h3>Nearby Public Schools</h3>
               <div class="amenity-list">
                 <div class="amenity-item">
                   <h4>Centennial High School</h4>
@@ -272,13 +272,13 @@ export default component$(() => {
           <div class="reasons-grid">
             <div class="reason-card">
               <HiStarMini class="reason-icon" />
-              <h3>Established Neighborhoods</h3>
-              <p>Centennial Hills 89135 features well-established neighborhoods with mature landscaping, proven community stability, and a strong sense of belonging that comes from years of careful development.</p>
+              <h3>Older Neighborhoods</h3>
+              <p>Centennial Hills 89135 features older neighborhoods with mature landscaping, proven community stability, and a strong sense of belonging that comes from years of careful development.</p>
             </div>
             <div class="reason-card">
               <LuUsers class="reason-icon" />
-              <h3>Family-Friendly Environment</h3>
-              <p>With excellent schools, safe neighborhoods, and abundant recreational facilities, Central Centennial Hills provides the perfect environment for families to grow and thrive.</p>
+              <h3>Environment</h3>
+              <p>With nearby public schools, parks, and abundant recreational facilities, Central Centennial Hills offers plenty of amenities.</p>
             </div>
             <div class="reason-card">
               <LuTrendingUp class="reason-icon" />
@@ -743,7 +743,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Find homes in Centennial Hills ZIP code 89135. Central Centennial Hills real estate with established neighborhoods, excellent schools, and mature landscaping. Dr. Janet Duffy expert guidance.',
+      content: 'Find homes in Centennial Hills ZIP code 89135. Central Centennial Hills real estate with older neighborhoods, nearby public schools, and mature landscaping. Dr. Janet Duffy expert guidance.',
     },
   ],
 };

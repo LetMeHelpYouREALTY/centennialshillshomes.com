@@ -13,11 +13,11 @@ export default component$(() => {
         <h2>Luxury Home Features</h2>
         <p>Centennial Hills luxury homes feature gourmet kitchens with high-end appliances, master suites with spa-like bathrooms, outdoor living spaces with pools and fire features, and smart home technology. Many properties include mountain views, golf course access, and premium finishes throughout.</p>
 
-        <h2>Exclusive Communities</h2>
-        <p>Our luxury homes are located in Centennial Hills' most prestigious communities including Providence with its custom estates, Sky Canyon with modern luxury designs, and established neighborhoods with mature landscaping and privacy. Each community offers unique amenities and architectural styles.</p>
+        <h2>Communities</h2>
+        <p>Our luxury homes are located in Centennial Hills' most prestigious communities including Providence with its custom estates, Sky Canyon with modern luxury designs, and older neighborhoods with mature landscaping and privacy. Each community offers unique amenities and architectural styles.</p>
 
         <h2>Luxury Market Insights</h2>
-        <p>The Centennial Hills luxury market has shown strong appreciation with limited inventory driving premium pricing. Luxury buyers appreciate the area's privacy, proximity to Red Rock Canyon, and access to top-rated schools while maintaining easy access to Las Vegas Strip and downtown amenities.</p>
+        <p>The Centennial Hills luxury market has shown strong appreciation with limited inventory driving premium pricing. Luxury buyers appreciate the area's privacy, proximity to Red Rock Canyon, and access to public schools while maintaining easy access to Las Vegas Strip and downtown amenities.</p>
 
         <h2>Custom Home Options</h2>
         <p>For discerning buyers seeking ultimate customization, we offer access to Centennial Hills' finest custom home builders and architects. Create your dream luxury home with personalized design elements, premium materials, and cutting-edge technology in Las Vegas' most desirable northwest location.</p>

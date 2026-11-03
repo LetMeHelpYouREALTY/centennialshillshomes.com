@@ -42,7 +42,7 @@ export default component$(() => {
           <p>
             Summerlin is a 22,500-acre master-planned community in Las Vegas, developed by The Howard Hughes 
             Corporation. It's consistently ranked among the best places to live in America, offering residents 
-            a sophisticated lifestyle with world-class amenities, excellent schools, and beautiful natural surroundings. 
+            a sophisticated lifestyle with world-class amenities, nearby public schools, and beautiful natural surroundings. 
             Since its inception in the 1990s, Summerlin has grown into one of the most prestigious and desirable 
             communities in the Las Vegas Valley, attracting families, professionals, and luxury homebuyers from 
             around the world. Compare Summerlin to <a href="/centennial-hills-vs-summerlin">Centennial Hills</a> to understand the differences between these premier communities.
@@ -94,14 +94,14 @@ export default component$(() => {
 
           <h3>Summerlin South</h3>
           <p>
-            Summerlin South features established neighborhoods and golf course communities that offer a balance 
-            of luxury and value. This area includes well-established communities with mature landscaping, 
+            Summerlin South features older neighborhoods and golf course communities that offer a balance 
+            of luxury and value. This area includes older communities with mature landscaping, 
             proven property values, and access to multiple golf courses and country clubs. Properties in 
             Summerlin South typically range from $500K to $2M+, making it attractive to move-up buyers and 
-            families seeking established communities.
+            buyers seeking older communities.
           </p>
           <p>
-            The area's established neighborhoods offer the benefits of mature communities, including proven 
+            The area's older neighborhoods offer the benefits of older communities, including proven 
             property values, established amenities, and well-maintained infrastructure. Golf course 
             communities provide resort-style living with access to championship courses, clubhouses, and 
             social activities that enhance quality of life.
@@ -110,14 +110,14 @@ export default component$(() => {
           <h3>Summerlin North</h3>
           <p>
             Summerlin North features newer developments and family communities that offer modern homes, 
-            contemporary amenities, and family-friendly neighborhoods. This area attracts first-time buyers, 
-            growing families, and professionals seeking quality homes in well-planned communities. Properties 
+            contemporary amenities, and parks. This area attracts first-time buyers, 
+            move-up buyers, and professionals seeking quality homes in well-planned communities. Properties 
             in Summerlin North typically range from $400K to $1M+, providing options for various budgets and 
             needs.
           </p>
           <p>
             New construction in Summerlin North offers modern floor plans, energy-efficient features, and 
-            contemporary designs that appeal to today's buyers. Family-friendly neighborhoods feature parks, 
+            contemporary designs that appeal to today's buyers. Neighborhoods feature parks, 
             schools, and community amenities designed to support active lifestyles and family activities.
           </p>
 
@@ -132,7 +132,7 @@ export default component$(() => {
           <p>
             The area includes residential options ranging from condominiums to luxury townhomes, providing 
             urban living options within the master-planned community. Downtown Summerlin's location and 
-            amenities make it attractive to professionals, empty nesters, and those seeking a more urban 
+            amenities make it attractive to professionals, downsizers, and those seeking a more urban 
             lifestyle within Summerlin's master-planned environment.
           </p>
 
@@ -191,7 +191,7 @@ export default component$(() => {
           </p>
           <p>
             School quality is a significant factor in Summerlin's property values and desirability. Homes 
-            in areas with top-rated schools command premium prices and maintain their value better than 
+            in areas with nearby public schools command premium prices and maintain their value better than 
             homes in areas with lower-rated schools. This relationship between schools and property values 
             makes Summerlin an attractive investment for families and real estate investors.
           </p>
@@ -251,7 +251,7 @@ export default component$(() => {
           <p>
             Summerlin offers diverse housing options from entry-level homes to luxury estates, with prices 
             ranging from $300K to $15M+. The community features new construction, custom homes, and 
-            established neighborhoods, making it attractive for first-time buyers, move-up families, and 
+            older neighborhoods, making it attractive for first-time buyers, move-up families, and 
             luxury home buyers. This diversity ensures that Summerlin has options for various budgets, 
             lifestyles, and preferences.
           </p>
@@ -261,13 +261,13 @@ export default component$(() => {
             Summerlin's housing market includes single-family homes, townhomes, condominiums, and luxury 
             estates that accommodate various needs and budgets. Entry-level homes in the $300K-$500K range 
             provide opportunities for first-time buyers, while move-up homes in the $500K-$1M range offer 
-            options for growing families. Luxury properties above $1M provide the ultimate in Las Vegas 
+            options with 4+ bedrooms. Luxury properties above $1M provide the ultimate in Las Vegas 
             living for executives, professionals, and high-net-worth individuals.
           </p>
           <p>
             New construction provides modern homes with contemporary features, energy efficiency, and 
             current design trends. Custom homes allow buyers to work with builders to create their dream 
-            homes, while established neighborhoods offer proven property values and mature landscaping. This 
+            homes, while older neighborhoods offer proven property values and mature landscaping. This 
             variety ensures that Summerlin has options for buyers at various stages of life and with 
             different preferences.
           </p>
@@ -280,7 +280,7 @@ export default component$(() => {
             an attractive investment as well as a great place to live.
           </p>
           <p>
-            The community's master-planned design, extensive amenities, and excellent schools contribute to 
+            The community's master-planned design, extensive amenities, and nearby public schools contribute to 
             strong property values and consistent demand. This demand, combined with limited inventory in 
             desirable areas, supports property values and makes Summerlin properties attractive investments 
             for both primary residence buyers and real estate investors.
@@ -290,13 +290,13 @@ export default component$(() => {
           <p>
             Summerlin offers a unique combination of quality, convenience, and lifestyle that's difficult 
             to find in other Las Vegas communities. The community's master-planned design, extensive 
-            amenities, excellent schools, and natural beauty create a living experience that's exceptional 
+            amenities, nearby public schools, and natural beauty create a living experience that's exceptional 
             for a major metropolitan area.
           </p>
 
           <h3>Quality of Life</h3>
           <p>
-            Summerlin's quality of life is supported by extensive amenities, excellent schools, and 
+            Summerlin's quality of life is supported by extensive amenities, nearby public schools, and 
             thoughtful planning that creates cohesive, attractive neighborhoods. The community's commitment 
             to quality, from infrastructure to landscaping to community services, is evident throughout 
             Summerlin and contributes to residents' satisfaction and property values.
@@ -386,7 +386,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Summerlin luxury homes in Las Vegas. Premier master-planned community with world-class amenities, golf courses, and excellent schools. Dr. Jan Duffy specializes in Summerlin real estate.',
+      content: 'Summerlin luxury homes in Las Vegas. Premier master-planned community with world-class amenities, golf courses, and nearby public schools. Dr. Jan Duffy specializes in Summerlin real estate.',
     },
   ],
 };

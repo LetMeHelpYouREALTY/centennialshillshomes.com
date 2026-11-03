@@ -139,11 +139,11 @@ export default function SummerlinPage() {
                 <div className="bg-slate-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
                     <GraduationCap className="h-8 w-8 text-blue-600 mr-3" />
-                    <h4 className="font-bold text-slate-900 text-lg">Top-Rated Schools</h4>
+                    <h4 className="font-bold text-slate-900 text-lg">Nearby Public Schools</h4>
                   </div>
                   <p className="text-slate-600">
                     Summerlin is home to some of Nevada's highest-performing schools. The community includes
-                    multiple Blue Ribbon schools, advanced STEM programs, and excellent private school options
+                    multiple Nearby public schools, advanced STEM programs, and excellent private school options
                     like The Meadows School and Bishop Gorman High School. Families consistently choose
                     Summerlin for its exceptional educational opportunities.
                   </p>
@@ -252,7 +252,7 @@ export default function SummerlinPage() {
               <p>
                 Working with a <strong>Centennial Hills Real Estate</strong> agent gives you access to listings
                 before they hit the market, expert negotiation skills, and the backing of a globally trusted brand.
-                Dr. Jan Duffy has been in real estate since 1983, which means you'll have insights that online 
+                Dr. Jan Duffy has been licensed since 2008 · 35 years in Las Vegas, which means you'll have insights that online 
                 searches simply can't provide—from which streets have the best mountain views to which builders 
                 offer the best construction quality.
               </p>
@@ -264,7 +264,7 @@ export default function SummerlinPage() {
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Summerlin isn't just a neighborhood—it's a lifestyle. I've been serving this area since
-                2008, and I can tell you exactly which villages suit young families, which offer the
+                2008, and I can tell you exactly which villages have the floor plans you want, which offer the
                 best investment potential, and where you'll find the hidden gems. That local knowledge is
                 what sets Centennial Hills Real Estate apart."
               </blockquote>

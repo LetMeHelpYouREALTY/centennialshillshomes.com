@@ -168,7 +168,7 @@ export default component$(() => {
           <p>
             Master suites are typically expansive, featuring spa-like bathrooms, walk-in closets, and private 
             patios or balconies with views. Secondary bedrooms are generously sized, often with en-suite bathrooms, 
-            making The Ridges ideal for families or those who frequently host guests.
+            making The Ridges ideal for buyers who frequently host guests or want extra bedrooms.
           </p>
           <p>
             Outdoor living is a priority in The Ridges, with most homes featuring extensive patios, outdoor 

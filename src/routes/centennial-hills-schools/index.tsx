@@ -35,7 +35,7 @@ export default component$(() => {
           <h2>School Districts Serving Centennial Hills</h2>
           <p>
             Centennial Hills is served by the Clark County School District (CCSD), the fifth-largest 
-            school district in the United States. The area features excellent public schools, as well 
+            school district in the United States. The area features nearby public schools, as well 
             as private school options for families seeking alternative educational paths. CCSD serves 
             over 300,000 students across more than 350 schools, making it one of the largest and most 
             diverse school districts in the nation.
@@ -240,7 +240,7 @@ export default component$(() => {
 
           <h2>Private School Options</h2>
           <p>
-            In addition to excellent public schools, Centennial Hills families have access to several 
+            In addition to nearby public schools, Centennial Hills families have access to several 
             prestigious private schools that offer alternative educational approaches and specialized programs. 
             These schools provide families with choices that may better match their educational philosophies 
             and goals for their children.
@@ -289,7 +289,7 @@ export default component$(() => {
 
           <h2>School Ratings and Performance</h2>
           <p>
-            Centennial Hills schools consistently rank among the top schools in Clark County, with many 
+            Centennial Hills schools consistently rank among the public schools in Clark County, with many 
             schools receiving high ratings from GreatSchools.org and other educational rating services. 
             The area's commitment to education is reflected in strong test scores, high graduation rates, 
             and excellent college acceptance rates that demonstrate the quality of education available 
@@ -312,47 +312,47 @@ export default component$(() => {
           <h2>Why Schools Matter in Real Estate</h2>
           <p>
             School quality is one of the most important factors for families when choosing a home. 
-            Excellent schools not only provide quality education but also contribute to property values 
+            Nearby public schools not only provide quality education but also contribute to property values 
             and neighborhood desirability. Understanding the relationship between schools and real estate 
             helps families make informed decisions about where to live.
           </p>
 
           <h3>Property Values and School Quality</h3>
           <p>
-            Research consistently shows that homes in areas with highly rated schools command higher prices 
+            Research consistently shows that homes in areas with nearby public schools command higher prices 
             and maintain their value better than homes in areas with lower-rated schools. This relationship 
             between school quality and property values makes school districts an important consideration 
             for both homebuyers and real estate investors.
           </p>
           <p>
-            In Centennial Hills, the area's excellent schools contribute to strong property values and 
+            In Centennial Hills, the area's nearby public schools contribute to strong property values and 
             consistent appreciation over time. Families are willing to pay premium prices for homes in 
-            areas with top-rated schools, recognizing that quality education is an investment in their 
+            areas with nearby public schools, recognizing that quality education is an investment in their 
             children's future and their property's value.
           </p>
 
           <h3>Neighborhood Desirability</h3>
           <p>
-            Excellent schools make neighborhoods more desirable, attracting families who prioritize 
+            Nearby public schools make neighborhoods more desirable, attracting families who prioritize 
             education and creating communities with shared values and goals. These communities often 
             have strong parent involvement, active neighborhood associations, and supportive environments 
             that enhance quality of life for all residents.
           </p>
           <p>
-            The desirability created by excellent schools extends beyond just families with children. 
-            Even empty nesters and investors recognize the value of living in areas with top-rated schools, 
+            School assignments matter to resale value for every owner. 
+            Downsizers and investors also recognize the resale value of homes near well-regarded schools, 
             understanding that school quality contributes to property values and neighborhood stability.
           </p>
 
           <h3>Long-Term Investment</h3>
           <p>
-            Choosing a home in an area with excellent schools is a long-term investment in both your 
-            children's education and your property's value. Quality schools provide students with 
+            Choosing a home in an area with nearby public schools is a long-term investment in both your 
+            children's education and your property's value. Nearby public schools provide students with 
             foundations for future success while contributing to property values that benefit homeowners 
             over time.
           </p>
           <p>
-            Dr. Jan Duffy helps families understand school options and find homes in the best school 
+            Dr. Jan Duffy helps buyers understand school options and find homes in specific attendance 
             districts. Her expertise in Centennial Hills real estate and knowledge of area schools 
             ensures that families can make informed decisions about where to live based on both housing 
             and educational considerations.
@@ -368,8 +368,8 @@ export default component$(() => {
 
       <section class="cta-section">
         <div class="container container-center">
-          <h2>Looking for a Home Near Great Schools?</h2>
-          <p>Contact Dr. Jan Duffy to find homes in the best school districts.</p>
+          <h2>Looking for a Home Near Nearby public schools?</h2>
+          <p>Contact Dr. Jan Duffy to find homes in specific school attendance zones.</p>
           <div class="cta-buttons">
             <a href="/contact" class="btn btn-primary">Contact Dr. Duffy</a>
             <a href="/buy-a-home" class="btn btn-secondary">View Homes for Sale</a>

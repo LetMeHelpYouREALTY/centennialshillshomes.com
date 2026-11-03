@@ -7,7 +7,7 @@ describe("StatsBand", () => {
     render(<StatsBand />);
 
     expect(screen.getByText("500+")).toBeInTheDocument();
-    expect(screen.getByText("Top 1%")).toBeInTheDocument();
+    expect(screen.queryByText("Top 1%")).not.toBeInTheDocument();
     expect(screen.getByText("5.0★")).toBeInTheDocument();
     expect(screen.queryByText(/\$638M/i)).not.toBeInTheDocument();
   });

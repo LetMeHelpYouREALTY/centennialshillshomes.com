@@ -29,7 +29,7 @@ export default component$(() => {
           </h1>
           <p class="hero-subtitle">
             Explore Summerlin West, one of Las Vegas' most desirable master-planned communities featuring 
-            luxury homes, excellent schools, and world-class amenities. Dr. Jan Duffy specializes in 
+            luxury homes, nearby public schools, and world-class amenities. Dr. Jan Duffy specializes in 
             Summerlin West real estate with expertise in luxury properties and corporate relocations.
           </p>
         </div>
@@ -41,7 +41,7 @@ export default component$(() => {
           <p>
             Summerlin West is the premier section of the master-planned Summerlin community, offering 
             luxury homes, gated communities, and proximity to Red Rock Canyon. This area is known for 
-            its upscale neighborhoods, excellent schools, and resort-style amenities. As the most 
+            its upscale neighborhoods, nearby public schools, and resort-style amenities. As the most 
             prestigious section of Summerlin, Summerlin West represents the pinnacle of Las Vegas 
             luxury living, attracting executives, professionals, and high-net-worth individuals 
             seeking the ultimate in residential quality and lifestyle.
@@ -64,7 +64,7 @@ export default component$(() => {
           <p>
             Summerlin West's reputation for quality, luxury, and lifestyle amenities has made it one of 
             Las Vegas' most desirable residential areas. The combination of luxury homes, world-class 
-            amenities, excellent schools, and natural beauty creates a living experience that's 
+            amenities, nearby public schools, and natural beauty creates a living experience that's 
             exceptional for a major metropolitan area.
           </p>
 
@@ -104,9 +104,9 @@ export default component$(() => {
           <h3>Providence</h3>
           <p>
             Providence is a master-planned community in Summerlin West featuring diverse housing options, 
-            community amenities, and family-friendly neighborhoods. The community's thoughtful planning 
+            community amenities, and parks. The community's thoughtful planning 
             creates cohesive neighborhoods with parks, trails, and amenities that support active, 
-            family-oriented lifestyles.
+            lifestyles.
           </p>
           <p>
             Properties in Providence range from move-up homes to luxury estates, providing options for 
@@ -146,9 +146,9 @@ export default component$(() => {
             contribute to the area's desirability and property values.
           </p>
 
-          <h3>Top-Rated Schools</h3>
+          <h3>Nearby Public Schools</h3>
           <p>
-            Summerlin West is served by top-rated schools in the Clark County School District, providing 
+            Summerlin West is served by public schools in the Clark County School District, providing 
             excellent educational opportunities for students from kindergarten through high school. These 
             schools consistently rank among the best in Clark County and Nevada, with strong academic 
             programs, comprehensive extracurricular activities, and high graduation and college acceptance 
@@ -156,7 +156,7 @@ export default component$(() => {
           </p>
           <p>
             School quality is a significant factor in Summerlin West's property values and desirability. 
-            Homes in areas with top-rated schools command premium prices and maintain their value better 
+            Homes in areas with nearby public schools command premium prices and maintain their value better 
             than homes in areas with lower-rated schools. This relationship between schools and property 
             values makes Summerlin West attractive to families who prioritize education alongside luxury living.
           </p>
@@ -290,7 +290,7 @@ export default component$(() => {
           <p>
             Summerlin West offers a unique combination of luxury, natural beauty, and lifestyle amenities 
             that's difficult to find in other Las Vegas communities. The area's prestigious neighborhoods, 
-            world-class amenities, excellent schools, and proximity to Red Rock Canyon create a living 
+            world-class amenities, nearby public schools, and proximity to Red Rock Canyon create a living 
             experience that's exceptional for a major metropolitan area.
           </p>
 
@@ -376,7 +376,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Summerlin West luxury homes in Las Vegas. Premier master-planned community with excellent schools, golf courses, and Red Rock Canyon access. Dr. Jan Duffy specializes in Summerlin West real estate.',
+      content: 'Summerlin West luxury homes in Las Vegas. Premier master-planned community with nearby public schools, golf courses, and Red Rock Canyon access. Dr. Jan Duffy specializes in Summerlin West real estate.',
     },
   ],
 };

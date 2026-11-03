@@ -73,9 +73,9 @@ export default component$(() => {
             without concerns about safety or privacy.
           </p>
 
-          <h3>Exclusive Community Character</h3>
+          <h3>Community Character</h3>
           <p>
-            Providence's exclusive community character reflects its commitment to luxury living, privacy, and 
+            Providence's community character reflects its commitment to luxury living, privacy, and 
             sophisticated lifestyle. The community attracts discerning buyers who value exclusivity, quality, and 
             attention to detail that sets luxury communities apart. This exclusive character creates a distinctive 
             residential experience that appeals to buyers seeking homes that reflect their success and lifestyle.
@@ -182,7 +182,7 @@ export default component$(() => {
 
           <h2>Community Amenities and Services</h2>
           <p>
-            Providence residents enjoy access to exclusive community amenities including private parks, walking trails, 
+            Providence residents enjoy access to community amenities including private parks, walking trails, 
             and recreational facilities. The gated community provides security, privacy, and a sense of exclusivity 
             while maintaining easy access to Centennial Hills' shopping, dining, and entertainment options. These 
             community amenities enhance quality of life and create opportunities for recreation and social interaction.

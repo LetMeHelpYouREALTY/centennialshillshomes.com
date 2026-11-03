@@ -67,7 +67,7 @@ export default component$(() => {
           </p>
           <p>
             Las Vegas offers diverse neighborhoods from master-planned communities like Centennial Hills and 
-            Summerlin to established neighborhoods and growing areas. Each area offers unique characteristics, 
+            Summerlin to older neighborhoods and growing areas. Each area offers unique characteristics, 
             amenities, and lifestyle benefits that may or may not match your preferences. Researching these 
             areas helps you identify communities that align with your needs and goals.
           </p>
@@ -142,7 +142,7 @@ export default component$(() => {
             opportunities for your children.
           </p>
           <p>
-            Las Vegas offers diverse school options including top-rated public schools, private schools, and 
+            Las Vegas offers diverse school options including nearby public schools, private schools, and 
             specialized programs that may match your children's needs. Researching these options helps you 
             identify neighborhoods with schools that provide quality education and support your children's 
             academic and personal development.
@@ -190,7 +190,7 @@ export default component$(() => {
           <p>
             Neighborhood visits allow you to experience community atmosphere, observe traffic patterns, evaluate 
             amenities, and get a feel for whether neighborhoods match your lifestyle. These visits are 
-            particularly important for families who need to evaluate schools, parks, and family-friendly 
+            particularly important for buyers who want to evaluate schools, parks, and community 
             amenities.
           </p>
           <p>

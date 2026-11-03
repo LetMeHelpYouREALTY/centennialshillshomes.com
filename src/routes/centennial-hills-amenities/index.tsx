@@ -194,7 +194,7 @@ export default component$(() => {
           <p>
             The area's dining scene includes American, Italian, Asian, Mexican, and other cuisines that provide 
             variety and options for different preferences. Many restaurants feature outdoor dining, takeout options, 
-            and family-friendly atmospheres that accommodate various dining preferences and needs.
+            and atmospheres that accommodate various dining preferences and needs.
           </p>
 
           <h3>Grocery Stores and Specialty Shops</h3>
@@ -211,14 +211,14 @@ export default component$(() => {
 
           <h2>Schools and Education</h2>
           <p>
-            Centennial Hills is served by top-rated public schools and offers private school options that provide 
+            Centennial Hills is served by nearby public schools and offers private school options that provide 
             excellent educational opportunities for students. The area's commitment to education is reflected in 
-            strong school performance, high graduation rates, and excellent college acceptance rates.
+            published school performance data. Check current CCSD and Nevada state data for school ratings.
           </p>
 
-          <h3>Top-Rated Public Schools</h3>
+          <h3>Nearby Public Schools</h3>
           <p>
-            Centennial Hills is served by top-rated public schools in the Clark County School District that 
+            Centennial Hills is served by public schools in the Clark County School District that 
             consistently receive high ratings for academic excellence, teacher quality, and student achievement. 
             These schools provide comprehensive educational programs that prepare students for success in college, 
             careers, and life.

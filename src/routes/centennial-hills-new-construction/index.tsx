@@ -11,7 +11,7 @@ export default component$(() => {
         <p>Discover the latest Centennial Hills new construction homes from Las Vegas' premier builders. These brand new properties feature modern floor plans, energy-efficient designs, and the latest home technology. From starter homes to luxury estates, find your perfect new construction home in Centennial Hills with warranties and move-in ready convenience.</p>
 
         <h2>Featured New Home Communities</h2>
-        <p>Centennial Hills new construction includes exciting developments like Sky Canyon with modern single-family homes, Providence featuring luxury estates, and established neighborhoods with new phases. Each community offers unique amenities, floor plans, and builder incentives for qualified buyers.</p>
+        <p>Centennial Hills new construction includes exciting developments like Sky Canyon with modern single-family homes, Providence featuring luxury estates, and older neighborhoods with new phases. Each community offers unique amenities, floor plans, and builder incentives for qualified buyers.</p>
 
         <h2>Builder Partnerships</h2>
         <p>We work with Centennial Hills' top-rated builders including Lennar, KB Home, Richmond American, and local custom builders. Our relationships provide access to pre-construction pricing, preferred lot selection, and exclusive buyer incentives not available to the general public.</p>

@@ -4,8 +4,7 @@ export default function StatsBand() {
   
   const stats = [
     { value: `${agentStats.transactionsClosed}+`, label: "Closed transactions" },
-    { value: "Top 1%", label: "Las Vegas REALTOR®" },
-    { value: "Since 1983", label: "In real estate" },
+    { value: "Since 2008", label: "Licensed" },
     { value: `${gbpReviews.ratingValue}.0★`, label: "Google rating" },
   ];
 

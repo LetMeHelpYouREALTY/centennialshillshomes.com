@@ -6,8 +6,8 @@ import FAQSection, { realtorServiceFAQs } from '../../components/faq-section';
 
 export default component$(() => {
   const bestSchoolsSchema = pageSchemas.servicePage({
-    name: "Best Schools in Centennial Hills",
-    description: "Top-rated schools in Centennial Hills, Las Vegas. School ratings, performance data, and information about the best educational options for families.",
+    name: "Public Schools in Centennial Hills",
+    description: "public schools in Centennial Hills, Las Vegas. School ratings, performance data, and information about the best educational options for families.",
     slug: "best-schools-centennial-hills",
     serviceType: "Educational Information Services"
   });
@@ -19,12 +19,12 @@ export default component$(() => {
       <section class="hero-section">
         <div class="container container-center">
           <h1 class="hero-title">
-            <span class="highlight">Best Schools</span>
+            <span class="highlight">Nearby Public Schools</span>
             <br />
             in Centennial Hills
           </h1>
           <p class="hero-subtitle">
-            Discover the top-rated schools in Centennial Hills, Las Vegas. Comprehensive information 
+            Discover the public schools in Centennial Hills, Las Vegas. Comprehensive information 
             about school ratings, performance, and educational excellence for families.
           </p>
         </div>
@@ -32,22 +32,22 @@ export default component$(() => {
 
       <section class="service-content py-16">
         <div class="container container-center">
-          <h2>Top-Rated Schools in Centennial Hills</h2>
+          <h2>Public Schools in Centennial Hills</h2>
           <p>
-            Centennial Hills is home to some of the best schools in Clark County. These schools consistently 
+            Centennial Hills is home to some of the public schools in Clark County. These schools consistently 
             receive high ratings for academic excellence, teacher quality, and student achievement. The area's 
             commitment to education is reflected in strong test scores, high graduation rates, and excellent 
             college acceptance rates that demonstrate the quality of education available in Centennial Hills.
           </p>
           <p>
             School quality is one of the most important factors for families when choosing a home, and 
-            Centennial Hills' excellent schools make it particularly attractive to families with children. 
-            The area's schools consistently rank among the top schools in Clark County, with many schools 
+            Centennial Hills' nearby schools are a draw for many buyers. 
+            The area's schools consistently rank among the public schools in Clark County, with many schools 
             receiving high ratings from GreatSchools.org and other educational rating services.
           </p>
           <p>
             The relationship between school quality and property values makes Centennial Hills' excellent 
-            schools particularly valuable for homeowners. Homes in areas with top-rated schools command 
+            schools particularly valuable for homeowners. Homes in areas with nearby public schools command 
             premium prices and maintain their value better than homes in areas with lower-rated schools, 
             making school quality an important investment consideration as well as an educational one.
           </p>
@@ -210,7 +210,7 @@ export default component$(() => {
 
           <h2>What Makes These Schools Top-Rated?</h2>
           <p>
-            Centennial Hills' top-rated schools share several characteristics that contribute to their success 
+            Centennial Hills' nearby public schools share several characteristics that contribute to their success 
             and high ratings. Understanding these characteristics helps families appreciate what makes these 
             schools exceptional and why they consistently receive high ratings.
           </p>
@@ -323,34 +323,34 @@ export default component$(() => {
 
           <h3>Property Values and School Quality</h3>
           <p>
-            Research consistently shows that homes in areas with highly rated schools command higher prices 
+            Research consistently shows that homes in areas with nearby public schools command higher prices 
             and maintain their value better than homes in areas with lower-rated schools. This relationship 
             between school quality and property values makes school districts an important consideration for 
             both homebuyers and real estate investors.
           </p>
           <p>
-            In Centennial Hills, the area's excellent schools contribute to strong property values and 
+            In Centennial Hills, the area's nearby public schools contribute to strong property values and 
             consistent appreciation over time. Families are willing to pay premium prices for homes in areas 
-            with top-rated schools, recognizing that quality education is an investment in their children's 
+            with nearby public schools, recognizing that quality education is an investment in their children's 
             future and their property's value.
           </p>
 
           <h3>Neighborhood Desirability</h3>
           <p>
-            Excellent schools make neighborhoods more desirable, attracting families who prioritize education 
+            Nearby public schools make neighborhoods more desirable, attracting families who prioritize education 
             and creating communities with shared values and goals. These communities often have strong parent 
             involvement, active neighborhood associations, and supportive environments that enhance quality of 
             life for all residents.
           </p>
           <p>
-            The desirability created by excellent schools extends beyond just families with children. Even 
-            empty nesters and investors recognize the value of living in areas with top-rated schools, 
+            School assignments matter to resale value for every owner. Even 
+            downsizers and investors recognize the resale value of homes near well-regarded schools, 
             understanding that school quality contributes to property values and neighborhood stability.
           </p>
 
           <h2>Working with Dr. Jan Duffy for School-Focused Home Buying</h2>
           <p>
-            Dr. Jan Duffy helps families understand school options and find homes in the best school districts. 
+            Dr. Jan Duffy helps buyers understand school options and find homes in specific attendance zones. 
             Her expertise in Centennial Hills real estate and knowledge of area schools ensures that families 
             can make informed decisions about where to live based on both housing and educational considerations.
           </p>
@@ -372,8 +372,8 @@ export default component$(() => {
 
       <section class="cta-section">
         <div class="container container-center">
-          <h2>Find a Home Near Top Schools</h2>
-          <p>Contact Dr. Jan Duffy to find homes in the best school districts.</p>
+          <h2>Find a Home Near Nearby Public Schools</h2>
+          <p>Contact Dr. Jan Duffy to find homes in specific school attendance zones.</p>
           <div class="cta-buttons">
             <a href="/contact" class="btn btn-primary">Contact Dr. Duffy</a>
             <a href="/centennial-hills" class="btn btn-secondary">Explore Centennial Hills</a>
@@ -385,11 +385,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Best Schools in Centennial Hills | Top-Rated Schools | Dr. Jan Duffy',
+  title: 'Public Schools in Centennial Hills | Nearby Public Schools | Dr. Jan Duffy',
   meta: [
     {
       name: 'description',
-      content: 'Top-rated schools in Centennial Hills, Las Vegas. School ratings, performance data, and information about the best educational options for families.',
+      content: 'public schools in Centennial Hills, Las Vegas. School ratings, performance data, and information about the best educational options for families.',
     },
   ],
 };

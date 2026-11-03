@@ -191,7 +191,7 @@ export default component$(() => {
                 <p class="property-price">$675,000</p>
                 <p class="property-details">4 Bedrooms • 3 Bathrooms • 2,800 sq ft</p>
                 <p class="property-description">
-                  Perfect family home with modern amenities and excellent schools - great value compared to California.
+                  Perfect family home with modern amenities and nearby public schools - great value compared to California.
                 </p>
                 <a href="/contact" class="btn btn-secondary">Virtual Tour</a>
               </div>

@@ -219,7 +219,7 @@ export default component$(() => {
           <h3>Executive-Friendly Neighborhood Expertise</h3>
           <p>
             Dr. Jan Duffy has specialized knowledge of neighborhoods that are particularly attractive to executives and 
-            professionals. These neighborhoods offer the combination of quality homes, excellent schools, convenient 
+            professionals. These neighborhoods offer the combination of quality homes, nearby public schools, convenient 
             locations, and lifestyle amenities that support both career success and personal fulfillment.
           </p>
           <p>
@@ -246,18 +246,18 @@ export default component$(() => {
           <p>
             Las Vegas offers numerous neighborhoods that are attractive to relocating professionals. Dr. Jan Duffy 
             specializes in these areas, providing expert guidance on communities that offer the best combination of 
-            quality homes, excellent schools, convenient locations, and lifestyle amenities.
+            quality homes, nearby public schools, convenient locations, and lifestyle amenities.
           </p>
 
           <h3>Centennial Hills</h3>
           <p>
-            Centennial Hills is particularly attractive to corporate relocators seeking family-friendly communities 
-            with excellent schools and new construction options. The area offers excellent value, with quality homes 
+            Centennial Hills is particularly attractive to corporate relocators seeking communities 
+            with nearby public schools and new construction options. The area offers excellent value, with quality homes 
             at prices that are attractive compared to other major metropolitan areas. New construction provides modern 
             floor plans and features that appeal to professionals accustomed to newer homes.
           </p>
           <p>
-            The area's excellent schools make it ideal for families, while its proximity to employment centers and 
+            The area's nearby schools draw many buyers, while its proximity to employment centers and 
             growing retail and dining options provide the convenience that busy professionals need. Centennial Hills 
             represents an excellent balance of quality, value, and lifestyle that makes it attractive to many corporate 
             relocators.
@@ -272,7 +272,7 @@ export default component$(() => {
           </p>
           <p>
             Communities like The Ridges and Red Rock Country Club provide the privacy, security, and luxury amenities 
-            that executives expect, while the area's excellent schools and convenient location support both career and 
+            that executives expect, while the area's nearby public schools and convenient location support both career and 
             family goals. Summerlin West represents the pinnacle of Las Vegas luxury living, making it attractive to 
             corporate relocators who prioritize quality and lifestyle.
           </p>
@@ -280,7 +280,7 @@ export default component$(() => {
           <h3>The Ridges</h3>
           <p>
             The Ridges offers gated luxury estates, privacy, and mountain views that appeal to executives seeking 
-            the ultimate in luxury living. This exclusive community provides the security, privacy, and amenities that 
+            the ultimate in luxury living. This community provides the security, privacy, and amenities that 
             high-level professionals expect, while its location in Summerlin West ensures convenient access to employment 
             centers and lifestyle amenities.
           </p>
@@ -313,7 +313,7 @@ export default component$(() => {
           <p>
             The area's new construction provides modern homes with contemporary features, while its growing retail and 
             dining scene offers increasing convenience. Northwest Las Vegas represents an excellent value proposition 
-            for corporate relocators who want quality homes and good schools without the premium prices of more 
+            for corporate relocators who want quality homes and nearby public schools without the premium prices of more 
             established luxury communities.
           </p>
 

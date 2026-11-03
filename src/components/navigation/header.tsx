@@ -308,7 +308,7 @@ export default component$(() => {
                 <a href="/providence" class="dropdown-link">
                   <div class="dropdown-item">
                     <h4>Providence</h4>
-                    <p>Family-friendly community</p>
+                    <p>Community</p>
                   </div>
                 </a>
                 <a href="/tule-springs" class="dropdown-link">

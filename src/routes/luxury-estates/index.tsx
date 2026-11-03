@@ -14,7 +14,7 @@ export default component$(() => {
           </h1>
           <p class="hero-subtitle">
             Discover Las Vegas' most prestigious luxury estates featuring custom architecture, premium finishes, and unparalleled amenities. 
-            Our portfolio includes properties from $1M to multi-million dollar estates in Centennial Hills, The Ridges, and exclusive communities.
+            Our portfolio includes properties from $1M to multi-million dollar estates in Centennial Hills, The Ridges, and other luxury communities.
           </p>
           <div class="hero-buttons">
             <a href="/contact" class="btn btn-primary">Private Estate Consultation</a>
@@ -60,7 +60,7 @@ export default component$(() => {
         <h2>Custom Estate Features</h2>
         <p>Explore luxury estates with custom features including gourmet kitchens with high-end appliances, master suites with spa-like bathrooms, outdoor living spaces with pools and fire features, home theaters, wine cellars, and smart home technology. Each estate offers unique architectural details and premium finishes throughout.</p>
 
-        <h2>Exclusive Community Access</h2>
+        <h2>Community Access</h2>
         <p>Gain access to Las Vegas' most exclusive gated communities including The Ridges, MacDonald Highlands, and luxury developments in Centennial Hills. These communities offer privacy, security, and amenities including golf courses, private parks, and concierge services for discerning luxury estate buyers.</p>
 
         <h2>Mountain and Strip Views</h2>
@@ -81,7 +81,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Las Vegas luxury estates with Dr. Janet Duffy. Premium properties, custom features, and exclusive communities in Centennial Hills and The Ridges.',
+      content: 'Las Vegas luxury estates with Dr. Janet Duffy. Premium properties, custom features, and communities in Centennial Hills and The Ridges.',
     },
   ],
 };
