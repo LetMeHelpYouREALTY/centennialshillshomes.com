@@ -18,6 +18,7 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import { siteConfig, siteImages, siteImageUrl } from "@/lib/site-config";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -123,6 +124,7 @@ export default function RootLayout({
         <Footer />
         <ClientWidgets />
         <Analytics />
+        <VercelSpeedInsights />
       </body>
     </html>
   );
