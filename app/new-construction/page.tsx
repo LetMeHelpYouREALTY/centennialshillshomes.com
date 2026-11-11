@@ -1,4 +1,5 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CalendlyAfterListings from "@/components/calendly/CalendlyAfterListings";
 import Link from "next/link";
 import {
   Phone,
@@ -690,6 +691,7 @@ export default function NewConstructionPage() {
         </div>
       </main>
       <RealScoutListings />
+      <CalendlyAfterListings />
     </>
   );
 }

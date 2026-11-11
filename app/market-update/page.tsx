@@ -1,4 +1,5 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CalendlyAfterListings from "@/components/calendly/CalendlyAfterListings";
 import CurrentMarketBand from "@/components/seo/CurrentMarketBand";
 import PageLastUpdated from "@/components/seo/PageLastUpdated";
 import PageBreadcrumbs from "@/components/seo/PageBreadcrumbs";
@@ -201,6 +202,7 @@ export default function MarketUpdatePage() {
         </div>
       </main>
       <RealScoutListings />
+      <CalendlyAfterListings />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CalendlyAfterListings from "@/components/calendly/CalendlyAfterListings";
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, MapPin } from "lucide-react";
@@ -109,6 +110,7 @@ export default function NeighborhoodsPage() {
       </section>
 
       <RealScoutListings />
+      <CalendlyAfterListings />
       <LocalBusinessCtaBar />
     </main>
   );

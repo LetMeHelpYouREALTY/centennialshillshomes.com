@@ -1,4 +1,5 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CalendlyAfterListings from "@/components/calendly/CalendlyAfterListings";
 import Link from "next/link";
 import {
   Phone,
@@ -401,6 +402,7 @@ export default function MoveUpSellerPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
+      <CalendlyAfterListings />
     </>
   );
 }
